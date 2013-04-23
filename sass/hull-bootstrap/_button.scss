@@ -1,3 +1,26 @@
+// Button backgrounds
+// ------------------
+@mixin button($background-color){
+    $text-color: hsl(0, 0, 100%);
+    @if lightness($background-color) > 70% {
+        $text-color:       hsl(0, 0, 20%);
+    }
+    background-color:$background-color;
+    @include background-image(linear-gradient(rgba(255,255,255,.1), rgba(0,0,0,.1)));
+    color:$text-color;
+    &:hover,
+    &:focus,
+    &:active{
+        background-color:darken($background-color, 5%);
+        color:$text-color;
+    }
+    // Disabled state
+    &.disabled,
+    &[disabled] {
+      background-color:$background-color;
+    }
+};
+
 .btn{
   font-family:$headingsFontFamily;
   -webkit-appearance: none;
@@ -6,8 +29,44 @@
   font-weight:bold;
   white-space: nowrap;
   font-size:$fontSizeSmall;
+  @include button($btnBackground);
+  &:hover,
+  &:focus {
+    background-position:0 0;
+  }
+  &.active,
+  &:active {
+    background-image: inherit;
+  }
 }
 
-.btn-large{
-    font-size:$baseFontSize;
+  .btn-large{
+      font-size:$baseFontSize;
+  }
+
+
+// Set the backgrounds
+// -------------------------
+.btn-primary {
+  @include button($btnPrimaryBackground);
+}
+// Warning appears are orange
+.btn-warning {
+  @include button($btnWarningBackground);
+}
+// Danger and error appear as red
+.btn-danger {
+  @include button($btnDangerBackground);
+}
+// Success appears as green
+.btn-success {
+  @include button($btnSuccessBackground);
+}
+// Info appears as a neutral blue
+.btn-info {
+  @include button($btnInfoBackground);
+}
+// Inverse appears as dark gray
+.btn-inverse {
+  @include button($btnInverseBackground);
 }
