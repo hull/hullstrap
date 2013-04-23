@@ -1,0 +1,13 @@
+.btn{
+  font-family:$headingsFontFamily;
+  -webkit-appearance: none;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing:antialiased;
+  font-weight:bold;
+  white-space: nowrap;
+  font-size:$fontSizeSmall;
+}
+
+.btn-large{
+    font-size:$baseFontSize;
+}

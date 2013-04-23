@@ -1,0 +1,47 @@
+//
+// Modals
+// --------------------------------------------------
+
+// Background
+.modal-backdrop {
+  background: rgba(0,0,0,0.45);
+}
+
+
+// Base modal
+.modal-header {
+  @include background-clip(padding-box);
+  border-radius:6px 6px 0 0;
+  border-bottom: 1px solid rgba(black,.15);
+  background-color:$wellBackground;
+  .close{
+    @include background-image(
+      linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.1))
+    );
+    box-shadow: inset 0 0 0 1px #cccccc,
+                inset 0 2px 0 0 white;
+    border-radius: 50%;
+    width: 24px;
+    text-align: center;
+    display: inline-block;
+    border:1px solid $grayLight;
+    font-size:16px;
+    font-weight:bold;
+
+  }
+  h1,h2,h3,h4,h5,h6 {
+    text-shadow:0 1px 0 rgba(255,255,255,0.4);
+    margin: 0;
+    line-height: 30px;
+    color:$gray;
+  }
+}
+
+
+
+// Footer (for actions)
+.modal-footer {
+  @include background-clip(padding-box);
+  border-top: 1px solid rgba(black,.15);
+  background-color:$wellBackground;
+}

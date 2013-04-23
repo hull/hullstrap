@@ -1,0 +1,76 @@
+%nav{
+   color: $blue;
+   font-size:$fontSizeSmall;
+   font-weight:bold;
+   font-family:$headingsFontFamily; 
+   white-space: nowrap;
+}
+%nav-active{
+  background-color: $blue;
+  color:$white;
+}
+
+%nav-active-gradient{
+  @include background-image(linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.1)));
+  box-shadow:inset 0 1px 0 darken($blue, 5%),
+             inset 0 -1px 0 darken($blue, 20%),
+             inset 0 1px 1px rgba(white,1);
+}
+
+
+// Default dropdown links
+// -------------------------
+// Make carets use linkColor to start
+.nav .dropdown-toggle .caret {
+  border-top-color: $wellBackgroundDark;
+  border-bottom-color: $wellBackgroundDark;
+}
+.nav .dropdown-toggle:hover .caret,
+.nav .dropdown-toggle:focus .caret {
+  border-top-color: $wellBackgroundDark;
+  border-bottom-color: $wellBackgroundDark;
+}
+
+
+// TABS AND PILLS
+// -------------
+
+.nav-tabs > li > a,
+.nav-pills > li > a {
+  @extend %nav;
+}
+
+
+// PILLS
+// -----
+
+
+// Active state
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  @extend %nav-active;
+}
+
+
+
+// STACKED
+// -------
+.nav-stacked > .active > a,
+.nav-stacked > .active > a:hover,
+.nav-stacked > .active > a:focus {
+  @extend %nav-active;
+}
+
+// LIST
+// ----
+.nav-list > li > a {
+  @extend %nav;
+}
+
+.nav-list > .active > a,
+.nav-list > .active > a:hover,
+.nav-list > .active > a:focus{
+  @extend %nav-active;
+  @extend %nav-active-gradient;
+}
