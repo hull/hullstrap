@@ -4,7 +4,7 @@ Hull theme using compass, sass, and twitter bootstrap.
 
 ## How to use the theme:
 
-* Checkout: ``git@github.com:hull/hull-bootstrap.git`
+* Checkout: ``git@github.com:hull/hull-bootstrap.git``
 
 * First, install the dependencies:
 
