@@ -7332,11 +7332,11 @@ body {
   padding-top: 1.5em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(226, 230, 234, 0.98)), color-stop(100%, rgba(226, 230, 234, 0.98))), url('/images/pattern.jpg?1366282435');
-  background-image: -webkit-linear-gradient(rgba(226, 230, 234, 0.98), rgba(226, 230, 234, 0.98)), url('/images/pattern.jpg?1366282435');
-  background-image: -moz-linear-gradient(rgba(226, 230, 234, 0.98), rgba(226, 230, 234, 0.98)), url('/images/pattern.jpg?1366282435');
-  background-image: -o-linear-gradient(rgba(226, 230, 234, 0.98), rgba(226, 230, 234, 0.98)), url('/images/pattern.jpg?1366282435');
-  background-image: linear-gradient(rgba(226, 230, 234, 0.98), rgba(226, 230, 234, 0.98)), url('/images/pattern.jpg?1366282435');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(226, 230, 234, 0.98)), color-stop(100%, rgba(226, 230, 234, 0.98))), url('../images/pattern.jpg?1366282435');
+  background-image: -webkit-linear-gradient(rgba(226, 230, 234, 0.98), rgba(226, 230, 234, 0.98)), url('../images/pattern.jpg?1366282435');
+  background-image: -moz-linear-gradient(rgba(226, 230, 234, 0.98), rgba(226, 230, 234, 0.98)), url('../images/pattern.jpg?1366282435');
+  background-image: -o-linear-gradient(rgba(226, 230, 234, 0.98), rgba(226, 230, 234, 0.98)), url('../images/pattern.jpg?1366282435');
+  background-image: linear-gradient(rgba(226, 230, 234, 0.98), rgba(226, 230, 234, 0.98)), url('../images/pattern.jpg?1366282435');
 }
 
 /* line 49, ../sass/hull-components/_featurettes.scss */
@@ -7345,11 +7345,11 @@ body {
   padding-top: 1.5em;
   padding-bottom: 0em;
   margin-bottom: 0em;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(44, 51, 59, 0.98)), color-stop(100%, rgba(44, 51, 59, 0.98))), url('/images/pattern.jpg?1366282435');
-  background-image: -webkit-linear-gradient(rgba(44, 51, 59, 0.98), rgba(44, 51, 59, 0.98)), url('/images/pattern.jpg?1366282435');
-  background-image: -moz-linear-gradient(rgba(44, 51, 59, 0.98), rgba(44, 51, 59, 0.98)), url('/images/pattern.jpg?1366282435');
-  background-image: -o-linear-gradient(rgba(44, 51, 59, 0.98), rgba(44, 51, 59, 0.98)), url('/images/pattern.jpg?1366282435');
-  background-image: linear-gradient(rgba(44, 51, 59, 0.98), rgba(44, 51, 59, 0.98)), url('/images/pattern.jpg?1366282435');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(44, 51, 59, 0.98)), color-stop(100%, rgba(44, 51, 59, 0.98))), url('../images/pattern.jpg?1366282435');
+  background-image: -webkit-linear-gradient(rgba(44, 51, 59, 0.98), rgba(44, 51, 59, 0.98)), url('../images/pattern.jpg?1366282435');
+  background-image: -moz-linear-gradient(rgba(44, 51, 59, 0.98), rgba(44, 51, 59, 0.98)), url('../images/pattern.jpg?1366282435');
+  background-image: -o-linear-gradient(rgba(44, 51, 59, 0.98), rgba(44, 51, 59, 0.98)), url('../images/pattern.jpg?1366282435');
+  background-image: linear-gradient(rgba(44, 51, 59, 0.98), rgba(44, 51, 59, 0.98)), url('../images/pattern.jpg?1366282435');
 }
 
 /* line 57, ../sass/hull-components/_featurettes.scss */
