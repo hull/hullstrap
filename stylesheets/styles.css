@@ -7184,16 +7184,16 @@ a.thumbnail:focus {
 /* line 8, ../sass/hull-bootstrap/_labels-badges.scss */
 .label,
 .badge {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(51%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0.15)));
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.15) 100%);
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.15) 100%);
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.15) 100%);
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.15) 100%);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), inset 0 0 1px #333333;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.25)), color-stop(50%, rgba(255, 255, 255, 0.1)), color-stop(51%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0.075)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.075) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.075) 100%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.075) 100%);
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 51%, rgba(255, 255, 255, 0.075) 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 0 1px #333333;
   font-size: 12px;
   font-weight: bold;
   font-family: "proxima-nova";
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* line 7, ../sass/hull-bootstrap/_well.scss */
