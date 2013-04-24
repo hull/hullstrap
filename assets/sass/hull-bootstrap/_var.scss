@@ -49,7 +49,7 @@ $linkColorHover:        darken($linkColor, 15%);
 // Typography
 // -------------------------
 $sansFontFamily:        sans-serif;
-$serifFontFamily:       "ff-meta-serif-web-pro";
+$serifFontFamily:       "ff-meta-serif-web-pro", serif;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 $baseFontSize:          15px;
@@ -57,7 +57,7 @@ $baseFontFamily:        $sansFontFamily;
 $baseLineHeight:        22px;
 $altFontFamily:         $serifFontFamily;
 
-$headingsFontFamily:    "proxima-nova"; // empty to use BS default, $baseFontFamily
+$headingsFontFamily:    "proxima-nova", sans-serif; // empty to use BS default, $baseFontFamily
 $headingsFontWeight:    bold;    // instead of browser default, bold
 $headingsColor:         inherit; // empty to use BS default, $textColor
 
