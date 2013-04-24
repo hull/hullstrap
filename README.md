@@ -14,11 +14,19 @@ Live example: [http://hull.github.io/hull-bootstrap](http://hull.github.io/hull-
   gem update --system
   gem install compass
   gem install bootstrap-sass
+  gem install sass-getunicode
+  npm install
   ```
   
 * Then switch to hull-bootstrap dir: ``cd hull-bootstrap``
-* Launch compass: ``compass watch``
-* Start a simple server: ``python -m SimpleHTTPServer 8000``
-* Open in your browser: ``open http://localhost:8000``
+* Start grunt: ``grunt``
+* Open in your browser: ``open http://localhost:3001``
+
+## Build the theme
+
+* Compile the stylesheet using Grunt: ``grunt build``
+
+That's all !
+
 
 
