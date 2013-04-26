@@ -7466,25 +7466,27 @@ body {
   border-top: 1px solid #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000327}}
 .featurette-well,
-.featurette-well-noisy {
+.featurette-well-noisy,
+.featurette-radial-gradient {
   background-color: #f1f3f5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000333}}
 .featurette-welldark,
-.featurette-welldark-noisy {
+.featurette-welldark-noisy,
+.featurette-linear-gradient-dark {
   background-color: #373f4a;
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000339}}
 .featurette-border > .container {
   border-top: 1px solid #eeeeee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000344}}
 .featurette-well-noisy {
   margin-top: 0em;
   padding-top: 1.5em;
@@ -7497,7 +7499,7 @@ body {
   background-image: linear-gradient(rgba(226, 230, 234, 0.98), rgba(226, 230, 234, 0.98)), url('../images/pattern.jpg');
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000351}}
 .featurette-welldark-noisy {
   margin-top: 0em;
   padding-top: 1.5em;
@@ -7510,12 +7512,12 @@ body {
   background-image: linear-gradient(rgba(44, 51, 59, 0.98), rgba(44, 51, 59, 0.98)), url('../images/pattern.jpg');
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000359}}
 .featurette-top-shadow,
 .featurette-bottom-shadow {
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000361}}
 .featurette-top-shadow:before,
 .featurette-bottom-shadow:before {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
@@ -7530,8 +7532,38 @@ body {
   width: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000376}}
 .featurette-bottom-shadow:before {
   top: auto;
   bottom: -20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000382}}
+.featurette-linear-gradient {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f1f3f5), color-stop(100%, rgba(241, 243, 245, 0)));
+  background-image: -webkit-linear-gradient(#f1f3f5, rgba(241, 243, 245, 0));
+  background-image: -moz-linear-gradient(#f1f3f5, rgba(241, 243, 245, 0));
+  background-image: -o-linear-gradient(#f1f3f5, rgba(241, 243, 245, 0));
+  background-image: linear-gradient(#f1f3f5, rgba(241, 243, 245, 0));
+  background-size: 100% 240px;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000391}}
+.featurette-radial-gradient {
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #ffffff), color-stop(100%, #c4cdd5));
+  background: -webkit-radial-gradient(#ffffff, #c4cdd5);
+  background: -moz-radial-gradient(#ffffff, #c4cdd5);
+  background: -o-radial-gradient(#ffffff, #c4cdd5);
+  background: radial-gradient(#ffffff, #c4cdd5);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-components\/_featurettes\.scss}line{font-family:\0000397}}
+.featurette-linear-gradient-dark {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(55, 63, 74, 0.99)), color-stop(100%, rgba(77, 88, 103, 0.99))), url('../images/pattern.jpg');
+  background-image: -webkit-linear-gradient(rgba(55, 63, 74, 0.99), rgba(77, 88, 103, 0.99)), url('../images/pattern.jpg');
+  background-image: -moz-linear-gradient(rgba(55, 63, 74, 0.99), rgba(77, 88, 103, 0.99)), url('../images/pattern.jpg');
+  background-image: -o-linear-gradient(rgba(55, 63, 74, 0.99), rgba(77, 88, 103, 0.99)), url('../images/pattern.jpg');
+  background-image: linear-gradient(rgba(55, 63, 74, 0.99), rgba(77, 88, 103, 0.99)), url('../images/pattern.jpg');
 }

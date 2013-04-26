@@ -23,12 +23,14 @@
   }
 
   .featurette-well,
-  .featurette-well-noisy{
+  .featurette-well-noisy,
+  .featurette-radial-gradient{
     background-color:$wellBackground;
   }
 
   .featurette-welldark,
-  .featurette-welldark-noisy{
+  .featurette-welldark-noisy,
+  .featurette-linear-gradient-dark {
     background-color:$wellBackgroundDark;
     color:$white;
   }
@@ -75,4 +77,26 @@
       top:auto;
       bottom:-20px;
     }
+  }
+
+  .featurette-linear-gradient{
+      @include background-image(
+        linear-gradient($wellBackground, rgba($wellBackground, 0))
+      );
+      background-size:100% 240px;
+      background-repeat:repeat-x;
+      background-position:0 0;
+  }
+
+  .featurette-radial-gradient{
+    @include background(
+      radial-gradient(#fff, darken($wellBackground, 15%))
+    );
+  }
+
+  .featurette-linear-gradient-dark {
+      @include background-image(
+        linear-gradient(rgba($wellBackgroundDark,.99) rgba(lighten($wellBackgroundDark, 10%), .99)),
+        image-url('pattern.jpg')
+      );
   }
