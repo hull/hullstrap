@@ -66,6 +66,10 @@
 // ----
 .nav-list > li > a {
   @extend %nav;
+  .well &{
+    margin-left:-16px;
+    margin-right:-16px;
+  }
 }
 
 .nav-list > .active > a,

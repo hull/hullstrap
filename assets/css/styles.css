@@ -7112,6 +7112,12 @@ a.thumbnail:focus {
   border-bottom-color: #373f4a;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-bootstrap\/_nav\.scss}line{font-family:\0000369}}
+.well .nav-list > li > a {
+  margin-left: -16px;
+  margin-right: -16px;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/victor\/Sites\/hull-boostrap\/assets\/sass\/hull-bootstrap\/_pager\.scss}line{font-family:\000037}}
 .pager li > a,
 .pager li > span {
