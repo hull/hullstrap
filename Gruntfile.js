@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           sassDir: 'assets/sass/',
           cssDir: 'assets/css/',
           imagesDir: 'assets/images/',
-          relativeAssets: false
+          environment: 'production'
         }
       },
       develop: {

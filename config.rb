@@ -1,5 +1,4 @@
 require 'bootstrap-sass'
-require 'rgbapng'
 require 'sass-getunicode'
 require File.expand_path('../libs/retina.rb', __FILE__)
 require File.expand_path('../libs/random-color.rb', __FILE__)
