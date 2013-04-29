@@ -1,12 +1,11 @@
-# hull-bootstrap
+# hullstrap
 
 Hull theme using compass, sass, and twitter bootstrap.
 
-Live example: [http://hull.github.io/hull-bootstrap](http://hull.github.io/hull-bootstrap)
 
 ## How to use the theme:
 
-* Checkout: ``git@github.com:hull/hull-bootstrap.git``
+* Checkout: ``git@github.com:hull/hullstrap.git``
 
 * First, install the dependencies:
 
@@ -18,7 +17,7 @@ Live example: [http://hull.github.io/hull-bootstrap](http://hull.github.io/hull-
   npm install
   ```
 
-* Then switch to hull-bootstrap dir: ``cd hull-bootstrap``
+* Then switch to hullstrap dir: ``cd hullstrap``
 * Start grunt: ``grunt``
 * Open in your browser: ``open http://localhost:3001``
 
