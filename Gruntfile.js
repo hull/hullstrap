@@ -25,7 +25,9 @@ module.exports = function(grunt) {
           sassDir: 'assets/sass',
           cssDir: 'assets/css',
           imagesDir: 'assets/images',
-          environment: 'production'
+          environment: 'production',
+          outputStyle: 'compressed',
+          debugInfo: false
         }
       },
       develop: {
