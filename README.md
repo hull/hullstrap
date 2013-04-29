@@ -60,3 +60,8 @@ If `--target` option is passed, `<target>` will be `--target` value.
 
 If current branch is `master`, deployed files will be served with a `Cache-Control` header set to `public, max-age=29030400`.
 
+### Amazon S3 urls
+
+Example: 
+* http://hullstrap.s3.amazonaws.com/version/hullstrap.js
+* http://hullstrap.s3.amazonaws.com/version/hullstrap.css
