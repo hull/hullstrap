@@ -2,11 +2,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-s3');
+  grunt.loadNpmTasks('grunt-usemin');
 
   function readOptionalJSON(file) {
     return (grunt.file.exists(file)) ? grunt.file.readJSON(file) : {};
@@ -34,6 +36,14 @@ module.exports = function(grunt) {
         outputStyle: 'expanded',
         debugInfo: true,
         force: true
+      }
+    },
+
+    copy: {
+      dist: {
+        files: {
+          'dist/<%= version %>/index.html': ['index.html']
+        }
       }
     },
 
@@ -74,6 +84,10 @@ module.exports = function(grunt) {
         src: ['*.{png,jpg,jpeg}'],
         dest: 'dist/<%= version %>/images/'
       }
+    },
+
+    usemin: {
+      html: ['dist/<%= version %>/index.html']
     },
 
     watch: {
@@ -140,7 +154,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('develop', ['compass:develop', 'connect', 'watch']);
-  grunt.registerTask('dist', ['prepare', 'clean', 'compass:dist', 'cssmin' , 'uglify', 'imagemin']);
+  grunt.registerTask('dist', ['prepare', 'clean', 'compass:dist', 'cssmin' , 'uglify', 'imagemin', 'copy', 'usemin']);
   grunt.registerTask('deploy', ['dist', 's3']);
 
   grunt.registerTask('default', 'develop');
