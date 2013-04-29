@@ -19,6 +19,8 @@
   .navbar .nav li.dropdown.active > .dropdown-toggle,
   .navbar .nav li.dropdown.open.active > .dropdown-toggle{
       box-shadow:none;
+      background-color:transparent;
+      color:$navbarLinkColorHover;
   }
   .navbar .nav > .active > a,
   .navbar .nav > .active > a:hover,
@@ -44,7 +46,11 @@
     box-shadow:none;
 }
 
-
+.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle{
+    color:$navbarInverseLinkColorHover;
+}
 .navbar .divider-vertical{
     display:none;
 }
