@@ -44,14 +44,14 @@
   .featurette-well-noisy{
     @include rhythm(0,1,0,0);
         @include background-image(linear-gradient( rgba(darken($wellBackground, 5%), .98),  rgba(darken($wellBackground, 5%), .98)),
-        image-url('pattern.jpg')
+        url(image-path('pattern.jpg'))
     );
   }
 
   .featurette-welldark-noisy{
    @include rhythm(0,1,0,0);
        @include background-image(linear-gradient( rgba(darken($wellBackgroundDark, 5%), .98),  rgba(darken($wellBackgroundDark, 5%), .98)),
-       image-url('pattern.jpg')
+       url(image-path('pattern.jpg'))
    );   
   }
 
@@ -97,6 +97,6 @@
   .featurette-linear-gradient-dark {
       @include background-image(
         linear-gradient(rgba($wellBackgroundDark,.99) rgba(lighten($wellBackgroundDark, 10%), .99)),
-        image-url('pattern.jpg')
+        url(image-path('pattern.jpg'))
       );
   }
