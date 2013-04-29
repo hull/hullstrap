@@ -27,7 +27,8 @@ module.exports = function(grunt) {
           imagesDir: 'assets/images',
           environment: 'production',
           outputStyle: 'compressed',
-          debugInfo: false
+          debugInfo: false,
+          require: ['bootstrap-sass']
         }
       },
       develop: {
@@ -35,6 +36,7 @@ module.exports = function(grunt) {
           sassDir: 'assets/sass',
           cssDir: 'assets/css',
           imagesDir: 'assets/images',
+          require: ['bootstrap-sass'],
           relativeAssets: false,
           outputStyle: 'expanded',
           debugInfo: true,
