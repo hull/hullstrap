@@ -1,3 +1,6 @@
 /.DS_Store
 /.sass-cache/
 /node_modules/
+/dist/
+aws.json
+/assets/css/
