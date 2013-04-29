@@ -22,20 +22,22 @@ module.exports = function(grunt) {
     compass: {
       dist: {
         options: {
-          sassDir: 'assets/sass/',
-          cssDir: 'assets/css/',
-          imagesDir: 'assets/images/',
+          sassDir: 'assets/sass',
+          cssDir: 'assets/css',
+          imagesDir: 'assets/images',
           environment: 'production'
         }
       },
       develop: {
-        sassDir: 'assets/sass/',
-        cssDir: 'assets/css/',
-        imagesDir: 'assets/images/',
-        relativeAssets: false,
-        outputStyle: 'expanded',
-        debugInfo: true,
-        force: true
+        options: {
+          sassDir: 'assets/sass',
+          cssDir: 'assets/css',
+          imagesDir: 'assets/images',
+          relativeAssets: false,
+          outputStyle: 'expanded',
+          debugInfo: true,
+          force: true
+        }
       }
     },
 
@@ -93,7 +95,7 @@ module.exports = function(grunt) {
     watch: {
       compass: {
         files: ['assets/sass/**/*.{scss,sass}'],
-        tasks: 'compass'
+        tasks: 'compass:develop'
       }
     },
 
