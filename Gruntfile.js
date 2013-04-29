@@ -26,6 +26,7 @@ module.exports = function(grunt) {
           cssDir: 'assets/css',
           imagesDir: 'assets/images',
           environment: 'production',
+          httpImagesPath: 'images',
           outputStyle: 'compressed',
           relativeAssets: false,
           debugInfo: false,
