@@ -181,3 +181,26 @@ $minWidth: 600px;
     color:$grayDark;
   }
 }
+
+.admin-edit-administration{
+  @include position;
+  a{opacity:.5;}
+  a:hover{opacity:1;}
+
+  &:before,
+  &:after{
+    @include position(absolute, 7px 0 7px -8px);
+    @include background-image(
+      linear-gradient(top, rgba($black, 0), $black, rgba($black, 0))
+    );
+    content:""; 
+    pointer-events:none;
+    width:1px;
+  }
+  &:after{
+      left:-9px;
+      @include background-image(
+        linear-gradient(top, rgba($gray, 0), $gray, rgba($gray, 0))
+      );
+  }
+}
