@@ -47,3 +47,16 @@
   li{display:inline-block;}
   li+li{margin-left:5px;}
 }
+
+
+.organizations-item {
+   .thumbnail{margin-bottom:10px;}
+   > h4{
+       @extend %ellipsis;
+       a{color:$grayDark;}
+   }
+   .btn-group{
+    @include position(relative, 0px 0 0 0);
+    > .btn{opacity:.75;}
+  }
+}

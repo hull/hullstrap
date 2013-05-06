@@ -20,15 +20,6 @@ $minWidth: 600px;
     bottom: 0;
     width: $sidebarWidth;
     z-index: 997;
-    //&:before{
-    //    content:"";
-    //    @include position(absolute, 0px -5px 0px 0);
-    //    @include background-image(
-    //      linear-gradient(left, rgba(black,0), rgba(black,0.1))
-    //    );
-    //    width:10px;
-    //    pointer-events:none;
-    //}
   }
   .admin-header{
      @include position(fixed, 0px 0px 0 $sidebarWidth);
@@ -139,7 +130,7 @@ $minWidth: 600px;
   }
   .pull-right .btn{
     position:relative;
-    top:2px;
+    top:7px;
   }
 }
 
