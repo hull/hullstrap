@@ -44,6 +44,12 @@
       font-size:$baseFontSize;
   }
 
+  .btn-link{
+      &,&:hover{
+        background:none;
+        color:$linkColor;
+      }
+  }
 
 // Set the backgrounds
 // -------------------------
