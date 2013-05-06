@@ -3,6 +3,9 @@
       text-shadow:none;
       color:$gray;
     }
+    .label{
+      @include position(relative, 2px 0 0 0);
+    }
     > li {
       text-shadow:none;
       > a, > a:hover {
