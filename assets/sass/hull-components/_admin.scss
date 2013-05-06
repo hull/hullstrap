@@ -1,0 +1,195 @@
+$sidebarWidth: 244px;
+$sidebarContentWidth: 400px;
+$headerHeight: 56px;
+$minWidth: 600px;
+
+.admin{
+  @include box-sizing(border-box);
+  @include position(absolute, 0px 0 0 0px);
+  width:100%;
+  background-color:$grayDarker;
+  height:100%;
+  min-width:$minWidth + $sidebarWidth;
+  overflow:hidden;
+}
+  .admin-sidebar{
+    @include box-sizing(border-box);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $sidebarWidth;
+    z-index: 997;
+    //&:before{
+    //    content:"";
+    //    @include position(absolute, 0px -5px 0px 0);
+    //    @include background-image(
+    //      linear-gradient(left, rgba(black,0), rgba(black,0.1))
+    //    );
+    //    width:10px;
+    //    pointer-events:none;
+    //}
+  }
+  .admin-header{
+     @include position(fixed, 0px 0px 0 $sidebarWidth);
+     @include box-sizing(border-box);
+     height:$headerHeight;
+     z-index: 999;
+     min-width:$minWidth;
+  }
+  .admin-content{
+    @include position(absolute, $headerHeight 0px 0px $sidebarWidth);
+    @include box-sizing(border-box);
+    overflow:auto;
+    background-color:$white;
+    z-index: 998;
+    min-width:$minWidth;
+    border-left:1px solid $navbarBorder;
+  }
+
+  .admin-sidebar-r{
+    @include position(absolute, 0px 0px 0px 0);
+    @include box-sizing(border-box);
+    @include translateX(100%);
+    @include transition(all 300ms ease);
+    width:$sidebarContentWidth;
+    overflow:auto;
+    z-index: 1000;
+    border-right:1px solid $navbarBorder; 
+    box-shadow:0 0 8px rgba(black,.15);
+    border-radius:$baseBorderRadius 0 0 0;
+    &.is-visible{
+      @include translateX(0);
+    }
+  }
+    .admin-sidebar-r-content{
+      @include position(absolute, $headerHeight 0px 0px 0px);
+      @include box-sizing(border-box);
+      overflow:auto;
+      background-color:$white;
+      border-left:1px solid $navbarBorder;
+    }
+  
+  .admin-infos{
+    margin-bottom:30px;
+    .well{
+        padding:$paddingLarge;
+    }
+    header{
+      background:lighten($wellBackground, 2%);
+      padding:3px 8px;
+      h5{
+          margin:0;
+      }
+      > .pull-right{
+          a{
+            font-size:13px;
+            opacity:.35;
+            color:$black;
+            &:hover{
+              opacity:.5;
+              text-decoration:none;
+            }
+          }
+      }
+    }
+    .media-list{
+        margin-top:13px;
+        color:$gray;
+        .media{
+            margin-top:0;
+        }
+        .media-body{
+            @extend %ellipsis;
+        }
+    }
+    dl,
+    .media-list{
+      font-size: 13px;
+    }
+    dt{
+      display: block;
+      float: left;
+      width: 100px;
+      position: relative;
+      color: $grayLight;
+      text-align: right;
+      font-weight:normal;
+    }
+    dd{
+      margin-left: 120px;
+      word-wrap: break-word;
+      overflow: hidden;
+      color:$black;
+    }
+  }
+
+
+// Admin content
+.admin-content .page-header,
+.admin-sidebar-r-content .page-header{
+  &,
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6{
+      margin-top:0;
+  }
+  .pull-right .btn{
+    position:relative;
+    top:7px;
+  }
+  .pull-right .btn.small{
+    top:-2px;
+  }
+}
+
+.admin-content-empty{
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+  }
+}
+  .admin-content-empty-wrapper{
+      display: inline-block;
+      vertical-align: middle;
+      p{
+          color:$gray;
+          margin-bottom:20px;
+      }
+  }
+  .admin-empty-icon{
+      font-size:152px;
+      color:$grayLighter;
+  }
+
+.admin-sidebar-r-content,
+.admin-content-list,
+.admin-content-details{
+     padding:15px 20px 0;
+}
+
+.admin-inverse{
+  margin:0 -20px;
+  padding:15px 20px;
+  $lightWell: lighten($wellBackground, 2%);
+  background-color:$lightWell;
+  box-shadow:0 0 0 1px #acb8c3,inset 0 1px 0 0 rgba(#607487,0.15);
+}
+
+.dropdown-organization{
+    font-family:$headingsFontFamily;
+    color:$white;
+    font-size:14px;
+}
+
+.well-getstarted{
+  a{
+    color:$grayDark;
+  }
+}
