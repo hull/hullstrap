@@ -89,7 +89,7 @@
                        Victor <b class="caret"></b>
                      </a>
                      <ul class="dropdown-menu">
-                       <li><a  href="#myModal" data-toggle="modal">Edit your profile</a></li>
+                       <li><a  href="#profileModal" data-toggle="modal">Edit your profile</a></li>
                        <li class="divider"></li>
                        <li><a href="#">Sign out</a></li>
                      </ul>
@@ -107,6 +107,7 @@
       
       </header> <!-- /.admin-header -->
       
+      <!--
       <section class="admin-content admin-content-list">
         <div class="page-header">
            <div class="pull-right">
@@ -139,6 +140,7 @@
                 </ul>
               </div>
               <h4><a href="#">Universal</a></h4>
+              <code>http://universal.hullapp.io</code>
             </div> 
             <div class="span4 organizations-item">
               <a href="#" class="thumbnail">
@@ -160,9 +162,12 @@
                 </ul>
               </div>
               <h4><a href="#">Hull demo</a></h4>
+              <code>http://hull-demos.hullapp.io</code>
             </div> 
          </div>
       </section>
+      -->
+      
       
       <!--
       <section class="admin-content admin-content-empty text-center">
@@ -178,17 +183,16 @@
       </section>
       -->
       
-      <!--
       <section class="admin-content admin-content-list">
          <div class="page-header">
            <div class="pull-right">
-             <a href="#" class="btn btn-primary">
+             <a href="#appModal" data-toggle="modal" class="btn btn-primary">
                <i class="icon-plus icon-white"></i>
-               Add a new service
+               Create a new application
              </a>
            </div>
-           <h3>Services</h3>
-           <p class="muted">Services add features to your app. They belong to families such as Storage, Analytics, Identity.</p>
+           <h3>Applications</h3>
+           <p class="muted">Applications define which services to use. User interactions are segmented by app.</p>
          </div>
          
          <div id="list">
@@ -517,23 +521,97 @@
     
     
     <!-- Modal -->
-    <div id="myModal" class="modal modal-small hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 id="myModalLabel">Modal header</h4>
+    <div id="appModal" class="modal modal-small hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header text-center">
+        <h4 id="myModalLabel">Create a new application</h4>
       </div>
       <div class="modal-body">
         <form class="form-horizontal">
           <fieldset>
             <div class="control-group">
-              <label class="control-label" for="input01">Text input</label>
+              <label class="control-label" for="input01">Name</label>
+              <div class="controls">
+                <input type="text" class="input-large" id="input01">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="input01">Description</label>
+              <div class="controls">
+                <textarea class="input-large"></textarea>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="input01">Domains</label>
+              <div class="controls">
+                <input type="text" class="input-large" id="input01">
+                <p class="help-block">Enter the domains where you'll use your app. Example : "myapp.com awesome.me"</p>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+    
+    <div id="profileModal" class="modal modal-small hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header text-center">
+        <h4 id="myModalLabel">Edit your profile</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <fieldset>
+            <div class="control-group">
+              <label class="control-label" for="input01">Full name</label>
               <div class="controls">
                 <input type="text" class="input-large" id="input01">
                 <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label" for="input01">Text input</label>
+              <label class="control-label" for="input01">Email</label>
+              <div class="controls">
+                <input type="text" class="input-large" id="input01" placeholder="user@domain.com">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="input01">Password</label>
+              <div class="controls">
+                <a href="#passwordModal" data-toggle="modal" class="btn btn-small">Change Password</a>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+    
+    <div id="passwordModal" class="modal modal-small hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header text-center">
+        <h4 id="myModalLabel">Edit your password</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <fieldset>
+            <div class="control-group">
+              <label class="control-label" for="input01">Current password</label>
+              <div class="controls">
+                <input type="text" class="input-large" id="input01">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="input01">Password</label>
+              <div class="controls">
+                <input type="text" class="input-large" id="input01">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="input01">Confirm password</label>
               <div class="controls">
                 <input type="text" class="input-large" id="input01">
               </div>
