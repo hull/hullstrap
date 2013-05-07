@@ -28,7 +28,7 @@
               <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                   <li class="admin-edit-administration">
-                    <a href="#" >
+                    <a href="#" title="Edit Organization">
                       <i class="icon-cog icon-white"></i>
                     </a>
                   </li>
@@ -100,9 +100,11 @@
                    </li>
                  </ul>
                  
+                 <!--
                  <a href="#" class="btn js-toggle-sidebar-r">
                    Back
                  </a>
+                 -->
                  
               </div><!--/.nav-collapse -->
             </div>
@@ -187,6 +189,67 @@
       </section>
       -->
       
+      <section class="admin-content admin-form">
+        <div class="page-header">
+          <code class="pull-right" style="position:relative;top:8px">http://hull-demos.hullapp.io</code>
+          <h3 class="m0">Edit Hull Demo</h3>
+        </div>
+        
+        <form>
+          <fieldset class="m2">
+            <legend>General settings</legend>
+            <label>Organization Name</label>
+            <input type="text" class="input-block-level" placeholder="Type something…">
+          
+            <label>Organization Namespace</label>
+            <input type="text" class="input-block-level" placeholder="Type something…">
+            <small class="help-block muted">Example block-level help text here.</small>
+          </fieldset>
+
+          <fieldset>
+            <legend>Plan</legend>
+            <p>Current Plan: <strong>Premium</strong></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum incidunt quia cumque sint ad explicabo et harum praesentium saepe id accusamus dolores laudantium hic earum deserunt placeat! Ullam dicta.</p>
+            <a href="#" class="btn">Change plan</a>
+          </fieldset>
+                    
+          <fieldset>
+            <hr>
+            <div class="text-right">
+              <button class="btn btn-danger pull-left">Delete Organization</button>
+              <button class="btn btn-link">Cancel</button>
+              <button type="submit" class="btn btn-primary">Save Organization</button>
+            </div>
+          </fieldset>
+          
+        </form>
+        
+        
+        
+        
+      </section>
+      
+      <!--
+      <section class="admin-content admin-playground">
+        <header class="admin-playground-bar">
+          <a href="#" class="btn btn-primary pull-right">Build the code</a>
+          <small class="muted">select your application: </small>
+          <select class="m0">
+            <option>Hull-tumblr</option>
+          </select>
+        </header>
+        <div class="admin-playground-code">
+          <textarea>
+<div data-hull-widget="identity@hull"></div>
+          </textarea>
+        </div>
+        <div class="admin-playground-result">
+          <div class="well well-inverse m1"></div>
+        </div>
+      </section>
+      -->
+      
+      <!--
       <section class="admin-content admin-content-list">
          <div class="page-header">
            <div class="pull-right">
@@ -648,14 +711,18 @@
     <script src="assets/js/list.paging.js"></script>
     <!-- endbuild -->
     <script>
-      var options = {
-          valueNames: [ 'name', 'id','users','inits' ],
-          page: 50,
-          plugins: [
-              [ 'paging' ]
-          ]
-      };
-      var featureList = new List('list', options);
+      $(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+        var options = {
+            valueNames: [ 'name', 'id','users','inits' ],
+            page: 50,
+            plugins: [
+                [ 'paging' ]
+            ]
+        };
+        var featureList = new List('list', options);
+      });
+      
     </script>
 
   </body>
