@@ -41,6 +41,32 @@
   }
 }
 
+.list-user{
+  margin-top:10px;
+  > li > a {
+    @include position;
+    font-weight:normal;
+    color:inherit;
+    strong{
+        color:$grayDarker;
+    }
+  }
+
+  ul.muted{
+    i{opacity:.5;}
+      > li {
+          display:inline-block;
+      }
+      > li + li { margin-right:4px; }
+  }
+
+  .icon-chevron-right{
+    @include position(absolute, 50% 6px 0 0);
+    opacity:.25;
+    margin-top:-7px;
+  }
+}
+
 .paging{
   margin-bottom:20px;
   text-align:center;
