@@ -1,3 +1,10 @@
+.navbar .nav-center{
+    @include position(absolute, 0 0px 0 0px);
+    float:none;
+    text-align:center;
+    > li { float:none;text-align:left;display: inline-block; }
+}
+
 .nav-list-admin{
     .nav-header{
       text-shadow:none;

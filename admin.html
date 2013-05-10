@@ -85,12 +85,25 @@
           <div class="navbar-inner">
             <div class="container">
               <div class="nav-collapse collapse">
-                <ul class="nav pull-right">
-                  <li>
-                    <a href="#">
-                      Documentation
+                
+                <ul class="nav nav-center">
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      Hull.io
+                      <span class="caret"></span>
                     </a>
-                  </li>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="#">Identity</a>
+                      </li>
+                      <li>
+                        <a href="#">Activity</a>
+                      </li>
+                    </ul>
+                  </li> 
+                </ul>
+                
+                <ul class="nav pull-right">
                    <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                        <img src="//gravatar.com/avatar/d7011ffc88d086f44402be5be6d233c4.png?s=22">
@@ -99,16 +112,15 @@
                      <ul class="dropdown-menu">
                        <li><a  href="#profileModal" data-toggle="modal">Edit your profile</a></li>
                        <li class="divider"></li>
+                       <li><a href="#">Documentation</a></li>
                        <li><a href="#">Sign out</a></li>
                      </ul>
                    </li>
                  </ul>
                  
-                 <!--
                  <a href="#" class="btn js-toggle-sidebar-r">
                    Back
                  </a>
-                 -->
                  
               </div><!--/.nav-collapse -->
             </div>
@@ -118,26 +130,7 @@
       </header> <!-- /.admin-header -->
       
       <header class="admin-secondary-header">
-        
-        <ul class="nav nav-pills pull-right">
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-              Select application
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="#">&#10004; Tumblr</a>
-              </li>
-              <li>
-                <a href="#">Hull.io</a>
-              </li>
-            </ul>
-          </li> 
-          <li>
-            <button class="btn btn-primary pull-right">Render</button>
-          </li> 
-        </ul>
+        <button class="btn btn-primary pull-right">Render</button>
         <ul class="nav nav-pills">
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
