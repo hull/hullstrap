@@ -20,7 +20,30 @@ $minWidth: 600px;
     bottom: 0;
     width: $sidebarWidth;
     z-index: 997;
+    .nav-list-admin{
+        @include position(absolute, $headerHeight 0px 44px 0px);
+        padding-top:22px;
+        padding-bottom:22px;
+        overflow-y:auto;
+        overflow-x:hidden;
+    }
   }
+    .admin-sidebar-footer{
+        @include position(absolute, 0 0px 0px 0px);
+        padding:$paddingLarge;
+        background-color:rgba(black,.3);
+        box-shadow:inset 0 1px 5px rgba(black,.1);
+        code{
+          @extend %ellipsis;
+          width:100%;
+          border:0;
+          padding:0;
+          margin:0;
+          background-color:transparent;
+          color:$grayLight;
+          display:block;
+        }
+    }
   .admin-header{
      @include position(fixed, 0px 0px 0 $sidebarWidth);
      @include box-sizing(border-box);
