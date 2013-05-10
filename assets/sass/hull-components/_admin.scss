@@ -1,6 +1,7 @@
 $sidebarWidth: 244px;
 $sidebarContentWidth: 400px;
 $headerHeight: 56px;
+$secondaryHeaderHeight: 44px;
 $minWidth: 600px;
 
 .admin{
@@ -51,14 +52,28 @@ $minWidth: 600px;
      z-index: 999;
      min-width:$minWidth;
   }
+  .admin-secondary-header{
+      @include position(fixed, $headerHeight 0px 0 $sidebarWidth);
+      @include box-sizing(border-box);
+      height:$secondaryHeaderHeight;
+      z-index: 998;
+      min-width:$minWidth;
+      background-color:$white;
+      @include background-image(linear-gradient(rgba(white,0),rgba(black,.05)));
+      box-shadow: inset 0 -1px 0 rgba(white, .75),
+                  0 1px 0 rgba($navbarBorder,.5);
+  }
   .admin-content{
     @include position(absolute, $headerHeight 0px 0px $sidebarWidth);
     @include box-sizing(border-box);
     overflow:auto;
     background-color:$white;
-    z-index: 998;
+    z-index: 997;
     min-width:$minWidth;
     border-left:1px solid $navbarBorder;
+    .admin-secondary-header+&{
+        top:$headerHeight+$secondaryHeaderHeight;
+    }
   }
 
   .admin-sidebar-r{
