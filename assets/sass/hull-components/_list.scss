@@ -76,13 +76,13 @@
 
 
 .organizations-item {
-   .thumbnail{margin-bottom:10px;}
    > h4{
        @extend %ellipsis;
        a{color:$grayDark;}
    }
+   code{@extend %ellipsis;}
    .btn-group{
-    @include position(relative, 0px 0 0 0);
+    @include position(relative, 10px 0 0 0);
     > .btn{opacity:.75;}
   }
 }
