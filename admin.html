@@ -211,7 +211,6 @@
       </section>
       -->
       
-      <!--
       <section class="admin-content admin-content-list">
          <div class="page-header">
            <h3 class="m0">Users</h3>
@@ -231,9 +230,6 @@
                 <li>
                   <a href="#" class="sort" data-sort="organization">Organization</a>
                 </li>
-                <li>
-                  <a href="#" class="sort" data-sort="location">Location</a>
-                </li>
               </ul>
             </div>
             
@@ -248,14 +244,15 @@
                       </div>
                       <div class="media-body">
                         <h5 class="media-heading"><span class="name">Philip Foeckler</span> <small>Front-end-dev, social-features</small></h5>
-                        <ul class="unstyled muted">
+                        <ul class="unstyled">
                           <li class="organization">
-                            <i class="icon-briefcase"></i> 
-                            Brandfolder
+                            <strong>Organizations:</strong> Hulldemo
                           </li>
-                          <li class="location">
-                            <i class="icon-map-marker"></i>
-                            Paris
+                          <li>
+                            <strong>Progress:</strong> 4/6
+                          </li>
+                          <li>
+                            <strong>Status:</strong> app_initialized
                           </li>
                         </ul>
                       </div>
@@ -271,14 +268,15 @@
                       </div>
                       <div class="media-body">
                         <h5 class="media-heading"><span class="name">Philip Foeckler</span> <small>Front-end-dev, social-features</small></h5>
-                        <ul class="unstyled muted">
+                        <ul class="unstyled">
                           <li class="organization">
-                            <i class="icon-briefcase"></i> 
-                            Brandfolder
+                            <strong>Organizations:</strong> Hulldemo
                           </li>
-                          <li class="location">
-                            <i class="icon-map-marker"></i>
-                            Paris
+                          <li>
+                            <strong>Progress:</strong> 4/6
+                          </li>
+                          <li>
+                            <strong>Status:</strong> app_initialized
                           </li>
                         </ul>
                       </div>
@@ -294,14 +292,15 @@
                       </div>
                       <div class="media-body">
                         <h5 class="media-heading"><span class="name">Philip Foeckler</span> <small>Front-end-dev, social-features</small></h5>
-                        <ul class="unstyled muted">
+                        <ul class="unstyled">
                           <li class="organization">
-                            <i class="icon-briefcase"></i> 
-                            Brandfolder
+                            <strong>Organizations:</strong> Hulldemo
                           </li>
-                          <li class="location">
-                            <i class="icon-map-marker"></i>
-                            Paris
+                          <li>
+                            <strong>Progress:</strong> 4/6
+                          </li>
+                          <li>
+                            <strong>Status:</strong> app_initialized
                           </li>
                         </ul>
                       </div>
@@ -317,14 +316,15 @@
                       </div>
                       <div class="media-body">
                         <h5 class="media-heading"><span class="name">Philip Foeckler</span> <small>Front-end-dev, social-features</small></h5>
-                        <ul class="unstyled muted">
+                        <ul class="unstyled">
                           <li class="organization">
-                            <i class="icon-briefcase"></i> 
-                            Brandfolder
+                            <strong>Organizations:</strong> Hulldemo
                           </li>
-                          <li class="location">
-                            <i class="icon-map-marker"></i>
-                            Paris
+                          <li>
+                            <strong>Progress:</strong> 4/6
+                          </li>
+                          <li>
+                            <strong>Status:</strong> app_initialized
                           </li>
                         </ul>
                       </div>
@@ -340,14 +340,15 @@
                       </div>
                       <div class="media-body">
                         <h5 class="media-heading"><span class="name">Philip Foeckler</span> <small>Front-end-dev, social-features</small></h5>
-                        <ul class="unstyled muted">
+                        <ul class="unstyled">
                           <li class="organization">
-                            <i class="icon-briefcase"></i> 
-                            Brandfolder
+                            <strong>Organizations:</strong> Hulldemo
                           </li>
-                          <li class="location">
-                            <i class="icon-map-marker"></i>
-                            Paris
+                          <li>
+                            <strong>Progress:</strong> 4/6
+                          </li>
+                          <li>
+                            <strong>Status:</strong> app_initialized
                           </li>
                         </ul>
                       </div>
@@ -361,7 +362,6 @@
          </div>
          
       </section>
-      -->
       
       <!--
       <section class="admin-content admin-form">
@@ -575,7 +575,7 @@
          
       </section> <!-- /.admin-content-list -->
       
-      
+      <!--
       <section class="admin-content admin-content-details">
          <div class="page-header">
            <div class="pull-right">
@@ -717,6 +717,7 @@
         </div>
         
     </section>
+    -->
     
     
     <aside class="admin-sidebar-r">
@@ -892,7 +893,7 @@
       $(function() {
         $('[data-toggle="tooltip"]').tooltip();
         var options = {
-            valueNames: [ 'name', 'id','users','inits','organization','location' ],
+            valueNames: [ 'name', 'id','users','inits','organization' ],
             page: 50,
             plugins: [
                 [ 'paging' ]

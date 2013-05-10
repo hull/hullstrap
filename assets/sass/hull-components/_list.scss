@@ -52,14 +52,17 @@
     }
   }
 
-  ul.muted{
-    i{opacity:.5;}
+  ul.unstyled{
       > li {
           display:inline-block;
       }
-      > li + li { margin-right:4px; }
+      > li + li {
+        &:before{
+            content:"-";
+            margin: 0 2px;
+        }
+      }
   }
-
   .icon-chevron-right{
     @include position(absolute, 50% 6px 0 0);
     opacity:.25;
