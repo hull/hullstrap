@@ -1,7 +1,7 @@
 $sidebarWidth: 244px;
 $sidebarContentWidth: 400px;
 $headerHeight: 56px;
-$secondaryHeaderHeight: 44px;
+$secondaryHeaderHeight: 48px;
 $minWidth: 600px;
 
 .admin{
@@ -59,9 +59,17 @@ $minWidth: 600px;
       z-index: 998;
       min-width:$minWidth;
       background-color:$white;
+      padding:8px 10px;
       @include background-image(linear-gradient(rgba(white,0),rgba(black,.05)));
       box-shadow: inset 0 -1px 0 rgba(white, .75),
                   0 1px 0 rgba($navbarBorder,.5);
+      select{
+        font-family:$headingsFontFamily;
+        font-size:13px;
+        width:130px;
+        border-color:rgba(black,.25);
+        background-color:#fff;
+      }
   }
   .admin-content{
     @include position(absolute, $headerHeight 0px 0px $sidebarWidth);
@@ -246,26 +254,9 @@ $minWidth: 600px;
 
 .admin-playground{
 }
-  $adminHeight: 48px;
-  .admin-playground-bar{
-    @include box-sizing(border-box);
-    @include position(absolute, 0 0px 0px 0px);
-    @include background-image(linear-gradient(rgba(black,.005), rgba(0,0,0,.05)));
-    background-color:#fff;
-    padding:8px 10px;
-    box-shadow:inset 0 1px 0 rgba(black,.1);
-    z-index:2;
-    select{
-      font-family:$headingsFontFamily;
-      font-size:13px;
-      width:130px;
-      border-color:rgba(black,.25);
-      background-color:#fff;
-    }
-  }
   .admin-playground-code{
     @include box-sizing(border-box);
-    @include position(absolute, 0px 0 $adminHeight 0px);
+    @include position(absolute, 0px 0 0px 0px);
     width:50%;
     overflow:auto;
     z-index:1;
@@ -283,7 +274,7 @@ $minWidth: 600px;
   }
   .admin-playground-result{
     @include box-sizing(border-box);
-    @include position(absolute, 0px 0  $adminHeight 50%);
+    @include position(absolute, 0px 0 0px 50%);
     background:image-url('ps_neutral.png');
     box-shadow:$hrBorder -1px 0 0,rgba($black,0.05) 1px 0 2px inset;
     width:50%;
