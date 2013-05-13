@@ -1,0 +1,45 @@
+.navbar .nav-center{
+    @include position(absolute, 0 0px 0 0px);
+    float:none;
+    text-align:center;
+    > li { float:none;text-align:left;display: inline-block; }
+}
+
+.nav-list-admin{
+    .nav-header{
+      text-shadow:none;
+      color:$gray;
+    }
+    .label{
+      @include position(relative, 2px 0 0 0);
+    }
+    > li {
+      text-shadow:none;
+      > a, > a:hover {
+        background:none;
+        box-shadow:none;
+        color:$white;
+        text-shadow:none;
+        opacity:.5;
+      }
+      > a:hover {
+        opacity:1;
+      }
+    }
+    > li.active {
+      > a, > a:hover { 
+        background:rgba(black,.25);
+        box-shadow: 0 -1px 0 rgba(black,.5),
+                    inset 0 1px 3px rgba(black,.05),
+                    0 1px 0 rgba(white,.025),
+                    inset 0 -1px 0 rgba(black,.5);
+        color:$white;
+        opacity:.8;
+      }
+      > a:hover { opacity:1; }
+    }
+    .nav-stat{
+        small{display:block;margin-bottom:2px;}
+        color:$grayLight;
+    }
+}

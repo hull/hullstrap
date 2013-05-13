@@ -1,0 +1,12 @@
+.progress-small{
+  margin-bottom:8px;
+  border-radius:2px;
+  height:8px;
+  box-shadow:none;
+  background:rgba(black,.15);
+  .admin-sidebar &{background:rgba(black,.35);}
+  .bar{
+    border-radius:2px;
+    box-shadow:none;
+  }
+}

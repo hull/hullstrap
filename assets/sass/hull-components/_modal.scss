@@ -1,0 +1,15 @@
+.modal-small{
+    width:400px;
+    margin-left:-200px;
+    .form-horizontal{
+      p,label{
+          font-size:13px;
+      }
+        .controls {
+          margin-left: 120px;
+        }
+        .control-label {
+          width: 100px;
+        }
+    }
+}

@@ -44,6 +44,14 @@
       font-size:$baseFontSize;
   }
 
+  .btn-link{
+      &,&:hover,&:focus,&:active,&.dropdown-toggle{
+        background:none!important;
+        color:$linkColor;
+        text-decoration:none;
+        box-shadow:none!important;
+      }
+  }
 
 // Set the backgrounds
 // -------------------------
