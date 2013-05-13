@@ -1,7 +1,7 @@
 {
   "name": "hullstrap",
   "author": "Victor Coulon <vic.coulon@gmail.com>",
-  "version": "0.0.5",
+  "version": "0.1",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-clean": "~0.4.1",
