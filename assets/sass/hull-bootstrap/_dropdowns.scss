@@ -19,10 +19,3 @@
              inset 0 -1px 0 darken($wellBackgroundDark, 20%),
              inset 0 1px 1px rgba(white,.25);
 }
-
-.nav-tabs .open .dropdown-toggle,
-.nav-pills .open .dropdown-toggle,
-.nav > li.dropdown.open.active > a:hover,
-.nav > li.dropdown.open.active > a:focus{
-  text-shadow:none; 
-}
