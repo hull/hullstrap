@@ -21,6 +21,7 @@ $minWidth: 600px;
     bottom: 0;
     width: $sidebarWidth;
     z-index: 997;
+    .navbar .dropdown>a{@extend %ellipsis;max-width:170px;}
     .nav-list-admin{
         @include position(absolute, $headerHeight 0px 44px 0px);
         padding-top:22px;
@@ -51,6 +52,7 @@ $minWidth: 600px;
      height:$headerHeight;
      z-index: 999;
      min-width:$minWidth;
+     .btn{ @include position;z-index:2; }
   }
   .admin-secondary-header{
       @include position(fixed, $headerHeight 0px 0 $sidebarWidth);
