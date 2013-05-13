@@ -51,7 +51,8 @@ module.exports = function(grunt) {
     copy: {
       dist: {
         files: {
-          'dist/<%= version %>/index.html': ['index.html']
+          'dist/<%= version %>/index.html': ['index.html'],
+          'dist/<%= version %>/admin.html': ['admin.html']
         }
       }
     },
@@ -96,7 +97,7 @@ module.exports = function(grunt) {
     },
 
     usemin: {
-      html: ['dist/<%= version %>/index.html']
+      html: ['dist/<%= version %>/index.html','dist/<%= version %>/admin.html']
     },
 
     watch: {
