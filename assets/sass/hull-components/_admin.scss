@@ -76,6 +76,7 @@ $minWidth: 600px;
   .admin-content{
     @include position(absolute, $headerHeight 0px 0px $sidebarWidth);
     @include box-sizing(border-box);
+    padding:15px 20px 0;
     overflow:auto;
     background-color:$white;
     z-index: 997;
@@ -183,7 +184,8 @@ $minWidth: 600px;
   }
 }
 
-.admin-content-empty{
+.admin-empty{
+  height:100%;
   &:before {
     content: '';
     display: inline-block;
@@ -192,7 +194,7 @@ $minWidth: 600px;
     margin-right: -0.25em; /* Adjusts for spacing */
   }
 }
-  .admin-content-empty-wrapper{
+  .admin-empty-wrapper{
       display: inline-block;
       vertical-align: middle;
       p{
@@ -204,13 +206,6 @@ $minWidth: 600px;
       font-size:152px;
       color:$grayLighter;
   }
-
-.admin-sidebar-r-content,
-.admin-content-list,
-.admin-form,
-.admin-content-details{
-     padding:15px 20px 0;
-}
 
 .admin-inverse{
   margin:0 -20px;
@@ -254,8 +249,6 @@ $minWidth: 600px;
   }
 }
 
-.admin-playground{
-}
   .admin-playground-code{
     @include box-sizing(border-box);
     @include position(absolute, 0px 0 0px 0px);
