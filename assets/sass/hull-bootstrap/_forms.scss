@@ -1,3 +1,30 @@
+
+input[type="text"].input-block-level,
+input[type="password"].input-block-level,
+input[type="datetime"].input-block-level,
+input[type="datetime-local"].input-block-level,
+input[type="date"].input-block-level,
+input[type="month"].input-block-level,
+input[type="time"].input-block-level,
+input[type="week"].input-block-level,
+input[type="number"].input-block-level,
+input[type="email"].input-block-level,
+input[type="url"].input-block-level,
+input[type="search"].input-block-level,
+input[type="tel"].input-block-level,
+input[type="color"].input-block-level {
+  min-height: 42px;
+}
+
 legend + .control-group {
   margin-top: 0px;
+}
+
+form abbr[title],
+form abbr[data-original-title]{
+  border-bottom:0;
+  &[title="required"]{
+    color:$red;
+    font-size:16px;
+  }
 }
