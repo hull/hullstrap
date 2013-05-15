@@ -35,15 +35,17 @@ $minWidth: 600px;
         padding:$paddingLarge;
         background-color:rgba(black,.3);
         box-shadow:inset 0 1px 5px rgba(black,.1);
-        code{
-          @extend %ellipsis;
+        input{
           width:100%;
-          border:0;
           padding:0;
           margin:0;
           background-color:transparent;
           color:$grayLight;
           display:block;
+          font-family:$monoFontFamily;
+          font-size:$fontSizeMini;
+
+          &:focus,&{border:0;box-shadow:none;}
         }
     }
   .admin-header{
