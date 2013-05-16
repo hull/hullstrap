@@ -81,7 +81,7 @@ $minWidth: 600px;
     padding:15px 20px 0;
     overflow:auto;
     background-color:$white;
-    z-index: 997;
+    z-index: 996;
     min-width:$minWidth;
     border-left:1px solid $navbarBorder;
     .admin-secondary-header+&{
@@ -279,3 +279,29 @@ $minWidth: 600px;
     z-index:1;
     padding:20px;
   }
+
+.admin-messages{
+  @include position(absolute, $headerHeight 0px 0 $sidebarWidth);
+  z-index: 997;
+  min-width:$minWidth;
+  box-shadow:0 1px 2px rgba(0, 0, 0, 0.025);
+  @include animation-fill-mode(both);
+  @include animation-duration(500ms);
+  @include animation-name(slideUp);
+  @include animation-delay(1.5s);
+  .admin-secondary-header+&{
+      top:$headerHeight+$secondaryHeaderHeight;
+  }
+  .alert{
+    padding-top:12px;
+    padding-bottom:12px;
+    border-radius:0;
+    border-width:0 0 1px 0;
+    margin:0;
+  }
+}
+
+@include keyframes(slideUp){
+  0%{@include translateY(-100%);}
+  100%{}
+};
