@@ -190,6 +190,7 @@ $minWidth: 600px;
 }
 
 .admin-empty{
+  @include user-select(none);
   height:100%;
   font-family:$headingsFontFamily;
   &:before {
