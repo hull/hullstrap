@@ -191,6 +191,7 @@ $minWidth: 600px;
 
 .admin-empty{
   height:100%;
+  font-family:$headingsFontFamily;
   &:before {
     content: '';
     display: inline-block;
@@ -200,17 +201,34 @@ $minWidth: 600px;
   }
 }
   .admin-empty-wrapper{
-      display: inline-block;
-      vertical-align: middle;
-      p{
-          color:$gray;
-          margin-bottom:20px;
-      }
+    display: inline-block;
+    vertical-align: middle;
+    p{
+      color:$gray;
+      margin-bottom:20px;
+    }
   }
   .admin-empty-icon{
-      font-size:152px;
-      color:$grayLighter;
+    font-size:152px;
+    color:$grayLighter;
   }
+.admin-empty--sidebar{
+  &:before{margin-right:-4px;}
+  .admin-empty-wrapper{
+    margin-top:-80px;
+  }
+  .admin-empty-icon{
+    font-size:90px;
+    color:lighten($grayDarker, 3%);
+    text-shadow:0 -1px 0 rgba(black,.15);
+  }
+  p{
+    color:lighten($grayDarker, 25%);
+    padding-top:5px;
+    text-shadow:0 -1px 0 rgba(black,.15);
+    margin-bottom:0;
+  }
+}
 
 .admin-inverse{
   margin:0 -20px;
