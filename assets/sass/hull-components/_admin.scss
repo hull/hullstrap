@@ -21,7 +21,32 @@ $minWidth: 600px;
     bottom: 0;
     width: $sidebarWidth;
     z-index: 997;
-    .navbar .dropdown>a{@extend %ellipsis;max-width:170px;}
+    .navbar .dropdown>a{
+      @extend %ellipsis;max-width:170px;
+      .caret{
+        @include position;
+        top: 4px;
+        left: 2px;
+        &:before{
+          @include position(absolute, -10px 0 0 -4px);
+          display: inline-block;
+          width: 0;
+          height: 0;
+          vertical-align: top;
+          border-bottom: 4px solid #999999;
+          border-right: 4px solid transparent;
+          border-left: 4px solid transparent;
+          content: "";
+        }
+      }
+
+    }
+    .navbar .dropdown.open .caret:before,
+    .navbar .dropdown>a:hover .caret:before,
+    .navbar .dropdown>a:focus .caret:before,
+    .navbar .dropdown>a:active .caret:before{ 
+      border-bottom-color:#eee;
+    }
     .nav-list-admin{
         @include position(absolute, $headerHeight 0px 44px 0px);
         padding-top:22px;

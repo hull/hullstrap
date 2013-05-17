@@ -3,6 +3,22 @@
     float:none;
     text-align:center;
     > li { float:none;text-align:left;display: inline-block; }
+    .caret{
+      @include position;
+      top: 4px;
+      left: 2px;
+      &:before{
+        @include position(absolute, -10px 0 0 -4px);
+        display: inline-block;
+        width: 0;
+        height: 0;
+        vertical-align: top;
+        border-bottom: 4px solid #000;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        content: "";
+      }
+    }
 }
 
 .nav-list-admin{
