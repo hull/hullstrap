@@ -20,15 +20,8 @@ legend + .control-group {
   margin-top: 0px;
 }
 
-form abbr[title],
-form abbr[data-original-title]{
-  border-bottom:0;
-  &[title="required"]{
-    color:$red;
-    font-size:16px;
-  }
-}
-
-.help-block, .help-inline{
+.help-block,
+.help-inline{
   color:$grayLight;
 }
+
