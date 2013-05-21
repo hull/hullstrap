@@ -2,7 +2,11 @@
     width:400px;
     margin-left:-200px;
     .form-horizontal{
-      p,label{
+      p,
+      label,
+      input[type="text"],
+      input[type="password"],
+      select{
           font-size:13px;
       }
         .controls {
