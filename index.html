@@ -887,6 +887,12 @@
                 </div>
             </div>
           </div>
+          
+          <div class="row">
+            <div class="span12">
+                <a href="#" data-toggle="tooltip" title="first tooltip">hover over me</a>
+            </div>
+          </div>
         </section>
 
       </div> <!-- /container -->
@@ -1040,6 +1046,11 @@
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
     <!-- endbuild -->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
 
   </body>
 </html>
