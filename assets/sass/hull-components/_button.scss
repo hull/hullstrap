@@ -1,0 +1,13 @@
+.btn-buildwithhull{
+  text-transform: uppercase;
+  padding: 1px 8px;
+  font-size: 11px;
+  line-height: 19px;
+  &:after{
+    @include position(relative, 2px 0 0 0);
+    content: image-url('logo-small.png');
+    line-height:0;
+    vertical-align: top;
+    display: inline-block;
+  }
+}
