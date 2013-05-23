@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- build:css hullstrap.css -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
+
+    <script type="text/javascript" src="//use.typekit.net/jyf4qww.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+
+  <body>
+
+
+<div class="wrapper featurette-well">
+  <div class="container">
+      <div class="row">
+        <div class="span10 offset1">
+            <div class="well well-inverse project-well">
+                <header class="project-header">
+                    <div class="pull-right">
+                        <a href="#" class="btn">
+                            <i class="icon-random"></i>
+                            Fork it on Github
+                        </a>
+                    </div>
+                    <h1>Hull Like</h1>
+                    <p class="lead m0">Going barebones with Hull.data.api</p>
+                    <hr>
+
+                 </header>
+
+        
+                <blockquote>
+                <p data-likes="1"><strong>tl;dr;</strong> Click on the headings, paragraphs and list elements of this page
+                and rate them as you please.</p>
+                </blockquote>
+                <p data-likes="1">This tutorial is aimed at demonstrating that <a href="http://hull.io">hull.io</a> provides a dead-simple yet powerful <a href="http://hull.io/docs/api">API</a> client.</p>
+                
+                <div class="m3"></div>
+                
+                <h3 data-likes="2">What will we do ?</h3>
+                <p data-likes="2">We will build a minimalistic review tool for documentation, taking this very <code>README</code> file
+                as a source.
+                The purpose of the tool is to allow readers to indicate within a document which are the parts
+                they like the most.</p>
+                <p data-likes="5">More precisely, with hull.io's API, we will on the fly create <em>entities</em> within our platform
+                (those entities being the paragraphs and headings of the document) so the readers,
+                once logged in with Twitter, can review these entities.</p>
+                <div class="m3"></div>
+                <h3 data-likes="1">I want to play with it</h3>
+                <p data-likes="0">The demo is located on <a href="http://hull.github.io/hull-like">github pages</a>.</p>
+                <p data-likes="2">Head on to the demo page and click on any paragraph or heading, a popover will show either:</p>
+                <ul>
+                <li data-likes="0">a Login button if you're not logged in yet</li>
+                <li data-likes="0">a (un)Recommend button with the associated number of recommendations for the selected entity</li>
+                </ul>
+                <div class="m3"></div>
+                <h3 data-likes="2">Source code, please!</h3>
+                <p data-likes="0">The magic is contained in the file located at <code>app/scripts/popover.js</code>, which
+                <a href="./docs/popover.html">complete annotated source code is available here</a>;</p>
+                <p data-likes="0">The complete source code of the project is available <a href="http://github.com/hull/hull-like">here on github</a>.
+                Please note that the project has been generated with our <a href="https://github.com/hull/grunt-init-hull">grunt-init template</a>,
+                which we encourage you to use to get started.</p>
+                <div class="m3"></div>
+                <h3 data-likes="0">Fork and Install</h3>
+                <p data-likes="3">To install your own, you must have a <a href="http://hull.io">hull.io</a> account, and have created an application.
+                Then copy your application's id and organization's URL (found in the admin) in the file <code>app/script/hull-init.js</code>.</p>
+                <p data-likes="2">Then run the following commands:</p>
+                <pre><code>npm install
+                grunt prepare
+                grunt server</code></pre>
+                <p data-likes="0"><code>grunt server</code> will start a server listening on port <code>9000</code> which you can use for development purpose.</p>
+                <h4 data-likes="0">Use in your own project</h4>
+                <p data-likes="1">Everything that is needed to enable these functionnalities for your app (apart from <code>hull.js</code>) is contained in a single <code>jQuery</code> plugin,
+                which you can find in the file <code>app/scripts/popover.js</code>.</p>
+                <p data-likes="1">This file also bootstraps the demo, to give an overview of the expected parameters.</p>
+                <div class="m3"></div>
+                <h3 data-likes="1">Want moar ?</h3>
+                <p data-likes="0">Check out our other demos on <a href="http://hull.github.io">our github page</a> and visit <a href="http://hull.io">our website</a>.</p>
+                <p data-likes="0">If you want to get in touch with us, feel free to email us at <a href="mailto:contact@hull.io">contact@hull.io</a>.</p>
+                <div class="m3"></div>
+                <h3 data-likes="0">LICENCE</h3>
+                <p data-likes="0">MIT</p>
+            
+
+                <hr class="m2">
+                <div class="text-center">
+                    <a href="#" class="btn btn-small btn-brand">Build with <span class="btn-brand-logo">hull</span></a>                
+                </div>
+            </div>
+        </div>
+            
+    </div> <!-- /.row -->
+        
+    <footer class="row text-center project-footer">
+        <div class="span10 offset1">
+            <small class="pull-left muted">
+                Copyright 2012 Square, Inc.
+            </small>
+            <small class="pull-right muted">
+                Released under the Apache License 2.0
+            </small>
+        </div>
+    </footer>
+  </div> <!-- /container -->
+</div>
+    
+
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- build:js hullstrap.js -->
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
+  </body>
+</html>

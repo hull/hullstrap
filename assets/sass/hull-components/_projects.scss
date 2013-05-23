@@ -1,10 +1,20 @@
-.projects-footer{
-  border-top:1px solid darken($hrBorder, 5%);
-  > .container{
+.project-header{
+  h1{margin:0 0 10px;}
+  .container{
     padding:30px 0;
   }
-  small.muted{
-    display:block;
-    padding:10px 0 0;
+  hr{
+    margin:40px 0;
   }
+  .btn{
+    margin-top:6px;
+  }
+}
+
+.project-well{
+  padding:30px 40px;
+}
+
+.project-footer{
+  small{margin:0 20px;}
 }

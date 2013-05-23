@@ -1,14 +1,14 @@
-.btn-buildwithhull{
+.btn-brand{
   text-transform: uppercase;
-  padding: 1px 8px;
+  padding: 1px 8px 0;
   font-size: 11px;
   line-height: 19px;
   color:$gray;
-  &:after{
+}
+  .btn-brand-logo{
     @include position(relative, 2px 0 0 0);
-    content: image-url('logo-small.png');
+    @include replace-text-with-dimensions('logo-small.png');
     line-height:0;
     vertical-align: top;
     display: inline-block;
   }
-}
