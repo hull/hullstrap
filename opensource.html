@@ -19,32 +19,32 @@
   <body>
 
 
-<div class="wrapper featurette-well">
+<div class="wrapper">
   <div class="container">
       <div class="row">
         <div class="span10 offset1">
-            <div class="well well-inverse project-well">
-                <header class="project-header">
-                    <div class="pull-right">
-                        <a href="#" class="btn">
-                            <i class="icon-random"></i>
-                            Fork it on Github
-                        </a>
-                    </div>
-                    <h1>Hull Like</h1>
-                    <p class="lead m0">Going barebones with Hull.data.api</p>
-                    <hr>
+                
+                
+            <header class="project-header">
+                <div class="pull-right">
+                    <a href="#" class="btn">
+                        <i class="icon-random"></i>
+                        Fork it on Github
+                    </a>
+                </div>
+                <h1>Hull Like</h1>
+                <p class="lead m0">Going barebones with Hull.data.api</p>
+                <hr>
 
-                 </header>
+             </header>
 
-        
+            <article class="project-content">
                 <blockquote>
                 <p data-likes="1"><strong>tl;dr;</strong> Click on the headings, paragraphs and list elements of this page
                 and rate them as you please.</p>
                 </blockquote>
                 <p data-likes="1">This tutorial is aimed at demonstrating that <a href="http://hull.io">hull.io</a> provides a dead-simple yet powerful <a href="http://hull.io/docs/api">API</a> client.</p>
                 
-                <div class="m3"></div>
                 
                 <h3 data-likes="2">What will we do ?</h3>
                 <p data-likes="2">We will build a minimalistic review tool for documentation, taking this very <code>README</code> file
@@ -54,7 +54,6 @@
                 <p data-likes="5">More precisely, with hull.io's API, we will on the fly create <em>entities</em> within our platform
                 (those entities being the paragraphs and headings of the document) so the readers,
                 once logged in with Twitter, can review these entities.</p>
-                <div class="m3"></div>
                 <h3 data-likes="1">I want to play with it</h3>
                 <p data-likes="0">The demo is located on <a href="http://hull.github.io/hull-like">github pages</a>.</p>
                 <p data-likes="2">Head on to the demo page and click on any paragraph or heading, a popover will show either:</p>
@@ -62,56 +61,75 @@
                 <li data-likes="0">a Login button if you're not logged in yet</li>
                 <li data-likes="0">a (un)Recommend button with the associated number of recommendations for the selected entity</li>
                 </ul>
-                <div class="m3"></div>
-                <h3 data-likes="2">Source code, please!</h3>
-                <p data-likes="0">The magic is contained in the file located at <code>app/scripts/popover.js</code>, which
-                <a href="./docs/popover.html">complete annotated source code is available here</a>;</p>
-                <p data-likes="0">The complete source code of the project is available <a href="http://github.com/hull/hull-like">here on github</a>.
-                Please note that the project has been generated with our <a href="https://github.com/hull/grunt-init-hull">grunt-init template</a>,
-                which we encourage you to use to get started.</p>
-                <div class="m3"></div>
-                <h3 data-likes="0">Fork and Install</h3>
-                <p data-likes="3">To install your own, you must have a <a href="http://hull.io">hull.io</a> account, and have created an application.
-                Then copy your application's id and organization's URL (found in the admin) in the file <code>app/script/hull-init.js</code>.</p>
-                <p data-likes="2">Then run the following commands:</p>
-                <pre><code>npm install
-                grunt prepare
-                grunt server</code></pre>
-                <p data-likes="0"><code>grunt server</code> will start a server listening on port <code>9000</code> which you can use for development purpose.</p>
-                <h4 data-likes="0">Use in your own project</h4>
-                <p data-likes="1">Everything that is needed to enable these functionnalities for your app (apart from <code>hull.js</code>) is contained in a single <code>jQuery</code> plugin,
-                which you can find in the file <code>app/scripts/popover.js</code>.</p>
-                <p data-likes="1">This file also bootstraps the demo, to give an overview of the expected parameters.</p>
-                <div class="m3"></div>
-                <h3 data-likes="1">Want moar ?</h3>
-                <p data-likes="0">Check out our other demos on <a href="http://hull.github.io">our github page</a> and visit <a href="http://hull.io">our website</a>.</p>
-                <p data-likes="0">If you want to get in touch with us, feel free to email us at <a href="mailto:contact@hull.io">contact@hull.io</a>.</p>
-                <div class="m3"></div>
-                <h3 data-likes="0">LICENCE</h3>
-                <p data-likes="0">MIT</p>
+            </article>
             
-
-                <hr class="m2">
-                <div class="text-center">
-                    <a href="#" class="btn btn-small btn-brand">Build with <span class="btn-brand-logo">hull</span></a>                
-                </div>
-            </div>
         </div>
-            
     </div> <!-- /.row -->
-        
-    <footer class="row text-center project-footer">
+    
+    <div class="row project-share">
         <div class="span10 offset1">
-            <small class="pull-left muted">
-                Copyright 2012 Square, Inc.
-            </small>
-            <small class="pull-right muted">
-                Released under the Apache License 2.0
-            </small>
+           <!-- Facebook's Like Button -->
+           <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+           <fb:like href="http://hull.io" layout="button_count" show_faces="false" width="100"></fb:like></span>
+           &nbsp;&nbsp;
+           <!-- Twitter's Tweet Button -->
+           <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" >Tweet</a>
+           <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
         </div>
-    </footer>
+    </div>
   </div> <!-- /container -->
 </div>
+
+<section class="wrapper featurette project-about">
+    <div class="container">
+        <div class="row">
+            <div class="span10 offset1">
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span6 offset1">
+                <div class="media">
+                    <div class="pull-left">
+                        <h1 class="project-about-logo media-object">hull</h1>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="light-title light project-about-description">
+                            hull offers developers a complete platform to add social features to their apps quickly and easily.
+                        </h4>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="span2 offset2 end">
+                <h6>
+                    <a href="#">Fork us on GitHub</a>
+                </h6>
+                <h6>
+                    <a href="#">Follow us on Twitter</a>
+                </h6>
+                <h6>
+                    <a href="#">Visit our website</a>
+                </h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="wrapper featurette featurette-well project-footer">
+    <div class="container">
+        <div class="row">
+            <div class="span5 offset1">
+                <a href="#" class="btn btn-small btn-brand">Build with <span class="btn-brand-logo">hull</span></a>                
+            </div>
+            <div class="span5 end text-right">
+                <small class="muted">
+                    Copyright 2013 Hull, Inc.
+                </small>
+            </div>
+        </div>
+    </div>
+</footer>
     
 
 

@@ -10,11 +10,48 @@
     margin-top:6px;
   }
 }
+.project-content{
+  > :first-child{margin-top:0;}
+  > :last-child{margin-bottom: 0;}
+  h1,h2,h3{
+    margin-top: 50px;
+  }
+}
 
-.project-well{
-  padding:30px 40px;
+.project-share{
+  padding-top:40px;
+  iframe { vertical-align: top;}
 }
 
 .project-footer{
+  border-top:1px solid rgba(black,.1);
+  .container{
+    padding:40px 0;
+  }
   small{margin:0 20px;}
 }
+
+.project-about{
+  .container{
+    padding-top:0;
+  }
+  hr{
+    margin-bottom:60px;
+  }
+  .pull-left{
+    margin-right:25px;
+  }
+  h6 a {
+    color:$grayDark;
+  }
+}
+  .project-about-description{
+    margin-top:8px;
+    margin-bottom:0;
+    line-height: 32px;
+  }
+  .project-about-logo{
+    @include replace-text-with-dimensions('logo-project.png');
+    margin-top:0;
+    margin-bottom:0;
+  }
