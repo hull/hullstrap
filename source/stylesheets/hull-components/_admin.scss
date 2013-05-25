@@ -286,9 +286,11 @@ $minWidth: 600px;
   }
     .admin-playground-input{
       background:$wellBackground;
-      border: 1px solid #d4d4d4;
       border-radius: 4px;
       overflow: hidden;
+      min-height: 300px;
+      font-size: 13px;
+      border:none;
       textarea{
         @include box-sizing(border-box);
         box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
@@ -300,6 +302,14 @@ $minWidth: 600px;
         margin:0;
         border:0;
         width:100%;
+      }
+      .CodeMirror{
+        border-radius: 4px 4px 0 0;
+        border: 1px solid #F1EBEB;
+        border-bottom: 0px;
+        pre{
+          box-shadow: none;
+        }
       }
     }
     .admin-playground-input-actions{

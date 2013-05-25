@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- build:css hullstrap.css -->
+    <link href="/stylesheets/styles.css" rel="stylesheet">
+    <!-- endbuild -->
+
+    <script type="text/javascript" src="//use.typekit.net/jyf4qww.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar-fixed-top">
+    <div class="admin">
+      <%=partial '/admin/application/sidebar'%>
+      <%=partial '/admin/application/header'%>
+      <%=yield%>
+      <%=partial '/admin/modal/app'%>
+      <%=partial '/admin/modal/password'%>
+      <%=partial '/admin/modal/profile'%>
+      <%=partial '/admin/modal/footer'%>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
+    <script src="/javascripts/admin-toggle-sidebar.js"></script>
+    <script src="/javascripts/list.js"></script>
+    <script src="/javascripts/list.paging.js"></script>
+    <script>
+      $(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+        var options = {
+            valueNames: [ 'name', 'id','users','inits','organization' ],
+            page: 50,
+            plugins: [
+                [ 'paging' ]
+            ]
+        };
+        var featureList = new List('list', options);
+      });
+    </script>
+
+  </body>
+</html>

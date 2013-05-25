@@ -1,0 +1,41 @@
+<!-- Sidebar  -->
+<aside class="admin-sidebar">
+
+  <!-- Header -->
+  <div class="navbar navbar-inverse">
+    <div class="navbar-inner">
+      <div class="container">
+        <div class="nav-collapse collapse">
+          <ul class="nav pull-right">
+            <li class="admin-edit-administration">
+              <a href="#" title="Edit Organization">
+                <i class="icon-cog icon-white"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hull demo <b class="caret caret-double"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">My 2nd organization</a></li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">
+                    View all
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+
+  <%=partial 'admin/sidebar/content'%>
+  <%#partial 'admin/sidebar/content'%>
+
+    <footer class="admin-sidebar-footer">
+      <input type="text" value="http://hull-demo.hullapp.io" onfocus="this.select()" onMouseUp="return false" >
+    </footer>
+</aside>
