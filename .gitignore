@@ -12,3 +12,7 @@
 
 # Ignore Sass' cache
 /.sass-cache
+
+/tmp/
+/.DS_Store
+/config/environment.yml
