@@ -21,6 +21,9 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
+    activemodel (3.2.13)
+      activesupport (= 3.2.13)
+      builder (~> 3.0.0)
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
@@ -28,8 +31,12 @@ GEM
     animation (0.1.alpha.3)
       compass (>= 0.12.0)
       sass (>= 3.2.0.alpha.95)
+    asset_sync (0.5.4)
+      activemodel
+      fog
     bootstrap-sass (2.3.1.2)
       sass (~> 3.2)
+    builder (3.0.4)
     chunky_png (1.2.8)
     coffee-script (2.2.0)
       coffee-script-source
@@ -42,6 +49,17 @@ GEM
     excon (0.22.1)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fog (1.11.1)
+      builder
+      excon (~> 0.20)
+      formatador (~> 0.2.0)
+      json (~> 1.7)
+      mime-types
+      net-scp (~> 1.1)
+      net-ssh (>= 2.1.3)
+      nokogiri (~> 1.5.0)
+      ruby-hmac
+    formatador (0.2.4)
     haml (4.0.3)
       tilt
     heroku (2.39.3)
@@ -107,9 +125,16 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
+    middleman-sync (3.0.9)
+      asset_sync (~> 0.5.4)
+      middleman-core (~> 3.0.0)
     mime-types (1.23)
     multi_json (1.7.3)
+    net-scp (1.1.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.6.7)
     netrc (0.7.7)
+    nokogiri (1.5.9)
     oj (2.0.13)
     padrino-core (0.10.7)
       activesupport (~> 3.2.0)
@@ -134,6 +159,7 @@ GEM
     rb-fsevent (0.9.3)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    ruby-hmac (0.4.0)
     rubyzip (0.9.9)
     sass (3.2.9)
     sass-getunicode (1.0)
@@ -188,6 +214,7 @@ DEPENDENCIES
   middleman-livereload
   middleman-smusher
   middleman-sprockets
+  middleman-sync
   oj
   rack-contrib
   rack-environment

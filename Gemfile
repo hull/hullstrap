@@ -20,6 +20,7 @@ gem 'middleman-sprockets'
 gem 'middleman-gh-pages'
 gem 'middleman-smusher'
 gem 'middleman-livereload'
+gem "middleman-sync"
 
 group :development do
   gem 'heroku'
