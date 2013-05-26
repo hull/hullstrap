@@ -58,3 +58,10 @@
 @import "hull-components/modal";
 @import "hull-components/progress-bars";
 @import "hull-components/form";
+
+ul.the-icons li{
+  float: left;
+  width: 25%;
+  line-height: 25px;
+}
+@import "fontcustom-bootstrap";

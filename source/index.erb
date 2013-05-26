@@ -1,3 +1,4 @@
+
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
@@ -1008,4 +1009,13 @@
         <br><br><br>
       </div> <!-- /container -->
     </div> <!-- /wrapper -->
+
+    <div class="wrapper icons featurette">
+
+      <ul class="the-icons">
+        <% icon_list.each do |icon| %>
+          <li><i class='icon-<%=icon%>'></i><%=icon%></li>
+        <% end %>
+      </ul>
+    </div>
   </section>
