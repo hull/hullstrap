@@ -1,5 +1,5 @@
-/*
- * Font Custom: Bootstrap CSS
+/* 
+ * Font Custom: bare CSS
  */
 
 @font-face {
@@ -13,50 +13,103 @@
   font-style: normal;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+.icon-achievement:before,
+.icon-achievement_alt:before,
+.icon-akismet:before,
+.icon-arrow-left:before,
+.icon-arrow-right:before,
+.icon-arrow:before,
+.icon-bolt:before,
+.icon-brush:before,
+.icon-brush_alt:before,
+.icon-bubbles:before,
+.icon-cart:before,
+.icon-check:before,
+.icon-check_alt:before,
+.icon-checkin:before,
+.icon-cloud:before,
+.icon-cloud_download:before,
+.icon-cloud_download_alt:before,
+.icon-cloud_upload:before,
+.icon-cloud_upload_alt:before,
+.icon-code:before,
+.icon-cog:before,
+.icon-css3:before,
+.icon-currency:before,
+.icon-edit:before,
+.icon-emit:before,
+.icon-facebook:before,
+.icon-facebook_alt:before,
+.icon-facebook_badge:before,
+.icon-facebook_badge_alt:before,
+.icon-feather:before,
+.icon-fire:before,
+.icon-fork:before,
+.icon-foursquare:before,
+.icon-friends:before,
+.icon-gear:before,
+.icon-github:before,
+.icon-google:before,
+.icon-google_analytics:before,
+.icon-grid:before,
+.icon-gumroad:before,
+.icon-heart:before,
+.icon-html5:before,
+.icon-hull:before,
+.icon-hull_store:before,
+.icon-image:before,
+.icon-instagram:before,
+.icon-key:before,
+.icon-key_alt:before,
+.icon-kissmetrics:before,
+.icon-layers:before,
+.icon-layers_alt:before,
+.icon-layers_alt_2:before,
+.icon-leaderboard:before,
+.icon-like:before,
+.icon-linkedin:before,
+.icon-list:before,
+.icon-loop_alt3:before,
+.icon-mail:before,
+.icon-metrics:before,
+.icon-metrics_alt:before,
+.icon-mixpanel:before,
+.icon-moderate:before,
+.icon-ok:before,
+.icon-openid:before,
+.icon-paintbrush:before,
+.icon-pen:before,
+.icon-pencil:before,
+.icon-picture:before,
+.icon-picture_alt:before,
+.icon-picture_alt2:before,
+.icon-picture_alt_3:before,
+.icon-power:before,
+.icon-power_alt:before,
+.icon-reply:before,
+.icon-rocket:before,
+.icon-rss_alt:before,
+.icon-share:before,
+.icon-sun_fill:before,
+.icon-sun_stroke:before,
+.icon-terminal:before,
+.icon-twitter:before,
+.icon-twitter_badge:before,
+.icon-user:before,
+.icon-video:before,
+.icon-wand:before,
+.icon-wrench:before,
+.icon-wrench_alt:before,
+.icon-wrench_alt_2:before {
   font-family: "fontcustom";
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
   display: inline-block;
   text-decoration: inherit;
-}
-
-a [class^="icon-"], a [class*=" icon-"] {
-  display: inline-block;
-  text-decoration: inherit;
-}
-
-.icon-large:before {
-  vertical-align: top;
-  font-size: 1.333em;
-}
-
-.btn [class^="icon-"], .btn [class*=" icon-"] {
-  line-height: 0.9em;
-}
-
-li [class^="icon-"], li [class*=" icon-"] {
-  display: inline-block;
-  width: 1.25em;
-  text-align: center;
-}
-
-li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
-  width: 1.875em;
-}
-
-li[class^="icon-"], li[class*=" icon-"] {
-  margin-left: 0;
-  list-style-type: none;
-}
-
-li[class^="icon-"]:before, li[class*=" icon-"]:before {
-  text-indent: -2em;
-  text-align: center;
-}
-
-li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
-  text-indent: -1.333em;
 }
 
 .icon-achievement:before { content: "\f100"; }

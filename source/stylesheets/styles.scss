@@ -64,4 +64,12 @@ ul.the-icons li{
   width: 25%;
   line-height: 25px;
 }
-@import "fontcustom-bootstrap";
+
+[class^="icon-"], [class*=" icon-"]{
+  background: none;
+  height: auto;
+  width: auto;
+  display: inline;
+  line-height: normal;
+}
+@import "fontcustom";

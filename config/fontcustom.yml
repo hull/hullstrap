@@ -11,7 +11,7 @@
 output: source/stylesheets/
 
 # templates: [ scss, preview, relative/path/from/INPUT, relative/path/from/PWD ]
-templates: [ bootstrap-scss ]
+templates: [ bootstrap-scss, scss ]
 
 # font_name: my-font
 
