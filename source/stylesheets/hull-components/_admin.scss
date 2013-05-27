@@ -293,7 +293,9 @@ $minWidth: 600px;
       border-radius: 4px;
       overflow: hidden;
       font-size: 13px;
-      border:none;
+      border: 1px solid #d4d4d4;
+      border-radius: 4px;
+      overflow: hidden;
       textarea{
         @include box-sizing(border-box);
         box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
@@ -308,7 +310,8 @@ $minWidth: 600px;
       }
       .CodeMirror{
         border-radius: 4px 4px 0 0;
-        border: 1px solid #F1EBEB;
+        border:0;
+        box-shadow:inset 0 1px 3px rgba(0,0,0,.1);
         border-bottom: 0px;
         pre{
           box-shadow: none;
@@ -316,7 +319,8 @@ $minWidth: 600px;
       }
     }
     .admin-playground-input-actions{
-      border-top: 1px solid #E9E6E6;
+      @include pie-clearfix;
+      border-top: 1px solid #d4d4d4;
       padding:4px;
       padding:10px;
       select{
