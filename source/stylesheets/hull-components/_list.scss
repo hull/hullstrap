@@ -90,4 +90,7 @@
       @include position(relative, 10px 0 0 0);
       > .btn{opacity:.75;}
     }
+    .icon-cog{
+      color:$black;
+    }
   }
