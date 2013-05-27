@@ -2,7 +2,7 @@
 
 Hull theme using compass, sass, and twitter bootstrap.
 
-Live example: [http://hullstrap.s3.amazonaws.com/0.1/index.html](http://hullstrap.s3.amazonaws.com/0.1/index.html)
+Live example: [http://hullstrap.s3.amazonaws.com/index.html](http://hullstrap.s3.amazonaws.com/index.html)
 
 ## How to use the theme:
 
@@ -12,56 +12,42 @@ Live example: [http://hullstrap.s3.amazonaws.com/0.1/index.html](http://hullstra
 
   ```
   gem update --system
-  gem install compass
-  gem install bootstrap-sass
-  gem install sass-getunicode
-  npm install
+  bundle install
   ```
 
-* Then switch to hullstrap dir: ``cd hullstrap``
-* Start grunt: ``grunt``
-* Open in your browser: ``open http://localhost:3001``
+* Start middleman: ``middleman``
+* Open in your browser: ``open http://localhost:4567``
 
-## Grunt tasks
 
-### `grunt develop` or `grunt`
+### Icon Fonts :
 
-Starts a server on port `3001`, and watchs .sass files.
+http://fontcustom.com
 
-### `grunt dist`
+    fontcustom watch ./source/images/icons -c ./config/fontcustom.yml
 
-Build the theme in `dist/<name>`.
+### Building
 
-If current branch is `master`, `<name>` will be `package.version`. If not `<name>` will be the branch name.
+    middleman build
 
-If `--name` option is passed, `<name>` will be `--name` value.
+Builds the theme in `tmp/`.
 
-```
-grunt dist --name=foo
-```
+### Uploading to S3
 
-Will build the theme in `dist/foo`.
+    middleman sync
 
-### `grunt deploy`
+Assuming you have the `config/environment.yml` file set up with your AWS info,
+will push to AWS
 
-To deploy, you need to create an `aws.json` file in the project directory.
+### `config/environment.yml`
 
-```
-{
-  "key": "",
-  "secret": "",
-  "bucket": "hullstrap"
-}
-```
-
-Build the theme and deploy it on S3. It uploads files from `dist/<name>` to `S3/<target>`. Be default `<target>` is set to `<name>`.
-
-If `--target` option is passed, `<target>` will be `--target` value.
-
-If current branch is `master`, deployed files will be served with a `Cache-Control` header set to `public, max-age=29030400`.
+    AWS_KEY: YOUR_AMAZON_KEY
+    AWS_SECRET: YOUR_AMAZON_SECRET
+    AWS_BUCKET: BUCKET
+    AWS_REGION: REGION (us-east-1,...)
 
 ### Amazon S3 urls
 
 Example: 
-* http://hullstrap.s3.amazonaws.com/version/hullstrap.js
-* http://hullstrap.s3.amazonaws.com/version/hullstrap.css
+
+* http://hullstrap.s3.amazonaws.com/hullstrap.js
+* http://hullstrap.s3.amazonaws.com/hullstrap.css

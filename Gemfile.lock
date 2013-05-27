@@ -1,0 +1,218 @@
+GIT
+  remote: git://github.com/chriseppstein/compass.git
+  revision: 750193993d7d4c864ecce0394d1e2eea545dc25e
+  tag: v0.13.alpha.4
+  specs:
+    compass (0.13.alpha.4.7501939)
+      chunky_png (~> 1.2)
+      listen (<= 0.9.9)
+      sass (~> 3.2.5)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    activemodel (3.2.13)
+      activesupport (= 3.2.13)
+      builder (~> 3.0.0)
+    activesupport (3.2.13)
+      i18n (= 0.6.1)
+      multi_json (~> 1.0)
+    addressable (2.3.4)
+    animation (0.1.alpha.3)
+      compass (>= 0.12.0)
+      sass (>= 3.2.0.alpha.95)
+    asset_sync (0.5.4)
+      activemodel
+      fog
+    bootstrap-sass (2.3.1.0)
+      sass (~> 3.2)
+    builder (3.0.4)
+    chunky_png (1.2.8)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.3.3)
+    em-websocket (0.5.0)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.5.3)
+    eventmachine (1.0.3)
+    excon (0.22.1)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
+    fog (1.11.1)
+      builder
+      excon (~> 0.20)
+      formatador (~> 0.2.0)
+      json (~> 1.7)
+      mime-types
+      net-scp (~> 1.1)
+      net-ssh (>= 2.1.3)
+      nokogiri (~> 1.5.0)
+      ruby-hmac
+    fontcustom (1.0.0)
+      json
+      listen
+      thor
+    formatador (0.2.4)
+    haml (4.0.3)
+      tilt
+    heroku (2.39.3)
+      heroku-api (~> 0.3.7)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.7)
+      rest-client (~> 1.6.1)
+      rubyzip
+    heroku-api (0.3.11)
+      excon (~> 0.22.1)
+    hike (1.2.2)
+    http_parser.rb (0.5.3)
+    http_router (0.10.2)
+      rack (>= 1.0.0)
+      url_mount (~> 0.2.1)
+    httpclient (2.3.3)
+    i18n (0.6.1)
+    json (1.8.0)
+    launchy (2.3.0)
+      addressable (~> 2.3)
+    libv8 (3.11.8.17)
+    listen (0.7.3)
+    maruku (0.6.1)
+      syntax (>= 1.0.0)
+    middleman (3.0.14)
+      middleman-core (= 3.0.14)
+      middleman-more (= 3.0.14)
+      middleman-sprockets (~> 3.1.0)
+    middleman-core (3.0.14)
+      activesupport (~> 3.2.6)
+      bundler (~> 1.1)
+      listen (~> 0.7.3)
+      rack (~> 1.4.1)
+      rack-test (~> 0.6.1)
+      rb-fsevent (~> 0.9.3)
+      thor (~> 0.15.4)
+      tilt (~> 1.3.6)
+    middleman-gh-pages (0.0.2)
+      rake (> 0.9.3)
+    middleman-livereload (3.1.0)
+      em-websocket (>= 0.2.0)
+      middleman-core (>= 3.0.2)
+      multi_json (~> 1.0)
+      rack-livereload
+    middleman-more (3.0.14)
+      coffee-script (~> 2.2.0)
+      coffee-script-source (~> 1.3.3)
+      compass (>= 0.12.2)
+      execjs (~> 1.4.0)
+      haml (>= 3.1.6)
+      i18n (~> 0.6.0, < 0.6.2)
+      maruku (~> 0.6.0)
+      middleman-core (= 3.0.14)
+      padrino-helpers (= 0.10.7)
+      sass (>= 3.1.20)
+      uglifier (~> 1.2.6)
+    middleman-smusher (3.0.0)
+      middleman (>= 3.0.0)
+      smusher (~> 0.4.9)
+    middleman-sprockets (3.1.1)
+      middleman-core (>= 3.0.14)
+      padrino-helpers (= 0.10.7)
+      sprockets (~> 2.1)
+      sprockets-helpers (~> 1.0.0)
+      sprockets-sass (~> 1.0.0)
+    middleman-sync (3.0.9)
+      asset_sync (~> 0.5.4)
+      middleman-core (~> 3.0.0)
+    mime-types (1.23)
+    multi_json (1.7.3)
+    net-scp (1.1.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.6.7)
+    netrc (0.7.7)
+    nokogiri (1.5.9)
+    oj (2.0.13)
+    padrino-core (0.10.7)
+      activesupport (~> 3.2.0)
+      http_router (~> 0.10.2)
+      sinatra (~> 1.3.1)
+      thor (~> 0.15.2)
+      tilt (~> 1.3.0)
+    padrino-helpers (0.10.7)
+      i18n (~> 0.6)
+      padrino-core (= 0.10.7)
+    rack (1.4.5)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
+    rack-environment (1.2.0)
+    rack-livereload (0.3.15)
+      rack
+    rack-protection (1.5.0)
+      rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rake (10.0.4)
+    rb-fsevent (0.9.3)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    ruby-hmac (0.4.0)
+    rubyzip (0.9.9)
+    sass (3.2.9)
+    sass-getunicode (1.0)
+      sass (>= 3)
+    shotgun (0.9)
+      rack (>= 1.0)
+    sinatra (1.3.6)
+      rack (~> 1.4)
+      rack-protection (~> 1.3)
+      tilt (~> 1.3, >= 1.3.3)
+    slim (1.3.9)
+      temple (~> 0.6.3)
+      tilt (~> 1.3, >= 1.3.3)
+    smusher (0.4.9)
+      httpclient (>= 2.2)
+      json
+      rake
+    sprockets (2.10.0)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    sprockets-helpers (1.0.1)
+      sprockets (~> 2.0)
+    sprockets-sass (1.0.1)
+      sprockets (~> 2.0)
+      tilt (~> 1.1)
+    syntax (1.0.0)
+    temple (0.6.5)
+    thor (0.15.4)
+    tilt (1.3.7)
+    uglifier (1.2.7)
+      execjs (>= 0.3.0)
+      multi_json (~> 1.3)
+    url_mount (0.2.1)
+      rack
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport
+  animation
+  bootstrap-sass (= 2.3.1.0)
+  compass!
+  execjs
+  fontcustom
+  heroku
+  libv8 (~> 3.11.8)
+  middleman
+  middleman-gh-pages
+  middleman-livereload
+  middleman-smusher
+  middleman-sprockets
+  middleman-sync
+  oj
+  rack-contrib
+  rack-environment
+  sass (~> 3.2.5)
+  sass-getunicode
+  shotgun
+  slim

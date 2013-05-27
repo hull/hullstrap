@@ -1,0 +1,19 @@
+.modal-small{
+    width:500px;
+    margin-left:-250px;
+    .form-horizontal{
+      p,
+      label,
+      input[type="text"],
+      input[type="password"],
+      select{
+          font-size:13px;
+      }
+        .controls {
+          margin-left: 135px;
+        }
+        .control-label {
+          width: 125px;
+        }
+    }
+}
