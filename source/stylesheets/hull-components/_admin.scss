@@ -21,6 +21,10 @@ $minWidth: 600px;
     bottom: 0;
     width: $sidebarWidth;
     z-index: 997;
+    > .navbar{
+      @include position;
+      z-index:2;
+    }
     .navbar .dropdown>a{
       @extend %ellipsis;max-width:170px;
     }
