@@ -15,8 +15,7 @@ Live example: [http://hullstrap.s3.amazonaws.com/index.html](http://hullstrap.s3
   bundle install
   ```
 
-* Then switch to hullstrap dir: ``cd hullstrap``
-* Start grunt: ``middleman``
+* Start middleman: ``middleman``
 * Open in your browser: ``open http://localhost:4567``
 
 

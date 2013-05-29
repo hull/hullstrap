@@ -56,6 +56,7 @@ set :build_dir, 'tmp'
 activate :livereload
 
 page "*", :layout => :layout
+page "opensource/*", :layout => :layout
 page "admin/*", :layout => :admin
 
 require 'lib/retina.rb'

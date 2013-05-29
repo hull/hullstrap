@@ -24,7 +24,7 @@ GEM
     asset_sync (0.5.4)
       activemodel
       fog
-    bootstrap-sass (2.3.1.2)
+    bootstrap-sass (2.3.1.0)
       sass (~> 3.2)
     builder (3.0.4)
     chunky_png (1.2.8)
@@ -197,7 +197,7 @@ PLATFORMS
 DEPENDENCIES
   activesupport
   animation
-  bootstrap-sass (~> 2.3.1.0)
+  bootstrap-sass (= 2.3.1.0)
   compass!
   execjs
   fontcustom
@@ -212,6 +212,7 @@ DEPENDENCIES
   oj
   rack-contrib
   rack-environment
+  sass (~> 3.2.5)
   sass-getunicode
   shotgun
   slim
