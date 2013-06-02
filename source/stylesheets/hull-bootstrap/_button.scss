@@ -43,6 +43,27 @@
   .btn-large{
       font-size:$baseFontSize;
   }
+  .btn-tiny{
+      font-size:$fontSizeTiny;
+      padding:0 5px;
+      @include border-radius(15px); 
+  }
+  .btn-group{
+    > .btn-tiny:first-child,
+    > .btn-tiny:last-child,
+    > .btn-tiny + .dropdown-toggle{
+      @extend .btn-tiny;
+    }
+    
+    > .btn-tiny:first-child{
+      @include border-radius(15px 0 0 15px);
+    }
+    > .btn-tiny:last-child,
+    > .btn-tiny + .dropdown-toggle{
+      @include border-radius(0 15px 15px 0);
+    }
+
+  }
 
   .btn-link{
       &,&:hover,&:focus,&:active,&.dropdown-toggle{
@@ -52,6 +73,7 @@
         box-shadow:none!important;
       }
   }
+
 
 // Set the backgrounds
 // -------------------------
