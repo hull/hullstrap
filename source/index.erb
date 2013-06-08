@@ -554,7 +554,11 @@
                   <label class="control-label" for="inputWarning">Input with warning</label>
                   <div class="controls">
                     <input type="text" id="inputWarning">
-                    <span class="help-inline">Something may have gone wrong</span>
+                      
+                    <span class="help-inline form-tooltip">
+                      <i class="icon icon-warning"></i>
+                      <span class='message'>Something may have gone wrong</span>
+                    </span>
                   </div>
                 </div>
                 <div class="control-group error">
@@ -562,6 +566,25 @@
                   <div class="controls">
                     <input type="text" id="inputError">
                     <span class="help-inline">Please correct the error</span>
+                  </div>
+                </div>
+                <div class="control-group error">
+                  <label class="control-label" for="inputError">Input with error & tooltip</label>
+                  <div class="controls">
+                    <input type="text" id="inputError">
+                    <span class="help-inline form-tooltip">
+                      <div class='message'>Please correct the error</div>
+                    </span>
+                  </div>
+                </div>
+                <div class="control-group error">
+                  <label class="control-label" for="inputError">Input with error, tooltip & icon</label>
+                  <div class="controls">
+                    <input type="text" id="inputError">
+                    <span class="help-inline form-tooltip">
+                      <i class="icon icon-error"></i>
+                      <div class='message'>Please correct the error</div>
+                    </span>
                   </div>
                 </div>
                 <div class="control-group success">

@@ -25,3 +25,91 @@ legend + .control-group {
   color:$grayLight;
 }
 
+.controls{
+  position: relative;
+  .form-tooltip{
+    position: absolute;
+    left: 184px;
+    bottom: 3px;
+    z-index: 2;
+    cursor: default;
+    @include transition(all 0.15s ease);
+    .message{
+      color: white;
+      position: absolute;
+      right: -35px;
+      top: -75px;
+      padding: 10px;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.8);
+      font-size: 14px;
+      border-radius: 2px;
+      white-space: nowrap;
+      @include transition(all 0.15s ease);
+      visibility: hidden;
+      opacity: 0;
+      &::before{
+        content: '';
+        position: absolute;
+        height: 0px;
+        width: 0px;
+        left: initial;
+        right: 13px;
+        top: 100%;
+        bottom: initial;
+        border-style: solid;
+        border-width: 8px;
+        border-color: transparent;
+        -webkit-transform: rotate(360deg);
+        margin-left: -8px;
+        border-bottom-width: 0;
+        border-top-color: rgba(0, 0, 0, 0.8);
+      }
+    }
+    .icon{
+      content:'!';
+      color: white;
+      display: block;
+      position: relative;
+      width: 26px;
+      height: 26px;
+      top: 5px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      // background: #D2664F;
+      border-radius: 50%;
+      line-height: initial;
+      @include transition(all 0.15s ease);
+
+      opacity: 0;
+    }
+    .icon + .message{
+      top: -50px;
+      right:-7px;
+    }
+  }
+  .error & .icon{   background:$btnDangerBackground;}
+  .warning & .icon{ background:$btnWarningBackground;}
+  .success & .icon{ background:$btnSuccessBackground;}
+  .info & .icon{    background:$btnInfoBackground;}
+
+  .error &,
+  .warning &,
+  .success &,
+  .info & {
+    .icon{
+        opacity: 1;
+        top:0;
+    }
+
+    input:focus + .form-tooltip .message{
+      visibility: visible;
+      opacity: 1;
+      top: -80px;
+    }
+    input:focus + .form-tooltip i.icon + .message{
+      top: -55px;
+    }
+  }
+}
