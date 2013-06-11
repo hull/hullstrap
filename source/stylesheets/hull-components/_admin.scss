@@ -28,7 +28,7 @@ $minWidth: 600px;
     .navbar .dropdown>a{
       @extend %ellipsis;max-width:170px;
     }
-    
+
     .nav-list-admin{
         @include position(absolute, $headerHeight 0px 44px 0px);
         padding-top:22px;
@@ -104,7 +104,7 @@ $minWidth: 600px;
     width:$sidebarContentWidth;
     overflow:auto;
     z-index: 1000;
-    border-right:1px solid $navbarBorder; 
+    border-right:1px solid $navbarBorder;
     box-shadow:0 0 8px rgba(black,.15);
     border-radius:$baseBorderRadius 0 0 0;
     &.is-visible{
@@ -119,7 +119,7 @@ $minWidth: 600px;
       border-left:1px solid $navbarBorder;
       padding: 26px 20px;
     }
-  
+
   .admin-infos{
     margin-bottom:30px;
     .well{
@@ -258,15 +258,15 @@ $minWidth: 600px;
 
 .admin-edit-administration{
   @include position;
-  a{margin:0 2px;opacity:.5;}
-  a:hover{opacity:1;}
+  > a{margin:0 2px;opacity:.5;}
+  > a:hover{opacity:1;}
   &:before,
   &:after{
     @include position(absolute, 7px 0 7px -10px);
     @include background-image(
       linear-gradient(top, rgba($black, 0), $black, rgba($black, 0))
     );
-    content:""; 
+    content:"";
     pointer-events:none;
     width:1px;
   }
