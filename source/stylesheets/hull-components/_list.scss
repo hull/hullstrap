@@ -19,7 +19,7 @@
   > li {
       margin-bottom:5px;
   }
-  > li > a {
+  > li > a, > li > .item {
     box-shadow:0 1px 1px rgba(0,0,0,0.05);
     @include background-image(linear-gradient(rgba(black,0), rgba(black,0.025)));
     border-radius:$baseBorderRadius!important;
@@ -48,7 +48,7 @@
 
 .list-user{
   margin-top:10px;
-  > li > a {
+  > li > a, > li > .item {
     @include position;
     font-weight:normal;
     color:inherit;
