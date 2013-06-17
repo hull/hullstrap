@@ -36,7 +36,9 @@
 // -------------
 
 .nav-tabs > li > a,
-.nav-pills > li > a {
+.nav-pills > li > a,
+.nav-tabs > li > .item,
+.nav-pills > li > .item {
   @extend %nav;
 }
 
@@ -48,7 +50,10 @@
 // Active state
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover,
-.nav-pills > .active > a:focus {
+.nav-pills > .active > a:focus,
+.nav-pills > .active > .item,
+.nav-pills > .active > .item:hover,
+.nav-pills > .active > .item:focus {
   @extend %nav-active;
 }
 
@@ -58,13 +63,17 @@
 // -------
 .nav-stacked > .active > a,
 .nav-stacked > .active > a:hover,
-.nav-stacked > .active > a:focus {
+.nav-stacked > .active > a:focus,
+.nav-stacked > .active > .item,
+.nav-stacked > .active > .item:hover,
+.nav-stacked > .active > .item:focus {
   @extend %nav-active;
 }
 
 // LIST
 // ----
-.nav-list > li > a {
+.nav-list > li > a,
+.nav-list > li > .item {
   @extend %nav;
   .well &{
     margin-left:-16px;
@@ -74,7 +83,41 @@
 
 .nav-list > .active > a,
 .nav-list > .active > a:hover,
-.nav-list > .active > a:focus{
+.nav-list > .active > a:focus,
+.nav-list > .active > .item,
+.nav-list > .active > .item:hover,
+.nav-list > .active > .item:focus {
   @extend %nav-active;
   @extend %nav-active-gradient;
+}
+
+
+
+.nav-stacked > li > .item{
+  display: block;
+}
+
+.nav-tabs > li > .item,
+.nav-pills > li > .item{
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 2px;
+  line-height: 14px;
+}
+
+.nav-tabs > li > .item{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 22px;
+  border: 1px solid transparent;
+  @include border-radius(4px 4px 0 0);
+}
+
+.nav-stacked > li > .item{
+  margin-right: 0
+}
+
+.nav-tabs.nav-stacked > li > .item{
+  border: 1px solid #DDD;
+  @include border-radius(0)
 }

@@ -25,6 +25,9 @@ legend + .control-group {
   color:$grayLight;
 }
 
+$tooltip_offset:-2px;
+$bubble_offset:$tooltip_offset+5;
+
 .controls{
   position: relative;
   .help-tooltip{
@@ -36,7 +39,7 @@ legend + .control-group {
     border-radius: 2px;
     z-index: 2;
     position: absolute;
-    right: -35px;
+    right: $tooltip_offset;
     top: -45px;
     max-width: 100%;
     padding: 10px;
@@ -54,7 +57,7 @@ legend + .control-group {
       margin-left: -8px;
     }
   }
-  input:focus + .help-tooltip{
+  input:focus + .help-tooltip, input:hover + .help-tooltip{
     visibility: visible;
     opacity: 1;
     top: -50px;
@@ -70,8 +73,9 @@ legend + .control-group {
       position: absolute;
       width: 26px;
       height: 26px;
-      top: 3px;
-      right:-30px;
+      top:50%;
+      margin-top: -13px;
+      right:$bubble_offset;
       text-align: center;
       font-size: 21px;
       font-weight: bold;
