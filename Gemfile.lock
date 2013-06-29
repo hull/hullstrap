@@ -11,9 +11,6 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
-    activemodel (3.2.13)
-      activesupport (= 3.2.13)
-      builder (~> 3.0.0)
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
@@ -21,9 +18,6 @@ GEM
     animation (0.1.alpha.3)
       compass (>= 0.12.0)
       sass (>= 3.2.0.alpha.95)
-    asset_sync (0.5.4)
-      activemodel
-      fog
     bootstrap-sass (2.3.1.0)
       sass (~> 3.2)
     builder (3.0.4)
@@ -128,9 +122,6 @@ GEM
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
-    middleman-sync (3.0.9)
-      asset_sync (~> 0.5.4)
-      middleman-core (~> 3.0.0)
     mime-types (1.23)
     multi_json (1.7.3)
     net-scp (1.1.1)
@@ -220,7 +211,6 @@ DEPENDENCIES
   middleman-s3_sync
   middleman-smusher
   middleman-sprockets
-  middleman-sync
   oj
   rack-contrib
   rack-environment
