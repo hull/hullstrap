@@ -23,6 +23,7 @@ gem 'middleman-gh-pages'
 gem 'middleman-smusher'
 gem 'middleman-livereload'
 gem "middleman-sync"
+gem "middleman-s3_sync"
 
 group :development do
   gem 'heroku'
