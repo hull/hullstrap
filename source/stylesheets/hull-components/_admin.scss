@@ -83,12 +83,16 @@ $minWidth: 600px;
       }
   }
   .admin-content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     @include position(absolute, $headerHeight 0px 0px $sidebarWidth);
     @include box-sizing(border-box);
     padding:15px 20px 0;
     overflow:auto;
     background-color:$white;
-    z-index: 996;
     min-width:$minWidth;
     border-left:1px solid $navbarBorder;
     .admin-secondary-header+&{
