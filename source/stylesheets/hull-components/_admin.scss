@@ -6,19 +6,19 @@ $minWidth: 600px;
 
 .admin{
   @include box-sizing(border-box);
-  @include position(absolute, 0px 0 0 0px);
+  // @include position(absolute, 0px 0 0 0px);
   width:100%;
-  background-color:$grayDarker;
-  height:100%;
+  min-height:100%;
   min-width:$minWidth + $sidebarWidth;
   overflow:hidden;
 }
   .admin-sidebar{
     @include box-sizing(border-box);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
+    background-color:$grayDarker;
     width: $sidebarWidth;
     z-index: 997;
     > .navbar{
@@ -59,7 +59,7 @@ $minWidth: 600px;
      @include position(fixed, 0px 0px 0 $sidebarWidth);
      @include box-sizing(border-box);
      height:$headerHeight;
-     z-index: 999;
+     z-index: 99999;
      min-width:$minWidth;
      .btn{ @include position;z-index:2; }
   }
@@ -83,31 +83,28 @@ $minWidth: 600px;
       }
   }
   .admin-content{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    @include position(absolute, $headerHeight 0px 0px $sidebarWidth);
+    // @include position(absolute, $headerHeight 0px 0px $sidebarWidth);
+    margin-left: $sidebarWidth;
+    margin-top: $headerHeight;
     @include box-sizing(border-box);
     padding:15px 20px 0;
     overflow:auto;
     background-color:$white;
     min-width:$minWidth;
-    border-left:1px solid $navbarBorder;
+    // border-left:1px solid $navbarBorder;
     .admin-secondary-header+&{
         top:$headerHeight+$secondaryHeaderHeight;
     }
   }
 
   .admin-sidebar-r{
-    @include position(absolute, 0px 0px 0px 0);
+    @include position(fixed, 0px 0px 0px 0);
     @include box-sizing(border-box);
     @include translateX(100%);
     @include transition(all 300ms ease);
     width:$sidebarContentWidth;
     overflow:auto;
-    z-index: 1000;
+    z-index: 100000;
     border-right:1px solid $navbarBorder;
     box-shadow:0 0 8px rgba(black,.15);
     border-radius:$baseBorderRadius 0 0 0;
@@ -157,9 +154,27 @@ $minWidth: 600px;
             @extend %ellipsis;
         }
     }
+    // ul.unstyled{
+    //   li{
+    //     padding: 0;
+    //   }
+    // }
+    ul,
     dl,
+    p,
     .media-list{
       font-size: 13px;
+      margin: 13px 0;
+      padding: 0 8px;
+    }
+    ul{
+      padding: 0 25px;
+      &.unstyled, &.grid{
+        padding: 0 8px;
+      }
+    }
+    pre code{
+      font-size: 10px;
     }
     dl [type="checkbox"] {margin-top:0;}
     dt{
@@ -282,13 +297,19 @@ $minWidth: 600px;
   }
 }
 
-  .admin-playground-code{
+.admin-playground{
+  position: relative;
+  margin:-15px -5px;
+}
+
+  .admin-playground .admin-playground-code{
     @include box-sizing(border-box);
-    @include position(absolute, 0px 0 0px 0px);
+    float: left;
+    // @include position(absolute, 0px 0 0px 0);
     width:50%;
     overflow:auto;
     z-index:1;
-    padding:20px;
+    padding:20px 10px;
     dt{
       font-size:14px;
     }
@@ -339,11 +360,12 @@ $minWidth: 600px;
         line-height:28px;
       }
     }
-  .admin-playground-result{
+  .admin-playground .admin-playground-result{
     @include box-sizing(border-box);
-    @include position(absolute, 0px 0 0px 50%);
+    @include position(absolute, 0 0 0px 50%);
     background:image-url('ps_neutral.png');
-    box-shadow:$hrBorder -1px 0 0,rgba($black,0.05) 1px 0 2px inset;
+    box-shadow:$playgroundBorder -1px 0 0,rgba($black,0.05) 1px 0 2px inset;
+    top: 0;
     width:50%;
     overflow:auto;
     z-index:1;
