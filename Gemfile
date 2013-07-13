@@ -20,11 +20,11 @@ gem 'middleman'
 gem 'middleman-sprockets'
 gem 'middleman-smusher'
 # gem "middleman-sync"
+gem "middleman-s3_sync"
 
 group :development do
   gem 'middleman-livereload'
   gem 'middleman-gh-pages'
-  gem "middleman-s3_sync"
   gem 'heroku'
   gem 'shotgun'
   gem 'fontcustom'
