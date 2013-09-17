@@ -83,7 +83,7 @@ $minWidth: 600px;
       }
   }
   .admin-content{
-    // @include position(absolute, $headerHeight 0px 0px $sidebarWidth);
+    @include position(absolute, 0 0 0 0);
     margin-left: $sidebarWidth;
     margin-top: $headerHeight;
     @include box-sizing(border-box);
