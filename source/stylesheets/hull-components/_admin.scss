@@ -93,7 +93,7 @@ $minWidth: 600px;
     margin-top: $headerHeight;
     @include box-sizing(border-box);
     padding:15px 20px 0;
-    overflow:auto;
+    // overflow:auto;
     background-color:$white;
     min-width:$minWidth;
     // border-left:1px solid $navbarBorder;

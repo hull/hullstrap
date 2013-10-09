@@ -1,18 +1,21 @@
-/* 
- * Font Custom: bare CSS
- */
+//
+// Icon Font: fontcustom
+//
 
 @font-face {
   font-family: "fontcustom";
-  src: url("fontcustom.eot");
-  src: url("fontcustom.eot?#iefix") format("embedded-opentype"),
-       url("fontcustom.woff") format("woff"),
-       url("fontcustom.ttf") format("truetype"),
-       url("fontcustom.svg#fontcustom") format("svg");
+  src: url("./fontcustom_c28985f719aa8eefc279ca38be643587.eot");
+  src: url("./fontcustom_c28985f719aa8eefc279ca38be643587.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom_c28985f719aa8eefc279ca38be643587.woff") format("woff"),
+       url("./fontcustom_c28985f719aa8eefc279ca38be643587.ttf") format("truetype"),
+       url("./fontcustom_c28985f719aa8eefc279ca38be643587.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
 .icon-achievement:before,
 .icon-achievement_alt:before,
 .icon-akismet:before,
@@ -97,6 +100,7 @@
 .icon-rss_alt:before,
 .icon-search:before,
 .icon-share:before,
+.icon-soundcloud:before,
 .icon-success:before,
 .icon-sun_fill:before,
 .icon-sun_stroke:before,
@@ -208,19 +212,20 @@
 .icon-rss_alt:before { content: "\f151"; }
 .icon-search:before { content: "\f152"; }
 .icon-share:before { content: "\f153"; }
-.icon-success:before { content: "\f154"; }
-.icon-sun_fill:before { content: "\f155"; }
-.icon-sun_stroke:before { content: "\f156"; }
-.icon-terminal:before { content: "\f157"; }
-.icon-trash:before { content: "\f158"; }
-.icon-tumblr:before { content: "\f159"; }
-.icon-twitter:before { content: "\f15a"; }
-.icon-twitter_badge:before { content: "\f15b"; }
-.icon-user:before { content: "\f15c"; }
-.icon-video:before { content: "\f15d"; }
-.icon-vkontakte:before { content: "\f15e"; }
-.icon-wand:before { content: "\f15f"; }
-.icon-warning:before { content: "\f160"; }
-.icon-wrench:before { content: "\f161"; }
-.icon-wrench_alt:before { content: "\f162"; }
-.icon-wrench_alt_2:before { content: "\f163"; }
+.icon-soundcloud:before { content: "\f154"; }
+.icon-success:before { content: "\f155"; }
+.icon-sun_fill:before { content: "\f156"; }
+.icon-sun_stroke:before { content: "\f157"; }
+.icon-terminal:before { content: "\f158"; }
+.icon-trash:before { content: "\f159"; }
+.icon-tumblr:before { content: "\f15a"; }
+.icon-twitter:before { content: "\f15b"; }
+.icon-twitter_badge:before { content: "\f15c"; }
+.icon-user:before { content: "\f15d"; }
+.icon-video:before { content: "\f15e"; }
+.icon-vkontakte:before { content: "\f15f"; }
+.icon-wand:before { content: "\f160"; }
+.icon-warning:before { content: "\f161"; }
+.icon-wrench:before { content: "\f162"; }
+.icon-wrench_alt:before { content: "\f163"; }
+.icon-wrench_alt_2:before { content: "\f164"; }
