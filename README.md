@@ -33,7 +33,7 @@ Builds the theme in `tmp/`.
 
 ### Uploading to S3
 
-    middleman sync
+    middleman s3_sync
 
 Assuming you have the `config/environment.yml` file set up with your AWS info,
 will push to AWS
