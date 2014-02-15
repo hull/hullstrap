@@ -1,31 +1,58 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
+ruby '2.0.0'
 
+# Serve
+gem 'puma',      '~> 2.7'
+gem 'rake',      '~> 10.1'
+gem 'sinatra'
+
+# Rack
 gem 'rack-contrib'
+gem 'rack-rewrite'
 gem 'rack-environment'
+
+# Utils
 gem 'activesupport'
+gem 'builder'
+gem 'hashie'
+gem 'sanitize'
+gem 'awesome_print'
 
+# Templating
 gem 'slim'
-
-gem 'animation' # css animation plugin
-gem "sass", "~> 3.2.5"
-gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :tag => 'v0.13.alpha.4'
-gem 'sass-getunicode'
-gem 'bootstrap-sass', '2.3.1.0'
-
-gem 'libv8', '~> 3.11.8'
-gem 'execjs'
-gem 'oj'        # faster JSON
+gem 'redcarpet'
 
 gem 'middleman'
+gem 'middleman-syntax', github: "hull/middleman-syntax" 
 gem 'middleman-sprockets'
 gem 'middleman-smusher'
-# gem "middleman-sync"
+gem 'middleman-minify-html'
+gem 'middleman-livereload'
+
+# CSS
+gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'stable'
+gem 'animation' # css animation plugin
+gem 'sass-getunicode'
+gem 'bootstrap-sass', '~> 3.1.1'
+
+
+# JS
+# gem 'libv8', '~> 3.11.8'
+gem 'execjs'
+gem 'oj'        # faster JS compiles
+gem 'uglifier'
+gem 'handlebars_assets'
+
+# Deployment
 gem "middleman-s3_sync"
 
 group :development do
   gem 'middleman-livereload'
+  gem 'foreman'
   gem 'middleman-gh-pages'
-  gem 'heroku'
-  gem 'shotgun'
   gem 'fontcustom'
+  gem 'heroku'
 end
+
+
+

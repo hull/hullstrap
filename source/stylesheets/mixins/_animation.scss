@@ -1,0 +1,7 @@
+@mixin easeOutQuint{
+  @include transition-timing-function(cubic-bezier(0.230, 1.000, 0.320, 1.000));
+}
+
+%animate{
+  @include transition(all 0.2s ease-out);
+}

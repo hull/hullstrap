@@ -1,9 +1,0 @@
-//
-// Tooltips
-// --------------------------------------------------
-
-
-// Base class
-.tooltip {
-  &.in     { @include opacity(95); }
-}

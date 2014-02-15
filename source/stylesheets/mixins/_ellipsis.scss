@@ -1,1 +1,8 @@
-%ellipsis { text-overflow: ellipsis;overflow: hidden;white-space: nowrap; }
+%ellipsis{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
+}
+
