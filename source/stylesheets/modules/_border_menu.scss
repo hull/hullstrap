@@ -1,0 +1,142 @@
+.bt-menu.border-menu {
+  background-color: rgba(0,0,0,0);
+
+  .bt-menu-trigger {
+    top: 10px;
+    left: 20px;
+    span {
+      top: 50%;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 8%;
+      background-color: #fff;
+      @include transition(background-color 0.3s);
+      &:before, &:after {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        content: '';
+        @include transition(transform 0.3s);
+      }
+      &:before {
+        @include transform(translateY(-250%));
+      }
+      &:after {
+        @include transform(translateY(250%));
+      }
+    }
+  }
+
+  ul {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      @include transition(transform 0.3s, opacity 0.2s, visibility 0s 0.3s);
+      a {
+        display: block;
+        outline: none;
+        text-decoration: none;
+        &:before {
+          color: #fff;
+          font-size: 24px;
+          -webkit-transition: color 0.2s;
+          transition: color 0.2s;
+        }
+      }
+    }
+  }
+
+  /* First menu */
+  ul.bt-menu-sidebar {
+    top: 75px;
+    left: 0;
+    li{
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      @include transform(translate3d(-100%,50%,0));
+      a {
+        padding: 0 20px;
+        box-shadow: inset 0 1px rgba(0,0,0,0.2);
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 1em;
+        -webkit-transition: color 0.2s;
+        transition: color 0.2s;
+      }
+      &:last-child a {
+        box-shadow: inset 0 1px rgba(0,0,0,0.2), inset 0 -1px rgba(0,0,0,0.2);
+      }
+    }
+  }
+
+  /* Second menu */
+  ul.bt-menu-footer {
+    right: 0;
+    bottom: 0;
+    li {
+      float: left;
+      font-size: 0px;
+      width: 60px;
+      height: 50px;
+      line-height: 50px;
+      @include transform(scale(0));
+      a {
+        color: transparent;
+        text-align: center;
+        font-size: 0px;
+        line-height: 70px;
+      }
+    }
+  }
+
+  ul.bt-menu-sidebar li a:hover,
+  ul.bt-menu-sidebar li a:focus,
+  ul li a:hover:before,
+  ul li a:focus:before {
+    color: #1abc9c;
+  }
+
+  &.bt-menu-open {
+    border-width: 0px 0px 50px 150px;
+    background-color: rgba(0,0,0,0.3);
+
+    ul.bt-menu-sidebar, ul.bt-menu-footer {
+      li{
+        visibility: visible;
+        opacity: 1;
+        @include transition(all 0.3s);       
+      }
+    }
+
+    ul.bt-menu-sidebar li {
+      @include transform(translate3d(0,0,0));
+    }
+
+    ul.bt-menu-footer {
+      li {
+        @include transform(scale(1));
+        &:first-child  {@include transition-delay(.1s); }
+        &:nth-child(2) {@include transition-delay(.2s); }
+        &:nth-child(3) {@include transition-delay(.3s); }
+        &:nth-child(4) {@include transition-delay(.4s); }
+      }
+    }
+
+    .bt-menu-trigger span {
+      &:before {@include transform(translateY(-300%)); }
+      &:after  {@include transform(translateY(300%));  }
+    }
+  }
+
+}
+

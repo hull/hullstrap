@@ -1,0 +1,32 @@
+header.navbar.navbar-inverse.navbar-static-top
+  .container
+    .navbar-header
+      button.navbar-toggle type='button' data-toggle='collapse' data-target='#site-nav'
+        span.sr-only Toggle Navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href="#" Brand
+
+    #site-nav.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li
+          a.dropdown-toggle data-toggle='dropdown' href="/"
+            ' Modules
+            b.caret
+          ul.dropdown-menu
+            - data.modules.modules.each do |m|
+              li
+                a href="section-#{m}"=m.humanize.capitalize
+        - data.nav.tree.each do |p|
+          li
+            - if p.children.blank?
+              a href=p.url =p.title
+            - else
+              a.dropdown-toggle data-toggle='dropdown' href=p.url
+                =p.title
+                b.caret
+              ul.dropdown-menu
+                - p.children.each do |c|
+                  li
+                    a href=c.url =c.title

@@ -1,0 +1,9 @@
+/ ==partial '/partials/nav/site_nav'
+
+.container
+  - data.modules.modules.each do |m|
+    .row
+      .page-header
+        h1 id="section-#{m}" =m.humanize.capitalize
+      .col-xs-12
+        ==partial "/modules/#{m}"

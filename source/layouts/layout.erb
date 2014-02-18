@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Bootstrap, from Twitter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -14,9 +14,9 @@
   </head>
 
   <body class="<%= page_classes %>">
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="/javascripts/all.js"></script>
     <%= yield %>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="/javascripts/bootstrap.js"></script>
     <script>
       $(function() {
         $('[data-toggle="tooltip"]').tooltip();
