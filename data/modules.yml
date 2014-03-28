@@ -1,11 +1,18 @@
+nav_modules:
+  - cbp_vimenu
+  - border_menu
 page_modules:
-modules:
+  - cbp_fwslider
   - cbp_scroller
+modules:
+  - cbp_tmtimeline
+  - cbp_qtrotator
+  - cbp_hrmenu
+  - cbp_ig_grid
   - sticky_table_header
   - opening_grid
   - annotations_overlay
   - timed_notification
   - search_box
-  - border_menu
   - border_player
   - icons

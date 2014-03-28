@@ -27,7 +27,6 @@ gem 'middleman-syntax', github: "hull/middleman-syntax"
 gem 'middleman-sprockets'
 gem 'middleman-smusher'
 gem 'middleman-minify-html'
-gem 'middleman-livereload'
 
 # CSS
 gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'stable'
