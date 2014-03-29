@@ -1,54 +1,73 @@
-source 'https://rubygems.org'
-ruby '2.0.0'
+source 'http://rubygems.org'
 
-# Serve
-gem 'puma',      '~> 2.7'
-gem 'rake',      '~> 10.1'
-gem 'sinatra'
 
+##################
+# Data
+##################
+  gem 'builder'
+  gem 'hashie'
+  gem 'activesupport'
+  gem 'awesome_print'
+  gem 'hullio'
+  gem 'twitter'
+
+
+
+##################
 # Rack
-gem 'rack-contrib'
-gem 'rack-rewrite'
-gem 'rack-environment'
+##################
+  gem 'puma'
+  gem 'rake'
+  gem 'rack-contrib'
+  gem 'rack-rewrite'
+  gem 'rack-environment'
 
-# Utils
-gem 'activesupport'
-gem 'builder'
-gem 'hashie'
-gem 'sanitize'
-gem 'awesome_print'
+##################
+# Assets
+##################
+  gem 'uglifier'
+  gem 'slim'
+  gem 'sanitize'
+  gem 'handlebars_assets'
 
-# Templating
-gem 'slim'
-gem 'redcarpet'
-
-gem 'middleman'
-gem 'middleman-syntax', github: "hull/middleman-syntax" 
-gem 'middleman-sprockets'
-gem 'middleman-smusher'
-gem 'middleman-minify-html'
-
-# CSS
-gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'stable'
-gem 'toolkit' # compass enhancement
-gem 'animation' # css animations
-gem 'sass-getunicode'
-gem 'bootstrap-sass', '~> 3.1.1'
+  gem 'sass', '~> 3.3.4'
+  gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :tag => 'v0.13.alpha.10'
+  gem 'bootstrap-sass', '3.1.1'
+  gem 'toolkit'
+  gem 'sass-getunicode'
+  gem 'animation' # css animation plugin
 
 
+##################
 # JS
-# gem 'libv8', '~> 3.11.8'
-gem 'execjs'
-gem 'oj'        # faster JS compiles
-gem 'uglifier'
-gem 'handlebars_assets'
+##################
+  gem 'execjs'
+  gem 'json', '~> 1.8.0'
+  gem 'oj'        # faster JSON
+  # gem 'libv8', '~> 3.11.8'
 
-# Deployment
-gem "middleman-s3_sync"
 
+##################
+# Middleman
+##################
+  gem 'middleman'
+  gem 'middleman-sprockets'
+  gem 'middleman-smusher'
+  gem 'middleman-minify-html'
+  gem "middleman-s3_sync"
+
+##################
+# Fixtures
+##################
+  gem 'uifaces'
+  gem 'random_data'
+
+##################
+# Build Targets
+##################
 group :development do
-  gem 'middleman-livereload'
   gem 'foreman'
-  gem 'middleman-gh-pages'
   gem 'fontcustom'
+  gem 'middleman-gh-pages'
+  gem 'middleman-livereload'
 end

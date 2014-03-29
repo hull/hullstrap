@@ -1,67 +1,69 @@
 GIT
   remote: git://github.com/chriseppstein/compass.git
-  revision: 4582818e4d0da9d0abee7e598b6285e51d8efdf4
-  branch: stable
+  revision: 29585bbdd3e9960402b084c26ebbc284a0366660
+  tag: v0.13.alpha.10
   specs:
-    compass (0.12.2.4582818)
+    compass (0.13.alpha.10.76251a8)
       chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.1)
-
-GIT
-  remote: git://github.com/hull/middleman-syntax.git
-  revision: 65633d95a314e2c31092ad939bfb6c7582c33144
-  specs:
-    middleman-syntax (1.2.1)
-      middleman-core (~> 3.0)
-      middleman-more (~> 3.0)
-      rouge (~> 1.0)
+      json
+      listen (~> 1.1.0)
+      sass (~> 3.3.0.rc.1)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
-    activesupport (3.2.16)
+    activesupport (3.2.17)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    addressable (2.3.6)
     animation (0.1.alpha.3)
       compass (>= 0.12.0)
       sass (>= 3.2.0.alpha.95)
+    atomic (1.1.16)
     awesome_print (1.2.0)
     bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
-    breakpoint (2.0.7)
-      compass (>= 0.12.1)
-      sass (>= 3.2.0)
+    buftok (0.2.0)
     builder (3.2.2)
     chunky_png (1.3.0)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    color-schemer (0.2.8)
-      compass-blend-modes (~> 0.0.2)
-    colorize (0.6.0)
-    compass-blend-modes (0.0.2)
-      compass
-    dotenv (0.9.0)
+    colorize (0.7.0)
+    descendants_tracker (0.0.3)
+    dotenv (0.10.0)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
+    equalizer (0.0.9)
     eventmachine (1.0.3)
-    excon (0.31.0)
+    excon (0.32.1)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faraday (0.8.9)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
     ffi (1.9.3)
-    fog (1.20.0)
+    fog (1.21.0)
+      fog-brightbox
+      fog-core (~> 1.21, >= 1.21.1)
+      fog-json
+      nokogiri (~> 1.5, >= 1.5.11)
+    fog-brightbox (0.0.1)
+      fog-core
+      fog-json
+    fog-core (1.21.1)
       builder
-      excon (~> 0.31.0)
+      excon (~> 0.32)
       formatador (~> 0.2.0)
       mime-types
-      multi_json (~> 1.0)
       net-scp (~> 1.1)
       net-ssh (>= 2.1.3)
-      nokogiri (>= 1.5.11)
-    fontcustom (1.3.2)
+    fog-json (1.0.0)
+      multi_json (~> 1.0)
+    fontcustom (1.3.3)
       json (~> 1.4)
       listen (~> 1.0)
       thor (~> 0.14)
@@ -69,7 +71,6 @@ GEM
       dotenv (>= 0.7)
       thor (>= 0.13.6)
     formatador (0.2.4)
-    fssm (0.2.10)
     haml (4.0.5)
       tilt
     handlebars_assets (0.15)
@@ -79,16 +80,25 @@ GEM
       tilt
     hashie (2.0.5)
     hike (1.2.3)
+    http (0.5.0)
+      http_parser.rb
     http_parser.rb (0.5.3)
     httpclient (2.3.4.1)
+    hullio (0.3.2)
+      faraday
+      faraday_middleware
+      mime-types
+      multi_json
     i18n (0.6.9)
     json (1.8.1)
-    kramdown (1.3.1)
-    listen (1.3.1)
+    kramdown (1.3.3)
+    listen (1.1.6)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
-    map (6.5.2)
+    map (6.5.3)
+    memoizable (0.2.0)
+      thread_safe (~> 0.1.3)
     middleman (3.2.2)
       coffee-script (~> 2.2.0)
       compass (>= 0.12.2)
@@ -110,15 +120,14 @@ GEM
       tilt (~> 1.4.1)
     middleman-gh-pages (0.0.3)
       rake (> 0.9.3)
-    middleman-livereload (3.1.1)
-      em-websocket (>= 0.2.0)
-      middleman-core (>= 3.0.2)
-      multi_json (~> 1.0)
-      rack-livereload
+    middleman-livereload (3.2.1)
+      em-websocket (~> 0.5.0)
+      middleman-core (~> 3.2)
+      multi_json (~> 1.8.4)
+      rack-livereload (~> 0.3.15)
     middleman-minify-html (3.1.1)
       middleman-core (~> 3.0)
-    middleman-more (3.1.6)
-    middleman-s3_sync (3.0.24)
+    middleman-s3_sync (3.0.25)
       colorize
       fog (>= 1.10.1)
       map
@@ -129,22 +138,23 @@ GEM
     middleman-smusher (3.0.0)
       middleman (>= 3.0.0)
       smusher (~> 0.4.9)
-    middleman-sprockets (3.2.0)
-      middleman-core (~> 3.2)
+    middleman-sprockets (3.3.1)
+      middleman-core (>= 3.2)
       sprockets (~> 2.1)
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
-    mime-types (2.1)
-    mini_portile (0.5.2)
+    mime-types (2.2)
+    mini_portile (0.5.3)
     multi_json (1.8.4)
+    multipart-post (1.2.0)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.8.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
-    oj (2.5.4)
+    oj (2.6.1)
     pmap (1.0.1)
-    puma (2.7.1)
+    puma (2.8.1)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
     rack-contrib (1.1.0)
@@ -152,35 +162,23 @@ GEM
     rack-environment (1.2.0)
     rack-livereload (0.3.15)
       rack
-    rack-protection (1.5.2)
-      rack
     rack-rewrite (1.5.0)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rake (10.1.1)
+    rake (10.2.2)
+    random_data (1.6.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
       ffi (>= 0.5.0)
-    rb-kqueue (0.2.0)
+    rb-kqueue (0.2.2)
       ffi (>= 0.5.0)
-    redcarpet (3.1.0)
-    rouge (1.3.2)
-    ruby-progressbar (1.4.1)
+    ruby-progressbar (1.4.2)
     sanitize (2.1.0)
       nokogiri (>= 1.4.4)
-    sass (3.2.14)
+    sass (3.3.4)
     sass-getunicode (1.0)
       sass (>= 3)
-    sassy-strings (1.0.0)
-      compass (>= 0.12.2)
-    sinatra (1.4.4)
-      rack (~> 1.4)
-      rack-protection (~> 1.4)
-      tilt (~> 1.3, >= 1.3.4)
-    singularitygs (1.1.2)
-      breakpoint (>= 2.0.1)
-      compass (>= 0.12.2)
-      sass (>= 3.2.1)
+    simple_oauth (0.2.0)
     slim (2.0.2)
       temple (~> 0.6.6)
       tilt (>= 1.3.3, < 2.1)
@@ -188,28 +186,38 @@ GEM
       httpclient (>= 2.2)
       json
       rake
-    sprockets (2.10.1)
+    sprockets (2.12.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sprockets-helpers (1.0.1)
       sprockets (~> 2.0)
-    sprockets-sass (1.0.2)
+    sprockets-sass (1.0.3)
       sprockets (~> 2.0)
       tilt (~> 1.1)
     temple (0.6.7)
-    thor (0.18.1)
+    thor (0.19.1)
+    thread_safe (0.1.3)
+      atomic
     tilt (1.4.1)
-    toolkit (1.3.8)
-      breakpoint (>= 2.0.6)
-      color-schemer (>= 0.2.7)
-      compass (>= 0.12.2)
-      sassy-strings (>= 1.0.0)
-      singularitygs (>= 1.1.2)
+    toolkit (2.1.0)
+      sass (~> 3.3.0)
+    twitter (5.1.1)
+      addressable (~> 2.3)
+      buftok (~> 0.2.0)
+      descendants_tracker (~> 0.0.1)
+      equalizer (~> 0.0.7)
+      faraday (>= 0.8, < 0.10)
+      http (~> 0.5.0)
+      http_parser.rb (~> 0.5.0)
+      json (~> 1.8)
+      memoizable (~> 0.2.0)
+      simple_oauth (~> 0.2.0)
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    uifaces (0.0.2)
     unf (0.1.3)
       unf_ext
     unf_ext (0.0.6)
@@ -221,7 +229,7 @@ DEPENDENCIES
   activesupport
   animation
   awesome_print
-  bootstrap-sass (~> 3.1.1)
+  bootstrap-sass (= 3.1.1)
   builder
   compass!
   execjs
@@ -229,6 +237,8 @@ DEPENDENCIES
   foreman
   handlebars_assets
   hashie
+  hullio
+  json (~> 1.8.0)
   middleman
   middleman-gh-pages
   middleman-livereload
@@ -236,17 +246,18 @@ DEPENDENCIES
   middleman-s3_sync
   middleman-smusher
   middleman-sprockets
-  middleman-syntax!
   oj
-  puma (~> 2.7)
+  puma
   rack-contrib
   rack-environment
   rack-rewrite
-  rake (~> 10.1)
-  redcarpet
+  rake
+  random_data
   sanitize
+  sass (~> 3.3.4)
   sass-getunicode
-  sinatra
   slim
   toolkit
+  twitter
   uglifier
+  uifaces
