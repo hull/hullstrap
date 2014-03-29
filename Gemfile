@@ -11,8 +11,6 @@ source 'http://rubygems.org'
   gem 'hullio'
   gem 'twitter'
 
-
-
 ##################
 # Rack
 ##################
