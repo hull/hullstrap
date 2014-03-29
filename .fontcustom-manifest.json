@@ -1,442 +1,443 @@
 {
   "checksum": {
-    "previous": "d3bb98cca1268f549f7fb3519ebc2a4b43208ab858598f4f39b4db232347754f",
-    "current": "d3bb98cca1268f549f7fb3519ebc2a4b43208ab858598f4f39b4db232347754f"
+    "previous": "34a0303219141458f52d1a2da69757d29851349ad0e9d88b9566e7cb86f456d3",
+    "current": "34a0303219141458f52d1a2da69757d29851349ad0e9d88b9566e7cb86f456d3"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_d3bb98cca1268f549f7fb3519ebc2a4b.ttf",
-    "source/stylesheets/fonts/fontcustom_d3bb98cca1268f549f7fb3519ebc2a4b.svg",
-    "source/stylesheets/fonts/fontcustom_d3bb98cca1268f549f7fb3519ebc2a4b.woff",
-    "source/stylesheets/fonts/fontcustom_d3bb98cca1268f549f7fb3519ebc2a4b.eot"
+    "source/stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.ttf",
+    "source/stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.svg",
+    "source/stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.woff",
+    "source/stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.eot"
   ],
   "glyphs": {
     "achievement": {
-      "codepoint": 61696,
-      "source": "./source/images/icons/achievement.svg"
+      "codepoint": 61743,
+      "source": "source/images/icons/achievement.svg"
     },
     "achievement_alt": {
-      "codepoint": 61697,
-      "source": "./source/images/icons/achievement_alt.svg"
+      "codepoint": 61744,
+      "source": "source/images/icons/achievement_alt.svg"
     },
     "akismet": {
-      "codepoint": 61698,
-      "source": "./source/images/icons/akismet.svg"
+      "codepoint": 61745,
+      "source": "source/images/icons/akismet.svg"
     },
     "angellist": {
-      "codepoint": 61699,
-      "source": "./source/images/icons/angellist.svg"
+      "codepoint": 61746,
+      "source": "source/images/icons/angellist.svg"
     },
     "arrow": {
-      "codepoint": 61700,
-      "source": "./source/images/icons/arrow.svg"
+      "codepoint": 61747,
+      "source": "source/images/icons/arrow.svg"
     },
     "arrow-left": {
-      "codepoint": 61701,
-      "source": "./source/images/icons/arrow-left.svg"
+      "codepoint": 61748,
+      "source": "source/images/icons/arrow-left.svg"
     },
     "arrow-right": {
-      "codepoint": 61702,
-      "source": "./source/images/icons/arrow-right.svg"
+      "codepoint": 61749,
+      "source": "source/images/icons/arrow-right.svg"
     },
     "bolt": {
-      "codepoint": 61703,
-      "source": "./source/images/icons/bolt.svg"
+      "codepoint": 61750,
+      "source": "source/images/icons/bolt.svg"
     },
     "brush": {
-      "codepoint": 61704,
-      "source": "./source/images/icons/brush.svg"
+      "codepoint": 61751,
+      "source": "source/images/icons/brush.svg"
     },
     "brush_alt": {
-      "codepoint": 61705,
-      "source": "./source/images/icons/brush_alt.svg"
+      "codepoint": 61752,
+      "source": "source/images/icons/brush_alt.svg"
     },
     "bubbles": {
-      "codepoint": 61706,
-      "source": "./source/images/icons/bubbles.svg"
+      "codepoint": 61753,
+      "source": "source/images/icons/bubbles.svg"
     },
     "cart": {
-      "codepoint": 61707,
-      "source": "./source/images/icons/cart.svg"
+      "codepoint": 61754,
+      "source": "source/images/icons/cart.svg"
     },
     "check": {
-      "codepoint": 61708,
-      "source": "./source/images/icons/check.svg"
+      "codepoint": 61755,
+      "source": "source/images/icons/check.svg"
     },
     "check_alt": {
-      "codepoint": 61709,
-      "source": "./source/images/icons/check_alt.svg"
+      "codepoint": 61756,
+      "source": "source/images/icons/check_alt.svg"
     },
     "checkin": {
-      "codepoint": 61710,
-      "source": "./source/images/icons/checkin.svg"
+      "codepoint": 61757,
+      "source": "source/images/icons/checkin.svg"
     },
     "chevron-right": {
-      "codepoint": 61711,
-      "source": "./source/images/icons/chevron-right.svg"
+      "codepoint": 61758,
+      "source": "source/images/icons/chevron-right.svg"
     },
     "cloud": {
-      "codepoint": 61712,
-      "source": "./source/images/icons/cloud.svg"
+      "codepoint": 61759,
+      "source": "source/images/icons/cloud.svg"
     },
     "cloud_download": {
-      "codepoint": 61713,
-      "source": "./source/images/icons/cloud_download.svg"
+      "codepoint": 61760,
+      "source": "source/images/icons/cloud_download.svg"
     },
     "cloud_download_alt": {
-      "codepoint": 61714,
-      "source": "./source/images/icons/cloud_download_alt.svg"
+      "codepoint": 61761,
+      "source": "source/images/icons/cloud_download_alt.svg"
     },
     "cloud_upload": {
-      "codepoint": 61715,
-      "source": "./source/images/icons/cloud_upload.svg"
+      "codepoint": 61762,
+      "source": "source/images/icons/cloud_upload.svg"
     },
     "cloud_upload_alt": {
-      "codepoint": 61716,
-      "source": "./source/images/icons/cloud_upload_alt.svg"
+      "codepoint": 61763,
+      "source": "source/images/icons/cloud_upload_alt.svg"
     },
     "code": {
-      "codepoint": 61717,
-      "source": "./source/images/icons/code.svg"
+      "codepoint": 61764,
+      "source": "source/images/icons/code.svg"
     },
     "cog": {
-      "codepoint": 61718,
-      "source": "./source/images/icons/cog.svg"
+      "codepoint": 61765,
+      "source": "source/images/icons/cog.svg"
     },
     "css3": {
-      "codepoint": 61719,
-      "source": "./source/images/icons/css3.svg"
+      "codepoint": 61766,
+      "source": "source/images/icons/css3.svg"
     },
     "currency": {
-      "codepoint": 61720,
-      "source": "./source/images/icons/currency.svg"
+      "codepoint": 61767,
+      "source": "source/images/icons/currency.svg"
     },
     "edit": {
-      "codepoint": 61721,
-      "source": "./source/images/icons/edit.svg"
+      "codepoint": 61768,
+      "source": "source/images/icons/edit.svg"
     },
     "email": {
-      "codepoint": 61799,
-      "source": "./source/images/icons/email.svg"
+      "codepoint": 61769,
+      "source": "source/images/icons/email.svg"
     },
     "emit": {
-      "codepoint": 61722,
-      "source": "./source/images/icons/emit.svg"
+      "codepoint": 61770,
+      "source": "source/images/icons/emit.svg"
     },
     "error": {
-      "codepoint": 61723,
-      "source": "./source/images/icons/error.svg"
+      "codepoint": 61771,
+      "source": "source/images/icons/error.svg"
     },
     "facebook": {
-      "codepoint": 61724,
-      "source": "./source/images/icons/facebook.svg"
+      "codepoint": 61772,
+      "source": "source/images/icons/facebook.svg"
     },
     "facebook_alt": {
-      "codepoint": 61725,
-      "source": "./source/images/icons/facebook_alt.svg"
+      "codepoint": 61773,
+      "source": "source/images/icons/facebook_alt.svg"
     },
     "facebook_badge": {
-      "codepoint": 61726,
-      "source": "./source/images/icons/facebook_badge.svg"
+      "codepoint": 61774,
+      "source": "source/images/icons/facebook_badge.svg"
     },
     "facebook_badge_alt": {
-      "codepoint": 61727,
-      "source": "./source/images/icons/facebook_badge_alt.svg"
+      "codepoint": 61775,
+      "source": "source/images/icons/facebook_badge_alt.svg"
     },
     "feather": {
-      "codepoint": 61728,
-      "source": "./source/images/icons/feather.svg"
+      "codepoint": 61776,
+      "source": "source/images/icons/feather.svg"
     },
     "fire": {
-      "codepoint": 61729,
-      "source": "./source/images/icons/fire.svg"
+      "codepoint": 61777,
+      "source": "source/images/icons/fire.svg"
     },
     "fork": {
-      "codepoint": 61730,
-      "source": "./source/images/icons/fork.svg"
+      "codepoint": 61778,
+      "source": "source/images/icons/fork.svg"
     },
     "foursquare": {
-      "codepoint": 61731,
-      "source": "./source/images/icons/foursquare.svg"
+      "codepoint": 61779,
+      "source": "source/images/icons/foursquare.svg"
     },
     "friends": {
-      "codepoint": 61732,
-      "source": "./source/images/icons/friends.svg"
+      "codepoint": 61780,
+      "source": "source/images/icons/friends.svg"
     },
     "gear": {
-      "codepoint": 61733,
-      "source": "./source/images/icons/gear.svg"
+      "codepoint": 61781,
+      "source": "source/images/icons/gear.svg"
     },
     "github": {
-      "codepoint": 61734,
-      "source": "./source/images/icons/github.svg"
+      "codepoint": 61782,
+      "source": "source/images/icons/github.svg"
     },
     "google": {
-      "codepoint": 61735,
-      "source": "./source/images/icons/google.svg"
+      "codepoint": 61783,
+      "source": "source/images/icons/google.svg"
     },
     "google_analytics": {
-      "codepoint": 61736,
-      "source": "./source/images/icons/google_analytics.svg"
+      "codepoint": 61784,
+      "source": "source/images/icons/google_analytics.svg"
     },
     "grid": {
-      "codepoint": 61737,
-      "source": "./source/images/icons/grid.svg"
+      "codepoint": 61785,
+      "source": "source/images/icons/grid.svg"
     },
     "guest": {
-      "codepoint": 61798,
-      "source": "./source/images/icons/guest.svg"
+      "codepoint": 61786,
+      "source": "source/images/icons/guest.svg"
     },
     "gumroad": {
-      "codepoint": 61738,
-      "source": "./source/images/icons/gumroad.svg"
+      "codepoint": 61787,
+      "source": "source/images/icons/gumroad.svg"
     },
     "heart": {
-      "codepoint": 61739,
-      "source": "./source/images/icons/heart.svg"
+      "codepoint": 61788,
+      "source": "source/images/icons/heart.svg"
     },
     "html5": {
-      "codepoint": 61740,
-      "source": "./source/images/icons/html5.svg"
+      "codepoint": 61789,
+      "source": "source/images/icons/html5.svg"
     },
     "hull": {
       "codepoint": 61741,
-      "source": "./source/images/icons/hull.svg"
+      "source": "source/images/icons/hull.svg"
     },
     "hull_store": {
       "codepoint": 61742,
-      "source": "./source/images/icons/hull_store.svg"
+      "source": "source/images/icons/hull_store.svg"
     },
     "image": {
-      "codepoint": 61743,
-      "source": "./source/images/icons/image.svg"
+      "codepoint": 61790,
+      "source": "source/images/icons/image.svg"
     },
     "info": {
-      "codepoint": 61744,
-      "source": "./source/images/icons/info.svg"
+      "codepoint": 61791,
+      "source": "source/images/icons/info.svg"
     },
     "instagram": {
-      "codepoint": 61745,
-      "source": "./source/images/icons/instagram.svg"
+      "codepoint": 61792,
+      "source": "source/images/icons/instagram.svg"
     },
     "keenio": {
-      "codepoint": 61746,
-      "source": "./source/images/icons/keenio.svg"
+      "codepoint": 61793,
+      "source": "source/images/icons/keenio.svg"
     },
     "key": {
-      "codepoint": 61747,
-      "source": "./source/images/icons/key.svg"
+      "codepoint": 61794,
+      "source": "source/images/icons/key.svg"
     },
     "key_alt": {
-      "codepoint": 61748,
-      "source": "./source/images/icons/key_alt.svg"
+      "codepoint": 61795,
+      "source": "source/images/icons/key_alt.svg"
     },
     "kissmetrics": {
-      "codepoint": 61749,
-      "source": "./source/images/icons/kissmetrics.svg"
+      "codepoint": 61796,
+      "source": "source/images/icons/kissmetrics.svg"
     },
     "layers": {
-      "codepoint": 61750,
-      "source": "./source/images/icons/layers.svg"
+      "codepoint": 61797,
+      "source": "source/images/icons/layers.svg"
     },
     "layers_alt": {
-      "codepoint": 61751,
-      "source": "./source/images/icons/layers_alt.svg"
+      "codepoint": 61798,
+      "source": "source/images/icons/layers_alt.svg"
     },
     "layers_alt_2": {
-      "codepoint": 61752,
-      "source": "./source/images/icons/layers_alt_2.svg"
+      "codepoint": 61799,
+      "source": "source/images/icons/layers_alt_2.svg"
     },
     "leaderboard": {
-      "codepoint": 61753,
-      "source": "./source/images/icons/leaderboard.svg"
+      "codepoint": 61800,
+      "source": "source/images/icons/leaderboard.svg"
     },
     "like": {
-      "codepoint": 61754,
-      "source": "./source/images/icons/like.svg"
+      "codepoint": 61801,
+      "source": "source/images/icons/like.svg"
     },
     "linkedin": {
-      "codepoint": 61755,
-      "source": "./source/images/icons/linkedin.svg"
+      "codepoint": 61802,
+      "source": "source/images/icons/linkedin.svg"
     },
     "list": {
-      "codepoint": 61756,
-      "source": "./source/images/icons/list.svg"
+      "codepoint": 61803,
+      "source": "source/images/icons/list.svg"
     },
     "loop_alt3": {
-      "codepoint": 61757,
-      "source": "./source/images/icons/loop_alt3.svg"
+      "codepoint": 61804,
+      "source": "source/images/icons/loop_alt3.svg"
     },
     "mail": {
-      "codepoint": 61758,
-      "source": "./source/images/icons/mail.svg"
+      "codepoint": 61805,
+      "source": "source/images/icons/mail.svg"
     },
     "meetup": {
-      "codepoint": 61759,
-      "source": "./source/images/icons/meetup.svg"
+      "codepoint": 61806,
+      "source": "source/images/icons/meetup.svg"
     },
     "metrics": {
-      "codepoint": 61760,
-      "source": "./source/images/icons/metrics.svg"
+      "codepoint": 61807,
+      "source": "source/images/icons/metrics.svg"
     },
     "metrics_alt": {
-      "codepoint": 61761,
-      "source": "./source/images/icons/metrics_alt.svg"
+      "codepoint": 61808,
+      "source": "source/images/icons/metrics_alt.svg"
     },
     "mixpanel": {
-      "codepoint": 61762,
-      "source": "./source/images/icons/mixpanel.svg"
+      "codepoint": 61809,
+      "source": "source/images/icons/mixpanel.svg"
     },
     "moderate": {
-      "codepoint": 61763,
-      "source": "./source/images/icons/moderate.svg"
+      "codepoint": 61810,
+      "source": "source/images/icons/moderate.svg"
     },
     "ok": {
-      "codepoint": 61764,
-      "source": "./source/images/icons/ok.svg"
+      "codepoint": 61811,
+      "source": "source/images/icons/ok.svg"
     },
     "openid": {
-      "codepoint": 61765,
-      "source": "./source/images/icons/openid.svg"
+      "codepoint": 61812,
+      "source": "source/images/icons/openid.svg"
     },
     "paintbrush": {
-      "codepoint": 61766,
-      "source": "./source/images/icons/paintbrush.svg"
+      "codepoint": 61813,
+      "source": "source/images/icons/paintbrush.svg"
     },
     "pen": {
-      "codepoint": 61767,
-      "source": "./source/images/icons/pen.svg"
+      "codepoint": 61814,
+      "source": "source/images/icons/pen.svg"
     },
     "pencil": {
-      "codepoint": 61768,
-      "source": "./source/images/icons/pencil.svg"
+      "codepoint": 61815,
+      "source": "source/images/icons/pencil.svg"
     },
     "picture": {
-      "codepoint": 61769,
-      "source": "./source/images/icons/picture.svg"
+      "codepoint": 61816,
+      "source": "source/images/icons/picture.svg"
     },
     "picture_alt": {
-      "codepoint": 61770,
-      "source": "./source/images/icons/picture_alt.svg"
+      "codepoint": 61817,
+      "source": "source/images/icons/picture_alt.svg"
     },
     "picture_alt2": {
-      "codepoint": 61771,
-      "source": "./source/images/icons/picture_alt2.svg"
+      "codepoint": 61818,
+      "source": "source/images/icons/picture_alt2.svg"
     },
     "picture_alt_3": {
-      "codepoint": 61772,
-      "source": "./source/images/icons/picture_alt_3.svg"
+      "codepoint": 61819,
+      "source": "source/images/icons/picture_alt_3.svg"
     },
     "plus": {
-      "codepoint": 61773,
-      "source": "./source/images/icons/plus.svg"
+      "codepoint": 61820,
+      "source": "source/images/icons/plus.svg"
     },
     "power": {
-      "codepoint": 61774,
-      "source": "./source/images/icons/power.svg"
+      "codepoint": 61821,
+      "source": "source/images/icons/power.svg"
     },
     "power_alt": {
-      "codepoint": 61775,
-      "source": "./source/images/icons/power_alt.svg"
+      "codepoint": 61822,
+      "source": "source/images/icons/power_alt.svg"
     },
     "reply": {
-      "codepoint": 61776,
-      "source": "./source/images/icons/reply.svg"
+      "codepoint": 61823,
+      "source": "source/images/icons/reply.svg"
     },
     "rocket": {
-      "codepoint": 61777,
-      "source": "./source/images/icons/rocket.svg"
+      "codepoint": 61824,
+      "source": "source/images/icons/rocket.svg"
     },
     "rss_alt": {
-      "codepoint": 61778,
-      "source": "./source/images/icons/rss_alt.svg"
+      "codepoint": 61825,
+      "source": "source/images/icons/rss_alt.svg"
     },
     "search": {
-      "codepoint": 61779,
-      "source": "./source/images/icons/search.svg"
+      "codepoint": 61826,
+      "source": "source/images/icons/search.svg"
     },
     "share": {
-      "codepoint": 61780,
-      "source": "./source/images/icons/share.svg"
+      "codepoint": 61827,
+      "source": "source/images/icons/share.svg"
     },
     "soundcloud": {
-      "codepoint": 61781,
-      "source": "./source/images/icons/soundcloud.svg"
+      "codepoint": 61828,
+      "source": "source/images/icons/soundcloud.svg"
     },
     "success": {
-      "codepoint": 61782,
-      "source": "./source/images/icons/success.svg"
+      "codepoint": 61829,
+      "source": "source/images/icons/success.svg"
     },
     "sun_fill": {
-      "codepoint": 61783,
-      "source": "./source/images/icons/sun_fill.svg"
+      "codepoint": 61830,
+      "source": "source/images/icons/sun_fill.svg"
     },
     "sun_stroke": {
-      "codepoint": 61784,
-      "source": "./source/images/icons/sun_stroke.svg"
+      "codepoint": 61831,
+      "source": "source/images/icons/sun_stroke.svg"
     },
     "terminal": {
-      "codepoint": 61785,
-      "source": "./source/images/icons/terminal.svg"
+      "codepoint": 61832,
+      "source": "source/images/icons/terminal.svg"
     },
     "trash": {
-      "codepoint": 61786,
-      "source": "./source/images/icons/trash.svg"
+      "codepoint": 61833,
+      "source": "source/images/icons/trash.svg"
     },
     "tumblr": {
-      "codepoint": 61787,
-      "source": "./source/images/icons/tumblr.svg"
+      "codepoint": 61834,
+      "source": "source/images/icons/tumblr.svg"
     },
     "twitter": {
-      "codepoint": 61788,
-      "source": "./source/images/icons/twitter.svg"
+      "codepoint": 61835,
+      "source": "source/images/icons/twitter.svg"
     },
     "twitter_badge": {
-      "codepoint": 61789,
-      "source": "./source/images/icons/twitter_badge.svg"
+      "codepoint": 61836,
+      "source": "source/images/icons/twitter_badge.svg"
     },
     "user": {
-      "codepoint": 61790,
-      "source": "./source/images/icons/user.svg"
+      "codepoint": 61837,
+      "source": "source/images/icons/user.svg"
     },
     "video": {
-      "codepoint": 61791,
-      "source": "./source/images/icons/video.svg"
+      "codepoint": 61838,
+      "source": "source/images/icons/video.svg"
     },
     "vkontakte": {
-      "codepoint": 61792,
-      "source": "./source/images/icons/vkontakte.svg"
+      "codepoint": 61839,
+      "source": "source/images/icons/vkontakte.svg"
     },
     "wand": {
-      "codepoint": 61793,
-      "source": "./source/images/icons/wand.svg"
+      "codepoint": 61840,
+      "source": "source/images/icons/wand.svg"
     },
     "warning": {
-      "codepoint": 61794,
-      "source": "./source/images/icons/warning.svg"
+      "codepoint": 61841,
+      "source": "source/images/icons/warning.svg"
     },
     "wrench": {
-      "codepoint": 61795,
-      "source": "./source/images/icons/wrench.svg"
+      "codepoint": 61842,
+      "source": "source/images/icons/wrench.svg"
     },
     "wrench_alt": {
-      "codepoint": 61796,
-      "source": "./source/images/icons/wrench_alt.svg"
+      "codepoint": 61843,
+      "source": "source/images/icons/wrench_alt.svg"
     },
     "wrench_alt_2": {
-      "codepoint": 61797,
-      "source": "./source/images/icons/wrench_alt_2.svg"
+      "codepoint": 61844,
+      "source": "source/images/icons/wrench_alt_2.svg"
     }
   },
   "options": {
-    "autowidth": false,
+    "autowidth": true,
     "config": "./config/fontcustom.yml",
+    "css_prefix": "icon-{{glyph}}",
     "css_selector": ".icon-{{glyph}}",
     "debug": true,
     "font_name": "fontcustom",
     "force": false,
     "input": {
-      "templates": "./source/images/icons",
-      "vectors": "./source/images/icons"
+      "templates": "source/images/icons",
+      "vectors": "source/images/icons"
     },
     "no_hash": false,
     "output": {
@@ -444,14 +445,14 @@
       "fonts": "source/stylesheets/fonts",
       "preview": "source/stylesheets/fonts"
     },
-    "preprocessor_path": null,
+    "preprocessor_path": "stylesheets/fonts",
     "quiet": false,
     "skip_first": false,
     "templates": [
-      "css"
+      "scss"
     ]
   },
   "templates": [
-    "source/stylesheets/fontcustom.css"
+    "source/stylesheets/_fontcustom.scss"
   ]
 }

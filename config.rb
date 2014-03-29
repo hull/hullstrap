@@ -29,7 +29,6 @@ require 'animation'
 
 
   activate :gzip
-  activate :sprockets
   activate :livereload, :port => 35730
   activate :directory_indexes
 
@@ -43,16 +42,19 @@ require 'animation'
 ##################
   Sass::Script::Number.precision = 20
   HandlebarsAssets::Config.path_prefix = 'aura_components'
-  sprockets.append_path HandlebarsAssets.path
-  sprockets.append_path 'aura_components'
-  sprockets.append_path 'bower_components'
-  sprockets.append_path '../bower_components'
-  sprockets.append_path File.join "#{root}", "bower_components"
-
+  after_configuration do  
+    # Register Handlebars Templates
+    sprockets.append_path HandlebarsAssets.path
+    # Register Bower Components
+    sprockets.append_path File.join "#{root}", "bower_components"
+    # Register Aura Components
+    sprockets.append_path 'aura_components'
+  end
 
 ##################
 # Layouts
 ##################
+  # Skip Layout for HBS files
   page "aura_components/*", layout: false
   page "*", :layout => :layout
   page "opensource/*", :layout => :layout

@@ -1,26 +1,13 @@
-##
-# FONTCUSTOM CONFIG
-#
-# Include this file along with your vectors or pass it to any command with:
-#   --config=path/to/config.yml 
-#   -c path/to/containing/dir/
-#
-# Run `fontcustom help` to learn about various options
-##
-
+input: source/images/icons
 output:
   fonts: source/stylesheets/fonts
   css: source/stylesheets
-
 # templates: [ scss, preview, relative/path/from/INPUT, relative/path/from/PWD ]
-templates: [ css ]
-
-# font_name: my-font
-
+templates: [ scss ]
 no_hash: false
-
-#css_prefix: glyph-
-
-#debug: true
-
-#verbose: false
+css_prefix: icon-{{glyph}}
+autowidth: true
+font_name: fontcustom
+# debug: true
+# verbose: true
+preprocessor_path: "stylesheets/fonts"

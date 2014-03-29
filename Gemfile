@@ -53,6 +53,7 @@ source 'http://rubygems.org'
   gem 'middleman-smusher'
   gem 'middleman-minify-html'
   gem "middleman-s3_sync"
+  gem 'middleman-livereload'
 
 ##################
 # Fixtures
@@ -67,5 +68,4 @@ group :development do
   gem 'foreman'
   gem 'fontcustom'
   gem 'middleman-gh-pages'
-  gem 'middleman-livereload'
 end
