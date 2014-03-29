@@ -1,0 +1,23 @@
+// h1 {
+//   @include enable-ligatures;
+// }
+
+// h2 {
+//   @extend %enable-ligatures;
+// }
+
+// h3 {
+//   @extend %enable-ligatures;
+// }
+
+// @include style-external-links('twitter.com') {
+//   color: blue;
+//   &:before {
+//     content: '';
+//     height: 1em;
+//     width: 1em;
+//     display: inline-block;
+//     background-image: image-url('twitter.svg');
+//     background-size: 100%;
+//   }
+// }

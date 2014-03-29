@@ -30,7 +30,8 @@ gem 'middleman-minify-html'
 
 # CSS
 gem 'compass', :git => 'git://github.com/chriseppstein/compass.git', :branch => 'stable'
-gem 'animation' # css animation plugin
+gem 'toolkit' # compass enhancement
+gem 'animation' # css animations
 gem 'sass-getunicode'
 gem 'bootstrap-sass', '~> 3.1.1'
 
@@ -50,8 +51,4 @@ group :development do
   gem 'foreman'
   gem 'middleman-gh-pages'
   gem 'fontcustom'
-  gem 'heroku'
 end
-
-
-
