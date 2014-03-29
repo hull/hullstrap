@@ -1,25 +1,35 @@
-/* 
- * Font Custom: bare CSS
- */
+/*
+  Icon Font: fontcustom
+*/
 
 @font-face {
   font-family: "fontcustom";
-  src: url("fontcustom.eot");
-  src: url("fontcustom.eot?#iefix") format("embedded-opentype"),
-       url("fontcustom.woff") format("woff"),
-       url("fontcustom.ttf") format("truetype"),
-       url("fontcustom.svg#fontcustom") format("svg");
+  src: url("fonts/fontcustom_d3bb98cca1268f549f7fb3519ebc2a4b.eot");
+  src: url("fonts/fontcustom_d3bb98cca1268f549f7fb3519ebc2a4b.eot?#iefix") format("embedded-opentype"),
+       url("fonts/fontcustom_d3bb98cca1268f549f7fb3519ebc2a4b.woff") format("woff"),
+       url("fonts/fontcustom_d3bb98cca1268f549f7fb3519ebc2a4b.ttf") format("truetype"),
+       url("fonts/fontcustom_d3bb98cca1268f549f7fb3519ebc2a4b.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "fontcustom";
+    src: url("fonts/fontcustom_d3bb98cca1268f549f7fb3519ebc2a4b.svg#fontcustom") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
 .icon-achievement:before,
 .icon-achievement_alt:before,
 .icon-akismet:before,
 .icon-angellist:before,
+.icon-arrow:before,
 .icon-arrow-left:before,
 .icon-arrow-right:before,
-.icon-arrow:before,
 .icon-bolt:before,
 .icon-brush:before,
 .icon-brush_alt:before,
@@ -39,6 +49,7 @@
 .icon-css3:before,
 .icon-currency:before,
 .icon-edit:before,
+.icon-email:before,
 .icon-emit:before,
 .icon-error:before,
 .icon-facebook:before,
@@ -55,6 +66,7 @@
 .icon-google:before,
 .icon-google_analytics:before,
 .icon-grid:before,
+.icon-guest:before,
 .icon-gumroad:before,
 .icon-heart:before,
 .icon-html5:before,
@@ -115,24 +127,27 @@
 .icon-wrench:before,
 .icon-wrench_alt:before,
 .icon-wrench_alt_2:before {
+  display: inline-block;
   font-family: "fontcustom";
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
-  text-transform: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
   text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 .icon-achievement:before { content: "\f100"; }
 .icon-achievement_alt:before { content: "\f101"; }
 .icon-akismet:before { content: "\f102"; }
 .icon-angellist:before { content: "\f103"; }
-.icon-arrow-left:before { content: "\f104"; }
-.icon-arrow-right:before { content: "\f105"; }
-.icon-arrow:before { content: "\f106"; }
+.icon-arrow:before { content: "\f104"; }
+.icon-arrow-left:before { content: "\f105"; }
+.icon-arrow-right:before { content: "\f106"; }
 .icon-bolt:before { content: "\f107"; }
 .icon-brush:before { content: "\f108"; }
 .icon-brush_alt:before { content: "\f109"; }
@@ -152,6 +167,7 @@
 .icon-css3:before { content: "\f117"; }
 .icon-currency:before { content: "\f118"; }
 .icon-edit:before { content: "\f119"; }
+.icon-email:before { content: "\f167"; }
 .icon-emit:before { content: "\f11a"; }
 .icon-error:before { content: "\f11b"; }
 .icon-facebook:before { content: "\f11c"; }
@@ -168,6 +184,7 @@
 .icon-google:before { content: "\f127"; }
 .icon-google_analytics:before { content: "\f128"; }
 .icon-grid:before { content: "\f129"; }
+.icon-guest:before { content: "\f166"; }
 .icon-gumroad:before { content: "\f12a"; }
 .icon-heart:before { content: "\f12b"; }
 .icon-html5:before { content: "\f12c"; }

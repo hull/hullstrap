@@ -49,9 +49,14 @@
 # 
 
 set :css_dir, 'stylesheets'
+set :sass_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :build_dir, 'tmp'
+
+compass_config do |config|
+  config.fonts_path = "stylesheets"
+end
 
 activate :livereload
 

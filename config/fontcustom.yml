@@ -8,14 +8,16 @@
 # Run `fontcustom help` to learn about various options
 ##
 
-output: source/stylesheets/
+output:
+  fonts: source/stylesheets/fonts
+  css: source/stylesheets
 
 # templates: [ scss, preview, relative/path/from/INPUT, relative/path/from/PWD ]
-templates: [ bootstrap-scss, scss ]
+templates: [ css ]
 
 # font_name: my-font
 
-file_hash: false
+no_hash: false
 
 #css_prefix: glyph-
 
