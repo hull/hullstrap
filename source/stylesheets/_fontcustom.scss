@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: font-url("stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.eot");
-  src: font-url("stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.eot?#iefix") format("embedded-opentype"),
-       font-url("stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.woff") format("woff"),
-       font-url("stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.ttf") format("truetype"),
-       font-url("stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.svg#fontcustom") format("svg");
+  src: font-url("stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.eot");
+  src: font-url("stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.eot?#iefix") format("embedded-opentype"),
+       font-url("stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.woff") format("woff"),
+       font-url("stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.ttf") format("truetype"),
+       font-url("stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: font-url("stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.svg#fontcustom") format("svg");
+    src: font-url("stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.svg#fontcustom") format("svg");
   }
 }
 
@@ -38,6 +38,7 @@
 .icon-check:before,
 .icon-check_alt:before,
 .icon-checkin:before,
+.icon-chevron-left:before,
 .icon-chevron-right:before,
 .icon-cloud:before,
 .icon-cloud_download:before,
@@ -156,6 +157,7 @@
 .icon-check:before { content: "\f13b"; }
 .icon-check_alt:before { content: "\f13c"; }
 .icon-checkin:before { content: "\f13d"; }
+.icon-chevron-left:before { content: "\f195"; }
 .icon-chevron-right:before { content: "\f13e"; }
 .icon-cloud:before { content: "\f13f"; }
 .icon-cloud_download:before { content: "\f140"; }

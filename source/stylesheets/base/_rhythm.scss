@@ -1,0 +1,130 @@
+@include establish-baseline;  // "This is where the magic happens" —Everyone on MTV Cribs.
+
+/* =Base
+-------------------------------------------------------------- */
+
+html {
+  font-size: 100%;
+  font-kerning: normal; // Set the default for kerning
+  font-synthesis: none; // Don't allow the font to create sythetic bold/italic
+  text-rendering: optimizeLegibility; // Improve kerning pairs. Caution: Webkit gets funny with this sometimes
+  -webkit-font-smoothing: antialiased; // Improve (or in some cases screw with) safari's legibility somewhat
+
+  // Stop iPhone/iPad from scaling text
+  // Absolute measure here, as we're talking about devices, not screen size
+  @media screen and (max-width: 769px) {  
+    -webkit-text-size-adjust:none;
+  }
+
+}
+
+/* =Default Sizing and spacing
+-------------------------------------------------------------- */
+
+#{headings()} {
+  font-weight: bold;
+}
+#{headings(3)} {
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
+
+h1 { 
+  @include adjust-font-size-to(36px); 
+  margin: 0 0 rhythm(1, 36px) 0; // 1 line below
+} 
+
+h2 { 
+  @include adjust-font-size-to(30px); 
+  margin: rhythm(2, 30px) 0 rhythm(1, 30px) 0; // 2 line above, 1 line below 
+}
+
+h3 { 
+  @include adjust-font-size-to(22px); 
+  margin: 0 0 rhythm(1, 22px) 0; // 1 line below 
+} 
+
+h4 { 
+  @include adjust-font-size-to(20px); 
+  margin: 0 0 rhythm(1, 20px) 0; // 1 line below
+}
+
+h5 { 
+  @include adjust-font-size-to(18px); 
+  margin: 0 0 rhythm(1, 18px) 0; // 1 line below
+}
+
+h6 { 
+  @include adjust-font-size-to(16px); 
+  margin: 0 0 rhythm(1, 16px) 0; // 1 line below
+}
+
+p,
+pre,
+label { 
+  @include adjust-font-size-to(16px); 
+  margin: 0 0 rhythm(1, 16px) 0; // 1 line below
+}
+
+ol,
+ul {
+  @include adjust-font-size-to(16px);
+  margin: 0 0 rhythm(1, 16px) 0; // 1 line below
+}
+
+ul {
+  list-style-position: inside; 
+  list-style-type: disc;
+}
+
+ol {
+  list-style-position: inside; 
+  list-style-type: decimal;
+}
+
+li {
+  line-height: auto;
+}
+
+strong,
+b { 
+  font-weight: bold;
+}
+
+em,
+i,
+q { 
+  font-style: italic;
+}
+
+blockquote {
+  padding-left: 2em;
+  padding-right: 2em;
+  line-height: normal;
+  margin: rhythm(3, 20px) 0 rhythm(3, 20px) 0; //  3 lines above, 3 lines below
+
+  p {
+    @include adjust-font-size-to(20px); 
+    font-style: italic;
+  }
+
+}
+
+/* =Links
+-------------------------------------------------------------- */
+
+a {
+  // Force text links to wrap
+  @include force-wrap;
+
+  color: $secondary;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $secondary_alt;
+  }
+}

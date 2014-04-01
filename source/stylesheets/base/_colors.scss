@@ -1,0 +1,32 @@
+// Colors
+$blue:                          #2CAAD0;
+$turquoise:                     #4BC2B8;
+$blue_2:                        #0093e6; //rgba(37,164,213,0.98)
+$white:                         #FFFFFF;
+$blue_gray:                     #383E4B;
+$blue_gray_lighter:             #606776;
+
+
+$primary        : $blue;
+$primary_alt    : $turquoise;
+$secondary      : $blue_gray;
+$secondary_alt  : $blue_gray_lighter;
+$tertiary       : $blue_2;
+// $tertiary_alt   :
+// $quaternary     :
+// $quaternary_alt :
+// $quintary       :
+// $quintary_alt   :
+
+// Brand Gradient
+// $primary_bg_image:     linear-gradient( to right top, $primary_alt, $tertiary);
+$primary_bg_image:     radial-gradient(circle at 0% 100%, $primary_alt 0%, $tertiary 2000px);
+$primary_bg_color:     $primary;
+$primary_bg_text:      $white;
+
+// Inverted Gradient
+// $secondary_bg_gradient:radial-gradient(50% 93%, $secondary_alt 0%, transparentize($secondary,1) 93%);
+// $secondary_bg_color:   $secondary;
+// $secondary_bg_text:    $white;
+
+$standard_box_shadow:           0px 2px 2px 0px rgba(0,0,0,0.14);

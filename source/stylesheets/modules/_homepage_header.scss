@@ -1,0 +1,8 @@
+.header-navbar{
+  .navbar-brand{
+    @extend .text-hide;
+    @include inline-retina-sprite('logo/navbar-logo.png');
+    background-position: left center;
+    background-repeat:no-repeat;
+  }
+}

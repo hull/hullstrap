@@ -1,0 +1,4 @@
+@mixin pill($font_size){
+  @include border-radius(100px);
+  @include rhythm-borders(2px, .45, $font_size, solid );
+}

@@ -1,3 +1,10 @@
+// Font stacks
+$brand-font-stack:        "proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// Fonts size and line height defaults
+$base-font-size:        16px; // Sets the browser default size.
+$base-line-height:        24px; // Baseline grid.
+
 // h1 {
 //   @include enable-ligatures;
 // }

@@ -1,10 +1,10 @@
 @charset "UTF-8";
-@import "variables";
 
 /*------------------------------------*\
     Import Compass Framework
 \*------------------------------------*/
 @import "compass/css3";
+@import "compass/reset";
 @import "compass/typography/text/replacement";
 @import "compass/utilities/general/clearfix";
 @import "compass/typography/vertical_rhythm";
@@ -16,15 +16,17 @@
 @import "toolkit";
 
 /*------------------------------------*\
-    Bootstrap
+    HullStrap Config
 \*------------------------------------*/
-@import "bootstrap";
+@import "base/colors";
+@import "base/reset";
+@import "base/typography";
 
 /*------------------------------------*\
-    Iconfonts
+    Bootstrap
 \*------------------------------------*/
-@import "iconfonts";
-@import "fontcustom";
+@import "base/variables";
+@import "bootstrap";
 
 /*------------------------------------*\
     Hull mixins
@@ -39,20 +41,45 @@
 @import "mixins/retina";
 
 /*------------------------------------*\
+    Iconfonts
+\*------------------------------------*/
+@import "iconfonts";
+@import "fontcustom";
+
+// /*------------------------------------*\
+//     Components (BS Overrides)
+// \*------------------------------------*/
+// @import "components/navbar";
+
+
+// /*------------------------------------*\
+//     Modules
+// \*------------------------------------*/
+// @import "codrops_modules/border_effects";
+// @import "codrops_modules/border_menu";
+// @import "codrops_modules/border_player";
+// @import "codrops_modules/search_box";
+// @import "codrops_modules/timed_notification";
+// @import "codrops_modules/annotations_overlay";
+// @import "codrops_modules/opening_grid";
+// @import "codrops_modules/sticky_table_header";
+// @import "codrops_modules/cbp_scroller";
+// @import "codrops_modules/cbp_ig_grid";
+// @import "codrops_modules/cbp_fwslider";
+// @import "codrops_modules/cbp_vimenu";
+// @import "codrops_modules/cbp_hrmenu";
+// @import "codrops_modules/cbp_qtrotator";
+// @import "codrops_modules/cbp_tmtimeline";
+
+
+/*------------------------------------*\
+    Elements
+\*------------------------------------*/
+@import "elements/pill";
+
+/*------------------------------------*\
     Modules
 \*------------------------------------*/
-@import "modules/border_effects";
-@import "modules/border_menu";
-@import "modules/border_player";
-@import "modules/search_box";
-@import "modules/timed_notification";
-@import "modules/annotations_overlay";
-@import "modules/opening_grid";
-@import "modules/sticky_table_header";
-@import "modules/cbp_scroller";
-@import "modules/cbp_ig_grid";
-@import "modules/cbp_fwslider";
-@import "modules/cbp_vimenu";
-@import "modules/cbp_hrmenu";
-@import "modules/cbp_qtrotator";
-@import "modules/cbp_tmtimeline";
+@import "modules/homepage_header";
+@import "modules/navbar";
+@import "modules/navbar_search";

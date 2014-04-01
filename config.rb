@@ -4,8 +4,8 @@ require 'compass'
 require 'bootstrap-sass'
 require 'rack_environment'
 require 'handlebars_assets'
-require 'lib/retina.rb'
-require 'lib/random-color.rb'
+require 'lib/compass_retina'
+require 'lib/random_color'
 require 'animation'
 
 ##################

@@ -42,3 +42,24 @@ Next use the helper mixin provided by this extension:
         }
     }
 }
+
+@mixin retina-sprite($image){
+  @include retina-sprite-core($image);
+  @include background-image-retina($image);
+}
+
+@mixin inline-retina-sprite($image){
+  @include retina-sprite-core($image);
+  @include inline-background-image-retina($image);
+
+}
+
+@mixin retina-sprite-core($image){
+  @include box-sizing(border-box);
+  @include hide-text;
+  background-position: top left;
+  background-repeat: no-repeat;
+  width:image-width($image);
+  height:image-height($image);
+  display:block;
+}

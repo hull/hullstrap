@@ -1,23 +1,18 @@
-# Ignore environment data
-.env
-/config/environment.yml
-/environment.yml
-
-# Ignore bundler config
-/.bundle
-
 # Ignore ruby config
-.ruby-version
-
-# Ignore the build directory
-/build
-/tmp
-
-# Ignore Sass' cache
 /.sass-cache
-
-# Ignore .DS_store file
+# Ignore bundler config
 .DS_Store
-
-# Ignore Node modules
+/environment.yml
+/.bundle
+/tmp
+/config/environment.yml
+# Ignore the build directory
+.ruby-version
+.env
 node_modules
+/build
+# Ignore .DS_store file
+# Ignore environment data
+# Ignore Sass' cache
+/.cache
+# Ignore Node modules

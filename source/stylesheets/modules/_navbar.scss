@@ -1,0 +1,27 @@
+// .navbar{
+//   @include background(linear-gradient(to right top, #4bc2b8,#0093e6));
+// }
+.navbar-branded{
+  background-color:$primary_bg_color;
+  @include background-image($primary_bg_image);
+  @include rhythm(0,.5,.5,1);
+  .navbar-brand{
+    @include rhythm(.55,.45,.45,.55);
+    height: auto;
+  }
+  .nav > li > a{
+    color: $primary_bg_text;
+    border-color: transparent;
+    opacity: .7;
+    @include margin-leader(.55);
+    @include margin-trailer(.55);
+    @include pill($base_font_size);
+    @extend %animate;
+    &:hover, &:focus{
+      opacity: 1;
+      background-color: transparentize($primary_bg_text, .78);
+      color: $primary_bg_text;
+      border-color: transparentize($primary_bg_text, .60);
+    }
+  }
+}

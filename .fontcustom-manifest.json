@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "34a0303219141458f52d1a2da69757d29851349ad0e9d88b9566e7cb86f456d3",
-    "current": "34a0303219141458f52d1a2da69757d29851349ad0e9d88b9566e7cb86f456d3"
+    "previous": "119c6b1453d14eea4f872424c4b9e0a5beb43bf72cdab07e40eb797fe8e5d746",
+    "current": "119c6b1453d14eea4f872424c4b9e0a5beb43bf72cdab07e40eb797fe8e5d746"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.ttf",
-    "source/stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.svg",
-    "source/stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.woff",
-    "source/stylesheets/fonts/fontcustom_34a0303219141458f52d1a2da69757d2.eot"
+    "source/stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.ttf",
+    "source/stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.svg",
+    "source/stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.woff",
+    "source/stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -69,6 +69,10 @@
     "checkin": {
       "codepoint": 61757,
       "source": "source/images/icons/checkin.svg"
+    },
+    "chevron-left": {
+      "codepoint": 61845,
+      "source": "source/images/icons/chevron-left.svg"
     },
     "chevron-right": {
       "codepoint": 61758,
