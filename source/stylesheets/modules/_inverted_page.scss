@@ -1,0 +1,48 @@
+%inverted-background{
+  @include background-image($secondary_bg_gradient);
+  background-position:  top center;
+  background-repeat:    no-repeat;
+  background-color: $secondary_bg_color;
+  color: $secondary_bg_text;   
+  // opacity: .9
+}
+
+body.features{
+  min-height: 1000px;
+  @extend %inverted-background;
+}
+
+.inverted-jumbotron{
+  -webkit-font-smoothing:antialiased;
+  @extend .jumbotron;
+  text-align: center;
+  background: none;
+
+  @include background-image(
+    radial-gradient(100% 1px at 50% 100%,  rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 70%),
+    radial-gradient(100% 1px at 50% 99.5%, rgba(0, 0, 0,       0.2), rgba(0, 0, 0, 0) 50%)
+  );
+  @include rhythm(1,0,2,1);
+
+  // h2{
+  //   @include adjust-font-size-to(34px);
+  // }
+  .jumbotron-headline{
+    @include leader(0)
+  }
+  .jumbotron-headline+.btn-pill{
+    @include font-weight-bold;
+  }
+}
+
+.btn-primary{
+  @include rhythm(.25,.25,.25,.25);
+  &:hover{
+    color: $primary_bg_text;
+  }
+}
+.btn-primary.btn-pill{
+  border-radius: 40px;
+  padding-left:$padding-base-horizontal*3; 
+  padding-right:$padding-base-horizontal*3; 
+}

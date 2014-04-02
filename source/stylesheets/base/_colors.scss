@@ -25,8 +25,8 @@ $primary_bg_color:     $primary;
 $primary_bg_text:      $white;
 
 // Inverted Gradient
-// $secondary_bg_gradient:radial-gradient(50% 93%, $secondary_alt 0%, transparentize($secondary,1) 93%);
-// $secondary_bg_color:   $secondary;
-// $secondary_bg_text:    $white;
+$secondary_bg_gradient:radial-gradient(1500px 500px at top, $secondary_alt 0, transparentize($secondary_alt,1) 100%);
+$secondary_bg_color:   $secondary;
+$secondary_bg_text:    $white;
 
 $standard_box_shadow:           0px 2px 2px 0px rgba(0,0,0,0.14);

@@ -1,0 +1,99 @@
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+ 
+// #page {
+//   font-size: 1em;
+//   /* equivalent to 16px */
+//   line-height: 1.25;
+//   /* equivalent to 20px */
+// }
+ 
+// @media (min-width: 43.75em) {
+//   #page {
+//     font-size: 1em;
+//     /* equivalent to 16px */
+//     line-height: 1.375;
+//     /* equivalent to 22px */
+//   }
+// }
+ 
+h1 {
+  @include adjust-font-size-to($base-font-size*2, 1.25);
+}
+ 
+@media (min-width: 43.75em) {
+  h1 {
+    @include adjust-font-size-to($base-font-size*2.5, 1.125);
+  }
+}
+ 
+@media (min-width: 56.25em) {
+  h1 {
+    @include adjust-font-size-to($base-font-size*3, 1.05);
+  }
+}
+ 
+h2 {
+  @include adjust-font-size-to($base-font-size*1.625, 1.15384615);
+}
+ 
+@media (min-width: 43.75em) {
+  h2 {
+    @include adjust-font-size-to($base-font-size*2, 1.25);
+  }
+}
+ 
+@media (min-width: 56.25em) {
+  h2 {
+    @include adjust-font-size-to($base-font-size*2.25, 1.25);
+  }
+}
+ 
+h3 {
+  @include adjust-font-size-to($base-font-size*1.375, 1.13636364);
+}
+ 
+@media (min-width: 43.75em) {
+  h3 {
+    @include adjust-font-size-to($base-font-size*1.5, 1.25);
+  }
+}
+ 
+@media (min-width: 56.25em) {
+  h3 {
+    @include adjust-font-size-to($base-font-size*1.888888888);
+    // @include adjust-leading-to(2);
+    @include trailer(1,$base-font-size*1.888888888);
+  }
+}
+ 
+h4 {
+  @include adjust-font-size-to($base-font-size*1.125, 1.11111111);
+}
+ 
+@media (min-width: 43.75em) {
+  h4 {
+    @include adjust-leading-to(1.22222222);
+  }
+}
+ 
+// blockquote {
+//   @include adjust-font-size-to(1.25, 1.25);
+// }
+ 
+// @media (min-width: 43.75em) {
+//   blockquote {
+//     @include adjust-font-size-to(1.5, 1.45833333);
+//   }
+// }
+
+@mixin font-weight-light{
+  font-weight: 100;
+}
+@mixin font-weight-normal{
+  font-weight: 200;
+}
+@mixin font-weight-bold{
+  font-weight: 600;
+}
