@@ -56,7 +56,7 @@ Next use the helper mixin provided by this extension:
 
 @mixin retina-sprite-core($image){
   @include box-sizing(border-box);
-  @include hide-text;
+  text-indent: -99999px;
   background-position: top left;
   background-repeat: no-repeat;
   width:image-width($image);

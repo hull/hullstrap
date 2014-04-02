@@ -19,13 +19,18 @@
     HullStrap Config
 \*------------------------------------*/
 @import "base/colors";
-@import "base/reset";
-@import "base/typography";
 
 /*------------------------------------*\
     Bootstrap
 \*------------------------------------*/
 @import "base/variables";
+
+$base-font-size:        18px;
+$base-line-height:      28px;
+$base-rhythm-unit:      28px;
+@include establish-baseline();  // "This is where the magic happens" —Everyone on MTV Cribs.
+body{@include debug-vertical-alignment;}
+
 @import "bootstrap";
 
 /*------------------------------------*\
@@ -80,6 +85,6 @@
 /*------------------------------------*\
     Modules
 \*------------------------------------*/
-@import "modules/homepage_header";
 @import "modules/navbar";
 @import "modules/navbar_search";
+
