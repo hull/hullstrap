@@ -4,7 +4,8 @@
   background-repeat:    no-repeat;
   background-color: $secondary_bg_color;
   color: $secondary_bg_text;   
-  // opacity: .9
+  -webkit-font-smoothing:antialiased;
+  opacity: .9
 }
 
 body.features{
@@ -13,7 +14,6 @@ body.features{
 }
 
 .inverted-jumbotron{
-  -webkit-font-smoothing:antialiased;
   @extend .jumbotron;
   text-align: center;
   background: none;
@@ -30,19 +30,10 @@ body.features{
   .jumbotron-headline{
     @include leader(0)
   }
-  .jumbotron-headline+.btn-pill{
+  .jumbotron-headline+.btn-primary{
     @include font-weight-bold;
+    // @include btn-round;
   }
 }
 
-.btn-primary{
-  @include rhythm(.25,.25,.25,.25);
-  &:hover{
-    color: $primary_bg_text;
-  }
-}
-.btn-primary.btn-pill{
-  border-radius: 40px;
-  padding-left:$padding-base-horizontal*3; 
-  padding-right:$padding-base-horizontal*3; 
-}
+

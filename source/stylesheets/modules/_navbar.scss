@@ -11,8 +11,9 @@
 }
 
 .navbar-branded{
-  background-color:$primary_bg_color;
+  -webkit-font-smoothing:subpixel-antialiased;
   border:none;
+  background-color:$primary_bg_color;
   @include background-image($primary_bg_image);
   @include box-shadow(0px 2px 2px 0px rgba(0,0,0,0.14));
   .navbar-brand{
@@ -25,26 +26,15 @@
     background-repeat:no-repeat;
     margin-right:$padding-base-horizontal;
   }
+  > .container .navbar-brand{
+    margin-left: 0;
+  }
   .navbar-pill{
-    color: $primary_bg_text;
-    border-color: transparent;
-    opacity: .7;
-    @include rhythm-borders(2px, .05, 16px);
-    @include pill($padding-base-horizontal, 16px, 2px, .05);
-    @include adjust-font-size-to(16px);
-    margin:0 $padding-base-horizontal/4;
+    @include btn-pill(16px);
     @include leader(.93, 16px);
     @include trailer(.93, 16px);
-    @extend %animate;
-    font-weight: 200;
-    letter-spacing: 0.01em;
-    text-rendering:optimizeLegibility;
-    &:hover, &:focus{
-      opacity: 1;
-      border-color: transparentize($primary_bg_text, .88);
-      background-color: transparentize($primary_bg_text, .88);
-      color: transparentize($primary_bg_text,.3);
-    }
+    margin-left:$padding-base-horizontal/4;
+    margin-right:$padding-base-horizontal/4;
   }
   .open {
     > .navbar-pill, > .navbar-pill:hover, .navbar-pill:focus{
@@ -53,4 +43,31 @@
       color: transparentize($primary_bg_text,.1);
     }
   }
+}
+
+.header-homepage{
+  height: 550px;
+  background-color:$primary_bg_color;
+  @include background-image($primary_bg_image);
+  .navbar-branded{
+    background: none;
+    @include box-shadow(none);
+  }
+  h1{
+    @include font-weight-bold;
+    @include adjust-font-size-to(45px);
+  }
+  h4{
+    opacity: .6
+  }
+  .btn-primary{
+    @include font-weight-bold;
+    margin-right: $padding-base-horizontal*2;
+    @include btn($primary_bg_text, $black);
+  }
+  .btn-secondary{
+    @include font-weight-bold;
+    @include btn($primary_bg_text, $black);
+  }
+  color: $primary_bg_text;
 }
