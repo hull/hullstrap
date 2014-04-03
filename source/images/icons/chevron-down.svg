@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="72px" height="66px" viewBox="0 0 72 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Slice 1</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="chevron-down" sketch:type="MSLayerGroup" transform="translate(36.000000, 33.000000) rotate(-90.000000) translate(-36.000000, -33.000000) translate(3.000000, -3.000000)" fill="#000000">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <path d="M0.033,0.036 L30.019,0.036 L66,36.018 L30.019,72 L0.033,72 L36.016,36.018 L0.033,0.036 L0.033,0.036 Z" id="Shape" transform="translate(33.033000, 36.036000) scale(-1, 1) translate(-33.033000, -36.036000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

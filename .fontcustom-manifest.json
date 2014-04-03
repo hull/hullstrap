@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "2fe8e4bb8c8b83f1124a5f7e6b333ed5df915eb15ef35352ca3837ff192aed2f",
-    "current": "2fe8e4bb8c8b83f1124a5f7e6b333ed5df915eb15ef35352ca3837ff192aed2f"
+    "previous": "a136c8356c26c9c2d4dabe71b0a27441ac6c60e43ad66885a76be2bcd5071616",
+    "current": "a136c8356c26c9c2d4dabe71b0a27441ac6c60e43ad66885a76be2bcd5071616"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_2fe8e4bb8c8b83f1124a5f7e6b333ed5.ttf",
-    "source/stylesheets/fonts/fontcustom_2fe8e4bb8c8b83f1124a5f7e6b333ed5.svg",
-    "source/stylesheets/fonts/fontcustom_2fe8e4bb8c8b83f1124a5f7e6b333ed5.woff",
-    "source/stylesheets/fonts/fontcustom_2fe8e4bb8c8b83f1124a5f7e6b333ed5.eot"
+    "source/stylesheets/fonts/fontcustom_a136c8356c26c9c2d4dabe71b0a27441.ttf",
+    "source/stylesheets/fonts/fontcustom_a136c8356c26c9c2d4dabe71b0a27441.svg",
+    "source/stylesheets/fonts/fontcustom_a136c8356c26c9c2d4dabe71b0a27441.woff",
+    "source/stylesheets/fonts/fontcustom_a136c8356c26c9c2d4dabe71b0a27441.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -70,6 +70,10 @@
       "codepoint": 61710,
       "source": "source/images/icons/checkin.svg"
     },
+    "chevron-down": {
+      "codepoint": 61801,
+      "source": "source/images/icons/chevron-down.svg"
+    },
     "chevron-left": {
       "codepoint": 61800,
       "source": "source/images/icons/chevron-left.svg"
@@ -77,6 +81,10 @@
     "chevron-right": {
       "codepoint": 61711,
       "source": "source/images/icons/chevron-right.svg"
+    },
+    "chevron-up": {
+      "codepoint": 61802,
+      "source": "source/images/icons/chevron-up.svg"
     },
     "cloud": {
       "codepoint": 61712,
@@ -341,6 +349,10 @@
     "power_alt": {
       "codepoint": 61775,
       "source": "source/images/icons/power_alt.svg"
+    },
+    "remove": {
+      "codepoint": 61803,
+      "source": "source/images/icons/remove.svg"
     },
     "reply": {
       "codepoint": 61776,
