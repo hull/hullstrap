@@ -1,54 +1,91 @@
-@mixin btn-round($side-padding:$padding-base-horizontal, $font-size: $base-font-size){
+@mixin btn-rounded($side-padding:$padding-base-horizontal){
   @include border-radius(100px);
-  padding: 0 $side-padding;
+  padding-left:  $side-padding;
+  padding-right: $side-padding;
 }
 
-@mixin btn-pill($font-size:$base-font-size, $side-padding:$padding-base-horizontal, $border-width:2px, $padding:.05){
-  @extend %animate;
-
-  @include btn-round($side-padding, $font-size);
-  @include adjust-font-size-to($font-size);
-  @include rhythm-borders(2px, $padding, $font-size);
-
-  opacity: .7;
-  font-weight: 200;
+@mixin btn-pill-base($font-size, $side-padding, $border-width, $vertical-padding){
   text-rendering:optimizeLegibility;
-  color: $primary_bg_text;
-  border-color: transparent;
   letter-spacing: 0.01em;
+  @extend %animate;
+  @include adjust-font-size-to($font-size);
+  @include rhythm-borders($border-width, $vertical-padding, $font-size);
+  @include btn-rounded($side-padding);
+}
+
+@mixin btn-pill(
+  $border-width:2px,
+  $vertical-padding:.25,
+  $font-size:$base-font-size,
+  $side-padding: $padding-base-horizontal
+){
+  @include btn-pill-base($font-size, $side-padding, $border-width, $vertical-padding);
+  border-color: transparentize($white, .88);
+  background-color: transparentize($white, .88);
+  color: transparentize($white,.3);
+  &:hover, &:focus{
+    color: $white;
+  }
+}
+
+@mixin btn-pill-invisible(
+  $border-width:2px,
+  $vertical-padding:.25,
+  $font-size:$base-font-size,
+  $side-padding: $padding-base-horizontal
+){
+  @include btn-pill-base($font-size, $side-padding, $border-width, $vertical-padding);
+  opacity: .7;
+  color: transparentize($white,.3);
+  border-color: transparentize($white, 1);
+  background-color: transparentize($white, 1);
   &:hover, &:focus{
     opacity: 1;
-    border-color: transparentize($primary_bg_text, .88);
-    background-color: transparentize($primary_bg_text, .88);
-    color: transparentize($primary_bg_text,.3);
+    border-color: transparentize($white, .88);
+    background-color: transparentize($white, .88);
   }
-
 }
 
-@mixin btn($color, $text-color:$black){
-  @extend .btn-primary;
+@mixin btn(){
   @include adjust-leading-to(1);
   @include rhythm(.25,.25,.25,.25);
-  color: $black;
+  @include apply-side-rhythm-border(top, 1px, .25, $base-font-size, solid);
+  @include apply-side-rhythm-border(bottom, 1px, .25, $base-font-size, solid);
+}
+
+@mixin btn-color($color:$primary_bg_color, $text-color:$primary_bg_text){
+  color: $text-color;
   background-color: $color;
   border-color: $color;
   &:hover, &:active, &:focus{
-    border-color: lighten($color, 5%);
-    background-color: lighten($color,5%);
+    color: darken($text-color, 5%);
+    border-color: darken($color, 5%);
+    background-color: darken($color,5%);
   }
+  
+}
+
+.btn{
+  @include btn();
 }
 .btn-primary{
-  @include rhythm(.25,.25,.25,.25);
-  &:hover{
-    color: $primary_bg_text;
-  }
+  @include btn-color($primary_bg_color, $primary_bg_text);
 }
 .btn-secondary{
-  @include btn($secondary);
+  @include btn-color($secondary_bg_color, $secondary_bg_text);
+}
+.btn-rounded{
+  @include btn-rounded();
 }
 .btn-pill{
   @include btn-pill();
 }
-.btn-round{
-  @include btn-round();
+
+.btn-inverted{
+  @include btn-color($white, $white);
+}
+
+.btn-pill-invisible{
+  @include btn-pill();
+  @include btn-pill-invisible();
 }
