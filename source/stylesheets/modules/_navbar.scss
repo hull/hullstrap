@@ -26,7 +26,8 @@
     background-repeat:no-repeat;
     margin-right:$padding-base-horizontal;
   }
-  > .container .navbar-brand{
+  > .container .navbar-brand,
+  > .container .navbar-header{
     margin-left: 0;
   }
   .navbar-pill{
@@ -36,10 +37,6 @@
     @include btn-pill-invisible(2px, .1, 16px);
     @include leader(.9, 16px);
     @include trailer(.9, 16px);
-    border-color: transparentize($white, .88);
-    background-color: transparentize($white, .88);
-    color: transparentize($white,.3);
-
     opacity: .7;
   }
   .open {
