@@ -77,6 +77,9 @@
   @include btn(2, $base-font-size, 1px);
   border-color: transparentize($secondary_bg_color, .5);
   &.btn-large{
+    @include btn(2.5, $base-font-size, 1px);
+  }
+  &.btn-xlarge{
     @include btn(3, $base-font-size, 1px);
   }
   &.btn-small{
@@ -108,8 +111,11 @@
   @include btn-transparent();
   @include btn-rounded();
   @include btn(2, $base-font-size, 2px);
-  &.btn-large{
+  &.btn-xlarge{
     @include btn(3, $base-font-size, 2px);
+  }
+  &.btn-large{
+    @include btn(2.5, $base-font-size, 2px);
   }
   &.btn-small{
     @include btn(1.5, $base-font-size, 2px);

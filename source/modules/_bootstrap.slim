@@ -1,1 +1,9 @@
-==partial "/modules/bootstrap/headers"
+- colors = %w{ btn btn-primary btn-secondary btn-transparent btn-invisible btn-inverted }
+  - types = [ "", "btn-rounded", "btn-pill", "btn-pill btn-large", "btn-large", "btn-small", "btn-pill btn-small"]
+  .row
+    -types.each do |t|
+      - colors.each do |c|
+        .col-sm-3
+          a class="btn #{c} #{t}" ="#{c} #{t}"
+
+/ ==partial "/modules/bootstrap/headers"

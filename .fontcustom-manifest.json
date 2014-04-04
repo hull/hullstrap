@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "119c6b1453d14eea4f872424c4b9e0a5beb43bf72cdab07e40eb797fe8e5d746",
-    "current": "119c6b1453d14eea4f872424c4b9e0a5beb43bf72cdab07e40eb797fe8e5d746"
+    "previous": "cc7dc73b22f4f911b0ba68e4eeac384b599f61941f12936cb3927740cba02512",
+    "current": "cc7dc73b22f4f911b0ba68e4eeac384b599f61941f12936cb3927740cba02512"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.ttf",
-    "source/stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.svg",
-    "source/stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.woff",
-    "source/stylesheets/fonts/fontcustom_119c6b1453d14eea4f872424c4b9e0a5.eot"
+    "source/stylesheets/fonts/fontcustom_cc7dc73b22f4f911b0ba68e4eeac384b.ttf",
+    "source/stylesheets/fonts/fontcustom_cc7dc73b22f4f911b0ba68e4eeac384b.svg",
+    "source/stylesheets/fonts/fontcustom_cc7dc73b22f4f911b0ba68e4eeac384b.woff",
+    "source/stylesheets/fonts/fontcustom_cc7dc73b22f4f911b0ba68e4eeac384b.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -329,6 +329,10 @@
     "picture_alt_3": {
       "codepoint": 61819,
       "source": "source/images/icons/picture_alt_3.svg"
+    },
+    "play": {
+      "codepoint": 61846,
+      "source": "source/images/icons/play.svg"
     },
     "plus": {
       "codepoint": 61820,

@@ -24,7 +24,7 @@
     height: auto;
     background-position: left center;
     background-repeat:no-repeat;
-    margin-right:$padding-base-horizontal;
+    margin-right:$padding-base-horizontal*2;
   }
   > .container .navbar-brand,
   > .container .navbar-header{
@@ -32,15 +32,22 @@
   }
   .navbar-pill{
     font-weight: 200;
-    margin-left:$padding-base-horizontal/4;
-    margin-right:$padding-base-horizontal/4;
     @extend %animate;
     @include btn-rounded();
     @include btn-invisible();
-    @include btn-rhythm(1.5, 2px, 16px, $padding-base-horizontal);
-    @include leader(.9, 16px);
-    @include trailer(.9, 16px);
+    margin-left:$padding-base-horizontal/8;
+    margin-right:$padding-base-horizontal/8;
+    @include btn-rhythm(1.5, 2px, 14px, $padding-base-horizontal/2);
+    @include leader(.9, 14px);
+    @include trailer(.9, 14px);
     opacity: .7;
+    @media (min-width: 1000px){
+      margin-left:$padding-base-horizontal/4;
+      margin-right:$padding-base-horizontal/4;
+      @include btn-rhythm(1.5, 2px, 16px, $padding-base-horizontal);
+      @include leader(.9, 16px);
+      @include trailer(.9, 16px);
+    }
   }
   .open {
     > .navbar-pill, > .navbar-pill:hover, .navbar-pill:focus{
@@ -52,12 +59,30 @@
 }
 
 .header-homepage{
-  height: 550px;
+  min-height: 100vh;
+  position: relative;
   background-color:$primary_bg_color;
   color: $primary_bg_text;
 
+  @extend .text-center;
   @include background-image($primary_bg_image);
 
+  .bgimage{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    opacity: .02;
+    overflow: hidden;
+    text-align: center;
+    img.bg{
+      height: 120%;
+    }
+  }
+  > .container{
+    position: relative;
+    z-index: 2;
+  }
   .navbar-branded{
     background: none;
     @include box-shadow(none);
@@ -77,5 +102,43 @@
   }
   .btn-secondary{
     color: $primary_bg_text;
+  }
+}
+
+@media (min-width: 768px){
+  .header-homepage{
+    text-align: left;
+  }
+}
+
+
+
+.play-icon{
+  @extend %animate;
+  @extend .text-center;
+  @include border-radius(200px);
+  background-color: rgba(63,70,83,0.5);
+  $circle_size: $base-line-height*4;
+  width:  $circle_size;
+  height: $circle_size;
+  cursor: pointer;
+  display: inline-block;
+  @include leader(2);
+  @media (min-width: 768px){
+    @include leader(4);
+  }
+  .icon-play{
+    color: $primary_bg_text;
+    $fsize:$base-font-size*2;
+    @include leader(2, $fsize);
+    @include trailer(2, $fsize);
+    @include adjust-font-size-to($fsize, 4);
+    margin-left: 10px;
+  }
+  &:hover{
+    background-color: rgba(63,70,83,0.8);
+    .icon-play{
+      @include scale(1.1);
+    }
   }
 }

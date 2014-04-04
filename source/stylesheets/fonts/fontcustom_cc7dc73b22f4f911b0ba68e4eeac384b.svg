@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2014-4-1: Created.
+2014-4-4: Created.
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Tue Apr  1 19:46:29 2014
+Created by FontForge 20120731 at Fri Apr  4 19:16:28 2014
  By Romain Dardour
 Created by Romain Dardour with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -22,7 +22,7 @@ Created by Romain Dardour with FontForge 2.0 (http://fontforge.sf.net)
     bbox="-0.444444 -66.32 591 448.75"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+F12D-F195"
+    unicode-range="U+F12D-F196"
   />
     <missing-glyph />
     <glyph glyph-name="uniF167" unicode="&#xf167;" 
@@ -299,6 +299,8 @@ d="M508 380c3 -9 4 -18 4 -28c0 -53 -43 -96 -96 -96c-10 0 -19 1 -28 4l-200 -200c3
 c10 0 19 -1 28 -4l-60 -60l64 -64z" />
     <glyph glyph-name="uniF174" unicode="&#xf174;" horiz-adv-x="461" 
 d="M416 237l45 30v-85h-130l40 25c-32 14 -62 23 -90 28v-208l-70 -45c-340 62 -217 285 0 302v73l70 45v-119c44 -6 90 -20 135 -46zM211 239v-212c-211 27 -162 198 0 212z" />
+    <glyph glyph-name="uniF196" unicode="&#xf196;" horiz-adv-x="480" 
+d="M0 448l480 -256l-480 -256v512z" />
     <glyph glyph-name="uniF130" unicode="&#xf130;" 
 d="M505 178l-53 -35l-2 -6l28 -57c2 -5 3 -11 0 -16s-8 -8 -14 -8l-63 -4l-4 -5l-5 -63c0 -6 -3 -11 -8 -14s-11 -2 -16 0l-56 28l-7 -2l-35 -53c-3 -5 -8 -7 -14 -7s-11 2 -14 7l-35 53l-6 2l-57 -28c-5 -2 -11 -3 -16 0s-8 8 -8 14l-4 63l-5 4l-63 5c-6 0 -11 3 -14 8
 s-2 11 0 16l28 57l-2 6l-52 35c-5 3 -8 8 -8 14s3 11 8 14l52 35l2 6l-28 57c-2 5 -3 11 0 16s8 8 14 8l63 4l5 5l4 63c0 6 3 11 8 14s11 3 16 0l57 -28l6 2l35 53c3 5 8 7 14 7s11 -2 14 -7l35 -53l6 -2l57 28c5 3 11 3 16 0s8 -8 8 -14l4 -63l5 -5l63 -4c6 0 11 -3 14 -8
