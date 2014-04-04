@@ -1,56 +1,64 @@
-@mixin btn-rounded($side-padding:$padding-base-horizontal){
+@mixin btn-rounded(){
   @include border-radius(100px);
-  padding-left:  $side-padding;
-  padding-right: $side-padding;
 }
 
-@mixin btn-pill-base($font-size, $side-padding, $border-width, $vertical-padding){
+@mixin btn-rhythm(
+  $lines:2,
+  $border:0,
+  $font-size: $base-font-size,
+  $hpadding: $padding-base-horizontal*3
+){
+  $leading : $lines / 4;
+  @include adjust-font-size-to($font-size);
+  @include adjust-leading-to($leading * 2, $font-size);
+  @if $border > 0 {
+    @include rhythm-borders($border, $leading / 2 , $font-size);
+  } @else {
+    @include padding-leader( $leading , $font-size);
+    @include padding-trailer( $leading , $font-size);
+  }
+  @include leader( $leading / 2, $font-size);
+  @include trailer( $leading / 2, $font-size);
+  padding-left:  $hpadding;
+  padding-right: $hpadding;
+}
+
+@mixin btn(
+  $lines:2,
+  $font-size: $base-font-size,
+  $border: 1px,
+  $hpadding:$padding-base-horizontal*3
+){
   text-rendering:optimizeLegibility;
   letter-spacing: 0.01em;
   @extend %animate;
-  @include adjust-font-size-to($font-size);
-  @include rhythm-borders($border-width, $vertical-padding, $font-size);
-  @include btn-rounded($side-padding);
+  @include btn-rhythm($lines,$border,$font-size, $hpadding);
 }
 
-@mixin btn-pill(
-  $border-width:2px,
-  $vertical-padding:.25,
-  $font-size:$base-font-size,
-  $side-padding: $padding-base-horizontal
-){
-  @include btn-pill-base($font-size, $side-padding, $border-width, $vertical-padding);
-  border-color: transparentize($white, .88);
-  background-color: transparentize($white, .88);
+
+@mixin btn-transparent($font-size:$base-font-size){
   color: transparentize($white,.3);
+  border-color: transparentize($white, .9);
+  background-color: transparentize($white, .9);
   &:hover, &:focus{
+    border-color: transparentize($white, .5);
+    background-color: transparentize($white, .7);
     color: $white;
   }
 }
 
-@mixin btn-pill-invisible(
-  $border-width:2px,
-  $vertical-padding:.25,
-  $font-size:$base-font-size,
-  $side-padding: $padding-base-horizontal
-){
-  @include btn-pill-base($font-size, $side-padding, $border-width, $vertical-padding);
-  opacity: .7;
+@mixin btn-invisible($font-size:$base-font-size){
   color: transparentize($white,.3);
   border-color: transparentize($white, 1);
-  background-color: transparentize($white, 1);
+  background-color: transparent;
+  opacity: .7;
+
   &:hover, &:focus{
     opacity: 1;
-    border-color: transparentize($white, .88);
-    background-color: transparentize($white, .88);
+    border-color: transparentize($white, .9);
+    background-color: transparentize($white, .95);;
+    color: $white;
   }
-}
-
-@mixin btn(){
-  @include adjust-leading-to(1);
-  @include rhythm(.25,.25,.25,.25);
-  @include apply-side-rhythm-border(top, 1px, .25, $base-font-size, solid);
-  @include apply-side-rhythm-border(bottom, 1px, .25, $base-font-size, solid);
 }
 
 @mixin btn-color($color:$primary_bg_color, $text-color:$primary_bg_text){
@@ -66,26 +74,44 @@
 }
 
 .btn{
-  @include btn();
+  @include btn(2, $base-font-size, 1px);
+  border-color: transparentize($secondary_bg_color, .5);
+  &.btn-large{
+    @include btn(3, $base-font-size, 1px);
+  }
+  &.btn-small{
+    @include btn(1.5, $base-font-size, 1px);
+  }
 }
+
 .btn-primary{
   @include btn-color($primary_bg_color, $primary_bg_text);
 }
 .btn-secondary{
   @include btn-color($secondary_bg_color, $secondary_bg_text);
 }
+.btn-inverted{
+  @include btn-color($white, $secondary);
+}
+.btn-transparent{
+  @include btn-transparent();
+}
+.btn-invisible{
+  @include btn-invisible();
+}
+
 .btn-rounded{
   @include btn-rounded();
 }
+
 .btn-pill{
-  @include btn-pill();
-}
-
-.btn-inverted{
-  @include btn-color($white, $white);
-}
-
-.btn-pill-invisible{
-  @include btn-pill();
-  @include btn-pill-invisible();
+  @include btn-transparent();
+  @include btn-rounded();
+  @include btn(2, $base-font-size, 2px);
+  &.btn-large{
+    @include btn(3, $base-font-size, 2px);
+  }
+  &.btn-small{
+    @include btn(1.5, $base-font-size, 2px);
+  }
 }
