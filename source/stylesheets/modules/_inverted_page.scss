@@ -5,7 +5,6 @@
   background-color: $secondary_bg_color;
   color: $secondary_bg_text;   
   -webkit-font-smoothing:antialiased;
-  opacity: .9
 }
 
 body.features{
@@ -15,25 +14,26 @@ body.features{
 
 .inverted-jumbotron{
   @extend .jumbotron;
-  text-align: center;
-  background: none;
-
+  @extend .inverted;
   @include background-image(
     radial-gradient(100% 1px at 50% 100%,  rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 70%),
     radial-gradient(100% 1px at 50% 99.5%, rgba(0, 0, 0,       0.2), rgba(0, 0, 0, 0) 50%)
   );
+  text-align: center;
+  background: none;
   @include rhythm(1,0,2,1);
-
-  // h2{
-  //   @include adjust-font-size-to(34px);
-  // }
   .jumbotron-headline{
     @include leader(0)
   }
   .jumbotron-headline+.btn-primary{
     @include font-weight-bold;
-    // @include btn-round;
   }
 }
 
 
+
+%inverted{
+  .btn-pill{
+    @include btn-transparent();
+  }
+}

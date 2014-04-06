@@ -78,6 +78,11 @@ h4 {
   }
 }
  
+p{
+  @include rhythm(.5,0,0,.5);
+  @include adjust-font-size-to($base-font-size,1);
+  @include adjust-leading-to(1);
+}
 // blockquote {
 //   @include adjust-font-size-to(1.25, 1.25);
 // }

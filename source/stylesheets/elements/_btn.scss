@@ -1,13 +1,51 @@
+// Button Shape
+@mixin btn(){
+  text-rendering:optimizeLegibility;
+  letter-spacing: 0.01em;
+  @extend %animate;
+}
 @mixin btn-rounded(){
   @include border-radius(100px);
 }
+// Button Colors
+@mixin btn-transparent{
+  color: transparentize($white,.3);
+  border-color: transparentize($white, .9);
+  background-color: transparentize($white, .9);
+  &:hover, &:focus{
+    border-color: transparentize($white, .5);
+    background-color: transparentize($white, .7);
+    color: $white;
+  }
+}
 
-@mixin btn-rhythm(
-  $lines:2,
-  $border:0,
-  $font-size: $base-font-size,
-  $hpadding: $padding-base-horizontal*3
-){
+@mixin btn-invisible(){
+  color: transparentize($white,.3);
+  border-color: transparentize($white, 1);
+  background-color: transparent;
+  opacity: .7;
+  &:hover, &:focus{
+    opacity: 1;
+    color: $white;
+    border-color: transparentize($white, .9);
+    background-color: transparentize($white, .95);;
+  }
+}
+
+@mixin btn-color($bg-color:$primary_bg_color, $border-color: $primary_bg_color, $text-color:$primary_bg_text){
+  color: $text-color;
+  background-color: $bg-color;
+  border-color: $border-color;
+  &:hover, &:active, &:focus{
+    color: darken($text-color, 5%);
+    border-color: darken($border-color, 5%);
+    background-color: darken($bg-color,5%);
+  }
+}
+
+
+// Button Size
+@mixin btn-rhythm($lines:2, $font-size: $base-font-size, $hpadding: $padding-base-horizontal*3, $border:2px ){
   $leading : $lines / 4;
   @include adjust-font-size-to($font-size);
   @include adjust-leading-to($leading * 2, $font-size);
@@ -23,82 +61,40 @@
   padding-right: $hpadding;
 }
 
-@mixin btn(
-  $lines:2,
-  $font-size: $base-font-size,
-  $border: 1px,
-  $hpadding:$padding-base-horizontal*3
-){
-  text-rendering:optimizeLegibility;
-  letter-spacing: 0.01em;
-  @extend %animate;
-  @include btn-rhythm($lines,$border,$font-size, $hpadding);
-}
 
-
-@mixin btn-transparent($font-size:$base-font-size){
-  color: transparentize($white,.3);
-  border-color: transparentize($white, .9);
-  background-color: transparentize($white, .9);
-  &:hover, &:focus{
-    border-color: transparentize($white, .5);
-    background-color: transparentize($white, .7);
-    color: $white;
-  }
-}
-
-@mixin btn-invisible($font-size:$base-font-size){
-  color: transparentize($white,.3);
-  border-color: transparentize($white, 1);
-  background-color: transparent;
-  opacity: .7;
-
-  &:hover, &:focus{
-    opacity: 1;
-    border-color: transparentize($white, .9);
-    background-color: transparentize($white, .95);;
-    color: $white;
-  }
-}
-
-@mixin btn-color($color:$primary_bg_color, $text-color:$primary_bg_text){
-  color: $text-color;
-  background-color: $color;
-  border-color: $color;
-  &:hover, &:active, &:focus{
-    color: darken($text-color, 5%);
-    border-color: darken($color, 5%);
-    background-color: darken($color,5%);
-  }
-  
-}
-
+// Button Presets
 .btn{
-  @include btn(2, $base-font-size, 1px);
-  border-color: transparentize($secondary_bg_color, .5);
+  @include btn();
+  @include btn-rhythm();
+  @include btn-color(transparentize($secondary_bg_color, 1), transparentize($secondary_bg_color, .8), $btn_text_color);
   &.btn-large{
-    @include btn(2.5, $base-font-size, 1px);
+    @include btn-rhythm(2.5);
   }
   &.btn-xlarge{
-    @include btn(3, $base-font-size, 1px);
+    @include btn-rhythm(3);
   }
   &.btn-small{
-    @include btn(1.5, $base-font-size, 1px);
+    @include btn-rhythm(1.5);
   }
 }
-
 .btn-primary{
-  @include btn-color($primary_bg_color, $primary_bg_text);
+  @include btn-color($primary_bg_color, $primary_bg_color, $primary_bg_text);
 }
 .btn-secondary{
-  @include btn-color($secondary_bg_color, $secondary_bg_text);
+  @include btn-color($secondary_bg_color, $secondary_bg_color, $secondary_bg_text);
 }
-.btn-inverted{
-  @include btn-color($white, $secondary);
+
+@mixin btn-white{
+  @include btn-color($white, $white, $secondary);
 }
+.btn-white{
+  @include btn-white;
+}
+
 .btn-transparent{
-  @include btn-transparent();
+  @include btn-transparent;
 }
+
 .btn-invisible{
   @include btn-invisible();
 }
@@ -108,16 +104,25 @@
 }
 
 .btn-pill{
-  @include btn-transparent();
   @include btn-rounded();
-  @include btn(2, $base-font-size, 2px);
-  &.btn-xlarge{
-    @include btn(3, $base-font-size, 2px);
-  }
-  &.btn-large{
-    @include btn(2.5, $base-font-size, 2px);
-  }
-  &.btn-small{
-    @include btn(1.5, $base-font-size, 2px);
-  }
+  @include btn-transparent();
+}
+
+@mixin btn-xlarge(){
+  @include btn-rhythm(3);
+}
+.btn-xlarge{
+  @include btn-xlarge();
+}
+@mixin btn-large(){
+  @include btn-rhythm(2.5);
+}
+.btn-large{
+  @include btn-large();
+}
+@mixin btn-small(){
+  @include btn-rhythm(1.5);
+}
+.btn-small{
+  @include btn-small();
 }

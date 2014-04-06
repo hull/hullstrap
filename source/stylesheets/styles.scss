@@ -26,8 +26,8 @@
 @import "base/variables";
 
 $base-font-size:        18px;
-$base-line-height:      28px;
-$base-rhythm-unit:      28px;
+$base-line-height:      24px;
+$base-rhythm-unit:      24px;
 @include establish-baseline();  // "This is where the magic happens" —Everyone on MTV Cribs.
 html{@include debug-vertical-alignment;}
 @import "bootstrap";

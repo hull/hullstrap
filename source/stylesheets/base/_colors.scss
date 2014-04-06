@@ -1,18 +1,23 @@
 // Colors
-$black:                         #222222;
-$blue:                          #2CAAD0;
-$turquoise:                     #4BC2B8;
-$blue_2:                        #0093e6; //rgba(37,164,213,0.98)
 $white:                         #FFFFFF;
+$black:                         #222222;
+$turquoise:                     #4BC2B8;
+$blue_darkest:                  #262C36;
+$blue:                          #2CAAD0;
+$blue_2:                        #0093e6; //rgba(37,164,213,0.98)
 $blue_gray:                     #383E4B;
 $blue_gray_lighter:             #606776;
-
+$red:                           #E75F45;
+$light_gray:                    #7B7B7B;
 
 $primary        : $blue;
 $primary_alt    : $turquoise;
 $secondary      : $blue_gray;
 $secondary_alt  : $blue_gray_lighter;
 $tertiary       : $blue_2;
+$quaternary     : $red;
+$base_text_color: $light_gray;
+$btn_text_color : $blue_darkest;
 // $tertiary_alt   :
 // $quaternary     :
 // $quaternary_alt :
