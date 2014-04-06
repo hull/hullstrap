@@ -11,6 +11,8 @@
 }
 
 .navbar{
+  @include trailer(1);
+  border:none;
   .navbar-brand{
     @include inline-retina-sprite('logo/navbar-logo-dark.png');
     @include rhythm(.5,.5,.5,.5);
@@ -26,20 +28,16 @@
     margin-left: 0;
   }
   .navbar-item{
-    font-weight: 200;
     @extend %animate;
-    @include btn-rounded();
+    @include font-weight-light;
+    @include btn-rounded;
     margin-left:$padding-base-horizontal/8;
     margin-right:$padding-base-horizontal/8;
-    @include btn-rhythm(1.5, 14px, $padding-base-horizontal/2, 2px);
-    @include leader(.9, 14px);
-    @include trailer(.9, 14px);
+    @include btn-rhythm(1.5, 1.5, 14px, $padding-base-horizontal/2);
     @media (min-width: 1000px){
       margin-left:$padding-base-horizontal/4;
       margin-right:$padding-base-horizontal/4;
-      @include btn-rhythm(1.5, 16px, $padding-base-horizontal);
-      @include leader(.9, 16px);
-      @include trailer(.9, 16px);
+      @include btn-rhythm(1.5, 1.5, 16px, $padding-base-horizontal);
     }
   }
 }
@@ -54,7 +52,6 @@
     @include inline-retina-sprite('logo/navbar-logo.png');
   }
   .navbar-item{
-    opacity: .7;
     @include btn-invisible();
   }
   .open {
@@ -67,14 +64,14 @@
 }
 
 footer .navbar-item{
-  @extend .btn-inverted;
+  @extend .btn-white;
   @include trailer(0);
   @include leader(0);
 }
 
 .section-blue{
   @extend %inverted;
-  min-height: 550px;
+  min-height: 540px;
   // min-height: 100vh;
   position: relative;
   background-color:$primary_bg_color;
@@ -82,7 +79,6 @@ footer .navbar-item{
 
   @extend .text-center;
   @include background-image($primary_bg_image);
-
   .bgimage{
     position: absolute;
     z-index: 1;
@@ -103,9 +99,8 @@ footer .navbar-item{
     background: none;
     @include box-shadow(none);
   }
-  h1{
+  h2{
     @include font-weight-bold;
-    @include adjust-font-size-to(45px);
   }
   h4{
     opacity: .6;
@@ -168,28 +163,28 @@ footer .navbar-item{
   }
 }
 
-.section-white.section-columns{
+.section-header{
   @extend .text-center;
-
+  h2{
+    @include adjust-font-size-to(34px);
+    @include rhythm(1,0,0,1,34px);
+  }
+  .thin{
+    @include font-weight-normal;
+  }
+  .light{
+    color: $light_text;
+  }
   h4{
     @include font-weight-bold;
-    color: $quaternary;
+    color: $accent_text_header;
     @include adjust-font-size-to(24px, 1);
-    @include rhythm(0,0,0,0,24px);
-    display: inline-block;
-  }
-
-  hr{
-    @include adjust-font-size-to(18px,1,24px);
-    background-color: #E8E8E8;
+    @include rhythm(0,0,1,1,24px);
     display: block;
-    border:none;
-    margin-left: auto;
-    margin-right: auto;
-    // margin-left: $padding-base-horizontal*3;
-    // margin-right: $padding-base-horizontal*3;
-    @include rhythm(.76,.04,.04,.66);
-    width: 70%;
+    // Bottom underline for h4
+    @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
+    background-position:  left ($base-line-height*2 - 2px);
+    background-repeat: no-repeat;
   }
 
   p{
@@ -197,7 +192,7 @@ footer .navbar-item{
   }
 
   .btn{
-    @include btn-rhythm(3);
+    // @include btn-rhythm(1.5, $base-font-size, .5);
   }
   .cta{
     @include leader(1);
@@ -208,16 +203,17 @@ footer .navbar-item{
   @extend %inverted-background;
   @extend %inverted;
   @extend .text-center;
-  h1{
-    @include adjust-font-size-to(34px, 2);
-    @include rhythm(0,0,0,2, 34px);
-  }
+}
+.section-carousel-item{
   .progress{
     width: 160px;
+    height: $base-line-height/2;
+    @include rhythm(0.25,0,0,0.25);
+    margin-left: auto;
+    margin-right: auto;
+
     background-color: transparentize(black,.5);
     @include box-shadow(inset 0px 1px 1px 0px transparentize(black,0.85));
-    display: inline-block;
-    height: 12px;
     border:none;
     @include btn-rounded();
   }
@@ -227,28 +223,44 @@ footer .navbar-item{
     @include box-shadow(0px 0px 4px 0px transparentize(black,0.75));
   }
   i.glyphicon{
-    @include adjust-font-size-to(60px);
-    @include rhythm(1,0,0,1,60px);
+    @include adjust-font-size-to(80px);
+    @include rhythm(1,0,0,1,80px);
     color: #F8C430;
+    margin-right: $padding-base-horizontal*2;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 0px 0px 80px rgba(248, 196, 48, 0.37);
   }
 }
 
+.section-carousel-title{
+  @include font-weight-bold;
+  @include adjust-font-size-to(34px, 2);
+  @include rhythm(0,0,0,2, 34px);
+}
 .section-carousel-description{
   .btn{
-    // @include btn-rhythm(2);
     @include font-weight-bold;
   }
   h4{
     @include font-weight-bold;
   }
   p{
-    @include rhythm(2,0,0,2);
+    @include rhythm(1,0,0,2);
   }
 }
 
 
-.section-inverted, .section-white{
-  // @include leader(2);
+.section-inverted, .section-header{
   @include rhythm(0,3,3,0);
+}
+
+.section-header{
+  .btn{
+    @include btn-rounded;
+  }
+  .btn-signup{
+    @include font-weight-bold;
+    margin-right: $padding-base-horizontal*2;
+  }
+  .btn-discover{
+  }
 }

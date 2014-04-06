@@ -1,7 +1,29 @@
 body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.5;
 }
- 
+
+@mixin adjust-heading($font-size:$base-font-size, $leading:1, $leader:1, $trailer:1, $mobile-multiple: .5, $small-multiple: .75){
+  $mobile-font-size:$mobile-multiple*$font-size;
+  @include adjust-font-size-to($mobile-font-size);
+  @include rhythm($leader,0,0,$trailer, $mobile-font-size);
+  // @include adjust-leading-to($leading, $mobile-font-size);
+  // @media (min-width: 43.75em) {
+  //   & {
+  //     $small-font-size:$mobile-multiple*$font-size;
+  //     @include adjust-font-size-to($small-font-size);
+  //     @include rhythm($leader,0,0,$trailer, $small-font-size);
+  //     @include adjust-leading-to($leading, $small-font-size);
+  //   }
+  // }
+  // @media (min-width: 56.25em) {
+  //   & {
+  //     @include adjust-font-size-to($font-size);
+  //     @include rhythm($leader,0,0,$trailer, $font-size);
+  //     @include adjust-leading-to($leading, $font-size);
+  //   }
+  // }
+}
+
 // #page {
 //   font-size: 1em;
 //   /* equivalent to 16px */
@@ -17,72 +39,49 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 //     /* equivalent to 22px */
 //   }
 // }
- 
-h1 {
-  @include adjust-font-size-to($base-font-size*2, 1.25);
+// 
+// $module : 1.618;
+$module : 1.55;
+$h6_font_size: $base-font-size;
+$h5_font_size: $base-font-size*$module;
+$h4_font_size: $base-font-size*$module*$module;
+$h3_font_size: $base-font-size*$module*$module*$module;
+$h2_font_size: $base-font-size*$module*$module*$module*$module;
+$h1_font_size: $base-font-size*$module*$module*$module*$module*$module;
+
+$h6_line_height: $base-font-size*1;
+$h5_line_height: $base-font-size*1;
+$h4_line_height: $base-font-size*1;
+$h3_line_height: $base-font-size*1.5;
+$h2_line_height: $base-font-size*1.5;
+$h1_line_height: $base-font-size*2;
+
+h1{ 
+  @include adjust-heading($h1_font_size, $h1_line_height);
 }
- 
-@media (min-width: 43.75em) {
-  h1 {
-    @include adjust-font-size-to($base-font-size*2.5, 1.125);
-  }
+h2{ 
+  @include adjust-heading($h2_font_size, $h2_line_height);
 }
- 
-@media (min-width: 56.25em) {
-  h1 {
-    @include adjust-font-size-to($base-font-size*3, 1.05);
-  }
+h3{ 
+  @include adjust-heading($h3_font_size, $h3_line_height);
 }
- 
-h2 {
-  @include adjust-font-size-to($base-font-size*1.625, 1.15384615);
+h4{ 
+  @include adjust-heading($h4_font_size, $h4_line_height);
 }
- 
-@media (min-width: 43.75em) {
-  h2 {
-    @include adjust-font-size-to($base-font-size*2, 1.25);
-  }
+h5{ 
+  @include adjust-heading($h5_font_size, $h5_line_height);
 }
- 
-@media (min-width: 56.25em) {
-  h2 {
-    @include adjust-font-size-to($base-font-size*2.25, 1.25);
-  }
+h6{ 
+  @include adjust-heading($h6_font_size, $h6_line_height);
 }
- 
-h3 {
-  @include adjust-font-size-to($base-font-size*1.375, 1.13636364);
-}
- 
-@media (min-width: 43.75em) {
-  h3 {
-    @include adjust-font-size-to($base-font-size*1.5, 1.25);
-  }
-}
- 
-@media (min-width: 56.25em) {
-  h3 {
-    @include adjust-font-size-to($base-font-size*1.888888888);
-    // @include adjust-leading-to(2);
-    @include trailer(1,$base-font-size*1.888888888);
-  }
-}
- 
-h4 {
-  @include adjust-font-size-to($base-font-size*1.125, 1.11111111);
-}
- 
-@media (min-width: 43.75em) {
-  h4 {
-    @include adjust-leading-to(1.22222222);
-  }
-}
- 
+
+
 p{
-  @include rhythm(.5,0,0,.5);
-  @include adjust-font-size-to($base-font-size,1);
   @include adjust-leading-to(1);
+  @include adjust-font-size-to($base-font-size,1);
+  @include rhythm(1,0,0,1);
 }
+
 // blockquote {
 //   @include adjust-font-size-to(1.25, 1.25);
 // }
@@ -93,12 +92,18 @@ p{
 //   }
 // }
 
-@mixin font-weight-light{
+@mixin font-weight-thin{
   font-weight: 100;
 }
-@mixin font-weight-normal{
+@mixin font-weight-light{
   font-weight: 200;
 }
-@mixin font-weight-bold{
+@mixin font-weight-normal{
+  font-weight: 400;
+}
+@mixin font-weight-semibold{
   font-weight: 600;
+}
+@mixin font-weight-bold{
+  font-weight: 700;
 }

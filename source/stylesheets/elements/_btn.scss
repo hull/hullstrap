@@ -45,18 +45,19 @@
 
 
 // Button Size
-@mixin btn-rhythm($lines:2, $font-size: $base-font-size, $hpadding: $padding-base-horizontal*3, $border:2px ){
-  $leading : $lines / 4;
+@mixin btn-rhythm($lines:1.5, $margin: 1, $font-size: $base-font-size, $hpadding: $padding-base-horizontal*3, $border:2px ){
+  $leading : $lines / 2;
+
   @include adjust-font-size-to($font-size);
-  @include adjust-leading-to($leading * 2, $font-size);
+  @include adjust-leading-to($leading, $font-size);
   @if $border > 0 {
     @include rhythm-borders($border, $leading / 2 , $font-size);
   } @else {
     @include padding-leader( $leading , $font-size);
     @include padding-trailer( $leading , $font-size);
   }
-  @include leader( $leading / 2, $font-size);
-  @include trailer( $leading / 2, $font-size);
+  @include leader( $margin / 2, $font-size);
+  @include trailer( $margin / 2, $font-size);
   padding-left:  $hpadding;
   padding-right: $hpadding;
 }
@@ -67,15 +68,6 @@
   @include btn();
   @include btn-rhythm();
   @include btn-color(transparentize($secondary_bg_color, 1), transparentize($secondary_bg_color, .8), $btn_text_color);
-  &.btn-large{
-    @include btn-rhythm(2.5);
-  }
-  &.btn-xlarge{
-    @include btn-rhythm(3);
-  }
-  &.btn-small{
-    @include btn-rhythm(1.5);
-  }
 }
 .btn-primary{
   @include btn-color($primary_bg_color, $primary_bg_color, $primary_bg_text);
@@ -109,19 +101,19 @@
 }
 
 @mixin btn-xlarge(){
-  @include btn-rhythm(3);
+  @include btn-rhythm(3,1);
 }
 .btn-xlarge{
   @include btn-xlarge();
 }
 @mixin btn-large(){
-  @include btn-rhythm(2.5);
+  @include btn-rhythm(2.5, .5);
 }
 .btn-large{
   @include btn-large();
 }
 @mixin btn-small(){
-  @include btn-rhythm(1.5);
+  @include btn-rhythm(1, 1);
 }
 .btn-small{
   @include btn-small();

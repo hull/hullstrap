@@ -26,10 +26,13 @@
 @import "base/variables";
 
 $base-font-size:        18px;
-$base-line-height:      24px;
-$base-rhythm-unit:      24px;
+$base-line-height:      20px;
+$base-rhythm-unit:      20px;
 @include establish-baseline();  // "This is where the magic happens" —Everyone on MTV Cribs.
 html{@include debug-vertical-alignment;}
+body{
+  opacity: .9;
+}
 @import "bootstrap";
 
 @import "base/typography";
@@ -60,21 +63,21 @@ html{@include debug-vertical-alignment;}
 // /*------------------------------------*\
 //     Modules
 // \*------------------------------------*/
-// @import "codrops_modules/border_effects";
-// @import "codrops_modules/border_menu";
-// @import "codrops_modules/border_player";
-// @import "codrops_modules/search_box";
-// @import "codrops_modules/timed_notification";
-// @import "codrops_modules/annotations_overlay";
-// @import "codrops_modules/opening_grid";
-// @import "codrops_modules/sticky_table_header";
-// @import "codrops_modules/cbp_scroller";
-// @import "codrops_modules/cbp_ig_grid";
-// @import "codrops_modules/cbp_fwslider";
-// @import "codrops_modules/cbp_vimenu";
-// @import "codrops_modules/cbp_hrmenu";
-// @import "codrops_modules/cbp_qtrotator";
-// @import "codrops_modules/cbp_tmtimeline";
+@import "codrops_modules/border_effects";
+@import "codrops_modules/border_menu";
+@import "codrops_modules/border_player";
+@import "codrops_modules/search_box";
+@import "codrops_modules/timed_notification";
+@import "codrops_modules/annotations_overlay";
+@import "codrops_modules/opening_grid";
+@import "codrops_modules/sticky_table_header";
+@import "codrops_modules/cbp_scroller";
+@import "codrops_modules/cbp_ig_grid";
+@import "codrops_modules/cbp_fwslider";
+@import "codrops_modules/cbp_vimenu";
+@import "codrops_modules/cbp_hrmenu";
+@import "codrops_modules/cbp_qtrotator";
+@import "codrops_modules/cbp_tmtimeline";
 
 
 /*------------------------------------*\
