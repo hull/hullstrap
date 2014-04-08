@@ -11,6 +11,7 @@
 }
 
 .navbar{
+  @include padding-leader(1);
   @include trailer(1);
   border:none;
   .navbar-brand{

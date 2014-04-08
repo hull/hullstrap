@@ -30,9 +30,9 @@ $base-line-height:      20px;
 $base-rhythm-unit:      20px;
 @include establish-baseline();  // "This is where the magic happens" —Everyone on MTV Cribs.
 html{@include debug-vertical-alignment;}
-body{
-  opacity: .9;
-}
+// body{
+//   opacity: .9;
+// }
 @import "bootstrap";
 
 @import "base/typography";
