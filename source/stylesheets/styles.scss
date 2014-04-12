@@ -40,6 +40,8 @@ html{@include debug-vertical-alignment;}
     Hull mixins
 \*------------------------------------*/
 @import "mixins/animation";
+@import "mixins/fades";
+@import "mixins/borders";
 @import "mixins/center_horizontally";
 @import "mixins/ellipsis";
 @import "mixins/inline_block";
@@ -89,13 +91,13 @@ html{@include debug-vertical-alignment;}
     Modules
 \*------------------------------------*/
 
-@import "modules/inverted_page";
 @import "modules/sections";
-
 @import "modules/navbar";
-
-@import "modules/homepage_header";
 @import "modules/carousel";
 @import "modules/testimonials";
-
 @import "modules/footer";
+
+@import "layouts/inverted";
+
+@import "pages/homepage";
+@import "pages/features";

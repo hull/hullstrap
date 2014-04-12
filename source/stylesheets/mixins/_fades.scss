@@ -1,0 +1,7 @@
+@mixin fade-in-hover($from: .7, $to: 1){
+  @extend %animate;
+  opacity: .7;
+  &:hover{
+    opacity: 1;
+  }
+}

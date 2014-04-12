@@ -1,0 +1,57 @@
+%inverted-background{
+  // @include background-image($secondary_bg_gradient, inline-image('noise.png'));
+  // @include background-image(
+  //   radial-gradient(1500px 500px at top, transparentize(white,.75) 0, transparentize(white,1) 100%),
+  //   inline-image('noise.png')
+  // );
+  // @include background-image(
+  //   radial-gradient(1500px 500px at top, rgba(173, 179, 204, 0.3) 0%, rgba(173, 179, 204, 0.0) 100%),
+  //   inline-image('noise.png')
+  // );
+  @include background-image(
+    radial-gradient(1500px 500px at top,
+      transparentize(lighten($secondary_bg_color, 50%), .7) 0%,
+      transparentize($secondary_bg_color, .3) 100%
+    ),
+    inline-image('noise.png')
+  );
+  background-position:  top center;
+  background-repeat:    repeat;
+  background-color: $secondary_bg_color;
+  color: $secondary_bg_text;   
+  -webkit-font-smoothing:antialiased;
+}
+%inverted-page{
+  @extend %inverted-background;
+  .footer{
+    box-shadow: none;
+    .navbar-brand{
+      @include inline-retina-sprite('logo/navbar-logo.png');
+      @include fade-in-hover;
+    }
+    .navbar-item{
+      @include font-weight-semibold;
+      @include btn-invisible();
+      // @extend .btn-white;
+    }
+  }
+}
+%inverted{
+  .btn-pill{
+    @include btn-transparent();
+  }
+}
+
+.inverted-jumbotron{
+  @extend .jumbotron;
+  @extend %inverted;
+  text-align: center;
+  @include inverted-border-bottom;
+  @include rhythm(1,0,2,1);
+  .jumbotron-headline{
+    @include leader(0)
+  }
+  .jumbotron-headline+.btn-primary{
+    @include font-weight-bold;
+  }
+}
