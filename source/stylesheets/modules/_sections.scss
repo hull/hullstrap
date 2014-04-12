@@ -1,0 +1,98 @@
+/*
+******************
+** General Section Styles
+******************
+*/
+
+.blue-section{
+  @extend %inverted;
+  // min-height: 528px;
+  // min-height: 100vh;
+  position: relative;
+  background-color:$primary_bg_color;
+  color: $primary_bg_text;
+  .btn{
+    @include btn-rounded;
+    @include btn-white;
+    margin-right: $padding-base-horizontal*2;
+  }
+}
+
+
+%section{
+  // @include rhythm(0,2,2,0);
+  @include rhythm(0,3,3,0);
+}
+
+.callout-section{
+  @extend %section;
+  @extend .text-center;
+
+  h2{
+    @include adjust-font-size-to(34px);
+    @include rhythm(1,0,0,1,34px);
+  }
+
+  h4{
+    @include adjust-font-size-to(24px, 1);
+    @include rhythm(0,0,1,1,24px);
+  }
+
+  .underlined{
+    // Bottom underline
+    @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
+    background-position:  left ($base-line-height*2 - 2px);
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .accented{
+    @include font-weight-bold;
+    color: $accent_text_header;
+  }
+
+  blockquote{
+    border:none;
+    @include font-weight-light;
+    @include adjust-font-size-to(26px,1);
+    @include rhythm(1,0,0,1, 26px);
+    font-style: italic;
+  }
+
+  .tagline{
+    @include font-weight-normal;
+    .light{
+      color: $light_text;
+    }
+  }
+
+
+  p{
+    color: $base_text_color;
+  }
+
+  .cta{
+    @include leader(1);
+  }
+
+  .btn{
+    @include btn-rounded;
+  }
+  .btn-signup{
+    @include font-weight-bold;
+    margin-right: $padding-base-horizontal*2;
+  }
+  .btn-discover{
+  }
+}
+
+.inverted-section{
+  @extend %section;
+  @extend %inverted-background;
+  @extend %inverted;
+  @extend .text-center;
+}
+
+.bottom-border-section{
+  @include box-shadow(0 1px 0 rgba(0,0,0,.07));
+}

@@ -1,0 +1,49 @@
+/*
+******************
+** Homepage Carousel
+******************
+*/
+.carousel-item-section{
+  .progress{
+    width: 160px;
+    height: $base-line-height/2;
+    @include rhythm(0.25,0,0,0.25);
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: transparentize(black,.5);
+    @include box-shadow(inset 0px 1px 1px 0px transparentize(black,0.85));
+    border:none;
+    @include btn-rounded();
+  }
+  .progress-bar{
+    @include btn-rounded();
+    background: $white;
+    @include box-shadow(0px 0px 4px 0px transparentize(black,0.75));
+  }
+  i.glyphicon{
+    @include adjust-font-size-to(80px);
+    @include rhythm(1,0,0,1,80px);
+    color: #F8C430;
+    margin-right: $padding-base-horizontal*2;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 0px 0px 80px rgba(248, 196, 48, 0.37);
+  }
+}
+
+.carousel-title-section{
+  @include font-weight-bold;
+  @include adjust-font-size-to(34px, 2);
+  @include rhythm(0,0,0,2, 34px);
+}
+
+.carousel-description-section{
+  .btn{
+    @include font-weight-bold;
+  }
+  h4{
+    @include font-weight-bold;
+  }
+  p{
+    @include rhythm(1,0,0,2);
+  }
+}

@@ -1,0 +1,92 @@
+.homepage-header{
+  @include padding-trailer(3);
+  .navbar-branded{
+    background: none;
+    @include box-shadow(none);
+  }
+  .headline{
+    @include font-weight-bold;
+  }
+  h5.tagline{
+    @include adjust-leading-to(1.33333334, $h5_font_size);
+    opacity: .6;
+  }
+  @extend .text-center;
+  @include background-image($primary_bg_image);
+  .bgimage{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    opacity: .02;
+    overflow: hidden;
+    text-align: center;
+    background-position: top center;
+    background-size: 120% auto;
+    background-attachment: fixed;
+  }
+  > .container{
+    position: relative;
+    z-index: 2;
+  }
+  .btn{
+    @include btn-large;
+    width: 100%;
+  }
+  .btn-signup{
+    @include font-weight-bold;
+  }
+  .btn-discover{
+    @include btn-transparent;
+    color: $primary_bg_text;
+  }
+
+  @media (min-width: 768px){
+    text-align: left;
+    .btn{
+      display: inline-block;
+      width: auto;
+    }
+  }
+}
+
+/*
+******************
+** Homepage Specific
+******************
+*/
+
+.play-icon{
+  @extend %animate;
+  @extend .text-center;
+  @include border-radius(200px);
+  background-color: rgba(63,70,83,0.5);
+  $circle_size: $base-line-height*4;
+  width:  $circle_size;
+  height: $circle_size;
+  cursor: pointer;
+  display: inline-block;
+  @include leader(2);
+  @include trailer(1);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  @media (min-width: 768px){
+    @include leader(4);
+  }
+  .icon-play{
+    color: $primary_bg_text;
+    $fsize:$base-font-size*2;
+    @include adjust-font-size-to($fsize, 2);
+    @include leader(1, $fsize);
+    @include trailer(1, $fsize);
+    margin-left: 10px;
+    display: inline-block;
+  }
+  &:hover{
+    background-color: rgba(63,70,83,0.8);
+    .icon-play{
+      @include scale(1.1);
+    }
+  }
+}

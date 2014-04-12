@@ -1,0 +1,52 @@
+
+.testimonials{
+  @include rhythm(1,0,0,1);
+  @include transform-style(preserve-3d);
+  @include perspective(100px);
+  .testimonial-author, .testimonial-website{
+    @extend %animate;
+    @include trailer(0);
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+    left: -90px;
+  }
+  .testimonial-website{
+    @include adjust-font-size-to(14px);
+    bottom: -$base-line-height*3;
+  }
+  li{
+    position: relative;
+    z-index: 1;
+    &:hover{
+      z-index: 2;
+      .testimonial-author, .testimonial-website{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.testimonial-avatar{
+  @include border-radius(100px);
+  width: $base-line-height * 4;
+  @extend .img-responsive;
+  @extend %animate;
+  @include box-shadow(0 10px 30px transparentize(black, .9));
+  margin: 0 $padding-base-horizontal;
+  padding: 0;
+  background: white;
+  display: inline-block;
+  img{
+    @include border-radius(100px);
+    @extend %animate;
+    opacity: .3;
+  }
+  li:hover &{
+    @include box-shadow(0 30px 40px transparentize(black, .95));
+    @include translate3d(0, -10px, 0px);
+    img{
+      opacity: 1;
+    }
+  }
+}

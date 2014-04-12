@@ -1,6 +1,13 @@
 // .navbar{
 //   @include background(linear-gradient(to right top, #4bc2b8,#0093e6));
 // }
+
+/*
+******************
+** Navbar Styles
+******************
+*/
+
 .navbar-toggle{
   @include rhythm(1,0,0,1);
   .icon-bar{
@@ -11,9 +18,8 @@
 }
 
 .navbar{
-  @include padding-leader(1);
-  @include trailer(1);
   border:none;
+  @include rhythm(0,.5,.5,0);
   .navbar-brand{
     @include inline-retina-sprite('logo/navbar-logo-dark.png');
     @include rhythm(.5,.5,.5,.5);
@@ -41,7 +47,12 @@
       @include btn-rhythm(1.5, 1.5, 16px, $padding-base-horizontal);
     }
   }
+  .navbar-item-highlight{
+    @extend .navbar-item;
+    @include btn-transparent;
+  }
 }
+
 .navbar-branded{
   @extend %inverted;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -64,204 +75,8 @@
   }
 }
 
-footer .navbar-item{
-  @extend .btn-white;
-  @include trailer(0);
-  @include leader(0);
-}
-
-.section-blue{
-  @extend %inverted;
-  min-height: 540px;
-  // min-height: 100vh;
-  position: relative;
-  background-color:$primary_bg_color;
-  color: $primary_bg_text;
-
-  @extend .text-center;
-  @include background-image($primary_bg_image);
-  .bgimage{
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    opacity: .02;
-    overflow: hidden;
-    text-align: center;
-    img.bg{
-      height: 120%;
-    }
-  }
-  > .container{
-    position: relative;
-    z-index: 2;
-  }
-  .navbar-branded{
-    background: none;
-    @include box-shadow(none);
-  }
-  h2{
-    @include font-weight-bold;
-  }
-  h4{
-    opacity: .6;
-  }
-  .btn{
-    @include btn-large;
-    @include btn-rounded;
-  }
-  .btn-signup{
-    @include btn-white;
-    @include font-weight-bold;
-    margin-right: $padding-base-horizontal*2;
-  }
-  .btn-discover{
-    @include btn-transparent;
-    color: $primary_bg_text;
-  }
-  @media (max-width: 768px){
-    .btn{
-      display: block;
-      width: 100%;
-    }
-  }
-}
-
-@media (min-width: 768px){
-  .section-blue{
-    text-align: left;
-  }
-}
-
-.play-icon{
-  @extend %animate;
-  @extend .text-center;
-  @include border-radius(200px);
-  background-color: rgba(63,70,83,0.5);
-  $circle_size: $base-line-height*4;
-  width:  $circle_size;
-  height: $circle_size;
-  cursor: pointer;
-  display: inline-block;
-  @include leader(2);
-  @include trailer(1);
-  @media (min-width: 768px){
-    @include leader(4);
-  }
-  .icon-play{
-    color: $primary_bg_text;
-    $fsize:$base-font-size*2;
-    @include leader(2, $fsize);
-    @include trailer(2, $fsize);
-    @include adjust-font-size-to($fsize, 4);
-    margin-left: 10px;
-  }
-  &:hover{
-    background-color: rgba(63,70,83,0.8);
-    .icon-play{
-      @include scale(1.1);
-    }
-  }
-}
-
-.section-header{
-  @extend .text-center;
-  h2{
-    @include adjust-font-size-to(34px);
-    @include rhythm(1,0,0,1,34px);
-  }
-  .thin{
-    @include font-weight-normal;
-  }
-  .light{
-    color: $light_text;
-  }
-  h4{
-    @include font-weight-bold;
-    color: $accent_text_header;
-    @include adjust-font-size-to(24px, 1);
-    @include rhythm(0,0,1,1,24px);
-    display: block;
-    // Bottom underline for h4
-    @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
-    background-position:  left ($base-line-height*2 - 2px);
-    background-repeat: no-repeat;
-  }
-
-  p{
-    color: $base_text_color;
-  }
-
-  .btn{
-    // @include btn-rhythm(1.5, $base-font-size, .5);
-  }
-  .cta{
-    @include leader(1);
-  }
-}
-
-.section-inverted{
-  @extend %inverted-background;
-  @extend %inverted;
-  @extend .text-center;
-}
-.section-carousel-item{
-  .progress{
-    width: 160px;
-    height: $base-line-height/2;
-    @include rhythm(0.25,0,0,0.25);
-    margin-left: auto;
-    margin-right: auto;
-
-    background-color: transparentize(black,.5);
-    @include box-shadow(inset 0px 1px 1px 0px transparentize(black,0.85));
-    border:none;
-    @include btn-rounded();
-  }
-  .progress-bar{
-    @include btn-rounded();
-    background: $white;
-    @include box-shadow(0px 0px 4px 0px transparentize(black,0.75));
-  }
-  i.glyphicon{
-    @include adjust-font-size-to(80px);
-    @include rhythm(1,0,0,1,80px);
-    color: #F8C430;
-    margin-right: $padding-base-horizontal*2;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4), 0px 0px 80px rgba(248, 196, 48, 0.37);
-  }
-}
-
-.section-carousel-title{
-  @include font-weight-bold;
-  @include adjust-font-size-to(34px, 2);
-  @include rhythm(0,0,0,2, 34px);
-}
-.section-carousel-description{
-  .btn{
-    @include font-weight-bold;
-  }
-  h4{
-    @include font-weight-bold;
-  }
-  p{
-    @include rhythm(1,0,0,2);
-  }
-}
-
-
-.section-inverted, .section-header{
-  @include rhythm(0,3,3,0);
-}
-
-.section-header{
-  .btn{
-    @include btn-rounded;
-  }
-  .btn-signup{
-    @include font-weight-bold;
-    margin-right: $padding-base-horizontal*2;
-  }
-  .btn-discover{
+.navbar-search{
+  input[type="search"]{
+    @include border-radius(100px);
   }
 }

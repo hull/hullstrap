@@ -45,7 +45,7 @@
 
 
 // Button Size
-@mixin btn-rhythm($lines:1.5, $margin: 1, $font-size: $base-font-size, $hpadding: $padding-base-horizontal*3, $border:2px ){
+@mixin btn-rhythm($lines:1.5, $margin: 1.5, $font-size: $base-font-size, $hpadding: $padding-base-horizontal*3, $border:2px ){
   $leading : $lines / 2;
 
   @include adjust-font-size-to($font-size);
@@ -101,13 +101,13 @@
 }
 
 @mixin btn-xlarge(){
-  @include btn-rhythm(3,1);
+  @include btn-rhythm(2.5,.5);
 }
 .btn-xlarge{
   @include btn-xlarge();
 }
 @mixin btn-large(){
-  @include btn-rhythm(2.5, .5);
+  @include btn-rhythm(2, 1);
 }
 .btn-large{
   @include btn-large();

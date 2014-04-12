@@ -2,46 +2,29 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   font-size-adjust: 0.5;
 }
 
-@mixin adjust-heading($font-size:$base-font-size, $leading:1, $leader:1, $trailer:1, $mobile-multiple: .5, $small-multiple: .75){
+@mixin adjust-heading($font-size:$base-font-size, $leading:1, $leader:1, $trailer:1, $mobile-multiple: .66, $small-multiple: .75){
   $mobile-font-size:$mobile-multiple*$font-size;
-  @include adjust-font-size-to($mobile-font-size);
+  @include adjust-font-size-to($mobile-font-size, $leading);
+  @include adjust-leading-to($leading, $mobile-font-size);
   @include rhythm($leader,0,0,$trailer, $mobile-font-size);
-  // @include adjust-leading-to($leading, $mobile-font-size);
-  // @media (min-width: 43.75em) {
-  //   & {
-  //     $small-font-size:$mobile-multiple*$font-size;
-  //     @include adjust-font-size-to($small-font-size);
-  //     @include rhythm($leader,0,0,$trailer, $small-font-size);
-  //     @include adjust-leading-to($leading, $small-font-size);
-  //   }
-  // }
-  // @media (min-width: 56.25em) {
-  //   & {
-  //     @include adjust-font-size-to($font-size);
-  //     @include rhythm($leader,0,0,$trailer, $font-size);
-  //     @include adjust-leading-to($leading, $font-size);
-  //   }
-  // }
+  @media (min-width: 43.75em) {
+    & {
+      $small-font-size:$mobile-multiple*$font-size;
+      @include adjust-font-size-to($small-font-size, $leading);
+      @include adjust-leading-to($leading, $small-font-size);
+      @include rhythm($leader,0,0,$trailer, $small-font-size);
+    }
+  }
+  @media (min-width: 56.25em) {
+    & {
+      @include adjust-font-size-to($font-size, $leading);
+      @include adjust-leading-to($leading, $font-size);
+      @include rhythm($leader,0,0,$trailer, $font-size);
+    }
+  }
 }
 
-// #page {
-//   font-size: 1em;
-//   /* equivalent to 16px */
-//   line-height: 1.25;
-//   /* equivalent to 20px */
-// }
- 
-// @media (min-width: 43.75em) {
-//   #page {
-//     font-size: 1em;
-//     /* equivalent to 16px */
-//     line-height: 1.375;
-//     /* equivalent to 22px */
-//   }
-// }
-// 
-// $module : 1.618;
-$module : 1.55;
+$module : 1.25;
 $h6_font_size: $base-font-size;
 $h5_font_size: $base-font-size*$module;
 $h4_font_size: $base-font-size*$module*$module;
@@ -49,12 +32,12 @@ $h3_font_size: $base-font-size*$module*$module*$module;
 $h2_font_size: $base-font-size*$module*$module*$module*$module;
 $h1_font_size: $base-font-size*$module*$module*$module*$module*$module;
 
-$h6_line_height: $base-font-size*1;
-$h5_line_height: $base-font-size*1;
-$h4_line_height: $base-font-size*1;
-$h3_line_height: $base-font-size*1.5;
-$h2_line_height: $base-font-size*1.5;
-$h1_line_height: $base-font-size*2;
+$h6_line_height: 1;
+$h5_line_height: 1;
+$h4_line_height: 1;
+$h3_line_height: 2;
+$h2_line_height: 2;
+$h1_line_height: 3;
 
 h1{ 
   @include adjust-heading($h1_font_size, $h1_line_height);
@@ -75,11 +58,13 @@ h6{
   @include adjust-heading($h6_font_size, $h6_line_height);
 }
 
-
 p{
   @include adjust-leading-to(1);
   @include adjust-font-size-to($base-font-size,1);
   @include rhythm(1,0,0,1);
+}
+ul{
+  @include rhythm(0,0,0,1);
 }
 
 // blockquote {

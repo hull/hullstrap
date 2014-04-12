@@ -26,8 +26,8 @@
 @import "base/variables";
 
 $base-font-size:        18px;
-$base-line-height:      20px;
-$base-rhythm-unit:      20px;
+$base-line-height:      24px;
+$base-rhythm-unit:      24px;
 @include establish-baseline();  // "This is where the magic happens" —Everyone on MTV Cribs.
 html{@include debug-vertical-alignment;}
 // body{
@@ -88,6 +88,14 @@ html{@include debug-vertical-alignment;}
 /*------------------------------------*\
     Modules
 \*------------------------------------*/
-@import "modules/navbar";
-@import "modules/navbar_search";
+
 @import "modules/inverted_page";
+@import "modules/sections";
+
+@import "modules/navbar";
+
+@import "modules/homepage_header";
+@import "modules/carousel";
+@import "modules/testimonials";
+
+@import "modules/footer";
