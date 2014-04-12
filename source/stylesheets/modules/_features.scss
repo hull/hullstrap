@@ -1,0 +1,19 @@
+.features-section{
+  @include inverted-border-bottom;
+}
+
+.feature-item{
+  @include trailer(2);
+}
+.feature-image{
+  min-height: $base-line-height*3;
+  @include trailer(1);
+}
+
+.feature-title{
+  @include font-weight-bold;
+}
+
+.feature-description{
+  opacity: .7;
+}

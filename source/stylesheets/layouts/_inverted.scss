@@ -47,7 +47,7 @@
   @extend %inverted;
   text-align: center;
   @include inverted-border-bottom;
-  @include rhythm(1,0,2,1);
+  @include rhythm(2,0,2,2);
   .jumbotron-headline{
     @include leader(0)
   }
