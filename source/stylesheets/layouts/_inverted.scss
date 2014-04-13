@@ -45,13 +45,5 @@
 .inverted-jumbotron{
   @extend .jumbotron;
   @extend %inverted;
-  text-align: center;
   @include inverted-border-bottom;
-  @include rhythm(2,0,2,2);
-  .jumbotron-headline{
-    @include leader(0)
-  }
-  .jumbotron-headline+.btn-primary{
-    @include font-weight-bold;
-  }
 }

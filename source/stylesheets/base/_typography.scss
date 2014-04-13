@@ -92,3 +92,31 @@ ul{
 @mixin font-weight-bold{
   font-weight: 700;
 }
+
+
+/*
+******************
+** Title Styles
+******************
+*/
+h1, h2, h3, h4, h5, h6{
+  &.underlined{
+    // Bottom underline
+    @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
+    background-position:  left ($base-line-height*2 - 2px);
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  &.accented{
+    @include font-weight-bold;
+    color: $accent_text_header;
+  }
+
+  &.tagline{
+    @include font-weight-normal;
+    .light{
+      color: $light_text;
+    }
+  }
+}

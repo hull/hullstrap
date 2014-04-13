@@ -3,7 +3,11 @@
 ** Homepage Carousel
 ******************
 */
-.carousel-item-section{
+
+.carousel-section{
+  .carousel-control.left, .carousel-control.right{
+    background:transparent;
+  }
   .progress{
     width: 160px;
     height: $base-line-height/2;
@@ -30,13 +34,13 @@
   }
 }
 
-.carousel-title-section{
+.carousel-title{
   @include font-weight-bold;
   @include adjust-font-size-to(34px, 2);
   @include rhythm(0,0,0,2, 34px);
 }
 
-.carousel-description-section{
+.carousel-description{
   .btn{
     @include font-weight-bold;
   }

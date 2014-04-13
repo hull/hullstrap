@@ -1,5 +1,15 @@
-.homepage-header{
+/*
+******************
+** Homepage Specific
+******************
+*/
+
+.homepage-header-content{
   @include padding-trailer(3);
+}
+.homepage-header{
+  overflow: hidden;
+  // min-height: 100vh;
   .navbar-branded{
     background: none;
     @include box-shadow(none);
@@ -9,7 +19,7 @@
   }
   h5.tagline{
     @include adjust-leading-to(1.33333334, $h5_font_size);
-    opacity: .6;
+    opacity: .5;
   }
   @extend .text-center;
   @include background-image($primary_bg_image);
@@ -50,11 +60,16 @@
   }
 }
 
-/*
-******************
-** Homepage Specific
-******************
-*/
+
+.homepage-cta{
+  .btn-signup{
+    @include font-weight-bold;
+    margin-right: $padding-base-horizontal*2;
+  }
+  .tagline{
+    @include leader(0);
+  }
+}
 
 .play-icon{
   @extend %animate;
@@ -78,12 +93,16 @@
     color: $primary_bg_text;
     $fsize:$base-font-size*2;
     @include adjust-font-size-to($fsize, 2);
-    @include leader(1, $fsize);
-    @include trailer(1, $fsize);
+    line-height: 2.9em;
+    // @include leader(1, $fsize);
+    // @include trailer(1, $fsize);
     margin-left: 10px;
     display: inline-block;
+    @include scale(.9);
   }
+  @include scale(.9);
   &:hover{
+    @include scale(1);
     background-color: rgba(63,70,83,0.8);
     .icon-play{
       @include scale(1.1);

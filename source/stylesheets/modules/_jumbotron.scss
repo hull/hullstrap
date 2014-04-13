@@ -1,0 +1,51 @@
+.pitch-section{
+  .usp{
+    @include trailer(2);
+  }
+}
+
+.jumbotron{
+  background:none;
+  @extend .text-center;
+  @include rhythm(0,0,0,0);
+  .container{
+    @include rhythm(0,3,3,0);
+  }
+  @media screen and (max-width: 769px){
+    padding: 0; 
+  }
+  .jumbotron-headline{
+    @include leader(0)
+  }
+  .jumbotron-headline+.btn-primary{
+    @include font-weight-bold;
+  }
+
+  h2{
+    @include adjust-font-size-to(34px);
+    @include rhythm(1,0,0,1,34px);
+  }
+
+  h4{
+    @include adjust-font-size-to(24px, 1);
+    @include rhythm(0,0,1,1,24px);
+  }
+
+  blockquote{
+    border:none;
+    @include font-weight-light;
+    @include adjust-font-size-to(26px,1);
+    @include rhythm(1,0,0,1, 26px);
+    font-style: italic;
+  }
+
+  .btn{
+    @include btn-rounded;
+    @include font-weight-bold;
+  }
+
+  p{
+    @include adjust-font-size-to($base-font-size);
+    color: $base_text_color;
+  }
+}

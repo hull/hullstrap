@@ -1,1 +1,1 @@
-//=require all
+//=require app

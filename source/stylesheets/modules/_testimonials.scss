@@ -1,4 +1,9 @@
-
+.testimonials-section{
+  blockquote{
+    @include leader(0);
+  }    
+  @include padding-trailer(4);
+}
 .testimonials{
   @include rhythm(1,0,0,1);
   @include transform-style(preserve-3d);
@@ -7,9 +12,6 @@
     @extend %animate;
     @include trailer(0);
     opacity: 0;
-    position: absolute;
-    width: 300px;
-    left: -90px;
   }
   .testimonial-website{
     @include adjust-font-size-to(14px);
