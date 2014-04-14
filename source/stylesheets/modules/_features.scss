@@ -1,4 +1,5 @@
 .features-section{
+  @include padding-leader(3);
   @include inverted-border-bottom;
 }
 
@@ -6,8 +7,9 @@
   @include trailer(2);
 }
 .feature-image{
+  @include leader(1);
   min-height: $base-line-height*3;
-  @include trailer(1);
+  @include trailer(2);
 }
 
 .feature-title{

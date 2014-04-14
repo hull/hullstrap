@@ -46,6 +46,7 @@
 
   p{
     @include adjust-font-size-to($base-font-size);
+    @include trailer(1);
     color: $base_text_color;
   }
 }

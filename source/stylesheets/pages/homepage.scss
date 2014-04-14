@@ -9,6 +9,8 @@
 }
 .homepage-header{
   overflow: hidden;
+  @extend .text-center;
+  @extend %blue-background;
   // min-height: 100vh;
   .navbar-branded{
     background: none;
@@ -18,11 +20,9 @@
     @include font-weight-bold;
   }
   h5.tagline{
-    @include adjust-leading-to(1.33333334, $h5_font_size);
+    // @include adjust-leading-to(1.33333334, $h5_font_size);
     opacity: .5;
   }
-  @extend .text-center;
-  @include background-image($primary_bg_image);
   .bgimage{
     position: absolute;
     z-index: 1;
@@ -94,8 +94,6 @@
     $fsize:$base-font-size*2;
     @include adjust-font-size-to($fsize, 2);
     line-height: 2.9em;
-    // @include leader(1, $fsize);
-    // @include trailer(1, $fsize);
     margin-left: 10px;
     display: inline-block;
     @include scale(.9);

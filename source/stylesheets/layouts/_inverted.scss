@@ -18,10 +18,9 @@
   background-position:  top center;
   background-repeat:    repeat;
   background-color: $secondary_bg_color;
-  color: $secondary_bg_text;   
-  -webkit-font-smoothing:antialiased;
 }
 %inverted-page{
+  @extend %inverted;
   @extend %inverted-background;
   .footer{
     box-shadow: none;
@@ -37,9 +36,20 @@
   }
 }
 %inverted{
+  -webkit-font-smoothing:antialiased;
+  color: $secondary_bg_text;   
   .btn-pill{
     @include btn-transparent();
   }
+}
+
+%blue-background{
+  color: $secondary_bg_text;   
+  .btn-pill{
+    @include btn-transparent();
+  }
+  background-color:$primary_bg_color;
+  @include background-image($primary_bg_image);
 }
 
 .inverted-jumbotron{

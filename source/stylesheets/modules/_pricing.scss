@@ -1,0 +1,118 @@
+.pricing-header{
+  .subtitle{
+    @include adjust-font-size-to($h5_font_size);
+    @include font-weight-light;
+    @include adjust-leading-to(2,$h5_font_size);
+  }
+}
+
+.pricing-section{
+  overflow: hidden;
+  .headline{
+    @extend .text-center;
+    @include box-shadow(0 0 0px 1px transparentize($light_text,.5));
+    @include rhythm(0,1,1,0);
+    .price{
+      @include rhythm(0,0,0,0);
+    }
+    .plan{
+      @include rhythm(0,0,0,0);
+      opacity: .5;
+    }
+  }
+  .tier{
+    @include box-shadow(inset 0 0 0px 1px transparentize($light_text,.5));
+    @media screen and (min-width: 769px){
+      @include border-radius(4px);
+    }
+    @include trailer(2);
+    overflow: hidden;
+  }
+  .value{
+    @include box-shadow(inset 0 0 0px 1px transparentize($primary_bg_color,.5));
+    .headline{
+      @include box-shadow(none);
+      @extend %inverted;
+      @extend %blue-background;
+      small{
+        color: white;
+        opacity: .5;
+      }
+    }
+    .btn{
+      @extend .btn-primary;
+    }
+  }
+  .footnotes{
+    @include trailer(2);
+    p{
+      @extend .light;
+      @include adjust-font-size-to(12px);
+      @include rhythm(0,0,0,0);
+    }
+  }
+}
+.tier-lines{
+  @include rhythm(1,0,0,1);
+}
+.tier-line{
+  @extend .text-center;
+  // @include trailing-border(1px, .5, 14px);
+  border-color: transparentize($lightest_gray, .75);
+  p{
+    @include adjust-font-size-to(14px);
+    @include rhythm(0,0,0,0,14px);
+    @include rhythm(0,0,0,0);
+  }
+  em{
+    font-style: italic;
+  }
+  &.blank, &:last-child{
+    border-color: transparent;
+  }
+  &.feature, &.pack{
+    @extend .light;
+  }
+  &.allowance{
+
+  }
+}
+
+.cta-section{
+  @extend %blue-background;
+  @include rhythm(0,1,1,0);
+  input[type='text']{
+    width: 100%;
+    @include font-weight-light;
+    border: 0;
+    padding:0 $padding-base-horizontal*3;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    @include border-radius(100px);
+    @include adjust-font-size-to($base-font-size,3);
+  }
+  @media screen and (min-width: 769px){
+    input[type='text']{
+      @include adjust-font-size-to(32px,3);
+    }
+    .btn{
+      @include btn-xlarge();
+      position: absolute;
+      right: 0;
+      top:0;
+      width: 195px;
+    }
+  }
+  input[type='text']::-moz-placeholder{
+    color: white;
+    opacity: 1;
+  }
+  input[type='text']::-webkit-input-placeholder{
+    color: white;
+    opacity: 1;
+  }
+  input[type='text']:-ms-input-placeholder{
+    color: white;
+    opacity: 1;
+  }
+}

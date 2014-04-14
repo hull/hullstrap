@@ -54,11 +54,9 @@
 }
 
 .navbar-branded{
-  @extend %inverted;
+  @extend %blue-background;
   -webkit-font-smoothing:subpixel-antialiased;
   border:none;
-  background-color:$primary_bg_color;
-  @include background-image($primary_bg_image);
   @include box-shadow(0px 2px 2px 0px rgba(0,0,0,0.14));
   .navbar-brand{
     @include inline-retina-sprite('logo/navbar-logo.png');
