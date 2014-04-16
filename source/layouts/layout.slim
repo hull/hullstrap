@@ -22,8 +22,8 @@ html
     javascript:
       try{Typekit.load();}catch(e){}
 
-    / == javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'
-    == javascript_include_tag '/javascripts/jquery.2.1.0.js'
+    == javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'
+    / == javascript_include_tag '/javascripts/jquery.2.1.0.js'
 
     == stylesheet_link_tag('hullstrap')
     / == stylesheet_link_tag('/stylesheets/hullstrap.css')
@@ -36,6 +36,6 @@ html
     == yield
     footer#footer.footer
 
-    / == javascript_include_tag 'vendor'
-    / == javascript_include_tag 'app'
+    == javascript_include_tag 'vendor'
+    == javascript_include_tag 'app'
     == yield_content :js

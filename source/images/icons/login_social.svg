@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="65px" height="68px" viewBox="0 0 65 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>login_social</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="facebook-square-rounded-icon-+-Path" sketch:type="MSLayerGroup" transform="translate(0.000000, 3.000000)">
+            <path d="M8.18921251,0.422222222 C3.89965912,0.422222222 0.422222222,3.89965912 0.422222222,8.18921251 L0.422222222,56.6552319 C0.422222222,60.9447853 3.89965912,64.4222222 8.18921251,64.4222222 L56.6552319,64.4222222 C60.9447853,64.4222222 64.4222222,60.9447853 64.4222222,56.6552319 L64.4222222,8.18921251 C64.4222222,3.89965912 60.9449407,0.422222222 56.6552319,0.422222222 L8.18921251,0.422222222 Z" id="facebook-square-rounded-icon" stroke="#33AECE" sketch:type="MSShapeGroup"></path>
+            <path d="M35.5260869,20.6575299 C34.1037807,20.6575299 33.8072517,21.244204 33.8072517,22.7263013 L33.8072517,26.3068526 L39.5555556,26.3068526 L39.0024295,32.5923203 L33.8072517,32.5923203 L33.8072517,51.369697 L26.3611493,51.369697 L26.3611493,32.6718543 L22.4888889,32.6718543 L22.4888889,26.3068526 L26.3611493,26.3068526 L26.3611493,21.2941823 C26.3611493,16.5897536 28.8593494,14.1333333 34.4001837,14.1333333 L39.5555556,14.1333333 L39.5555556,20.6575299 C39.5555556,20.6575299 36.6717671,20.6575299 35.5260869,20.6575299 Z" id="Path" fill="#31ACCF" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

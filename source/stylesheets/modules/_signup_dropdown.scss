@@ -1,0 +1,45 @@
+.signup-dropdown{
+  min-width: 300px;
+  // padding:0 $padding-base-horizontal;
+  @include rhythm(0,1,0,0);
+  .social-buttons{
+    padding:0 $padding-base-horizontal*1.2;
+    .col-xs-3{
+      padding:0;
+    }
+    .btn{
+      padding:0; 
+      opacity: 1;
+      .icon{
+        @include adjust-font-size-to(24px);
+      }
+    }
+    h6{
+      @include rhythm(1,0,0,.5, $h6_font_size);
+    }
+  }
+  .or-separator {
+    text-align: center;
+    overflow: hidden;
+    span {
+      background-color: white;
+      color: $light_text;
+      display: inline-block;
+      position: relative;
+      padding: 0 $padding-base-horizontal;
+      &:before, &:after {
+        position: absolute;
+        content: "";
+        left: 100%;
+        top: 50%;
+        width: 500px;
+        background: $light_filet;
+        height: 1px;
+      }
+      &:before {
+          left: auto;
+          right: 100%;
+      }
+    }
+  }
+}

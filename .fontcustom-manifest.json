@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "ccfb45a6e0d9bfec8f22223e6f2d5313cc265bae99ee07678dba66f417a01198",
-    "current": "ccfb45a6e0d9bfec8f22223e6f2d5313cc265bae99ee07678dba66f417a01198"
+    "previous": "0768e4a1ff5e15448988853882dc8171cd01e568f718a4627147bb3b8297e113",
+    "current": "0768e4a1ff5e15448988853882dc8171cd01e568f718a4627147bb3b8297e113"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_ccfb45a6e0d9bfec8f22223e6f2d5313.ttf",
-    "source/stylesheets/fonts/fontcustom_ccfb45a6e0d9bfec8f22223e6f2d5313.svg",
-    "source/stylesheets/fonts/fontcustom_ccfb45a6e0d9bfec8f22223e6f2d5313.woff",
-    "source/stylesheets/fonts/fontcustom_ccfb45a6e0d9bfec8f22223e6f2d5313.eot"
+    "source/stylesheets/fonts/fontcustom_0768e4a1ff5e15448988853882dc8171.ttf",
+    "source/stylesheets/fonts/fontcustom_0768e4a1ff5e15448988853882dc8171.svg",
+    "source/stylesheets/fonts/fontcustom_0768e4a1ff5e15448988853882dc8171.woff",
+    "source/stylesheets/fonts/fontcustom_0768e4a1ff5e15448988853882dc8171.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -18,6 +18,18 @@
       "codepoint": 61697,
       "source": "source/images/icons/achievement_alt.svg"
     },
+    "achievements": {
+      "codepoint": 61805,
+      "source": "source/images/icons/achievements.svg"
+    },
+    "activity": {
+      "codepoint": 61806,
+      "source": "source/images/icons/activity.svg"
+    },
+    "admin": {
+      "codepoint": 61807,
+      "source": "source/images/icons/admin.svg"
+    },
     "akismet": {
       "codepoint": 61698,
       "source": "source/images/icons/akismet.svg"
@@ -25,6 +37,14 @@
     "angellist": {
       "codepoint": 61699,
       "source": "source/images/icons/angellist.svg"
+    },
+    "api_libraries": {
+      "codepoint": 61808,
+      "source": "source/images/icons/api_libraries.svg"
+    },
+    "api_reference": {
+      "codepoint": 61809,
+      "source": "source/images/icons/api_reference.svg"
     },
     "arrow": {
       "codepoint": 61700,
@@ -37,6 +57,14 @@
     "arrow-right": {
       "codepoint": 61702,
       "source": "source/images/icons/arrow-right.svg"
+    },
+    "arrow_left": {
+      "codepoint": 61810,
+      "source": "source/images/icons/arrow_left.svg"
+    },
+    "arrow_right": {
+      "codepoint": 61811,
+      "source": "source/images/icons/arrow_right.svg"
     },
     "bolt": {
       "codepoint": 61703,
@@ -53,6 +81,14 @@
     "bubbles": {
       "codepoint": 61706,
       "source": "source/images/icons/bubbles.svg"
+    },
+    "building_apps": {
+      "codepoint": 61804,
+      "source": "source/images/icons/building_apps.svg"
+    },
+    "building_components": {
+      "codepoint": 61812,
+      "source": "source/images/icons/building_components.svg"
     },
     "cart": {
       "codepoint": 61707,
@@ -106,6 +142,18 @@
       "codepoint": 61718,
       "source": "source/images/icons/cog.svg"
     },
+    "comments": {
+      "codepoint": 61813,
+      "source": "source/images/icons/comments.svg"
+    },
+    "components_library": {
+      "codepoint": 61814,
+      "source": "source/images/icons/components_library.svg"
+    },
+    "conversations": {
+      "codepoint": 61815,
+      "source": "source/images/icons/conversations.svg"
+    },
     "css3": {
       "codepoint": 61719,
       "source": "source/images/icons/css3.svg"
@@ -113,6 +161,10 @@
     "currency": {
       "codepoint": 61720,
       "source": "source/images/icons/currency.svg"
+    },
+    "developer": {
+      "codepoint": 61816,
+      "source": "source/images/icons/developer.svg"
     },
     "edit": {
       "codepoint": 61721,
@@ -126,9 +178,17 @@
       "codepoint": 61722,
       "source": "source/images/icons/emit.svg"
     },
+    "engagement_apis": {
+      "codepoint": 61803,
+      "source": "source/images/icons/engagement_apis.svg"
+    },
     "error": {
       "codepoint": 61723,
       "source": "source/images/icons/error.svg"
+    },
+    "example_apps": {
+      "codepoint": 61817,
+      "source": "source/images/icons/example_apps.svg"
     },
     "facebook": {
       "codepoint": 61724,
@@ -166,6 +226,10 @@
       "codepoint": 61732,
       "source": "source/images/icons/friends.svg"
     },
+    "games": {
+      "codepoint": 61818,
+      "source": "source/images/icons/games.svg"
+    },
     "gear": {
       "codepoint": 61733,
       "source": "source/images/icons/gear.svg"
@@ -198,6 +262,10 @@
       "codepoint": 61739,
       "source": "source/images/icons/heart.svg"
     },
+    "home": {
+      "codepoint": 61819,
+      "source": "source/images/icons/home.svg"
+    },
     "html5": {
       "codepoint": 61740,
       "source": "source/images/icons/html5.svg"
@@ -206,6 +274,10 @@
       "codepoint": 61741,
       "source": "source/images/icons/hull.svg"
     },
+    "hull_js_reference": {
+      "codepoint": 61820,
+      "source": "source/images/icons/hull_js_reference.svg"
+    },
     "hull_store": {
       "codepoint": 61742,
       "source": "source/images/icons/hull_store.svg"
@@ -213,6 +285,10 @@
     "image": {
       "codepoint": 61743,
       "source": "source/images/icons/image.svg"
+    },
+    "images": {
+      "codepoint": 61821,
+      "source": "source/images/icons/images.svg"
     },
     "info": {
       "codepoint": 61744,
@@ -258,6 +334,10 @@
       "codepoint": 61754,
       "source": "source/images/icons/like.svg"
     },
+    "likes": {
+      "codepoint": 61822,
+      "source": "source/images/icons/likes.svg"
+    },
     "linkedin": {
       "codepoint": 61755,
       "source": "source/images/icons/linkedin.svg"
@@ -265,6 +345,26 @@
     "list": {
       "codepoint": 61756,
       "source": "source/images/icons/list.svg"
+    },
+    "lists": {
+      "codepoint": 61823,
+      "source": "source/images/icons/lists.svg"
+    },
+    "login": {
+      "codepoint": 61824,
+      "source": "source/images/icons/login.svg"
+    },
+    "login_byou": {
+      "codepoint": 61825,
+      "source": "source/images/icons/login_byou.svg"
+    },
+    "login_email_password": {
+      "codepoint": 61826,
+      "source": "source/images/icons/login_email_password.svg"
+    },
+    "login_social": {
+      "codepoint": 61827,
+      "source": "source/images/icons/login_social.svg"
     },
     "loop_alt3": {
       "codepoint": 61757,
@@ -346,6 +446,14 @@
       "codepoint": 61775,
       "source": "source/images/icons/power_alt.svg"
     },
+    "ratings": {
+      "codepoint": 61828,
+      "source": "source/images/icons/ratings.svg"
+    },
+    "registration": {
+      "codepoint": 61829,
+      "source": "source/images/icons/registration.svg"
+    },
     "reply": {
       "codepoint": 61776,
       "source": "source/images/icons/reply.svg"
@@ -361,6 +469,10 @@
     "search": {
       "codepoint": 61779,
       "source": "source/images/icons/search.svg"
+    },
+    "services_reference": {
+      "codepoint": 61830,
+      "source": "source/images/icons/services_reference.svg"
     },
     "share": {
       "codepoint": 61780,
@@ -402,9 +514,25 @@
       "codepoint": 61789,
       "source": "source/images/icons/twitter_badge.svg"
     },
+    "uploads": {
+      "codepoint": 61831,
+      "source": "source/images/icons/uploads.svg"
+    },
     "user": {
       "codepoint": 61790,
       "source": "source/images/icons/user.svg"
+    },
+    "user_management": {
+      "codepoint": 61802,
+      "source": "source/images/icons/user_management.svg"
+    },
+    "util": {
+      "codepoint": 61832,
+      "source": "source/images/icons/util.svg"
+    },
+    "utils": {
+      "codepoint": 61833,
+      "source": "source/images/icons/utils.svg"
     },
     "video": {
       "codepoint": 61791,
@@ -422,6 +550,10 @@
       "codepoint": 61794,
       "source": "source/images/icons/warning.svg"
     },
+    "webhooks_reference": {
+      "codepoint": 61834,
+      "source": "source/images/icons/webhooks_reference.svg"
+    },
     "wrench": {
       "codepoint": 61795,
       "source": "source/images/icons/wrench.svg"
@@ -436,8 +568,9 @@
     }
   },
   "options": {
-    "autowidth": false,
+    "autowidth": true,
     "config": "./config/fontcustom.yml",
+    "css_prefix": "icon-{{glyph}}",
     "css_selector": ".icon-{{glyph}}",
     "debug": true,
     "font_name": "fontcustom",
@@ -452,14 +585,14 @@
       "fonts": "source/stylesheets/fonts",
       "preview": "source/stylesheets/fonts"
     },
-    "preprocessor_path": null,
+    "preprocessor_path": "stylesheets/fonts",
     "quiet": false,
     "skip_first": false,
     "templates": [
-      "css"
+      "scss"
     ]
   },
   "templates": [
-    "source/stylesheets/fontcustom.css"
+    "source/stylesheets/_fontcustom.scss"
   ]
 }

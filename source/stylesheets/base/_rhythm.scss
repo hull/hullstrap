@@ -12,7 +12,7 @@ html {
 
   // Stop iPhone/iPad from scaling text
   // Absolute measure here, as we're talking about devices, not screen size
-  @media screen and (max-width: 769px) {  
+  @media screen and (max-width: $screen-sm-max) {  
     -webkit-text-size-adjust:none;
   }
 

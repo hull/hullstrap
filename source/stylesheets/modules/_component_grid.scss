@@ -1,0 +1,59 @@
+.component-grid-cell {
+  @include rhythm(0,0,0,1);
+  @include box-shadow(0 0 0px 1px transparentize($light_text,.75));
+  background: $white;
+  .photo {
+    img {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+  .info {
+    padding: 0 $padding-base-horizontal;
+    .rating {
+        color: $primary;
+    }
+  }
+  .component-name{
+    // @include rhythm(.5,0,0,.5);
+  }
+  .component-details{
+    @include rhythm(0,.5,0,0);
+    @include trailing-border(1px, .5);
+    border-color: $light_filet;
+    h4 {
+      @include rhythm(0,0,0,0);
+      i{
+        margin-right: $padding-base-horizontal/2;
+      }
+    }
+  }
+  .rating {
+    text-align: right;
+    .on{
+      color: $tertiary;
+    }
+  }
+  .actions {
+    .btn {
+      i {
+          margin-right: 5px;
+      }
+    }
+  }
+  .btn{
+    padding-left: 0;
+    padding-right: 0;
+    &:hover{
+      @include font-weight-bold;
+    }
+    width: 50%;
+    float: left;
+  }
+}
+
+
+
+
+
+

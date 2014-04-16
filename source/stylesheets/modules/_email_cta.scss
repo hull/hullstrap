@@ -1,0 +1,38 @@
+.email-cta{
+  @extend %blue-background;
+  @include rhythm(0,1,1,0);
+  input[type='text']{
+    width: 100%;
+    @include font-weight-light;
+    border: 0;
+    padding:0 $padding-base-horizontal*3;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    @include border-radius(100px);
+    @include adjust-font-size-to($base-font-size,3);
+  }
+  @media screen and (min-width: $screen-sm-min){
+    input[type='text']{
+      @include adjust-font-size-to(32px,3);
+    }
+    .btn{
+      @include btn-xlarge();
+      position: absolute;
+      right: 0;
+      top:0;
+      width: 195px;
+    }
+  }
+  input[type='text']::-moz-placeholder{
+    color: white;
+    opacity: 1;
+  }
+  input[type='text']::-webkit-input-placeholder{
+    color: white;
+    opacity: 1;
+  }
+  input[type='text']:-ms-input-placeholder{
+    color: white;
+    opacity: 1;
+  }
+}

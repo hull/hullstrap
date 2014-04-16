@@ -23,9 +23,7 @@ SearchBox.prototype = {
       initSearchFn = function(ev) {
         ev.stopPropagation();
         // trim its value - String.trim is not supported everywhere
-        self.$inputEl.val(self.$inputEl.val()
-          .replace(/^\s+|\s+$/g, ''));
-
+        self.$inputEl.val(self.$inputEl.val().replace(/^\s+|\s+$/g, ''));
         if (!self.$el.hasClass('sb-search-open')) { // open it
           ev.preventDefault();
           self.open();
@@ -33,6 +31,7 @@ SearchBox.prototype = {
           ev.preventDefault();
           self.close();
         }
+        return false;
       }
 
     this.$el.on('click', initSearchFn);

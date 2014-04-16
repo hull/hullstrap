@@ -5,8 +5,11 @@
 */
 
 .homepage-header-content{
+  @include padding-leader(3);
   @include padding-trailer(3);
 }
+
+
 .homepage-header{
   overflow: hidden;
   @extend .text-center;
@@ -39,7 +42,7 @@
     position: relative;
     z-index: 2;
   }
-  .btn{
+  .cta-btn{
     @include btn-large;
     width: 100%;
   }
@@ -51,15 +54,14 @@
     color: $primary_bg_text;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: $screen-sm-min){
     text-align: left;
-    .btn{
+    .cta-btn{
       display: inline-block;
       width: auto;
     }
   }
 }
-
 
 .homepage-cta{
   .btn-signup{
@@ -86,7 +88,7 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
-  @media (min-width: 768px){
+  @media (min-width: $screen-sm-min){
     @include leader(4);
   }
   .icon-play{

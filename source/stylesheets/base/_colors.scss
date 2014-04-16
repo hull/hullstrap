@@ -1,6 +1,7 @@
 // Colors
 $white:                         #FFFFFF;
 $black:                         #222222;
+$black_2:                       #373f4a;
 $turquoise:                     #4BC2B8;
 $blue_darkest:                  #262C36;
 $blue:                          #2CAAD0;
@@ -10,6 +11,13 @@ $blue_gray_lighter:             #606776;
 $red:                           #E75F45;
 $light_gray:                    #7B7B7B;
 $lightest_gray:                 #C5C5C5;
+$light_blue_gray:               #798291;
+$off_white:                     #fafafa;
+
+$facebook_color: #3C5A98;
+$google_color:   #EB2F12;
+$twitter_color:  #00ABF5;
+$github_color:   #999999;
 
 $primary        : $blue;
 $primary_alt    : $turquoise;
@@ -17,10 +25,11 @@ $secondary      : $blue_gray;
 $secondary_alt  : $blue_gray_lighter;
 $tertiary       : $blue_2;
 $quaternary     : $red;
-$base_text_color: $light_gray;
+$base_text      : $light_gray;
 $btn_text_color : $blue_darkest;
 $accent_text_header: $quaternary;
-$light_text     : $lightest_gray;
+$light_text     : $light_blue_gray;
+$light_filet    : transparentize($light_text, .9);  
 // $tertiary_alt   :
 // $quaternary     :
 // $quaternary_alt :

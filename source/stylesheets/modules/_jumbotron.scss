@@ -11,7 +11,7 @@
   .container{
     @include rhythm(0,3,3,0);
   }
-  @media screen and (max-width: 769px){
+  @media screen and (max-width: $screen-sm-max){
     padding: 0; 
   }
   .jumbotron-headline{
@@ -25,10 +25,18 @@
     @include adjust-font-size-to(34px);
     @include rhythm(1,0,0,1,34px);
   }
+  h3{
+    @include adjust-font-size-to(30px);
+    @include rhythm(0,0,0,1, 30px);
+  }
 
   h4{
     @include adjust-font-size-to(24px, 1);
     @include rhythm(0,0,1,1,24px);
+  }
+  .subtitle{
+    @include adjust-font-size-to(15px);
+    color: $light_text;
   }
 
   blockquote{
@@ -46,7 +54,8 @@
 
   p{
     @include adjust-font-size-to($base-font-size);
+    @include font-weight-normal;
     @include trailer(1);
-    color: $base_text_color;
+    color: $base_text;
   }
 }

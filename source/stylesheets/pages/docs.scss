@@ -1,0 +1,142 @@
+.docs-page{
+  background-color: $off_white;
+  p, li{
+    // -webkit-font-smoothing:subpixel-antialiased;
+  }
+}
+.docs-header{
+  border-color: $light_filet;
+  @include trailer(2);
+  @include trailing-border(1px, 2);
+  h3{
+    @include rhythm(0,0,0,0);
+  }
+  p{
+    @include adjust-font-size-to(14.5px);    
+    @include rhythm(0,0,0,0);
+    color: $light_text;
+  }
+}
+.docs-body{
+  @include trailer(3);
+  hr{
+    margin:0;
+    padding:0;
+    border-color: $light_filet;
+    height:auto;
+    color: transparent;
+    @include leading-border(1px, 1);
+  }
+  h1{
+    @include adjust-font-size-to($h1_font_size*0.5);    
+    @include adjust-leading-to(1,$h1_font_size*0.5);    
+    @include rhythm(2,0,0,.5,$h1_font_size*0.5);    
+  }
+  h2{
+    @include adjust-font-size-to($h2_font_size*0.5);    
+    @include adjust-leading-to(1,$h2_font_size*0.5);    
+    @include rhythm(2,0,0,1,$h2_font_size*0.5);    
+  }
+  h3{
+    @include adjust-font-size-to($h3_font_size*0.5);    
+    @include adjust-leading-to(1,$h3_font_size*0.5);    
+    @include rhythm(1,0,0,1,$h3_font_size*0.5);    
+  }
+  h4{
+    @include adjust-font-size-to($h4_font_size*0.5);    
+    @include adjust-leading-to(1,$h4_font_size*0.5);    
+    @include rhythm(1,0,0,1,$h4_font_size*0.5);    
+  }
+  h5{
+    @include adjust-font-size-to($h5_font_size*0.5);    
+    @include adjust-leading-to(1,$h5_font_size*0.5);    
+    @include rhythm(1,0,0,1,$h5_font_size*0.5);    
+  }
+  h6{
+    @include adjust-font-size-to($h6_font_size*0.5);    
+    @include adjust-leading-to(1,$h6_font_size*0.5);    
+    @include rhythm(1,0,0,1,$h6_font_size*0.5);    
+  }
+  li{
+    list-style-type: disc; 
+  }
+  blockquote{
+    // font-size: 1em;
+  }
+  p,li{
+    @include adjust-font-size-to(14.5px);
+    color: $light_text;
+
+  }
+  p{
+    @include rhythm(0,0,0,1, 14.5px);
+  }
+  h1, h2, h3, h4, h5, h6{
+    .docs-anchor{
+      margin-left: $padding-base-horizontal/2;
+      @extend %animate;
+      border:none;
+      opacity: 0;
+    }
+    &:hover{
+      .docs-anchor{
+        opacity: 1;
+      }
+    }
+  }
+  a:not(.btn){
+    border-bottom: 1px solid transparentize($tertiary,.8);
+    padding-bottom: 2px;
+    &:hover{
+      border-bottom-color: transparentize($tertiary,.5);
+      text-decoration:none;
+    }
+  }
+  ul{
+    @include rhythm(0,0,0,1);
+    margin-left: 1em;
+  }
+  li > a{
+    font-size: 1em;
+  }
+}
+.docs-toc-section{
+  h6{
+    @include trailer(.25, $h6_font_size);
+    @include font-weight-bold;
+  }
+  i.icon{
+    @include adjust-font-size-to($h1_font_size,3);
+    float: left;
+    margin-right: $padding-base-horizontal;
+  }
+  .fl{
+    float: left;
+  }
+}
+.doc-link{
+  @include adjust-font-size-to(13px, .75);
+  a{
+    color: $light_text;
+  }
+}
+
+
+.docs-article{
+  @extend .docs-page;
+  @include padding-leader(2);
+}
+
+.docs-sidebar{
+  padding-left: 0;
+}
+
+.events-table{
+  th{
+    @include font-weight-bold;
+  }
+  td,th{
+    color: $light_text;
+    @include adjust-font-size-to(14px);
+  }
+}

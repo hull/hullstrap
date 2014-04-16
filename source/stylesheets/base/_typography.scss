@@ -1,3 +1,7 @@
+body{
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
 body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.5;
 }
@@ -7,20 +11,16 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   @include adjust-font-size-to($mobile-font-size, $leading);
   @include adjust-leading-to($leading, $mobile-font-size);
   @include rhythm($leader,0,0,$trailer, $mobile-font-size);
-  @media (min-width: 43.75em) {
-    & {
-      $small-font-size:$mobile-multiple*$font-size;
-      @include adjust-font-size-to($small-font-size, $leading);
-      @include adjust-leading-to($leading, $small-font-size);
-      @include rhythm($leader,0,0,$trailer, $small-font-size);
-    }
+  @media (min-width: $screen-sm-min) {
+    $small-font-size:$small-multiple*$font-size;
+    @include adjust-font-size-to($small-font-size, $leading);
+    @include adjust-leading-to($leading, $small-font-size);
+    @include rhythm($leader,0,0,$trailer, $small-font-size);
   }
-  @media (min-width: 56.25em) {
-    & {
-      @include adjust-font-size-to($font-size, $leading);
-      @include adjust-leading-to($leading, $font-size);
-      @include rhythm($leader,0,0,$trailer, $font-size);
-    }
+  @media (min-width: $screen-md-min) {
+    @include adjust-font-size-to($font-size, $leading);
+    @include adjust-leading-to($leading, $font-size);
+    @include rhythm($leader,0,0,$trailer, $font-size);
   }
 }
 
@@ -100,6 +100,7 @@ ul{
 ******************
 */
 h1, h2, h3, h4, h5, h6{
+  color: $black_2;
   &.underlined{
     // Bottom underline
     @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));

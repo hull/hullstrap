@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="53px" height="41px" viewBox="0 0 53 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>Untitled</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M1.5,13.5499878 L51.5,13.5499878" id="Line" stroke="#3CB5C4" stroke-width="0.5" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        <path d="M10,1 L17.5,13.5" id="Line" stroke="#3CB5C4" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" sketch:type="MSShapeGroup"></path>
+        <path d="M17.5,13.5 L26,1" id="Line" stroke="#3CB5C4" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" sketch:type="MSShapeGroup"></path>
+        <path d="M26,1 L34.5,13.5" id="Line" stroke="#3CB5C4" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" sketch:type="MSShapeGroup"></path>
+        <path d="M34.5,13.5 L43,1" id="Line" stroke="#3CB5C4" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" sketch:type="MSShapeGroup"></path>
+        <path d="M17.5,13.5 L26.5,40.5" id="Line" stroke="#3CB5C4" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" sketch:type="MSShapeGroup"></path>
+        <path d="M34.5,13.5 L26.5,40.5" id="Line" stroke="#3CB5C4" stroke-width="0.5" stroke-linecap="square" stroke-linejoin="bevel" sketch:type="MSShapeGroup"></path>
+        <path d="M1.14055951,13.7125273 L9.50546871,0.5 L43.5419987,0.500000001 L52.0910219,13.7125273 L26.5,40.304878 L1.14055951,13.7125273 Z" id="Path-58" stroke="#3CB5C4" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

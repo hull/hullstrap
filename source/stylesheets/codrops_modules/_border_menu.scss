@@ -39,7 +39,7 @@
       display: block;
       visibility: hidden;
       opacity: 0;
-      @include transition(transform 0.3s, opacity 0.2s, visibility 0s 0.3s);
+      @include transition(all 0.3s);
       a {
         display: block;
         outline: none;

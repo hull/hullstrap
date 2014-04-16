@@ -38,6 +38,9 @@
 %inverted{
   -webkit-font-smoothing:antialiased;
   color: $secondary_bg_text;   
+  h1, h2, h3, h4, h5, h6{
+    color: $white;
+  }
   .btn-pill{
     @include btn-transparent();
   }
@@ -45,6 +48,9 @@
 
 %blue-background{
   color: $secondary_bg_text;   
+  h1, h2, h3, h4, h5, h6{
+    color: $white;
+  }
   .btn-pill{
     @include btn-transparent();
   }
@@ -56,4 +62,11 @@
   @extend .jumbotron;
   @extend %inverted;
   @include inverted-border-bottom;
+}
+
+%white-background{
+  color: $base_text;
+  h1, h2, h3, h4, h5, h6{
+    color: $black_2;
+  }
 }

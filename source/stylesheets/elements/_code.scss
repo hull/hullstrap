@@ -1,0 +1,119 @@
+pre.highlight{
+ // display: none;
+  @include box-sizing(border-box);
+  padding: 0 $padding-base-horizontal;
+  width: 100%;
+  border:none;
+  overflow-x: scroll;
+  @include adjust-font-size-to(12px);
+  @include rhythm(1,1,1,1,12px);
+  font-family: Menlo, monospace;
+
+  // box-shadow:inset 0 1px 0 rgba($secondary-color,1);
+  // border-color:$border-color;
+
+  border-radius: 0;
+  background: rgba(234, 238, 241, 1);
+  border:none;
+
+  // background-size: 100% 1.1875em;
+  // @include background-image(
+  //   linear-gradient(rgba($secondary-color,0), rgba($secondary-color,.35))
+  // );
+  color:$light_text;
+  code{
+    display: block;
+    @include adjust-leading-to(1);
+  }
+}
+
+
+pre.highlight{
+
+  .tomorrow-comment,
+  .comment,
+  .title,
+  .c1 {color: #999988; }
+
+  .tomorrow-red,
+  .attribute,
+  .variable,
+  .tag,
+  .regexp,
+  .ruby .constant,
+  .xml .tag .title,
+  .xml .pi,
+  .xml .doctype,
+  .html .doctype,
+  .css .id,
+  .css .class,
+  .css .pseudo,
+  .nx {
+    color: $primary;
+    color: #626B7A;
+  }
+
+  .tomorrow-orange,
+  .attr-name,
+  .number,
+  .preprocessor,
+  .built_in,
+  .literal,
+  .params,
+  .constant {
+    color: $primary;
+  }
+
+  .tomorrow-yellow,
+  .class,
+  .ruby .class .title,
+  .punctuation,
+  .css .rules .attribute {
+    color: #333333;
+  }
+
+  .tomorrow-green,
+  .inheritance,
+  .string,
+  .value,
+  .attr-value,
+  .header,
+  .ruby .symbol,
+  .xml .cdata,
+  .s1, .na {
+    color: #dd1144;
+  }
+
+
+  .tomorrow-aqua,
+  .css .hexcolor,
+  .s2,.s  {
+    color: #3e999f;
+  }
+
+  .tomorrow-blue,
+  .function,
+  .python .decorator,
+  .python .title,
+  .ruby .function .title,
+  .ruby .title .keyword,
+  .perl .sub,
+  .language-javascript .title,
+  .language-coffeescript .title
+  .mi {
+    color: #990000;
+  }
+
+  .tomorrow-purple,
+  .keyword,
+  .language-javascript .function,
+  .kd {
+    color: #333333;
+  }
+}
+
+code{
+  color: $red;
+  background-color: rgba(231, 95, 69, 0.1);
+  @include border-radius(100px);
+}

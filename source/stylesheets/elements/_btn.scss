@@ -75,6 +75,9 @@
 .btn-secondary{
   @include btn-color($secondary_bg_color, $secondary_bg_color, $secondary_bg_text);
 }
+.btn-gradient{
+  @include background-image(linear-gradient(to right top, $primary_alt, $tertiary)); 
+}
 
 @mixin btn-white{
   @include btn-color($white, $white, $secondary);
@@ -113,8 +116,30 @@
   @include btn-large();
 }
 @mixin btn-small(){
-  @include btn-rhythm(1, 1);
+  @include btn-rhythm(1, 1, 14px);
 }
 .btn-small{
   @include btn-small();
+}
+.btn-link, .btn-link:hover, .btn-link:active{
+  text-decoration: none;
+  background:transparent;
+  border-color: transparent;
+  color: $tertiary;
+}
+.btn-link:hover{
+  color: darken($tertiary, 10%);
+}
+
+.btn-facebook{
+  @include btn-color($facebook_color, $facebook_color, $primary_bg_text);
+}
+.btn-twitter{
+  @include btn-color($twitter_color, $twitter_color, $primary_bg_text);
+}
+.btn-google{
+  @include btn-color($google_color, $google_color, $primary_bg_text);
+}
+.btn-github{
+  @include btn-color($github_color, $github_color, $primary_bg_text);
 }

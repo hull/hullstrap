@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>api_reference</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M38.03125,3 C31.873125,3 26.5594375,6.47555556 23.6979375,11.5793333 C22.4515625,10.9484444 21.076125,10.5555556 19.59375,10.5555556 C14.5013125,10.5555556 10.375,14.7828889 10.375,20 L10.397125,20.2115556 C6.001625,22.8333333 3,27.6575556 3,33.2222222 C3,41.5333333 9.6411875,48.3333333 17.75,48.3333333 L25.125,48.3333333 L39.875,48.3333333 L47.25,48.3333333 C55.3661875,48.3333333 62,41.5333333 62,33.2222222 C62,27.6575556 58.998375,22.8333333 54.602875,20.2115556 L54.625,20 C54.625,10.6122222 47.198375,3 38.03125,3" id="Shape" stroke="#00B2CE" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

@@ -1,0 +1,81 @@
+.dropdown-menu{
+  background-color: #fff;
+  @extend %white-background;
+  top: 90%;
+  @include border-radius(5px !important); 
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  @include box-shadow(0 0px 12px rgba(0, 0, 0, 0.1));
+  background-clip: padding-box;
+
+  .divider{
+    @include rhythm(1,0,0,0);
+    background:transparent;
+    border-color: #ccc;
+    @include leading-border(1px , 1);
+    @include adjust-font-size-to($base-font-size);
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    border-left: 7px solid rgba(0,0,0,0);
+    border-right: 7px solid rgba(0,0,0,0);
+    border-bottom: 7px solid #CCC;
+    border-bottom-color: white;
+    position: absolute;
+    top: -7px;
+    right: 29px;
+  }
+}
+
+.form-invisible{
+  input{
+    border:none;
+    @include border-radius(0);
+    @include transition(all .2s ease-out);
+    background-color: rgba(115, 124, 129, 0);
+    color: #333;
+    @include box-shadow(none);
+    @include rhythm(0,0,0,0);
+    &:focus{
+      @include box-shadow(none);
+      background-color: rgba(115, 124, 129, 0.12); 
+    }
+  }
+}
+form{
+  label{
+    color: $light_text;
+  }
+  .form-group{
+    margin:0;
+  }
+  input[type='email'],input[type='text'],input[type='password']{
+    padding:0 $padding-base-horizontal*2;
+    height: auto;
+    @include rhythm(0,.5,.5,0,18px);
+    @include adjust-font-size-to(18px);
+    &::-webkit-input-placeholder{
+      @include font-weight-light;
+      opacity: .5;
+    }
+    &::-moz-placeholder{
+      @include font-weight-light;
+      opacity: .5;
+    }
+    &:-ms-input-placeholder{
+      @include font-weight-light;
+      opacity: .5;
+    }
+  }
+
+  .checkbox{
+    @include rhythm(1,0,0,1);
+    input[type='checkbox']{
+      height: $base-line-height;
+      @include rhythm(0,0,0,0);
+    }
+  }
+}
+.pad{
+  padding:0 $padding-base-horizontal*2;
+}

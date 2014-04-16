@@ -60,38 +60,35 @@ $base-rhythm-unit:      24px;
 //     Elements
 // \*------------------------------------*/
 @import "elements/btn";
+@import "elements/code";
 @import "ladda/css/ladda";
-
-// /*------------------------------------*\
-//     Components (BS Overrides)
-// \*------------------------------------*/
-// @import "components/navbar";
-
 
 
 // /*------------------------------------*\
 //     Modules
 // \*------------------------------------*/
-// @import "codrops_modules/border_effects";
-// @import "codrops_modules/border_menu";
-// @import "codrops_modules/border_player";
-// @import "codrops_modules/search_box";
-// @import "codrops_modules/timed_notification";
-// @import "codrops_modules/annotations_overlay";
-// @import "codrops_modules/opening_grid";
-// @import "codrops_modules/sticky_table_header";
-// @import "codrops_modules/cbp_scroller";
-// @import "codrops_modules/cbp_ig_grid";
-// @import "codrops_modules/cbp_fwslider";
-// @import "codrops_modules/cbp_vimenu";
-// @import "codrops_modules/cbp_hrmenu";
-// @import "codrops_modules/cbp_qtrotator";
-// @import "codrops_modules/cbp_tmtimeline";
+@import "codrops_modules/border_effects";
+@import "codrops_modules/border_menu";
+@import "codrops_modules/border_player";
+@import "codrops_modules/search_box";
+@import "codrops_modules/timed_notification";
+@import "codrops_modules/annotations_overlay";
+@import "codrops_modules/opening_grid";
+@import "codrops_modules/sticky_table_header";
+@import "codrops_modules/cbp_scroller";
+@import "codrops_modules/cbp_ig_grid";
+@import "codrops_modules/cbp_fwslider";
+@import "codrops_modules/cbp_vimenu";
+@import "codrops_modules/cbp_hrmenu";
+@import "codrops_modules/cbp_qtrotator";
+@import "codrops_modules/cbp_tmtimeline";
 
 
 /*------------------------------------*\
     Modules
 \*------------------------------------*/
+
+@import "layouts/inverted";
 
 @import "modules/sections";
 @import "modules/navbar";
@@ -101,8 +98,12 @@ $base-rhythm-unit:      24px;
 @import "modules/jumbotron";
 @import "modules/footer";
 @import "modules/pricing";
-
-@import "layouts/inverted";
+@import "modules/email_cta";
+@import "modules/side_nav";
+@import "modules/dropdown";
+@import "modules/signup_dropdown";
+@import "modules/component_grid";
 
 @import "pages/homepage";
 @import "pages/features";
+@import "pages/docs";
