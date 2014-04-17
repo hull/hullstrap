@@ -21,7 +21,7 @@ $brand-primary:         $tertiary !default;
 $brand-success:         $turquoise !default;
 $brand-info:            $blue !default;
 $brand-warning:         $red !default;
-$brand-danger:          #d9534f !default;
+$brand-danger:          #ff6600 !default;
  
  
 //== Scaffolding
@@ -100,7 +100,7 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.33 !default;
 $line-height-small:         1.5 !default;
  
-$border-radius-base:        4px !default;
+$border-radius-base:        0px !default;
 $border-radius-large:       6px !default;
 $border-radius-small:       3px !default;
  
@@ -471,21 +471,21 @@ $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 //
 //## Define colors for form feedback states and, by default, alerts.
  
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
-$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+$state-success-text:             $brand-success !default;
+$state-success-bg:               lighten($brand-success, 30%) !default;
+$state-success-border:           $state-success-bg !default;
  
-$state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
-$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+$state-info-text:                $brand-info !default;
+$state-info-bg:                  lighten($brand-info, 30%) !default;
+$state-info-border:              $state-info-bg !default;
  
-$state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
-$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+$state-warning-text:             $brand-warning !default;
+$state-warning-bg:               lighten($brand-warning, 30%) !default;
+$state-warning-border:           $state-warning-bg !default;
  
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
-$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+$state-danger-text:              $brand-danger !default;
+$state-danger-bg:                lighten($brand-danger, 30%) !default;
+$state-danger-border:            $state-danger-bg !default;
  
  
 //== Tooltips
@@ -595,7 +595,7 @@ $modal-sm:                    300px !default;
 //
 //## Define alert colors, border radius, and padding.
  
-$alert-padding:               15px !default;
+$alert-padding:               $base-line-height/2 !default;
 $alert-border-radius:         $border-radius-base !default;
 $alert-link-font-weight:      bold !default;
  

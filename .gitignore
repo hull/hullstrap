@@ -1,5 +1,6 @@
 # Ignore ruby config
 /.sass-cache
+.cache
 # Ignore bundler config
 .DS_Store
 /environment.yml
@@ -16,3 +17,8 @@ node_modules
 # Ignore Sass' cache
 /.cache
 # Ignore Node modules
+.cache
+
+/.cache/sprockets/ddfd43a6e66ae87bbd13ba2f702617ee
+/.cache/sprockets/64228876f417a4db86fc5d62f24bde2c
+/.cache/sprockets/4fcbcac266b413a570e0c9f480c470b2

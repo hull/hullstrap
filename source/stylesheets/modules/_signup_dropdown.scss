@@ -1,7 +1,7 @@
 .signup-dropdown{
   min-width: 300px;
   // padding:0 $padding-base-horizontal;
-  @include rhythm(0,1,0,0);
+  @include rhythm(0,.5,.5,0);
   .social-buttons{
     padding:0 $padding-base-horizontal*1.2;
     .col-xs-3{
