@@ -1,0 +1,109 @@
+form{
+  label{
+    color: $light_text;
+  }
+  input[type='email'],
+  input[type='text'],
+  input[type='password']{
+    padding-left:$padding-base-horizontal*2;
+    padding-right:$padding-base-horizontal*2;
+    height: auto;
+    // @include rhythm(0,.5,.5,0);
+    &::-webkit-input-placeholder{
+      @include font-weight-light;
+      opacity: .5;
+    }
+    &::-moz-placeholder{
+      @include font-weight-light;
+      opacity: .5;
+    }
+    &:-ms-input-placeholder{
+      @include font-weight-light;
+      opacity: .5;
+    }
+  }
+
+  .checkbox{
+    @include rhythm(1,0,0,1);
+  }
+}
+
+.form-group{
+  @include rhythm(0,0,0,1);
+}
+.form-control{
+  height: auto;
+  @include leader(0);
+  @include trailer(0);
+  @include leading-border(1px, .5);
+  @include trailing-border(1px, .5);
+}
+
+label{
+  @include rhythm(0,0,0,0);
+}
+.help-block{
+  @include rhythm(0,.25,.75,1)
+}
+
+.radio, .checkbox{
+  min-height: $base-line-height;
+  @include rhythm(1,0,0,1)
+}
+
+.radio + .radio, .checkbox + .checkbox{
+  @include leader(-1);
+}
+
+.radio-inline, .checkbox-inline{
+  min-height: $base-line-height;
+}
+
+input[type=radio], input[type=checkbox]{
+  height: $base-line-height;
+  @include rhythm(0,0,0,0);
+}
+
+.form-inline{
+  .checkbox{
+    @include rhythm(0,0,0,0);
+    input[type='checkbox']{
+      height: auto;
+    }
+  }
+}
+.form-horizontal {
+  .radio, .checkbox{
+    min-height: $base-line-height;
+  }
+  .control-label,
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline{
+    @include rhythm(0,0,0,0);
+  }
+  .form-control-static{
+    @include padding-leader(0); 
+  }
+}
+
+select.form-control{
+  // height: $base-line-height*1;
+  // @include rhythm(0,0,0,0);
+}
+
+
+.has-feedback .form-control-feedback{
+  top: $base-line-height*1.25;
+}
+
+.form-horizontal .has-feedback .form-control-feedback{
+  top:$base-line-height/4;
+}
+@media (min-width: 768px){
+  .form-inline .has-feedback .form-control-feedback,
+  .navbar-form .has-feedback .form-control-feedback {
+    top: $base-line-height/4;
+  }
+}

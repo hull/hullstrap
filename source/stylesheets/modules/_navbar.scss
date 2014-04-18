@@ -37,15 +37,16 @@
   }
   .navbar-item{
     @extend %animate;
+    letter-spacing: 0.01em;
     @include font-weight-light;
     @include btn-rounded;
     margin-left:$padding-base-horizontal/8;
     margin-right:$padding-base-horizontal/8;
-    @include btn-rhythm(1.5, 1.5, 14px, $padding-base-horizontal/2);
+    @include btn-rhythm(1.5, 1.5, 14px, $padding-base-horizontal);
     @media (min-width: $screen-md-min){
       margin-left:$padding-base-horizontal/4;
       margin-right:$padding-base-horizontal/4;
-      @include btn-rhythm(1.5, 1.5, 16px, $padding-base-horizontal);
+      @include btn-rhythm(1.5, 1.5, $base-font-size, $padding-base-horizontal);
     }
   }
   .navbar-item-highlight{

@@ -14,9 +14,6 @@
         color: $primary;
     }
   }
-  .component-name{
-    // @include rhythm(.5,0,0,.5);
-  }
   .component-details{
     @include rhythm(0,.5,0,0);
     @include trailing-border(1px, .5);
@@ -34,21 +31,14 @@
       color: $tertiary;
     }
   }
-  .actions {
-    .btn {
-      i {
-          margin-right: 5px;
-      }
-    }
-  }
   .btn{
     padding-left: 0;
     padding-right: 0;
+    width: 50%;
+    float: left;
     &:hover{
       @include font-weight-bold;
     }
-    width: 50%;
-    float: left;
   }
 }
 

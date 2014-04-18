@@ -6,7 +6,7 @@
 }
 .docs-header{
   border-color: $light_filet;
-  @include trailer(2);
+  @include trailer(1);
   @include trailing-border(1px, 2);
   h3{
     @include rhythm(0,0,0,0);
@@ -35,7 +35,7 @@
   h2{
     @include adjust-font-size-to($h2_font_size*0.5);    
     @include adjust-leading-to(1,$h2_font_size*0.5);    
-    @include rhythm(2,0,0,1,$h2_font_size*0.5);    
+    @include rhythm(1,0,0,1,$h2_font_size*0.5);    
   }
   h3{
     @include adjust-font-size-to($h3_font_size*0.5);    
@@ -95,6 +95,7 @@
   ul{
     @include rhythm(0,0,0,1);
     margin-left: 1em;
+    padding-left: 0;
   }
   li > a{
     font-size: 1em;

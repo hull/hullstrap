@@ -1,0 +1,28 @@
+// table,
+// th, tr, td{
+//   border:none !important;
+// }
+
+.table > thead > tr > th{
+  @include trailing-border(2px, 1);
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td{
+  @include rhythm(0,.5,.5,0);
+  @include leading-border(1px, .5);
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > tfoot > tr > td{
+  @include rhythm-borders(2px,.5);
+  padding: $base-line-height/2 - 1;
+}

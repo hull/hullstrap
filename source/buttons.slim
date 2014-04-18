@@ -1,0 +1,17 @@
+- colors = %w{ btn-primary btn btn-secondary btn-white btn-transparent btn-invisible  }
+- types = [ "", "btn-rounded", "btn-large", "btn-xlarge", "btn-small" ]
+- alerts = [ 'success','info','warning','danger']
+.row
+  .col-sm-12 
+    - alerts.each do |a|
+      div class="alert alert-#{a}" This is not looking good!
+
+.row.inverted-section
+  -types.each do |t|
+    - colors.each do |c|
+      .col-sm-12.text-center
+        p
+          a class="btn #{c} #{t} ladda-button" data-style='expand-left'
+            span.ladda-label ="#{c} #{t}"
+          .clearfix
+

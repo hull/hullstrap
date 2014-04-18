@@ -16,10 +16,10 @@
       @include adjust-font-size-to(32px,3);
     }
     .btn{
-      @include btn-xlarge();
+      @include btn-rhythm(2, .5);
       position: absolute;
-      right: 0;
-      top:0;
+      right: 5px;
+      top:$base-line-height/4;
       width: 195px;
     }
   }

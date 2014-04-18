@@ -42,40 +42,6 @@
     }
   }
 }
-form{
-  label{
-    color: $light_text;
-  }
-  .form-group{
-    margin:0;
-  }
-  input[type='email'],input[type='text'],input[type='password']{
-    padding:0 $padding-base-horizontal*2;
-    height: auto;
-    @include rhythm(0,.5,.5,0,18px);
-    @include adjust-font-size-to(18px);
-    &::-webkit-input-placeholder{
-      @include font-weight-light;
-      opacity: .5;
-    }
-    &::-moz-placeholder{
-      @include font-weight-light;
-      opacity: .5;
-    }
-    &:-ms-input-placeholder{
-      @include font-weight-light;
-      opacity: .5;
-    }
-  }
-
-  .checkbox{
-    @include rhythm(1,0,0,1);
-    input[type='checkbox']{
-      height: $base-line-height;
-      @include rhythm(0,0,0,0);
-    }
-  }
-}
 .pad{
   padding:0 $padding-base-horizontal*2;
 }

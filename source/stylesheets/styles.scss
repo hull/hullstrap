@@ -1,10 +1,11 @@
 @charset "UTF-8";
+// Master Variables
 
 /*------------------------------------*\
     Import Compass Framework
 \*------------------------------------*/
 @import "compass/css3";
-@import "compass/reset";
+// @import "compass/reset";
 @import "compass/typography/text/replacement";
 @import "compass/utilities/general/clearfix";
 @import "compass/typography/vertical_rhythm";
@@ -24,18 +25,16 @@
     Bootstrap
 \*------------------------------------*/
 @import "base/variables";
+@import "bootstrap";
 
-$base-font-size:        18px;
-$base-line-height:      24px;
-$base-rhythm-unit:      24px;
+// $font-unit: 1rem;
 @include establish-baseline();  // "This is where the magic happens" —Everyone on MTV Cribs.
 // html{@include debug-vertical-alignment;}
 // body{
 //   opacity: .9;
 // }
-@import "bootstrap";
-
 @import "base/typography";
+
 /*------------------------------------*\
     Hull mixins
 \*------------------------------------*/
@@ -60,7 +59,11 @@ $base-rhythm-unit:      24px;
 //     Elements
 // \*------------------------------------*/
 @import "elements/btn";
+@import "elements/nav";
+@import "elements/table";
+@import "elements/alert";
 @import "elements/code";
+@import "elements/form";
 @import "ladda/css/ladda";
 
 

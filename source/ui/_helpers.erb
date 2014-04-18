@@ -1,0 +1,129 @@
+        <div class="bs-docs-section">
+          <h1 id="helper-classes" class="page-header">Helper classes</h1>
+
+          <h3 id="helper-classes-colors">Contextual colors</h3>
+          <p>Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.</p>
+          <div class="bs-example">
+            <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+            <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+            <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+          <div class="highlight">
+          </div>
+          <div class="bs-callout bs-callout-info">
+            <h4>Dealing with specificity</h4>
+            <p>Sometimes emphasis classes cannot be applied due to the specificity of another selector. In most cases, a sufficient workaround is to wrap your text in a
+              <code>&lt;span&gt;</code>with the class.</p>
+          </div>
+
+          <h3 id="helper-classes-backgrounds">Contextual backgrounds</h3>
+          <p>Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes.</p>
+          <div class="bs-example bs-example-bg-classes">
+            <p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p class="bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+            <p class="bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <p class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </div>
+          <div class="highlight">
+          </div>
+
+
+          <h3 id="helper-classes-close">Close icon</h3>
+          <p>Use the generic close icon for dismissing content like modals and alerts.</p>
+          <div class="bs-example">
+            <p>
+              <button type="button" class="close" aria-hidden="true">&times;</button>
+            </p>
+          </div>
+          <div class="highlight">
+          </div>
+
+
+          <h3 id="helper-classes-carets">Carets</h3>
+          <p>Use carets to indicate dropdown functionality and direction. Note that the default caret will reverse automatically in <a href="../components/#btn-dropdowns-dropup">dropup menus</a>.</p>
+          <div class="bs-example">
+            <span class="caret"></span>
+          </div>
+          <div class="highlight">
+          </div>
+
+
+          <h3 id="helper-classes-floats">Quick floats</h3>
+          <p>Float an element to the left or right with a class.
+            <code>!important</code>is included to avoid specificity issues. Classes can also be used as mixins.</p>
+          <div class="highlight">
+          </div>
+          <div class="highlight">
+          </div>
+
+          <div class="bs-callout bs-callout-warning">
+            <h4>Not for use in navbars</h4>
+            <p>To align components in navbars with utility classes, use
+              <code>.navbar-left</code>or
+              <code>.navbar-right</code>instead. <a href="../components/#navbar-component-alignment">See the navbar docs</a> for details.</p>
+          </div>
+
+
+          <h3 id="helper-classes-center">Center content blocks</h3>
+          <p>Set an element to
+            <code>display: block</code>and center via
+            <code>margin</code>. Available as a mixin and class.</p>
+          <div class="highlight">
+          </div>
+          <div class="highlight">
+          </div>
+
+
+          <h3 id="helper-classes-clearfix">Clearfix</h3>
+          <p>Clear the
+            <code>float</code>on any element with the
+            <code>.clearfix</code>class. Utilizes <a href="http://nicolasgallagher.com/micro-clearfix-hack/">the micro clearfix</a> as popularized by Nicolas Gallagher. Can also be used as a mixin.</p>
+          <div class="highlight">
+          </div>
+          <div class="highlight">
+          </div>
+
+
+          <h3 id="helper-classes-show-hide">Showing and hiding content</h3>
+          <p>Force an element to be shown or hidden (
+            <strong>including for screen readers</strong>) with the use of
+            <code>.show</code>and
+            <code>.hidden</code>classes. These classes use
+            <code>!important</code>to avoid specificity conflicts, just like the <a href="#helper-classes-floats">quick floats</a>. They are only available for block level toggling. They can also be used as mixins.</p>
+          <p>
+            <code>.hide</code>is available, but it does not always affect screen readers and is
+            <strong>deprecated</strong>as of v3.0.1. Use
+            <code>.hidden</code>or
+            <code>.sr-only</code>instead.</p>
+          <p>Furthermore,
+            <code>.invisible</code>can be used to toggle only the visibility of an element, meaning its
+            <code>display</code>is not modified and the element can still affect the flow of the document.</p>
+          <div class="highlight">
+          </div>
+          <div class="highlight">
+          </div>
+
+
+          <h3 id="helper-classes-screen-readers">Screen reader content</h3>
+          <p>Hide an element to all devices
+            <strong>except screen readers</strong>with
+            <code>.sr-only</code>. Necessary for following <a href="../getting-started/#accessibility">accessibility best practices</a>. Can also be used as a mixin.</p>
+          <div class="highlight">
+          </div>
+          <div class="highlight">
+          </div>
+
+
+          <h3 id="helper-classes-image-replacement">Image replacement</h3>
+          <p>Utilize the
+            <code>.text-hide</code>class or mixin to help replace an element's text content with a background image.</p>
+          <div class="highlight">
+          </div>
+          <div class="highlight">
+          </div>
+        </div>
+
