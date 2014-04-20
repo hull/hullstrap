@@ -3,7 +3,7 @@
   @extend %white-background;
   top: 90%;
   @include border-radius(5px !important); 
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 0;
   @include box-shadow(0 0px 12px rgba(0, 0, 0, 0.1));
   background-clip: padding-box;
 
@@ -28,18 +28,22 @@
 }
 
 .form-invisible{
-  input{
+  .form-control{
     border:none;
     @include border-radius(0);
     @include transition(all .2s ease-out);
     background-color: rgba(115, 124, 129, 0);
     color: #333;
     @include box-shadow(none);
-    @include rhythm(0,0,0,0);
+    @include leader(0);
+    @include trailer(0);
     &:focus{
       @include box-shadow(none);
       background-color: rgba(115, 124, 129, 0.12); 
     }
+  }
+  .form-group{
+    @include trailer(0);
   }
 }
 .pad{

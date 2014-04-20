@@ -1,0 +1,34 @@
+.page-header{
+  position: relative;
+  button.close{
+    position: absolute;
+    top: $base-line-height;
+    right: $padding-base-horizontal;
+  }
+  @include rhythm(1,0,0,1);
+  // @include trailing-border(1px, .5);
+  @include box-shadow(inset 0 -1px 0 #dae2e4);
+  border:0; 
+  
+  &.no-border{
+    @include box-shadow(none);
+  }
+  .title{
+    @extend .nm;
+    @extend .accented;
+  }
+}
+.page-header-block{
+  @include rhythm(0,.5,.5,0);
+  padding-left: $padding-base-horizontal;
+  padding-right: $padding-base-horizontal;
+  background-color: #fbfcfc;
+  width: auto;
+  .container-fluid &{
+    margin: -15px -15px 15px -15px;
+  }
+
+  .title{
+    margin: 0;
+  }
+}

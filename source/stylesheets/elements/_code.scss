@@ -103,7 +103,8 @@ pre.highlight{
 }
 
 code{
-  color: $red;
-  background-color: rgba(231, 95, 69, 0.1);
-  @include border-radius(100px);
+  color: #447BB6;
+  // background-color: rgba(231, 95, 69, 0.1);
+  background-color: transparent;
+  // @include border-radius(100px);
 }

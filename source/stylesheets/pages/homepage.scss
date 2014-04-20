@@ -22,10 +22,11 @@
   .headline{
     @include font-weight-bold;
   }
-  h5.tagline{
-    // @include adjust-leading-to(1.33333334, $h5_font_size);
+  .subtitle{
+    // @include font-weight-light;
     opacity: .5;
   }
+
   .bgimage{
     position: absolute;
     z-index: 1;
@@ -43,7 +44,7 @@
     z-index: 2;
   }
   .cta-btn{
-    @include btn-large;
+    @include btn-lg;
     width: 100%;
   }
   .btn-signup{
@@ -70,6 +71,7 @@
   }
   .tagline{
     @include leader(0);
+    @include trailer(1);
   }
 }
 

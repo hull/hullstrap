@@ -1,18 +1,19 @@
 .docs-page{
+  @include padding-leader(1);
   background-color: $off_white;
   p, li{
     // -webkit-font-smoothing:subpixel-antialiased;
   }
 }
 .docs-header{
-  border-color: $light_filet;
+  border-color: $light-filet;
   @include trailer(1);
   @include trailing-border(1px, 2);
   h3{
     @include rhythm(0,0,0,0);
   }
   p{
-    @include adjust-font-size-to(14.5px);    
+    @include adjust-font-size-to(16px);    
     @include rhythm(0,0,0,0);
     color: $light_text;
   }
@@ -22,40 +23,41 @@
   hr{
     margin:0;
     padding:0;
-    border-color: $light_filet;
+    border-color: $light-filet;
     height:auto;
     color: transparent;
     @include leading-border(1px, 1);
   }
   h1{
-    @include adjust-font-size-to($h1_font_size*0.5);    
-    @include adjust-leading-to(1,$h1_font_size*0.5);    
-    @include rhythm(2,0,0,.5,$h1_font_size*0.5);    
+    @include adjust-font-size-to($h1_font_size*0.75);    
+    @include adjust-leading-to(1,$h1_font_size*0.75);    
+    @include rhythm(2,0,0,.5,$h1_font_size*0.75); 
+    @extend .accented;   
   }
   h2{
-    @include adjust-font-size-to($h2_font_size*0.5);    
-    @include adjust-leading-to(1,$h2_font_size*0.5);    
-    @include rhythm(1,0,0,1,$h2_font_size*0.5);    
+    @include adjust-font-size-to($h2_font_size*0.75);    
+    @include adjust-leading-to(1,$h2_font_size*0.75);    
+    @include rhythm(2,0,0,1,$h2_font_size*0.75);    
   }
   h3{
-    @include adjust-font-size-to($h3_font_size*0.5);    
-    @include adjust-leading-to(1,$h3_font_size*0.5);    
-    @include rhythm(1,0,0,1,$h3_font_size*0.5);    
+    @include adjust-font-size-to($h3_font_size);    
+    @include adjust-leading-to(1,$h3_font_size);    
+    @include rhythm(1,0,0,1,$h3_font_size);    
   }
   h4{
-    @include adjust-font-size-to($h4_font_size*0.5);    
-    @include adjust-leading-to(1,$h4_font_size*0.5);    
-    @include rhythm(1,0,0,1,$h4_font_size*0.5);    
+    @include adjust-font-size-to($h4_font_size);    
+    @include adjust-leading-to(1,$h4_font_size);    
+    @include rhythm(1,0,0,1,$h4_font_size);    
   }
   h5{
-    @include adjust-font-size-to($h5_font_size*0.5);    
-    @include adjust-leading-to(1,$h5_font_size*0.5);    
-    @include rhythm(1,0,0,1,$h5_font_size*0.5);    
+    @include adjust-font-size-to($h5_font_size);    
+    @include adjust-leading-to(1,$h5_font_size);    
+    @include rhythm(1,0,0,1,$h5_font_size);    
   }
   h6{
-    @include adjust-font-size-to($h6_font_size*0.5);    
-    @include adjust-leading-to(1,$h6_font_size*0.5);    
-    @include rhythm(1,0,0,1,$h6_font_size*0.5);    
+    @include adjust-font-size-to($h5_font_size);    
+    @include adjust-leading-to(1,$h5_font_size);    
+    @include rhythm(1,0,0,1,$h5_font_size);    
   }
   li{
     list-style-type: disc; 
@@ -64,7 +66,7 @@
     // font-size: 1em;
   }
   p,li{
-    @include adjust-font-size-to(14.5px);
+    @include adjust-font-size-to(16px);
     color: $light_text;
 
   }

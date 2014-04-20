@@ -14,7 +14,12 @@
 .table > tfoot > tr > th,
 .table > tfoot > tr > td{
   @include rhythm(0,.5,.5,0);
-  @include leading-border(1px, .5);
+  border:0;
+  > p{
+    @include rhythm(0,0,0,.5);
+  }
+  // @include box-shadow(0 -1px 0 0 $light-filet);
+  // @include leading-border(1px, .5);
 }
 
 .table-bordered > thead > tr > th,
@@ -23,6 +28,20 @@
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > th,
 .table-bordered > tfoot > tr > td{
-  @include rhythm-borders(2px,.5);
+  @include box-shadow(inset 1px 1px 0 0 rgba(233, 233, 233, 1));
+  // @include rhythm-borders(2px,.5);
   padding: $base-line-height/2 - 1;
+}
+
+.table-bordered{
+  @include box-shadow(inset 0 0 0 1px rgba(233, 233, 233, 1));
+}
+
+.table-json{
+  .navigation span, span.object, span.array{
+    @extend .text-info;
+    @include font-weight-bold;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }

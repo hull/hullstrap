@@ -28,6 +28,7 @@
   > .nav > li > a {
     @include font-weight-bold;
     border-left-width: 2px;
+    padding-left: $padding-base-horizontal - 2px;
   }
 
   .nav li {
@@ -35,17 +36,17 @@
   }
 
   .nav li a {
-    padding-left: $padding-base-horizontal;
+    padding-left: $padding-base-horizontal - 1px;
     @include rhythm(0,.125,.125,0, 14px);
   }
 
   .nav li li a {
-    padding-left: $padding-base-horizontal*2;
+    padding-left: $padding-base-horizontal*2 - 1px;
   }
 
   .nav li li li a {
     opacity: .7;
-    padding-left: $padding-base-horizontal*3;
+    padding-left: $padding-base-horizontal*3 - 1px;
   }
   .active > a, a.active {
     color: $primary;

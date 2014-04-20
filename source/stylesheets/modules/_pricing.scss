@@ -1,8 +1,8 @@
 .pricing-header{
   .subtitle{
-    @include adjust-font-size-to($h5_font_size);
-    @include font-weight-light;
-    @include adjust-leading-to(2,$h5_font_size);
+    // @include adjust-font-size-to($h5_font_size);
+    // @include font-weight-light;
+    // @include adjust-leading-to(2,$h5_font_size);
   }
 }
 

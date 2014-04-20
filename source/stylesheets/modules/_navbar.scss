@@ -22,14 +22,12 @@
   @include rhythm(0,0,0,0);
   .navbar-brand{
     @include inline-retina-sprite('logo/navbar-logo-dark.png');
-    @include rhythm(.5,.5,.5,.5);
-    @include adjust-font-size-to(16px);
-    @include adjust-leading-to(1, 16px);
-    height: auto;
+    height: $base-line-height*3;
     background-position: left center;
+    background-size: contain;
     background-repeat:no-repeat;
+    @include rhythm(0,0,0,0);
     margin-right:$padding-base-horizontal*2;
-    margin-top: 15px;
   }
   > .container .navbar-brand,
   > .container .navbar-header{
@@ -46,7 +44,7 @@
     @media (min-width: $screen-md-min){
       margin-left:$padding-base-horizontal/4;
       margin-right:$padding-base-horizontal/4;
-      @include btn-rhythm(1.5, 1.5, $base-font-size, $padding-base-horizontal);
+      @include btn-rhythm(1.5, 1.5, 16px, $padding-base-horizontal);
     }
   }
   .navbar-item-highlight{
@@ -64,12 +62,13 @@
       right: 3px;
       opacity: .3;
     }
-  }
-  .form-control{
-    @include adjust-font-size-to(14px, 1);
-    @include rhythm(.75,.25,.25,.75,14px);
-    border:none;
-    height: auto;
+    .form-control{
+      @include adjust-font-size-to(14px, 1);
+      // @include rhythm(.75,.25,.25,.75,14px);
+      @include rhythm(.75,.25,.25,.75,14px);
+      border:none;
+      height: auto;
+    }
   }
 }
 
@@ -101,16 +100,21 @@
       @include adjust-leading-to(1.5); 
     }
     img.avatar{
-      height: 32px;
-      @include border-radius(100px);
-      vertical-align: top;
-      display: inline-block;
+      height: $base-line-height*1.33333333333 - 2px;
+      top: 1px;
+      float: left;
       position: relative;
-      left: -$padding-base-horizontal;
+      display: inline-block;
+      @include border-radius(100px);
+      left: 1 - $padding-base-horizontal;
     }
   }
   .navbar-brand{
     @include inline-retina-sprite('logo/navbar-logo.png');
+    height: $base-line-height*3;
+    background-position: left center;
+    background-size: contain;
+    background-repeat:no-repeat;
   }
   .navbar-item{
     @include btn-invisible();

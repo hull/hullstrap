@@ -24,32 +24,43 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   }
 }
 
+@mixin font-weight-thin{     font-weight: 100; }
+@mixin font-weight-light{  font-weight: 200; }
+// @mixin font-weight-light{    font-weight: 300; }
+@mixin font-weight-normal{   font-weight: 400; }
+@mixin font-weight-semibold{ font-weight: 600; }
+@mixin font-weight-bold{     font-weight: 700; }
 
-h1{ 
-  @include adjust-heading($h1_font_size, $h1_line_height);
-}
-h2{ 
-  @include adjust-heading($h2_font_size, $h2_line_height);
-}
-h3{ 
-  @include adjust-heading($h3_font_size, $h3_line_height);
-}
-h4{ 
-  @include adjust-heading($h4_font_size, $h4_line_height);
-}
-h5{ 
-  @include adjust-heading($h5_font_size, $h5_line_height);
-}
-h6{ 
-  @include adjust-heading($h6_font_size, $h6_line_height);
-}
+h1{ @include adjust-heading($h1_font_size, $h1_line_height); }
+h2{ @include adjust-heading($h2_font_size, $h2_line_height); }
+h3{ @include adjust-heading($h3_font_size, $h3_line_height); }
+h4{ @include adjust-heading($h4_font_size, $h4_line_height); }
+h5{ @include adjust-heading($h5_font_size, $h5_line_height); }
+h6{ @include adjust-heading($h6_font_size, $h6_line_height); }
 
 p{
   @include adjust-font-size-to($base-font-size,1);
-  @include rhythm(0,0,0,1);
+  @include rhythm(.5,0,0,.5);
+  small{
+    @include adjust-font-size-to(14px, 1);
+  }
 }
 ul{
   @include rhythm(0,0,0,1);
+}
+blockquote{
+  @include rhythm(0,1,1,1);
+}
+
+pre{
+  padding: 0 $padding-base-horizontal;
+  @include adjust-font-size-to(12px);
+  @include rhythm(1,.5,.5,1,12px);
+  font-family: Menlo, monospace;
+  border-radius: 0;
+  border:none;
+  background: rgba(234, 238, 241, 1);
+  color:$light_text;
 }
 
 // blockquote {
@@ -62,21 +73,6 @@ ul{
 //   }
 // }
 
-@mixin font-weight-thin{
-  font-weight: 100;
-}
-@mixin font-weight-light{
-  font-weight: 200;
-}
-@mixin font-weight-normal{
-  font-weight: 400;
-}
-@mixin font-weight-semibold{
-  font-weight: 600;
-}
-@mixin font-weight-bold{
-  font-weight: 700;
-}
 
 
 /*
@@ -84,6 +80,7 @@ ul{
 ** Title Styles
 ******************
 */
+
 h1, h2, h3, h4, h5, h6{
   color: $black_2;
   &.underlined{
@@ -102,10 +99,17 @@ h1, h2, h3, h4, h5, h6{
     }
   }
 
-  &.tagline{
-    @include font-weight-normal;
-  }
 
+}
+.bold{   @include font-weight-bold; }
+.normal{ @include font-weight-normal; }
+.thin{   @include font-weight-light; }
+
+h1.page-header{
+  @include adjust-leading-to(3, $h1_font_size);
+  @include rhythm(1,0,0,1, $h1_font_size);
+  @include trailing-border(1px, 1, $h1_font_size);
+  // border-bottom-width: 1px;
 }
 
 .lead{
@@ -117,40 +121,12 @@ h1, h2, h3, h4, h5, h6{
   color: $light_text;
 }
 
-
-input:focus {
-  outline: none;
+.nm{
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.page-header{
-  @include rhythm(1,0,0,1);
-  @include trailing-border(1px, .5);
-  // border-bottom-width: 1px;
-}
-h1.page-header{
-  @include adjust-leading-to(3, $h1_font_size);
-  @include rhythm(1,0,0,1, $h1_font_size);
-  @include trailing-border(1px, 1, $h1_font_size);
-  // border-bottom-width: 1px;
-}
-
-p{
-  small{
-    @include adjust-font-size-to(14px, 1);
-  }
-}
-
-blockquote{
-  @include rhythm(0,1,1,1);
-}
-
-pre{
-  padding: 0 $padding-base-horizontal;
-  @include adjust-font-size-to(12px);
-  @include rhythm(1,.5,.5,1,12px);
-  font-family: Menlo, monospace;
-  border-radius: 0;
-  border:none;
-  background: rgba(234, 238, 241, 1);
-  color:$light_text;
+.np{
+  padding-top: 0;
+  padding-bottom: 0;
 }

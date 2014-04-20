@@ -1,3 +1,32 @@
-.nav > li > a{
-  @include rhythm(0,0,0,0);
+// .nav > li > a{
+//   @include rhythm(0,0,0,0);
+// }
+
+%nav{
+  > li{
+    > a{
+      @include rhythm(0,.5,.5,0);
+      @extend .btn;
+    }
+
+    &.active{
+      > a, >a:hover, >a.active{
+        @extend .btn-primary; 
+      }
+    }
+  }
+}
+
+.nav-pills{
+  @extend %nav;
+  > li{
+    > a{
+      @extend .btn-rounded;
+      @extend .btn-pill;
+    }
+  }
+}
+
+.nav-tabs{
+  @extend %nav;
 }

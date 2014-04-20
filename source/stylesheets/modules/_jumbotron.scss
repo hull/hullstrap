@@ -8,11 +8,11 @@
   background:none;
   @extend .text-center;
   @include rhythm(0,0,0,0);
+  h1, .h1{
+    @include adjust-font-size-to($h1_font_size);
+  }
   .container{
     @include rhythm(0,3,3,0);
-  }
-  @media screen and (max-width: $screen-sm-max){
-    padding: 0; 
   }
   .jumbotron-headline{
     @include leader(0)
@@ -21,29 +21,34 @@
     @include font-weight-bold;
   }
 
-  h2{
-    @include adjust-font-size-to(34px);
-    @include rhythm(1,0,0,1,34px);
-  }
-  h3{
-    @include adjust-font-size-to(30px);
-    @include rhythm(0,0,0,1, 30px);
+  @media screen and (max-width: $screen-sm-max){
+    padding: 0; 
   }
 
-  h4{
-    @include adjust-font-size-to(24px, 1);
-    @include rhythm(0,0,1,1,24px);
-  }
+  // h2{
+  //   @include adjust-font-size-to(34px);
+  //   @include rhythm(1,0,0,1,34px);
+  // }
+  // h3{
+  //   @include adjust-font-size-to(30px);
+  //   @include rhythm(0,0,0,1, 30px);
+  // }
+
+  // h4{
+  //   @include adjust-font-size-to(24px, 1);
+  //   @include rhythm(0,0,1,1,24px);
+  // }
   .subtitle{
-    @include adjust-font-size-to(15px);
+    // @include adjust-font-size-to(15px);
+    @include font-weight-light;
     color: $light_text;
   }
 
   blockquote{
     border:none;
     @include font-weight-light;
-    @include adjust-font-size-to(26px,1);
-    @include rhythm(1,0,0,1, 26px);
+    // @include adjust-font-size-to(26px,1);
+    // @include rhythm(1,0,0,1, 26px);
     font-style: italic;
   }
 
@@ -56,6 +61,10 @@
     @include adjust-font-size-to($base-font-size);
     @include font-weight-normal;
     @include trailer(1);
-    color: $base_text;
+    color: $text-color;
   }
+}
+
+.inverted-jumbotron{
+  @extend .jumbotron;
 }
