@@ -115,5 +115,12 @@ select.form-control{
 .input-group-lg > .input-group-btn > .btn{
   @include padding-leader(1);
   @include padding-trailer(1);
-  @include adjust-font-size-to(18px);
+  @include adjust-font-size-to($font-size-large);
+}
+
+.input-group-btn:last-child > .btn,
+.nav-pills > li.input-group-btn:last-child > a,
+.nav-tabs > li.input-group-btn:last-child > a,
+.input-group-btn:last-child > .btn-group{
+  margin-left: 0;
 }

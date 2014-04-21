@@ -91,15 +91,15 @@ h1, h2, h3, h4, h5, h6{
     display: block;
   }
 
-  &.accented{
-    @include font-weight-bold;
-    color: $accent_text_header;
-    small{
-      color: lighten($accent_text_header, 10%);
-    }
+
+
+}
+.accented{
+  @include font-weight-bold;
+  color: $accent_text_header;
+  small{
+    color: lighten($accent_text_header, 10%);
   }
-
-
 }
 .bold{   @include font-weight-bold; }
 .normal{ @include font-weight-normal; }

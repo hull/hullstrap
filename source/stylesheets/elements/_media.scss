@@ -1,0 +1,4 @@
+.media-heading{
+  @include adjust-font-size-to($base-font-size);
+  @include rhythm(1,0,0,1);
+}

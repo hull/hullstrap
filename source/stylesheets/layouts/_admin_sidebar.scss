@@ -1,6 +1,14 @@
 .dashboard{
-    
-  @media (min-width: 992px) {
+  .sidebar.sidebar-menu+#main{
+    margin-left: 60px;
+  }
+  @media screen and (min-width: $screen-md-min){
+    .sidebar.sidebar-menu+#main{
+      margin-left: 220px;
+    }
+  }
+  
+  @media (min-width: $screen-md-min) {
     .sidebar-minimized #header.navbar {
       background-color: transparent;
       height: 60px
@@ -157,7 +165,7 @@
     bottom: 0;
     width: 220px;
     color: #777;
-    background-color: #2a2a2a;
+    background-color: #2a3542;
     -webkit-transition: -webkit-transform .2s ease;
     -moz-transition: -moz-transform .2s ease;
     -o-transition: -o-transform .2s ease;
@@ -216,7 +224,7 @@
   .sidebar .topmenu {
     margin: 0;
     padding: 0;
-    background-color: #2a2a2a
+    background-color: #2a3542;
   }
 
   .sidebar .topmenu li {
@@ -244,7 +252,7 @@
   }
 
   .sidebar .topmenu li.active {
-    background-color: #2f2f2f
+    background-color: #364250;
   }
 
   .sidebar .topmenu li.active:after {
@@ -467,7 +475,7 @@
     content: "\e64f"
   }
 
-  @media (min-width: 768px) and (max-width:991px) {
+  @media (min-width: $screen-sm-min) and (max-width:$screen-md) {
     .csstransforms3d.sidebar-open-ltr .sidebar-left.sidebar-menu {
       -webkit-transform:translate3d(220px,0,0);
       -moz-transform: translate3d(220px,0,0);
@@ -636,7 +644,7 @@
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: $screen-md-min) {
     .csstransforms3d.sidebar-open-ltr .sidebar-left.sidebar-menu {
       -webkit-transform:translate3d(220px,0,0);
       -moz-transform: translate3d(220px,0,0);
@@ -819,9 +827,5 @@
       padding-top: 1px;
       padding-bottom: 1px
     }
-  }
-
-  .sidebar.sidebar-menu+#main{
-    margin-left: 220px;
   }
 }

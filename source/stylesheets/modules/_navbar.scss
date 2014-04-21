@@ -21,12 +21,13 @@
   border:none;
   @include rhythm(0,0,0,0);
   .navbar-brand{
+    @include adjust-font-size-to($base-font-size);
     @include inline-retina-sprite('logo/navbar-logo-dark.png');
-    height: $base-line-height*3;
+    height: $base-line-height*2;
     background-position: left center;
     background-size: contain;
     background-repeat:no-repeat;
-    @include rhythm(0,0,0,0);
+    @include rhythm(.5,0,0,.5);
     margin-right:$padding-base-horizontal*2;
   }
   > .container .navbar-brand,
@@ -111,7 +112,7 @@
   }
   .navbar-brand{
     @include inline-retina-sprite('logo/navbar-logo.png');
-    height: $base-line-height*3;
+    height: $base-line-height*2;
     background-position: left center;
     background-size: contain;
     background-repeat:no-repeat;

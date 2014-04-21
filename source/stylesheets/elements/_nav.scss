@@ -6,7 +6,7 @@
   > li{
     > a{
       @include rhythm(0,.5,.5,0);
-      @extend .btn;
+      // @extend .btn;
     }
 
     &.active{
@@ -19,14 +19,21 @@
 
 .nav-pills{
   @extend %nav;
-  > li{
-    > a{
-      @extend .btn-rounded;
-      @extend .btn-pill;
-    }
-  }
 }
 
 .nav-tabs{
   @extend %nav;
+}
+
+.nav-rounded{
+  @extend %nav;
+  > li {
+    display: inline;
+    > a {
+      @extend .btn-pill;
+      @extend .btn-rounded;
+      @extend .btn;
+      display: inline-block;
+    }
+  }
 }

@@ -2,9 +2,11 @@
   // @include rhythm(0,.5,.5,0);
   @include box-shadow(none);
   @include rhythm(0,0,0,.5);
-  background-color: $white;
   border:0;
   padding: 0; 
+}
+.panel-body, .panel-default{
+  background:transparent; 
 }
 
 .panel-default > .panel-heading{
@@ -22,6 +24,8 @@
     display: table-cell;
   }
 }
+
+
 // .panel {
 //   position: relative;
 //   -webkit-box-shadow: none;

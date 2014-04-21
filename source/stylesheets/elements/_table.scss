@@ -33,6 +33,15 @@
   padding: $base-line-height/2 - 1;
 }
 
+.table > thead > tr > th > p,
+.table > thead > tr > td > p,
+.table > tbody > tr > th > p,
+.table > tbody > tr > td > p,
+.table > tfoot > tr > th > p,
+.table > tfoot > tr > td > p{
+  @include rhythm(.25,0,0,.25);
+}
+
 .table-bordered{
   @include box-shadow(inset 0 0 0 1px rgba(233, 233, 233, 1));
 }
