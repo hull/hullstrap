@@ -65,15 +65,6 @@
   .open > .navbar-item-highlight{
     @include btn-transparent;
   }
-  // .navbar-form{
-  //   margin:0; 
-  //   .icon-search{
-  //     color: $primary;
-  //     top: 19px;
-  //     right: 3px;
-  //     opacity: .3;
-  //   }
-  // }
 }
 
 .navbar-branded{
@@ -122,9 +113,6 @@
     background-repeat:no-repeat;
   }
   @media screen and (min-width: $screen-sm-min) {
-    .navbar-item{
-      
-    }
     .navbar-item{
       @include btn-invisible();
     }
@@ -213,8 +201,8 @@
 
 .navbar-text{
   margin: 0;
-  @include rhythm(1,0,0,1, 16px);
-  @include adjust-font-size-to(16px);
+  @include adjust-font-size-to(14px);
+  @include rhythm(1,0,0,1, 14px);
   &.text-muted{
     color: white;
     margin-right: $padding-base-horizontal/2;
