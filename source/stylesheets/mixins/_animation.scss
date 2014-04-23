@@ -5,3 +5,8 @@
 %animate{
   @include transition(all 0.2s ease-out);
 }
+
+%animateQuint{
+  @include transition(all 0.2s ease-out);
+  @include easeOutQuint;
+}

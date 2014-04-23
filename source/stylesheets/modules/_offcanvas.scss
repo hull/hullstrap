@@ -10,48 +10,153 @@ body {
  * Off Canvas
  * --------------------------------------------------
  */
-@media screen and (max-width: 767px) {
-  .row-offcanvas {
+@media screen and (max-width: $screen-sm) {
+  $offcanvas_size: 230px;
+  .offcanvas-container{
+    @include transform(0);
+    @include transition(all .15s ease-out);
+    @include easeOutQuint;
+  }
+  .offcanvas-content{
+    z-index: 2;
+    background-color: white;
+    // min-height: 100vh;
+  }
+  .offcanvas-toggle,  .offcanvas-toggle .icon-bar{
+    @include transform(0);
+    @include transition(all .25s ease-out .10s);
+    @include easeOutQuint;
     position: relative;
-    -webkit-transition: all .25s ease-out;
-       -moz-transition: all .25s ease-out;
-            transition: all .25s ease-out;
-  }
-
-  .row-offcanvas-right {
-    right: 0;
-  }
-
-  .row-offcanvas-left {
-    left: 0;
-  }
-
-  .row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -50%; /* 6 columns */
-  }
-
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -50%; /* 6 columns */
-  }
-
-  .row-offcanvas-right.active {
-    right: 50%; /* 6 columns */
-  }
-
-  .row-offcanvas-left.active {
-    left: 50%; /* 6 columns */
-  }
-
-  .sidebar-offcanvas {
-    // position: absolute;
     top: 0;
-    width: 50%; /* 6 columns */
   }
-  .offcanvas-toggle{
-    color: white;
-    z-index: 1000;
-    opacity: .7;  
+
+  .offcanvas-sidebar-left,
+  .offcanvas-sidebar-right{
+    @include leader(0);
+    // @include padding-leader(0);
+    position: fixed;
+    z-index: 1;
+    width: $offcanvas_size;
+    top: 0;
+    bottom: 0;
+    margin: 0;
   }
+  .offcanvas-sidebar-left{
+    left: -$offcanvas_size;
+    // @include box-shadow( 1px 0 0 1px rgba(0,0,0,.6),inset -2px 0 8px rgba(0,0,0,.07));
+  }
+  .offcanvas-sidebar-right{
+    right: -$offcanvas_size;
+    // @include box-shadow( inset 2px 0 8px rgba(0,0,0,.07));
+  }
+
+  .offcanvas-active{
+    .offcanvas-content{
+      z-index: 3;
+    }
+    position: fixed;
+  }
+
+  .offcanvas-active.offcanvas-active-right{
+    .offcanvas-toggle[data-side='right'] .icon-bar{
+      background-color: white;
+    }
+    .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(2){
+      top: 8px;
+      @include transform(rotate(45deg)); 
+    }
+    .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(3){
+      opacity: 0;
+    }
+    .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(4){
+      top: -8px;
+      @include transform(rotate(-45deg)); 
+    }
+    .offcanvas-sidebar-left{
+      z-index: 1;
+      position: fixed;
+      overflow: scroll;
+      height: 100vh;
+    }
+    .offcanvas-sidebar-right{
+      z-index: 2;
+      position: fixed;
+      overflow: scroll;
+      height: 100vh;
+    }
+    @include transform(translate3d(-$offcanvas_size,0,0));
+  }
+  .offcanvas-active.offcanvas-active-left{
+    .offcanvas-toggle[data-side='left'] .icon-bar{
+      background-color: white;
+    }
+    .offcanvas-toggle[data-side='left'] .icon-bar:nth-child(2){
+      top: 8px;
+      @include transform(rotate(45deg)); 
+    }
+    .offcanvas-toggle[data-side='left'] .icon-bar:nth-child(3){
+      opacity: 0;
+    }
+    .offcanvas-toggle[data-side='left'] .icon-bar:nth-child(4){
+      top: -8px;
+      @include transform(rotate(-45deg)); 
+    }
+    .offcanvas-sidebar-right{
+      z-index: 1;
+      position: fixed;
+      overflow: scroll;
+      height: 100vh;
+    }
+    .offcanvas-sidebar-left{
+      z-index: 2;
+      position: fixed;
+      overflow: scroll;
+      height: 100vh;
+    }
+    @include transform(translate3d($offcanvas_size,0,0));
+  }
+
+  // .row-offcanvas {
+  //   position: relative;
+  //   -webkit-transition: all .25s ease-out;
+  //      -moz-transition: all .25s ease-out;
+  //           transition: all .25s ease-out;
+  // }
+
+  // .row-offcanvas-right {
+  //   right: 0;
+  // }
+
+  // .row-offcanvas-left {
+  //   left: 0;
+  // }
+
+  // .row-offcanvas-right
+  // .sidebar-offcanvas {
+  //   right: -50%; /* 6 columns */
+  // }
+
+  // .row-offcanvas-left
+  // .sidebar-offcanvas {
+  //   left: -50%; /* 6 columns */
+  // }
+
+  // .row-offcanvas-right.active {
+  //   right: 50%; /* 6 columns */
+  // }
+
+  // .row-offcanvas-left.active {
+  //   left: 50%; /* 6 columns */
+  // }
+
+  // .sidebar-offcanvas {
+  //   // position: absolute;
+  //   top: 0;
+  //   width: 50%; /* 6 columns */
+  // }
+  // .offcanvas-toggle{
+  //   color: white;
+  //   z-index: 1000;
+  //   opacity: .7;  
+  // }
 }

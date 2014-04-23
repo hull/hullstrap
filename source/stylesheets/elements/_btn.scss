@@ -55,8 +55,11 @@
   @include padding-trailer( $leading/2 , $font-size);
   @include leader( $margin / 2, $font-size);
   @include trailer( $margin / 2, $font-size);
-  padding-left:  $hpadding;
-  padding-right: $hpadding;
+
+  @media screen and (min-width: $screen-xs-min) {
+    padding-left:  $hpadding;
+    padding-right: $hpadding;
+  }
 }
 
 

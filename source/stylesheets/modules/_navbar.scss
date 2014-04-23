@@ -9,14 +9,14 @@
 */
 
 .navbar-toggle{
-  @include rhythm(1,0,0,1);
+  @include rhythm(1,0,0,0);
+  cursor: pointer;
   .icon-bar{
     background: transparentize($primary_bg_text,.5);
     height: 4px;
     @include border-radius(3px);
   }
 }
-
 
 .navbar{
   border:none;
@@ -35,6 +35,15 @@
   > .container .navbar-header{
     margin-left: 0;
   }
+
+  > .container .navbar-brand{
+    @media screen and (max-width: $screen-sm) {
+      margin-left: -110px;
+      left: 50%;
+      position: relative;
+    }
+  }
+
   .navbar-item{
     @extend %animate;
     letter-spacing: 0.01em;
@@ -112,20 +121,25 @@
     background-size: contain;
     background-repeat:no-repeat;
   }
-  .navbar-item{
-    @include btn-invisible();
-  }
-  .open {
-    > .navbar-item, > .navbar-item:hover, .navbar-item:focus{
-      border-color: transparentize($primary_bg_text, .5);
-      background-color: transparentize($primary_bg_text, .88);
-      color: transparentize($primary_bg_text,.1);
+  @media screen and (min-width: $screen-sm-min) {
+    .navbar-item{
+      
     }
-  }
-  .nav > li{
-    @media (max-width: $screen-md-max){
-      padding-right: $padding-base-horizontal;
-      padding-left: $padding-base-horizontal;
+    .navbar-item{
+      @include btn-invisible();
+    }
+    .open {
+      > .navbar-item, > .navbar-item:hover, .navbar-item:focus{
+        border-color: transparentize($primary_bg_text, .5);
+        background-color: transparentize($primary_bg_text, .88);
+        color: transparentize($primary_bg_text,.1);
+      }
+    }
+    .nav > li{
+      @media (max-width: $screen-md-max){
+        padding-right: $padding-base-horizontal;
+        padding-left: $padding-base-horizontal;
+      }
     }
   }
 }

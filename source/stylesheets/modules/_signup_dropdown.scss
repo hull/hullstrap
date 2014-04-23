@@ -1,5 +1,10 @@
+.login-or-signup-separator{
+  @media screen and (max-width: $screen-sm) {
+    display: none;
+  }
+}
 .signup-dropdown{
-  min-width: 300px;
+  width: 300px;
   // padding:0 $padding-base-horizontal;
   @include rhythm(0,.5,.5,0);
   .social-buttons{
@@ -21,6 +26,7 @@
   .or-separator {
     text-align: center;
     overflow: hidden;
+    display: none;
     span {
       background-color: white;
       color: $light_text;
