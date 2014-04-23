@@ -17,6 +17,7 @@
   }
 }
 
+
 .navbar{
   border:none;
   @include rhythm(0,0,0,0);
@@ -55,22 +56,15 @@
   .open > .navbar-item-highlight{
     @include btn-transparent;
   }
-  .navbar-form{
-    margin:0; 
-    .icon-search{
-      color: $primary;
-      top: 19px;
-      right: 3px;
-      opacity: .3;
-    }
-    .form-control{
-      @include adjust-font-size-to(14px, 1);
-      // @include rhythm(.75,.25,.25,.75,14px);
-      @include rhythm(.75,.25,.25,.75,14px);
-      border:none;
-      height: auto;
-    }
-  }
+  // .navbar-form{
+  //   margin:0; 
+  //   .icon-search{
+  //     color: $primary;
+  //     top: 19px;
+  //     right: 3px;
+  //     opacity: .3;
+  //   }
+  // }
 }
 
 .navbar-branded{
@@ -95,14 +89,15 @@
         display: none;
       }
     }
-    .navbar-item{
-      padding-top:0;
-      padding-bottom:0;
-      @include adjust-leading-to(1.5); 
-    }
+    // .navbar-item{
+    //   padding-top:0;
+    //   padding-bottom:0;
+    //   @include adjust-leading-to(1.5); 
+    // }
     img.avatar{
-      height: $base-line-height*1.33333333333 - 2px;
-      top: 1px;
+      height: $base-line-height*1.33333333334 - 2px;
+      top: - $base-line-height / 4;
+      max-height: none;
       float: left;
       position: relative;
       display: inline-block;
@@ -133,41 +128,82 @@
       padding-left: $padding-base-horizontal;
     }
   }
-  .sb-search-input{
-    color: $light_gray;
-    @media (min-width: $screen-sm-min){
-      background-color: rgba(255,255,255,0);
+}
+
+.navbar-input-group {
+  .form-control, .btn{
+    @include border-radius(100px);
+    @include transition(all .2s ease-out);
+    @include adjust-font-size-to(16px, 1);
+    @include adjust-leading-to(1,16px);
+    @include rhythm(.5,.25,.25,.5,16px);
+  }
+  @media (min-width: $screen-sm) {
+    .form-control{
+      position: relative;
+      z-index: 2;
+      border:none;
+      height: auto;
+      width: 40px;
+      left: 40px;
+      padding-left: 0;
+      padding-right: 0;
+      opacity: 0;
+      &:focus{
+        opacity: 1;
+        @extend %animate;
+        width: 200px;
+        left: 16px;
+        @include border-radius(100px 0 0 100px);
+        padding-left: $padding-base-horizontal;
+        padding-right: $padding-base-horizontal;
+        &+.btn{
+          z-index: 10;
+          position: relative;
+          opacity: 1;
+          background-color: $white;
+          i{
+            color: $primary;
+          }
+        }
+      }
+    }
+    .btn {
+      z-index: 1;
+      background-color: transparentize($primary, 1);
+      padding-left: $padding-base-horizontal;
+      padding-right: $padding-base-horizontal;
+      border-left: 0px;
+      i{
+        color: white;
+      }
     }
   }
-  .sb-search-input::-webkit-input-placeholder {color: transparentize($primary,.8); }
-  .sb-search-input:-moz-placeholder {color: transparentize($primary,.8); }
-  .sb-search-input::-moz-placeholder {color: transparentize($primary,.8); }
-  .sb-search-input:-ms-input-placeholder {color: transparentize($primary,.8); }
-  .sb-search-open {
-    .sb-search-input{
-      background-color: white;
-      @media (min-width: $screen-sm-min){
-        width: 400px;
-      }
-      @media (min-width: $screen-md-min){
-        width: 600px;
-      }
-      @media (min-width: $screen-lg-min){
-        width: 800px;
-      }
-      padding: 0 $padding-base-horizontal;
-    }
-    .sb-icon-search{
-      @media (min-width: $screen-sm-min){
-        background:transparentize($tertiary, .9);
-        color: $tertiary;
-      }
-    }
-  }
+  // @media (max-width: $screen-xs-max) {
+  //   margin-top:0px;
+  //   margin-bottom:0px;
+  //   .btn {
+  //     width:100%;
+  //   }
+  // }
 }
 
 .navbar-search{
-  input[type="search"]{
-    @include border-radius(100px);
+  .btn{
+    position: relative;
+    top:   0;
+    // width: 40px;
+    height: $base-line-height*1.5;
+  }
+}
+
+.navbar-text{
+  margin: 0;
+  @include rhythm(1,0,0,1, 16px);
+  @include adjust-font-size-to(16px);
+  &.text-muted{
+    color: white;
+    margin-right: $padding-base-horizontal/2;
+    opacity: .4;
   }
 }

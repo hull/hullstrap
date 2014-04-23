@@ -8,10 +8,10 @@
   background-clip: padding-box;
 
   .divider{
-    @include rhythm(1,0,0,0);
+    @include rhythm(.5,0,0,0);
     background:transparent;
     border-color: #ccc;
-    @include leading-border(1px , 1);
+    @include leading-border(1px , .5);
     @include adjust-font-size-to($base-font-size);
   }
   &:before {

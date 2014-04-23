@@ -1,4 +1,4 @@
-body{
+\body{
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6{
 
 
 }
-.accented{
+h1.accented, h2.accented, h3.accented, h4.accented, h5.accented, h6.accented, .accented{
   @include font-weight-bold;
   color: $accent_text_header;
   small{

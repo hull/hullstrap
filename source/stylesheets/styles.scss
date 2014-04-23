@@ -43,6 +43,7 @@ $h1_line_height: 3   !default;
 // body{
 //   opacity: .9;
 // }
+@import "base/rhythm";
 @import "base/typography";
 
 /*------------------------------------*\
@@ -75,6 +76,7 @@ $h1_line_height: 3   !default;
 @import "elements/code";
 @import "elements/form";
 @import "elements/modal";
+@import "elements/input-group";
 @import "elements/list-table";
 @import "elements/page-header";
 @import "ladda/css/ladda";
@@ -124,3 +126,17 @@ $h1_line_height: 3   !default;
 @import "pages/features";
 @import "pages/docs";
 @import "pages/quick_start";
+
+
+
+// .navbar-form .form-group.input-group {
+//   position: relative;
+//   display: table;
+//   border-collapse: separate;
+//   width: 200px;
+//   .form-control{
+//     @include rhythm(.5,.5,.5,.5);
+//     @include adjust-font-size-to($base-font-size, 1);
+
+//   }
+// }

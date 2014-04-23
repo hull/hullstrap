@@ -2,7 +2,7 @@
   @include rhythm(0,1,1,0);
   $filet-color : transparentize($blue_gray_lighter, .5);
   &:before {
-    top: 0;
+    top: $base-line-height*2;
     bottom: 0;
     position: absolute;
     content: " ";

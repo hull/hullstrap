@@ -7,6 +7,8 @@
 .homepage-header-content{
   @include padding-leader(3);
   @include padding-trailer(3);
+  display: table-cell;
+  vertical-align: middle;
 }
 
 
@@ -14,17 +16,22 @@
   overflow: hidden;
   @extend .text-center;
   @extend %blue-background;
-  // min-height: 100vh;
+  height: 100vh;
+  display: table;
+  width: 100%;
   .navbar-branded{
     background: none;
     @include box-shadow(none);
   }
   .headline{
-    @include font-weight-bold;
+    @include font-weight-semibold;
   }
   .subtitle{
-    // @include font-weight-light;
+    @include font-weight-thin;
     opacity: .5;
+  }
+  .tagline{
+    @include font-weight-thin;
   }
 
   .bgimage{
