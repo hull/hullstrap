@@ -6,7 +6,7 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   font-size-adjust: 0.5;
 }
 
-@mixin adjust-heading($font-size:$base-font-size, $leading:1, $leader:1, $trailer:1, $mobile-multiple: 1, $small-multiple: 1){
+@mixin adjust-heading($font-size:$base-font-size, $leading:1, $trailer:1, $leader:1, $mobile-multiple: 1, $small-multiple: 1){
   $mobile-font-size:$mobile-multiple*$font-size;
   @include adjust-font-size-to($mobile-font-size, $leading);
   @include adjust-leading-to($leading, $mobile-font-size);
@@ -32,8 +32,8 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 @mixin font-weight-bold{     font-weight: 700; }
 
 h1{ @include adjust-heading($h1_font_size, $h1_line_height); }
-h2{ @include adjust-heading($h2_font_size, $h2_line_height); }
-h3{ @include adjust-heading($h3_font_size, $h3_line_height); }
+h2{ @include adjust-heading($h2_font_size, $h2_line_height, .5); }
+h3{ @include adjust-heading($h3_font_size, $h3_line_height, .5); }
 h4{ @include adjust-heading($h4_font_size, $h4_line_height); }
 h5{ @include adjust-heading($h5_font_size, $h5_line_height); }
 h6{ @include adjust-heading($h6_font_size, $h6_line_height); }

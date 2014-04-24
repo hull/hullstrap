@@ -33,11 +33,11 @@ form{
 }
 .form-control{
   height: auto;
+  border:none;
   @include box-shadow(none);
-  @include leader(0);
-  @include trailer(0);
-  @include leading-border(1px, .5);
-  @include trailing-border(1px, .5);
+  @include rhythm(0,.5,.5,0);
+  // @include leading-border(1px, .5);
+  // @include trailing-border(1px, .5);
 }
 
 label{
@@ -123,4 +123,8 @@ select.form-control{
 .nav-tabs > li.input-group-btn:last-child > a,
 .input-group-btn:last-child > .btn-group{
   margin-left: 0;
+}
+
+.input-group-btn {
+  font-size: inherit;
 }

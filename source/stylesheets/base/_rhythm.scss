@@ -10,6 +10,10 @@
 .mb-1{@include trailer(1); }
 .mt-2{@include leader(2); }
 .mb-2{@include trailer(2); }
+.mt-3{@include leader(3); }
+.mb-3{@include trailer(3); }
+.mt-4{@include leader(4); }
+.mb-4{@include trailer(4); }
 .block-center{
   margin-left:auto;
   margin-right:auto;

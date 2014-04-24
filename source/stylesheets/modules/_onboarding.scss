@@ -1,0 +1,42 @@
+#onboarding_modal{
+  .step1, .step2{
+    display: none;
+  }
+  .avatar{
+    max-height: $base-line-height*3;
+    margin-right: 12px;
+    @include trailer(1);
+  }
+}
+.onboarding-welcome-title{
+  @include adjust-font-size-to(24px);
+  @include leader(0);
+  @include trailer(0);
+}
+
+.onboarding-additional-info{
+  small{
+    @include trailer(.5);
+  }
+}
+
+.onboarding-body{
+  @include padding-leader(2);
+}
+
+.onboarding-body{
+
+  label{
+    color: $primary;
+    @include trailer(.5);
+    font-weight: 200;
+  }
+  input.form-control{
+    background-color: $blue_gray_lightest;
+    border:none;
+    @include box-shadow(0);
+  }
+  .input-group-btn .btn{
+    color: $tertiary;
+  }
+}

@@ -70,7 +70,7 @@
 }
 
 .btn-secondary{
-  @include btn-color($blue_gray_lighter, rgba(255,255,255,0), $blue_gray);
+  @include btn-color($blue_gray_lightest, rgba(255,255,255,0), $blue_gray);
 }
 .btn-tertiary{
   @include btn-color($blue_gray_light, rgba(255,255,255,0), $inverted_text);
@@ -144,10 +144,6 @@
 }
 .btn-github{
   @include btn-color($github_color, $github_color, $primary_bg_text);
-}
-
-.input-group-btn .btn{
-  font-size: $base-font-size - 1;
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus{

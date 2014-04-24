@@ -24,14 +24,14 @@
     @include box-shadow(none);
   }
   .headline{
-    @include font-weight-semibold;
+    @include font-weight-bold;
   }
   .subtitle{
-    @include font-weight-thin;
+    @include font-weight-normal;
     opacity: .5;
   }
   .tagline{
-    @include font-weight-thin;
+    @include font-weight-normal;
   }
 
   .bgimage{

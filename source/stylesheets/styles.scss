@@ -123,22 +123,9 @@ $h1_line_height: 3   !default;
 @import "modules/component_grid";
 @import "modules/offcanvas";
 @import "modules/sidebar";
+@import "modules/onboarding";
 
 @import "pages/homepage";
 @import "pages/features";
 @import "pages/docs";
 @import "pages/quick_start";
-
-
-
-// .navbar-form .form-group.input-group {
-//   position: relative;
-//   display: table;
-//   border-collapse: separate;
-//   width: 200px;
-//   .form-control{
-//     @include rhythm(.5,.5,.5,.5);
-//     @include adjust-font-size-to($base-font-size, 1);
-
-//   }
-// }

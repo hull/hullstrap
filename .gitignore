@@ -1,6 +1,6 @@
 # Ignore ruby config
 /.sass-cache
-.cache
+/.cache/*
 # Ignore bundler config
 .DS_Store
 /environment.yml
