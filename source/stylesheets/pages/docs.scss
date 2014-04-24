@@ -1,3 +1,4 @@
+$docs-font-size: 15px;
 .docs-page{
   @include padding-leader(1);
   background-color: $off_white;
@@ -13,7 +14,7 @@
     @include rhythm(0,0,0,0);
   }
   p{
-    @include adjust-font-size-to(16px);    
+    @include adjust-font-size-to($docs-font-size);    
     @include rhythm(0,0,0,0);
     color: $light_text;
   }
@@ -29,50 +30,41 @@
     @include leading-border(1px, 1);
   }
   h1{
-    @include adjust-font-size-to($h1_font_size*0.75);    
-    @include adjust-leading-to(1,$h1_font_size*0.75);    
-    @include rhythm(2,0,0,.5,$h1_font_size*0.75); 
-    @extend .accented;   
+    @include adjust-font-size-to($h2_font_size);    
+    @include adjust-leading-to(1,$h2_font_size);    
+    @include rhythm(2,0,0,.5,$h2_font_size); 
+    // @extend .accented;   
   }
   h2{
-    @include adjust-font-size-to($h2_font_size*0.75);    
-    @include adjust-leading-to(1,$h2_font_size*0.75);    
-    @include rhythm(2,0,0,1,$h2_font_size*0.75);    
-  }
-  h3{
-    @include adjust-font-size-to($h3_font_size);    
-    @include adjust-leading-to(1,$h3_font_size);    
-    @include rhythm(1,0,0,1,$h3_font_size);    
-  }
-  h4{
     @include adjust-font-size-to($h4_font_size);    
     @include adjust-leading-to(1,$h4_font_size);    
-    @include rhythm(1,0,0,1,$h4_font_size);    
+    @include rhythm(2,0,0,1,$h4_font_size);   
+  }
+  h3{
+    @include adjust-font-size-to($h5_font_size);    
+    @include adjust-leading-to(1,$h5_font_size);    
+    @include rhythm(2,0,0,1,$h5_font_size);    
+  }
+  h4{
+    @include adjust-font-size-to($h5_font_size);    
+    @include adjust-leading-to(1,$h5_font_size);    
+    @include rhythm(2,0,0,1,$h5_font_size);    
   }
   h5{
-    @include adjust-font-size-to($h5_font_size);    
-    @include adjust-leading-to(1,$h5_font_size);    
-    @include rhythm(1,0,0,1,$h5_font_size);    
+    @include adjust-font-size-to($h6_font_size);    
+    @include adjust-leading-to(1,$h6_font_size);    
+    @include rhythm(1,0,0,1,$h6_font_size);    
   }
   h6{
-    @include adjust-font-size-to($h5_font_size);    
-    @include adjust-leading-to(1,$h5_font_size);    
-    @include rhythm(1,0,0,1,$h5_font_size);    
+    @include adjust-font-size-to($h6_font_size);    
+    @include adjust-leading-to(1,$h6_font_size);    
+    @include rhythm(1,0,0,1,$h6_font_size);    
   }
-  li{
-    list-style-type: disc; 
-  }
-  blockquote{
-    // font-size: 1em;
-  }
-  p,li{
-    @include adjust-font-size-to(16px);
-    color: $light_text;
 
-  }
-  p{
-    @include rhythm(0,0,0,1, 14.5px);
-  }
+  > h1{ @include font-weight-semibold; }
+  > h2{ @include font-weight-normal; }
+  > h4{ @include font-weight-thin; }
+
   h1, h2, h3, h4, h5, h6{
     .docs-anchor{
       margin-left: $padding-base-horizontal/2;
@@ -85,6 +77,21 @@
         opacity: 1;
       }
     }
+  }
+
+  li{
+    list-style-type: disc; 
+  }
+  blockquote{
+    @include adjust-font-size-to($base-font-size, 1, $base-font-size);
+  }
+
+  p,li{
+    @include adjust-font-size-to($docs-font-size);
+    color: $light_text;
+  }
+  p{
+    @include rhythm(0,0,0,1, $docs-font-size);
   }
   a:not(.btn){
     border-bottom: 1px solid transparentize($tertiary,.8);
@@ -124,6 +131,45 @@
   }
 }
 
+.api-sections{
+  table code{
+    white-space: normal;
+  }
+}
+.api-route{
+  .panel-heading{
+    padding: 0;
+    background-color: #ECF2FA;
+    padding-right: $padding-base-horizontal; 
+    h5{
+      color: #566170;
+      @include rhythm(0,1,1,0, $h5_font_size);
+      @include font-weight-bold;
+    }
+    .code{
+      @include font-weight-normal;
+      font-family: $font-family-monospace;
+    }
+    .method{
+      padding-left: $padding-base-horizontal*2; 
+      padding-right: $padding-base-horizontal*2; 
+      margin-right: $padding-base-horizontal; 
+      &.GET {color: #4B74A3; background-color: #ccd6e2 }
+      &.POST {color: #509A45; background-color: #cddfca }
+      &.DELETE {color: #F20C00; background-color: #f5bcb9 }
+      &.PUT {color: #F38630; background-color: #f6dac5 }
+    }
+    .method-container{
+      background-color: $blue_gray_lightest;
+    }
+    code{
+      color: $black_2;
+      background-color: transparent;
+    }
+
+
+  }
+}
 
 .docs-article{
   @extend .docs-page;

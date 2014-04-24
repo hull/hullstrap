@@ -7,6 +7,7 @@
   @include trailing-border(2px, 1);
 }
 
+
 .table > thead > tr > th,
 .table > thead > tr > td,
 .table > tbody > tr > th,
@@ -22,24 +23,40 @@
   // @include leading-border(1px, .5);
 }
 
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > th,
-.table-bordered > tbody > tr > td,
-.table-bordered > tfoot > tr > th,
-.table-bordered > tfoot > tr > td{
-  @include box-shadow(inset 1px 1px 0 0 rgba(233, 233, 233, 1));
-  // @include rhythm-borders(2px,.5);
-  padding: $base-line-height/2 - 1;
+.table{
+  > thead, > tbody{
+    > tr {
+      > th, > td {
+        > p{
+          @include rhythm(.25,0,0,.25);
+        }
+      }
+    }
+  }
 }
 
-.table > thead > tr > th > p,
-.table > thead > tr > td > p,
-.table > tbody > tr > th > p,
-.table > tbody > tr > td > p,
-.table > tfoot > tr > th > p,
-.table > tfoot > tr > td > p{
-  @include rhythm(.25,0,0,.25);
+.table-bordered{
+  > thead, > tbody{
+    > tr {
+      > th, > td {
+        @include box-shadow(inset 1px 1px 0 0 rgba(233, 233, 233, 1));
+        padding: $base-line-height/2;
+      }
+    }
+  }
+}
+
+.table-condensed{
+  > thead, > tbody{
+    > tr {
+      > th, > td {
+        padding: $base-line-height/4;
+        > p{
+          @include rhythm(0,0,0,0);
+        }
+      }
+    }
+  }
 }
 
 .table-bordered{
@@ -54,3 +71,4 @@
     cursor: pointer;
   }
 }
+

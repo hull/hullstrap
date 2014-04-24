@@ -4,10 +4,13 @@
   }
 
   li a {
-    @include adjust-font-size-to(14px, 1);
+    @include adjust-font-size-to(12px, .75);
     @include rhythm(0,.125,.125,0);
     border-left: 1px solid transparent;
     color: $light_text;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   a.active{
@@ -53,40 +56,18 @@
     border-left-color: $primary;
     background-color: transparent;
   }
-  .nav{
-    // li>a:active, li>a:hover, li>a.active, li.active>a{
-    // }
-
-    // > li{
-    //   > a{
-    //   }
-    // }
-
-    // .nav{
-    //   > li > a{
-    //   }
-    //   .nav{
-    //     > li > a{
-    //       opacity: .7;
-    //       padding-left: $padding-base-horizontal*3;
-    //     }
-    //     @include padding-trailer(.5);
-    //   }
-    // }
-  }
-
 
 }
-@media (max-width: $screen-md-max){
+@media (max-width: $screen-sm-max){
   .navbar-sidebar.affix{
     position: static;
   }
 }
-@media (min-width: $screen-md-min){
+@media (min-width: $screen-sm-min){
   .navbar-sidebar.affix{
     position: fixed;
     top: 0;
-    width: 238px;
+    width: 162px;
     // height: 100%;
     bottom: 0;
     overflow: scroll;
@@ -94,7 +75,7 @@
       width: 278px;
     }
     .col-sm-2 &{
-      width: 198px;
+      width: 125px;
     }
     &.affix-bottom{
       // bottom: 99px;

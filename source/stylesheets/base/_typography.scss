@@ -84,23 +84,51 @@ pre{
 h1, h2, h3, h4, h5, h6{
   color: $black_2;
   &.underlined{
-    // Bottom underline
     @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
-    background-position:  left ($base-line-height*2 - 2px);
     background-repeat: no-repeat;
-    display: block;
+    display: inline-block;
   }
+  &.small-title{
+    text-transform: uppercase;
 
-
-
-}
-h1.accented, h2.accented, h3.accented, h4.accented, h5.accented, h6.accented, .accented{
-  @include font-weight-bold;
-  color: $accent_text_header;
-  small{
-    color: lighten($accent_text_header, 10%);
+  }
+  &.accented{
+    @include font-weight-bold;
+    color: $accent_text_header;
+    small{
+      color: lighten($accent_text_header, 10%);
+    }
   }
 }
+
+h1.underlined{
+  @include padding-trailer(.5, $h1_font_size);
+  @include trailer(.5, $h1_font_size);
+  background-position:  left ($base-line-height*2 - 2px);
+}
+h2.underlined{
+  @include padding-trailer(.5, $h2_font_size);
+  @include trailer(.5, $h2_font_size);
+  background-position:  left ($base-line-height*2 - 2px);
+}
+h3.underlined{
+  @include padding-trailer(.5, $h3_font_size);
+  @include trailer(.5, $h3_font_size);
+  background-position:  left ($base-line-height*1.5 - 2px);
+}
+h4.underlined{
+  @include padding-trailer(.5, $h4_font_size);
+  @include trailer(.5, $h4_font_size);
+  background-position:  left ($base-line-height*1.5 - 2px);
+}
+h5.underlined{
+  @include padding-trailer(.5, $h5_font_size);
+  @include trailer(.5, $h5_font_size);
+  background-position:  left ($base-line-height*1.5 - 2px);
+}
+
+
+
 .bold{   @include font-weight-bold; }
 .normal{ @include font-weight-normal; }
 .thin{   @include font-weight-light; }
