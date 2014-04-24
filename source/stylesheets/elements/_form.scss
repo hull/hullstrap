@@ -128,3 +128,6 @@ select.form-control{
 .input-group-btn {
   font-size: inherit;
 }
+.input-block-level{
+  @extend .form-control;
+}

@@ -1,10 +1,6 @@
 .navbar-sidebar{
-  .header{
-    @include trailer(0);
-  }
-
   li a {
-    @include adjust-font-size-to(12px, .75);
+    @include adjust-font-size-to(14px,1);
     @include rhythm(0,.125,.125,0);
     border-left: 1px solid transparent;
     color: $light_text;
@@ -18,7 +14,9 @@
   }
 
   .header {
-    @include rhythm(0,0,0,0);
+    @include rhythm(0,0,0,0, 14px);
+    @include adjust-leading-to(1, 14px);
+    @include adjust-font-size-to(14px,1);
     @include font-weight-bold;
     color: $red;
     display: block;
@@ -67,7 +65,7 @@
   .navbar-sidebar.affix{
     position: fixed;
     top: 0;
-    width: 162px;
+    width: 243px;
     // height: 100%;
     bottom: 0;
     overflow: scroll;
@@ -75,7 +73,7 @@
       width: 278px;
     }
     .col-sm-2 &{
-      width: 125px;
+      width: 188px;
     }
     &.affix-bottom{
       // bottom: 99px;

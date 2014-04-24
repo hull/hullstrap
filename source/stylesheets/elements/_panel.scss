@@ -3,13 +3,14 @@
   @include rhythm(0,0,0,.5);
   border:0;
   padding: 0; 
+  @include box-shadow(0 0 0 1px $blue_gray_lightest);
 }
-.panel-body, .panel-default{
-  background:transparent; 
-}
+// .panel-body, .panel-default{
+//   background:transparent; 
+// }
 
 .panel-default > .panel-heading{
-  background: $white; 
+  // background: $white; 
   @include box-shadow(inset 0 -1px 0 $blue_gray_lightest);
 }
 .panel-heading, .panel-body{
@@ -17,4 +18,8 @@
   padding-left: $padding-base-horizontal;
   padding-right: $padding-base-horizontal;
   @include rhythm(0,.5,.5,0);
+}
+
+.panel-footer{
+  border-top:0;
 }

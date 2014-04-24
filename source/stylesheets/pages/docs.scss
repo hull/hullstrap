@@ -48,7 +48,7 @@ $docs-font-size: 15px;
   h4{
     @include adjust-font-size-to($h5_font_size);    
     @include adjust-leading-to(1,$h5_font_size);    
-    @include rhythm(2,0,0,1,$h5_font_size);    
+    @include rhythm(1,0,0,1,$h5_font_size);    
   }
   h5{
     @include adjust-font-size-to($h6_font_size);    
@@ -79,7 +79,7 @@ $docs-font-size: 15px;
     }
   }
 
-  li{
+  > ul > li{
     list-style-type: disc; 
   }
   blockquote{
@@ -101,7 +101,7 @@ $docs-font-size: 15px;
       text-decoration:none;
     }
   }
-  ul{
+  > ul{
     @include rhythm(0,0,0,1);
     margin-left: 1em;
     padding-left: 0;
@@ -134,6 +134,9 @@ $docs-font-size: 15px;
 .api-sections{
   table code{
     white-space: normal;
+  }
+  table td>p{
+    @include adjust-font-size-to(12px);
   }
 }
 .api-route{
@@ -187,5 +190,16 @@ $docs-font-size: 15px;
   td,th{
     color: $light_text;
     @include adjust-font-size-to(14px);
+  }
+}
+
+
+.component-page{
+  .panel-heading{
+    @include rhythm(0,1,1,0);
+    margin-top: 0;
+    h1, h2, h3, h4, h5, h6{
+      @include rhythm(0,0,0,0);
+    }
   }
 }

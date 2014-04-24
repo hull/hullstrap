@@ -1,1 +1,11 @@
 // Overrides for ladda to work with spin.js 2.0;
+.ladda-button .ladda-spinner{
+  width: 1px;
+  height: 1px;
+  margin: 0;
+}
+
+
+.ladda-button[data-style=zoom-out] .ladda-spinner{
+  margin-left: 0;
+}
