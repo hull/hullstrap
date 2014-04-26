@@ -12,8 +12,8 @@
   background-color:$primary_bg_color;
   color: $primary_bg_text;
   .btn{
-    @include btn-rounded;
-    @include btn-white;
+    // @include btn-rounded;
+    // @include btn-white;
     margin-right: $padding-base-horizontal*2;
   }
 }

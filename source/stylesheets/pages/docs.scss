@@ -1,7 +1,6 @@
 $docs-font-size: 15px;
 .docs-page{
   @include padding-leader(1);
-  background-color: $off_white;
   p, li{
     // -webkit-font-smoothing:subpixel-antialiased;
   }
@@ -77,6 +76,9 @@ $docs-font-size: 15px;
         opacity: 1;
       }
     }
+    +p{
+      @include leader(1, $docs-font-size);
+    }
   }
 
   > ul > li{
@@ -136,7 +138,7 @@ $docs-font-size: 15px;
     white-space: normal;
   }
   table td>p{
-    @include adjust-font-size-to(12px);
+    // @include adjust-font-size-to($dod);
   }
 }
 .api-route{
@@ -196,8 +198,7 @@ $docs-font-size: 15px;
 
 .component-page{
   .panel-heading{
-    @include rhythm(0,1,1,0);
-    margin-top: 0;
+    @include rhythm(0,0,0,0);
     h1, h2, h3, h4, h5, h6{
       @include rhythm(0,0,0,0);
     }

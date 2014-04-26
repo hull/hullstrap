@@ -15,6 +15,7 @@ $h1_line_height: 3   !default;
     Import Compass Framework
 \*------------------------------------*/
 @import "compass/css3";
+
 // @import "compass/reset";
 @import "compass/typography/text/replacement";
 @import "compass/utilities/general/clearfix";
@@ -36,6 +37,16 @@ $h1_line_height: 3   !default;
 \*------------------------------------*/
 @import "base/variables";
 @import "bootstrap";
+
+
+/*------------------------------------*\
+    Addons
+\*------------------------------------*/
+@import "animate.css/animate";
+@import "drop/css/extras/drop-twitter-bootstrap";
+@import "drop/css/drop-theme-arrows-bounce";
+
+
 
 // $font-unit: 1rem;
 @include establish-baseline();  // "This is where the magic happens" —Everyone on MTV Cribs.

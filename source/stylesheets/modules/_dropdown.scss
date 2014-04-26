@@ -1,9 +1,12 @@
 .dropdown-menu{
-  background-color: #fff;
+  .open &{
+    @extend .animated;
+    @extend .fadeInUp;
+  }
+  background-color: $white;
   @extend %white-background;
-  top: 90%;
-  @include border-radius(5px !important); 
   border: 0;
+  @include border-radius(5px !important); 
   @include box-shadow(0 0px 12px rgba(0, 0, 0, 0.1));
   background-clip: padding-box;
 
@@ -19,33 +22,19 @@
     display: inline-block;
     border-left: 7px solid rgba(0,0,0,0);
     border-right: 7px solid rgba(0,0,0,0);
-    border-bottom: 7px solid #CCC;
-    border-bottom-color: white;
+    border-bottom: 7px solid $white;
     position: absolute;
     top: -7px;
     right: 29px;
-  }
-}
-
-.form-invisible{
-  .form-control{
-    border:none;
-    @include border-radius(0);
-    @include transition(all .2s ease-out);
-    background-color: rgba(115, 124, 129, 0);
-    color: #333;
-    @include box-shadow(none);
-    @include leader(0);
-    @include trailer(0);
-    &:focus{
-      @include box-shadow(none);
-      background-color: rgba(115, 124, 129, 0.12); 
+    .dropup &{
+      top: auto;
+      bottom: -14px;
+      border-top: 7px solid $white;
+      border-bottom-color: transparent;
+    }
+    .left &{
+      right: auto;
+      left: 29px;
     }
   }
-  .form-group{
-    @include trailer(0);
-  }
-}
-.pad{
-  padding:0 $padding-base-horizontal*2;
 }

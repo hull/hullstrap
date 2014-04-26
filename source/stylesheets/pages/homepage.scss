@@ -50,11 +50,16 @@
     position: relative;
     z-index: 2;
   }
-  .cta-btn{
+  .btn-cta{
     @include btn-lg;
+    @include btn-rounded;
     width: 100%;
   }
   .btn-signup{
+    @include btn-white;
+    b.caret{
+      display: none;
+    }
     @include font-weight-bold;
   }
   .btn-discover{
@@ -64,7 +69,7 @@
 
   @media (min-width: $screen-sm-min){
     text-align: left;
-    .cta-btn{
+    .btn-cta{
       display: inline-block;
       width: auto;
     }

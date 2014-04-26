@@ -10,3 +10,45 @@
   @include transition(all 0.2s ease-out);
   @include easeOutQuint;
 }
+
+
+
+.animated {
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+// @mixin popIn(){
+//   0% {
+//     opacity: 0;
+//     @include transform(translateY(2000px));
+//   }
+
+//   60% {
+//     opacity: 1;
+//     @include transform(translateY(-30px));
+//   }
+
+//   80% {
+//     @include transform(translateY(-10px));
+//   }
+
+//   100% {
+//     @include transform(translateY(0));
+//   }
+// }
+
+// @-webkit-keyframes {
+//   @include popIn();
+// }
+
+// @keyframes popIn {
+//   @include popIn();
+// }
+
+// .popIn {
+//   -webkit-animation-name: popIn;
+//   animation-name: popIn;
+// }

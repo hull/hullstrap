@@ -45,6 +45,8 @@
   }
 
   .navbar-item{
+    display: inline-block;
+    text-decoration: none;
     @extend %animate;
     letter-spacing: 0.01em;
     @include font-weight-light;
@@ -65,6 +67,10 @@
   .open > .navbar-item-highlight{
     @include btn-transparent;
   }
+  .open > .navbar-item{
+    background-color: rgba(0, 0, 0, 0.12);
+    @include box-shadow(none);
+  }
 }
 
 .navbar-branded{
@@ -82,9 +88,6 @@
   }
   .user-login-dropdown{
     @media (max-width: $screen-sm-max){
-      .signup-dropdown{
-        background-color: $white;
-      }
       .dropdown-menu::before{
         display: none;
       }

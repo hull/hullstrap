@@ -30,6 +30,9 @@ form{
 
 .form-group{
   @include rhythm(0,0,0,1);
+  &.pad{
+    padding:0 $padding-base-horizontal*2;
+  }
 }
 .form-control{
   height: auto;
@@ -130,4 +133,26 @@ select.form-control{
 }
 .input-block-level{
   @extend .form-control;
+}
+
+
+
+.form-invisible{
+  .form-control{
+    border:none;
+    @include border-radius(0);
+    @include transition(all .2s ease-out);
+    background-color: rgba(115, 124, 129, 0);
+    color: #333;
+    @include box-shadow(none);
+    @include leader(0);
+    @include trailer(0);
+    &:focus{
+      @include box-shadow(none);
+      background-color: rgba(115, 124, 129, 0.12); 
+    }
+  }
+  .form-group{
+    @include trailer(0);
+  }
 }

@@ -3,7 +3,13 @@
     display: none;
   }
 }
-.signup-dropdown{
+.drop-element.drop-theme-arrows-bounce .drop-content{
+  padding:0;
+  // @include padding-leader(1);
+  // @include padding-trailer(1); 
+}
+.drop-form{
+  // background-color: $white;
   width: 300px;
   // padding:0 $padding-base-horizontal;
   @include rhythm(0,.5,.5,0);
