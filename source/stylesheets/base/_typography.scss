@@ -59,8 +59,14 @@ pre{
   font-family: Menlo, monospace;
   border-radius: 0;
   border:none;
-  background: rgba(234, 238, 241, 1);
+  background: $off_white;
   color:$light_text;
+}
+
+code{
+  color: $light_text;
+  background-color: $off_white;
+  @include adjust-font-size-to(13px);
 }
 
 // blockquote {

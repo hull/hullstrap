@@ -4,31 +4,18 @@
 ******************
 */
 
-.blue-section{
-  @extend %blue-background;
-  // min-height: 528px;
-  // min-height: 100vh;
-  position: relative;
-  background-color:$primary_bg_color;
-  color: $primary_bg_text;
-  .btn{
-    // @include btn-rounded;
-    // @include btn-white;
-    margin-right: $padding-base-horizontal*2;
-  }
-}
-
-
 %section{
   // @include rhythm(0,2,2,0);
   @include rhythm(0,3,3,0);
 }
 
+.blue-section{
+  @extend %blue-background;
+}
+
 .inverted-section{
   @extend %section;
   @extend %inverted-background;
-  @extend %inverted;
-  @extend .text-center;
 }
 
 .bottom-border-section{

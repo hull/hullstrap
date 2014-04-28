@@ -1,13 +1,42 @@
-%inverted-background{
-  // @include background-image($secondary_bg_gradient, inline-image('noise.png'));
-  // @include background-image(
-  //   radial-gradient(1500px 500px at top, transparentize(white,.75) 0, transparentize(white,1) 100%),
-  //   inline-image('noise.png')
-  // );
-  // @include background-image(
-  //   radial-gradient(1500px 500px at top, rgba(173, 179, 204, 0.3) 0%, rgba(173, 179, 204, 0.0) 100%),
-  //   inline-image('noise.png')
-  // );
+@mixin blue-background-colors{
+  color: $primary_bg_text;
+  h1, h2, h3, h4, h5, h6, a{
+    color: $primary_bg_text;
+  }
+  .btn-pill{
+    @include btn-transparent();
+  }
+}
+
+@mixin inverted-background-colors{
+  -webkit-font-smoothing:antialiased;
+  color: $secondary_bg_text;   
+  h1, h2, h3, h4, h5, h6{
+    color: $white;
+  }
+  .btn-pill{
+    @include btn-transparent();
+  }
+}
+
+@mixin inverted-border-bottom(){
+  $start_white: transparentize(white, .92);
+  $end_white  : transparentize(white, 1);
+
+  $start_black: transparentize(black, .92);
+  $end_black  : transparentize(black, 1);
+  background: none;
+  @include background-image(
+    radial-gradient(50% 1px at 50% 100%,             $start_white, $start_white 70%, $end_white 100%),
+    radial-gradient(50% 1px at 50% calc(100% - 1px), $start_black, $start_black 70%, $end_black 100%)
+    // radial-gradient(center center, ellipse cover, #ffeda3, #ffc800)
+  );
+}
+
+@mixin inverted-background{
+  background-position:  top center;
+  background-repeat:    no-repeat;
+  background-color:     $secondary_bg_color;
   @include background-image(
     radial-gradient(1500px 500px at top,
       transparentize(lighten($secondary_bg_color, 50%), .7) 0%,
@@ -15,12 +44,19 @@
     ),
     inline-image('noise.png')
   );
-  background-position:  top center;
-  background-repeat:    repeat;
-  background-color: $secondary_bg_color;
+  @include inverted-background-colors;
 }
+%inverted-background{
+  @include inverted-background;
+}
+
+%blue-background{
+  background-color:$primary_bg_color;
+  @include background-image($primary_bg_image);
+  @include blue-background-colors
+}
+
 %inverted-page{
-  @extend %inverted;
   @extend %inverted-background;
   .footer{
     box-shadow: none;
@@ -35,36 +71,13 @@
     }
   }
 }
-%inverted{
-  -webkit-font-smoothing:antialiased;
-  color: $secondary_bg_text;   
-  h1, h2, h3, h4, h5, h6{
-    color: $white;
-  }
-  .btn-pill{
-    @include btn-transparent();
-  }
-}
-
-%blue-background{
-  color: $secondary_bg_text;   
-  h1, h2, h3, h4, h5, h6{
-    color: $white;
-  }
-  .btn-pill{
-    @include btn-transparent();
-  }
-  background-color:$primary_bg_color;
-  @include background-image($primary_bg_image);
-}
-
 .inverted-jumbotron{
   @extend .jumbotron;
-  @extend %inverted;
+  @include inverted-background-colors;
   @include inverted-border-bottom;
 }
 
-%white-background{
+%white-background-colors{
   p{
     color: $text-color;
   }

@@ -6,13 +6,20 @@
   > li{
     > a{
       @include rhythm(0,.5,.5,0);
-      // @extend .btn;
     }
 
     &.active{
       > a, >a:hover, >a.active{
         @extend .btn-primary; 
       }
+    }
+  }
+}
+
+.nav{
+  > li > a{
+    &:hover, &:focus{
+      background-color: transparentize($blue_gray_dark, .85)
     }
   }
 }

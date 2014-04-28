@@ -3,7 +3,7 @@
     @include adjust-font-size-to(14px,1);
     @include rhythm(0,.125,.125,0);
     border-left: 1px solid transparent;
-    color: $light_text;
+    // color: $light_text;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;

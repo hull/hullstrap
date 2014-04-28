@@ -18,29 +18,34 @@
   }
 }
 
+.navbar-brand{
+  @include adjust-font-size-to($base-font-size);
+  @include inline-retina-sprite('logo/navbar-logo-dark.png');
+  height: $base-line-height*2;
+  background-position: left center;
+  background-size: contain;
+  background-repeat:no-repeat;
+  @include rhythm(.5,0,0,.5);
+  margin-right:$padding-base-horizontal*2;
+}
 .navbar{
   border:none;
   @include rhythm(0,0,0,0);
-  .navbar-brand{
-    @include adjust-font-size-to($base-font-size);
-    @include inline-retina-sprite('logo/navbar-logo-dark.png');
-    height: $base-line-height*2;
-    background-position: left center;
-    background-size: contain;
-    background-repeat:no-repeat;
-    @include rhythm(.5,0,0,.5);
-    margin-right:$padding-base-horizontal*2;
-  }
   > .container .navbar-brand,
   > .container .navbar-header{
     margin-left: 0;
   }
 
+  > .container .navbar-header{
+    margin:0; 
+  }
+
   > .container .navbar-brand{
     @media screen and (max-width: $screen-sm) {
-      margin-left: -110px;
-      left: 50%;
-      position: relative;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      float: none; 
     }
   }
 
@@ -74,13 +79,8 @@
 }
 
 .navbar-branded{
-  .navbar-collapse{
-    @media (max-width: $screen-sm-max){
-      max-height: none;
-    }
-  }
   // @include box-shadow(0px 2px 2px 0px rgba(0,0,0,0.14));
-  @extend %blue-background;
+  // @extend %blue-background;
   -webkit-font-smoothing:subpixel-antialiased;
   border:none;
   .container{

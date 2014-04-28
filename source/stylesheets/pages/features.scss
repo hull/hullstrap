@@ -1,4 +1,8 @@
 body.features{
-  min-height: 1000px;
-  @extend %inverted-page;
+  .page{
+    @extend %inverted-page;
+  }
+  .offcanvas-content{
+    background: none;
+  }
 }

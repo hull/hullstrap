@@ -4,90 +4,124 @@
  */
 html,
 body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  // overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 /*
  * Off Canvas
  * --------------------------------------------------
  */
+
+body{
+  @include background-image($primary_bg_image);
+}
+.offcanvas-content{
+  .page, .footer{
+    background: white;
+  }
+}
 @media screen and (max-width: $screen-sm) {
-  $offcanvas_size: 230px;
+    html, body, .offcanvas-container, .offcanvas-content, .offcanvas-sidebar-left, .offcanvas-sidebar-right{
+      height: 100%;
+    }
+
   .offcanvas-container{
-    @include transform(0);
-    @include transition(all .15s ease-out);
-    @include easeOutQuint;
+    // @include background-image($primary_bg_image);
+    -webkit-perspective: 1500px;
+    // position: relative;
+    // overflow: scroll;
   }
-  .offcanvas-content{
-    z-index: 2;
-    background-color: white;
-    // min-height: 100vh;
+  .offcanvas-toggle{
+    position: absolute;
+    z-index: 1001;
+    top:0;
+    margin-left: 15px;
+    margin-right: 15px;
   }
-  .offcanvas-toggle,  .offcanvas-toggle .icon-bar{
+  .offcanvas-toggle[data-side='right']{
+    right: 0;
+    margin-right: 0;
+  }
+  .offcanvas-toggle .icon-bar{
     @include transform(0);
-    @include transition(all .25s ease-out .10s);
+    @include transition(all .25s cubic-bezier(0.230, 1.000, 0.320, 1.000) .10s);
     @include easeOutQuint;
     position: relative;
     top: 0;
   }
+  .offcanvas-content{
+    // background: white;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    left: 0;
+    height: 100%;
+    z-index: 99;
+    @include transition(all .5s cubic-bezier(0.230, 1.000, 0.320, 1.000));
+    @include transform(translate3d(0,0,0));
+  }
+  .offcanvas-sidebars-container{
+    position: absolute;
+    width: 100%;
+  }
+  .offcanvas-sidebar{
+    .navbar-form{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      left: -100%;
+      margin: 0;
+      @include box-shadow(none);
+      .btn{
+        display: none;
+      } 
+    }
+    .navbar-brand{
+      @include inline-retina-sprite('logo/icon/white-small.png');
+      display: block;
+      background-position: 10px 0px;
+      background-size: contain;
+      height: $base-line-height;
+      float: none;
+      padding-left: $padding-base-horizontal; 
+    }
+    @include transition(all .5s cubic-bezier(0.230, 1.000, 0.320, 1.000));
+    .header, .accented{
+      color: $secondary;
+    }
 
-  .offcanvas-sidebar-left,
-  .offcanvas-sidebar-right{
-    @include leader(0);
-    // @include padding-leader(0);
-    position: fixed;
-    z-index: 1;
-    width: $offcanvas_size;
-    top: 0;
-    bottom: 0;
-    margin: 0;
+    .navbar-sidebar{
+      .navbar-nav{
+        margin:0; 
+      }
+      > .nav > li > a{
+        &:hover, &:active, &.active, .open & {
+            background-color: transparent;
+        }
+      }
+
+      .active > a, a.active{
+        border-left-color: $secondary;
+        color: $secondary;
+      }
+      
+    }
+
   }
   .offcanvas-sidebar-left{
-    left: -$offcanvas_size;
-    // @include box-shadow( 1px 0 0 1px rgba(0,0,0,.6),inset -2px 0 8px rgba(0,0,0,.07));
+    @include blue-background-colors;
+    background: transparent;
+    @include transform(translate3d(-100%,0,0));
   }
   .offcanvas-sidebar-right{
-    right: -$offcanvas_size;
-    // @include box-shadow( inset 2px 0 8px rgba(0,0,0,.07));
+    position: absolute;
+    right: 0;
+    // @include inverted-background;
+    @include blue-background-colors;
+    z-index: 1000;
+    @include transform(translate3d(100%,0,0));
   }
 
-  .offcanvas-active{
-    .offcanvas-content{
-      z-index: 3;
-    }
-    width: 100%;
-    position: fixed;
-  }
-
-  .offcanvas-active.offcanvas-active-right{
-    .offcanvas-toggle[data-side='right'] .icon-bar{
-      background-color: white;
-    }
-    .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(2){
-      top: 8px;
-      @include transform(rotate(45deg)); 
-    }
-    .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(3){
-      opacity: 0;
-    }
-    .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(4){
-      top: -8px;
-      @include transform(rotate(-45deg)); 
-    }
-    .offcanvas-sidebar-left{
-      z-index: 1;
-      position: fixed;
-      overflow: scroll;
-      height: 100vh;
-    }
-    .offcanvas-sidebar-right{
-      z-index: 2;
-      position: fixed;
-      overflow: scroll;
-      height: 100vh;
-    }
-    @include transform(translate3d(-$offcanvas_size,0,0));
-  }
-  .offcanvas-active.offcanvas-active-left{
+  .offcanvas-active-left{
+    overflow: hidden;
     .offcanvas-toggle[data-side='left'] .icon-bar{
       background-color: white;
     }
@@ -102,62 +136,151 @@ body {
       top: -8px;
       @include transform(rotate(-45deg)); 
     }
-    .offcanvas-sidebar-right{
-      z-index: 1;
-      position: fixed;
-      overflow: scroll;
-      height: 100vh;
+    .offcanvas-content{
+      // overflow: hidden;
+      @include transform(translate3d(75%, 0, -600px));
+      opacity: .7;
+      overflow: hidden;
     }
     .offcanvas-sidebar-left{
-      z-index: 2;
-      position: fixed;
-      overflow: scroll;
-      height: 100vh;
+      @include transform(translate3d(0,0,0));
     }
-    @include transform(translate3d($offcanvas_size,0,0));
+    .navbar-form{
+      left: 50%;
+    }
+  }
+  .offcanvas-active-right{
+    overflow: hidden;
+    .offcanvas-toggle[data-side='right'] .icon-bar{
+      background-color: white;
+    }
+    .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(2){
+      top: 8px;
+      @include transform(rotate(45deg)); 
+    }
+    .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(3){
+      opacity: 0;
+    }
+    .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(4){
+      top: -8px;
+      @include transform(rotate(-45deg)); 
+    }
+    .offcanvas-content{
+      // overflow: hidden;
+      // @include transform(translate3d(75%, 0, -600px));
+      @include transform(translate3d(-75%, 0, 0));
+    }
+    .offcanvas-sidebar-right{
+      @include transform(translate3d(0,0,0));
+    }
   }
 
-  // .row-offcanvas {
+}
+
+@media screen and (min-width: $screen-sm-min) {
+  // $offcanvas_size: 230px;
+  // .offcanvas-container{
+  //   @include transform(0);
+  //   @include transition(all .15s cubic-bezier(0.230, 1.000, 0.320, 1.000));
+  //   @include easeOutQuint;
+  // }
+  // .offcanvas-content{
+  //   z-index: 2;
+  //   background-color: white;
+  //   // min-height: 100vh;
+  // }
+  // .offcanvas-toggle,  .offcanvas-toggle .icon-bar{
+  //   @include transform(0);
+  //   @include transition(all .25s cubic-bezier(0.230, 1.000, 0.320, 1.000) .10s);
+  //   @include easeOutQuint;
   //   position: relative;
-  //   -webkit-transition: all .25s ease-out;
-  //      -moz-transition: all .25s ease-out;
-  //           transition: all .25s ease-out;
-  // }
-
-  // .row-offcanvas-right {
-  //   right: 0;
-  // }
-
-  // .row-offcanvas-left {
-  //   left: 0;
-  // }
-
-  // .row-offcanvas-right
-  // .sidebar-offcanvas {
-  //   right: -50%; /* 6 columns */
-  // }
-
-  // .row-offcanvas-left
-  // .sidebar-offcanvas {
-  //   left: -50%; /* 6 columns */
-  // }
-
-  // .row-offcanvas-right.active {
-  //   right: 50%; /* 6 columns */
-  // }
-
-  // .row-offcanvas-left.active {
-  //   left: 50%; /* 6 columns */
-  // }
-
-  // .sidebar-offcanvas {
-  //   // position: absolute;
   //   top: 0;
-  //   width: 50%; /* 6 columns */
   // }
-  // .offcanvas-toggle{
-  //   color: white;
-  //   z-index: 1000;
-  //   opacity: .7;  
+
+  .offcanvas-sidebar-left,
+  .offcanvas-sidebar-right{
+    position: absolute;
+    // @include leader(0);
+    // @include padding-leader(0);
+    // z-index: 1;
+    // width: $offcanvas_size;
+    // top: 0;
+    // bottom: 0;
+    // margin: 0;
+  }
+  // .offcanvas-sidebar-left{
+  //   left: -$offcanvas_size;
+  //   // @include box-shadow( 1px 0 0 1px rgba(0,0,0,.6),inset -2px 0 8px rgba(0,0,0,.07));
+  // }
+  // .offcanvas-sidebar-right{
+  //   right: -$offcanvas_size;
+  //   // @include box-shadow( inset 2px 0 8px rgba(0,0,0,.07));
+  // }
+
+  // .offcanvas-active{
+  //   .offcanvas-content{
+  //     z-index: 3;
+  //   }
+  //   width: 100%;
+  //   position: fixed;
+  // }
+
+  // .offcanvas-active.offcanvas-active-right{
+  //   .offcanvas-toggle[data-side='right'] .icon-bar{
+  //     background-color: white;
+  //   }
+  //   .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(2){
+  //     top: 8px;
+  //     @include transform(rotate(45deg)); 
+  //   }
+  //   .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(3){
+  //     opacity: 0;
+  //   }
+  //   .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(4){
+  //     top: -8px;
+  //     @include transform(rotate(-45deg)); 
+  //   }
+  //   .offcanvas-sidebar-left{
+  //     z-index: 1;
+  //     position: fixed;
+  //     overflow: scroll;
+  //     height: 100vh;
+  //   }
+  //   .offcanvas-sidebar-right{
+  //     z-index: 2;
+  //     position: fixed;
+  //     overflow: scroll;
+  //     height: 100vh;
+  //   }
+  //   @include transform(translate3d(-$offcanvas_size,0,0));
+  // }
+  // .offcanvas-active.offcanvas-active-left{
+  //   .offcanvas-toggle[data-side='left'] .icon-bar{
+  //     background-color: white;
+  //   }
+  //   .offcanvas-toggle[data-side='left'] .icon-bar:nth-child(2){
+  //     top: 8px;
+  //     @include transform(rotate(45deg)); 
+  //   }
+  //   .offcanvas-toggle[data-side='left'] .icon-bar:nth-child(3){
+  //     opacity: 0;
+  //   }
+  //   .offcanvas-toggle[data-side='left'] .icon-bar:nth-child(4){
+  //     top: -8px;
+  //     @include transform(rotate(-45deg)); 
+  //   }
+  //   .offcanvas-sidebar-right{
+  //     z-index: 1;
+  //     position: fixed;
+  //     overflow: scroll;
+  //     height: 100vh;
+  //   }
+  //   .offcanvas-sidebar-left{
+  //     z-index: 2;
+  //     position: fixed;
+  //     overflow: scroll;
+  //     height: 100vh;
+  //   }
+  //   @include transform(translate3d($offcanvas_size,0,0));
   // }
 }

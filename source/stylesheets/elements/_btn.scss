@@ -7,6 +7,7 @@
 @mixin btn-rounded(){
   @include border-radius(100px);
 }
+
 // Button Colors
 @mixin btn-transparent{
   color: transparentize($white,.3);
@@ -31,7 +32,6 @@
     background-color: transparentize($white, .95);;
   }
 }
-
 @mixin btn-color($bg-color:$primary_bg_color, $border-color: $primary_bg_color, $text-color:$primary_bg_text){
   color: $text-color;
   background-color: $bg-color;
@@ -42,7 +42,12 @@
     background-color: darken($bg-color,5%);
   }
 }
-
+@mixin btn-pill(){
+  @include btn-color(rgba(255,255,255,0),$blue_gray_light, $blue_gray);
+}
+@mixin btn-white{
+  @include btn-color($white, $white, $secondary);
+}
 
 // Button Size
 @mixin btn-rhythm($lines:2, $margin: 0, $font-size: $base-font-size, $hpadding: $padding-base-horizontal*3){
@@ -61,63 +66,46 @@
     padding-right: $hpadding;
   }
 }
-
+@mixin btn-sm(){ @include adjust-leading-to(1); @include rhythm(0,0,0,0); }
+@mixin btn-lg(){ @include btn-rhythm(2, 1); }
+@mixin btn-xl(){ @include btn-rhythm(3, 0);  }
 
 // Button Presets
 .btn{
   @include btn();
   @include btn-rhythm();
+  &:focus, &:active:focus, &.active:focus{
+    outline: none;
+  }
 }
-
+.btn-primary, .btn-default, .btn-secondary{
+  @include box-shadow(none);
+}
 .btn-secondary{
   @include btn-color($blue_gray_lightest, rgba(255,255,255,0), $blue_gray);
 }
 .btn-tertiary{
   @include btn-color($blue_gray_light, rgba(255,255,255,0), $inverted_text);
 }
-@mixin btn-pill(){
-  @include btn-color(rgba(255,255,255,0),$blue_gray_light, $blue_gray);
-}
 .btn-pill{
   @include btn-pill;
 }
-
-.btn-primary, .btn-default, .btn-secondary{
-  @include box-shadow(none);
-}
-
 .btn-gradient{
   @include background-image(linear-gradient(to right top, $primary_alt, $tertiary)); 
   @include box-shadow(none);
 }
-
-@mixin btn-white{
-  @include btn-color($white, $white, $secondary);
-}
 .btn-white{
   @include btn-white;
 }
-
 .btn-transparent{
   @include btn-transparent;
 }
-
 .btn-invisible{
   @include btn-invisible();
 }
-
 .btn-rounded{
   @include btn-rounded();
 }
-
-// .btn-pill{
-//   @include btn-rounded();
-//   @include btn-transparent();
-// }
-
-@mixin btn-sm(){ @include adjust-leading-to(1); @include rhythm(0,0,0,0); }
-@mixin btn-lg(){ @include btn-rhythm(2, 1); }
-@mixin btn-xl(){ @include btn-rhythm(3, 0);  }
 
 .btn-sm{@include btn-sm();   }
 .btn-lg{@include btn-lg();   }
@@ -146,26 +134,16 @@
   @include btn-color($github_color, $github_color, $primary_bg_text);
 }
 
-.btn:focus, .btn:active:focus, .btn.active:focus{
-  outline: none;
-}
-
-
-.btn-default.disabled,
-.btn-default.disabled:hover,
-.btn-default.disabled:focus,
-.btn-default.disabled:active,
-.btn-default.disabled.active,
-.btn-default[disabled],
-.btn-default[disabled]:hover,
-.btn-default[disabled]:focus,
-.btn-default[disabled]:active,
-.btn-default[disabled].active,
-fieldset[disabled] .btn-default,
-fieldset[disabled] .btn-default:hover,
-fieldset[disabled] .btn-default:focus,
-fieldset[disabled] .btn-default:active,
-fieldset[disabled] .btn-default.active{
+%btn-disabled{
+  &, &:hover, &:focus, &:active, &.active{
+    @extend %btn-disabled;
+  }
   background-color: #ECEEF5;
   color: darken(#ECEEF5, 10%);
+}
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default{
+  @extend %btn-disabled;
 }

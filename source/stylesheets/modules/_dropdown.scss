@@ -4,7 +4,7 @@
     @extend .fadeInUp;
   }
   background-color: $white;
-  @extend %white-background;
+  @extend %white-background-colors;
   border: 0;
   @include border-radius(5px !important); 
   @include box-shadow(0 0px 12px rgba(0, 0, 0, 0.1));

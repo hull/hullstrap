@@ -3,9 +3,12 @@ $white:                         #FFFFFF;
 $black:                         #222222;
 $black_2:                       #373f4a;
 $turquoise:                     #4BC2B8;
+$red:                           #E75F45;
+
 $blue_darkest:                  #262C36;
 $blue:                          #2CAAD0;
 $blue_2:                        #0093e6; //rgba(37,164,213,0.98)
+
 $blue_gray_darker:              #222B3F;
 $blue_gray_dark:                #383E4B;
 $blue_gray:                     #555B69;
@@ -13,10 +16,11 @@ $blue_gray_alt:                 #606776;
 $blue_gray_light:               #9AA1B1;
 $blue_gray_lighter:             #E0E2E7;
 $blue_gray_lightest:            #D7DEE7;
-$red:                           #E75F45;
+
 $light_gray:                    #7B7B7B;
 $light_blue_gray:               #798291;
-$off_white:                     #fafafa;
+$off_white:                     #EAEEF3;
+// $off_white:                     #FAFAFA;
 
 $facebook_color: #3C5A98;
 $google_color:   #EB2F12;
@@ -35,7 +39,7 @@ $quaternary     : $red;
 $btn_text_color : $blue_darkest;
 $accent_text_header: $quaternary;
 $light_text     : $light_blue_gray;
-$light-filet    : transparentize($blue_gray, .9); 
+$light-filet    : $off_white; 
 
 // $tertiary_alt   :
 // $quaternary     :
@@ -45,7 +49,7 @@ $light-filet    : transparentize($blue_gray, .9);
 
 // Brand Gradient
 // $primary_bg_image:     linear-gradient( to right top, $primary_alt, $tertiary);
-$primary_bg_image:     radial-gradient(circle at -20% 100%, $primary_alt 0%, $tertiary 100%);
+$primary_bg_image:     radial-gradient(circle at -20% 100px, $primary_alt 0%, $tertiary 100%);
 $primary_bg_color:     $primary;
 $primary_bg_text:      $white;
 
