@@ -37,6 +37,8 @@
 }
 
 .table-bordered{
+  @include box-shadow(inset 0 0 0 1px rgba(233, 233, 233, 1));
+  border:0; 
   > thead, > tbody{
     > tr {
       > th, > td {
@@ -58,10 +60,6 @@
       }
     }
   }
-}
-
-.table-bordered{
-  @include box-shadow(inset 0 0 0 1px rgba(233, 233, 233, 1));
 }
 
 .table-json{

@@ -1,7 +1,3 @@
-// .navbar{
-//   @include background(linear-gradient(to right top, #4bc2b8,#0093e6));
-// }
-
 /*
 ******************
 ** Navbar Styles
@@ -27,7 +23,18 @@
   background-repeat:no-repeat;
   @include rhythm(.5,0,0,.5);
   margin-right:$padding-base-horizontal*2;
+
+  .offcanvas-sidebar &{
+    @include inline-retina-sprite('logo/icon/white-small.png');
+    display: block;
+    background-position: 10px 0px;
+    background-size: contain;
+    height: $base-line-height;
+    float: none;
+    padding-left: $padding-base-horizontal; 
+  }
 }
+
 .navbar{
   border:none;
   @include rhythm(0,0,0,0);
@@ -50,7 +57,7 @@
   }
 
   .navbar-item{
-    display: inline-block;
+    display: block;
     text-decoration: none;
     @extend %animate;
     letter-spacing: 0.01em;
@@ -79,34 +86,10 @@
 }
 
 .navbar-branded{
-  // @include box-shadow(0px 2px 2px 0px rgba(0,0,0,0.14));
-  // @extend %blue-background;
   -webkit-font-smoothing:subpixel-antialiased;
   border:none;
   .container{
     position: relative;
-  }
-  .user-login-dropdown{
-    @media (max-width: $screen-sm-max){
-      .dropdown-menu::before{
-        display: none;
-      }
-    }
-    // .navbar-item{
-    //   padding-top:0;
-    //   padding-bottom:0;
-    //   @include adjust-leading-to(1.5); 
-    // }
-    img.avatar{
-      height: $base-line-height*1.33333333334 - 2px;
-      top: - $base-line-height / 4;
-      max-height: none;
-      float: left;
-      position: relative;
-      display: inline-block;
-      @include border-radius(100px);
-      left: 1 - $padding-base-horizontal;
-    }
   }
   .navbar-brand{
     @include inline-retina-sprite('logo/navbar-logo.png');
@@ -126,79 +109,6 @@
         color: transparentize($primary_bg_text,.1);
       }
     }
-    .nav > li{
-      @media (max-width: $screen-md-max){
-        padding-right: $padding-base-horizontal;
-        padding-left: $padding-base-horizontal;
-      }
-    }
-  }
-}
-
-.navbar-input-group {
-  .form-control, .btn{
-    @include border-radius(100px);
-    @include transition(all .2s ease-out);
-    @include adjust-font-size-to(16px, 1);
-    @include adjust-leading-to(1,16px);
-    @include rhythm(.5,.25,.25,.5,16px);
-  }
-  @media (min-width: $screen-sm) {
-    .form-control{
-      position: relative;
-      z-index: 2;
-      border:none;
-      height: auto;
-      width: 40px;
-      left: 40px;
-      padding-left: 0;
-      padding-right: 0;
-      opacity: 0;
-      &:focus{
-        opacity: 1;
-        @extend %animate;
-        width: 200px;
-        left: 16px;
-        @include border-radius(100px 0 0 100px);
-        padding-left: $padding-base-horizontal;
-        padding-right: $padding-base-horizontal;
-        &+.btn{
-          z-index: 10;
-          position: relative;
-          opacity: 1;
-          background-color: $white;
-          i{
-            color: $primary;
-          }
-        }
-      }
-    }
-    .btn {
-      z-index: 1;
-      background-color: transparentize($primary, 1);
-      padding-left: $padding-base-horizontal;
-      padding-right: $padding-base-horizontal;
-      border-left: 0px;
-      i{
-        color: white;
-      }
-    }
-  }
-  // @media (max-width: $screen-xs-max) {
-  //   margin-top:0px;
-  //   margin-bottom:0px;
-  //   .btn {
-  //     width:100%;
-  //   }
-  // }
-}
-
-.navbar-search{
-  .btn{
-    position: relative;
-    top:   0;
-    // width: 40px;
-    height: $base-line-height*1.5;
   }
 }
 
@@ -210,5 +120,12 @@
     color: white;
     margin-right: $padding-base-horizontal/2;
     opacity: .4;
+  }
+}
+
+.navbar-form{
+  .offcanvas-sidebar &{
+    margin:0; 
+    @include box-shadow(none);
   }
 }

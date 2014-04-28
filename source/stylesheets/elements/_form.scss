@@ -34,13 +34,12 @@ form{
     padding:0 $padding-base-horizontal*2;
   }
 }
+
 .form-control{
   height: auto;
   border:none;
   @include box-shadow(none);
   @include rhythm(0,.5,.5,0);
-  // @include leading-border(1px, .5);
-  // @include trailing-border(1px, .5);
 }
 
 label{
@@ -130,6 +129,9 @@ select.form-control{
 
 .input-group-btn {
   font-size: inherit;
+  .btn{
+    height: $base-line-height*2;
+  }
 }
 .input-block-level{
   @extend .form-control;

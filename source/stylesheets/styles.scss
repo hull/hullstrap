@@ -25,7 +25,7 @@ $h1_line_height: 3   !default;
     Compass Plugins
 \*------------------------------------*/
 @import "animation";
-@import "toolkit";
+// @import "toolkit";
 
 /*------------------------------------*\
     HullStrap Config
@@ -88,6 +88,7 @@ $h1_line_height: 3   !default;
 @import "elements/modal";
 @import "elements/input-group";
 @import "elements/list";
+@import "elements/progress";
 @import "elements/list-table";
 @import "elements/page-header";
 @import "ladda/css/ladda";
@@ -124,6 +125,8 @@ $h1_line_height: 3   !default;
 
 @import "modules/sections";
 @import "modules/navbar";
+@import "modules/navbar_search";
+@import "modules/navbar_sidebar";
 @import "modules/carousel";
 @import "modules/testimonials";
 @import "modules/features";
@@ -131,7 +134,6 @@ $h1_line_height: 3   !default;
 @import "modules/footer";
 @import "modules/pricing";
 @import "modules/email_cta";
-@import "modules/side_nav";
 @import "modules/dropdown";
 @import "modules/signup_dropdown";
 @import "modules/component_grid";

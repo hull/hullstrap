@@ -1,4 +1,16 @@
 .navbar-sidebar{
+  @include rhythm(0,1,1,0);
+  .back-link{
+    @include rhythm(0,0,1,0);
+    padding-left: $padding-base-horizontal;
+    display: block;
+    @include font-weight-bold;
+    i{
+      margin-right: $padding-base-horizontal;
+    }    
+  }
+
+
   li a {
     @include adjust-font-size-to(14px,1);
     @include rhythm(0,.125,.125,0);

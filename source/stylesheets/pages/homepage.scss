@@ -19,6 +19,9 @@
   height: 100vh;
   display: table;
   width: 100%;
+  .btn{
+    margin-right: $padding-base-horizontal*2;
+  }
   .navbar-branded{
     background: none;
     @include box-shadow(none);

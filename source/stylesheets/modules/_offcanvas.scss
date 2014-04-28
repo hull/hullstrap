@@ -62,51 +62,15 @@ body{
     position: absolute;
     width: 100%;
   }
+
   .offcanvas-sidebar{
-    .navbar-form{
-      position: absolute;
-      top: 0;
-      width: 100%;
-      left: -100%;
-      margin: 0;
-      @include box-shadow(none);
-      .btn{
-        display: none;
-      } 
-    }
-    .navbar-brand{
-      @include inline-retina-sprite('logo/icon/white-small.png');
-      display: block;
-      background-position: 10px 0px;
-      background-size: contain;
-      height: $base-line-height;
-      float: none;
-      padding-left: $padding-base-horizontal; 
-    }
     @include transition(all .5s cubic-bezier(0.230, 1.000, 0.320, 1.000));
+  }
+
+  .offcanvas-sidebar-left{
     .header, .accented{
       color: $secondary;
     }
-
-    .navbar-sidebar{
-      .navbar-nav{
-        margin:0; 
-      }
-      > .nav > li > a{
-        &:hover, &:active, &.active, .open & {
-            background-color: transparent;
-        }
-      }
-
-      .active > a, a.active{
-        border-left-color: $secondary;
-        color: $secondary;
-      }
-      
-    }
-
-  }
-  .offcanvas-sidebar-left{
     @include blue-background-colors;
     background: transparent;
     @include transform(translate3d(-100%,0,0));
@@ -136,17 +100,14 @@ body{
       top: -8px;
       @include transform(rotate(-45deg)); 
     }
+    .offcanvas-sidebar-left{
+      @include transform(translate3d(0,0,0));
+    }
     .offcanvas-content{
       // overflow: hidden;
       @include transform(translate3d(75%, 0, -600px));
       opacity: .7;
       overflow: hidden;
-    }
-    .offcanvas-sidebar-left{
-      @include transform(translate3d(0,0,0));
-    }
-    .navbar-form{
-      left: 50%;
     }
   }
   .offcanvas-active-right{
@@ -166,11 +127,11 @@ body{
       @include transform(rotate(-45deg)); 
     }
     .offcanvas-content{
-      // overflow: hidden;
-      // @include transform(translate3d(75%, 0, -600px));
-      @include transform(translate3d(-75%, 0, 0));
+      // @include transform(translate3d(-75%, 0, 0));
     }
     .offcanvas-sidebar-right{
+      background-color: $secondary_bg_color;
+      @include background-image($secondary_bg_gradient);
       @include transform(translate3d(0,0,0));
     }
   }

@@ -1,0 +1,14 @@
+.progress{
+  @include border-radius(100px);
+  @include box-shadow(none);
+  background-color: transparent;
+}
+
+.progress-bar{
+  @include box-shadow(none);
+}
+
+.progress-striped .progress-bar-info{
+  background-color: transparent;
+  @include background-image(radial-gradient(5px 9px,circle contain, $tertiary 0%, $tertiary 85%, transparentize($tertiary, 1) 100%));
+}

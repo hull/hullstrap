@@ -17,11 +17,34 @@
 }
 
 .nav{
-  > li > a{
-    &:hover, &:focus{
-      background-color: transparentize($blue_gray_dark, .85)
+  > li{
+    .navbar-branded &{
+      @media (max-width: $screen-md-max){
+        padding-right: $padding-base-horizontal;
+        padding-left: $padding-base-horizontal;
+      }
     }
   }
+  > li > a, .open > a{
+    &:hover,&:focus{
+      background-color: transparent;
+    }
+  }
+
+  .offcanvas-sidebar-left &{
+    margin:0; 
+    > .nav > li > a{
+      &:hover, &:active, &.active, .open & {
+          background-color: transparent;
+      }
+    }
+    .active > a, a.active{
+      border-left-color: $secondary;
+      color: $secondary;
+    }
+
+  }
+
 }
 
 .nav-pills{

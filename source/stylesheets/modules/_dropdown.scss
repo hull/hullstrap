@@ -1,8 +1,4 @@
 .dropdown-menu{
-  .open &{
-    @extend .animated;
-    @extend .fadeInUp;
-  }
   background-color: $white;
   @extend %white-background-colors;
   border: 0;
@@ -10,13 +6,34 @@
   @include box-shadow(0 0px 12px rgba(0, 0, 0, 0.1));
   background-clip: padding-box;
 
+  > li > a{
+    .offcanvas-sidebar &{
+      color: white;
+      &:hover{
+        background-color: transparent;
+      }
+    }
+  }
+
+  .open &{
+    @extend .animated;
+    @extend .fadeInUp;
+    .offcanvas-sidebar & > li > a{
+      padding-left: $padding-base-horizontal;
+    }
+  }
+
   .divider{
     @include rhythm(.5,0,0,0);
     background:transparent;
     border-color: #ccc;
     @include leading-border(1px , .5);
     @include adjust-font-size-to($base-font-size);
+    .offcanvas-sidebar &{
+      border-color: rgba(255,255,255,.2);
+    }
   }
+
   &:before {
     content: "";
     display: inline-block;
@@ -36,5 +53,27 @@
       right: auto;
       left: 29px;
     }
+    .offcanvas-sidebar &{
+      display: none;
+    }
+  }
+}
+
+
+.user-login-dropdown{
+  @media (max-width: $screen-sm-max){
+    .dropdown-menu::before{
+      display: none;
+    }
+  }
+  img.avatar{
+    height: $base-line-height*1.33333333334 - 2px;
+    top: - $base-line-height / 4;
+    max-height: none;
+    float: left;
+    position: relative;
+    display: inline-block;
+    @include border-radius(100px);
+    left: 1 - $padding-base-horizontal;
   }
 }
