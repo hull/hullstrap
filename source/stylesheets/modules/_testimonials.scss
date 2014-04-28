@@ -31,7 +31,7 @@
 
 .testimonial-avatar{
   @include border-radius(100px);
-  width: $base-line-height * 4;
+  // width: $base-line-height * 4;
   @extend .img-responsive;
   @extend %animate;
   @include box-shadow(0 10px 30px transparentize(black, .9));

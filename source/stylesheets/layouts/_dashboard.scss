@@ -1,0 +1,6 @@
+.dashboard{
+  .main{
+    @include leader(3);
+    @include padding-leader(1);
+  }
+}

@@ -18,6 +18,9 @@ body{
   .page, .footer{
     background: white;
   }
+  .page{
+    min-height:100vh; 
+  }
 }
 @media screen and (max-width: $screen-sm) {
     html, body, .offcanvas-container, .offcanvas-content, .offcanvas-sidebar-left, .offcanvas-sidebar-right{
@@ -25,10 +28,8 @@ body{
     }
 
   .offcanvas-container{
-    // @include background-image($primary_bg_image);
+    overflow-x:hidden;
     -webkit-perspective: 1500px;
-    // position: relative;
-    // overflow: scroll;
   }
   .offcanvas-toggle{
     position: absolute;
@@ -76,6 +77,10 @@ body{
     @include transform(translate3d(-100%,0,0));
   }
   .offcanvas-sidebar-right{
+    @include make-xs-column(9);
+    @include make-sm-column(3);
+    @include make-sm-column-offset(6);
+    @include make-md-column-offset(0);
     position: absolute;
     right: 0;
     // @include inverted-background;
@@ -127,7 +132,7 @@ body{
       @include transform(rotate(-45deg)); 
     }
     .offcanvas-content{
-      // @include transform(translate3d(-75%, 0, 0));
+      @include transform(translate3d(-75%, 0, 0));
     }
     .offcanvas-sidebar-right{
       background-color: $secondary_bg_color;
@@ -157,9 +162,8 @@ body{
   //   position: relative;
   //   top: 0;
   // }
-
-  .offcanvas-sidebar-left,
-  .offcanvas-sidebar-right{
+  .offcanvas-sidebar{
+    @include padding-leader(4);
     position: absolute;
     // @include leader(0);
     // @include padding-leader(0);

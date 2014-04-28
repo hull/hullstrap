@@ -88,8 +88,13 @@
 .navbar-branded{
   -webkit-font-smoothing:subpixel-antialiased;
   border:none;
+  @include blue-background-colors;
   .container{
     position: relative;
+  }
+  .avatar img{
+    margin:  -$base-line-height/2;
+    margin-right: 0;
   }
   .navbar-brand{
     @include inline-retina-sprite('logo/navbar-logo.png');

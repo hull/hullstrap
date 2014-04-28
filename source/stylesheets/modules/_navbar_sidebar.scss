@@ -1,5 +1,7 @@
 .navbar-sidebar{
   @include rhythm(0,1,1,0);
+  height: 100vh;
+  overflow: scroll;
   .back-link{
     @include rhythm(0,0,1,0);
     padding-left: $padding-base-horizontal;
@@ -7,7 +9,7 @@
     @include font-weight-bold;
     i{
       margin-right: $padding-base-horizontal;
-    }    
+    }
   }
 
 
@@ -35,9 +37,13 @@
     padding-left: $padding-base-horizontal;
   }
 
-  > .nav{
-    @include rhythm(0,0,0,1);
+  &.secondary-sidebar{
+    > .nav{
+      @include rhythm(0,0,0,1);
+    }
   }
+
+
   > .nav > li > a {
     @include font-weight-bold;
     border-left-width: 2px;
