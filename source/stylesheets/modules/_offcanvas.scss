@@ -20,6 +20,9 @@ body{
   }
   .page{
     min-height:100vh; 
+    body.dashboard &{
+      min-height:calc(100vh - 90px); 
+    }
   }
 }
 @media screen and (max-width: $screen-xs-max) {
@@ -62,6 +65,16 @@ body{
     width: 100%;
   }
 
+  .offcanvas-sidebar{
+    min-height: 100vh;
+    input{
+      color: white;
+    }
+    .btn-link{
+      color: white;
+      opacity: .5;
+    }
+  }
   .offcanvas-sidebar-left{
     background-color: $secondary_bg_color;
     @include background-image($secondary_bg_gradient);
@@ -112,7 +125,6 @@ body{
       @include transform(translate3d(66.666666%, 0, 0));
       @include transition(all .45s ceaser($easeOutQuint) .1s);
     }
-
     .offcanvas-sidebar-left{
       @include transform(translate3d(0,0,0));
       @include transition(all .45s ceaser($easeOutQuint) 0);
@@ -169,6 +181,9 @@ body{
   .offcanvas-sidebar{
     @include padding-leader(4);
     position: absolute;
+    .dashboard &{
+      @include padding-leader(5);
+    }
     // @include leader(0);
     // @include padding-leader(0);
     // z-index: 1;
