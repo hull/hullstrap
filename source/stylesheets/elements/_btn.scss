@@ -66,7 +66,7 @@
     padding-right: $hpadding;
   }
 }
-@mixin btn-sm(){ @include adjust-leading-to(1); @include rhythm(0,0,0,0); }
+@mixin btn-sm(){ @include btn-rhythm(1.5, 1.5); }
 @mixin btn-lg(){ @include btn-rhythm(2, 1); }
 @mixin btn-xl(){ @include btn-rhythm(3, 0);  }
 

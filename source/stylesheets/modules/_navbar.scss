@@ -48,7 +48,7 @@
   }
 
   > .container .navbar-brand{
-    @media screen and (max-width: $screen-sm) {
+    @media screen and (max-width: $screen-xs-max) {
       left: 0;
       margin-left: auto;
       margin-right: auto;

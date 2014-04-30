@@ -22,10 +22,7 @@
   .btn{
     margin-right: $padding-base-horizontal*2;
   }
-  .navbar-branded{
-    background: none;
-    @include box-shadow(none);
-  }
+
   .headline{
     @include font-weight-bold;
   }

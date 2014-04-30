@@ -17,10 +17,12 @@
     @include adjust-font-size-to(14px,1);
     @include rhythm(0,.125,.125,0);
     border-left: 1px solid transparent;
-    // color: $light_text;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    @media (min-width: $screen-sm-min){
+      color: $light_text;
+    }
   }
 
   a.active{
@@ -73,28 +75,51 @@
     background-color: transparent;
   }
 
+  .nav li a{
+    @include rhythm(0,.25,.25,0, 14px);
+  }
+  .nav li a.navbar-brand{
+    @include trailer(1, 14px);
+  }
+  .nav li .dropdown{
+    @include leader(1, 14px);
+  }
+  
+  .navbar-form{
+    @include leader(1);
+    padding: 0;
+  }
 }
+
 @media (max-width: $screen-sm-max){
   .navbar-sidebar.affix{
     position: static;
   }
 }
 @media (min-width: $screen-sm-min){
-  .navbar-sidebar.affix{
-    position: fixed;
-    top: 0;
-    width: 243px;
-    // height: 100%;
-    bottom: 0;
-    overflow: scroll;
-    @media (min-width: $screen-lg-min){
-      width: 278px;
+  .navbar-sidebar{
+
+    &.affix,
+    &.affix-bottom{
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      height: auto;
     }
-    .col-sm-2 &{
-      width: 188px;
+
+    &.affix{
+      overflow: scroll;
+      width: 243px;
+      @media (min-width: $screen-lg-min){
+        width: 278px;
+      }
+      .col-sm-2 &{
+        width: 188px;
+      }
     }
     &.affix-bottom{
-      // bottom: 99px;
+      top:auto;
+      bottom: 72px;
     }
   }
 }

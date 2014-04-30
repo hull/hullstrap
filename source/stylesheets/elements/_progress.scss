@@ -2,6 +2,7 @@
   @include border-radius(100px);
   @include box-shadow(none);
   background-color: transparent;
+  position: relative;
 }
 
 .progress-bar{
@@ -10,5 +11,18 @@
 
 .progress-striped .progress-bar-info{
   background-color: transparent;
-  @include background-image(radial-gradient(5px 9px,circle contain, $tertiary 0%, $tertiary 85%, transparentize($tertiary, 1) 100%));
+  @include background-image(
+    radial-gradient(5px 9px,circle contain, $tertiary 0%, $tertiary 85%, transparentize($tertiary, 1) 100%)
+  );
+  &:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include background-image(
+      linear-gradient(to right, #FFFFFF 0%, rgba(255, 255, 255, .5) 30% , rgba(255, 255, 255, 0) 50%,rgba(255, 255, 255, .5) 70% ,  #FFFFFF 100%)
+    );
+  }
 }

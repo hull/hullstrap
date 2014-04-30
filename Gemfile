@@ -34,6 +34,7 @@ source 'http://rubygems.org'
   gem 'toolkit'
   gem 'sass-getunicode'
   gem 'animation' # css animation plugin
+  gem 'ceaser-easing' #Penner Easing
 
 
 ##################

@@ -39,10 +39,14 @@
       }
     }
     .active > a, a.active{
-      border-left-color: $secondary;
-      color: $secondary;
+        border-left-color: $primary;
+        color: $primary;
     }
-
+    @media (max-width: $screen-xs-max){
+      > .nav > li > a{
+        background-color: rgba(255,255,255,.15)
+      }
+    }
   }
 
   .avatar{

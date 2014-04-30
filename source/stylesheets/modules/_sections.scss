@@ -11,6 +11,10 @@
 
 .blue-section{
   @extend %blue-background;
+  .btn{
+    @extend .btn-white;
+    @extend .btn-rounded;
+  }
 }
 
 .inverted-section{

@@ -17,7 +17,7 @@
       display: none;
     } 
   }
-  @media (min-width: $screen-sm) {
+  @media (min-width: $screen-md-min) {
     .form-control{
       @extend %animate;
       position: relative;

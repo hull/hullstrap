@@ -61,7 +61,7 @@ $font-family-base:        $font-family-sans-serif;
  
 $font-size-base:          $base-font-size;
 $font-size-large:         ceil(($font-size-base * $typography_scale)); // ~18px
-$font-size-small:         ceil(($font-size-base * (1 - $typography_scale))); // ~12px
+$font-size-small:         ceil(($font-size-base * (1/$typography_scale))); // ~12px
  
 $font-size-h1:            $h1_font_size;
 $font-size-h2:            $h2_font_size;

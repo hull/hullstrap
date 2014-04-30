@@ -16,11 +16,15 @@
       @include adjust-font-size-to(32px,3);
     }
     .btn{
-      @include btn-rhythm(2, .5);
       position: absolute;
-      right: 5px;
-      top:$base-line-height/4;
-      width: 195px;
+      right: 35px;
+      top:0;
+    }
+  }
+  @media screen and (max-width: $screen-xs-max){
+    .btn{
+      display: block;
+      width: 100%;
     }
   }
   input[type='text']::-moz-placeholder{
