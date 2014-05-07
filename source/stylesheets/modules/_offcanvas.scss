@@ -20,8 +20,9 @@ body{
   }
   .page{
     min-height:100vh; 
-    body.dashboard &{
-      min-height:calc(100vh - 90px); 
+    // min-height:calc(100vh - 90px); 
+    &.dashboard{
+      min-height:calc(100vh - 54px); 
     }
   }
 }
@@ -179,8 +180,10 @@ body{
   //   top: 0;
   // }
   .offcanvas-sidebar{
-    @include padding-leader(4);
+    // @include padding-leader(2);
     position: absolute;
+    top:$base-line-height*3;
+    bottom: 0;
     .dashboard &{
       @include padding-leader(5);
     }
