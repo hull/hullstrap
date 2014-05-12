@@ -1,14 +1,5 @@
 
-ul.the-icons li{
-  float: left;
-  width: 25%;
-  line-height: 25px;
-}
-
-[class^="icon-"], [class*=" icon-"]{
-  background: none;
-  height: auto;
-  width: auto;
-  display: inline;
-  line-height: normal;
+i[class^="icon-"]:before, i[class*=" icon-"]:before{
+  vertical-align: middle;
+  line-height: 11px;
 }

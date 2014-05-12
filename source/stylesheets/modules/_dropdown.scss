@@ -26,7 +26,9 @@
   .divider{
     @include rhythm(.5,0,0,0);
     background:transparent;
-    border-color: #ccc;
+    margin-right: $padding-base-horizontal;
+    margin-left: $padding-base-horizontal;
+    border-color: rgba(148, 148, 148, 0.14);
     @include leading-border(1px , .5);
     @include adjust-font-size-to($base-font-size);
     .offcanvas-sidebar &{
@@ -56,7 +58,29 @@
     .offcanvas-sidebar &{
       display: none;
     }
+
   }
+
+
+  > li > a{
+    border:0;
+    color: $tertiary;
+    @include adjust-font-size-to(13px);
+    padding:4px 15px 3px 15px;
+    @include rhythm(0,.5,.5,0, 13px);
+    text-transform: uppercase; 
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  // margin: 0;
+  // top: 24px;
+  // left: 1px;
+  border: 0;
+  box-shadow: 0 0px 1px $tertiary;
+  border-radius: 0px !important;
+
+
 }
 
 

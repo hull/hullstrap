@@ -1,5 +1,5 @@
 
-$base-font-size:        16px !default;
+$base-font-size:        14px !default;
 $base-line-height:      18px !default;
 $base-rhythm-unit:      18px !default;
 $typography_scale :     1.125 !default;
@@ -17,6 +17,3 @@ $h1_line_height: 3   !default;
 @import "modules/offcanvas";
 
 @import "layouts/dashboard";
-.container-fluid>.navbar-header>.navbar-brand{
-  margin-left: 0;
-}

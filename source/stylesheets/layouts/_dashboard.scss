@@ -1,6 +1,15 @@
-.dashboard{
-  .main{
-    @include leader(3);
-    @include padding-leader(1);
+body.dashboard{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .navbar-brand{
+    @include inline-retina-sprite('logo/navbar-logo.png');
+    @include fade-in-hover;
+  }
+  .navbar-header>.navbar-brand{
+    @include inline-retina-sprite('logo/icon/chevron.png');
+    background-position: center left;
+    opacity: 1;
+    margin-left: 0;
   }
 }

@@ -2,7 +2,7 @@
   padding-left: $padding-base-horizontal;
   padding-right: $padding-base-horizontal;
   @include rhythm(0,.5,.5,0);
-  @include box-shadow(0 1px 0px 0 rgba(0,0,0,.07));  
+  // @include box-shadow(0 1px 0px 0 rgba(0,0,0,.07));  
   background: transparent;
   border:0; 
 }
@@ -11,6 +11,8 @@
   margin: 0;
   @include box-shadow(none);  
   padding:0  $padding-base-horizontal;
+  @include rhythm(0,.5,.5,0);
+  @include font-weight-bold;
   background-color: $off_white;
   h4{
     display: inline-block;
