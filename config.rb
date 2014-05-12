@@ -78,7 +78,7 @@ require 'animation'
 # Deployment
 ##################
   activate :s3_sync do |s3_sync|
-    s3_sync.bucket                = 'hullstrap3' # The name of the S3 bucket you are targetting. This is globally unique.
+    s3_sync.bucket                = 'hls3' # The name of the S3 bucket you are targetting. This is globally unique.
     s3_sync.region                = ENV['AWS_REGION']     # The AWS region for your bucket.
     s3_sync.aws_access_key_id     = ENV['AWS_KEY']
     s3_sync.aws_secret_access_key = ENV['AWS_SECRET']
