@@ -1,5 +1,6 @@
 .navbar-search{
   .form-control, .btn{
+    @extend %animate;
     @include border-radius(100px);
     @include transition(all .2s ease-out);
     @include adjust-font-size-to(16px, 1);
@@ -19,7 +20,6 @@
   }
   @media (min-width: $screen-md-min) {
     .form-control{
-      @extend %animate;
       position: relative;
       z-index: 2;
       border:none;

@@ -55,7 +55,6 @@ $h1_line_height: 3   !default;
 // body{
 //   opacity: .9;
 // }
-@import "base/rhythm";
 @import "base/typography";
 
 /*------------------------------------*\
@@ -145,3 +144,5 @@ $h1_line_height: 3   !default;
 @import "pages/features";
 @import "pages/docs";
 @import "pages/quick_start";
+
+@import "base/rhythm";

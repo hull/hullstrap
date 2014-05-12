@@ -24,9 +24,9 @@
   color: transparentize($white,.3);
   @include box-shadow(inset 0 0 0 2px transparentize($white, 1));
   background-color: transparent;
-  opacity: .7;
+  // opacity: .7;
   &:hover, &:focus{
-    opacity: 1;
+    // opacity: 1;
     color: $white;
     @include box-shadow(inset 0 0 0 2px transparentize($white, .9));
     background-color: transparentize($white, .95);;

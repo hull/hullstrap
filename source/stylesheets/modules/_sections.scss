@@ -22,6 +22,10 @@
   @extend %inverted-background;
 }
 
+.inverted-background{
+  @extend %inverted-background;
+}
+
 .bottom-border-section{
   @include box-shadow(0 1px 0 rgba(0,0,0,.07));
 }

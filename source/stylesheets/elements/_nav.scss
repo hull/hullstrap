@@ -61,6 +61,9 @@
 
 .nav-pills{
   @extend %nav;
+  > li > a{
+    @include border-radius(100px);
+  }
 }
 
 .nav-tabs{

@@ -1,14 +1,17 @@
 .timeline{
   @include rhythm(0,1,1,0);
+  position: relative;
+
+
   $filet-color : transparentize($blue_gray_lighter, .5);
   &:before {
-    top: $base-line-height*2;
+    top: 0;
     bottom: 0;
     position: absolute;
     content: " ";
     width: 3px;
     background-color: $filet-color;
-    left: 40px;
+    left: 25px;
   }
   li{
     position: relative;
