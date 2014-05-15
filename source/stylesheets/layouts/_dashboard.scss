@@ -3,9 +3,13 @@ body.dashboard{
 
   .org-selector{
     background-color: rgba(0,0,0,.15);
-    .dropdown{
+    .dropdown-menu{
       max-height: 300px;
       overflow: scroll;
+      top: 40px;
+      left: 3px;
+    }
+    .dropdown{
       margin-right: 36px;
       width: 175px; 
       .dropdown-toggle{
