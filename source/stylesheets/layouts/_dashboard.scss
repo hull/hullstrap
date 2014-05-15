@@ -1,5 +1,30 @@
 body.dashboard{
   background: white;
+
+  .org-selector{
+    background-color: rgba(0,0,0,.15);
+    .dropdown{
+      max-height: 300px;
+      overflow: scroll;
+      margin-right: 36px;
+      width: 175px; 
+      .dropdown-toggle{
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+      }
+    }
+    .pull-right{
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 100;
+    }
+  }
+
+
+
   .navbar-fixed-top{
     @include background-image($primary_bg_image);
     & + .page{
