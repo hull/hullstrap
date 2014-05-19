@@ -24,15 +24,6 @@
   @include rhythm(.5,0,0,.5);
   margin-right:$padding-base-horizontal*2;
   min-height:$base-line-height*2; 
-  .offcanvas-sidebar &{
-    @include inline-retina-sprite('logo/icon/white-small.png');
-    display: block;
-    background-position: 10px 0px;
-    background-size: contain;
-    height: $base-line-height;
-    float: none;
-    padding-left: $padding-base-horizontal; 
-  }
 }
 
 .navbar{
@@ -105,6 +96,7 @@
     background-repeat:no-repeat;
   }
   @media screen and (min-width: $screen-sm-min) {
+
     .navbar-item{
       @include btn-invisible();
     }
@@ -115,6 +107,19 @@
         color: transparentize($primary_bg_text,.1);
       }
     }
+  }
+}
+@media screen and (max-width: $screen-xs-max){
+  .offcanvas-navbar .navbar-brand{
+    @include inline-retina-sprite('logo/icon/white-small.png');
+    display: block;
+    background-position: 10px 0px;
+    background-size: contain;
+    height: $base-line-height;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $padding-base-horizontal; 
   }
 }
 

@@ -21,9 +21,13 @@ $sidebar_width: 260px;
   z-index: 10000;
   margin-left: 15px;
   margin-right: 15px;
+  &[data-side='left']{
+    left: 0;
+    margin-left: 0;
+  }
   &[data-side='right']{
     right: 0;
-    margin-right: 0;
+    margin-right: 9px;
   }
   .icon-bar{
     @include transform(0);
@@ -67,10 +71,10 @@ $sidebar_width: 260px;
 
 
 .offcanvas-sidebar-right{
-  @include transform(translate3d($sidebar_width,0,0));
+  @include transform(translate3d(100%,0,0));
   @include make-xs-column(9);
-  @include make-sm-column(3);
-  @include make-sm-column-offset(6);
+  @include make-sm-column(6);
+  // @include make-sm-column-offset(3);
   @include make-md-column-offset(0);
   @include transition(all .45s ceaser($easeOutQuint));
   position: absolute;
@@ -83,12 +87,15 @@ $sidebar_width: 260px;
 
 
 // Mobile-only Style
-@media screen and (max-width: $screen-xs-max) {
+@media screen and (max-width: $screen-sm-max) {
   .offcanvas-container{
     height: 100%;
     height: 100vh;
     overflow-x:hidden;
     -webkit-perspective: 1500px;
+  }
+  .offcanvas-navbar{
+    @include transform(translate3d(0, 0, 0));
   }
   .offcanvas-sidebar{
     -webkit-overflow-scrolling: touch;
@@ -97,15 +104,13 @@ $sidebar_width: 260px;
     bottom: 0;
   }
   .offcanvas-sidebar-left{
-    @include transform(translate3d(- $sidebar_width,0,0));
-    @include transition(all .45s ceaser($easeOutQuint));
     z-index: 1000;
     width: $sidebar_width;
-  }
-  .offcanvas-sidebar-left{
     background-color: $secondary_bg_color;
     @include background-image($secondary_bg_gradient);
     @include blue-background-colors;
+    @include transform(translate3d(- $sidebar_width,0,0));
+    @include transition(all .45s ceaser($easeOutQuint));
   }
   .offcanvas-active-left{
     .offcanvas-navbar{
@@ -142,7 +147,7 @@ $sidebar_width: 260px;
 }
 
 // Desktop Styles
-@media screen and (min-width: $screen-sm-min) {
+@media screen and (min-width: $screen-md-min) {
   .offcanvas-container{
     background-color: white;
     height: 100%;
@@ -154,145 +159,3 @@ $sidebar_width: 260px;
     height: 100%;
   }
 }
-
-// .offcanvas-content{
-//   .page, .footer{
-//     background: white;
-//   }
-//   .page{
-//     min-height:100vh; 
-//     // min-height:calc(100vh - 90px); 
-//     &.dashboard{
-//       min-height:calc(100vh - 54px); 
-//     }
-//   }
-// }
-// @media screen and (max-width: $screen-xs-max) {
-//     html, body, .offcanvas-container, .offcanvas-content, .offcanvas-sidebar-left, .offcanvas-sidebar-right{
-//       height: 100%;
-//     }
-
-
-//   .offcanvas-sidebars-container{
-//     position: absolute;
-//     width: 100%;
-//   }
-
-// }
-
-// @media screen and (min-width: $screen-sm-min) {
-//   // $offcanvas_size: 230px;
-//   // .offcanvas-container{
-//   //   @include transform(0);
-//   //   @include transition(all .15s cubic-bezier(0.230, 1.000, 0.320, 1.000));
-//   //   @include easeOutQuint;
-//   // }
-//   // .offcanvas-content{
-//   //   z-index: 2;
-//   //   background-color: white;
-//   //   // min-height: 100vh;
-//   // }
-//   // .offcanvas-toggle,  .offcanvas-toggle .icon-bar{
-//   //   @include transform(0);
-//   //   @include transition(all .5s cubic-bezier(0.230, 1.000, 0.320, 1.000) .10s);
-//   //   @include easeOutQuint;
-//   //   position: relative;
-//   //   top: 0;
-//   // }
-//   .offcanvas-sidebar{
-//     // @include padding-leader(2);
-//     // position: absolute;
-//     // top:$base-line-height*3;
-//     // bottom: 0;
-//     .dashboard &{
-//       position: fixed;
-//       top: 0;
-//       bottom: 0;
-//       // @include padding-leader(5);
-//     }
-//     // @include leader(0);
-//     // @include padding-leader(0);
-//     // z-index: 1;
-//     // width: $offcanvas_size;
-//     // top: 0;
-//     // bottom: 0;
-//     // margin: 0;
-//   }
-
-
-//   // .offcanvas-sidebar-left{
-//   //   left: -$offcanvas_size;
-//   //   // @include box-shadow( 1px 0 0 1px rgba(0,0,0,.6),inset -2px 0 8px rgba(0,0,0,.07));
-//   // }
-//   // .offcanvas-sidebar-right{
-//   //   right: -$offcanvas_size;
-//   //   // @include box-shadow( inset 2px 0 8px rgba(0,0,0,.07));
-//   // }
-
-//   // .offcanvas-active{
-//   //   .offcanvas-content{
-//   //     z-index: 3;
-//   //   }
-//   //   width: 100%;
-//   //   position: fixed;
-//   // }
-
-//   // .offcanvas-active.offcanvas-active-right{
-//   //   .offcanvas-toggle[data-side='right'] .icon-bar{
-//   //     background-color: white;
-//   //   }
-//   //   .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(2){
-//   //     top: 8px;
-//   //     @include transform(rotate(45deg)); 
-//   //   }
-//   //   .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(3){
-//   //     opacity: 0;
-//   //   }
-//   //   .offcanvas-toggle[data-side='right'] .icon-bar:nth-child(4){
-//   //     top: -8px;
-//   //     @include transform(rotate(-45deg)); 
-//   //   }
-//   //   .offcanvas-sidebar-left{
-//   //     z-index: 1;
-//   //     position: fixed;
-//   //     overflow: scroll;
-//   //     height: 100vh;
-//   //   }
-//   //   .offcanvas-sidebar-right{
-//   //     z-index: 2;
-//   //     position: fixed;
-//   //     overflow: scroll;
-//   //     height: 100vh;
-//   //   }
-//   //   @include transform(translate3d(-$offcanvas_size,0,0));
-//   // }
-//   // .offcanvas-active.offcanvas-active-left{
-//   //   .offcanvas-toggle[data-side='left'] .icon-bar{
-//   //     background-color: white;
-//   //   }
-//   //   .offcanvas-toggle[data-side='left'] .icon-bar:nth-child(2){
-//   //     top: 8px;
-//   //     @include transform(rotate(45deg)); 
-//   //   }
-//   //   .offcanvas-toggle[data-side='left'] .icon-bar:nth-child(3){
-//   //     opacity: 0;
-//   //   }
-//   //   .offcanvas-toggle[data-side='left'] .icon-bar:nth-child(4){
-//   //     top: -8px;
-//   //     @include transform(rotate(-45deg)); 
-//   //   }
-//   //   .offcanvas-sidebar-right{
-//   //     z-index: 1;
-//   //     position: fixed;
-//   //     overflow: scroll;
-//   //     height: 100vh;
-//   //   }
-//   //   .offcanvas-sidebar-left{
-//   //     z-index: 2;
-//   //     position: fixed;
-//   //     overflow: scroll;
-//   //     height: 100vh;
-//   //   }
-//   //   @include transform(translate3d($offcanvas_size,0,0));
-//   // }
-// }
