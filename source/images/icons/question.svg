@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>question</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-320.000000, -40.000000)">
+            <g id="question" transform="translate(320.000000, 40.000000)" sketch:type="MSShapeGroup">
+                <g transform="translate(1.000000, 1.000000)">
+                    <path d="M17,24.3913043 C16.1832609,24.3913043 15.5217391,25.0535652 15.5217391,25.8695652 C15.5217391,26.6863043 16.1832609,27.3478261 17,27.3478261 C17.8152609,27.3478261 18.4782609,26.6863043 18.4782609,25.8695652 C18.4782609,25.0535652 17.8152609,24.3913043 17,24.3913043" id="Fill-4001" fill="#0093E6"></path>
+                    <path d="M34,17 C34,26.3891739 26.3891739,34 17,34 C7.61082609,34 0,26.3891739 0,17 C0,7.61082609 7.61082609,0 17,0 C26.3891739,0 34,7.61082609 34,17 L34,17 Z" id="Stroke-4002" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12.5652174,13.3043478 C12.5652174,10.8556087 14.5505217,8.86956522 17,8.86956522 C19.448,8.86956522 21.4347826,10.8556087 21.4347826,13.3043478 C21.4347826,15.7538261 19.448,17.7391304 17,17.7391304 L17,22.173913" id="Stroke-4003" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

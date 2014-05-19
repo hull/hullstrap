@@ -1,20 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-<g>
-	<defs>
-		<rect id="SVGID_1_" width="16" height="16"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  overflow="visible"/>
-	</clipPath>
-	<path clip-path="url(#SVGID_2_)" fill="#1D1D1B" d="M2.143,11.714C0.96,11.714,0,12.68,0,13.86C0,15.044,0.96,16,2.143,16
-		c1.186,0,2.146-0.956,2.146-2.14C4.289,12.68,3.329,11.714,2.143,11.714"/>
-	<path clip-path="url(#SVGID_2_)" fill="#1D1D1B" d="M0.141,5.494v2.812c2,0.037,3.877,0.834,5.295,2.259
-		c1.42,1.422,2.217,3.306,2.254,5.315h2.82C10.432,10.188,5.825,5.571,0.141,5.494"/>
-	<path clip-path="url(#SVGID_2_)" fill="#1D1D1B" d="M0.145,0v2.81c7.154,0.078,12.96,5.898,13.039,13.07h2.814
-		C15.92,7.158,8.852,0.078,0.145,0"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>emit</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-200.000000, -40.000000)" stroke="#0093E6" stroke-width="2">
+            <g id="emit" transform="translate(200.000000, 40.000000)" sketch:type="MSShapeGroup">
+                <g transform="translate(1.000000, 3.000000)">
+                    <path d="M17,16.6453125 L17,29.4944463" id="Stroke-1171"></path>
+                    <path d="M28.9751667,0.048514839 C31.865048,3.19963637 33.6518734,7.5530599 33.6518734,12.362268 C33.6518734,17.1707189 31.865048,21.5241425 28.9751667,24.6760211" id="Stroke-1172"></path>
+                    <path d="M24.818094,4.33155941 C26.7445481,6.38646378 27.9358985,9.22577524 27.9358985,12.3618894 C27.9358985,15.4980036 26.7445481,18.3373151 24.818094,20.3929765" id="Stroke-1173"></path>
+                    <path d="M5.07199882,0.048514839 C2.18281172,3.19963637 0.395292065,7.5530599 0.395292065,12.362268 C0.395292065,17.1707189 2.18281172,21.5241425 5.07199882,24.6760211" id="Stroke-1174"></path>
+                    <path d="M9.22907149,4.33155941 C7.30288861,6.38646378 6.11126699,9.22577524 6.11126699,12.3618894 C6.11126699,15.4980036 7.30288861,18.3373151 9.22907149,20.3929765" id="Stroke-1175"></path>
+                    <path d="M20.9666667,13.0333334 C20.9666667,15.2235945 19.1902611,17 17,17 C14.8090778,17 13.0333333,15.2235945 13.0333333,13.0333334 C13.0333333,10.8430722 14.8090778,9.06666667 17,9.06666667 C19.1902611,9.06666667 20.9666667,10.8430722 20.9666667,13.0333334 L20.9666667,13.0333334 L20.9666667,13.0333334 Z" id="Stroke-1176"></path>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

@@ -1,17 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-<g>
-	<defs>
-		<rect id="SVGID_1_" width="16" height="16"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  overflow="visible"/>
-	</clipPath>
-	<path clip-path="url(#SVGID_2_)" fill="#1D1D1B" d="M9.5,2C7.83,2,6.389,2.92,5.613,4.271C5.275,4.104,4.902,4,4.5,4
-		C3.119,4,2,5.119,2,6.5l0.006,0.056C0.814,7.25,0,8.527,0,10c0,2.2,1.801,4,4,4h2h4h2c2.201,0,4-1.8,4-4
-		c0-1.473-0.814-2.75-2.006-3.444L14,6.5C14,4.015,11.986,2,9.5,2"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>cloud</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-40.000000, 0.000000)" stroke-width="2" stroke="#0093E6">
+            <g id="cloud" transform="translate(40.000000, 0.000000)" sketch:type="MSShapeGroup">
+                <path d="M21.1875,4 C17.63875,4 14.576625,6.01324774 12.927625,8.96965825 C12.209375,8.60421002 11.41675,8.37662554 10.5625,8.37662554 C7.627875,8.37662554 5.25,10.8253475 5.25,13.8474074 L5.26275,13.9699529 C2.72975,15.488642 1,18.2831174 1,21.506502 C1,26.3207901 4.827125,30.2597531 9.5,30.2597531 L13.75,30.2597531 L22.25,30.2597531 L26.5,30.2597531 C31.177125,30.2597531 35,26.3207901 35,21.506502 C35,18.2831174 33.27025,15.488642 30.73725,13.9699529 L30.75,13.8474074 C30.75,8.40945019 26.47025,4 21.1875,4"></path>
+            </g>
+        </g>
+    </g>
 </svg>

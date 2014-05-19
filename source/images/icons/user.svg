@@ -1,25 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-<g>
-	<defs>
-		<rect id="SVGID_1_" width="16" height="16"/>
-	</defs>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  overflow="visible"/>
-	</clipPath>
-	<path clip-path="url(#SVGID_2_)" fill="#1D1D1B" d="M15,4.2c0-0.994-0.672-1.8-1.5-1.8S12,3.206,12,4.2S12.672,6,13.5,6
-		S15,5.194,15,4.2"/>
-	<path clip-path="url(#SVGID_2_)" fill="#1D1D1B" d="M4,4.2c0-0.994-0.672-1.8-1.5-1.8S1,3.206,1,4.2S1.672,6,2.5,6S4,5.194,4,4.2"
-		/>
-	<path clip-path="url(#SVGID_2_)" fill="#1D1D1B" d="M4,7.9C4,7.218,4.143,6.58,4.379,6H2C0.9,6,0,6.9,0,8v2h4.474
-		C4.182,9.37,4,8.662,4,7.9"/>
-	<path clip-path="url(#SVGID_2_)" fill="#1D1D1B" d="M14,6h-2.545c0.236,0.579,0.379,1.219,0.379,1.9c0,0.763-0.182,1.47-0.473,2.1
-		H16V8C16,6.9,15.1,6,14,6"/>
-	<path clip-path="url(#SVGID_2_)" fill="#1D1D1B" d="M10.68,11.086C10.461,11.033,10.234,11,10,11H9.244
-		c0.939-0.581,1.59-1.743,1.59-3.1c0-1.932-1.307-3.5-2.917-3.5C6.307,4.4,5,5.968,5,7.9c0,1.357,0.65,2.519,1.591,3.1H6
-		c-0.279,0-0.547,0.052-0.805,0.125C3.935,11.48,3,12.631,3,14v2h10v-2C13,12.585,12.004,11.396,10.68,11.086"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>user</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-40.000000, -40.000000)" stroke-width="2" stroke="#0093E6" stroke-linejoin="round">
+            <g id="user" transform="translate(40.000000, 40.000000)" sketch:type="MSShapeGroup">
+                <path d="M18,34.5 L35,34.5 C35,34.5 35,31.4584783 33.5217391,28.5019565 C32.4189565,26.2978696 27.6086957,24.8063043 21.6956522,22.588913 L21.6956522,18.1541304 C21.6956522,18.1541304 23.9130435,16.6758696 23.9130435,13.7193478 C24.6521739,13.7193478 25.3913043,10.7628261 23.9130435,10.0236957 C23.9130435,9.58465217 25.8931739,5.88234783 25.3913043,3.37152174 C24.6521739,-0.324130435 14.3043478,-0.324130435 13.5652174,2.6323913 C9.13043478,2.6323913 12.0869565,9.42426087 12.0869565,10.0236957 C10.6086957,10.7628261 11.3478261,13.7193478 12.0869565,13.7193478 C12.0869565,16.6758696 14.3043478,18.1541304 14.3043478,18.1541304 L14.3043478,22.588913 C8.39130435,24.8063043 3.57956522,26.2978696 2.47826087,28.5019565 C1,31.4584783 1,34.5 1,34.5 L18,34.5 L18,34.5 Z"></path>
+            </g>
+        </g>
+    </g>
 </svg>

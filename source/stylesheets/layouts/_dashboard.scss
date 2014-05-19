@@ -1,17 +1,8 @@
 body.dashboard{
-  background: white;
+  // background: white;
 
   .org-selector{
-    background-color: rgba(0,0,0,.15);
-    .dropdown-menu{
-      max-height: 300px;
-      overflow: scroll;
-      top: 40px;
-      left: 3px;
-    }
     .dropdown{
-      margin-right: 36px;
-      width: 175px; 
       .dropdown-toggle{
         text-overflow:ellipsis;
         white-space: nowrap;
@@ -30,7 +21,6 @@ body.dashboard{
 
 
   .navbar-fixed-top{
-    @include background-image($primary_bg_image);
     & + .page{
       margin-top: $base-line-height*3;
     }

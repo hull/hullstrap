@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>hide</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(0.000000, -80.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="hide" transform="translate(0.000000, 80.000000)" sketch:type="MSShapeGroup">
+                <path d="M29.1126043,11.925887 C32.7180826,14.5320609 34.9997783,17.4131913 34.9997783,17.4131913 C34.9997783,17.4131913 27.3889522,27.021887 17.9997783,27.021887 C16.4646043,27.021887 14.9767348,26.7646696 13.5627783,26.3352348" id="Stroke-236"></path>
+                <path d="M6.86507391,22.8843087 C3.27142174,20.2818304 1.00007391,17.4132652 1.00007391,17.4132652 C1.00007391,17.4132652 8.6109,7.80456957 18.0000739,7.80456957 C19.2713783,7.80456957 20.5101609,7.98048261 21.7023783,8.28500435" id="Stroke-237"></path>
+                <path d="M12.0869565,17.4130435 C12.0869565,14.1475652 14.7345217,11.5 18,11.5" id="Stroke-238"></path>
+                <path d="M23.9130435,17.4130435 C23.9130435,20.6785217 21.2654783,23.326087 18,23.326087" id="Stroke-239"></path>
+                <path d="M32.4130435,3 L3.58695652,31.826087" id="Stroke-240"></path>
+            </g>
+        </g>
+    </g>
+</svg>

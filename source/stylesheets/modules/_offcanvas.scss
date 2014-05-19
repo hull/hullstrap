@@ -1,26 +1,160 @@
 /*
- * Style tweaks
- * --------------------------------------------------
- */
-/*
  * Off Canvas
  * --------------------------------------------------
  */
 
-@media screen and (min-width: $screen-sm-min){
-  .dashboard{
-    .offcanvas-container{
-      height: 100%;
-      height: 100vh;
-    }
 
-    .offcanvas-sidebar{
-      height: 100%;
-      height: 100vh;
-      position: fixed;
-    }
+$sidebar_width: 260px;
+
+.offcanvas-content{
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  left: 0;
+  height: 100%;
+  z-index: 99;
+  @include transform(translate3d(0,0,0));
+}
+.offcanvas-toggle{
+  display: block;
+  position: absolute;
+  top:0;
+  z-index: 10000;
+  margin-left: 15px;
+  margin-right: 15px;
+  &[data-side='right']{
+    right: 0;
+    margin-right: 0;
+  }
+  .icon-bar{
+    @include transform(0);
+    @include transition(all .5s ceaser($easeOutQuint) .30s);
+    position: relative;
+    top: 0;
   }
 }
+
+.offcanvas-sidebar,
+.offcanvas-content,
+.offcanvas-navbar{
+  @include transition(all .45s ceaser($easeOutQuint));
+}
+
+.offcanvas-active{
+  overflow: hidden;
+  .offcanvas-content{
+    overflow: hidden;
+    opacity: .2;
+  }
+}
+
+.offcanvas-active-left{
+  .offcanvas-toggle[data-side='left'] .icon-bar{
+    background-color: white;
+    &:nth-child(2){ top: 8px;  @include transform(rotate(45deg)); }
+    &:nth-child(4){ top: -8px; @include transform(rotate(-45deg)); }
+    &:nth-child(3){ opacity: 0; }
+  }
+
+  .offcanvas-content{
+    @include transform(translate3d($sidebar_width, 0, 0));
+  }
+  .offcanvas-sidebar-left{
+    @include transform(translate3d(0,0,0));
+  }
+}
+
+
+
+
+.offcanvas-sidebar-right{
+  @include transform(translate3d($sidebar_width,0,0));
+  @include make-xs-column(9);
+  @include make-sm-column(3);
+  @include make-sm-column-offset(6);
+  @include make-md-column-offset(0);
+  @include transition(all .45s ceaser($easeOutQuint));
+  position: absolute;
+  right: 0;
+  @include blue-background-colors;
+  .header, .accented{
+    color: $secondary;
+  }
+}
+
+
+// Mobile-only Style
+@media screen and (max-width: $screen-xs-max) {
+  .offcanvas-container{
+    height: 100%;
+    height: 100vh;
+    overflow-x:hidden;
+    -webkit-perspective: 1500px;
+  }
+  .offcanvas-sidebar{
+    -webkit-overflow-scrolling: touch;
+    position: fixed;
+    top:0;
+    bottom: 0;
+  }
+  .offcanvas-sidebar-left{
+    @include transform(translate3d(- $sidebar_width,0,0));
+    @include transition(all .45s ceaser($easeOutQuint));
+    z-index: 1000;
+    width: $sidebar_width;
+  }
+  .offcanvas-sidebar-left{
+    background-color: $secondary_bg_color;
+    @include background-image($secondary_bg_gradient);
+    @include blue-background-colors;
+  }
+  .offcanvas-active-left{
+    .offcanvas-navbar{
+      @include transform(translate3d($sidebar_width, 0, 0));
+    }
+  }
+
+  .offcanvas-active-right{
+    overflow: hidden;
+    .offcanvas-toggle[data-side='right'] .icon-bar{
+      background-color: white;
+      &:nth-child(2){
+        top: 8px;
+        @include transform(rotate(45deg)); 
+      }
+      &:nth-child(3){
+        opacity: 0;
+      }
+      &:nth-child(4){
+        top: -8px;
+        @include transform(rotate(-45deg)); 
+      }
+    }
+
+    .offcanvas-content, .offcanvas-navbar{
+      @include transform(translate3d(-90%, 0, -600px));
+      opacity: .7;
+    }
+    .offcanvas-sidebar-right{
+      @include transform(translate3d(0,0,0));
+    }
+  }
+
+}
+
+// Desktop Styles
+@media screen and (min-width: $screen-sm-min) {
+  .offcanvas-container{
+    background-color: white;
+    height: 100%;
+  }
+  .offcanvas-navbar{
+    @include background-image($primary_bg_image);
+  }
+  .offcanvas-sidebar-left{
+    height: 100%;
+  }
+}
+
 // .offcanvas-content{
 //   .page, .footer{
 //     background: white;
@@ -38,131 +172,10 @@
 //       height: 100%;
 //     }
 
-//   .offcanvas-container{
-//     overflow-x:hidden;
-//     -webkit-perspective: 1500px;
-//   }
-//   .offcanvas-toggle{
-//     position: absolute;
-//     z-index: 1001;
-//     top:0;
-//     margin-left: 15px;
-//     margin-right: 15px;
-//   }
-//   .offcanvas-toggle[data-side='right']{
-//     right: 0;
-//     margin-right: 0;
-//   }
-//   .offcanvas-toggle .icon-bar{
-//     @include transform(0);
-//     @include transition(all .5s ceaser($easeOutQuint) .30s);
-//     position: relative;
-//     top: 0;
-//   }
-//   .offcanvas-content{
-//     position: relative;
-//     -webkit-transform-style: preserve-3d;
-//     left: 0;
-//     height: 100%;
-//     z-index: 99;
-//     @include transition(all .4s ceaser($easeOutQuint));
-//     @include transform(translate3d(0,0,0));
-//   }
+
 //   .offcanvas-sidebars-container{
 //     position: absolute;
 //     width: 100%;
-//   }
-
-//   .offcanvas-sidebar{
-//     min-height: 100vh;
-//     input{
-//       color: white;
-//     }
-//     .btn-link{
-//       color: white;
-//       opacity: .5;
-//     }
-//   }
-//   .offcanvas-sidebar-left{
-//     background-color: $secondary_bg_color;
-//     @include background-image($secondary_bg_gradient);
-//     @include blue-background-colors;
-//     @include transform(translate3d(-100%,0,0));
-//     @include transition(all .45s ceaser($easeOutQuint) .1s);
-//     z-index: 1000;
-//   }
-//   .offcanvas-sidebar-right{
-//     // background: transparent;
-//     @include transform(translate3d(100%,0,0));
-//     @include make-xs-column(9);
-//     @include make-sm-column(3);
-//     @include make-sm-column-offset(6);
-//     @include make-md-column-offset(0);
-//     @include transition(all .45s ceaser($easeOutQuint));
-//     position: absolute;
-//     right: 0;
-//     @include blue-background-colors;
-//     .header, .accented{
-//       color: $secondary;
-//     }
-//   }
-
-//   .offcanvas-active{
-//     .offcanvas-content{
-//       overflow: hidden;
-//     }
-//   }
-//   .offcanvas-active-left{
-//     overflow: hidden;
-//     .offcanvas-toggle[data-side='left'] .icon-bar{
-//       background-color: white;
-//       &:nth-child(2){
-//         top: 8px;
-//         @include transform(rotate(45deg)); 
-//       }
-//       &:nth-child(3){
-//         opacity: 0;
-//       }
-//       &:nth-child(4){
-//         top: -8px;
-//         @include transform(rotate(-45deg)); 
-//       }
-//     }
-
-//     .offcanvas-content{
-//       @include transform(translate3d(66.666666%, 0, 0));
-//       @include transition(all .45s ceaser($easeOutQuint) .1s);
-//     }
-//     .offcanvas-sidebar-left{
-//       @include transform(translate3d(0,0,0));
-//       @include transition(all .45s ceaser($easeOutQuint) 0);
-//     }
-
-//   }
-//   .offcanvas-active-right{
-//     overflow: hidden;
-//     .offcanvas-toggle[data-side='right'] .icon-bar{
-//       background-color: white;
-//       &:nth-child(2){
-//         top: 8px;
-//         @include transform(rotate(45deg)); 
-//       }
-//       &:nth-child(3){
-//         opacity: 0;
-//       }
-//       &:nth-child(4){
-//         top: -8px;
-//         @include transform(rotate(-45deg)); 
-//       }
-//     }
-
-//     .offcanvas-content{
-//       @include transform(translate3d(-90%, 0, -600px));
-//       opacity: .7;
-//     }
-//     .offcanvas-sidebar-right{
-//       @include transform(translate3d(0,0,0));
-//     }
 //   }
 
 // }
@@ -205,6 +218,8 @@
 //     // bottom: 0;
 //     // margin: 0;
 //   }
+
+
 //   // .offcanvas-sidebar-left{
 //   //   left: -$offcanvas_size;
 //   //   // @include box-shadow( 1px 0 0 1px rgba(0,0,0,.6),inset -2px 0 8px rgba(0,0,0,.07));

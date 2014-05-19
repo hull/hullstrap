@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="260px" height="310px" viewBox="0 0 260 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <title>Slice 1</title>
-    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>mixpanel</title>
+    <description>Created with Sketch.</description>
     <defs></defs>
-    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Slice 1" transform="translate(0.000000, 120.000000)" fill="#000000">
-            <g id="Page 1">
-                <path d="M31.9553073,64 C49.603737,64 63.9106145,49.6731129 63.9106145,32 C63.9106145,14.3268871 49.603737,0 31.9553073,0 C14.3068775,0 0,14.3268871 0,32 C0,49.6731129 14.3068775,64 31.9553073,64 L31.9553073,64 Z M31.9553073,64" id="Oval 1"></path>
-                <path d="M150.335196,54.5454545 C162.769316,54.5454545 172.849162,44.4515113 172.849162,32 C172.849162,19.5484887 162.769316,9.45454545 150.335196,9.45454545 C137.901075,9.45454545 127.821229,19.5484887 127.821229,32 C127.821229,44.4515113 137.901075,54.5454545 150.335196,54.5454545 L150.335196,54.5454545 Z M150.335196,54.5454545" id="Oval 1 copy"></path>
-                <path d="M249.106145,42.9090909 C255.122656,42.9090909 260,38.0249248 260,32 C260,25.9750752 255.122656,21.0909091 249.106145,21.0909091 C243.089635,21.0909091 238.212291,25.9750752 238.212291,32 C238.212291,38.0249248 243.089635,42.9090909 249.106145,42.9090909 L249.106145,42.9090909 Z M249.106145,42.9090909" id="Oval 1 copy 2"></path>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Brands" sketch:type="MSLayerGroup" transform="translate(-200.000000, 0.000000)" fill="#6D6AA8">
+            <g id="mixpanel" transform="translate(200.000000, 0.000000)" sketch:type="MSShapeGroup">
+                <path d="M18,20 C19.6568543,20 21,18.6568543 21,17 C21,15.3431457 19.6568543,14 18,14 C16.3431457,14 15,15.3431457 15,17 C15,18.6568543 16.3431457,20 18,20 L18,20 L18,20 Z M3.9329609,21 C6.10507532,21 7.86592178,19.2091391 7.86592178,17 C7.86592178,14.7908609 6.10507532,13 3.9329609,13 C1.76084646,13 0,14.7908609 0,17 C0,19.2091391 1.76084646,21 3.9329609,21 L3.9329609,21 L3.9329609,21 Z M29.2877891,19.0387548 C30.3923586,19.0387548 31.2877891,18.1433243 31.2877891,17.0387548 C31.2877891,15.9341853 30.3923586,15.0387548 29.2877891,15.0387548 C28.1832196,15.0387548 27.2877891,15.9341853 27.2877891,17.0387548 C27.2877891,18.1433243 28.1832196,19.0387548 29.2877891,19.0387548 Z"></path>
             </g>
         </g>
     </g>

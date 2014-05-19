@@ -1,9 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-<path d="M30.269,0l41.072,460.815L255.719,512l184.862-51.262L481.731,0H30.269z M392.315,150.714h-0.195H176.045l5.151,57.875
-	H387.18l-15.521,173.505L255.99,414.182l-0.115,0.039h-0.077h-0.061l-115.786-32.127l-7.915-88.756h56.747l4.024,45.116
-	l62.931,16.958l0.139-0.039l62.967-16.996l6.535-73.275h-195.87L114.262,94.202h283.107L392.315,150.714z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>html5</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-120.000000, -120.000000)" stroke="#0093E6" stroke-width="2">
+            <g id="html5" transform="translate(120.000000, 120.000000)" sketch:type="MSShapeGroup">
+                <g transform="translate(1.000000, 1.000000)">
+                    <path d="M29.5652174,29.5652174 L17,34 L4.43478261,29.5652174 L0,0 L34,0 L29.5652174,29.5652174 L29.5652174,29.5652174 Z" id="Stroke-5150"></path>
+                    <path d="M24.9333333,5.66666667 L9.06666667,5.66666667 L10.5090909,14.4095238 L23.4909091,14.4095238 L22.0484848,24.6095238 L17,26.0666667 L11.9515152,24.6095238 L11.2858364,20.2380952" id="Stroke-5151"></path>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

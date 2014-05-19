@@ -67,8 +67,8 @@
     color: $tertiary;
     @include adjust-font-size-to(13px);
     padding:4px 15px 3px 15px;
-    @include rhythm(0,.5,.5,0, 13px);
-    text-transform: uppercase; 
+    @include rhythm(0,.25,.25,0, 13px);
+    // text-transform: uppercase; 
     white-space: nowrap;
     font-weight: 600;
   }
@@ -79,8 +79,6 @@
   border: 0;
   box-shadow: 0 0px 1px $tertiary;
   border-radius: 0px !important;
-
-
 }
 
 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>cross</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-80.000000, -120.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="cross" transform="translate(80.000000, 120.000000)" sketch:type="MSShapeGroup">
+                <g transform="translate(1.000000, 1.000000)">
+                    <path d="M34.0330391,0.0326695652 L-0.0327434783,33.9676261" id="Stroke-3751"></path>
+                    <path d="M33.9675522,34.0326696 L0.0333347826,-0.032373913" id="Stroke-3752"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

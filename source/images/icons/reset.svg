@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>reset</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-240.000000, -80.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="reset" transform="translate(240.000000, 80.000000)" sketch:type="MSShapeGroup">
+                <g transform="translate(1.000000, 3.000000)">
+                    <path d="M-0.334668182,10.1429727 L4.28855909,17.1060182 L9.70924091,10.9350182" id="Stroke-3562"></path>
+                    <path d="M4.29829545,17.0482955 C3.15620455,7.44097727 10.3580227,0.425386364 18.4616136,0.142568182 C26.5652045,-0.139477273 33.3636591,6.20075 33.6457045,14.3043409 C33.9285227,22.4079318 27.5890682,29.2063864 19.4854773,29.4884318 C13.3925227,29.7017045 8.03906818,26.1703409 5.63511364,20.9598409" id="Stroke-3563"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

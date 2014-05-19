@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="260px" height="260px" viewBox="0 0 260 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <title>Slice 1</title>
-    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <description>Created with Sketch.</description>
     <defs></defs>
-    <g id="Page 1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M29.436489,171.400282 C62.3067595,204.384319 112.996899,209.410663 151.296687,186.483873 L219.743026,253.269672 C229.163086,262.444342 244.026122,262.105215 253.020313,252.51037 C262.015435,242.91558 261.779642,227.818481 252.35868,218.643812 L184.953247,153.091411 C208.58724,114.543951 203.788002,63.0855444 170.583302,29.7659498 C131.786837,-9.16478588 68.3271017,-9.16478588 29.5315128,29.7659498 C-9.26496552,68.6957803 -9.36000269,132.469547 29.436489,171.400282 Z M142.126759,58.32008 C165.528543,81.8028392 165.528543,119.268013 142.126759,142.750772 C118.724974,166.233586 81.3889637,166.233586 57.9871527,142.750772 C34.5853686,119.268012 34.5853686,81.8028383 57.9871527,58.32008 C81.3889637,34.8372938 118.724975,34.8372938 142.126759,58.32008 Z M142.126759,58.32008" id="path12423" fill="#000000"></path>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-280.000000, -80.000000)" stroke="#0093E6" stroke-width="2">
+            <g id="search" transform="translate(280.000000, 80.000000)" sketch:type="MSShapeGroup">
+                <path d="M24.6521739,12.826087 C24.6521739,19.3570435 19.3570435,24.6521739 12.826087,24.6521739 C6.29513043,24.6521739 1,19.3570435 1,12.826087 C1,6.29513043 6.29513043,1 12.826087,1 C19.3570435,1 24.6521739,6.29513043 24.6521739,12.826087 L24.6521739,12.826087 Z" id="Stroke-4342"></path>
+                <path d="M21.218913,21.1571957 L35,35.0003696" id="Stroke-4343" stroke-linecap="round"></path>
+            </g>
+        </g>
     </g>
 </svg>
