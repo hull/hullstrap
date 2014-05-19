@@ -6,11 +6,17 @@
 
 $sidebar_width: 260px;
 
+.offcanvas-container{
+  height: 100%;
+  height: 100vh;
+  overflow-x:hidden;
+}
 .offcanvas-content{
   position: relative;
   -webkit-transform-style: preserve-3d;
   left: 0;
   height: 100%;
+  overflow: scroll;
   z-index: 99;
   @include transform(translate3d(0,0,0));
 }
@@ -36,6 +42,16 @@ $sidebar_width: 260px;
     top: 0;
   }
 }
+
+.offcanvas-sidebar{
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+// .offcanvas-content{
+//   -webkit-overflow-scrolling: touch;
+//   overflow: scroll;
+// }
 
 .offcanvas-sidebar,
 .offcanvas-content,
@@ -76,6 +92,8 @@ $sidebar_width: 260px;
   @include make-sm-column(6);
   // @include make-sm-column-offset(3);
   @include make-md-column-offset(0);
+  padding-left: 0;
+  padding-right: 0;
   @include transition(all .45s ceaser($easeOutQuint));
   position: absolute;
   right: 0;
@@ -89,12 +107,13 @@ $sidebar_width: 260px;
 // Mobile-only Style
 @media screen and (max-width: $screen-sm-max) {
   .offcanvas-container{
-    height: 100%;
-    height: 100vh;
-    overflow-x:hidden;
     -webkit-perspective: 1500px;
   }
+  .offcanvas-wrapper{
+    padding-top: $base-line-height*3;
+  }
   .offcanvas-navbar{
+    position: absolute;
     @include transform(translate3d(0, 0, 0));
   }
   .offcanvas-sidebar{
@@ -150,12 +169,17 @@ $sidebar_width: 260px;
 @media screen and (min-width: $screen-md-min) {
   .offcanvas-container{
     background-color: white;
-    height: 100%;
+  }
+  .offcanvas-content{
+    padding-top: 54px;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
   }
   .offcanvas-navbar{
     @include background-image($primary_bg_image);
   }
   .offcanvas-sidebar-left{
-    height: 100%;
+    height: 100vh;
+    // height: 100%;
   }
 }

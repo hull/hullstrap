@@ -22,7 +22,6 @@ body.dashboard{
 
   .navbar-fixed-top{
     & + .page{
-      margin-top: $base-line-height*3;
     }
   }
   .navbar-brand{
