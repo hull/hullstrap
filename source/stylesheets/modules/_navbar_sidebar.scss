@@ -46,7 +46,7 @@
 
 
   > .nav > li > a {
-    @include font-weight-bold;
+    // @include font-weight-bold;
     border-left-width: 2px;
     padding-left: $padding-base-horizontal - 2px;
   }

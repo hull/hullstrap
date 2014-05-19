@@ -28,10 +28,17 @@ body.dashboard{
     @include inline-retina-sprite('logo/navbar-logo.png');
     @include fade-in-hover;
   }
+  .navbar-header{
+    margin-left: 0;
+  }
   .navbar-header>.navbar-brand{
     @include inline-retina-sprite('logo/icon/chevron.png');
     background-position: center left;
     opacity: 1;
     margin-left: 0;
+    @include transition(all .45s ceaser($easeOutQuint));
+  }
+  .offcanvas-active-left .navbar-brand{
+    @include transform(rotate(90deg) scale(.5) translate(0, 20px));
   }
 }
