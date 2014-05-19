@@ -44,11 +44,6 @@ $sidebar_width: 260px;
   }
 }
 
-.offcanvas-sidebar{
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
 // .offcanvas-content{
 //   -webkit-overflow-scrolling: touch;
 //   overflow: scroll;
@@ -101,6 +96,11 @@ $sidebar_width: 260px;
   .offcanvas-wrapper{
     padding-top: $base-line-height*3;
     -webkit-overflow-scrolling: touch;
+  }
+  .offcanvas-sidebar{
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .offcanvas-navbar{
@@ -190,6 +190,7 @@ $sidebar_width: 260px;
   }
   .offcanvas-navbar{
     @include background-image($primary_bg_image);
+    overflow: visible;
   }
   .offcanvas-sidebar-left{
     height: 100vh;

@@ -7,10 +7,12 @@
   background-clip: padding-box;
 
   > li > a{
-    .offcanvas-sidebar-right &{
-      color: white;
-      &:hover{
-        background-color: transparent;
+    @media screen and (max-width: $screen-sm-max){
+      .offcanvas-sidebar-right &{
+        color: white;
+        &:hover{
+          background-color: transparent;
+        }
       }
     }
   }
