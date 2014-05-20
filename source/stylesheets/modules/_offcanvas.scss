@@ -71,9 +71,8 @@ $sidebar_width: 260px;
 
 // Mobile-only Styles
 @media screen and (max-width: $screen-sm-max) {
-  html, body, .offcanvas-sidebar{
+  html, body, .offcanvas-sidebar, .offcanvas-container{
     overflow-x: hidden;
-    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     height: 100vh;
   }
@@ -82,14 +81,15 @@ $sidebar_width: 260px;
   .offcanvas-container{
     -webkit-perspective: 1500px;
   }
-  .offcanvas-active{
-    overflow: hidden;
-    height: 100vh;
-  }
   .offcanvas-wrapper{
     padding-top: $base-line-height*3;
+    height:100vh;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
   .offcanvas-sidebar{
+    overflow-y:scroll;
     position: fixed;
   }
   .offcanvas-sidebar-left{
@@ -128,8 +128,9 @@ $sidebar_width: 260px;
   }
 
   .offcanvas-active{
-    .offcanvas-content{
-      opacity: .7;
+    .offcanvas-wrapper{
+      // height: 100vh;
+      overflow-y: hidden;
     }
   }
 
