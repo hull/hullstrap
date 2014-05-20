@@ -1,12 +1,21 @@
 .dropdown-menu{
+  &.pad{
+    padding:$base-line-height/2 $padding-base-horizontal;
+  }
+  .form-group{
+    @include leader(0);
+    @include trailer(0);
+  }
   background-color: $white;
   @extend %white-background-colors;
   border: 0;
   @include border-radius(5px !important); 
   @include box-shadow(0 0px 12px rgba(0, 0, 0, 0.1));
+  @include box-shadow(0 0px 1px rgba(7, 20, 34, 0.09), 0 0px 7px rgba(10, 35, 59, 0.25));
   background-clip: padding-box;
 
-  > li > a{
+  > li a.btn-link{
+    color: $link-color;
     @media screen and (max-width: $screen-sm-max){
       .offcanvas-sidebar-right &{
         color: white;

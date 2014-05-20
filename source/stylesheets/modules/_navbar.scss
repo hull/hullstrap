@@ -47,6 +47,28 @@
     }
   }
 
+}
+
+.navbar-branded{
+  -webkit-font-smoothing:subpixel-antialiased;
+  border:none;
+  @include blue-background-colors;
+  min-height: $base-line-height*3;
+  .container{
+    position: relative;
+  }
+  .avatar img{
+    margin:  -$base-line-height/2;
+    margin-right: 0;
+  }
+  .navbar-brand{
+    @include inline-retina-sprite('logo/navbar-logo.png');
+    height: $base-line-height*2;
+    background-position: left center;
+    background-size: contain;
+    background-repeat:no-repeat;
+  }
+
   .navbar-item{
     display: inline-block;
     text-decoration: none;
@@ -74,27 +96,7 @@
     background-color: rgba(0, 0, 0, 0.12);
     @include box-shadow(none);
   }
-}
 
-.navbar-branded{
-  -webkit-font-smoothing:subpixel-antialiased;
-  border:none;
-  @include blue-background-colors;
-  min-height: $base-line-height*3;
-  .container{
-    position: relative;
-  }
-  .avatar img{
-    margin:  -$base-line-height/2;
-    margin-right: 0;
-  }
-  .navbar-brand{
-    @include inline-retina-sprite('logo/navbar-logo.png');
-    height: $base-line-height*2;
-    background-position: left center;
-    background-size: contain;
-    background-repeat:no-repeat;
-  }
   @media screen and (min-width: $screen-sm-min) {
 
     .navbar-item{
@@ -109,6 +111,7 @@
     }
   }
 }
+
 @media screen and (max-width: $screen-xs-max){
   .offcanvas-navbar .navbar-brand{
     @include inline-retina-sprite('logo/icon/white-small.png');
@@ -140,3 +143,4 @@
     @include box-shadow(none);
   }
 }
+

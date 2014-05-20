@@ -6,24 +6,17 @@
 
 $sidebar_width: 260px;
 
-.offcanvas-container{
-  height: 100%;
-  height: 100vh;
-  overflow-x:hidden;
-}
+// Defaults
 
 .offcanvas-content{
-  position: relative;
-  -webkit-transform-style: preserve-3d;
-  left: 0;
-  height: 100%;
-  overflow: scroll;
   z-index: 99;
+  -webkit-transform-style: preserve-3d;
   @include transform(translate3d(0,0,0));
 }
+
 .offcanvas-toggle{
-  display: block;
   position: absolute;
+  display: block;
   top:0;
   z-index: 10000;
   margin-left: 15px;
@@ -44,77 +37,61 @@ $sidebar_width: 260px;
   }
 }
 
-// .offcanvas-content{
-//   -webkit-overflow-scrolling: touch;
-//   overflow: scroll;
-// }
-
-.offcanvas-sidebar,
-.offcanvas-content,
-.offcanvas-navbar{
+.offcanvas-sidebar, .offcanvas-content, .offcanvas-navbar{
   @include transition(all .45s ceaser($easeOutQuint));
 }
 
-.offcanvas-active{
-  overflow: hidden;
-  .offcanvas-content{
-    overflow: hidden;
-    opacity: .2;
-  }
-}
+// Active State
 
 .offcanvas-active-left{
-  .offcanvas-toggle[data-side='left'] .icon-bar{
+  &[data-side='left'] .icon-bar{
     background-color: white;
     &:nth-child(2){ top: 8px;  @include transform(rotate(45deg)); }
     &:nth-child(4){ top: -8px; @include transform(rotate(-45deg)); }
     &:nth-child(3){ opacity: 0; }
   }
-
-  .offcanvas-content{
-    @include transform(translate3d($sidebar_width, 0, 0));
-  }
-  .offcanvas-sidebar-left{
-    @include transform(translate3d(0,0,0));
+}
+.offcanvas-active-right{
+  &[data-side='right'] .icon-bar{
+    background-color: white;
+    &:nth-child(2){
+      top: 8px;
+      @include transform(rotate(45deg)); 
+    }
+    &:nth-child(3){
+      opacity: 0;
+    }
+    &:nth-child(4){
+      top: -8px;
+      @include transform(rotate(-45deg)); 
+    }
   }
 }
 
 
-
-
-
-
-// Mobile-only Style
+// Mobile-only Styles
 @media screen and (max-width: $screen-sm-max) {
+  html, body, .offcanvas-sidebar{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100vh;
+  }
+
+  // Default States
   .offcanvas-container{
     -webkit-perspective: 1500px;
   }
-  .offcanvas-content{
+  .offcanvas-active{
+    overflow: hidden;
     height: 100vh;
-    -webkit-overflow-scrolling: touch;
   }
   .offcanvas-wrapper{
     padding-top: $base-line-height*3;
-    -webkit-overflow-scrolling: touch;
   }
   .offcanvas-sidebar{
-    -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-
-  .offcanvas-navbar{
-    position: absolute;
-    @include transform(translate3d(0, 0, 0));
-  }
-
-  .offcanvas-sidebar{
-    -webkit-overflow-scrolling: touch;
     position: fixed;
-    top:0;
-    bottom: 0;
   }
-
   .offcanvas-sidebar-left{
     z-index: 1000;
     width: $sidebar_width;
@@ -127,53 +104,57 @@ $sidebar_width: 260px;
 
   .offcanvas-sidebar-right{
     @include blue-background-colors;
-    @include make-xs-column(9);
+    // @include make-xs-column(9);
     @include make-sm-column(6);
-    // @include make-sm-column-offset(3);
-    @include make-md-column-offset(0);
+    // // @include make-sm-column-offset(3);
+    // @include make-md-column-offset(0);
     @include transition(all .45s ceaser($easeOutQuint));
     @include transform(translate3d(100%,0,0));
     position: fixed;
     right: 0;
-    height: 100vh;
+    top: 0;
+    // height: 100vh;
+    width: $sidebar_width;
     .header, .accented{
       color: $secondary;
     }
+    .nav > li{
+      width: 100%;
+    }
+    .navbar-right{
+      float: left !important;
+      
+    }
   }
 
+  .offcanvas-active{
+    .offcanvas-content{
+      opacity: .7;
+    }
+  }
 
+  // Active Left State
   .offcanvas-active-left{
+    .offcanvas-content{
+      @include transform(translate3d($sidebar_width, 0, 0));
+    }
     .offcanvas-navbar{
       @include transform(translate3d($sidebar_width, 0, 0));
     }
+    .offcanvas-sidebar-left{
+      @include transform(translate3d(0,0,0));
+    }
   }
 
+  // Active Right State
   .offcanvas-active-right{
-    overflow: hidden;
-    .offcanvas-toggle[data-side='right'] .icon-bar{
-      background-color: white;
-      &:nth-child(2){
-        top: 8px;
-        @include transform(rotate(45deg)); 
-      }
-      &:nth-child(3){
-        opacity: 0;
-      }
-      &:nth-child(4){
-        top: -8px;
-        @include transform(rotate(-45deg)); 
-      }
-    }
     .offcanvas-navbar{
-      @include transform(translate3d(-75%, 0, 0));
-      opacity: 1;
+      @include transform(translate3d(- $sidebar_width, 0, 0));
     }
     .offcanvas-content{
       // @include transform(translate3d(-90%, -10%, -600px));
-      @include transform(translate3d(-75%, -10%, -600px) rotate3d(0,-1,0,45deg));
-      opacity: .7;
-    }
-    .offcanvas-sidebar-right{
+      // @include transform(translate3d(-75%, -10%, -600px) rotate3d(0,-1,0,45deg));
+      @include transform(translate3d(- $sidebar_width, 0, 0));
     }
   }
 
@@ -181,12 +162,20 @@ $sidebar_width: 260px;
 
 // Desktop Styles
 @media screen and (min-width: $screen-md-min) {
+  html, body, .offcanvas-content{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100vh;
+  }
+
+
+
   .offcanvas-container{
     background-color: white;
   }
   .offcanvas-content{
     padding-top: 54px;
-    height: 100vh;
   }
   .offcanvas-navbar{
     @include background-image($primary_bg_image);
@@ -194,6 +183,8 @@ $sidebar_width: 260px;
   }
   .offcanvas-sidebar-left{
     height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
     // height: 100%;
   }
 }

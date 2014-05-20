@@ -30,9 +30,6 @@ form{
 
 .form-group{
   @include rhythm(0,0,0,1);
-  &.pad{
-    padding:0 $padding-base-horizontal*2;
-  }
 }
 
 .form-control{
@@ -146,15 +143,48 @@ select.form-control{
     @include transition(all .2s ease-out);
     background-color: rgba(115, 124, 129, 0);
     color: #333;
-    @include box-shadow(none);
+    // padding-right: 0;
+    // padding-left: 0;
     @include leader(0);
     @include trailer(0);
+  }
+  input[type='text'].form-control,
+  input[type='email'].form-control,
+  input[type='password'].form-control{
+    @include box-shadow(inset 0 0 2px rgba(0,0,0,.2));
     &:focus{
-      @include box-shadow(none);
+      @include box-shadow(inset 0 0 1px rgba(0,0,0,.3));
+      // @include box-shadow(none);
       background-color: rgba(115, 124, 129, 0.12); 
     }
   }
   .form-group{
     @include trailer(0);
+    @include leader(0);
+  }
+}
+
+.or-separator{
+  text-align: center;
+  overflow: hidden;
+  span{
+    background-color: white;
+    color: #888;
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    &:before, &:after{
+      position: absolute;
+      content: "";
+      left: 100%;
+      top: 50%;
+      width: 1000px;
+      background: #eee;
+      height: 1px;
+    }
+    &:before{
+      left: auto;
+      right: 100%;
+    }
   }
 }
