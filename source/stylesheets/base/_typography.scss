@@ -1,8 +1,3 @@
-html,
-body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
-}
-
 body{
   @include background-image($primary_bg_image);
   -webkit-font-smoothing:antialiased;

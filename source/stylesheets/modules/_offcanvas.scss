@@ -87,10 +87,7 @@ $sidebar_width: 260px;
   }
   .offcanvas-wrapper{
     padding-top: $base-line-height*3;
-    // height:100vh;
-    // overflow-y:scroll;
-    // overflow-x: hidden;
-    // -webkit-overflow-scrolling: touch;
+    overflow-x:hidden;
   }
   .overflow-content{
     @include transform-origin(0 50%);
@@ -99,7 +96,7 @@ $sidebar_width: 260px;
     position: absolute;
   }
   .offcanvas-sidebar{
-    height: 100vh;
+    height: 100%;
     overflow-y:scroll;
     position: fixed;
   }
@@ -119,6 +116,7 @@ $sidebar_width: 260px;
     @include transition(all .45s ceaser($easeOutQuint));
     @include transform(translate3d(100%,0,0));
     position: fixed;
+    height: 100vh;
     width: $sidebar_width;
     right: 0;
     top: 0;
@@ -134,23 +132,18 @@ $sidebar_width: 260px;
     }
   }
 
-  .offcanvas-active{
-    // overflow-y: hidden;
-    // .offcanvas-content{
-      // height: 100vh;
-    // }
-  }
-
   // Active Left State
   .offcanvas-active-left{
-    .offcanvas-content{
-      @include transform(translate3d($sidebar_width, 0, 0));
-    }
     .offcanvas-navbar{
       @include transform(translate3d($sidebar_width, 0, 0));
     }
     .offcanvas-sidebar-left{
       @include transform(translate3d(0,0,0));
+    }
+    .offcanvas-content{
+      overflow: hidden;
+      opacity: .5;
+      @include transform(translate3d($sidebar_width, 0, 0));
     }
   }
 
@@ -160,13 +153,9 @@ $sidebar_width: 260px;
       @include transform(translate3d(- $sidebar_width, 0, 0));
     }
     .offcanvas-content{
-      // @include transform(translate3d(-90%, -10%, -600px));
-      // @include transform(translate3d(-75%, -10%, -600px) rotate3d(0,-1,0,45deg));
-      @include transform(perspective(600px) translate3d(-270px, 0, -200px));
-      // max-height: 500px;
+      @include transform(perspective(600px) translate3d(-300px, 0, -200px));
       overflow: hidden;
       opacity: .5;
-      // @include transform(translate3d(- $sidebar_width, 0, 0));
     }
   }
 
