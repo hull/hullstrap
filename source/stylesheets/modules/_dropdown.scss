@@ -9,8 +9,7 @@
   background-color: $white;
   @extend %white-background-colors;
   border: 0;
-  @include border-radius(5px !important); 
-  @include box-shadow(0 0px 12px rgba(0, 0, 0, 0.1));
+  @include border-radius(3px !important); 
   @include box-shadow(0 0px 1px rgba(7, 20, 34, 0.09), 0 0px 7px rgba(10, 35, 59, 0.25));
   background-clip: padding-box;
 
@@ -25,6 +24,22 @@
       }
     }
   }
+  > li > a{
+    border:0;
+    @include adjust-font-size-to(13px);
+    padding-left:$padding-base-horizontal;
+    padding-right:$padding-base-horizontal;
+    @include rhythm(0,.25,.25,0, 13px);
+    white-space: nowrap;
+    font-weight: 600;
+    // text-transform: uppercase; 
+    .icon{
+      width: 20px;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+
 
   .open &{
     @extend .animated;
@@ -46,59 +61,10 @@
       border-color: rgba(255,255,255,.2);
     }
   }
-
-  &:before {
-    content: "";
-    display: inline-block;
-    border-left: 7px solid rgba(0,0,0,0);
-    border-right: 7px solid rgba(0,0,0,0);
-    border-bottom: 7px solid $white;
-    position: absolute;
-    top: -7px;
-    right: 29px;
-    .dropup &{
-      top: auto;
-      bottom: -14px;
-      border-top: 7px solid $white;
-      border-bottom-color: transparent;
-    }
-    .left &{
-      right: auto;
-      left: 29px;
-    }
-    .offcanvas-sidebar &{
-      display: none;
-    }
-
-  }
-
-
-  > li > a{
-    border:0;
-    color: $tertiary;
-    @include adjust-font-size-to(13px);
-    padding:4px 15px 3px 15px;
-    @include rhythm(0,.25,.25,0, 13px);
-    // text-transform: uppercase; 
-    white-space: nowrap;
-    font-weight: 600;
-  }
-
-  // margin: 0;
-  // top: 24px;
-  // left: 1px;
-  border: 0;
-  box-shadow: 0 0px 1px $tertiary;
-  border-radius: 0px !important;
 }
 
 
 .user-login-dropdown{
-  @media (max-width: $screen-sm-max){
-    .dropdown-menu::before{
-      display: none;
-    }
-  }
   img.avatar{
     height: $base-line-height*1.33333333334 - 2px;
     top: - $base-line-height / 4;

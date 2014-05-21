@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "a492d72bbbac60c968a8696fa342ab512fd931872d175a40aa409c3cf76f8655",
-    "current": "a492d72bbbac60c968a8696fa342ab512fd931872d175a40aa409c3cf76f8655"
+    "previous": "e3fcef1609f9a3ceebe7d8379547943ab69d3e07af7b4b724d94a60c9210e515",
+    "current": "e3fcef1609f9a3ceebe7d8379547943ab69d3e07af7b4b724d94a60c9210e515"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_a492d72bbbac60c968a8696fa342ab51.ttf",
-    "source/stylesheets/fonts/fontcustom_a492d72bbbac60c968a8696fa342ab51.svg",
-    "source/stylesheets/fonts/fontcustom_a492d72bbbac60c968a8696fa342ab51.woff",
-    "source/stylesheets/fonts/fontcustom_a492d72bbbac60c968a8696fa342ab51.eot"
+    "source/stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.ttf",
+    "source/stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.svg",
+    "source/stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.woff",
+    "source/stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.eot"
   ],
   "glyphs": {
     "akismet": {
@@ -77,6 +77,10 @@
     "email": {
       "codepoint": 61858,
       "source": "source/images/icons/email.svg"
+    },
+    "email_message": {
+      "codepoint": 61911,
+      "source": "source/images/icons/email_message.svg"
     },
     "emit": {
       "codepoint": 61859,
