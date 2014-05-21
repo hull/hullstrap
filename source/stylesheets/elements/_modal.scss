@@ -1,14 +1,15 @@
 
 .dashboard-modal{
-  border:none;
-  border: 0;
-  @include box-shadow(none); 
-  right: 0;
   left: auto;
+  right: 0;
   top:0;
+  overflow: hidden;
+  height: 100%;
   .panel-minimal .panel-heading{
     @include box-shadow(inset 0 -1px 0px 0px rgba(215, 222, 231, 0.2));
     background-color: transparent;
+    padding-left:0;
+    padding-right:0;
   }
   .modal-body{
     margin:0;
@@ -20,14 +21,11 @@
     border:none; 
   }
 
-  button.close{
-    margin-top: 25px;
-  }
   .modal-footer{
     padding:0; 
     margin:0;
     .btn-close{
-      position: absolute;
+      position: fixed;
       bottom: 10px;
       right: 10px;
       z-index: 100;

@@ -1,6 +1,4 @@
 body.dashboard{
-  // background: white;
-
   .org-selector{
     .dropdown{
       .dropdown-toggle{
@@ -18,12 +16,6 @@ body.dashboard{
     }
   }
 
-
-
-  .navbar-fixed-top{
-    & + .page{
-    }
-  }
   .navbar-brand{
     @include inline-retina-sprite('logo/navbar-logo.png');
     @include fade-in-hover;
@@ -37,8 +29,5 @@ body.dashboard{
     opacity: 1;
     margin-left: 0;
     @include transition(all .45s ceaser($easeOutQuint));
-  }
-  .offcanvas-active-left .navbar-brand{
-    @include transform(rotate(90deg) scale(.5) translate(0, 20px));
   }
 }

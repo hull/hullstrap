@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <title>app</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-360.000000, -80.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="app" transform="translate(360.000000, 80.000000)" sketch:type="MSShapeGroup">
+                <g id="Group" transform="translate(1.000000, 1.000000)">
+                    <path d="M34,31.0434783 C34,32.6695652 32.6695652,34 31.0434783,34 L2.95652174,34 C1.33043478,34 0,32.6695652 0,31.0434783 L0,2.95652174 C0,1.33043478 1.33043478,0 2.95652174,0 L31.0434783,0 C32.6695652,0 34,1.33043478 34,2.95652174 L34,31.0434783 L34,31.0434783 Z" id="Stroke-7409"></path>
+                    <path d="M0,13.305087 L5.91304348,13.305087 L8.86956522,8.86956522 L11.826087,13.3036087 L14.7826087,6.65143478 L19.2173913,20.694913 L22.9130435,2.95652174 L25.8695652,13.305087 L34,13.305087" id="Stroke-7410"></path>
+                    <path d="M5.91304348,29.5652174 L5.91304348,31.0434783" id="Stroke-7411"></path>
+                    <path d="M14.7826087,29.5652174 L14.7826087,31.0434783" id="Stroke-7412"></path>
+                    <path d="M23.6521739,29.5652174 L23.6521739,31.0434783" id="Stroke-7413"></path>
+                    <path d="M10.3478261,26.6086957 L10.3478261,31.0434783" id="Stroke-7414"></path>
+                    <path d="M19.2173913,26.6086957 L19.2173913,31.0434783" id="Stroke-7415"></path>
+                    <path d="M28.0869565,26.6086957 L28.0869565,31.0434783" id="Stroke-7416"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,15 +1,19 @@
 {
   "checksum": {
-    "previous": "e3fcef1609f9a3ceebe7d8379547943ab69d3e07af7b4b724d94a60c9210e515",
-    "current": "e3fcef1609f9a3ceebe7d8379547943ab69d3e07af7b4b724d94a60c9210e515"
+    "previous": "05181e646a03f114e4e9ceb7a37c425a008e159f434d7ba9eceeeed57c200df5",
+    "current": "05181e646a03f114e4e9ceb7a37c425a008e159f434d7ba9eceeeed57c200df5"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.ttf",
-    "source/stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.svg",
-    "source/stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.woff",
-    "source/stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.eot"
+    "source/stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.ttf",
+    "source/stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.svg",
+    "source/stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.woff",
+    "source/stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.eot"
   ],
   "glyphs": {
+    "achievement": {
+      "codepoint": 61919,
+      "source": "source/images/icons/achievement.svg"
+    },
     "akismet": {
       "codepoint": 61886,
       "source": "source/images/icons/akismet.svg"
@@ -17,6 +21,10 @@
     "angellist": {
       "codepoint": 61887,
       "source": "source/images/icons/angellist.svg"
+    },
+    "app": {
+      "codepoint": 61918,
+      "source": "source/images/icons/app.svg"
     },
     "arrow_double_left": {
       "codepoint": 61905,
@@ -45,6 +53,10 @@
     "checkbox": {
       "codepoint": 61850,
       "source": "source/images/icons/checkbox.svg"
+    },
+    "clock": {
+      "codepoint": 61916,
+      "source": "source/images/icons/clock.svg"
     },
     "cloud": {
       "codepoint": 61851,
@@ -86,6 +98,10 @@
       "codepoint": 61859,
       "source": "source/images/icons/emit.svg"
     },
+    "exit": {
+      "codepoint": 61915,
+      "source": "source/images/icons/exit.svg"
+    },
     "facebook": {
       "codepoint": 61888,
       "source": "source/images/icons/facebook.svg"
@@ -98,9 +114,17 @@
       "codepoint": 61889,
       "source": "source/images/icons/foursquare.svg"
     },
+    "ghost": {
+      "codepoint": 61917,
+      "source": "source/images/icons/ghost.svg"
+    },
     "github": {
       "codepoint": 61890,
       "source": "source/images/icons/github.svg"
+    },
+    "google": {
+      "codepoint": 61914,
+      "source": "source/images/icons/google.svg"
     },
     "google_analytics": {
       "codepoint": 61891,
@@ -121,6 +145,10 @@
     "hull": {
       "codepoint": 61893,
       "source": "source/images/icons/hull.svg"
+    },
+    "image": {
+      "codepoint": 61913,
+      "source": "source/images/icons/image.svg"
     },
     "instagram": {
       "codepoint": 61894,
@@ -150,9 +178,17 @@
       "codepoint": 61879,
       "source": "source/images/icons/like.svg"
     },
+    "liked": {
+      "codepoint": 61921,
+      "source": "source/images/icons/liked.svg"
+    },
     "linkedin": {
       "codepoint": 61897,
       "source": "source/images/icons/linkedin.svg"
+    },
+    "lock": {
+      "codepoint": 61920,
+      "source": "source/images/icons/lock.svg"
     },
     "meetups": {
       "codepoint": 61898,
@@ -185,6 +221,10 @@
     "reset": {
       "codepoint": 61877,
       "source": "source/images/icons/reset.svg"
+    },
+    "review": {
+      "codepoint": 61912,
+      "source": "source/images/icons/review.svg"
     },
     "search": {
       "codepoint": 61868,

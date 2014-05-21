@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: font-url("stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.eot");
-  src: font-url("stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.eot?#iefix") format("embedded-opentype"),
-       font-url("stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.woff") format("woff"),
-       font-url("stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.ttf") format("truetype"),
-       font-url("stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.svg#fontcustom") format("svg");
+  src: font-url("stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.eot");
+  src: font-url("stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.eot?#iefix") format("embedded-opentype"),
+       font-url("stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.woff") format("woff"),
+       font-url("stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.ttf") format("truetype"),
+       font-url("stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,15 +16,17 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: font-url("stylesheets/fonts/fontcustom_e3fcef1609f9a3ceebe7d8379547943a.svg#fontcustom") format("svg");
+    src: font-url("stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.svg#fontcustom") format("svg");
   }
 }
 
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
+.icon-achievement:before,
 .icon-akismet:before,
 .icon-angellist:before,
+.icon-app:before,
 .icon-arrow_double_left:before,
 .icon-arrow_double_right:before,
 .icon-arrow_down:before,
@@ -32,6 +34,7 @@
 .icon-arrow_right:before,
 .icon-arrow_up:before,
 .icon-checkbox:before,
+.icon-clock:before,
 .icon-cloud:before,
 .icon-cog:before,
 .icon-comment:before,
@@ -42,15 +45,19 @@
 .icon-email:before,
 .icon-email_message:before,
 .icon-emit:before,
+.icon-exit:before,
 .icon-facebook:before,
 .icon-filter:before,
 .icon-foursquare:before,
+.icon-ghost:before,
 .icon-github:before,
+.icon-google:before,
 .icon-google_analytics:before,
 .icon-google_plus:before,
 .icon-hide:before,
 .icon-html5:before,
 .icon-hull:before,
+.icon-image:before,
 .icon-instagram:before,
 .icon-javascript:before,
 .icon-keen-IO:before,
@@ -58,7 +65,9 @@
 .icon-kissmetrics:before,
 .icon-libraries:before,
 .icon-like:before,
+.icon-liked:before,
 .icon-linkedin:before,
+.icon-lock:before,
 .icon-meetups:before,
 .icon-minus:before,
 .icon-mixpanel:before,
@@ -67,6 +76,7 @@
 .icon-question:before,
 .icon-reply:before,
 .icon-reset:before,
+.icon-review:before,
 .icon-search:before,
 .icon-send:before,
 .icon-share:before,
@@ -99,8 +109,10 @@
   font-smoothing: antialiased;
 }
 
+.icon-achievement:before { content: "\f1df"; }
 .icon-akismet:before { content: "\f1be"; }
 .icon-angellist:before { content: "\f1bf"; }
+.icon-app:before { content: "\f1de"; }
 .icon-arrow_double_left:before { content: "\f1d1"; }
 .icon-arrow_double_right:before { content: "\f1d2"; }
 .icon-arrow_down:before { content: "\f1d3"; }
@@ -108,6 +120,7 @@
 .icon-arrow_right:before { content: "\f1d5"; }
 .icon-arrow_up:before { content: "\f1d6"; }
 .icon-checkbox:before { content: "\f19a"; }
+.icon-clock:before { content: "\f1dc"; }
 .icon-cloud:before { content: "\f19b"; }
 .icon-cog:before { content: "\f19c"; }
 .icon-comment:before { content: "\f19d"; }
@@ -118,15 +131,19 @@
 .icon-email:before { content: "\f1a2"; }
 .icon-email_message:before { content: "\f1d7"; }
 .icon-emit:before { content: "\f1a3"; }
+.icon-exit:before { content: "\f1db"; }
 .icon-facebook:before { content: "\f1c0"; }
 .icon-filter:before { content: "\f1a4"; }
 .icon-foursquare:before { content: "\f1c1"; }
+.icon-ghost:before { content: "\f1dd"; }
 .icon-github:before { content: "\f1c2"; }
+.icon-google:before { content: "\f1da"; }
 .icon-google_analytics:before { content: "\f1c3"; }
 .icon-google_plus:before { content: "\f1c4"; }
 .icon-hide:before { content: "\f1a5"; }
 .icon-html5:before { content: "\f1b9"; }
 .icon-hull:before { content: "\f1c5"; }
+.icon-image:before { content: "\f1d9"; }
 .icon-instagram:before { content: "\f1c6"; }
 .icon-javascript:before { content: "\f1ba"; }
 .icon-keen-IO:before { content: "\f1c7"; }
@@ -134,7 +151,9 @@
 .icon-kissmetrics:before { content: "\f1c8"; }
 .icon-libraries:before { content: "\f1bc"; }
 .icon-like:before { content: "\f1b7"; }
+.icon-liked:before { content: "\f1e1"; }
 .icon-linkedin:before { content: "\f1c9"; }
+.icon-lock:before { content: "\f1e0"; }
 .icon-meetups:before { content: "\f1ca"; }
 .icon-minus:before { content: "\f1b8"; }
 .icon-mixpanel:before { content: "\f1cb"; }
@@ -143,6 +162,7 @@
 .icon-question:before { content: "\f1b4"; }
 .icon-reply:before { content: "\f1bd"; }
 .icon-reset:before { content: "\f1b5"; }
+.icon-review:before { content: "\f1d8"; }
 .icon-search:before { content: "\f1ac"; }
 .icon-send:before { content: "\f1ad"; }
 .icon-share:before { content: "\f1ae"; }
