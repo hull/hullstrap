@@ -88,6 +88,9 @@ $sidebar_width: 260px;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
   }
+  .offcanvas-navbar{
+    position: absolute;
+  }
   .offcanvas-sidebar{
     overflow-y:scroll;
     position: fixed;
