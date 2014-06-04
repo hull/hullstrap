@@ -26,9 +26,9 @@
     }
   }
   > li > a, .open > a{
-    &:hover,&:focus{
-      background-color: transparent;
-    }
+    // &:hover,&:focus{
+    //   background-color: transparent;
+    // }
   }
 
   .offcanvas-sidebar-left &{
@@ -68,17 +68,41 @@
 
 .nav-tabs{
   @extend %nav;
+  &.nav-justified{
+    > a{
+      @include rhythm(0,1,1,0);
+      border: none !important;
+    }
+    > .active{
+      > a, >a:hover, >a:focus{
+        border: none !important;
+      }
+    }
+  }
 }
 
 .nav-rounded{
   @extend %nav;
   > li {
-    display: inline;
+    // display: inline;
     > a {
       @extend .btn-pill;
       @extend .btn-rounded;
       @extend .btn;
-      display: inline-block;
+      // display: inline-block;
+    }
+    &:first-child{
+      > a{
+        @include border-radius(100px 0 0 100px);
+      }
+    }
+    + li > a{
+      @include border-radius(0 0 0 0);
+    }
+    &:last-child{
+      > a{
+        @include border-radius(0 100px 100px 0);
+      }
     }
   }
 }

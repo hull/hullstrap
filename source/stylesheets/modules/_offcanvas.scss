@@ -7,11 +7,15 @@
 $sidebar_width: 260px;
 
 // Defaults
+.offcanvas-container{
+  @include transition(all .3s ceaser($easeOutQuint));
+}
 
 .offcanvas-content{
   z-index: 99;
   -webkit-transform-style: preserve-3d;
   @include transform(translate3d(0,0,0));
+  min-height: 100vh;
 }
 
 .offcanvas-toggle{
@@ -164,16 +168,19 @@ $sidebar_width: 260px;
 // Desktop Styles
 @media screen and (min-width: $screen-md-min) {
   html, body, .offcanvas-content{
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    height: 100vh;
+    // overflow-x: hidden;
+    // overflow-y: scroll;
+    // -webkit-overflow-scrolling: touch;
+    // height: 100vh;
   }
-
 
 
   .offcanvas-container{
     background-color: white;
+  }
+  .offcanvas-wrapper{
+    @include make-md-column-push(3);
+    @include make-lg-column-push(2);
   }
   .offcanvas-content{
     padding-top: 54px;
@@ -183,6 +190,7 @@ $sidebar_width: 260px;
     overflow: visible;
   }
   .offcanvas-sidebar-left{
+    position: fixed;
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;

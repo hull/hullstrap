@@ -41,8 +41,7 @@
     radial-gradient(1500px 500px at top,
       transparentize(lighten($secondary_bg_color, 50%), .7) 0%,
       transparentize($secondary_bg_color, .3) 100%
-    ),
-    inline-image('noise.png')
+    )
   );
   @include inverted-background-colors;
 }

@@ -33,24 +33,24 @@
     // overflow: hidden;
     // display: none;
     span {
-      background-color: white;
+      // background-color: white;
       color: $light_text;
       display: inline-block;
       position: relative;
       padding: 0 $padding-base-horizontal;
-      &:before, &:after {
-        position: absolute;
-        content: "";
-        left: 100%;
-        top: 50%;
-        width: 500px;
-        background: $light-filet;
-        height: 1px;
-      }
-      &:before {
-          left: auto;
-          right: 100%;
-      }
+      // &:before, &:after {
+      //   position: absolute;
+      //   content: "";
+      //   left: 100%;
+      //   top: 50%;
+      //   width: 500px;
+      //   background: $light-filet;
+      //   height: 1px;
+      // }
+      // &:before {
+      //     left: auto;
+      //     right: 100%;
+      // }
     }
   }
 }

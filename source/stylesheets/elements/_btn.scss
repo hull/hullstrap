@@ -35,7 +35,7 @@
 @mixin btn-color($bg-color:$primary_bg_color, $border-color: $primary_bg_color, $text-color:$primary_bg_text){
   color: $text-color;
   background-color: $bg-color;
-  @include box-shadow(inset 0 0 0 2px $border-color);
+  @include box-shadow(inset 0 0 0 1px $border-color);
   &:hover, &:active, &:focus, &.active{
     color: darken($text-color, 5%);
     @include box-shadow(inset 0 0 0 2px darken($border-color, 5%));
@@ -89,7 +89,16 @@
 }
 .btn-pill{
   @include btn-pill;
+  &.active{
+    @include box-shadow(inset 0 0px 0px 2px rgba(0, 147, 230, 1));
+  }
 }
+
+.btn-group>.btn-pill+.btn{
+  position: relative;
+  left: -2px;
+}
+
 .btn-gradient{
   @include background-image(linear-gradient(to right top, $primary_alt, $tertiary)); 
   @include box-shadow(none);
@@ -144,6 +153,11 @@
 
 .btn-default.disabled,
 .btn-default[disabled],
-fieldset[disabled] .btn-default{
+  fieldset[disabled] .btn-default{
   @extend %btn-disabled;
+}
+
+.btn-upper{
+  font-weight: 600;
+  text-transform: uppercase;
 }

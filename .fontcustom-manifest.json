@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "05181e646a03f114e4e9ceb7a37c425a008e159f434d7ba9eceeeed57c200df5",
-    "current": "05181e646a03f114e4e9ceb7a37c425a008e159f434d7ba9eceeeed57c200df5"
+    "previous": "1969348f494b8f71e72a6376997dc1ff5fbd94aa5f8c6a1dcb403f8ba29666ea",
+    "current": "1969348f494b8f71e72a6376997dc1ff5fbd94aa5f8c6a1dcb403f8ba29666ea"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.ttf",
-    "source/stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.svg",
-    "source/stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.woff",
-    "source/stylesheets/fonts/fontcustom_05181e646a03f114e4e9ceb7a37c425a.eot"
+    "source/stylesheets/fonts/fontcustom_1969348f494b8f71e72a6376997dc1ff.ttf",
+    "source/stylesheets/fonts/fontcustom_1969348f494b8f71e72a6376997dc1ff.svg",
+    "source/stylesheets/fonts/fontcustom_1969348f494b8f71e72a6376997dc1ff.woff",
+    "source/stylesheets/fonts/fontcustom_1969348f494b8f71e72a6376997dc1ff.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -81,6 +81,10 @@
     "dashboard": {
       "codepoint": 61856,
       "source": "source/images/icons/dashboard.svg"
+    },
+    "desktop": {
+      "codepoint": 61922,
+      "source": "source/images/icons/desktop.svg"
     },
     "download": {
       "codepoint": 61857,
@@ -201,6 +205,10 @@
     "mixpanel": {
       "codepoint": 61899,
       "source": "source/images/icons/mixpanel.svg"
+    },
+    "mobile": {
+      "codepoint": 61923,
+      "source": "source/images/icons/mobile.svg"
     },
     "plug_in": {
       "codepoint": 61904,

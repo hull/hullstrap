@@ -142,10 +142,10 @@ input[type='search'].form-control,
 input[type='text'].form-control,
 input[type='email'].form-control,
 input[type='password'].form-control{
-  @include box-shadow(inset 0 0 2px rgba(0,0,0,.2));
+  @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.1));
   background-color: white; 
   &:focus{
-    @include box-shadow(inset 0 0 1px rgba(0,0,0,.3));
+    // @include box-shadow(inset 0 0 1px rgba(0,0,0,.3));
     background-color: $off_white; 
   }
 }
@@ -155,29 +155,15 @@ input[type='password'].form-control{
     @include trailer(0);
     @include leader(0);
   }
-}
-
-.or-separator{
-  text-align: center;
-  overflow: hidden;
-  span{
-    background-color: white;
-    color: #888;
-    display: inline-block;
-    position: relative;
-    padding: 0 10px;
-    &:before, &:after{
-      position: absolute;
-      content: "";
-      left: 100%;
-      top: 50%;
-      width: 1000px;
-      background: #eee;
-      height: 1px;
-    }
-    &:before{
-      left: auto;
-      right: 100%;
+  input[type='search'].form-control,
+  input[type='text'].form-control,
+  input[type='email'].form-control,
+  input[type='password'].form-control{
+    @include box-shadow(inset 0 1px 0 rgba(0,0,0,.1));
+    &.last{
+      @include box-shadow(inset 0 1px 0 rgba(0,0,0,.1), inset 0 -1px 0 rgba(0,0,0,.1));
     }
   }
 }
+
+
