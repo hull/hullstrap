@@ -29,8 +29,8 @@ $gray-lighter:           $blue_gray_lighter; // #eee
 $brand-primary:         $primary;
 $brand-success:         $turquoise;
 $brand-info:            $blue;
-$brand-warning:         $red;
-$brand-danger:          saturate($red, 15%);
+$brand-warning:         $orange;
+$brand-danger:          $red;
  
  
 //== Scaffolding
@@ -145,7 +145,6 @@ $table-bg-active:               $table-bg-hover !default;
  
 //** Border color for table and cell borders.
 $table-border-color:            $light-filet !default;
- 
  
 //== Buttons
 //
@@ -483,19 +482,19 @@ $jumbotron-font-size:            $font-size-base;
 //## Define colors for form feedback states and, by default, alerts.
  
 $state-success-text:             $brand-success !default;
-$state-success-bg:               lighten($brand-success, 30%) !default;
+$state-success-bg:               saturate(lighten($brand-success, 40%), 30%) !default;
 $state-success-border:           $state-success-bg !default;
  
 $state-info-text:                $brand-info !default;
-$state-info-bg:                  lighten($brand-info, 30%) !default;
+$state-info-bg:                  saturate(lighten($brand-info, 40%), 30%) !default;
 $state-info-border:              $state-info-bg !default;
  
 $state-warning-text:             $brand-warning !default;
-$state-warning-bg:               lighten($brand-warning, 30%) !default;
+$state-warning-bg:               saturate(lighten($brand-warning, 40%), 30%) !default;
 $state-warning-border:           $state-warning-bg !default;
  
 $state-danger-text:              $brand-danger !default;
-$state-danger-bg:                lighten($brand-danger, 30%) !default;
+$state-danger-bg:                saturate(lighten($brand-danger, 40%), 30%) !default;
 $state-danger-border:            $state-danger-bg !default;
  
  

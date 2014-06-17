@@ -66,7 +66,8 @@
     padding-right: $hpadding;
   }
 }
-@mixin btn-sm(){ @include btn-rhythm(1.5, 1.5); }
+@mixin btn-xs(){ @include btn-rhythm(1, 0, 11px, $padding-base-horizontal/2); }
+@mixin btn-sm(){ @include btn-rhythm(1.5, 0, $base-font-size, $padding-base-horizontal); }
 @mixin btn-lg(){ @include btn-rhythm(2, 1); }
 @mixin btn-xl(){ @include btn-rhythm(3, 0);  }
 
@@ -94,11 +95,6 @@
   }
 }
 
-.btn-group>.btn-pill+.btn{
-  position: relative;
-  left: -2px;
-}
-
 .btn-gradient{
   @include background-image(linear-gradient(to right top, $primary_alt, $tertiary)); 
   @include box-shadow(none);
@@ -116,6 +112,7 @@
   @include btn-rounded();
 }
 
+.btn-xs{@include btn-xs();   }
 .btn-sm{@include btn-sm();   }
 .btn-lg{@include btn-lg();   }
 .btn-xl{@include btn-xl(); }

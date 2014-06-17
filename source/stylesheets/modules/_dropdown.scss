@@ -42,8 +42,8 @@
 
 
   .open &{
-    @extend .animated;
-    @extend .fadeInUp;
+    // @extend .animated;
+    // @extend .fadeInUp;
     .offcanvas-sidebar & > li > a{
       padding-left: $padding-base-horizontal;
     }

@@ -14,24 +14,27 @@ $sidebar_width: 260px;
 .offcanvas-content{
   z-index: 99;
   -webkit-transform-style: preserve-3d;
-  @include transform(translate3d(0,0,0));
+  // @include transform(translate3d(0,0,0));
+  // min-height: 100vh;
   min-height: 100vh;
+  background:white;
+  background-color: #eaeef3;  
 }
 
 .offcanvas-toggle{
-  position: absolute;
-  display: block;
-  top:0;
-  z-index: 10000;
-  margin-left: 15px;
-  margin-right: 15px;
+  // position: absolute;
+  // display: block;
+  // top:0;
+  // z-index: 10000;
+  // margin-left: 15px;
+  // margin-right: 15px;
   &[data-side='left']{
-    left: 0;
-    margin-left: 0;
+    float: left;
+    margin-left: -10px;
   }
   &[data-side='right']{
-    right: 0;
-    margin-right: 9px;
+    float: right;
+    margin-right: -10px;
   }
   .icon-bar{
     @include transform(0);
@@ -50,7 +53,7 @@ $sidebar_width: 260px;
 .offcanvas-active-left{
   .offcanvas-toggle[data-side='left'] .icon-bar{
     background-color: white;
-    &:nth-child(2){ top: 8px;  @include transform(rotate(45deg)); }
+    &:nth-child(2){ top: 4px;  @include transform(rotate(45deg)); }
     &:nth-child(4){ top: -8px; @include transform(rotate(-45deg)); }
     &:nth-child(3){ opacity: 0; }
   }
@@ -66,7 +69,7 @@ $sidebar_width: 260px;
       opacity: 0;
     }
     &:nth-child(4){
-      top: -8px;
+      top: -4px;
       @include transform(rotate(-45deg)); 
     }
   }
@@ -75,11 +78,18 @@ $sidebar_width: 260px;
 
 // Mobile-only Styles
 @media screen and (max-width: $screen-sm-max) {
-  html, body, .offcanvas-container, .offcanvas-wrapper, .offcanvas-content{
-    // overflow-x: hidden;
+  html, body{
+    overflow-x: hidden;
     overflow-y:scroll;
     -webkit-overflow-scrolling: touch;
-    height: 100%;
+    height: 100vh;
+  }
+
+  html, body, .offcanvas-container, .offcanvas-wrapper, .offcanvas-content{
+    // overflow-x: hidden;
+    // overflow-y:scroll;
+    // -webkit-overflow-scrolling: touch;
+    // height: 100%;
   }
   body{
     position: relative;
@@ -96,12 +106,13 @@ $sidebar_width: 260px;
   .overflow-content{
     @include transform-origin(0 50%);
   }
-  .offcanvas-navbar{
-    position: absolute;
-  }
+  // .offcanvas-navbar{
+  //   position: absolute;
+  // }
   .offcanvas-sidebar{
-    height: 100%;
+    height: 100vh;
     overflow-y:scroll;
+    overflow-x:hidden;
     position: fixed;
   }
   .offcanvas-sidebar-left{
@@ -136,6 +147,11 @@ $sidebar_width: 260px;
     }
   }
 
+  .offcanvas-active{
+    height: 100vh;
+    overflow-y:hidden;
+  }
+
   // Active Left State
   .offcanvas-active-left{
     .offcanvas-navbar{
@@ -147,6 +163,7 @@ $sidebar_width: 260px;
     .offcanvas-content{
       overflow: hidden;
       opacity: .5;
+      height: 100vh;
       @include transform(translate3d($sidebar_width, 0, 0));
     }
   }
@@ -159,6 +176,7 @@ $sidebar_width: 260px;
     .offcanvas-content{
       @include transform(perspective(600px) translate3d(-300px, 0, -200px));
       overflow: hidden;
+      height: 100vh;
       opacity: .5;
     }
   }
@@ -174,16 +192,15 @@ $sidebar_width: 260px;
     // height: 100vh;
   }
 
-
+  .offcanvas-content{
+    @include transform(none);
+  }
   .offcanvas-container{
     background-color: white;
   }
   .offcanvas-wrapper{
     @include make-md-column-push(3);
     @include make-lg-column-push(2);
-  }
-  .offcanvas-content{
-    padding-top: 54px;
   }
   .offcanvas-navbar{
     @include background-image($primary_bg_image);

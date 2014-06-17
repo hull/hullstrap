@@ -1,18 +1,22 @@
 {
   "checksum": {
-    "previous": "1969348f494b8f71e72a6376997dc1ff5fbd94aa5f8c6a1dcb403f8ba29666ea",
-    "current": "1969348f494b8f71e72a6376997dc1ff5fbd94aa5f8c6a1dcb403f8ba29666ea"
+    "previous": "0892700877bd40993700b03e12347a4515921e8dd67fce7752e2fa1560d617d7",
+    "current": "0892700877bd40993700b03e12347a4515921e8dd67fce7752e2fa1560d617d7"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_1969348f494b8f71e72a6376997dc1ff.ttf",
-    "source/stylesheets/fonts/fontcustom_1969348f494b8f71e72a6376997dc1ff.svg",
-    "source/stylesheets/fonts/fontcustom_1969348f494b8f71e72a6376997dc1ff.woff",
-    "source/stylesheets/fonts/fontcustom_1969348f494b8f71e72a6376997dc1ff.eot"
+    "source/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.ttf",
+    "source/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.svg",
+    "source/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.woff",
+    "source/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.eot"
   ],
   "glyphs": {
     "achievement": {
       "codepoint": 61919,
       "source": "source/images/icons/achievement.svg"
+    },
+    "add_image": {
+      "codepoint": 61926,
+      "source": "source/images/icons/add_image.svg"
     },
     "akismet": {
       "codepoint": 61886,
@@ -50,6 +54,14 @@
       "codepoint": 61910,
       "source": "source/images/icons/arrow_up.svg"
     },
+    "blockquote": {
+      "codepoint": 61927,
+      "source": "source/images/icons/blockquote.svg"
+    },
+    "bold": {
+      "codepoint": 61928,
+      "source": "source/images/icons/bold.svg"
+    },
     "checkbox": {
       "codepoint": 61850,
       "source": "source/images/icons/checkbox.svg"
@@ -62,6 +74,10 @@
       "codepoint": 61851,
       "source": "source/images/icons/cloud.svg"
     },
+    "codesnippet": {
+      "codepoint": 61946,
+      "source": "source/images/icons/codesnippet.svg"
+    },
     "cog": {
       "codepoint": 61852,
       "source": "source/images/icons/cog.svg"
@@ -69,6 +85,10 @@
     "comment": {
       "codepoint": 61853,
       "source": "source/images/icons/comment.svg"
+    },
+    "comment_code": {
+      "codepoint": 61942,
+      "source": "source/images/icons/comment_code.svg"
     },
     "component": {
       "codepoint": 61854,
@@ -106,6 +126,14 @@
       "codepoint": 61915,
       "source": "source/images/icons/exit.svg"
     },
+    "eye_closed": {
+      "codepoint": 61924,
+      "source": "source/images/icons/eye_closed.svg"
+    },
+    "eye_open": {
+      "codepoint": 61925,
+      "source": "source/images/icons/eye_open.svg"
+    },
     "facebook": {
       "codepoint": 61888,
       "source": "source/images/icons/facebook.svg"
@@ -138,6 +166,18 @@
       "codepoint": 61892,
       "source": "source/images/icons/google_plus.svg"
     },
+    "h1": {
+      "codepoint": 61929,
+      "source": "source/images/icons/h1.svg"
+    },
+    "h2": {
+      "codepoint": 61930,
+      "source": "source/images/icons/h2.svg"
+    },
+    "h3": {
+      "codepoint": 61931,
+      "source": "source/images/icons/h3.svg"
+    },
     "hide": {
       "codepoint": 61861,
       "source": "source/images/icons/hide.svg"
@@ -157,6 +197,10 @@
     "instagram": {
       "codepoint": 61894,
       "source": "source/images/icons/instagram.svg"
+    },
+    "italic": {
+      "codepoint": 61932,
+      "source": "source/images/icons/italic.svg"
     },
     "javascript": {
       "codepoint": 61882,
@@ -186,6 +230,10 @@
       "codepoint": 61921,
       "source": "source/images/icons/liked.svg"
     },
+    "link": {
+      "codepoint": 61933,
+      "source": "source/images/icons/link.svg"
+    },
     "linkedin": {
       "codepoint": 61897,
       "source": "source/images/icons/linkedin.svg"
@@ -193,6 +241,10 @@
     "lock": {
       "codepoint": 61920,
       "source": "source/images/icons/lock.svg"
+    },
+    "maximize": {
+      "codepoint": 61947,
+      "source": "source/images/icons/maximize.svg"
     },
     "meetups": {
       "codepoint": 61898,
@@ -210,6 +262,10 @@
       "codepoint": 61923,
       "source": "source/images/icons/mobile.svg"
     },
+    "ol": {
+      "codepoint": 61935,
+      "source": "source/images/icons/ol.svg"
+    },
     "plug_in": {
       "codepoint": 61904,
       "source": "source/images/icons/plug_in.svg"
@@ -221,6 +277,10 @@
     "question": {
       "codepoint": 61876,
       "source": "source/images/icons/question.svg"
+    },
+    "redo": {
+      "codepoint": 61936,
+      "source": "source/images/icons/redo.svg"
     },
     "reply": {
       "codepoint": 61885,
@@ -254,6 +314,10 @@
       "codepoint": 61900,
       "source": "source/images/icons/soundcloud.svg"
     },
+    "source": {
+      "codepoint": 61937,
+      "source": "source/images/icons/source.svg"
+    },
     "star": {
       "codepoint": 61872,
       "source": "source/images/icons/star.svg"
@@ -262,9 +326,17 @@
       "codepoint": 61873,
       "source": "source/images/icons/stats.svg"
     },
+    "table": {
+      "codepoint": 61938,
+      "source": "source/images/icons/table.svg"
+    },
     "tag": {
       "codepoint": 61874,
       "source": "source/images/icons/tag.svg"
+    },
+    "templates": {
+      "codepoint": 61939,
+      "source": "source/images/icons/templates.svg"
     },
     "trash": {
       "codepoint": 61875,
@@ -277,6 +349,26 @@
     "twitter": {
       "codepoint": 61902,
       "source": "source/images/icons/twitter.svg"
+    },
+    "ul": {
+      "codepoint": 61934,
+      "source": "source/images/icons/ul.svg"
+    },
+    "uncomment": {
+      "codepoint": 61940,
+      "source": "source/images/icons/uncomment.svg"
+    },
+    "uncomment_code": {
+      "codepoint": 61943,
+      "source": "source/images/icons/uncomment_code.svg"
+    },
+    "undo": {
+      "codepoint": 61941,
+      "source": "source/images/icons/undo.svg"
+    },
+    "unlink": {
+      "codepoint": 61945,
+      "source": "source/images/icons/unlink.svg"
     },
     "user": {
       "codepoint": 61862,
@@ -297,6 +389,10 @@
     "vkontakte": {
       "codepoint": 61903,
       "source": "source/images/icons/vkontakte.svg"
+    },
+    "wand": {
+      "codepoint": 61944,
+      "source": "source/images/icons/wand.svg"
     },
     "warning": {
       "codepoint": 61866,

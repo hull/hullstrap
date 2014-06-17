@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
     <title>desktop</title>
-    <description>Created with Sketch.</description>
+    <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-400.000000, -120.000000)" stroke="#0093E6" stroke-width="2">
-            <g id="desktop" transform="translate(400.000000, 120.000000)" sketch:type="MSShapeGroup">
-                <g id="Group" transform="translate(1.000000, 1.000000)">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-400.000000, -302.000000)" stroke="#0093E6" stroke-width="2">
+            <g id="desktop" transform="translate(400.000000, 302.000000)" sketch:type="MSShapeGroup">
+                <g id="Group" transform="translate(1.000000, 1.500000)">
                     <path d="M34,24.2604783 C34,25.556913 33.0073478,26.6086957 31.7826087,26.6086957 L2.2173913,26.6086957 C0.992652174,26.6086957 0,25.556913 0,24.2604783 L0,2.34821739 C0,1.05104348 0.992652174,0 2.2173913,0 L31.7826087,0 C33.0073478,0 34,1.05104348 34,2.34821739 L34,24.2604783 L34,24.2604783 Z" id="Stroke-5594" stroke-linecap="round" stroke-linejoin="round"></path>
                     <path d="M3.994086,32.5652174 L31.0067657,32.5652174" id="Stroke-5595" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path d="M17.7391304,26.6086957 L17.7391304,32.0063077" id="Stroke-5596" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M17.7391304,26.9932108 L17.7391304,32.0084797" id="Stroke-5596" stroke-linejoin="round"></path>
                     <path d="M18.4782609,23.7391304 C18.4782609,24.1471304 18.1471304,24.4782609 17.7391304,24.4782609 C17.3303913,24.4782609 17,24.1471304 17,23.7391304 C17,23.3303913 17.3303913,23 17.7391304,23 C18.1471304,23 18.4782609,23.3303913 18.4782609,23.7391304 L18.4782609,23.7391304 Z" id="Stroke-5597"></path>
-                    <path d="M0,20.6956522 L34,20.6956522" id="Stroke-5598"></path>
+                    <path d="M0.998552799,20.6956522 L33.0014038,20.6956522" id="Stroke-5598"></path>
                 </g>
             </g>
         </g>

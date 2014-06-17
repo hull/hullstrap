@@ -1,10 +1,21 @@
 body.dashboard{
+
+  // Desktop Styles
+  @media screen and (min-width: $screen-md-min) {
+    // .offcanvas-content{
+    //   padding-top: $base-line-height;
+    // }
+  }
+  @media screen and (max-width: $screen-sm-max) {
+    .navbar-header{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   .org-selector{
     .dropdown{
       .dropdown-toggle{
-        text-overflow:ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
+        @extend .text-overflow;
         display: block;
       }
     }
@@ -20,14 +31,10 @@ body.dashboard{
     @include inline-retina-sprite('logo/navbar-logo.png');
     @include fade-in-hover;
   }
-  .navbar-header{
-    margin-left: 0;
-  }
   .navbar-header>.navbar-brand{
     @include inline-retina-sprite('logo/icon/chevron.png');
     background-position: center left;
     opacity: 1;
-    margin-left: 0;
     @include transition(all .45s ceaser($easeOutQuint));
   }
 }

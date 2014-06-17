@@ -9,7 +9,7 @@
   cursor: pointer;
   .icon-bar{
     background: transparentize($primary_bg_text,.5);
-    height: 4px;
+    height: 2px;
     @include border-radius(3px);
   }
 }

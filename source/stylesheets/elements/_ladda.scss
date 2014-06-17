@@ -6,6 +6,7 @@
 }
 
 
-.ladda-button[data-style=zoom-out] .ladda-spinner{
+.ladda-button[data-style=zoom-out] .ladda-spinner,
+.ladda-button[data-style=zoom-in] .ladda-spinner{
   margin-left: 0;
 }

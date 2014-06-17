@@ -1,28 +1,5 @@
-form{
-  label{
-    color: $light_text;
-  }
-  input[type='email'],
-  input[type='text'],
-  input[type='password']{
-    @include box-shadow(inset 0 0 1px rgba(0,0,0,.2));
-    padding-left:$padding-base-horizontal*2;
-    padding-right:$padding-base-horizontal*2;
-    height: auto;
-    &::-webkit-input-placeholder{
-      @include font-weight-light;
-      opacity: .5;
-    }
-    &::-moz-placeholder{
-      @include font-weight-light;
-      opacity: .5;
-    }
-    &:-ms-input-placeholder{
-      @include font-weight-light;
-      opacity: .5;
-    }
-  }
 
+form{
   .checkbox{
     @include rhythm(1,0,0,1);
   }
@@ -33,15 +10,45 @@ form{
 }
 
 .form-control{
+  @include transition(all .2s ease-out);
+  padding-left:$padding-base-horizontal*2;
+  padding-right:$padding-base-horizontal*2;
+  @include rhythm(0,.5,.5,0);
   height: auto;
+  background-color: white; 
+  color: $blue_gray_dark;
   border:none;
   @include box-shadow(none);
-  @include rhythm(0,.5,.5,0);
 }
 
+input[type='email'],
+input[type='text'],
+input[type='password']{
+  @include border-radius(0);
+  @include box-shadow(0 0 0 1px $blue_gray_lightest);
+  &:focus{
+    @include box-shadow(0 0 1px darken($blue_gray_lightest, 10%));
+  }
+  &::-webkit-input-placeholder{
+    @include font-weight-light;
+    opacity: .5;
+  }
+  &::-moz-placeholder{
+    @include font-weight-light;
+    opacity: .5;
+  }
+  &:-ms-input-placeholder{
+    @include font-weight-light;
+    opacity: .5;
+  }
+}
+
+
 label{
+  color: $light_text;
   @include rhythm(0,0,0,0);
 }
+
 .help-block{
   @include rhythm(0,.25,.75,1)
 }
@@ -72,6 +79,7 @@ input[type=radio], input[type=checkbox]{
     }
   }
 }
+
 .form-horizontal {
   .radio, .checkbox{
     min-height: $base-line-height;
@@ -95,6 +103,7 @@ input[type=radio], input[type=checkbox]{
 .form-horizontal .has-feedback .form-control-feedback{
   top:$base-line-height/4;
 }
+
 @media (min-width: 768px){
   .form-inline .has-feedback .form-control-feedback,
   .navbar-form .has-feedback .form-control-feedback {
@@ -129,41 +138,44 @@ input[type=radio], input[type=checkbox]{
 }
 
 
-.form-control{
-  border:none;
-  @include border-radius(0);
-  @include transition(all .2s ease-out);
-  background-color: rgba(115, 124, 129, 0);
-  color: #333;
-  @include leader(0);
-  @include trailer(0);
-}
-input[type='search'].form-control,
-input[type='text'].form-control,
-input[type='email'].form-control,
-input[type='password'].form-control{
-  @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.1));
-  background-color: white; 
-  &:focus{
-    // @include box-shadow(inset 0 0 1px rgba(0,0,0,.3));
-    background-color: $off_white; 
-  }
-}
 
 .form-invisible{
   .form-group{
     @include trailer(0);
     @include leader(0);
   }
-  input[type='search'].form-control,
-  input[type='text'].form-control,
-  input[type='email'].form-control,
-  input[type='password'].form-control{
-    @include box-shadow(inset 0 1px 0 rgba(0,0,0,.1));
-    &.last{
-      @include box-shadow(inset 0 1px 0 rgba(0,0,0,.1), inset 0 -1px 0 rgba(0,0,0,.1));
+  input[type='search'],
+  input[type='text'],
+  input[type='email'],
+  input[type='password']{
+    &.form-control{
+      @include box-shadow(inset 0 1px 0 rgba(0,0,0,.1));
+      background-color: white; 
+      &.last{
+        @include box-shadow(inset 0 1px 0 rgba(0,0,0,.1), inset 0 -1px 0 rgba(0,0,0,.1));
+      }
+      &:focus{
+        background-color: $off_white; 
+      }
     }
   }
 }
 
-
+.form-fullbleed{
+  input[type='email'],
+  input[type='text'],
+  input[type='password']{
+    &::-webkit-input-placeholder{
+      text-transform: uppercase;
+    }
+    &::-moz-placeholder{
+      text-transform: uppercase;
+    }
+    &:-ms-input-placeholder{
+      text-transform: uppercase;
+    }
+  }
+  .form-control{
+    @include rhythm(0,1,1,0);
+  } 
+}

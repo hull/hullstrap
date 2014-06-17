@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>italic</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-80.000000, -382.000000)">
+            <g id="Stroke-7065-+-Stroke-7066-+-Stroke-7067" transform="translate(84.760000, 387.000000)" stroke="#0093E6" stroke-width="2" sketch:type="MSShapeGroup" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.04,0 L4.64,26.68" id="Stroke-7065"></path>
+                <path d="M0,26.68 L9.28,26.68" id="Stroke-7066"></path>
+                <path d="M17.4,0 L26.68,0" id="Stroke-7067"></path>
+            </g>
+            <g id="italic" transform="translate(80.000000, 382.000000)"></g>
+        </g>
+    </g>
+</svg>

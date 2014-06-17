@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
     <title>mobile</title>
-    <description>Created with Sketch.</description>
+    <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-400.000000, -160.000000)">
-            <g id="mobile" transform="translate(400.000000, 160.000000)" sketch:type="MSShapeGroup">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-400.000000, -342.000000)">
+            <g id="mobile" transform="translate(400.000000, 342.000000)" sketch:type="MSShapeGroup">
                 <g id="Group" transform="translate(7.000000, 1.000000)">
-                    <path d="M22.173913,31.0434783 C22.173913,32.6762174 20.8501304,34 19.2173913,34 L2.95652174,34 C1.32378261,34 0,32.6762174 0,31.0434783 L0,2.95652174 C0,1.32304348 1.32378261,0 2.95652174,0 L19.2173913,0 C20.8501304,0 22.173913,1.32304348 22.173913,2.95652174 L22.173913,31.0434783 L22.173913,31.0434783 Z" id="Stroke-5611" stroke="#0093E6" stroke-width="2" stroke-linecap="round"></path>
-                    <path d="M22.173913,5.91304348 L0,5.91304348" id="Stroke-5612" stroke="#0093E6" stroke-width="2" stroke-linecap="round"></path>
-                    <path d="M22.173913,28.0869565 L0,28.0869565" id="Stroke-5613" stroke="#0093E6" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M22,31.0434783 C22,32.6762174 20.6866,34 19.0666667,34 L2.93333333,34 C1.3134,34 0,32.6762174 0,31.0434783 L0,2.95652174 C0,1.32304348 1.3134,0 2.93333333,0 L19.0666667,0 C20.6866,0 22,1.32304348 22,2.95652174 L22,31.0434783 L22,31.0434783 Z" id="Stroke-5611" stroke="#0093E6" stroke-width="2" stroke-linecap="round"></path>
+                    <path d="M21.0001888,6 L0.999810994,6.04725898" id="Stroke-5612" stroke="#0093E6" stroke-width="2"></path>
+                    <path d="M21.0000553,27.952741 L0.999821424,27.952741" id="Stroke-5613" stroke="#0093E6" stroke-width="2"></path>
                     <path d="M11.0869565,29.5652174 C10.2709565,29.5652174 9.60869565,30.2267391 9.60869565,31.0434783 C9.60869565,31.8594783 10.2709565,32.5217391 11.0869565,32.5217391 C11.9036957,32.5217391 12.5652174,31.8594783 12.5652174,31.0434783 C12.5652174,30.2267391 11.9036957,29.5652174 11.0869565,29.5652174" id="Fill-5614" fill="#0093E6"></path>
                     <path d="M7.39130435,2.95652174 L14.7826087,2.95652174" id="Stroke-5615" stroke="#0093E6" stroke-width="2" stroke-linecap="round"></path>
                 </g>

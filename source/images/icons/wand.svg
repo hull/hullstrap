@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>wand</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-320.000000, -422.000000)" stroke-linecap="round" stroke="#0093E6" stroke-width="2">
+            <g id="wand" transform="translate(320.000000, 422.000000)" sketch:type="MSShapeGroup">
+                <g id="Group" transform="translate(1.000000, 2.000000)">
+                    <path d="M0,33 L18.6521739,14.3478261" id="Stroke-430"></path>
+                    <path d="M27.2608696,5.73913043 L30.1304348,2.86956522" id="Stroke-432"></path>
+                    <path d="M22.9565217,4.30434783 L22.9565217,0" id="Stroke-433"></path>
+                    <path d="M19.0869565,5.73913043 L16.2173913,2.86956522" id="Stroke-434"></path>
+                    <path d="M17.6521739,9.60869565 L13.3478261,9.60869565" id="Stroke-435"></path>
+                    <path d="M33.6521739,9.60869565 L29.3478261,9.60869565" id="Stroke-438"></path>
+                    <path d="M22.9565217,14.3478261 L22.9565217,18.6521739" id="Stroke-436"></path>
+                    <path d="M27.2608696,12.9130435 L30.1304348,15.7826087" id="Stroke-437"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

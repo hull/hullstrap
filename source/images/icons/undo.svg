@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>undo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-80.000000, -422.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="undo" transform="translate(80.000000, 422.000000)" sketch:type="MSShapeGroup">
+                <g id="Stroke-6876-+-Stroke-6877" transform="translate(2.000000, 1.000000)">
+                    <path d="M0,0 L0,10.3478261 L10.3478261,10.3478261" id="Stroke-6876"></path>
+                    <path d="M0.0231347826,10.3247652 C5.47717826,2.68289565 16.2743957,0.981417391 23.9170043,6.43693913 C31.559613,11.8909826 33.3335261,22.507113 27.8794826,30.1497217 C26.7959174,31.6686348 25.507613,32.9547217 24.0803522,33.9998522" id="Stroke-6877"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
