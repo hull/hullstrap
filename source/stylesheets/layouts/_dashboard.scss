@@ -28,13 +28,17 @@ body.dashboard{
   }
 
   .navbar-brand{
-    @include inline-retina-sprite('logo/navbar-logo.png');
-    @include fade-in-hover;
+    i.logo{
+      @include inline-retina-sprite('logo/navbar-logo.png');
+      @include fade-in-hover;
+      height: $base-line-height*2;
+    }
   }
-  .navbar-header>.navbar-brand{
+  .navbar-header>.navbar-brand i.logo{
     @include inline-retina-sprite('logo/icon/chevron.png');
     background-position: center left;
     opacity: 1;
     @include transition(all .45s ceaser($easeOutQuint));
+    height: $base-line-height*2;
   }
 }

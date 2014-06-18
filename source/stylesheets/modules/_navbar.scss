@@ -15,15 +15,15 @@
 }
 
 .navbar-brand{
-  @include adjust-font-size-to($base-font-size);
-  @include inline-retina-sprite('logo/navbar-logo-dark.png');
+//   @include adjust-font-size-to($base-font-size);
+//   @include inline-retina-sprite('logo/navbar-logo-dark.png');
   height: $base-line-height*2;
-  background-position: left center;
-  background-size: contain;
-  background-repeat:no-repeat;
-  @include rhythm(.5,0,0,.5);
-  margin-right:$padding-base-horizontal*2;
-  min-height:$base-line-height*2; 
+//   background-position: left center;
+//   background-size: contain;
+//   background-repeat:no-repeat;
+  @include rhythm(0,.5,.5,0);
+//   margin-right:$padding-base-horizontal*2;
+//   min-height:$base-line-height*2; 
 }
 
 .navbar{
@@ -61,13 +61,13 @@
     margin:  -$base-line-height/2;
     margin-right: 0;
   }
-  .navbar-brand{
-    @include inline-retina-sprite('logo/navbar-logo.png');
-    height: $base-line-height*2;
-    background-position: left center;
-    background-size: contain;
-    background-repeat:no-repeat;
-  }
+  // .navbar-brand{
+  //   @include inline-retina-sprite('logo/navbar-logo.png');
+  //   height: $base-line-height*2;
+  //   background-position: left center;
+  //   background-size: contain;
+  //   background-repeat:no-repeat;
+  // }
 
   .navbar-text{
     display: inline-block;
@@ -138,15 +138,16 @@
 
 @media screen and (max-width: $screen-xs-max){
   .offcanvas-navbar .navbar-brand{
-    @include inline-retina-sprite('logo/icon/white-small.png');
+    // @include inline-retina-sprite('logo/icon/white-small.png');
+    // background-position: 10px 0px;
+    // background-size: contain;
+    // height: $base-line-height;
     display: block;
-    background-position: 10px 0px;
-    background-size: contain;
-    height: $base-line-height;
+    width: 77px;
     float: none;
     margin-left: auto;
     margin-right: auto;
-    padding-left: $padding-base-horizontal; 
+    // padding-left: $padding-base-horizontal; 
   }
 }
 
