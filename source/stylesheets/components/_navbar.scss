@@ -136,21 +136,6 @@
   }
 }
 
-@media screen and (max-width: $screen-xs-max){
-  .offcanvas-navbar .navbar-brand{
-    // @include inline-retina-sprite('logo/icon/white-small.png');
-    // background-position: 10px 0px;
-    // background-size: contain;
-    // height: $base-line-height;
-    display: block;
-    width: 77px;
-    float: none;
-    margin-left: auto;
-    margin-right: auto;
-    // padding-left: $padding-base-horizontal; 
-  }
-}
-
 .navbar-text{
   margin: 0;
   @include adjust-font-size-to(14px);
@@ -161,11 +146,3 @@
     opacity: .4;
   }
 }
-
-.navbar-form{
-  .offcanvas-sidebar &{
-    margin:0; 
-    @include box-shadow(none);
-  }
-}
-

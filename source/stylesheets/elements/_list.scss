@@ -6,17 +6,41 @@
   background: transparent;
   border:0; 
 }
+h1.list-group-item{
+  @include  padding-leader(1,$h1_font_size);
+  @include padding-trailer(1,$h1_font_size)
+}
+h2.list-group-item{
+  @include  padding-leader(1,$h2_font_size);
+  @include padding-trailer(1,$h2_font_size)
+}
+h3.list-group-item{
+  @include  padding-leader(1,$h3_font_size);
+  @include padding-trailer(1,$h3_font_size)
+}
+h4.list-group-item{
+  @include  padding-leader(1,$h4_font_size);
+  @include padding-trailer(1,$h4_font_size)
+}
+h5.list-group-item{
+  @include  padding-leader(1,$h5_font_size);
+  @include padding-trailer(1,$h5_font_size)
+}
+h6.list-group-item{
+  @include  padding-leader(1,$h6_font_size);
+  @include padding-trailer(1,$h6_font_size)
+}
 
 .list-group-item-heading{
-  margin: 0;
-  @include box-shadow(none);  
-  padding:0  $padding-base-horizontal;
-  @include rhythm(0,.5,.5,0);
-  @include font-weight-bold;
-  background-color: $off_white;
-  h4{
-    display: inline-block;
-  }
+  // margin: 0;
+  // @include box-shadow(none);  
+  // padding:0  $padding-base-horizontal;
+  // @include rhythm(0,.5,.5,0);
+  // @include font-weight-bold;
+  // background-color: $off_white;
+  // h4{
+  //   display: inline-block;
+  // }
   @media screen and (max-width: $screen-xs-max) {
     .offcanvas-sidebar  &{
       background-color: transparent;

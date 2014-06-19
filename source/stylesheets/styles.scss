@@ -46,6 +46,7 @@ $h1_line_height: 3   !default;
 @import "animate.css/animate";
 @import "drop/css/extras/drop-twitter-bootstrap";
 @import "drop/css/drop-theme-arrows-bounce";
+@import "ladda/css/ladda";
 
 
 
@@ -56,6 +57,13 @@ $h1_line_height: 3   !default;
 //   opacity: .9;
 // }
 @import "base/typography";
+
+
+// Mixins : UI-less classes made to add scss features.
+// Elements : Individual tags: Buttons, nav items, labels... 
+// Components : A few tags together: Reusable bits of UI : Modals, Panels etc...
+// Modules : Bigger features; One-off page parts, Pricing wells, testimonials for instance
+// Pages : Overrides for page-specific bits
 
 /*------------------------------------*\
     Hull mixins
@@ -76,73 +84,63 @@ $h1_line_height: 3   !default;
 @import "iconfonts";
 @import "fontcustom";
 
-// /*------------------------------------*\
-//     Elements
-// \*------------------------------------*/
+
+
+/*------------------------------------*\
+    Elements
+\*------------------------------------*/
 @import "elements/btn";
-@import "elements/nav";
 @import "elements/table";
-@import "elements/alert";
 @import "elements/code";
 @import "elements/form";
-@import "elements/modal";
 @import "elements/input-group";
 @import "elements/list";
-@import "elements/progress";
 @import "elements/list-table";
-@import "elements/page-header";
-@import "ladda/css/ladda";
-@import "elements/ladda";
-@import "elements/panel";
-@import "elements/well";
+@import "elements/label";
 
+@import "layouts/inverted";
 
-// /*------------------------------------*\
-//     Modules
-// \*------------------------------------*/
-@import "codrops_modules/border_effects";
-@import "codrops_modules/border_menu";
-@import "codrops_modules/border_player";
-@import "codrops_modules/search_box";
-@import "codrops_modules/timed_notification";
-@import "codrops_modules/annotations_overlay";
-@import "codrops_modules/opening_grid";
-@import "codrops_modules/sticky_table_header";
-@import "codrops_modules/cbp_scroller";
-@import "codrops_modules/cbp_ig_grid";
-@import "codrops_modules/cbp_fwslider";
-@import "codrops_modules/cbp_vimenu";
-@import "codrops_modules/cbp_hrmenu";
-@import "codrops_modules/cbp_qtrotator";
-@import "codrops_modules/cbp_tmtimeline";
-
+/*------------------------------------*\
+    Components
+\*------------------------------------*/
+@import "components/progress";
+@import "components/page-header";
+@import "components/nav";
+@import "components/alert";
+@import "components/modal";
+@import "components/panel";
+@import "components/well";
+@import "components/ladda";
+@import "components/sections";
+@import "components/navbar";
+@import "components/navbar_search";
+@import "components/navbar_sidebar";
+@import "components/carousel";
+@import "components/features";
+@import "components/jumbotron";
+@import "components/footer";
+@import "components/email_cta";
+@import "components/dropdown";
+@import "components/signup_dropdown";
+@import "components/component_grid";
 
 /*------------------------------------*\
     Modules
 \*------------------------------------*/
-
-@import "layouts/inverted";
-
-@import "modules/sections";
-@import "modules/navbar";
-@import "modules/navbar_search";
-@import "modules/navbar_sidebar";
-@import "modules/carousel";
 @import "modules/testimonials";
-@import "modules/features";
-@import "modules/jumbotron";
-@import "modules/footer";
 @import "modules/pricing";
-@import "modules/email_cta";
-@import "modules/dropdown";
-@import "modules/signup_dropdown";
-@import "modules/component_grid";
-@import "modules/offcanvas";
 @import "modules/onboarding";
+
+
+/*------------------------------------*\
+    Pages
+\*------------------------------------*/
+@import "layouts/offcanvas";
 
 @import "pages/homepage";
 @import "pages/features";
 @import "pages/docs";
 @import "pages/quick_start";
 
+// This goes in the end for highest specificity
 @import "base/rhythm";

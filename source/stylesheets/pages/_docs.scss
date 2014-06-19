@@ -32,7 +32,7 @@ $docs-font-size: 15px;
     @include adjust-font-size-to($h2_font_size);    
     @include adjust-leading-to(1,$h2_font_size);    
     @include rhythm(2,0,0,.5,$h2_font_size); 
-    // @extend .accented;   
+    // @extend .text-accented;   
   }
   h2{
     @include adjust-font-size-to($h4_font_size);    

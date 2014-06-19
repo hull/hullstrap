@@ -1,0 +1,7 @@
+.label{
+  @include rhythm(0,.5,.5,0);
+  padding-left: $padding-base-horizontal;
+  padding-right: $padding-base-horizontal;
+  @include border-radius(100px);
+  @include box-shadow(inset 0 -2px 0 rgba(0, 0, 0, 0.2));
+}

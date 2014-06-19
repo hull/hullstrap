@@ -135,7 +135,7 @@ $sidebar_width: 260px;
     width: $sidebar_width;
     right: 0;
     top: 0;
-    .header, .accented{
+    .header, .text-accented{
       color: $secondary;
     }
     .nav > li{
@@ -162,7 +162,7 @@ $sidebar_width: 260px;
     }
     .offcanvas-content{
       overflow: hidden;
-      opacity: .5;
+      // opacity: .5;
       height: 100vh;
       @include transform(translate3d($sidebar_width, 0, 0));
     }
@@ -177,7 +177,7 @@ $sidebar_width: 260px;
       @include transform(perspective(600px) translate3d(-300px, 0, -200px));
       overflow: hidden;
       height: 100vh;
-      opacity: .5;
+      // opacity: .5;
     }
   }
 
@@ -212,5 +212,27 @@ $sidebar_width: 260px;
     overflow-y: scroll;
     overflow-x: hidden;
     // height: 100%;
+  }
+}
+
+
+@media screen and (max-width: $screen-sm-max){
+  .offcanvas-navbar.navbar .navbar-header{
+    float: none;
+  }
+  .offcanvas-navbar.navbar > .container-fluid .navbar-brand{
+    display: block;
+    width: 77px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.offcanvas-sidebar {
+  .navbar-form{
+    margin:0; 
+    @include box-shadow(none);
   }
 }

@@ -12,21 +12,21 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
 }
 
 @mixin adjust-heading($font-size:$base-font-size, $leading:1, $trailer:1, $leader:1, $mobile-multiple: 1, $small-multiple: 1){
-  $mobile-font-size:$mobile-multiple*$font-size;
-  @include adjust-font-size-to($mobile-font-size, $leading);
-  @include adjust-leading-to($leading, $mobile-font-size);
-  @include rhythm($leader,0,0,$trailer, $mobile-font-size);
-  @media (min-width: $screen-sm-min) {
-    $small-font-size:$small-multiple*$font-size;
-    @include adjust-font-size-to($small-font-size, $leading);
-    @include adjust-leading-to($leading, $small-font-size);
-    @include rhythm($leader,0,0,$trailer, $small-font-size);
-  }
-  @media (min-width: $screen-md-min) {
-    @include adjust-font-size-to($font-size, $leading);
-    @include adjust-leading-to($leading, $font-size);
-    @include rhythm($leader,0,0,$trailer, $font-size);
-  }
+  // $mobile-font-size:$mobile-multiple*$font-size;
+  // @include adjust-font-size-to($mobile-font-size, $leading);
+  // @include leader($leader, $mobile-font-size);
+  // @include trailer($trailer, $mobile-font-size);
+  // @media (min-width: $screen-sm-min) {
+  //   $small-font-size:$small-multiple*$font-size;
+  //   @include adjust-font-size-to($small-font-size, $leading);
+  //   @include leader($leader, $small-font-size);
+  //   @include trailer($trailer, $small-font-size);
+  // }
+  // @media (min-width: $screen-md-min) {
+  @include adjust-font-size-to($font-size, $leading);
+  @include leader($leader, $font-size);
+  @include trailer($trailer, $font-size);
+  // }
 }
 
 @mixin font-weight-thin{     font-weight: 100; }
@@ -42,6 +42,13 @@ h3{ @include adjust-heading($h3_font_size, $h3_line_height, .5); }
 h4{ @include adjust-heading($h4_font_size, $h4_line_height); }
 h5{ @include adjust-heading($h5_font_size, $h5_line_height); }
 h6{ @include adjust-heading($h6_font_size, $h6_line_height); }
+
+h1.condensed{ @include adjust-heading($h1_font_size); }
+h2.condensed{ @include adjust-heading($h2_font_size); }
+h3.condensed{ @include adjust-heading($h3_font_size); }
+h4.condensed{ @include adjust-heading($h4_font_size); }
+h5.condensed{ @include adjust-heading($h5_font_size); }
+h6.condensed{ @include adjust-heading($h6_font_size); }
 
 p{
   @include adjust-font-size-to($base-font-size,1);
@@ -110,7 +117,7 @@ h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
 
   }
-  &.accented{
+  &.text-accented{
     @include font-weight-bold;
     color: $accent_text_header;
     small{

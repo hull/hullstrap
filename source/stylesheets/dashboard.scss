@@ -1,4 +1,3 @@
-
 $base-font-size:        14px !default;
 $base-line-height:      18px !default;
 $base-rhythm-unit:      18px !default;
@@ -12,9 +11,7 @@ $h1_line_height: 3   !default;
 
 @import "styles";
 
-@import "elements/ckeditor";
-@import "elements/panel";
-@import "modules/timeline";
-@import "modules/offcanvas";
+@import "components/ckeditor";
+@import "components/timeline";
 
 @import "layouts/dashboard";
