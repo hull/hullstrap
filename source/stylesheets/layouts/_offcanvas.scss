@@ -213,6 +213,16 @@ $sidebar_width: 260px;
     overflow-x: hidden;
     // height: 100%;
   }
+.offcanvas-sidebar-left{
+  position: absolute;
+}
+.offcanvas-content{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding-top: 54px;
+  overflow: scroll;
+}
 }
 
 
@@ -228,7 +238,6 @@ $sidebar_width: 260px;
     margin-right: auto;
   }
 }
-
 
 .offcanvas-sidebar {
   .navbar-form{
