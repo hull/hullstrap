@@ -77,27 +77,28 @@
   }
 }
 
-
-.offcanvas-sidebar-right{
-  .dropdown-menu>li>a{
-    color: white;
-    opacity: .7;
-    &:hover{
+@media screen and (max-width:$screen-sm-max){
+  .offcanvas-sidebar-right{
+    .dropdown-menu>li>a{
+      color: white;
+      opacity: .7;
+      &:hover{
+        background-color: white;
+        opacity: 1;
+        color: $tertiary;
+      }
+    }
+    .nav .navbar-item{
+      padding-left: 9px;
+      padding-right: 9px;
+    }
+    .nav .open > a, .nav .open >a:hover,
+    .nav li >a:hover{
       background-color: white;
-      opacity: 1;
       color: $tertiary;
     }
+    .nav .avatar .img{
+      top:0;
+    }
   }
-  .nav .navbar-item{
-    padding-left: 9px;
-    padding-right: 9px;
-  }
-  .nav .open > a, .nav .open >a:hover,
-  .nav li >a:hover{
-    background-color: white;
-    color: $tertiary;
-  }
-  .nav .avatar .img{
-    top:0;
-  }
-}
+} 
