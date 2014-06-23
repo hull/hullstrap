@@ -94,6 +94,9 @@
     @include box-shadow(inset 0 0px 0px 2px rgba(0, 147, 230, 1));
   }
 }
+.btn-shadowed{
+  @include box-shadow(inset 0 -2px 0 rgba(0, 0, 0, 0.2));
+}
 
 .btn-gradient{
   @include background-image(linear-gradient(to right top, $primary_alt, $tertiary)); 
