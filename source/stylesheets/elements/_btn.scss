@@ -88,6 +88,10 @@
 .btn-tertiary{
   @include btn-color($blue_gray_light, rgba(255,255,255,0), $inverted_text);
 }
+.btn-off-white{
+  @include btn-color($off_white, rgba(255,255,255,0), $blue_gray);
+}
+
 .btn-pill{
   @include btn-pill;
   &.active{

@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: font-url("/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.eot");
-  src: font-url("/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.eot?#iefix") format("embedded-opentype"),
-       font-url("/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.woff") format("woff"),
-       font-url("/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.ttf") format("truetype"),
-       font-url("/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.svg#fontcustom") format("svg");
+  src: font-url("stylesheets/fonts/fontcustom_32ce5150e40c537015f3fad3aa11ec87.eot");
+  src: font-url("stylesheets/fonts/fontcustom_32ce5150e40c537015f3fad3aa11ec87.eot?#iefix") format("embedded-opentype"),
+       font-url("stylesheets/fonts/fontcustom_32ce5150e40c537015f3fad3aa11ec87.woff") format("woff"),
+       font-url("stylesheets/fonts/fontcustom_32ce5150e40c537015f3fad3aa11ec87.ttf") format("truetype"),
+       font-url("stylesheets/fonts/fontcustom_32ce5150e40c537015f3fad3aa11ec87.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: font-url("/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.svg#fontcustom") format("svg");
+    src: font-url("stylesheets/fonts/fontcustom_32ce5150e40c537015f3fad3aa11ec87.svg#fontcustom") format("svg");
   }
 }
 
@@ -37,6 +37,7 @@
 .icon-blockquote:before,
 .icon-bold:before,
 .icon-checkbox:before,
+.icon-click:before,
 .icon-clock:before,
 .icon-cloud:before,
 .icon-codesnippet:before,
@@ -48,6 +49,7 @@
 .icon-dashboard:before,
 .icon-desktop:before,
 .icon-download:before,
+.icon-draft:before,
 .icon-email:before,
 .icon-email_message:before,
 .icon-emit:before,
@@ -149,6 +151,7 @@
 .icon-blockquote:before { content: "\f1e7"; }
 .icon-bold:before { content: "\f1e8"; }
 .icon-checkbox:before { content: "\f19a"; }
+.icon-click:before { content: "\f1fc"; }
 .icon-clock:before { content: "\f1dc"; }
 .icon-cloud:before { content: "\f19b"; }
 .icon-codesnippet:before { content: "\f1fa"; }
@@ -160,6 +163,7 @@
 .icon-dashboard:before { content: "\f1a0"; }
 .icon-desktop:before { content: "\f1e2"; }
 .icon-download:before { content: "\f1a1"; }
+.icon-draft:before { content: "\f1fd"; }
 .icon-email:before { content: "\f1a2"; }
 .icon-email_message:before { content: "\f1d7"; }
 .icon-emit:before { content: "\f1a3"; }

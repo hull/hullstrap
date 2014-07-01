@@ -1,9 +1,17 @@
+.p-0{
+  @include padding-leader(0);
+  @include padding-trailer(0);
+}
 .pt-0{@include padding-leader(0); }
 .pb-0{@include padding-trailer(0); }
 .pt-1{@include padding-leader(1); }
 .pb-1{@include padding-trailer(1); }
 .pt-2{@include padding-leader(2); }
 .pb-2{@include padding-trailer(2); }
+.m-0{
+  @include trailer(0);
+  @include leader(0);
+}
 .mt-0{@include leader(0); }
 .mb-0{@include trailer(0); }
 .mt-1{@include leader(1); }

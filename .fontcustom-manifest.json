@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "0892700877bd40993700b03e12347a4515921e8dd67fce7752e2fa1560d617d7",
-    "current": "0892700877bd40993700b03e12347a4515921e8dd67fce7752e2fa1560d617d7"
+    "previous": "32ce5150e40c537015f3fad3aa11ec874d1aec6335f643e4dc728f95d5e2ba44",
+    "current": "32ce5150e40c537015f3fad3aa11ec874d1aec6335f643e4dc728f95d5e2ba44"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.ttf",
-    "source/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.svg",
-    "source/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.woff",
-    "source/stylesheets/fonts/fontcustom_0892700877bd40993700b03e12347a45.eot"
+    "source/stylesheets/fonts/fontcustom_32ce5150e40c537015f3fad3aa11ec87.ttf",
+    "source/stylesheets/fonts/fontcustom_32ce5150e40c537015f3fad3aa11ec87.svg",
+    "source/stylesheets/fonts/fontcustom_32ce5150e40c537015f3fad3aa11ec87.woff",
+    "source/stylesheets/fonts/fontcustom_32ce5150e40c537015f3fad3aa11ec87.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -66,6 +66,10 @@
       "codepoint": 61850,
       "source": "source/images/icons/checkbox.svg"
     },
+    "click": {
+      "codepoint": 61948,
+      "source": "source/images/icons/click.svg"
+    },
     "clock": {
       "codepoint": 61916,
       "source": "source/images/icons/clock.svg"
@@ -109,6 +113,10 @@
     "download": {
       "codepoint": 61857,
       "source": "source/images/icons/download.svg"
+    },
+    "draft": {
+      "codepoint": 61949,
+      "source": "source/images/icons/draft.svg"
     },
     "email": {
       "codepoint": 61858,
