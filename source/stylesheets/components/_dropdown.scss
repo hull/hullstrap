@@ -10,7 +10,8 @@
   @extend %white-background-colors;
   border: 0;
   @include border-radius(3px !important); 
-  @include box-shadow(0 0px 1px rgba(7, 20, 34, 0.09), 0 0px 7px rgba(10, 35, 59, 0.25));
+  @include box-shadow(0 0px 0px 2px #D9DFE7, 0 2px 5px #D9DFE7);
+  // @include box-shadow(0 0px 1px rgba(7, 20, 34, 0.09), 0 0px 7px rgba(10, 35, 59, 0.25));
   background-clip: padding-box;
 
   > li a.btn-link{

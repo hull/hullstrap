@@ -43,7 +43,7 @@
   > thead, > tbody{
     > tr {
       > th, > td {
-        @include box-shadow(inset -1px 0 0 0 rgba(233, 233, 233, 1));
+        @include box-shadow(inset -1px 1px 0 0 rgba(233, 233, 233, 1));
         padding: $base-line-height/2;
       }
     }
@@ -84,7 +84,7 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
   @include box-sizing(content-box);
   td, th{
     vertical-align: middle;
-    max-width: 200px;
+    // max-width: 200px;
     text-overflow:ellipsis;
     overflow: hidden;
   }
@@ -94,10 +94,13 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
   th{
     white-space: nowrap;
   }
+  tr.datagrid-row{
+    background-color: white;
+  }
   .table-row-selector{
+    vertical-align: middle;
     text-align: center;
     padding: 0;
-    background-color: white;
     label{
       padding: 9px 7px;
       display: block;
@@ -117,10 +120,14 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
     tr.datagrid-row{
       @include transition(all .3s ceaser($easeOutQuint));
       .datagrid-options-toggle{
+        @include transition(all .2s ease-out);
+        @include box-shadow(inset 1px 1px 0px 0 rgba(0, 0, 0, 0.1));
         position: absolute;
         height: 100%;
         width: 100%;
-        i.icon-arrow_left{
+        // background-color: #eaeef3;
+        background-color: white;
+        i.icon-arrow_right{
           margin-top: -8px;
           top: 50%;
           position: absolute;
@@ -136,18 +143,34 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
         overflow: visible;
       }
       &.options{
-        @include translate3d(-196px, 0, 0);
-        .icon-arrow_left:before{
+        .datagrid-options-toggle{
+          @include box-shadow(inset -1px 1px 0px 0 rgba(0, 0, 0, 0.1));
+          // background-color: darken(#eaeef3, 10%);
+          background-color: white;
+        }
+        td.datagrid-options-cell{
+          background-color: white;
+
+        }
+        @include translate3d(196px, 0, 0);
+        .icon-arrow_right:before{
+          color: #444;
           @include scale(-1,1);
         }
       }
       div.datagrid-options-container{
+        background: white;
+        @include  box-shadow(inset 1px 1px 0px 0 rgba(0, 0, 0, 0.1));
         padding: 0;
         position: absolute;
-        left: 100%;
+        right: 100%;
         height: 100%;
         width: 196px;
         top:0;
+        .btn{
+          padding:0; 
+        }
+        @include adjust-font-size-to($h3_font_size);
         .btn-group{
           height: 100%;
         }
