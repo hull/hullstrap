@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+    <title>delete</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-40.000000, -462.000000)" fill="#0093E6">
+            <g id="stop" transform="translate(40.000000, 462.000000)" sketch:type="MSShapeGroup">
+                <path d="M18,34 C9.1640651,34 2,26.8363652 2,18 C2,9.16411195 9.1643271,2 18,2 C26.83615,2 34,9.16384997 34,18 C34,26.8366272 26.836412,34 18,34 Z M18,0 C8.05977105,0 0,8.05952901 0,18 C0,27.9409616 8.05952249,36 18,36 C27.9409681,36 36,27.9412101 36,18 C36,8.05928047 27.9407195,0 18,0 Z" id="Stroke-508"></path>
+                <path d="M4.72767583,28.7678932 L6.14188939,30.1821068 L30.1821068,6.14188939 L28.7678932,4.72767583 L4.72767583,28.7678932 Z" id="Stroke-509"></path>
+            </g>
+        </g>
+    </g>
+</svg>
