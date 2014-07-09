@@ -1,7 +1,7 @@
 body{
-  @include background-image($primary_bg_image);
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
+  // @include background-image($primary_bg_image);
 }
 .page{
   background: white;
