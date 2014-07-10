@@ -75,7 +75,6 @@ $sidebar_width: 260px;
   }
 }
 
-
 // Mobile-only Styles
 @media screen and (max-width: $screen-sm-max) {
   html, body{
@@ -97,6 +96,7 @@ $sidebar_width: 260px;
 
   // Default States
   .offcanvas-container{
+    @include background-image($primary_bg_image);
     -webkit-perspective: 1500px;
   }
   .offcanvas-wrapper{
@@ -180,7 +180,6 @@ $sidebar_width: 260px;
       // opacity: .5;
     }
   }
-
 }
 
 // Desktop Styles
