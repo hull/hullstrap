@@ -51,8 +51,9 @@
 
 .navbar-branded{
   -webkit-font-smoothing:subpixel-antialiased;
-  border:none;
+  @include background-image($primary_bg_image);
   @include blue-background-colors;
+  border:none;
   min-height: $base-line-height*3;
   .container{
     position: relative;

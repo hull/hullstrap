@@ -11,14 +11,20 @@ form{
 
 .form-control{
   @include transition(all .2s ease-out);
-  padding-left:$padding-base-horizontal*2;
-  padding-right:$padding-base-horizontal*2;
+  padding-left:$padding-base-horizontal;
+  padding-right:$padding-base-horizontal;
   @include rhythm(0,.5,.5,0);
   height: auto;
   background-color: white; 
   color: $blue_gray_dark;
   border:none;
   @include box-shadow(none);
+
+  &.form-control-lg{
+    @include rhythm(0,1,1,0);
+    padding-left:$padding-base-horizontal*2;
+    padding-right:$padding-base-horizontal*2;
+  }
 }
 
 input[type='email'],

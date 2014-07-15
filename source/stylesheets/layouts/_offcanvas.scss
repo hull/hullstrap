@@ -202,7 +202,6 @@ $sidebar_width: 260px;
     @include make-lg-column-push(2);
   }
   .offcanvas-navbar{
-    @include background-image($primary_bg_image);
     overflow: visible;
   }
   .offcanvas-sidebar-left{
