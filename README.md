@@ -49,5 +49,5 @@ will push to AWS
 
 Example: 
 
-* http://hullstrap.s3.amazonaws.com/hullstrap.js
-* http://hullstrap.s3.amazonaws.com/hullstrap.css
+* http://hullstrap.s3.amazonaws.com/javascripts/hullstrap.js
+* http://hullstrap.s3.amazonaws.com/stylesheets/hullstrap.css
