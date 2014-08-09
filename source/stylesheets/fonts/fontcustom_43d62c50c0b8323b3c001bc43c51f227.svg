@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2014-7-8: Created.
+2014-7-30: Created.
 -->
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Tue Jul  8 16:39:33 2014
+Created by FontForge 20120731 at Wed Jul 30 14:33:41 2014
  By Romain Dardour
 Created by Romain Dardour with FontForge 2.0 (http://fontforge.sf.net)
 </metadata>
@@ -22,7 +22,7 @@ Created by Romain Dardour with FontForge 2.0 (http://fontforge.sf.net)
     bbox="-0.5 -84 575 457"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+F19A-F200"
+    unicode-range="U+F19A-F201"
   />
     <missing-glyph />
     <glyph glyph-name="uniF19A" unicode="&#xf19a;" horiz-adv-x="509" 
@@ -313,6 +313,8 @@ c1 -2 12 -34 20 -48c1 -2 8 -18 9 -32c1 -21 9 -30 2 -46c-6 -3 -69 -15 -87 -26z" /
 d="M72 -64h340l30 455h-400zM385 -36h-286l-27 399h339zM128 363h213v85h-213v-85zM313 391h-157v29h157v-29zM0 391v-28h484v28h-484zM156 287l-28 -1l14 -242l29 2zM256 287h-28v-242h28v242zM356 286l-29 1l-14 -241l28 -2z" />
     <glyph glyph-name="uniF1F3" unicode="&#xf1f3;" 
 d="M28 316v0h456v104h-456v-104zM28 288v-324h126v324v0h-126v0zM182 -36h302v148h-302v-148v0zM484 140v148h-302v-148v0h302v0zM14 448v0h484c8 0 14 -6 14 -14v-484c0 -8 -6 -14 -14 -14h-484c-8 0 -14 6 -14 14v484c0 8 6 14 14 14z" />
+    <glyph glyph-name="uniF201" unicode="&#xf201;" horiz-adv-x="530" 
+d="M0 -73l530 265l-530 265v-530zM466 192l-438 -219v438z" />
     <glyph glyph-name="uniF1B0" unicode="&#xf1b0;" horiz-adv-x="544" 
 d="M356 282l-84 170l-84 -170l-188 -27l136 -132l-32 -186l168 88l168 -88l-32 186l136 132zM337 256l146 -21l-105 -102l25 -144l-131 68l-130 -68l25 144l-106 102l146 21l65 132z" />
     <glyph glyph-name="uniF1F7" unicode="&#xf1f7;" horiz-adv-x="466" 

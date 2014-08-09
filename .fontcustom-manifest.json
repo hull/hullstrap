@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "7ca4f9d7a1d25b7245918b03cc00ed66543888d595afbf76150a7b33eb734e70",
-    "current": "7ca4f9d7a1d25b7245918b03cc00ed66543888d595afbf76150a7b33eb734e70"
+    "previous": "43d62c50c0b8323b3c001bc43c51f227ff1303cde9ef39ce3f23145ce1a09354",
+    "current": "43d62c50c0b8323b3c001bc43c51f227ff1303cde9ef39ce3f23145ce1a09354"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_7ca4f9d7a1d25b7245918b03cc00ed66.ttf",
-    "source/stylesheets/fonts/fontcustom_7ca4f9d7a1d25b7245918b03cc00ed66.svg",
-    "source/stylesheets/fonts/fontcustom_7ca4f9d7a1d25b7245918b03cc00ed66.woff",
-    "source/stylesheets/fonts/fontcustom_7ca4f9d7a1d25b7245918b03cc00ed66.eot"
+    "source/stylesheets/fonts/fontcustom_43d62c50c0b8323b3c001bc43c51f227.ttf",
+    "source/stylesheets/fonts/fontcustom_43d62c50c0b8323b3c001bc43c51f227.svg",
+    "source/stylesheets/fonts/fontcustom_43d62c50c0b8323b3c001bc43c51f227.woff",
+    "source/stylesheets/fonts/fontcustom_43d62c50c0b8323b3c001bc43c51f227.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -281,6 +281,10 @@
     "pencil": {
       "codepoint": 61951,
       "source": "source/images/icons/pencil.svg"
+    },
+    "play": {
+      "codepoint": 61953,
+      "source": "source/images/icons/play.svg"
     },
     "plug_in": {
       "codepoint": 61904,
