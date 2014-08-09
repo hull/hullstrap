@@ -27,9 +27,7 @@ require 'animation'
   set :relative_links, true
   set :logging, true
 
-
   activate :gzip
-  activate :livereload, :port => 35730
   activate :directory_indexes
 
 ##################
