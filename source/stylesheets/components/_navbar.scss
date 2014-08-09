@@ -3,12 +3,16 @@
 ** Navbar Styles
 ******************
 */
+
+$navbar-font-size:14px;
+
 .navbar{
   border:none;
   @include rhythm(0,0,0,0);
   > .container .navbar-brand,
   > .container .navbar-header{
     margin-left: 0;
+    margin-right: $padding-base-horizontal;
   }
 
   > .container .navbar-header{
@@ -28,6 +32,11 @@
     margin:  -$base-line-height/2;
     margin-right: 0;
   }
+  .navbar-nav{
+    >li>a{
+      @extend .navbar-item;
+    }
+  }
 }
 
 .navbar-toggle{
@@ -40,99 +49,98 @@
   }
 }
 
-.navbar-brand{
-  height: auto;
-  // height: $base-line-height*2;
-  // @include rhythm(0,.5,.5,0);
-  i.logo{
-    @include inline-retina-sprite('logo/icon/Dark@0.5x.png');
-    background-position: center left;
-    opacity: 1;
-    @include transition(all .45s ceaser($easeOutQuint));
-    // @include fade-in-hover;
-    height: $base-line-height;
-  }
-}
 
 
 .navbar-text{
   margin: 0;
   @include adjust-font-size-to(14px);
-  @include rhythm(1,0,0,1, 14px);
+  // @include rhythm(1,0,0,1, 14px);
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  @include font-weight-light;
+  margin-left:$padding-base-horizontal/8;
+  margin-right:$padding-base-horizontal/8;
+  @include btn-rhythm(1.5, 1.5, 14px, $padding-base-horizontal);
+  @media (min-width: $screen-md-min){
+    margin-left:$padding-base-horizontal/4;
+    margin-right:$padding-base-horizontal/4;
+    @include btn-rhythm(1.5, 1.5, 16px, $padding-base-horizontal);
+  }
   &.text-muted{
-    color: white;
     margin-right: $padding-base-horizontal/2;
-    opacity: .4;
+  }
+}
+
+.navbar-item{
+  // @extend .btn-pill;
+  @extend .btn-rounded;
+  letter-spacing: 0.01em;
+  @include font-weight-light;
+  @include btn-rhythm(2, 1, 14px, $padding-base-horizontal);
+  display: inline-block;
+  text-decoration: none;
+  @include transition(all 0.2s ceaser($easeOutQuint));
+  margin-left:$padding-base-horizontal/8;
+  margin-right:$padding-base-horizontal/8;
+  .icon{
+    font-size: $navbar-font-size;
+    line-height: $navbar-font-size;
+  }
+  @media (min-width: $screen-md-min){
+    margin-left:$padding-base-horizontal/4;
+    margin-right:$padding-base-horizontal/4;
+    @include btn-rhythm(2, 1, $base-font-size, $padding-base-horizontal);
   }
 }
 
 .navbar-branded{
-  -webkit-font-smoothing:subpixel-antialiased;
+  // -webkit-font-smoothing:subpixel-antialiased;
   @include background-image($primary_bg_image);
   @include blue-background-colors;
   border:none;
-  min-height: $base-line-height*3;
   .container{
     position: relative;
   }
-  // .navbar-brand{
-  //   @include inline-retina-sprite('logo/navbar-logo.png');
-  //   height: $base-line-height*2;
-  //   background-position: left center;
-  //   background-size: contain;
-  //   background-repeat:no-repeat;
-  // }
 
+}
+%navbar-brand{
+}
+.navbar-branded  .navbar-brand{
+  // @include inline-retina-sprite('logo/icon/Dark@0.5x.png');
+  @include inline-retina-sprite('logo/icon/Light@0.5x.png');
+}
+.navbar-branded  .navbar-brand.navbar-brand{
+  background-position: center center;
+  opacity: 1;
+  @include transition(all .45s ceaser($easeOutQuint));
+  height: $base-line-height*1.5;
+  // width: $padding-base-horizontal*6;
+  @include leader(.5);
+  @include trailer(.5);
+  @include adjust-leading-to(1.5);
+  .navbar>.container-fluid &{
+    margin-left: 0;
+  }
+}
 
-  // .navbar-brand{
-  //   i.logo{
-  //     @include inline-retina-sprite('logo/navbar-logo.png');
-  //   }
-  // }
-  .navbar-brand i.logo{
+.navbar-inverse .navbar-brand{
     @include inline-retina-sprite('logo/icon/Light@0.5x.png');
-  }
+    @extend %navbar-brand;
+}
 
-
+.navbar-branded, .navbar-inverse{
   .navbar-text{
-    display: inline-block;
-    text-decoration: none;
-    // @extend %animate;
-    letter-spacing: 0.01em;
-    @include font-weight-light;
-    margin-left:$padding-base-horizontal/8;
-    margin-right:$padding-base-horizontal/8;
-    @include btn-rhythm(1.5, 1.5, 14px, $padding-base-horizontal);
-    @media (min-width: $screen-md-min){
-      margin-left:$padding-base-horizontal/4;
-      margin-right:$padding-base-horizontal/4;
-      @include btn-rhythm(1.5, 1.5, 16px, $padding-base-horizontal);
+    &.text-muted{
+      color: white;
+      opacity: .4;
     }
   }
-  .navbar-item{
-    display: inline-block;
-    text-decoration: none;
-    // @extend %animate;
-    @include transition(opacity border box-shadow -webkit-box-shadow 0.2s ceaser($easeOutQuint));
 
-    letter-spacing: 0.01em;
-    @include font-weight-light;
-    @include btn-rounded;
-    margin-left:$padding-base-horizontal/8;
-    margin-right:$padding-base-horizontal/8;
-    @include btn-rhythm(1.5, 1.5, 14px, $padding-base-horizontal);
-    .icon{
-      font-size: 14px;
-      line-height: 12px;
-    }
-    @media (min-width: $screen-md-min){
-      margin-left:$padding-base-horizontal/4;
-      margin-right:$padding-base-horizontal/4;
-      @include btn-rhythm(1.5, 1.5, 16px, $padding-base-horizontal);
-    }
+  .navbar-nav>li>a, .navbar-item{
+    @include btn-invisible;
   }
   .navbar-item-highlight{
-    @extend .navbar-item;
     @include btn-transparent;
   }
   .nav-pills > li.active > a.navbar-item{
@@ -146,11 +154,10 @@
     @include box-shadow(none);
   }
 
+  .navbar-item{
+    @include btn-invisible();
+  }
   @media screen and (min-width: $screen-sm-min) {
-
-    .navbar-item{
-      @include btn-invisible();
-    }
     .open {
       > .navbar-item, > .navbar-item:hover, .navbar-item:focus{
         border-color: transparentize($primary_bg_text, .5);
@@ -160,4 +167,3 @@
     }
   }
 }
-

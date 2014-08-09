@@ -25,12 +25,17 @@
       }
     }
   }
-  > li > a, .open > a{
-    // &:hover,&:focus{
-    //   background-color: transparent;
-    // }
-  }
 
+
+  >a, >a:hover, >a:focus{
+    text-decoration: none;
+  }
+  .open {
+    >a, >a:hover, >a:focus{
+      background-color: transparent;
+    }
+  }
+ 
   .offcanvas-sidebar-left &{
     margin:0; 
     > .nav > li > a{
