@@ -25,7 +25,7 @@
     background: $white;
     @include box-shadow(0px 0px 4px 0px transparentize(black,0.75));
   }
-  i.glyphicon{
+  i.icon{
     @include adjust-font-size-to(80px);
     @include rhythm(1,0,0,1,80px);
     color: #F8C430;

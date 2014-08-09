@@ -2,7 +2,7 @@
   blockquote{
     @include leader(0);
   }    
-  @include padding-trailer(4);
+  // @include padding-trailer(4);
 }
 .testimonials{
   @include rhythm(1,0,0,1);
@@ -35,7 +35,7 @@
   @extend .img-responsive;
   @extend %animate;
   @include box-shadow(0 10px 30px transparentize(black, .9));
-  margin: 0 $padding-base-horizontal;
+  // margin: 0 $padding-base-horizontal;
   padding: 0;
   background: white;
   display: inline-block;

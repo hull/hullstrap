@@ -11,6 +11,9 @@
   vertical-align: middle;
 }
 
+.homepage-screenshot{
+  @include box-shadow(0 0 50px rgba(0, 0, 0, 0.3));
+}
 
 .homepage-header{
   overflow: hidden;
