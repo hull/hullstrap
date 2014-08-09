@@ -1,8 +1,6 @@
 // Button Shape
 @mixin btn(){
-  text-rendering:optimizeLegibility;
   border: 0px;
-  @extend %animate;
 }
 @mixin btn-rounded(){
   @include border-radius(100px);
@@ -61,6 +59,8 @@
   @include leader( $margin / 2, $font-size);
   @include trailer( $margin / 2, $font-size);
 
+  padding-left:  $hpadding/2;
+  padding-right: $hpadding/2;
   @media screen and (min-width: $screen-lg-min) {
     padding-left:  $hpadding;
     padding-right: $hpadding;
