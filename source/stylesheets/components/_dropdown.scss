@@ -64,6 +64,9 @@
   }
 }
 
+.btn-group.open .dropdown-toggle{
+  @include box-shadow(none);
+}
 
 .user-login-dropdown{
   img.avatar{
