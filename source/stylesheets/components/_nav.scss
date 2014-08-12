@@ -74,11 +74,14 @@
       @include rhythm(0,.5,.5,0);
       border: none;
       @include box-shadow(inset 0 -1px 0 $light-filet);
-      color:$light_text;
+      color:$light-text;
       margin-left:0;
       margin-right:0;
     }
     li.active{
+      >a{
+        color:$base-text;
+      }
       > a, > a:hover, > a:focus{
         @include box-shadow(inset 0 -2px 0 $primary);
       }
@@ -86,7 +89,7 @@
     li, li.active{
       > a:hover, > a:focus{
         border: none;
-        color:$base-text;
+        background: transparent;
       }
     }
     li.active{

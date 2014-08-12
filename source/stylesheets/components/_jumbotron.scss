@@ -41,7 +41,7 @@
   .subtitle{
     // @include adjust-font-size-to(15px);
     @include font-weight-light;
-    color: $light_text;
+    color: $light-text;
   }
 
   blockquote{

@@ -15,7 +15,7 @@ $docs-font-size: 15px;
   p{
     @include adjust-font-size-to($docs-font-size);    
     @include rhythm(0,0,0,0);
-    color: $light_text;
+    color: $light-text;
   }
 }
 .docs-body{
@@ -90,7 +90,7 @@ $docs-font-size: 15px;
 
   p,li{
     @include adjust-font-size-to($docs-font-size);
-    color: $light_text;
+    color: $light-text;
   }
   p{
     @include rhythm(0,0,0,1, $docs-font-size);
@@ -129,7 +129,7 @@ $docs-font-size: 15px;
 .doc-link{
   @include adjust-font-size-to(13px, .75);
   a{
-    color: $light_text;
+    color: $light-text;
   }
 }
 
@@ -190,7 +190,7 @@ $docs-font-size: 15px;
     @include font-weight-bold;
   }
   td,th{
-    color: $light_text;
+    color: $light-text;
     @include adjust-font-size-to(14px);
   }
 }

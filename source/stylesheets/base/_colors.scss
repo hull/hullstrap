@@ -39,7 +39,7 @@ $quaternary     : $red;
 
 $btn_text_color : $blue_darkest;
 $accent_text_header: $quaternary;
-$light_text     : $light_blue_gray;
+$light-text     : lighten($light_blue_gray, 10%);
 $light-filet    : $off_white; 
 
 // $tertiary_alt   :

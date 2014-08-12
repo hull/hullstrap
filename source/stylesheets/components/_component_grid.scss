@@ -1,6 +1,6 @@
 .component-grid-cell {
   @include rhythm(0,0,0,1);
-  @include box-shadow(0 0 0px 1px transparentize($light_text,.75));
+  @include box-shadow(0 0 0px 1px transparentize($light-text,.75));
   background: $white;
   .photo {
     img {

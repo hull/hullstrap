@@ -78,11 +78,11 @@ pre{
   border-radius: 0;
   border:none;
   background: $off_white;
-  color:$light_text;
+  color:$light-text;
 }
 
 code{
-  color: $light_text;
+  color: $light-text;
   background-color: $off_white;
   @include adjust-font-size-to(13px);
 }
@@ -169,7 +169,7 @@ h1.page-header{
 }
 
 .light{
-  color: $light_text;
+  color: $light-text;
 }
 
 .nm{
