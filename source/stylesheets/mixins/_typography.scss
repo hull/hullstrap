@@ -1,0 +1,25 @@
+@mixin adjust-heading($font-size:$base-font-size, $leading:1, $trailer:1, $leader:1, $mobile-multiple: 1, $small-multiple: 1){
+  // $mobile-font-size:$mobile-multiple*$font-size;
+  // @include adjust-font-size-to($mobile-font-size, $leading);
+  // @include leader($leader, $mobile-font-size);
+  // @include trailer($trailer, $mobile-font-size);
+  // @media (min-width: $screen-sm-min) {
+  //   $small-font-size:$small-multiple*$font-size;
+  //   @include adjust-font-size-to($small-font-size, $leading);
+  //   @include leader($leader, $small-font-size);
+  //   @include trailer($trailer, $small-font-size);
+  // }
+  // @media (min-width: $screen-md-min) {
+  @include adjust-font-size-to($font-size, $leading);
+  @include leader($leader, $font-size);
+  @include trailer($trailer, $font-size);
+  // }
+}
+
+@mixin font-weight-thin{     font-weight: 100; }
+@mixin font-weight-light{  font-weight: 200; }
+// @mixin font-weight-light{    font-weight: 300; }
+@mixin font-weight-normal{   font-weight: 400; }
+@mixin font-weight-semibold{ font-weight: 600; }
+@mixin font-weight-bold{     font-weight: 700; }
+

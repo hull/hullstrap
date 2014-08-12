@@ -56,7 +56,6 @@ $h1_line_height: 3   !default;
 // body{
 //   opacity: .9;
 // }
-@import "base/typography";
 
 
 // Mixins : UI-less classes made to add scss features.
@@ -68,6 +67,7 @@ $h1_line_height: 3   !default;
 /*------------------------------------*\
     Hull mixins
 \*------------------------------------*/
+@import "mixins/typography";
 @import "mixins/animation";
 @import "mixins/fades";
 @import "mixins/center_horizontally";
@@ -77,6 +77,11 @@ $h1_line_height: 3   !default;
 @import "mixins/position";
 @import "mixins/reset_search_field";
 @import "mixins/retina";
+
+/*------------------------------------*\
+    Base
+\*------------------------------------*/
+@import "base/typography";
 
 /*------------------------------------*\
     Iconfonts
@@ -89,6 +94,7 @@ $h1_line_height: 3   !default;
 /*------------------------------------*\
     Elements
 \*------------------------------------*/
+@import "elements/headings";
 @import "elements/btn";
 @import "elements/table";
 @import "elements/code";

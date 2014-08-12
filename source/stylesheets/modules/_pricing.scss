@@ -38,7 +38,7 @@
   .footnotes{
     @include trailer(1);
     p{
-      @extend .light;
+      color: $light-text;
       @include adjust-font-size-to(12px);
       @include rhythm(0,0,0,0);
     }

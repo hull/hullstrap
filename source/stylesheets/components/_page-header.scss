@@ -14,7 +14,7 @@
     @include box-shadow(none);
   }
   .title{
-    @extend .nm;
+    @extend .m-0;
     @extend .text-accented;
   }
 }

@@ -10,45 +10,6 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2
   font-size-adjust: 0.5;
 }
 
-@mixin adjust-heading($font-size:$base-font-size, $leading:1, $trailer:1, $leader:1, $mobile-multiple: 1, $small-multiple: 1){
-  // $mobile-font-size:$mobile-multiple*$font-size;
-  // @include adjust-font-size-to($mobile-font-size, $leading);
-  // @include leader($leader, $mobile-font-size);
-  // @include trailer($trailer, $mobile-font-size);
-  // @media (min-width: $screen-sm-min) {
-  //   $small-font-size:$small-multiple*$font-size;
-  //   @include adjust-font-size-to($small-font-size, $leading);
-  //   @include leader($leader, $small-font-size);
-  //   @include trailer($trailer, $small-font-size);
-  // }
-  // @media (min-width: $screen-md-min) {
-  @include adjust-font-size-to($font-size, $leading);
-  @include leader($leader, $font-size);
-  @include trailer($trailer, $font-size);
-  // }
-}
-
-@mixin font-weight-thin{     font-weight: 100; }
-@mixin font-weight-light{  font-weight: 200; }
-// @mixin font-weight-light{    font-weight: 300; }
-@mixin font-weight-normal{   font-weight: 400; }
-@mixin font-weight-semibold{ font-weight: 600; }
-@mixin font-weight-bold{     font-weight: 700; }
-
-h1{ @include adjust-heading($h1_font_size, $h1_line_height); }
-h2{ @include adjust-heading($h2_font_size, $h2_line_height, .5); }
-h3{ @include adjust-heading($h3_font_size, $h3_line_height, .5); }
-h4{ @include adjust-heading($h4_font_size, $h4_line_height); }
-h5{ @include adjust-heading($h5_font_size, $h5_line_height); }
-h6{ @include adjust-heading($h6_font_size, $h6_line_height); }
-
-h1.condensed{ @include adjust-heading($h1_font_size); }
-h2.condensed{ @include adjust-heading($h2_font_size); }
-h3.condensed{ @include adjust-heading($h3_font_size); }
-h4.condensed{ @include adjust-heading($h4_font_size); }
-h5.condensed{ @include adjust-heading($h5_font_size); }
-h6.condensed{ @include adjust-heading($h6_font_size); }
-
 p{
   @include adjust-font-size-to($base-font-size,1);
   @include rhythm(.5,0,0,.5);
@@ -87,101 +48,9 @@ code{
   @include adjust-font-size-to(13px);
 }
 
-// blockquote {
-//   @include adjust-font-size-to(1.25, 1.25);
-// }
- 
-// @media (min-width: 43.75em) {
-//   blockquote {
-//     @include adjust-font-size-to(1.5, 1.45833333);
-//   }
-// }
-
-
-
-/*
-******************
-** Title Styles
-******************
-*/
-
-h1, h2, h3, h4, h5, h6{
-  color: $black_2;
-  &.underlined{
-    @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
-    background-repeat: no-repeat;
-    display: inline-block;
-  }
-  &.small-title{
-    text-transform: uppercase;
-
-  }
-  &.text-accented{
-    color: $accent_text_header;
-    small{
-      color: lighten($accent_text_header, 10%);
-    }
-  }
-}
-
-h1.underlined{
-  @include padding-trailer(.5, $h1_font_size);
-  @include trailer(.5, $h1_font_size);
-  background-position:  left ($base-line-height*2 - 2px);
-}
-h2.underlined{
-  @include padding-trailer(.5, $h2_font_size);
-  @include trailer(.5, $h2_font_size);
-  background-position:  left ($base-line-height*2 - 2px);
-}
-h3.underlined{
-  @include padding-trailer(.5, $h3_font_size);
-  @include trailer(.5, $h3_font_size);
-  background-position:  left ($base-line-height*1.5 - 2px);
-}
-h4.underlined{
-  @include padding-trailer(.5, $h4_font_size);
-  @include trailer(.5, $h4_font_size);
-  background-position:  left ($base-line-height*1.5 - 2px);
-}
-h5.underlined{
-  @include padding-trailer(.5, $h5_font_size);
-  @include trailer(.5, $h5_font_size);
-  background-position:  left ($base-line-height*1.5 - 2px);
-}
-
-
-
 .bold{   @include font-weight-bold; }
 .normal{ @include font-weight-normal; }
 .thin{   @include font-weight-light; }
-
-h1.page-header{
-  @include adjust-leading-to(3, $h1_font_size);
-  @include rhythm(1,0,0,1, $h1_font_size);
-  @include trailing-border(1px, 1, $h1_font_size);
-  // border-bottom-width: 1px;
-}
-
-.lead{
-  @include adjust-font-size-to(24px);
-  @include rhythm(1,0,0,1);
-}
-
-.light{
-  color: $light-text;
-}
-
-.nm{
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.np{
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 
 [data-icon]:before, .icon:before {
   line-height: initial !important;
