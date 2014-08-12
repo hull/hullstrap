@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "43d62c50c0b8323b3c001bc43c51f227ff1303cde9ef39ce3f23145ce1a09354",
-    "current": "43d62c50c0b8323b3c001bc43c51f227ff1303cde9ef39ce3f23145ce1a09354"
+    "previous": "1a8328babed7bedf91c39f0cfd09dd2d5407ee4ca0ac7d9eedc8e44258c6f354",
+    "current": "1a8328babed7bedf91c39f0cfd09dd2d5407ee4ca0ac7d9eedc8e44258c6f354"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_43d62c50c0b8323b3c001bc43c51f227.ttf",
-    "source/stylesheets/fonts/fontcustom_43d62c50c0b8323b3c001bc43c51f227.svg",
-    "source/stylesheets/fonts/fontcustom_43d62c50c0b8323b3c001bc43c51f227.woff",
-    "source/stylesheets/fonts/fontcustom_43d62c50c0b8323b3c001bc43c51f227.eot"
+    "source/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.ttf",
+    "source/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.svg",
+    "source/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.woff",
+    "source/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -445,7 +445,7 @@
       "fonts": "source/stylesheets/fonts",
       "preview": "source/stylesheets/fonts"
     },
-    "preprocessor_path": "stylesheets/fonts",
+    "preprocessor_path": "/stylesheets/fonts",
     "quiet": false,
     "skip_first": false,
     "templates": [
