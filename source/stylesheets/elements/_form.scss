@@ -1,40 +1,7 @@
-
-form{
-  .checkbox{
-    @include rhythm(1,0,0,1);
-  }
-}
-
-.form-group{
-  @include rhythm(0,0,0,1);
-}
-
-.form-control{
-  @include transition(all .2s ease-out);
-  padding-left:$padding-base-horizontal;
-  padding-right:$padding-base-horizontal;
-  @include rhythm(0,.5,.5,0);
-  height: auto;
-  background-color: white; 
-  color: $blue_gray_dark;
-  border:none;
-  @include box-shadow(none);
-
-  &.form-control-lg{
-    @include rhythm(0,1,1,0);
-    padding-left:$padding-base-horizontal*2;
-    padding-right:$padding-base-horizontal*2;
-  }
-}
-
 input[type='email'],
 input[type='text'],
-input[type='password']{
-  @include border-radius(0);
-  @include box-shadow(0 0 0 1px $blue_gray_lightest);
-  &:focus{
-    @include box-shadow(0 0 1px darken($blue_gray_lightest, 10%));
-  }
+input[type='password']
+textarea{
   &::-webkit-input-placeholder{
     @include font-weight-light;
     opacity: .5;
@@ -52,8 +19,57 @@ input[type='password']{
 
 label{
   color: $light-text;
+  @include font-weight-normal();
   @include rhythm(0,0,0,0);
 }
+
+form{
+  .checkbox{
+    @include rhythm(1,0,0,1);
+  }
+}
+
+.form-group{
+  @include rhythm(0,0,0,1);
+}
+
+input[type='search'],
+input[type='url'],
+input[type='text'],
+input[type='email'],
+input[type='password']{
+  &.form-control{
+    @include transition(all .2s ease-out);
+    padding-left:$padding-base-horizontal;
+    padding-right:$padding-base-horizontal;
+    @include rhythm(0,.5,.5,0);
+    height: auto;
+    background-color: white; 
+    color: $blue_gray_dark;
+    border:none;
+
+    @include border-radius(3px);
+    @include box-shadow(inset 0 0px 0 1px $light-filet);
+    &:focus{
+      @include box-shadow(inset 0 0 0 2px #0093e6, 0 0 2px rgba(0, 147, 230, 0.2));
+    }
+
+    &.form-control-lg{
+      @include rhythm(0,1,1,0);
+      padding-left:$padding-base-horizontal*2;
+      padding-right:$padding-base-horizontal*2;
+    }
+  }
+}
+
+input[type='search'].form-control{
+  @include box-shadow(inset 0 0 0 2px #C5C7CE);
+  @include border-radius(100px);
+  font-weight: normal;
+  padding-left:$padding-base-horizontal*2;
+  padding-right:$padding-base-horizontal*2;
+}
+
 
 .help-block{
   @include rhythm(0,.25,.75,1)
@@ -90,7 +106,16 @@ input[type=radio], input[type=checkbox]{
   .radio, .checkbox{
     min-height: $base-line-height;
   }
-  .control-label,
+  .field-label{
+    @include adjust-font-size-to(10px, 2);
+    // @include adjust-leading-to(2,10px);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:$light-text;
+    // @include rhythm(0,.5,.5,0);
+  }
+  .control-label{
+  }
   .radio,
   .checkbox,
   .radio-inline,
@@ -145,24 +170,42 @@ input[type=radio], input[type=checkbox]{
 
 
 
+.form-light{
+  .form-group{
+    @include trailer(0);
+    @include leader(0);
+  }
+  input[type='search'],
+  input[type='url'],
+  input[type='text'],
+  input[type='email'],
+  input[type='password']{
+    &.form-control, &.form-control:focus{
+      @include border-radius(0);
+      @include rhythm(0,1,1,0);
+      @include box-shadow(inset 0 1px 0 $light-filet);
+      background-color: transparent;
+      &.last{
+        @include box-shadow(inset 0 -1px 0 0px $light-filet, inset 0 1px 0 0px $light-filet);
+      }
+    }
+  }
+}
+
 .form-invisible{
   .form-group{
     @include trailer(0);
     @include leader(0);
   }
   input[type='search'],
+  input[type='url'],
   input[type='text'],
   input[type='email'],
   input[type='password']{
-    &.form-control{
-      @include box-shadow(inset 0 1px 0 rgba(0,0,0,.1));
-      background-color: white; 
-      &.last{
-        @include box-shadow(inset 0 1px 0 rgba(0,0,0,.1), inset 0 -1px 0 rgba(0,0,0,.1));
-      }
-      &:focus{
-        background-color: $off_white; 
-      }
+    &.form-control, &.form-control:focus{
+      @include border-radius(0);
+      @include box-shadow(none);
+      background-color: transparent;
     }
   }
 }
