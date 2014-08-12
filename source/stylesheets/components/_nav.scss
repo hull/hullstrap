@@ -75,6 +75,8 @@
       border: none;
       @include box-shadow(inset 0 -1px 0 $light-filet);
       color:$light_text;
+      margin-left:0;
+      margin-right:0;
     }
     li.active{
       > a, > a:hover, > a:focus{
