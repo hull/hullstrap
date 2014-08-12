@@ -1,12 +1,23 @@
 // Button Shape
 @mixin btn(){
   border: 0px;
+  @include border-radius(3px);
 }
 @mixin btn-rounded(){
   @include border-radius(100px);
 }
 
 // Button Colors
+@mixin btn-color($bg-color:$primary_bg_color, $border-color: $primary_bg_color, $text-color:$primary_bg_text){
+  color: $text-color;
+  background-color: $bg-color;
+  @include box-shadow(inset 0 0 0 1px $border-color);
+  &:hover, &:active, &:focus, &.active{
+    color: darken($text-color, 5%);
+    @include box-shadow(inset 0 0 0 2px darken($border-color, 5%));
+    background-color: darken($bg-color,5%);
+  }
+}
 @mixin btn-transparent{
   color: transparentize($white,.3);
   @include box-shadow(inset 0 0 0 2px transparentize($white, .9));
@@ -17,7 +28,6 @@
     color: $white;
   }
 }
-
 @mixin btn-invisible(){
   color: transparentize($white,.3);
   @include box-shadow(inset 0 0 0 2px transparentize($white, 1));
@@ -30,21 +40,14 @@
     background-color: transparentize($white, .95);;
   }
 }
-@mixin btn-color($bg-color:$primary_bg_color, $border-color: $primary_bg_color, $text-color:$primary_bg_text){
-  color: $text-color;
-  background-color: $bg-color;
-  @include box-shadow(inset 0 0 0 1px $border-color);
-  &:hover, &:active, &:focus, &.active{
-    color: darken($text-color, 5%);
-    @include box-shadow(inset 0 0 0 2px darken($border-color, 5%));
-    background-color: darken($bg-color,5%);
-  }
-}
 @mixin btn-pill(){
   @include btn-color(rgba(255,255,255,0),$blue_gray_light, $blue_gray);
 }
 @mixin btn-white{
   @include btn-color($white, $white, $secondary);
+}
+@mixin btn-dark{
+  @include btn-color(transparentize($blue_gray_darker,.83), rgba(0,0,0,0), white);
 }
 
 // Button Size
@@ -79,8 +82,15 @@
     outline: none;
   }
 }
-.btn-primary, .btn-default, .btn-secondary{
+.btn-primary, .btn-default, .btn-secondary, .btn-darken{
   @include box-shadow(none);
+}
+.btn-dark{
+  @include btn-dark();
+  @include font-weight-bold;
+  opacity: 1;
+  padding-left:12px;
+  padding-right:12px;
 }
 .btn-secondary{
   @include btn-color($blue_gray_lightest, rgba(255,255,255,0), $blue_gray);

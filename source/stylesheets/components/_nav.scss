@@ -69,33 +69,41 @@
 
 .nav-tabs.nav-tabs{
   @extend %nav;
-  &.nav-justified{
-    li > a{
-      @include rhythm(0,.5,.5,0);
+  li > a, li > a:hover, li > a:active, li > a:focus{
+    @include transition(none);
+    @include rhythm(0,.5,.5,0);
+    border: none;
+    color:$light-text;
+    margin-left:0;
+    margin-right:0;
+  }
+  li, li>a{
+    @include box-shadow(inset 0 -1px 0 $light-filet);
+  }
+  li.active{
+    >a{
+      color:$base-text;
+    }
+    > a, > a:hover, > a:focus{
+      @include box-shadow(inset 0 -2px 0 $primary);
+    }
+  }
+  li, li.active{
+    > a:hover, > a:focus{
       border: none;
-      @include box-shadow(inset 0 -1px 0 $light-filet);
-      color:$light-text;
-      margin-left:0;
-      margin-right:0;
+      background: transparent;
     }
-    li.active{
-      >a{
-        color:$base-text;
-      }
-      > a, > a:hover, > a:focus{
-        @include box-shadow(inset 0 -2px 0 $primary);
-      }
+  }
+  li.active{
+    a, > a:hover, > a:focus{
+      background-color: transparent;
+      @include font-weight-bold()
     }
-    li, li.active{
-      > a:hover, > a:focus{
+  }
+  &.nav-justified{
+    >.active{
+      >a, >a:focus, >a.hover{
         border: none;
-        background: transparent;
-      }
-    }
-    li.active{
-      a, > a:hover, > a:focus{
-        background-color: transparent;
-        @include font-weight-bold()
       }
     }
   }
