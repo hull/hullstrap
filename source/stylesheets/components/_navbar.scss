@@ -142,6 +142,7 @@ $navbar-font-size:14px;
   @include leader(.5);
   @include trailer(.5);
   @include adjust-leading-to(1.5);
+  margin-left: 0;
   .navbar>.container-fluid &{
     margin-left: 0;
   }

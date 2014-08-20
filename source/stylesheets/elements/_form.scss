@@ -106,8 +106,10 @@ input[type=radio], input[type=checkbox]{
   .radio, .checkbox{
     min-height: $base-line-height;
   }
+  .field-label, .field-text{
+    @include adjust-font-size-to(11px, 2);
+  }
   .field-label{
-    @include adjust-font-size-to(10px, 2);
     // @include adjust-leading-to(2,10px);
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -184,7 +186,7 @@ input[type=radio], input[type=checkbox]{
       @include border-radius(0);
       @include rhythm(0,1,1,0);
       @include box-shadow(inset 0 1px 0 $light-filet);
-      background-color: transparent;
+      background-color: white;
       &.last{
         @include box-shadow(inset 0 -1px 0 0px $light-filet, inset 0 1px 0 0px $light-filet);
       }
