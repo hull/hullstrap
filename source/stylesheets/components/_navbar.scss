@@ -123,6 +123,7 @@ $navbar-font-size:14px;
   // -webkit-font-smoothing:subpixel-antialiased;
   @include background-image($primary_bg_image);
   @include blue-background-colors;
+  height:54px;
   border:none;
   .container{
     position: relative;
@@ -136,13 +137,14 @@ $navbar-font-size:14px;
   @include inline-retina-sprite('logo/icon/Light@0.5x.png');
   background-position: center center;
   opacity: 1;
-  @include transition(all .45s ceaser($easeOutQuint));
+  // @include transition(border .45s ceaser($easeOutQuint));
   height: $base-line-height*1.5;
   // width: $padding-base-horizontal*6;
   @include leader(.5);
   @include trailer(.5);
   @include adjust-leading-to(1.5);
   margin-left: 0;
+  margin-right: $padding-base-horizontal;
   .navbar>.container-fluid &{
     margin-left: 0;
   }
