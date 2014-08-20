@@ -174,7 +174,7 @@ $sidebar_width: 260px;
       @include transform(translate3d(- $sidebar_width, 0, 0));
     }
     .offcanvas-content{
-      @include transform(perspective(600px) translate3d(-300px, 0, -200px));
+      @include transform(perspective(600px) translate3d(-26px, 0, 0));
       overflow: hidden;
       height: 100vh;
       // opacity: .5;
