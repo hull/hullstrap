@@ -18,6 +18,7 @@ source 'http://rubygems.org'
   gem 'rake'
   gem 'rack-contrib'
   gem 'rack-rewrite'
+  gem 'rack-cors'
   gem 'rack-environment'
 
 ##################

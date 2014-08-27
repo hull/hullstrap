@@ -7,6 +7,16 @@ require 'handlebars_assets'
 require 'lib/compass_retina'
 require 'lib/random_color'
 require 'animation'
+require 'rack/cors'
+
+use Rack::Cors do
+  allow do
+    origins '*'
+    resource '*', 
+      headers: :any, 
+      methods: [:get, :options]
+  end
+end
 
 ##################
 # Data
