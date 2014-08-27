@@ -48,19 +48,18 @@ $navbar-font-size:14px;
 
 .navbar-text{
   margin: 0;
-  @include adjust-font-size-to(14px);
-  // @include rhythm(1,0,0,1, 14px);
+  // @include adjust-font-size-to(14px, 2);
   display: inline-block;
   text-decoration: none;
   letter-spacing: 0.01em;
-  @include font-weight-light;
+  @include font-weight-semibold;
   margin-left:$padding-base-horizontal/8;
   margin-right:$padding-base-horizontal/8;
-  @include btn-rhythm(1.5, 1.5, 14px, $padding-base-horizontal);
+  @include adjust-leading-to(1.5);
+  @include rhythm(.5,.25,.25,.5);
   @media (min-width: $screen-md-min){
     margin-left:$padding-base-horizontal/4;
     margin-right:$padding-base-horizontal/4;
-    @include btn-rhythm(1.5, 1.5, 16px, $padding-base-horizontal);
   }
   &.text-muted{
     margin-right: $padding-base-horizontal/2;
@@ -96,41 +95,40 @@ $navbar-font-size:14px;
     @include btn-rhythm(2, 1, $base-font-size, $padding-base-horizontal*2);
   }
 }
-.navbar>li>a.navbar-item, .nav .navbar-item{
-  @extend %navbar-item;
-  @include btn;
-}
-.navbar>li>a.navbar-item-default, .nav .navbar-item-default{
-  @include btn-rounded;
-  .open > &{
+.navbar-branded>li>, .navbar-branded .nav {
+  .navbar-item{
+    @extend %navbar-item;
+    @include btn;
+  }
+  .navbar-item-default, .open > .navbar-item-default{
     @include btn-rounded;
   }
-}
-.navbar>li>a.navbar-item-highlight, .nav .navbar-item-highlight{
-  @include btn-transparent;
-  .open > &{
+  .navbar-item-white, .open > .navbar-item-white{
+    @include btn-white;
+  }
+  .navbar-item-highlight, .open > .navbar-item-highlight{
     @include btn-transparent;
   }
-}
-.navbar>li>a.navbar-item-dark, .nav .navbar-item-dark{
-  @include btn-dark;
-  .open > &{
+  .navbar-item-dark, .open > .navbar-item-dark{
     @include btn-dark;
   }
+}
+
+.header-bar{
+  @include background-image($primary_bg_image);
+  @include blue-background-colors;
+  height: 6px;
 }
 
 .navbar-branded{
   // -webkit-font-smoothing:subpixel-antialiased;
   @include background-image($primary_bg_image);
   @include blue-background-colors;
-  height:54px;
+  height:$base-line-height*3;
   border:none;
   .container{
     position: relative;
   }
-}
-
-%navbar-brand{
 }
 
 .navbar-branded  .navbar-brand.navbar-brand{

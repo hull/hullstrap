@@ -1,10 +1,10 @@
 .h0{ @include adjust-heading($h0_font_size, $h0_line_height); }
-h1{ @include adjust-heading($h1_font_size, $h1_line_height); }
-h2{ @include adjust-heading($h2_font_size, $h2_line_height, .5); }
-h3{ @include adjust-heading($h3_font_size, $h3_line_height, .5); }
-h4{ @include adjust-heading($h4_font_size, $h4_line_height); }
-h5{ @include adjust-heading($h5_font_size, $h5_line_height); }
-h6{ @include adjust-heading($h6_font_size, $h6_line_height); }
+h1{  @include adjust-heading($h1_font_size, $h1_line_height); }
+h2{  @include adjust-heading($h2_font_size, $h2_line_height, .5, 2.5); }
+h3{  @include adjust-heading($h3_font_size, $h3_line_height, .5, 2.5); }
+h4{  @include adjust-heading($h4_font_size, $h4_line_height, 1, 2); }
+h5{  @include adjust-heading($h5_font_size, $h5_line_height); }
+h6{  @include adjust-heading($h6_font_size, $h6_line_height); }
 
 h1.condensed{ @include adjust-heading($h1_font_size); }
 h2.condensed{ @include adjust-heading($h2_font_size); }
@@ -80,12 +80,14 @@ h5.underlined{
 
 h1.page-header{
   @include adjust-leading-to(3, $h1_font_size);
-  @include rhythm(1,0,0,1, $h1_font_size);
-  @include trailing-border(1px, 1, $h1_font_size);
-  // border-bottom-width: 1px;
+  @include rhythm(1,0,1,1, $h1_font_size);
+}
+h2.page-header{
+  @include adjust-leading-to(3, $h2_font_size);
+  @include rhythm(1,0,1,1, $h2_font_size);
 }
 
 .lead{
   @include adjust-font-size-to(24px);
-  @include rhythm(1,0,0,1);
+  @include rhythm(1,0,0,1, 24px);
 }

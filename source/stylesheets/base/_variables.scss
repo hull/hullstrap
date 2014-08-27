@@ -26,6 +26,7 @@ $gray-dark:              $blue_gray_dark;   // #333
 $gray:                   $blue_gray; // #555
 $gray-light:             $blue_gray_light;   // #999
 $gray-lighter:           $blue_gray_lighter; // #eee
+$gray-lightest:          $off_white;
  
 $brand-primary:         $primary;
 $brand-success:         $turquoise;
@@ -831,7 +832,7 @@ $blockquote-font-size:        ($font-size-base * 1.25) !default;
 //** Blockquote border color
 $blockquote-border-color:     $gray-lighter !default;
 //** Page header border color
-$page-header-border-color:    $gray-lighter !default;
+$page-header-border-color:    $gray-lightest !default;
  
  
 //== Miscellaneous
@@ -839,7 +840,7 @@ $page-header-border-color:    $gray-lighter !default;
 //##
  
 //** Horizontal line color.
-$hr-border:                   $gray-lighter !default;
+$hr-border:                   $gray-lightest !default;
  
 //** Horizontal offset for forms and lists.
 $component-offset-horizontal: 180px !default;

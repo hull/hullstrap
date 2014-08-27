@@ -8,8 +8,10 @@
   padding:0;
 }
 
+$drop-form-width:350px;
 .drop-form{
-  width: 350px;
+  width: $drop-form-width;
+  margin-right: -$drop-form-width/2;
   background-color: white;
   @include rhythm(.5,.5,.5,0);
   .social-buttons{
@@ -29,28 +31,11 @@
     }
   }
   .or-separator {
-    // text-align: center;
-    // overflow: hidden;
-    // display: none;
     span {
-      // background-color: white;
       color: $light-text;
       display: inline-block;
       position: relative;
       padding: 0 $padding-base-horizontal;
-      // &:before, &:after {
-      //   position: absolute;
-      //   content: "";
-      //   left: 100%;
-      //   top: 50%;
-      //   width: 500px;
-      //   background: $light-filet;
-      //   height: 1px;
-      // }
-      // &:before {
-      //     left: auto;
-      //     right: 100%;
-      // }
     }
   }
 }

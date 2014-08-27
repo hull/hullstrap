@@ -7,7 +7,7 @@
   }
   @include rhythm(1,0,0,1);
   // @include trailing-border(1px, .5);
-  @include box-shadow(inset 0 -1px 0 #dae2e4);
+  @include box-shadow(inset 0 -1px 0 $page-header-border-color);
   border:0; 
   
   &.no-border{
@@ -22,7 +22,7 @@
   @include rhythm(0,.5,.5,0);
   padding-left: $padding-base-horizontal;
   padding-right: $padding-base-horizontal;
-  background-color: #fbfcfc;
+  background-color: $page-header-border-color;
   width: auto;
   .container-fluid &{
     margin: -15px -15px 15px -15px;
