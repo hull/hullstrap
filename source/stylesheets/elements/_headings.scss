@@ -18,28 +18,36 @@ h6.condensed{ @include adjust-heading($h6_font_size); }
 ** Title Styles
 ******************
 */
+h1, h2, h3, h4, h5, h6{
+  color: $black_2;
+  font-family: $font-family-headline;
+  &.serif{
+    font-family: $font-family-serif;
+    font-weight: 200
+  }
+  &.underlined{
+    @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+  &.small-title{
+    text-transform: uppercase;
+
+  }
+  &.text-accented{
+    color: $accent_text_header;
+    small{
+      color: lighten($accent_text_header, 10%);
+    }
+  }
+}
 
 @for $i from 1 through 6 {
   h#{$i} {
-    color: $black_2;
-    &.underlined{
-      @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
-      background-repeat: no-repeat;
-      display: inline-block;
-    }
-    &.small-title{
-      text-transform: uppercase;
-
-    }
-    &.text-accented{
-      color: $accent_text_header;
-      small{
-        color: lighten($accent_text_header, 10%);
-      }
-    }
     
   }
 }
+
 // h1, h2, h3, h4, h5, h6{
 // }
 
