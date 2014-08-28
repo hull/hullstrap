@@ -6,45 +6,39 @@
 
 $navbar-font-size:14px;
 
-.navbar{
-  border:none;
-  @include rhythm(0,0,0,0);
-  > .container .navbar-brand,
-  > .container .navbar-header{
-    margin-left: 0;
-    margin-right: $padding-base-horizontal;
-  }
 
-  > .container .navbar-header{
-    margin:0; 
+%navbar-item{
+  @include transition(box-shadow 0.2s ceaser($easeOutQuint));
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: subpixel-antialiased;
+  // @include font-weight;
+  @include btn-rhythm(2, 1, 14px, $padding-base-horizontal);
+  margin-left:$padding-base-horizontal/8;
+  margin-right:$padding-base-horizontal/8;
+  display: inline-block;
+  text-decoration: none;
+  opacity:1;
+  .open > &{
+    background-color: rgba(0, 0, 0, 0.12);
+    @include box-shadow(none);
   }
-
-  > .container .navbar-brand{
-    @media screen and (max-width: $screen-xs-max) {
-      left: 0;
-      margin-left: auto;
-      margin-right: auto;
-      float: none; 
-    }
+  .icon{
+    font-size: $navbar-font-size;
+    line-height: $navbar-font-size;
   }
-
-  .avatar img{
-    margin:  -$base-line-height/2;
-    margin-right: 0;
-  }
-}
-
-.navbar-toggle{
-  @include rhythm(1,0,0,0);
-  cursor: pointer;
-  .icon-bar{
-    background: transparentize($primary_bg_text,.5);
-    height: 2px;
-    @include border-radius(3px);
+  @media (min-width: $screen-md-min){
+    margin-left:$padding-base-horizontal/4;
+    margin-right:$padding-base-horizontal/4;
+    @include btn-rhythm(2, 1, $base-font-size, $padding-base-horizontal*2);
   }
 }
 
 
+/*
+******************
+** Elements
+******************
+*/
 
 .navbar-text{
   margin: 0;
@@ -65,95 +59,117 @@ $navbar-font-size:14px;
     margin-right: $padding-base-horizontal/2;
   }
 }
-
-%navbar-item{
-  @include transition(box-shadow 0.2s ceaser($easeOutQuint));
-  letter-spacing: 0.01em;
-  -webkit-font-smoothing: subpixel-antialiased;
-  // @include font-weight;
-  @include btn-invisible;
-  @include btn-rhythm(2, 1, 14px, $padding-base-horizontal);
-  margin-left:$padding-base-horizontal/8;
-  margin-right:$padding-base-horizontal/8;
-  display: inline-block;
-  text-decoration: none;
-  // padding-left: $padding-base-horizontal;
-  // padding-right: $padding-base-horizontal;
-  opacity:1;
-  color:white;
-  .open > &{
-    background-color: rgba(0, 0, 0, 0.12);
-    @include box-shadow(none);
-  }
-  .icon{
-    font-size: $navbar-font-size;
-    line-height: $navbar-font-size;
-  }
-  @media (min-width: $screen-md-min){
-    margin-left:$padding-base-horizontal/4;
-    margin-right:$padding-base-horizontal/4;
-    @include btn-rhythm(2, 1, $base-font-size, $padding-base-horizontal*2);
-  }
-}
-.navbar-branded>li>, .navbar-branded .nav {
-  .navbar-item{
-    @extend %navbar-item;
-    @include btn;
-  }
-  .navbar-item-default, .open > .navbar-item-default{
-    @include btn-rounded;
-  }
-  .navbar-item-white, .open > .navbar-item-white{
-    @include btn-white;
-  }
-  .navbar-item-highlight, .open > .navbar-item-highlight{
-    @include btn-transparent;
-  }
-  .navbar-item-dark, .open > .navbar-item-dark{
-    @include btn-dark;
+.navbar-toggle{
+  @include rhythm(1,0,0,0);
+  cursor: pointer;
+  .icon-bar{
+    background: transparentize($primary_bg_text,.5);
+    height: 2px;
+    @include border-radius(3px);
   }
 }
 
-.header-bar{
-  @include background-image($primary_bg_image);
-  @include blue-background-colors;
-  height: 6px;
+
+
+
+
+/*
+******************
+** Default Navbar
+******************
+*/
+
+
+.navbar{
+  // Reset
+  // height:$base-line-height*3;
+  border:none;
+  @include rhythm(0,0,0,0);
+
+  // Override because we use Sprites for the Navbar Brand
+  > .container .navbar-brand,
+  > .container-fluid .navbar-brand {
+    opacity: 1;
+
+    @include leader(.5);
+    @include trailer(.5);
+    @include adjust-leading-to(1.5);
+
+    margin-left: 0;
+    margin-right: $padding-base-horizontal;
+    @media screen and (max-width: $screen-xs-max) {
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      float: none; 
+    }
+  }
+  .navbar-brand.navbar-brand{
+    @include inline-retina-sprite('logo/transparent-dark-61.png');
+    background-position: center center;
+    height: $base-line-height*1.5;
+    @media screen and (max-width: $screen-xs-max) {
+      height: auto;
+    }
+  }
+
+  > .container .navbar-header{
+    margin:0; 
+  }
+
+  // Navbar Buttons
+  >li>,  .nav {
+    .navbar-item{
+      @extend %navbar-item;
+      @include btn;
+    }
+    .navbar-item-default, .open > .navbar-item-default{
+      @include btn-rounded;
+    }
+    .navbar-item-white, .open > .navbar-item-white{
+      @include btn-white;
+    }
+    .navbar-item-highlight, .open > .navbar-item-highlight{
+      @include btn-transparent;
+    }
+    .navbar-item-dark, .open > .navbar-item-dark{
+      @include btn-dark;
+    }
+  }
+
 }
 
+
+
+
+/*
+******************
+** Inverse Navbar
+******************
+*/
 .navbar-branded{
-  // -webkit-font-smoothing:subpixel-antialiased;
   @include background-image($primary_bg_image);
   @include blue-background-colors;
-  height:$base-line-height*3;
   border:none;
   .container{
     position: relative;
   }
-}
-
-.navbar-branded  .navbar-brand.navbar-brand{
-  @include inline-retina-sprite('logo/icon/Light@0.5x.png');
-  background-position: center center;
-  opacity: 1;
-  // @include transition(border .45s ceaser($easeOutQuint));
-  height: $base-line-height*1.5;
-  // width: $padding-base-horizontal*6;
-  @include leader(.5);
-  @include trailer(.5);
-  @include adjust-leading-to(1.5);
-  margin-left: 0;
-  margin-right: $padding-base-horizontal;
-  .navbar>.container-fluid &{
-    margin-left: 0;
+  .navbar-item{
+    @include btn-invisible;
+    color:white;
   }
 }
 
-.navbar-inverse .navbar-brand{
-    @include inline-retina-sprite('logo/icon/Light@0.5x.png');
-    @extend %navbar-brand;
-}
-
+// Inverted Navbars
 .navbar-branded, .navbar-inverse{
+  .navbar-brand.navbar-brand{
+    @include inline-retina-sprite('logo/icon/Light@0.5x.png');
+    background-position: center center;
+    height: $base-line-height*1.5;
+    @media screen and (max-width: $screen-xs-max) {
+      height: auto;
+    }
+  }
   .navbar-text{
     &.text-muted{
       color: white;
@@ -175,3 +191,24 @@ $navbar-font-size:14px;
     }
   }
 }
+
+
+/*
+******************
+** Variants
+******************
+*/
+
+.header-bar{
+  position: absolute;
+  left: 0;
+  right: 0;
+  @include background-image($primary_bg_image);
+  @include blue-background-colors;
+  height: 6px;
+}
+.navbar-lightwhite{
+  background-color: rgba(255,255,255,0.9);
+  @include box-shadow(0 1px 0 0 rgba(0,0,0,.05));
+}
+

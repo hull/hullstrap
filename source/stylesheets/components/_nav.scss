@@ -56,6 +56,8 @@
       top:-1px;
       height: $base-line-height*1.5;
       @include border-radius(100px);
+      margin:  -$base-line-height/2;
+      margin-right: 0;
     }
   }
 }
@@ -135,3 +137,8 @@
   }
 }
 
+.nav-centered{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

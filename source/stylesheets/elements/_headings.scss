@@ -19,8 +19,13 @@ h6.condensed{ @include adjust-heading($h6_font_size); }
 ******************
 */
 h1, h2, h3, h4, h5, h6{
-  color: $black_2;
+  // color: $black_2;
+  color:$blue_darkest;
   font-family: $font-family-headline;
+  font-weight: 400;
+  &.light{
+    color:$blue_gray_light;    
+  }
   &.serif{
     font-family: $font-family-serif;
     font-weight: 200

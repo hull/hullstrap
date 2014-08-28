@@ -1,0 +1,11 @@
+.pager {
+  li > a{
+    @include rhythm(0,.5,.5,0);
+    @include border-radius(100px);
+  }
+  &.borderless{
+    li > a{
+      border:0;
+    }
+  }
+}

@@ -16,6 +16,9 @@ p{
   small{
     @include adjust-font-size-to(14px, 1);
   }
+  .blog .posts-wrapper &{
+    @include adjust-leading-to(1.125);
+  }
 }
 ul{
   @include rhythm(0,0,0,1);

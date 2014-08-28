@@ -130,6 +130,7 @@ $h6_line_height: .5  !default;
 @import "components/dropdown";
 @import "components/signup_dropdown";
 @import "components/component_grid";
+@import "components/pagination";
 
 /*------------------------------------*\
     Modules
@@ -143,11 +144,11 @@ $h6_line_height: .5  !default;
     Pages
 \*------------------------------------*/
 @import "layouts/offcanvas";
-
-@import "pages/homepage";
-@import "pages/features";
-@import "pages/docs";
-@import "pages/quick_start";
+@import "layouts/blog";
+@import "layouts/homepage";
+@import "layouts/features";
+@import "layouts/docs";
+@import "layouts/quick_start";
 
 // This goes in the end for highest specificity
 @import "base/rhythm";
