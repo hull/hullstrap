@@ -200,9 +200,9 @@ $navbar-font-size:14px;
 */
 
 .header-bar{
-  position: absolute;
-  left: 0;
-  right: 0;
+  // position: absolute;
+  // left: 0;
+  // right: 0;
   @include background-image($primary_bg_image);
   @include blue-background-colors;
   height: 6px;
