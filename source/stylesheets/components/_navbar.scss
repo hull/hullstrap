@@ -4,31 +4,32 @@
 ******************
 */
 
-$navbar-font-size:14px;
+$navbar-font-size:12px;
 
 
 %navbar-item{
   @include transition(box-shadow 0.2s ceaser($easeOutQuint));
   letter-spacing: 0.01em;
-  // @include font-weight;
+  @include font-weight-bold;
   @include btn-rhythm(2, 1, 14px, $padding-base-horizontal);
   margin-left:$padding-base-horizontal/8;
   margin-right:$padding-base-horizontal/8;
   display: inline-block;
   text-decoration: none;
   opacity:1;
+  text-transform: uppercase;
+  font-size: $navbar-font-size;
   .open > &{
     background-color: rgba(0, 0, 0, 0.12);
     @include box-shadow(none);
   }
   .icon{
-    font-size: $navbar-font-size;
     line-height: $navbar-font-size;
   }
   @media (min-width: $screen-md-min){
     margin-left:$padding-base-horizontal/4;
     margin-right:$padding-base-horizontal/4;
-    @include btn-rhythm(2, 1, $base-font-size, $padding-base-horizontal*2);
+    @include btn-rhythm(2, 1, $navbar-font-size, $padding-base-horizontal*2);
   }
 }
 
@@ -41,7 +42,6 @@ $navbar-font-size:14px;
 
 .navbar-text{
   margin: 0;
-  // @include adjust-font-size-to(14px, 2);
   display: inline-block;
   text-decoration: none;
   letter-spacing: 0.01em;

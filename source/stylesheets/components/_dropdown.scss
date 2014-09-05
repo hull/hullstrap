@@ -1,3 +1,12 @@
+@mixin popin{
+  animation: hull-fadescalein 150ms forwards cubic-bezier(.8, .02, .45, .71);
+  -webkit-animation: hull-fadescalein 150ms forwards cubic-bezier(.8, .02, .45, .71);
+  -moz-animation: hull-fadescalein 150ms forwards cubic-bezier(.8, .02, .45, .71);
+  -ms-animation: hull-fadescalein 150ms forwards cubic-bezier(.8, .02, .45, .71);
+  -o-animation: hull-fadescalein 150ms forwards cubic-bezier(.8, .02, .45, .71);
+  -webkit-backface-visibility: hidden;
+}
+
 .dropdown-menu{
   &.pad{
     padding:$base-line-height/2 $padding-base-horizontal;
@@ -43,6 +52,7 @@
 
 
   .open &{
+    @include popin;
     // @extend .animated;
     // @extend .fadeInUp;
     .offcanvas-sidebar & > li > a{

@@ -10,8 +10,8 @@
 
 $drop-form-width:350px;
 .drop-form{
-  width: $drop-form-width;
-  margin-right: -$drop-form-width/2;
+  max-width: $drop-form-width;
+  margin-right: 5px;
   background-color: white;
   @include rhythm(.5,.5,.5,0);
   .social-buttons{

@@ -53,11 +53,10 @@
   .avatar{
     img{
       position: relative;
-      top:-1px;
-      height: $base-line-height*1.5;
+      height: $base-line-height*1.2;
       @include border-radius(100px);
       margin:  -$base-line-height/2;
-      margin-right: 0;
+      margin-right: 5px;
     }
   }
 }
