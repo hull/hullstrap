@@ -10,7 +10,6 @@ $navbar-font-size:14px;
 %navbar-item{
   @include transition(box-shadow 0.2s ceaser($easeOutQuint));
   letter-spacing: 0.01em;
-  -webkit-font-smoothing: subpixel-antialiased;
   // @include font-weight;
   @include btn-rhythm(2, 1, 14px, $padding-base-horizontal);
   margin-left:$padding-base-horizontal/8;
