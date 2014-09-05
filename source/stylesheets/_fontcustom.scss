@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: font-url("/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.eot");
-  src: font-url("/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.eot?#iefix") format("embedded-opentype"),
-       font-url("/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.woff") format("woff"),
-       font-url("/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.ttf") format("truetype"),
-       font-url("/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.svg#fontcustom") format("svg");
+  src: font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.eot");
+  src: font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.eot?#iefix") format("embedded-opentype"),
+       font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.woff") format("woff"),
+       font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.ttf") format("truetype"),
+       font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: font-url("/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.svg#fontcustom") format("svg");
+    src: font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.svg#fontcustom") format("svg");
   }
 }
 
@@ -36,6 +36,8 @@
 .icon-arrow_up:before,
 .icon-blockquote:before,
 .icon-bold:before,
+.icon-bubble:before,
+.icon-bubbles:before,
 .icon-checkbox:before,
 .icon-click:before,
 .icon-clock:before,
@@ -95,6 +97,7 @@
 .icon-plug_in:before,
 .icon-plus:before,
 .icon-question:before,
+.icon-question_bubble:before,
 .icon-redo:before,
 .icon-reply:before,
 .icon-reset:before,
@@ -154,6 +157,8 @@
 .icon-arrow_up:before { content: "\f1d6"; }
 .icon-blockquote:before { content: "\f1e7"; }
 .icon-bold:before { content: "\f1e8"; }
+.icon-bubble:before { content: "\f203"; }
+.icon-bubbles:before { content: "\f202"; }
 .icon-checkbox:before { content: "\f19a"; }
 .icon-click:before { content: "\f1fc"; }
 .icon-clock:before { content: "\f1dc"; }
@@ -213,6 +218,7 @@
 .icon-plug_in:before { content: "\f1d0"; }
 .icon-plus:before { content: "\f1b6"; }
 .icon-question:before { content: "\f1b4"; }
+.icon-question_bubble:before { content: "\f205"; }
 .icon-redo:before { content: "\f1f0"; }
 .icon-reply:before { content: "\f1bd"; }
 .icon-reset:before { content: "\f1b5"; }

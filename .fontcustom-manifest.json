@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "1a8328babed7bedf91c39f0cfd09dd2d5407ee4ca0ac7d9eedc8e44258c6f354",
-    "current": "1a8328babed7bedf91c39f0cfd09dd2d5407ee4ca0ac7d9eedc8e44258c6f354"
+    "previous": "8f74b3830f43abbf0ecae4746070fe9f8ffe14300357d112c978a5841035b249",
+    "current": "8f74b3830f43abbf0ecae4746070fe9f8ffe14300357d112c978a5841035b249"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.ttf",
-    "source/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.svg",
-    "source/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.woff",
-    "source/stylesheets/fonts/fontcustom_1a8328babed7bedf91c39f0cfd09dd2d.eot"
+    "source/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.ttf",
+    "source/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.svg",
+    "source/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.woff",
+    "source/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -61,6 +61,14 @@
     "bold": {
       "codepoint": 61928,
       "source": "source/images/icons/bold.svg"
+    },
+    "bubble": {
+      "codepoint": 61955,
+      "source": "source/images/icons/bubble.svg"
+    },
+    "bubbles": {
+      "codepoint": 61954,
+      "source": "source/images/icons/bubbles.svg"
     },
     "checkbox": {
       "codepoint": 61850,
@@ -297,6 +305,10 @@
     "question": {
       "codepoint": 61876,
       "source": "source/images/icons/question.svg"
+    },
+    "question_bubble": {
+      "codepoint": 61957,
+      "source": "source/images/icons/question_bubble.svg"
     },
     "redo": {
       "codepoint": 61936,
