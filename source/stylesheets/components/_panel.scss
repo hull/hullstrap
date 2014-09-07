@@ -8,6 +8,10 @@
     @include rhythm(0,.5,.5,0);
   }
 }
+.panel-title{
+  @include font-weight-bold;
+  @extend .small-title;
+}
 .panel.panel-default{
   @include box-shadow(none);
   @include rhythm(0,0,0,.5);
