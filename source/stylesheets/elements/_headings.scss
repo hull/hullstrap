@@ -35,16 +35,16 @@ h1, h2, h3, h4, h5, h6{
     background-repeat: no-repeat;
     display: inline-block;
   }
-  &.small-title{
-    text-transform: uppercase;
-
-  }
   &.text-accented{
     color: $accent_text_header;
     small{
       color: lighten($accent_text_header, 10%);
     }
   }
+}
+.small-title{
+  text-transform: uppercase;
+
 }
 
 @for $i from 1 through 6 {
