@@ -19,7 +19,7 @@ $navbar-font-size:12px;
   opacity:1;
   text-transform: uppercase;
   font-size: $navbar-font-size;
-  .open > &{
+  &:hover, &.active, &:active, &:focus,.open > &{
     background-color: rgba(0, 0, 0, 0.12);
     @include box-shadow(none);
   }
@@ -59,7 +59,7 @@ $navbar-font-size:12px;
   }
 }
 .navbar-toggle{
-  @include rhythm(1,0,0,0);
+  @include rhythm(1,0,0,1);
   cursor: pointer;
   .icon-bar{
     background: transparentize($primary_bg_text,.5);
@@ -146,6 +146,33 @@ $navbar-font-size:12px;
 ** Inverse Navbar
 ******************
 */
+.navbar-form{
+  @include rhythm(.5,0,0,.5);
+  input[name="search"],
+  input[type="search"]{
+    @include border-radius(100px 0 0 100px);
+    @include box-shadow(none);
+    &.active, &:focus{
+      @include box-shadow(none);
+    }
+    & + .input-group-btn .btn{
+      @include border-radius(0 100px 100px 0);
+    }
+  }
+
+}
+.navbar-default {
+  .navbar-nav > li > a{
+    color:$gray-dark;
+  }
+}
+.navbar-nav{
+  > li > a{
+    @extend %navbar-item;
+    @include btn;
+  }
+}
+
 .navbar-branded{
   @include background-image($primary_bg_image);
   @include blue-background-colors;
