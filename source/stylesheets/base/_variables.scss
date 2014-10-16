@@ -9,6 +9,7 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 // Variables
 // --------------------------------------------------
 
+$h7_font_size: $base-font-size/($typography_scale*$typography_scale*$typography_scale);
 $h6_font_size: $base-font-size/$typography_scale;
 $h5_font_size: $base-font-size;
 $h4_font_size: $base-font-size*$typography_scale;

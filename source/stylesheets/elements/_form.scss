@@ -38,7 +38,8 @@ input[type='url'],
 input[type='text'],
 input[type='email'],
 input[type='password'],
-textarea{
+textarea,
+select{
   &.form-control{
     @include transition(all .2s ease-out);
     padding-left:$padding-base-horizontal;
@@ -61,6 +62,9 @@ textarea{
       padding-right:$padding-base-horizontal*2;
     }
   }
+}
+select.form-control{
+  height: $base-line-height*2;
 }
 
 input[type='search'].form-control{

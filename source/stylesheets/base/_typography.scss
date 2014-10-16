@@ -6,6 +6,11 @@ body{
   background: white;
 }
 
+a{
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.5;
 }
@@ -14,7 +19,7 @@ p{
   @include adjust-font-size-to($base-font-size,1);
   @include rhythm(.5,0,0,.5);
   small{
-    @include adjust-font-size-to(14px, 1);
+    @include adjust-font-size-to($h7_font_size, 1);
   }
   .blog .posts-wrapper &{
     @include adjust-leading-to(1.125);
@@ -54,6 +59,7 @@ code{
 .bold{   @include font-weight-bold; }
 .normal{ @include font-weight-normal; }
 .thin{   @include font-weight-light; }
+.small{}
 
 [data-icon]:before, .icon:before {
   line-height: initial !important;

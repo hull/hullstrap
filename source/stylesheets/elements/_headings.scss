@@ -26,9 +26,13 @@ h1, h2, h3, h4, h5, h6{
   &.light{
     color:$blue_gray_light;    
   }
+  &.uppercase, &.uppercase small {
+    font-weight:600;
+    letter-spacing: 0.1em;
+  }
   &.serif{
     font-family: $font-family-serif;
-    font-weight: 200
+    font-weight: 200;
   }
   &.underlined{
     @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));

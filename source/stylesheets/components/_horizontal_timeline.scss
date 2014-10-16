@@ -1,0 +1,130 @@
+$red:#DF4836;
+$grey:#D5DBE5;
+$arrow-size:7px;
+$dot-size:12px;
+$padding-popover-horizontal: $padding-base-horizontal*1.5;
+$avatar-size: $base-line-height*2;
+
+body.timeline{
+  padding: 100px;
+}
+
+.htl{
+}
+.htl-items{
+  list-style-type:none;
+  position: relative;
+  border-bottom: 1px solid $grey;
+  margin-bottom: 1em;
+  &:after{
+    border: 3px solid transparent;
+    border-left-color: $grey;
+    border-right-width: 0;
+    top: -3px;
+    right: - 3px;
+    position: absolute;
+    content: " ";
+  }
+}
+.htl-image{
+  width: $base-line-height*4;
+  height: $base-line-height*4;
+  float: left;
+  margin-right: $padding-base-horizontal;
+}
+.htl-prize-add{
+  margin-top: $base-line-height;
+  width: $base-line-height*2;
+  height: $base-line-height*2;
+  font-size: $h1_font_size;
+  padding:6px;
+}
+.htl-item{
+  display: block;
+  position: absolute;
+  left: 0;
+  top:0;
+  &:hover{
+    .htl-popover{
+      display: block;
+    }
+  }
+}
+.htl-dot{
+  background-color: $grey;
+  cursor: pointer;
+  .won &{
+    background-color: $red;
+  }
+  width:$dot-size;
+  height:$dot-size;
+  border-radius: 100px;
+  display: block;
+  position: relative;
+  top: - $dot-size/2;
+  left: - $dot-size/2;
+}
+.htl-avatar{
+  width: $avatar-size;
+  height: $avatar-size;
+}  
+.htl-popover{
+  white-space: nowrap;
+  display: none;
+  background: white;
+  border-radius: 3px;
+  padding: $base-line-height/2 $padding-popover-horizontal;
+  box-shadow: 0 0 1px 1px $grey;
+  position: absolute;
+  left: - ($padding-popover-horizontal + $avatar-size/2);
+  top: $dot-size + $arrow-size;
+  .arrow{
+    border: $arrow-size + 1 solid transparent;
+    border-bottom-color: $grey;
+    border-top-width: 0;
+    left: $padding-popover-horizontal + $arrow-size + 2;
+    top: - ($arrow-size + 1);
+    position: absolute;
+    &:after{
+      content: " ";
+      border: $arrow-size solid transparent;
+      border-bottom-color: white;
+      border-top-width: 0;
+      position: absolute;
+      left: - $arrow-size;
+      top:1px;
+    }
+  }
+}
+
+.htl-name, .htl-date{
+  white-space: nowrap;
+}
+.add-slots-container{
+  text-align: center;
+}
+.add-image-container{
+  position: relative;
+  background-color: #333;
+  @include border-radius(100px);
+  &:hover{
+    .add-image-image{
+      opacity: 1;
+    }
+  }
+}
+.add-image-image{
+  @include transition(all 0.5s linear);
+  opacity: .7;
+}
+.add-image-btn{
+  position: absolute;
+  top:50%;
+  left:50%;
+  @include transform(translate(-50%, -50%)); 
+  background-color: $primary;
+  width: $base-line-height*2;
+  height: $base-line-height*2;
+  padding:11px;
+}
+
