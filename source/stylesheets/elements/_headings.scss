@@ -1,17 +1,48 @@
-.h0{ @include adjust-heading($h0_font_size, $h0_line_height); }
-h1{  @include adjust-heading($h1_font_size, $h1_line_height); }
-h2{  @include adjust-heading($h2_font_size, $h2_line_height, .5, 2.5); }
-h3{  @include adjust-heading($h3_font_size, $h3_line_height, .5, 2.5); }
-h4{  @include adjust-heading($h4_font_size, $h4_line_height, 1, 2); }
-h5{  @include adjust-heading($h5_font_size, $h5_line_height); }
-h6{  @include adjust-heading($h6_font_size, $h6_line_height); }
+$font-metrics:
+  $h0_font_size   $h1_font_size   $h2_font_size   $h3_font_size   $h4_font_size   $h5_font_size   $h6_font_size   $h7_font_size,
+  $h0_line_height $h1_line_height $h2_line_height $h3_line_height $h4_line_height $h5_line_height $h6_line_height $h7_line_height,
+  $h0_leading     $h1_leading     $h2_leading     $h3_leading     $h4_leading     $h5_leading     $h6_leading     $h7_leading,
+  $h0_trailing    $h1_trailing    $h2_trailing    $h3_trailing    $h4_trailing    $h5_trailing    $h6_trailing    $h7_trailing;
 
-h1.condensed{ @include adjust-heading($h1_font_size); }
-h2.condensed{ @include adjust-heading($h2_font_size); }
-h3.condensed{ @include adjust-heading($h3_font_size); }
-h4.condensed{ @include adjust-heading($h4_font_size); }
-h5.condensed{ @include adjust-heading($h5_font_size); }
-h6.condensed{ @include adjust-heading($h6_font_size); }
+
+@mixin adjust-heading($font-size:$base-font-size, $leading:1, $trailer:1, $leader:1, $mobile-multiple: 1, $small-multiple: 1){
+  // $mobile-font-size:$mobile-multiple*$font-size;
+  // @include adjust-font-size-to($mobile-font-size, $leading);
+  // @include leader($leader, $mobile-font-size);
+  // @include trailer($trailer, $mobile-font-size);
+  // @media (min-width: $screen-sm-min) {
+  //   $small-font-size:$small-multiple*$font-size;
+  //   @include adjust-font-size-to($small-font-size, $leading);
+  //   @include leader($leader, $small-font-size);
+  //   @include trailer($trailer, $small-font-size);
+  // }
+  // @media (min-width: $screen-md-min) {
+  @include adjust-font-size-to($font-size, $leading);
+  @include leader($leader, $font-size);
+  @include trailer($trailer, $font-size);
+  // }
+}
+
+@for $i from 1 through 6 {
+  $fs : nth(nth($font-metrics, 1), $i);
+  $lh : nth(nth($font-metrics, 2), $i);
+  $ld : nth(nth($font-metrics, 3), $i);
+  $tr : nth(nth($font-metrics, 4), $i);
+
+  h#{$i - 1}, .h#{$i - 1}, .h#{$i - 1 }{
+    @include adjust-heading($fs, $lh, $tr, $ld);
+    &.condensed{
+      @include adjust-leading-to(1)
+    }
+    &.page-header{
+      @include adjust-leading-to(3,$fs);
+      @include rhythm(1,0,1,1,$fs);
+    }
+    &.panel-title{
+
+    }
+  }
+}
 
 /*
 ******************
@@ -22,17 +53,18 @@ h1, h2, h3, h4, h5, h6{
   // color: $black_2;
   color:$blue_darkest;
   font-family: $font-family-headline;
-  font-weight: 400;
+  @include font-weight-normal;
   &.light{
     color:$blue_gray_light;    
   }
-  &.uppercase, &.uppercase small {
-    font-weight:600;
+  &.uppercase, &.uppercase small, &.small-title {
+    text-transform: uppercase;
+    @include font-weight-bold;
     letter-spacing: 0.1em;
   }
   &.serif{
+    @include font-weight-light;
     font-family: $font-family-serif;
-    font-weight: 200;
   }
   &.underlined{
     @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
@@ -46,45 +78,6 @@ h1, h2, h3, h4, h5, h6{
     }
   }
 }
-.small-title{
-  text-transform: uppercase;
-
-}
-
-@for $i from 1 through 6 {
-  h#{$i} {
-    
-  }
-}
-
-// h1, h2, h3, h4, h5, h6{
-// }
-
-h1.underlined{
-  @include padding-trailer(.5, $h1_font_size);
-  @include trailer(.5, $h1_font_size);
-  background-position:  left ($base-line-height*2 - 2px);
-}
-h2.underlined{
-  @include padding-trailer(.5, $h2_font_size);
-  @include trailer(.5, $h2_font_size);
-  background-position:  left ($base-line-height*2 - 2px);
-}
-h3.underlined{
-  @include padding-trailer(.5, $h3_font_size);
-  @include trailer(.5, $h3_font_size);
-  background-position:  left ($base-line-height*1.5 - 2px);
-}
-h4.underlined{
-  @include padding-trailer(.5, $h4_font_size);
-  @include trailer(.5, $h4_font_size);
-  background-position:  left ($base-line-height*1.5 - 2px);
-}
-h5.underlined{
-  @include padding-trailer(.5, $h5_font_size);
-  @include trailer(.5, $h5_font_size);
-  background-position:  left ($base-line-height*1.5 - 2px);
-}
 
 [data-editor] h3{
   font-weight:normal;
@@ -92,16 +85,6 @@ h5.underlined{
   text-transform: uppercase;
   font-size:10px;
   letter-spacing:2px
-}
-
-
-h1.page-header{
-  @include adjust-leading-to(3, $h1_font_size);
-  @include rhythm(1,0,1,1, $h1_font_size);
-}
-h2.page-header{
-  @include adjust-leading-to(3, $h2_font_size);
-  @include rhythm(1,0,1,1, $h2_font_size);
 }
 
 .lead{

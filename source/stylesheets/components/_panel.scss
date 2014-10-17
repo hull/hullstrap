@@ -1,40 +1,61 @@
 .panel{
-  background-color: transparent;
-  @include box-shadow(none);
-  .panel-heading, .panel-body{
-    border:0;
-    padding-left: $padding-base-horizontal;
-    padding-right: $padding-base-horizontal;
-    @include rhythm(0,.5,.5,0);
-  }
-}
-.panel-title{
-  @include font-weight-bold;
-  @extend .small-title;
-}
-.panel.panel-default{
-  @include box-shadow(none);
-  @include rhythm(0,0,0,.5);
-  border:0;
+  border: 0;
   padding: 0; 
-  @include box-shadow(inset 0 0 0 1px $blue_gray_lightest);
-  > .panel-heading{
-    // background: $white;
-    @include box-shadow(inset 0 -1px 0 $blue_gray_lightest);
-  }
-
+  @include border-radius(0);
+  @include box-shadow(inset 0 0 0px 1px transparentize($light-text,.75));
+  overflow: hidden;
+  @include trailer(2);
 }
 .panel-minimal{
-  border:0;
-  .panel-heading{
-    background-color: $light_filet;
-  }
-
-  .padding-heading, .padding-body, .list-group-item{
-    padding-left: 0;
-    padding-right: 0;
-  }
+  @include box-shadow(none);
+}
+.panel-heading{
+  @extend .text-center;
+}
+.panel-heading, .panel-body{
+  border-bottom: none;
+  padding-left: $padding-base-horizontal;
+  padding-right: $padding-base-horizontal;
+  @include rhythm(0,.5,.5,0);
+}
+.panel-title{
+  @extend .small-title;
 }
 .panel-footer{
   border-top:0;
+}
+
+$panels:
+  'default'   'active'    'primary'      'success'      'info'      'warning'      'danger',
+  $text-color $gray-dark  $brand-primary $brand-success $brand-info $brand-warning $brand-danger;
+
+@for $i from 1 through 7 {
+  $name   : nth(nth($panels, 1), $i);
+  $color  : nth(nth($panels, 2), $i);
+
+  .panel-#{$name}{
+    @include box-shadow(inset 0 0 0px 1px transparentize($color,.85));
+    >.panel-heading{
+      background-color: scale-color($color, $lightness: 90%);
+      // @include box-shadow(inset 0 0 0px 1px transparentize($color,.9));
+      color: $color;    
+    }
+  }
+}
+
+.panel-primary, .panel-success, .panel-info, .panel-warning, .panel-danger{
+  label{
+    color:inherit;
+  }
+}
+.panel-primary{
+  @include box-shadow(inset 0 0 0px 1px transparentize($primary_bg_color,.75));
+  >.panel-heading{
+    @extend %blue-background;
+  }
+}
+.panel-minimal{
+  >.panel-heading{
+    @include box-shadow(inset 0 -1px 0px 0px transparentize($light-text,.6));
+  }
 }

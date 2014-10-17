@@ -4,6 +4,7 @@ $base-font-size:        18px !default;
 $base-line-height:      24px !default;
 $base-rhythm-unit:      24px !default;
 $typography_scale :     1.25 !default;
+
 $h0_line_height: 3   !default;
 $h1_line_height: 3   !default;
 $h2_line_height: 2   !default;
@@ -11,6 +12,35 @@ $h3_line_height: 1.5 !default;
 $h4_line_height: 1   !default;
 $h5_line_height: 1   !default;
 $h6_line_height: .5  !default;
+$h7_line_height: .5  !default;
+
+
+$h0_leading: 1   !default;
+$h1_leading: 2   !default;
+$h2_leading: 2.5 !default;
+$h3_leading: 2.5 !default;
+$h4_leading: 2   !default;
+$h5_leading: 1   !default;
+$h6_leading: 1   !default;
+$h7_leading: 1   !default;
+
+$h0_trailing: 1   !default;
+$h1_trailing: 1   !default;
+$h2_trailing: 0.5 !default;
+$h3_trailing: 0.5 !default;
+$h4_trailing: 1   !default;
+$h5_trailing: 1   !default;
+$h6_trailing: 1   !default;
+$h7_trailing: 1   !default;
+
+$h7_font_size: $base-font-size/($typography_scale*$typography_scale*$typography_scale);
+$h6_font_size: $base-font-size/$typography_scale;
+$h5_font_size: $base-font-size;
+$h4_font_size: $base-font-size*$typography_scale;
+$h3_font_size: $base-font-size*$typography_scale*$typography_scale;
+$h2_font_size: $base-font-size*$typography_scale*$typography_scale*$typography_scale;
+$h1_font_size: $base-font-size*$typography_scale*$typography_scale*$typography_scale*$typography_scale;
+$h0_font_size: $base-font-size*$typography_scale*$typography_scale*$typography_scale*$typography_scale*$typography_scale*$typography_scale*$typography_scale;
 
 /*------------------------------------*\
     Import Compass Framework

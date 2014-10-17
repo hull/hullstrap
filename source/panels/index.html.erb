@@ -1,0 +1,77 @@
+<% types = %w{ minimal default active primary success info warning danger } %>
+<div class="container mt-3">
+  <div class="row">
+    <% types.each do |type| %>
+    <div class="col-sm-6">
+      <div class="panel panel-<%= type %>">
+        <div class="panel-heading">
+          <h6 class="small-title">Title <%= type %></h6>
+        </div>
+        <div class="panel-body">
+          <p>Particularly cool content</p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+    <% types.each do |type| %>
+      <div class="col-sm-6">
+        <div class="panel panel-<%= type %> text-<%= type %>">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group mb-0">
+                  <div class="input-group">
+                    <div class="input-group-btn">
+                      <button class="btn btn-link btn-sm"><i class="icon icon-arrow_right"></i></button>
+                    </div>
+                    <div class="input-group-addon"><i class="icon icon-pencil"></i></div>
+                    <input type="text" class="form-control" name="title" value="Email" placeholder="Enter your Title">
+                    <div class="input-group-addon"><i class="icon icon-arrow_down"></i></div>
+                    <div class="input-group-addon"><i class="icon icon-arrow_up"></i></div>
+                    <div class="input-group-btn">
+                      <button class="btn btn-link text-danger btn-sm"><i class="icon icon-trash"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-body mt-1 form-light ps-0">
+            <div class="tab-pane col-sm-12">
+              <fieldset >
+                <div class="form-group">
+                  <label class="control-label">Stored as</label>
+                  <input required="" type="text" class="form-control" name="name" value="email">
+                </div>
+                <div class="form-group">
+                  <label class="control-label">Description</label>
+                  <textarea class="form-control" name="description" style="overflow: hidden; height: 54px;"></textarea>
+                </div>
+              </fieldset>
+              <fieldset class='mt-2'>
+                <div class="checkbox">
+                  <label >
+                    <input type="checkbox" checked="" name="scope">
+                    <span >Global to the organization</span>
+                  </label>
+                  <span ></span>
+                </div>
+                <div class="checkbox">
+                  <label >
+                    <input type="checkbox" name="required">
+                    <span >Required</span>
+                  </label>
+                  <span ></span>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+</div>
+
+
+

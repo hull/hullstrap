@@ -52,7 +52,8 @@
 %blue-background{
   background-color:$primary_bg_color;
   @include background-image($primary_bg_image);
-  @include blue-background-colors
+  @include blue-background-colors;
+  .input-group-addon, .btn-link{color:white;}
 }
 
 %inverted-page{

@@ -1,5 +1,6 @@
 .pricing-section{
   overflow: hidden;
+
   .headline{
     @extend .text-center;
     @include box-shadow(0 0 0px 1px transparentize($light-text,.75));
@@ -14,8 +15,8 @@
   }
   .tier{
     @include box-shadow(inset 0 0 0px 1px transparentize($light-text,.75));
-    @include trailer(2);
     overflow: hidden;
+    @include trailer(2);
     @media screen and (min-width: $screen-sm-min){
       @include border-radius(0);
     }
