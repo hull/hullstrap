@@ -121,7 +121,6 @@ $h0_font_size: $base-font-size*$typography_scale*$typography_scale*$typography_s
 @import "fontcustom";
 
 
-
 /*------------------------------------*\
     Elements
 \*------------------------------------*/
@@ -133,6 +132,7 @@ $h0_font_size: $base-font-size*$typography_scale*$typography_scale*$typography_s
 @import "elements/input-group";
 @import "elements/list";
 @import "elements/list-table";
+@import "components/add_image";
 @import "elements/label";
 
 @import "layouts/inverted";
@@ -161,7 +161,6 @@ $h0_font_size: $base-font-size*$typography_scale*$typography_scale*$typography_s
 @import "components/signup_dropdown";
 @import "components/component_grid";
 @import "components/pagination";
-@import "components/horizontal_timeline";
 @import "components/vex";
 @import "components/daterangepicker";
 
@@ -171,6 +170,7 @@ $h0_font_size: $base-font-size*$typography_scale*$typography_scale*$typography_s
 @import "modules/testimonials";
 @import "modules/pricing";
 @import "modules/onboarding";
+@import "modules/horizontal_timeline";
 
 
 /*------------------------------------*\

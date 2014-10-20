@@ -6,7 +6,7 @@ header.navbar.navbar-inverse.navbar-static-top
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand href="#" Brand
+      a.navbar-brand href="/_add" Brand
 
     #site-nav.collapse.navbar-collapse
       ul.nav.navbar-nav
@@ -17,7 +17,7 @@ header.navbar.navbar-inverse.navbar-static-top
           ul.dropdown-menu
             - data.modules.modules.each do |m|
               li
-                a href="#section-#{m}"=m.humanize.capitalize
+                a href="/#{m}"=m.humanize.capitalize
         - data.nav.tree.each do |p|
           li
             - if p.children.blank?

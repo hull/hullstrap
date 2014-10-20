@@ -10,7 +10,7 @@ GEM
       sass (>= 3.2.0.alpha.95)
     atomic (1.1.16)
     awesome_print (1.2.0)
-    bootstrap-sass (3.1.1.0)
+    bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
     breakpoint (2.0.7)
       compass (>= 0.12.1)
@@ -244,7 +244,7 @@ DEPENDENCIES
   activesupport
   animation
   awesome_print
-  bootstrap-sass (= 3.1.1)
+  bootstrap-sass (= 3.2.0.2)
   builder
   ceaser-easing
   compass (~> 0.12.2)

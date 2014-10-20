@@ -17,25 +17,22 @@ html
     meta property='og:description' content=""
     meta property="twitter:account_id" content="1510090487"
 
-    == javascript_include_tag 'vendor/modernizr'
     == javascript_include_tag '//use.typekit.net/jyf4qww.js'
+    == javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'
+    == javascript_include_tag 'hullstrap'
+
     javascript:
       try{Typekit.load();}catch(e){}
 
-    == javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js'
-    / == javascript_include_tag '/javascripts/jquery.2.1.0.js'
-
-    == stylesheet_link_tag('hullstrap')
-    / == stylesheet_link_tag('/stylesheets/hullstrap.css')
+    == stylesheet_link_tag 'dashboard'
 
     == yield_content :head
     / == yield_content :css
 
-  body class=page_classes
+  body
+    ==partial '/partials/nav/site_nav'
     header#header.header
     == yield
     footer#footer.footer
 
-    == javascript_include_tag 'vendor'
-    == javascript_include_tag 'app'
     == yield_content :js

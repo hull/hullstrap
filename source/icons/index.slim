@@ -1,0 +1,12 @@
+.container
+  .row
+    .page-header
+      h1 id="icons-section" Icons
+    .col-xs-12
+      ul.row.list-unstyled
+        - icon_list.each do |icon|
+          li.col-xs-6.col-md-3
+            h3
+              i class="icon-#{icon}"
+              ' 
+              small icon-#{icon}

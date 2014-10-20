@@ -103,28 +103,3 @@ body.timeline{
 .add-slots-container{
   text-align: center;
 }
-.add-image-container{
-  position: relative;
-  background-color: #333;
-  @include border-radius(100px);
-  &:hover{
-    .add-image-image{
-      opacity: 1;
-    }
-  }
-}
-.add-image-image{
-  @include transition(all 0.5s linear);
-  opacity: .7;
-}
-.add-image-btn{
-  position: absolute;
-  top:50%;
-  left:50%;
-  @include transform(translate(-50%, -50%)); 
-  background-color: $primary;
-  width: $base-line-height*2;
-  height: $base-line-height*2;
-  padding:11px;
-}
-

@@ -469,7 +469,7 @@ $pager-disabled-color:                 $pagination-disabled-color !default;
  
 $jumbotron-padding:              $base-line-height/2;
 $jumbotron-color:                inherit !default;
-$jumbotron-bg:                   transparent !default;
+$jumbotron-bg:                   rgba(0,0,0,.0) !default;
 $jumbotron-heading-color:        inherit !default;
 $jumbotron-font-size:            $font-size-base;
  

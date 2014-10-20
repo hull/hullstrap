@@ -1,15 +1,6 @@
-==partial '/partials/nav/site_nav'
-
 .container
   - data.modules.modules.each do |m|
     .row
       .page-header
-        h1 id="#{m}-section" =m.humanize.capitalize
-      .col-xs-12
-        ==partial "/modules/#{m}"
-- data.modules.page_modules.each do |m|
-  .container
-    .row
-      .page-header
-        h1 id="#{m}-section" =m.humanize.capitalize
-  ==partial "/modules/#{m}"
+        h3 id="#{m}-section"
+          a href=m =m.humanize.capitalize 

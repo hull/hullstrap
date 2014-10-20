@@ -16,3 +16,6 @@ modules:
   # - search_box
   # - border_player
   - icons
+  - panels
+  - timeline
+  - add_image

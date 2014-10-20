@@ -31,7 +31,7 @@ source 'http://rubygems.org'
 
   gem 'sass', '~> 3.2.13'
   gem 'compass', '~> 0.12.2'
-  gem 'bootstrap-sass', '3.1.1'
+  gem 'bootstrap-sass', '3.2.0.2'
   gem 'toolkit'
   gem 'sass-getunicode'
   gem 'animation' # css animation plugin

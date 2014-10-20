@@ -1,0 +1,47 @@
+.add-image-container{
+  position: relative;
+  &.add-image-circle{
+    .add-image-wrapper{
+      padding-bottom: 100%;
+      @include border-radius(1000px);
+    }
+    .add-image-content{
+    }
+  }
+}
+
+.add-image-wrapper{
+  @extend .embed-responsive;
+  background-color: $gray-darker;
+  clear:both;
+  padding-bottom: 56.25%;
+  @include border-radius(5px);
+  overflow: hidden;
+}
+
+.add-image-content{
+  opacity: .8;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  &:hover{
+    opacity: 1;
+  }
+}
+
+.add-image-btn{
+  position: absolute;
+  top:50%;
+  left:50%;
+  @include transform(translate(-50%, -50%)); 
+  background-color: $primary;
+  width: $base-line-height*2;
+  height: $base-line-height*2;
+  padding:11px;
+}

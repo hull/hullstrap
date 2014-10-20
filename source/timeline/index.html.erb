@@ -4,31 +4,41 @@
 
 <script src="/javascripts/timeline.js"></script>
 
-
-<% 3.times do |t| %>
-  <div class="htl row mb-1">
-    <div class="col-sm-2">
-      <div class="add-image-container htl-image">
-        <img src="<%=image%>" alt="" class="add-image-image img-responsive img-circle">
-        <a href="#" class="btn btn-rounded btn-primary btn-sm add-image-btn"><i class="icon icon-image"></i></a>
-      </div>
-      <div class="add-slots-container">
-        <a href="#" class="btn btn-pill btn-rounded htl-prize-add">+</a>
-        <p>
-          <em>100 slots</em>
-        </p>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="page-header">
+      <h1 id="icons-section">Timeline</h1>
     </div>
+    <div class="col-xs-12">
+      <% 3.times do |t| %>
+        <div class="htl row mb-1">
+          <div class="col-sm-2">
+            <div class="add-image-container htl-image">
+              <img src="<%=image%>" alt="" class="add-image-image img-responsive img-circle">
+              <a href="#" class="btn btn-rounded btn-primary btn-sm add-image-btn"><i class="icon icon-image"></i></a>
+            </div>
+            <div class="add-slots-container">
+              <a href="#" class="btn btn-pill btn-rounded htl-prize-add">+</a>
+              <p>
+                <em>100 slots</em>
+              </p>
+            </div>
+          </div>
 
-    <ul class="col-sm-10 htl-items mt-2">
-      <% prizes.map do |i| %>
-        <%= partial (i < 500 ? "prize_won" : "prize_available"), locals: {image:image, x:(100 * i / prizes.last)} %>
+          <ul class="col-sm-10 htl-items mt-2">
+            <% prizes.map do |i| %>
+              <%= partial (i < 500 ? "prize_won" : "prize_available"), locals: {image:image, x:(100 * i / prizes.last)} %>
+            <% end %>
+          </ul>
+          <a href="#" class="text-danger pull-right bold"><small>DELETE PRIZE</small></a>
+          <div class="clear"></div>
+        </div>
       <% end %>
-    </ul>
-    <a href="#" class="text-danger pull-right bold"><small>DELETE PRIZE</small></a>
-    <div class="clear"></div>
+      
+    </div>
   </div>
-<% end %>
+</div>
+
 
 <script type='text/template' id='addPrizeVexModal'>
   <div class="row">
@@ -83,8 +93,6 @@
 
 <script>
   var vexModalContent = $("#addPrizeVexModal").html();
-  vex.defaultOptions.className = 'vex-theme-default'; 
-
 
   $('.htl-prize-add').on('click', function(){
 
@@ -92,6 +100,7 @@
     vex.dialog.open({
 
       message: 'Batch Create prizes',
+      className: 'vex-theme-default',
 
       input:vexModalContent,
 
