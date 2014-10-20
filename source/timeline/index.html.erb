@@ -13,9 +13,8 @@
       <% 3.times do |t| %>
         <div class="htl row mb-1">
           <div class="col-sm-2">
-            <div class="add-image-container htl-image">
-              <img src="<%=image%>" alt="" class="add-image-image img-responsive img-circle">
-              <a href="#" class="btn btn-rounded btn-primary btn-sm add-image-btn"><i class="icon icon-image"></i></a>
+            <div class="htl-image">
+              <%= partial '/add_image/add_image_circle' %>
             </div>
             <div class="add-slots-container">
               <a href="#" class="btn btn-pill btn-rounded htl-prize-add">+</a>

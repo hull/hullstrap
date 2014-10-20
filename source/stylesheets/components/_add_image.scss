@@ -5,9 +5,20 @@
       padding-bottom: 100%;
       @include border-radius(1000px);
     }
-    .add-image-content{
+    .add-image-clear-btn {
+      position: static;
+      text-align: center;
+      display: block;
     }
   }
+}
+
+.add-image-clear-btn {
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: - $base-line-height;
+  right: 0;
 }
 
 .add-image-wrapper{
@@ -45,3 +56,4 @@
   height: $base-line-height*2;
   padding:11px;
 }
+
