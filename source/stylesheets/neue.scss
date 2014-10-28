@@ -1,0 +1,111 @@
+$base-font-size: 13px !default;
+$base-line-height: 20px !default;
+$base-rhythm-unit: 20px !default;
+$typography_scale : 1.125 !default;
+
+$h0_line_height: 3   !default;
+$h1_line_height: 2   !default;
+$h2_line_height: 1.5 !default;
+$h3_line_height: 1.5 !default;
+$h4_line_height: 1   !default;
+$h5_line_height: 1   !default;
+$h6_line_height: 1   !default;
+$h7_line_height: 1   !default;
+
+$h0_leading: 1   !default;
+$h1_leading: 2   !default;
+$h2_leading: 2.5 !default;
+$h3_leading: 2.5 !default;
+$h4_leading: 2   !default;
+$h5_leading: 1   !default;
+$h6_leading: 1   !default;
+$h7_leading: 1   !default;
+
+$h0_trailing: 1   !default;
+$h1_trailing: 1   !default;
+$h2_trailing: 0.5 !default;
+$h3_trailing: 0.5 !default;
+$h4_trailing: 1   !default;
+$h5_trailing: 1   !default;
+$h6_trailing: 1   !default;
+$h7_trailing: 1   !default;
+
+@import "styles";
+
+.nav-sections {
+  @include background-image($primary_bg_image);
+  @include blue-background-colors;
+  border:none;
+
+  .nav {
+     padding: 0 $padding-base-horizontal;
+  }
+
+  .nav-header {
+    @include rhythm(0, 0, 0, 0.5);
+    margin-left: $padding-base-horizontal;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .nav li + .nav-header {
+    @include rhythm(2, 0, 0, 0.5);
+  }
+
+  .nav li > a {
+    padding: 5px 9px 3px 9px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    &:hover,
+    &:focus {
+      background: rgba(255,255,255,.1);
+      border-color: rgba(255,255,255,.2);
+    }
+  }
+
+  .nav li.active > a {
+    background: rgba(255,255,255,.1);
+    border-color: rgba(255,255,255,.4);
+    font-weight: bold;
+  }
+}
+
+.btn-organizations {
+  width: 100%;
+  @include rhythm(0, 0, 0, 1);
+
+  .btn {
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: $white;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+     border-bottom: 1px solid rgba(0,0,0,.05);
+
+     .caret {
+       float: right;
+       margin-top: 12px;
+    }
+  }
+}
+
+.top-bar {
+  .breadcrumb {
+    font-size: 18px;
+    background: #FFF;
+    border-bottom: 1px solid $off_white;
+    padding: 12px 30px;
+  }
+
+  .btn {
+    margin-top: 10px;
+    margin-right: 30px;
+  }
+}
