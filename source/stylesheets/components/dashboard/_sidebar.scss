@@ -1,0 +1,98 @@
+.sidebar {
+  display: block;
+  width: $sidebar-width;
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 500;
+  color: rgba($sidebar-color, .8);
+  // TODO rename variable with a consistent style
+  @include background-image($primary_bg_image);
+
+  a {
+    color: rgba($sidebar-color, .8);
+  }
+}
+
+.sidebar-header {
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.sidebar-dropdown {
+  width: 100%;
+  position: relative;
+
+  .caret {
+    position: absolute;
+    top: 24px;
+    right: $space-medium;
+  }
+
+  .btn {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: $space-small $space-medium;
+    background: none;
+    color: $sidebar-color;
+    line-height: 30px;
+    font-size: $font-size-h1;
+    font-weight: normal;
+    text-align: left;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 190px;
+    -webkit-font-smoothing: antialiased;
+    @include box-shadow(none);
+  }
+}
+
+.sidebar-nav {
+  padding: $space-medium $space-small 0;
+
+  .nav-header {
+    margin: 0 0 $space-small $space-small;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $sidebar-color;
+  }
+
+  li a {
+    margin-bottom: 1px;
+    padding: 5px ($space-small - 1) 3px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    @include transition(all .1s ease-in);
+
+    &:hover,
+    &:focus {
+      background: rgba($sidebar-color, .1);
+      border-color: rgba($sidebar-color, .2);
+    }
+  }
+
+  li + .nav-header {
+    margin-top: $space-medium;
+  }
+
+  li.active a {
+    background: rgba($sidebar-color, .1);
+    border-color: rgba($sidebar-color, .4);
+    font-weight: bold;
+  }
+}
+
+.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  padding: $space-medium;
+}
+

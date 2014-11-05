@@ -113,7 +113,7 @@
 }
 
 .btn-gradient{
-  @include background-image(linear-gradient(to right top, $primary_alt, $tertiary)); 
+  @include background-image(linear-gradient(to right top, $primary_alt, $tertiary));
   @include box-shadow(none);
 }
 .btn-white{
@@ -144,7 +144,7 @@
   &.text-info{    color:$brand-info;}
   &.text-warning{ color:$brand-warning;}
   &.text-danger{  color:$brand-danger;}
- 
+
  }
 .btn-link:hover{
   color: darken($tertiary, 10%);

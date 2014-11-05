@@ -40,7 +40,7 @@ $quaternary     : $red;
 $btn_text_color : $blue_darkest;
 $accent_text_header: $quaternary;
 $light-text     : lighten($light_blue_gray, 10%);
-$light-filet    : $off_white; 
+$light-filet    : $off_white;
 
 // $tertiary_alt   :
 // $quaternary     :
@@ -49,6 +49,7 @@ $light-filet    : $off_white;
 // $quintary_alt   :
 
 // Brand Gradient
+
 // $primary_bg_image:     linear-gradient( to right top, $primary_alt, $tertiary);
 $primary_bg_image:     radial-gradient(circle at -20% 100px, $primary_alt 0%, $tertiary 100%);
 // $primary_bg_image:     radial-gradient(circle at -100px 100px, $primary_alt 0px, $tertiary 1000px);

@@ -1,0 +1,22 @@
+.topbar {
+  background: #fff;
+  padding: $space-small $space-large;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #F4F5F7;
+  width: 100%;
+  margin-left: - $sidebar-width;
+  padding-left: $sidebar-width + $space-large;
+  z-index: 400;
+}
+
+.topbar-breadcrumb {
+  height: $topbar-height - ($space-small * 2);
+  padding: 0;
+  margin: 0;
+  background: none;
+  font-size: $font-size-h1;
+  font-weight: normal;
+  line-height: $topbar-height - ($space-small * 2)
+}
+

@@ -1,0 +1,13 @@
+$user-overview-size: 24px;
+
+.user-overview-avatar {
+  img {
+    width: $user-overview-size;
+    height: $user-overview-size;
+  }
+}
+
+.user-overview-username {
+  line-height: $user-overview-size;
+}
+

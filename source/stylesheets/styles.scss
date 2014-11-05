@@ -14,7 +14,6 @@ $h5_line_height: 1   !default;
 $h6_line_height: .5  !default;
 $h7_line_height: .5  !default;
 
-
 $h0_leading: 1   !default;
 $h1_leading: 2   !default;
 $h2_leading: 2.5 !default;
@@ -90,7 +89,7 @@ $h0_font_size: $base-font-size*$typography_scale*$typography_scale*$typography_s
 
 
 // Mixins : UI-less classes made to add scss features.
-// Elements : Individual tags: Buttons, nav items, labels... 
+// Elements : Individual tags: Buttons, nav items, labels...
 // Components : A few tags together: Reusable bits of UI : Modals, Panels etc...
 // Modules : Bigger features; One-off page parts, Pricing wells, testimonials for instance
 // Pages : Overrides for page-specific bits

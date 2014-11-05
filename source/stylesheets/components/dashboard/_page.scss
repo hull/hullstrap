@@ -1,0 +1,11 @@
+.page {
+  padding: 0 0 0 $sidebar-width;
+  width: 100%;
+  margin: $topbar-height + 1 auto 0;
+  position: relative;
+}
+
+.page-content {
+  padding: $space-large;
+}
+
