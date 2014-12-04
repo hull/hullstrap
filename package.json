@@ -1,0 +1,9 @@
+{
+  "name": "hullstrap",
+  "scripts": {
+    "postinstall": "bundle install && bundle exec middleman build"
+  },
+  "version": "0.3.0",
+  "repository": "https://github.com/hull/hullstrap.git"
+}
+
