@@ -71,7 +71,11 @@
   }
 }
 @mixin btn-xs(){ @include btn-rhythm(1, 0, 11px, $padding-base-horizontal/2); }
-@mixin btn-sm(){ @include btn-rhythm(1.5, 0, $base-font-size, $padding-base-horizontal); }
+@mixin btn-sm(){
+  @include btn-rhythm(1.5, 0, $h6_font_size, $padding-base-horizontal*2);
+  text-transform: uppercase; 
+  @include font-weight-bold;
+}
 @mixin btn-lg(){ @include btn-rhythm(2, 1); }
 @mixin btn-xl(){ @include btn-rhythm(3, 0);  }
 
