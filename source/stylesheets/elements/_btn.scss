@@ -74,7 +74,8 @@
 @mixin btn-sm(){
   @include btn-rhythm(1.5, 0, $h6_font_size, $padding-base-horizontal*2);
   text-transform: uppercase; 
-  @include font-weight-bold;
+  letter-spacing: .01em;
+  @include font-weight-semibold;
 }
 @mixin btn-lg(){ @include btn-rhythm(2, 1); }
 @mixin btn-xl(){ @include btn-rhythm(3, 0);  }
