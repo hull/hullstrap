@@ -1,0 +1,43 @@
+// This is just to center the spinner
+$offset: 187;
+$duration: 1.4s;
+
+@include keyframes(rotator) {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+@include keyframes(colors) {
+  0% { stroke: #4285F4; }
+  25% { stroke: #DE3E35; }
+  50% { stroke: #F7C223; }
+  75% { stroke: #1B9A59; }
+  100% { stroke: #4285F4; }
+}
+
+@include keyframes(dash) {
+ 0% { stroke-dashoffset: $offset; }
+ 50% {
+   stroke-dashoffset: $offset/4;
+   transform:rotate(135deg);
+ }
+ 100% {
+   stroke-dashoffset: $offset;
+   transform:rotate(450deg);
+ }
+}
+
+.spinner {
+  margin: 0 $padding-base-horizontal; 
+  @include animation(rotator $duration linear infinite);
+}
+
+.spinner-path {
+  stroke-dasharray: $offset;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  -webkit-animation : colors ($duration*4) ease-in-out infinite, dash $duration ease-in-out infinite;
+  -moz-animation : colors ($duration*4) ease-in-out infinite, dash $duration ease-in-out infinite;
+  -o-animation : colors ($duration*4) ease-in-out infinite, dash $duration ease-in-out infinite;
+  animation : colors ($duration*4) ease-in-out infinite, dash $duration ease-in-out infinite;
+}
