@@ -23,7 +23,7 @@ $font-metrics:
   // }
 }
 
-@for $i from 1 through 6 {
+@for $i from 1 through 7 {
   $fs : nth(nth($font-metrics, 1), $i);
   $lh : nth(nth($font-metrics, 2), $i);
   $ld : nth(nth($font-metrics, 3), $i);
@@ -31,15 +31,54 @@ $font-metrics:
 
   h#{$i - 1}, .h#{$i - 1}, .h#{$i - 1 }{
     @include adjust-heading($fs, $lh, $tr, $ld);
+    color:$blue_darkest;
+    font-family: $font-family-headline;
+    @include font-weight-normal;
     &.condensed{
       @include adjust-leading-to(1)
+    }
+    &.expanded{
+      letter-spacing: .3em;
     }
     &.page-header{
       @include adjust-leading-to(3,$fs);
       @include rhythm(1,0,1,1,$fs);
     }
-    &.panel-title{
-
+    &.uppercase, &.uppercase small, &.small-title {
+      text-transform: uppercase;
+      @include font-weight-bold;
+      letter-spacing: 0.1em;
+    }
+    &.panel-title{}
+    &.light{
+      color:$blue_gray_light;    
+    }
+    &.serif{
+      @include font-weight-light;
+      font-family: $font-family-serif;
+    }
+    &.underlined{
+      position: relative;
+      // @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
+      // background-repeat: no-repeat;
+      // display: inline-block;
+      &::after{
+        content: " ";
+        background-color: #e8e8e8;
+        width: 50%;
+        height: 3px;
+        display: block;
+        position: absolute;
+        bottom: -12px;
+        margin: 0 auto;
+        left: 25%;
+      }
+    }
+    &.text-accented{
+      color: $accent_text_header;
+      small{
+        color: lighten($accent_text_header, 10%);
+      }
     }
   }
 }
@@ -49,46 +88,8 @@ $font-metrics:
 ** Title Styles
 ******************
 */
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, h7{
   // color: $black_2;
-  color:$blue_darkest;
-  font-family: $font-family-headline;
-  @include font-weight-normal;
-  &.light{
-    color:$blue_gray_light;    
-  }
-  &.uppercase, &.uppercase small, &.small-title {
-    text-transform: uppercase;
-    @include font-weight-bold;
-    letter-spacing: 0.1em;
-  }
-  &.serif{
-    @include font-weight-light;
-    font-family: $font-family-serif;
-  }
-  &.underlined{
-    position: relative;
-    // @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
-    // background-repeat: no-repeat;
-    // display: inline-block;
-    &::after{
-      content: " ";
-      background-color: #e8e8e8;
-      width: 50%;
-      height: 3px;
-      display: block;
-      position: absolute;
-      bottom: -12px;
-      margin: 0 auto;
-      left: 25%;
-    }
-  }
-  &.text-accented{
-    color: $accent_text_header;
-    small{
-      color: lighten($accent_text_header, 10%);
-    }
-  }
 }
 
 [data-editor] h3{
