@@ -19,3 +19,4 @@ modules:
   - panels
   - timeline
   - add_image
+  - user_notify

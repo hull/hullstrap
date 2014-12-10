@@ -1,0 +1,330 @@
+<div class="container">
+  <div class="row">
+    <div class="page-header">
+      <h1 id="icons-section">User Notify Screen</h1>
+    </div>
+    <div class="col-xs-12">
+    </div>
+  </div>
+</div>
+
+<div class="modal-content send-notification">
+  <div class="modal-body">
+    <div class="modal-header pt-1 pb-1">
+      <div class="col-sm-5">
+        <div class="modal-title">
+          <h2 class="m-0">Manual email  to  <img class="small-avatar" src="http://graph.facebook.com/577957117/picture?type=square"> Simone Schi  and 1093 others      </h2>
+          <p class="hidden-xs">
+            <small>  We ignored users who have no email </small>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-5 pull-right ps-0">
+        <div class="btn-group btn-group-justified user-notify-actions">
+          <a href="#" class="btn btn-sm btn-upper btn-shadowed btn-rounded btn-danger">Close</a>
+          <a href="#" class="btn btn-sm btn-upper btn-shadowed btn-rounded btn-success">
+            <i class="icon icon-eye_open">
+            </i> Preview</a>
+            <a href="#" class="btn btn-sm btn-upper btn-shadowed btn-rounded btn-primary">
+              <i class="icon icon-send">
+              </i> Send <div>
+              <small>manual message</small>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="clearfix">
+      </div>
+    </div>
+    <div class="modal-header pt-1 pb-1">
+      <div class="col-sm-4 checkbox mt-0 mb-0">
+        <input type="text" class="form-control form-invisible" placeholder="Untitled Message">
+      </div>
+      <div class="col-sm-8 text-right">
+        <h3 class="mt-0 mb-0">
+          <span class="label label-default">everyone</span>
+        </h3>
+      </div>
+      <div class="clearfix">
+      </div>
+    </div>
+    <div class="container-fluid" style="position:relative;">
+      <div class="row notification-mode-desktop">
+        <div class="col-sm-3 col-md-4 col-sm-offset-1">
+          <h2 class="visible-lg text-center text-accented">Compose</h2>
+        </div>
+        <div class="col-sm-4 col-md-2 pt-1">
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+            <a class="btn btn-secondary btn-rounded btn-sm active">
+              <input type="radio" value="mobile" name="{{view}}">
+              <i class="icon icon-desktop">
+              </i>
+            </a>
+            <a class="btn btn-secondary btn-rounded btn-sm">
+              <input type="radio" value="desktop" name="{{view}}">
+              <i class="icon icon-mobile">
+              </i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-4">
+          <h2 class="visible-lg text-center text-accented">Preview</h2>
+        </div>
+        <div class="col-lg-6 pb-1 notification-compose form-invisible form-horizontal">
+          <div class="notification-frame">
+            <div class="content container-fluid">
+              <div class="header-row form-group from">
+                <span class="field-label">From:</span>
+                <div class="form-control-wrap">
+                  <input type="text" class="form-control sender-editor" name="sender" placeholder="Sender name">
+                </div>
+              </div>
+              <div class="header-row form-group to">
+                <span class="field-label">To:</span>
+                <div class="field-control-wrap field-text">
+                  <span class="muted pull-right hidden-xs">Tue, Dec 9th 2014, 2:06 pm</span>
+                  <img class="small-avatar" src="http://graph.facebook.com/577957117/picture?type=square"> Simone Schi</div>
+                </div>
+                <div class="header-row form-group subject">
+                  <span class="field-label">Subject :</span>
+                  <div class="form-control-wrap">
+                    <input type="text" class="form-control subject-editor" name="subject" placeholder="Subject">
+                  </div>
+                </div>
+                <div class="content-row row">
+                  <div class="pull-right selectors selectors-select">
+                    <div class="select2-container" id="s2id_autogen1" style="width: 65px;">
+                      <a href="javascript:void(0)" class="select2-choice select2-default">
+                        <span class="select2-chosen" id="select2-chosen-2">&lt;—&gt;</span>
+                        <abbr class="select2-search-choice-close">
+                        </abbr>
+                        <span class="select2-arrow" role="presentation">
+                          <b role="presentation">
+                          </b>
+                        </span>
+                      </a>
+                      <label for="s2id_autogen2" class="select2-offscreen">
+                      </label>
+                      <input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" id="s2id_autogen2">
+                      <div class="select2-drop select2-display-none select2-with-searchbox">
+                        <div class="select2-search">
+                          <label for="s2id_autogen2_search" class="select2-offscreen">
+                          </label>
+                          <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" id="s2id_autogen2_search" placeholder="">
+                        </div>
+                        <ul class="select2-results" role="listbox" id="select2-results-2">
+                        </ul>
+                      </div>
+                    </div>
+                    <select name="" title="" style="display: none;">
+                      <option value="">
+                      </option>
+                      <optgroup label="Snippets">
+                        <option value="<a href='{{unsubscribe_url}}'>Unsubscribe from these emails</a>">Unsubscribe link</option>
+                      </optgroup>
+                      <optgroup label="Filter Users">
+                        <option value="{{user.name | default: 'REPLACE_ME' }}">Name</option>
+                        <option value="{{user.email | default: 'REPLACE_ME' }}">Email</option>
+                        <option value="{{user.created_at | date: '%d %m %Y'}}">Created at</option>
+                        <option value="{{user.last_seen_at | date: '%d %m %Y'}}">Last seen at</option>
+                        <option value="{{user.id | default: 'REPLACE_ME' }}">Id</option>
+                        <option value="{{user.main_identity | default: 'REPLACE_ME' }}">Main identity</option>
+                        <option value="{{user.achievement_ids | default: 'REPLACE_ME' }}">Achievement ids</option>
+                        <option value="{{user.app_names | default: 'REPLACE_ME' }}">App names</option>
+                        <option value="{{user.approved | default: 'REPLACE_ME' }}">Approved</option>
+                        <option value="{{user.badges_count | default: 'REPLACE_ME' }}">Badges count</option>
+                        <option value="{{user.confirmed | default: 'REPLACE_ME' }}">Confirmed</option>
+                        <option value="{{user.identities_count | default: 'REPLACE_ME' }}">Identities count</option>
+                        <option value="{{user.identity_providers | default: 'REPLACE_ME' }}">Identity providers</option>
+                        <option value="{{user.is_admin | default: 'REPLACE_ME' }}">Is admin</option>
+                        <option value="{{user.sign_in.url | default: 'REPLACE_ME' }}">Sign in.url</option>
+                        <option value="{{user.updated_at | date: '%d %m %Y'}}">Updated at</option>
+                        <option value="{{user.username | default: 'REPLACE_ME' }}">Username</option>
+                      </optgroup>
+                      <optgroup label="Actions">
+                        <option value="{{user.stats.actions.badges | default: 'REPLACE_ME' }}">Badges</option>
+                        <option value="{{user.stats.actions.comments | default: 'REPLACE_ME' }}">Comments</option>
+                        <option value="{{user.stats.actions.foursquare_accounts | default: 'REPLACE_ME' }}">Foursquare accounts</option>
+                        <option value="{{user.stats.actions.google_accounts | default: 'REPLACE_ME' }}">Google accounts</option>
+                        <option value="{{user.stats.actions.linkedin_accounts | default: 'REPLACE_ME' }}">Linkedin accounts</option>
+                        <option value="{{user.stats.actions.reviews | default: 'REPLACE_ME' }}">Reviews</option>
+                        <option value="{{user.stats.actions.twitter_accounts | default: 'REPLACE_ME' }}">Twitter accounts</option>
+                        <option value="{{user.stats.actions.votes | default: 'REPLACE_ME' }}">Votes</option>
+                      </optgroup>
+                      <optgroup label="Counters">
+                        <option value="{{user.stats.counters.karma | default: 'REPLACE_ME' }}">Karma</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <textarea class="content-editor" name="content" placeholder="Write your message here" style="visibility: hidden; display: none;">
+                  </textarea>
+                  <div id="cke_content" class="cke_1 cke cke_reset cke_chrome cke_editor_content cke_ltr cke_browser_webkit" dir="ltr" lang="en" role="application" aria-labelledby="cke_content_arialbl">
+                    <span id="cke_content_arialbl" class="cke_voice_label">Rich Text Editor, content</span>
+                    <div class="cke_inner cke_reset" role="presentation">
+                      <span id="cke_1_top" class="cke_top cke_reset_all" role="presentation" style="height: auto; -webkit-user-select: none;">
+                        <span id="cke_6" class="cke_voice_label">Editor toolbars</span>
+                        <span id="cke_1_toolbox" class="cke_toolbox" role="group" aria-labelledby="cke_6" onmousedown="return false;">
+                          <span id="cke_8" class="cke_toolbar" aria-labelledby="cke_8_label" role="toolbar">
+                            <span id="cke_8_label" class="cke_voice_label">Document</span>
+                            <span class="cke_toolbar_start">
+                            </span>
+                            <span class="cke_toolgroup" role="presentation">
+                              <a id="cke_9" class="cke_button cke_button__source  cke_button_off" href="javascript:void('Source')" title="Source" hidefocus="true" role="button" aria-labelledby="cke_9_label">
+                                <span class="cke_button_icon cke_button__source_icon" style="">&nbsp;</span>
+                                <span id="cke_9_label" class="cke_button_label cke_button__source_label" aria-hidden="false">Source</span>
+                              </a>
+                              <span class="cke_toolbar_separator" role="separator">
+                              </span>
+                              <a id="cke_10" class="cke_button cke_button__autoformat cke_button_disabled " href="javascript:void('Format Selection')" title="Format Selection" hidefocus="true" role="button" aria-labelledby="cke_10_label" aria-disabled="true">
+                                <span class="cke_button_icon cke_button__autoformat_icon" style="background-image:url(http://dashboard.hull.io/javascripts/ckeditor/plugins/codemirror/icons/autoformat.png?t=E7KD);background-position:0 0px;background-size:16px;">&nbsp;</span>
+                                <span id="cke_10_label" class="cke_button_label cke_button__autoformat_label" aria-hidden="false">Format Selection</span>
+                              </a>
+                              <a id="cke_11" class="cke_button cke_button__commentselectedrange cke_button_disabled " href="javascript:void('Comment Selection')" title="Comment Selection" hidefocus="true" role="button" aria-labelledby="cke_11_label" aria-disabled="true">
+                                <span class="cke_button_icon cke_button__commentselectedrange_icon" style="background-image:url(http://dashboard.hull.io/javascripts/ckeditor/plugins/codemirror/icons/commentselectedrange.png?t=E7KD);background-position:0 0px;background-size:16px;">&nbsp;</span>
+                                <span id="cke_11_label" class="cke_button_label cke_button__commentselectedrange_label" aria-hidden="false">Comment Selection</span>
+                              </a>
+                              <a id="cke_12" class="cke_button cke_button__uncommentselectedrange cke_button_disabled " href="javascript:void('Uncomment Selection')" title="Uncomment Selection" hidefocus="true" role="button" aria-labelledby="cke_12_label" aria-disabled="true">
+                                <span class="cke_button_icon cke_button__uncommentselectedrange_icon" style="background-image:url(http://dashboard.hull.io/javascripts/ckeditor/plugins/codemirror/icons/uncommentselectedrange.png?t=E7KD);background-position:0 0px;background-size:16px;">&nbsp;</span>
+                                <span id="cke_12_label" class="cke_button_label cke_button__uncommentselectedrange_label" aria-hidden="false">Uncomment Selection</span>
+                              </a>
+                              <a id="cke_13" class="cke_button cke_button__autocomplete cke_button_disabled " href="javascript:void('Enable/Disable HTML Tag Autocomplete')" title="Enable/Disable HTML Tag Autocomplete" hidefocus="true" role="button" aria-labelledby="cke_13_label" aria-disabled="true">
+                                <span class="cke_button_icon cke_button__autocomplete_icon" style="background-image:url(http://dashboard.hull.io/javascripts/ckeditor/plugins/codemirror/icons/autocomplete.png?t=E7KD);background-position:0 0px;background-size:16px;">&nbsp;</span>
+                                <span id="cke_13_label" class="cke_button_label cke_button__autocomplete_label" aria-hidden="false">Enable/Disable HTML Tag Autocomplete</span>
+                              </a>
+                            </span>
+                            <span class="cke_toolbar_end">
+                            </span>
+                          </span>
+                          <span id="cke_14" class="cke_toolbar" aria-labelledby="cke_14_label" role="toolbar">
+                            <span id="cke_14_label" class="cke_voice_label">Styles</span>
+                            <span class="cke_toolbar_start">
+                            </span>
+                            <span id="cke_7" class="cke_combo cke_combo__format  cke_combo_off" role="presentation">
+                              <span id="cke_7_label" class="cke_combo_label">Format</span>
+                              <a class="cke_combo_button" hidefocus="true" title="Paragraph Format">
+                                <span id="cke_7_text " class="cke_combo_text cke_combo_inlinelabel ">Format</span>
+                                <span class="cke_combo_open ">
+                                  <span class="cke_combo_arrow ">
+                                  </span>
+                                </span>
+                              </a>
+                            </span>
+                            <span class="cke_toolbar_end ">
+                            </span>
+                          </span>
+                          <span id="cke_15 " class="cke_toolbar " aria-labelledby="cke_15_label " role="toolbar ">
+                            <span id="cke_15_label " class="cke_voice_label ">Basic Styles</span>
+                            <span class="cke_toolbar_start ">
+                            </span>
+                            <span class="cke_toolgroup " role="presentation ">
+                              <a id="cke_16 " class="cke_button cke_button__bold cke_button_off " href="javascript:void( 'Bold') " title="Bold ">
+                                <span class="cke_button_icon cke_button__bold_icon " style=" ">&nbsp;</span>
+                                <span id="cke_16_label " class="cke_button_label cke_button__bold_label " aria-hidden="false ">Bold</span>
+                              </a>
+                              <a id="cke_17 " class="cke_button cke_button__italic cke_button_off " href="javascript:void( 'Italic') " title="Italic ">
+                                <span class="cke_button_icon cke_button__italic_icon " style=" ">&nbsp;</span>
+                                <span id="cke_17_label " class="cke_button_label cke_button__italic_label " aria-hidden="false ">Italic</span>
+                              </a>
+                            </span>
+                            <span class="cke_toolbar_end ">
+                            </span>
+                          </span>
+                          <span id="cke_18 " class="cke_toolbar " aria-labelledby="cke_18_label " role="toolbar ">
+                            <span id="cke_18_label " class="cke_voice_label ">Paragraph</span>
+                            <span class="cke_toolbar_start ">
+                            </span>
+                            <span class="cke_toolgroup " role="presentation ">
+                              <a id="cke_19 " class="cke_button cke_button__numberedlist cke_button_off " href="javascript:void( 'Insert/Remove Numbered List') " title="Insert/Remove Numbered List ">
+                                <span class="cke_button_icon cke_button__numberedlist_icon " style=" ">&nbsp;</span>
+                                <span id="cke_19_label " class="cke_button_label cke_button__numberedlist_label " aria-hidden="false ">Insert/Remove Numbered List</span>
+                              </a>
+                              <a id="cke_20 " class="cke_button cke_button__bulletedlist cke_button_off " href="javascript:void( 'Insert/Remove Bulleted List') " title="Insert/Remove Bulleted List ">
+                                <span class="cke_button_icon cke_button__bulletedlist_icon " style=" ">&nbsp;</span>
+                                <span id="cke_20_label " class="cke_button_label cke_button__bulletedlist_label " aria-hidden="false ">Insert/Remove Bulleted List</span>
+                              </a>
+                            </span>
+                            <span class="cke_toolbar_end ">
+                            </span>
+                          </span>
+                          <span id="cke_21 " class="cke_toolbar " aria-labelledby="cke_21_label " role="toolbar ">
+                            <span id="cke_21_label " class="cke_voice_label ">Links</span>
+                            <span class="cke_toolbar_start ">
+                            </span>
+                            <span class="cke_toolgroup " role="presentation ">
+                              <a id="cke_22 " class="cke_button cke_button__link cke_button_off " href="javascript:void( 'Link') " title="Link ">
+                                <span class="cke_button_icon cke_button__link_icon " style=" ">&nbsp;</span>
+                                <span id="cke_22_label " class="cke_button_label cke_button__link_label " aria-hidden="false ">Link</span>
+                              </a>
+                              <a id="cke_23 " class="cke_button cke_button__unlink cke_button_disabled " href="javascript:void( 'Unlink') " title="Unlink " aria-disabled="true ">
+                                <span class="cke_button_icon cke_button__unlink_icon " style=" ">&nbsp;</span>
+                                <span id="cke_23_label " class="cke_button_label cke_button__unlink_label " aria-hidden="false ">Unlink</span>
+                              </a>
+                            </span>
+                            <span class="cke_toolbar_end ">
+                            </span>
+                          </span>
+                          <span id="cke_24 " class="cke_toolbar " aria-labelledby="cke_24_label " role="toolbar ">
+                            <span id="cke_24_label " class="cke_voice_label ">Insert</span>
+                            <span class="cke_toolbar_start ">
+                            </span>
+                            <span class="cke_toolgroup " role="presentation ">
+                              <a id="cke_25 " class="cke_button cke_button__codesnippet cke_button_off " href="javascript:void( 'Insert code snippet') " title="Insert code snippet ">
+                                <span class="cke_button_icon cke_button__codesnippet_icon " style=" ">&nbsp;</span>
+                                <span id="cke_25_label " class="cke_button_label cke_button__codesnippet_label " aria-hidden="false ">Insert code snippet</span>
+                              </a>
+                              <a id="cke_26 " class="cke_button cke_button__image cke_button_off " href="javascript:void( 'Image') " title="Image ">
+                                <span class="cke_button_icon cke_button__image_icon " style="background-image:url(http://dashboard.hull.io/javascripts/ckeditor/plugins/image2/icons/image.png?t=E7KD);background-position:0 0px;background-size:16px; ">&nbsp;</span>
+                                <span id="cke_26_label " class="cke_button_label cke_button__image_label " aria-hidden="false ">Image</span>
+                              </a>
+                              <a id="cke_27 " class="cke_button cke_button__table cke_button_off " href="javascript:void( 'Table') " title="Table ">
+                                <span class="cke_button_icon cke_button__table_icon " style=" ">&nbsp;</span>
+                                <span id="cke_27_label " class="cke_button_label cke_button__table_label " aria-hidden="false ">Table</span>
+                              </a>
+                            </span>
+                            <span class="cke_toolbar_end ">
+                            </span>
+                          </span>
+                        </span>
+                      </span>
+                      <div id="cke_1_contents " class="cke_contents cke_reset " role="presentation " style="height: 297px; ">
+                        <div class="cke_wysiwyg_div cke_reset cke_editable cke_editable_themed cke_contents_ltr "  style="position: relative; ">
+                          <p>Hi <img class="cke_protected ">,</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pb-1 notification-preview ">
+              <div class="notification-frame ">
+                <div class="content ">
+                  <div class="header-row from ">
+                    <small class="from-preview ">
+                      <strong>From:</strong>
+                      <span class="badge ">Romain Dardour</span>
+                    </small>
+                  </div>
+                  <div class="header-row to ">
+                    <small class="to-preview ">
+                      <span class="muted pull-right hidden-xs ">Tue, Dec 9th 2014, 2:06 pm</span>
+                      <strong>To:</strong>
+                      <img class="small-avatar " src="http://graph.facebook.com/577957117/picture?type=square ">
+                      <span class="badge ">Simone Schi</span>
+                    </small>
+                  </div>
+                  <div class="header-row subject ">
+                    <strong class="subject-preview ">Hello from Hull Demos&nbsp;</strong>
+                  </div>
+                  <div class="content-row ">
+                    <div class="content-preview ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
