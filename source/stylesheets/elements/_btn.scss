@@ -84,6 +84,8 @@
 .btn{
   @include btn();
   @include btn-rhythm();
+  letter-spacing: .01em;
+  @include font-weight-semibold;
   &:focus, &:active:focus, &.active:focus{
     outline: none;
   }
