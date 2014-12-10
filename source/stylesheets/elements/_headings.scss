@@ -67,9 +67,21 @@ h1, h2, h3, h4, h5, h6{
     font-family: $font-family-serif;
   }
   &.underlined{
-    @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
-    background-repeat: no-repeat;
-    display: inline-block;
+    position: relative;
+    // @include background-image(linear-gradient(to right, $white 25%, #e8e8e8 25.1%, #e8e8e8 75%, $white 75.1%));
+    // background-repeat: no-repeat;
+    // display: inline-block;
+    &::after{
+      content: " ";
+      background-color: #e8e8e8;
+      width: 50%;
+      height: 3px;
+      display: block;
+      position: absolute;
+      bottom: -12px;
+      margin: 0 auto;
+      left: 25%;
+    }
   }
   &.text-accented{
     color: $accent_text_header;
