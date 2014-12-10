@@ -131,6 +131,7 @@ $h0_font_size: $base-font-size*$typography_scale*$typography_scale*$typography_s
 @import "elements/input-group";
 @import "elements/list";
 @import "elements/list-table";
+@import "elements/spinner";
 @import "components/add_image";
 @import "elements/label";
 
@@ -170,6 +171,7 @@ $h0_font_size: $base-font-size*$typography_scale*$typography_scale*$typography_s
 @import "modules/pricing";
 @import "modules/onboarding";
 @import "modules/horizontal_timeline";
+@import "modules/user_notify";
 
 
 /*------------------------------------*\
