@@ -71,7 +71,8 @@
     clear: both;
     max-width: 602px;
     margin: 0 auto; 
-    background-size: contain;
+    padding:1px;
+    // background-size: contain;
     background-repeat: no-repeat;
     height: 510px;
 
@@ -119,6 +120,8 @@
   }
 
   .notification-compose{
+    @extend .form-horizontal;
+    @extend .form-invisible;
     .header-row{
       display: table;
       table-layout: fixed;
