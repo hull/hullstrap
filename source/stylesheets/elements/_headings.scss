@@ -49,7 +49,6 @@ $font-metrics:
       @include font-weight-bold;
       letter-spacing: 0.1em;
     }
-    &.panel-title{}
     &.light{
       color:$blue_gray_light;    
     }
