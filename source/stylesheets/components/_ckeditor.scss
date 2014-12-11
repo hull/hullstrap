@@ -1,3 +1,6 @@
+@import 'ckeditor/editor';
+@import 'ckeditor/dialog';
+
 .cke_button__about_icon {
     @extend .icon;
     @extend .icon-about;

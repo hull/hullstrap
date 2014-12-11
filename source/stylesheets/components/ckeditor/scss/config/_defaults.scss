@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Defaults
+
+   This file is exclusively intended for setting up variables
+   Never add styles directly to this file
+   ========================================================================== */
+
+// Border radius
+// -------------------------
+
+$border-radius:     0;
+
+
+// Forms
+// -------------------------
+
+%input-style {
+    background-color: #fff;
+    outline: none;
+    width: 100%;
+    *width: 95%;
+    height: 32px;
+    padding: 6px $padding-base-horizontal;
+    border: 1px solid $gray-lighter;
+    border-radius: 2px;
+    @include box-shadow(inset 0 0px 1px rgba(0, 0, 0, .075));
+    @include box-sizing(border-box);
+    &:focus {
+        border-color: $form-blue;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba($form-blue,.6);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba($form-blue,.6);
+    }
+}
