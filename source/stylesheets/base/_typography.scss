@@ -61,6 +61,10 @@ code{
 .thin{   @include font-weight-light; }
 .small{}
 
+.inline{
+  display: inline;
+}
+
 [data-icon]:before, .icon:before {
   line-height: initial !important;
   vertical-align: middle;
