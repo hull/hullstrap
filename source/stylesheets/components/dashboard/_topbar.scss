@@ -1,12 +1,14 @@
 .topbar {
   background: #fff;
-  padding: $space-small $space-large;
+  // padding: $space-small $space-large;
   position: fixed;
+  left: 200px;
+  right: 0;
   top: 0;
   border-bottom: 1px solid #F4F5F7;
-  width: 100%;
-  margin-left: - $sidebar-width;
-  padding-left: $sidebar-width + $space-large;
+  // width: 100%;
+  // margin-left: - $sidebar-width;
+  // padding-left: $sidebar-width + $space-large;
   z-index: 400;
 }
 
