@@ -2,7 +2,7 @@
 
 Hull theme using compass, sass, and twitter bootstrap.
 
-Live example: [http://hullstrap.s3.amazonaws.com/index.html](http://hullstrap.s3.amazonaws.com/index.html)
+Live example: [http://neuestrap.s3.amazonaws.com/index.html](http://neuestrap.s3.amazonaws.com/index.html)
 
 ## How to use the theme:
 
@@ -31,7 +31,7 @@ http://fontcustom.com
 
 Builds the theme in `tmp/`.
 
-### Uploading to S3
+### Deploying
 
     middleman build; middleman s3_sync
 
@@ -42,12 +42,11 @@ will push to AWS
 
     AWS_KEY: YOUR_AMAZON_KEY
     AWS_SECRET: YOUR_AMAZON_SECRET
-    AWS_BUCKET: BUCKET
     AWS_REGION: REGION (us-east-1,...)
 
 ### Amazon S3 urls
 
 Example: 
 
-* http://hullstrap.s3.amazonaws.com/hullstrap.js
-* http://hullstrap.s3.amazonaws.com/hullstrap.css
+* http://neuestrap.s3.amazonaws.com/hullstrap.js
+* http://neuestrap.s3.amazonaws.com/hullstrap.css
