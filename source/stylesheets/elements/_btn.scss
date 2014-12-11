@@ -41,8 +41,8 @@
     background-color: transparentize($white, .95);;
   }
 }
-@mixin btn-pill(){
-  @include btn-color(rgba(255,255,255,0),$blue_gray_light, $blue_gray);
+@mixin btn-pill($main, $text){
+  @include btn-color(rgba(255,255,255,0),$main, $text);
 }
 @mixin btn-white{
   @include btn-color($white, $white, $secondary);
@@ -111,7 +111,14 @@
 }
 
 .btn-pill{
-  @include btn-pill;
+  @include btn-pill($blue_gray_light, $blue_gray);
+  &.btn-primary{@include btn-pill($brand-primary, $brand-primary);}
+  &.btn-secondary{@include btn-pill($blue_gray_lightest, $blue_gray);}
+  &.btn-tertiary{@include btn-pill($blue_gray_light, $inverted_text);}
+  &.btn-danger{@include btn-pill($brand-danger, $brand-danger);}
+  &.btn-info{@include btn-pill($brand-info, $brand-info);}
+  &.btn-success{@include btn-pill($brand-success, $brand-success);}
+  &.btn-warning{@include btn-pill($brand-warning, $brand-warning);}
   &.active{
     @include box-shadow(inset 0 0px 0px 2px rgba(0, 147, 230, 1));
   }
