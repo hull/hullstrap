@@ -1,3 +1,20 @@
+.wizard{
+  .nav-tabs{
+    .active{
+      .title{
+        @extend .text-accented;
+      }
+    }
+    .title{
+      text-align: center;
+      small{
+        display: block;
+        opacity: .5;
+      }
+    }
+  }
+}
+
 ol.acc-wizard-sidebar {
   counter-reset:acc-wizard-counter;
   margin-left:0;
