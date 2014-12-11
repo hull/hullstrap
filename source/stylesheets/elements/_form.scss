@@ -101,7 +101,7 @@ input[type='search'].form-control{
   min-height: $base-line-height;
 }
 input[type=radio], input[type=checkbox]{
-  height: $base-line-height;
+  // height: $base-line-height;
   @include rhythm(0.1,0,0,0);
 }
 
@@ -213,6 +213,9 @@ input[type=radio], input[type=checkbox]{
   .form-group{
     @include trailer(0);
     @include leader(0);
+  }
+  .control-label{
+    padding-top: 0;
   }
   input[type='search'],
   input[type='url'],
