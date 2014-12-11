@@ -4,6 +4,8 @@
 }
 .pt-0{@include padding-leader(0); }
 .pb-0{@include padding-trailer(0); }
+.pt-05{@include padding-leader(.5); }
+.pb-05{@include padding-trailer(.5); }
 .pt-1{@include padding-leader(1); }
 .pb-1{@include padding-trailer(1); }
 .pt-2{@include padding-leader(2); }
@@ -16,6 +18,8 @@
 }
 .mt-0{@include leader(0); }
 .mb-0{@include trailer(0); }
+.mt-05{@include leader(.5); }
+.mb-05{@include trailer(.5); }
 .mt-1{@include leader(1); }
 .mb-1{@include trailer(1); }
 .mt-2{@include leader(2); }
