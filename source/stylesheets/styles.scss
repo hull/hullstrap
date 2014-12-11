@@ -163,7 +163,9 @@ $h0_font_size: $base-font-size*$typography_scale*$typography_scale*$typography_s
 @import "components/pagination";
 @import "components/vex";
 @import "components/color-picker";
+@import "components/ckeditor";
 @import "components/daterangepicker";
+@import "components/wizard";
 
 /*------------------------------------*\
     Modules
