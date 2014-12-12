@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "8f74b3830f43abbf0ecae4746070fe9f8ffe14300357d112c978a5841035b249",
-    "current": "8f74b3830f43abbf0ecae4746070fe9f8ffe14300357d112c978a5841035b249"
+    "previous": "f715b2d677d8f732b1797eef4544b308657c54b82b1b381ae4e60c8a2f24a033",
+    "current": "f715b2d677d8f732b1797eef4544b308657c54b82b1b381ae4e60c8a2f24a033"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.ttf",
-    "source/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.svg",
-    "source/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.woff",
-    "source/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.eot"
+    "source/stylesheets/fonts/fontcustom_f715b2d677d8f732b1797eef4544b308.ttf",
+    "source/stylesheets/fonts/fontcustom_f715b2d677d8f732b1797eef4544b308.svg",
+    "source/stylesheets/fonts/fontcustom_f715b2d677d8f732b1797eef4544b308.woff",
+    "source/stylesheets/fonts/fontcustom_f715b2d677d8f732b1797eef4544b308.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -226,9 +226,9 @@
       "codepoint": 61882,
       "source": "source/images/icons/javascript.svg"
     },
-    "keen-IO": {
-      "codepoint": 61895,
-      "source": "source/images/icons/keen IO.svg"
+    "keen_io": {
+      "codepoint": 61958,
+      "source": "source/images/icons/keen_io.svg"
     },
     "key": {
       "codepoint": 61883,
@@ -331,7 +331,7 @@
       "source": "source/images/icons/search.svg"
     },
     "send": {
-      "codepoint": 61869,
+      "codepoint": 61959,
       "source": "source/images/icons/send.svg"
     },
     "share": {
@@ -441,10 +441,14 @@
   },
   "options": {
     "autowidth": true,
-    "config": "./config/fontcustom.yml",
+    "config": "config/fontcustom.yml",
     "css_prefix": "icon-{{glyph}}",
     "css_selector": ".icon-{{glyph}}",
-    "debug": true,
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
     "font_name": "fontcustom",
     "force": false,
     "input": {

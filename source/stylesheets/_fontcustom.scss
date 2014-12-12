@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.eot");
-  src: font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.eot?#iefix") format("embedded-opentype"),
-       font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.woff") format("woff"),
-       font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.ttf") format("truetype"),
-       font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.svg#fontcustom") format("svg");
+  src: url("/stylesheets/fonts/fontcustom_f715b2d677d8f732b1797eef4544b308.eot");
+  src: url("/stylesheets/fonts/fontcustom_f715b2d677d8f732b1797eef4544b308.eot?#iefix") format("embedded-opentype"),
+       url("/stylesheets/fonts/fontcustom_f715b2d677d8f732b1797eef4544b308.woff") format("woff"),
+       url("/stylesheets/fonts/fontcustom_f715b2d677d8f732b1797eef4544b308.ttf") format("truetype"),
+       url("/stylesheets/fonts/fontcustom_f715b2d677d8f732b1797eef4544b308.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: font-url("/stylesheets/fonts/fontcustom_8f74b3830f43abbf0ecae4746070fe9f.svg#fontcustom") format("svg");
+    src: url("/stylesheets/fonts/fontcustom_f715b2d677d8f732b1797eef4544b308.svg#fontcustom") format("svg");
   }
 }
 
@@ -77,7 +77,7 @@
 .icon-instagram:before,
 .icon-italic:before,
 .icon-javascript:before,
-.icon-keen-IO:before,
+.icon-keen_io:before,
 .icon-key:before,
 .icon-kissmetrics:before,
 .icon-libraries:before,
@@ -198,7 +198,7 @@
 .icon-instagram:before { content: "\f1c6"; }
 .icon-italic:before { content: "\f1ec"; }
 .icon-javascript:before { content: "\f1ba"; }
-.icon-keen-IO:before { content: "\f1c7"; }
+.icon-keen_io:before { content: "\f206"; }
 .icon-key:before { content: "\f1bb"; }
 .icon-kissmetrics:before { content: "\f1c8"; }
 .icon-libraries:before { content: "\f1bc"; }
@@ -224,7 +224,7 @@
 .icon-reset:before { content: "\f1b5"; }
 .icon-review:before { content: "\f1d8"; }
 .icon-search:before { content: "\f1ac"; }
-.icon-send:before { content: "\f1ad"; }
+.icon-send:before { content: "\f207"; }
 .icon-share:before { content: "\f1ae"; }
 .icon-show:before { content: "\f1af"; }
 .icon-soundcloud:before { content: "\f1cc"; }
@@ -251,3 +251,111 @@
 .icon-wand:before { content: "\f1f8"; }
 .icon-warning:before { content: "\f1aa"; }
 .icon-webhook:before { content: "\f1ab"; }
+
+$font-fontcustom-achievement: "\f1df";
+$font-fontcustom-add_image: "\f1e6";
+$font-fontcustom-akismet: "\f1be";
+$font-fontcustom-angellist: "\f1bf";
+$font-fontcustom-app: "\f1de";
+$font-fontcustom-arrow_double_left: "\f1d1";
+$font-fontcustom-arrow_double_right: "\f1d2";
+$font-fontcustom-arrow_down: "\f1d3";
+$font-fontcustom-arrow_left: "\f1d4";
+$font-fontcustom-arrow_right: "\f1d5";
+$font-fontcustom-arrow_up: "\f1d6";
+$font-fontcustom-blockquote: "\f1e7";
+$font-fontcustom-bold: "\f1e8";
+$font-fontcustom-bubble: "\f203";
+$font-fontcustom-bubbles: "\f202";
+$font-fontcustom-checkbox: "\f19a";
+$font-fontcustom-click: "\f1fc";
+$font-fontcustom-clock: "\f1dc";
+$font-fontcustom-cloud: "\f19b";
+$font-fontcustom-codesnippet: "\f1fa";
+$font-fontcustom-cog: "\f19c";
+$font-fontcustom-comment: "\f19d";
+$font-fontcustom-comment_code: "\f1f6";
+$font-fontcustom-component: "\f19e";
+$font-fontcustom-cross: "\f19f";
+$font-fontcustom-dashboard: "\f1a0";
+$font-fontcustom-delete: "\f200";
+$font-fontcustom-desktop: "\f1e2";
+$font-fontcustom-download: "\f1a1";
+$font-fontcustom-draft: "\f1fd";
+$font-fontcustom-email: "\f1a2";
+$font-fontcustom-email_message: "\f1d7";
+$font-fontcustom-emit: "\f1a3";
+$font-fontcustom-exit: "\f1db";
+$font-fontcustom-eye_closed: "\f1e4";
+$font-fontcustom-eye_open: "\f1e5";
+$font-fontcustom-facebook: "\f1c0";
+$font-fontcustom-filter: "\f1a4";
+$font-fontcustom-foursquare: "\f1c1";
+$font-fontcustom-ghost: "\f1dd";
+$font-fontcustom-github: "\f1c2";
+$font-fontcustom-google: "\f1da";
+$font-fontcustom-google_analytics: "\f1c3";
+$font-fontcustom-google_plus: "\f1c4";
+$font-fontcustom-h1: "\f1e9";
+$font-fontcustom-h2: "\f1ea";
+$font-fontcustom-h3: "\f1eb";
+$font-fontcustom-hide: "\f1a5";
+$font-fontcustom-html5: "\f1b9";
+$font-fontcustom-hull: "\f1c5";
+$font-fontcustom-image: "\f1d9";
+$font-fontcustom-instagram: "\f1c6";
+$font-fontcustom-italic: "\f1ec";
+$font-fontcustom-javascript: "\f1ba";
+$font-fontcustom-keen_io: "\f206";
+$font-fontcustom-key: "\f1bb";
+$font-fontcustom-kissmetrics: "\f1c8";
+$font-fontcustom-libraries: "\f1bc";
+$font-fontcustom-like: "\f1b7";
+$font-fontcustom-liked: "\f1e1";
+$font-fontcustom-link: "\f1ed";
+$font-fontcustom-linkedin: "\f1c9";
+$font-fontcustom-lock: "\f1e0";
+$font-fontcustom-maximize: "\f1fb";
+$font-fontcustom-meetups: "\f1ca";
+$font-fontcustom-minus: "\f1b8";
+$font-fontcustom-mixpanel: "\f1cb";
+$font-fontcustom-mobile: "\f1e3";
+$font-fontcustom-ol: "\f1ef";
+$font-fontcustom-pencil: "\f1ff";
+$font-fontcustom-play: "\f201";
+$font-fontcustom-plug_in: "\f1d0";
+$font-fontcustom-plus: "\f1b6";
+$font-fontcustom-question: "\f1b4";
+$font-fontcustom-question_bubble: "\f205";
+$font-fontcustom-redo: "\f1f0";
+$font-fontcustom-reply: "\f1bd";
+$font-fontcustom-reset: "\f1b5";
+$font-fontcustom-review: "\f1d8";
+$font-fontcustom-search: "\f1ac";
+$font-fontcustom-send: "\f207";
+$font-fontcustom-share: "\f1ae";
+$font-fontcustom-show: "\f1af";
+$font-fontcustom-soundcloud: "\f1cc";
+$font-fontcustom-source: "\f1f1";
+$font-fontcustom-star: "\f1b0";
+$font-fontcustom-stats: "\f1b1";
+$font-fontcustom-stop: "\f1fe";
+$font-fontcustom-table: "\f1f2";
+$font-fontcustom-tag: "\f1b2";
+$font-fontcustom-templates: "\f1f3";
+$font-fontcustom-trash: "\f1b3";
+$font-fontcustom-tumblr: "\f1cd";
+$font-fontcustom-twitter: "\f1ce";
+$font-fontcustom-ul: "\f1ee";
+$font-fontcustom-uncomment: "\f1f4";
+$font-fontcustom-uncomment_code: "\f1f7";
+$font-fontcustom-undo: "\f1f5";
+$font-fontcustom-unlink: "\f1f9";
+$font-fontcustom-user: "\f1a6";
+$font-fontcustom-user_circle: "\f1a7";
+$font-fontcustom-user_group: "\f1a8";
+$font-fontcustom-valid: "\f1a9";
+$font-fontcustom-vkontakte: "\f1cf";
+$font-fontcustom-wand: "\f1f8";
+$font-fontcustom-warning: "\f1aa";
+$font-fontcustom-webhook: "\f1ab";
