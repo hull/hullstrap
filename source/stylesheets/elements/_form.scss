@@ -37,6 +37,14 @@ input[type='color'].form-control{
   }
 }
 
+.input-group-addon{
+  background-color: $light-filet;
+  &:last-child{
+    border-top-right-radius:3px; 
+    border-bottom-right-radius:3px; 
+  }
+}
+
 %form-control{
   @include transition(all .2s ease-out);
   padding-left:$padding-base-horizontal;

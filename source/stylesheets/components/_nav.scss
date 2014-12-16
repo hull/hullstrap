@@ -18,6 +18,10 @@
 
 .nav{
   > li{
+    > a{
+      padding-left: $grid-gutter-width/2;
+      padding-right: $grid-gutter-width/2;
+    }
     .navbar-branded &{
       @media (max-width: $screen-md-max){
         padding-right: $padding-base-horizontal;

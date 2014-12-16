@@ -11,8 +11,8 @@
 }
 .panel-heading, .panel-body{
   border-bottom: none;
-  padding-left: $padding-base-horizontal;
-  padding-right: $padding-base-horizontal;
+  padding-left: $grid-gutter-width/2;
+  padding-right: $grid-gutter-width/2;
   @include rhythm(0,.5,.5,0);
 }
 .panel-title{
