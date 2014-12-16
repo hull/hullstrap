@@ -143,8 +143,8 @@ body, input, textarea, button {
   bottom: 0;
   left: 0;
 
-  background: #EAEEF3;
-  padding: 20px;
+  background: $off-white;
+  // padding: 20px;
 }
 
 .customizer-section-title {
@@ -168,15 +168,7 @@ body, input, textarea, button {
 }
 
 .nav-customizer {
-  border-top: 1px solid #D1D5DC;
-
   li {
-    border-bottom: 1px solid #D1D5DC;
-  }
-
-  & > li > a {
-    padding: 7px 10px;
-    color: #555B69;
-    font-weight: bold;
+    @include box-shadow(0 -1px $light-filet);
   }
 }
