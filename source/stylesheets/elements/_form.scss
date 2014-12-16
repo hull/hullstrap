@@ -9,17 +9,17 @@ input[type='email'],
 input[type='password'],
 textarea,
 select{
-  &::-webkit-input-placeholder{
+  &:-webkit-input-placeholder{
     @include font-weight-light;
-    opacity: .5;
+    opacity: .7;
   }
-  &::-moz-placeholder{
+  &:-moz-placeholder{
     @include font-weight-light;
-    opacity: .5;
+    opacity: .7;
   }
   &:-ms-input-placeholder{
     @include font-weight-light;
-    opacity: .5;
+    opacity: .7;
   }
   &.form-control{
     @extend %form-control;
@@ -30,8 +30,11 @@ input[type='color'].form-control{
   width: 50px;
 }
 
-input.rw-input{
-  @extend %form-control;
+.rw-datetimepicker,
+.rw-combobox{
+  input.rw-input{
+    @extend %form-control;
+  }
 }
 
 %form-control{
@@ -55,7 +58,11 @@ input.rw-input{
     padding-left:$padding-base-horizontal*2;
     padding-right:$padding-base-horizontal*2;
   }
-
+  &.form-control-sm{
+    @include rhythm(0,.25,.25,0);
+    padding-left:$padding-base-horizontal;
+    padding-right:$padding-base-horizontal;
+  }
 }
 
 label{
@@ -66,6 +73,9 @@ label{
 
 select.form-control{
   height: $base-line-height*2;
+  &.form-control-sm{
+    height: $base-line-height*1.5;
+  }
 }
 
 input[type='search'].form-control{
@@ -77,7 +87,11 @@ input[type='search'].form-control{
 }
 
 .help-block{
-  @include rhythm(0,.25,.75,1)
+  @include rhythm(0,.25,.75,1);
+  .pane-content &{
+    @include adjust-font-size-to($h7_font_size,$h7_line_height);
+    @include rhythm(0,.25,.75,0, $h7_font_size)
+  }
 }
 
 
@@ -101,17 +115,17 @@ input[type='search'].form-control{
   min-height: $base-line-height;
 }
 input[type=radio], input[type=checkbox]{
-  // height: $base-line-height;
   @include rhythm(0.1,0,0,0);
+  margin-right: $padding-base-horizontal/2;
 }
 
 .control-label, .control-label > label{
+  // text-transform: uppercase;
+  // letter-spacing: 0.1em;
+  // @include font-weight-bold;
   @extend .text-muted;
-  text-transform: uppercase;
-  @include font-weight-bold;
-  letter-spacing: 0.1em;
-  @include adjust-heading($h7_font_size, $h7_line_height);
-  @include trailer(0);
+  // @include adjust-font-size-to($h7_font_size, $h7_line_height);
+  // @include trailer(0);
 }
 
 .form-horizontal {
@@ -183,7 +197,6 @@ input[type=radio], input[type=checkbox]{
 
 .form-light{
   .form-group{
-    @include trailer(0);
     @include leader(0);
   }
   input[type='search'],
@@ -236,10 +249,10 @@ input[type=radio], input[type=checkbox]{
   input[type='text'],
   input[type='number'],
   input[type='password']{
-    &::-webkit-input-placeholder{
+    &:-webkit-input-placeholder{
       text-transform: uppercase;
     }
-    &::-moz-placeholder{
+    &:-moz-placeholder{
       text-transform: uppercase;
     }
     &:-ms-input-placeholder{
@@ -252,23 +265,7 @@ input[type=radio], input[type=checkbox]{
 }
 
 .control {
-  // padding: 10px 0;
-  // border-bottom: 1px solid blue;
-  // display: table;
-  // width: 100%;
-}
-
-        // .control-label,
-        // .control-input {
-        //     position: relative;
-        //       display: table-cell;
-        //     }
-
-.control {
-  // margin: 0;
-  // position: relative;
   border-bottom: 1px solid #F8F9FB;
-  // padding: 10px 10px 0 10px;
 
   &:last-child {
     border: 0;
@@ -295,13 +292,6 @@ input[type=radio], input[type=checkbox]{
     position: relative;
     display: table-cell;
     vertical-align: middle;
-  }
-
-  .control-label-container {
-    .control-label {
-      margin: 0;
-      padding: 10px 10px 7px;
-    }
   }
 
   .control-input-container {
@@ -366,7 +356,9 @@ input[type=radio], input[type=checkbox]{
   padding: 10px;
 }
 
-// .color-picker {
-//   height: 100px;
-//   background: #f3f3f3;
-// }
+.pane-content{
+  .control-image{
+    @extend .mb-1;
+    @extend .mt-1;
+  }
+}
