@@ -44,9 +44,13 @@ $font-metrics:
       @include adjust-leading-to(3,$fs);
       @include rhythm(1,0,1,1,$fs);
     }
-    &.uppercase, &.uppercase small, &.small-title {
+    &.uppercase, &.uppercase small {
       text-transform: uppercase;
       @include font-weight-bold;
+      letter-spacing: 0.1em;
+    }
+    &.small-title{
+      text-transform: uppercase;
       letter-spacing: 0.1em;
     }
     &.light{
