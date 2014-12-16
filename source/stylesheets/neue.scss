@@ -31,18 +31,6 @@ body, input, textarea, button {
   -webkit-font-smoothing: antialiased;
 }
 
-.customizer-editor-container {
-  width: 300px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  background: #fff;
-  z-index: 500;
-  -webkit-transition: width 200ms ease-in;
-}
-
 .customizer-preview-container {
   position: absolute;
   top: 0;

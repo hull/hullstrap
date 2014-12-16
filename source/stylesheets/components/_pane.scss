@@ -1,66 +1,46 @@
-
-.pane {
-  .pane-header-content,
-  .pane-header-title,
-  .pane-content {
-    -webkit-transition: all 200ms ease-in;
-  }
-}
-
-.pane-left,
-.pane-right {
-  display: block;
-}
-
-.pane-left {
-  .pane-header-title,
-  .pane-header-content {
-    opacity: 0;
-  }
-
-  .pane-header-title,
-  .pane-content {
-    -webkit-transform: translateX(-100%);
-  }
-}
-
-.pane-right {
-  .pane-header-title,
-  .pane-header-content {
-    opacity: 0;
-  }
-
-  .pane-header-title,
-  .pane-content {
-    -webkit-transform: translateX(100%);
-  }
-}
-
+// .panes{
+//   background-size: 100% 50px;
+//   background-repeat: no-repeat;
+//   width:300px;
+//   position: fixed;
+//   height: 100vh;
+// }
 .pane {
   width: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
-  overflow: hidden;
-  display: none;
+  // overflow: hidden;
+  // display: none;
+  // &.active {
+  //   display: block;
+  // }
 }
 
-.pane.active {
-  display: block;
+.customizer-editor-container {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: $off-white;
+  z-index: 500;
 }
+
+
 
 .pane-header {
   @include background-image($primary_bg_image);
   height: 50px;
   margin: 0;
   padding: 0 10px;
+  & .btn {
+    position: relative;
+    top: 10px;
+  }
 }
 
-.pane-header .btn {
-  position: relative;
-  top: 10px;
-}
 
 .pane-header-title {
   line-height: 50px;
@@ -73,80 +53,6 @@
   padding: 0;
 }
 
-// .paneLeft-enter,
-// .panePop-enter{
-//     opacity: .01;
-//     transition: opacity 25s ease-in;
-// }
-// .paneLeft-enter-active{
-//     opacity: 1;
-//     -webkit-transform: translateX(-100%);
-// }
-
-.paneLeft-enter,
-.paneRight-enter,
-.paneLeft-leave,
-.paneRight-leave{
-  .pane-content, .pane-titles{
-    -webkit-transition: all .5s ease-in;
-  }
-}
-
-.paneLeft-leave{
-  .pane-content, .pane-titles{
-    -webkit-transform: translateX(0);
-    opacity: 1;
-  }
-}
-.paneLeft-leave-active{
-  .pane-content, .pane-titles{
-    -webkit-transform: translateX(-20%);
-    opacity: 0;
-  }
-}
-
-.paneLeft-enter{
-  .pane-content, .pane-titles{
-    -webkit-transform: translateX(20%);
-    opacity: 0;
-  }
-}
-.paneLeft-enter-active{
-  .pane-content, .pane-titles{
-    -webkit-transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-
-
-.paneRight-leave{
-  .pane-content, .pane-titles{
-    -webkit-transform: translateX(0);
-    opacity: 1;
-  }
-}
-.paneRight-leave-active{
-  .pane-content, .pane-titles{
-    -webkit-transform: translateX(20%);
-    opacity: 0;
-  }
-}
-
-.paneRight-enter{
-  .pane-content, .pane-titles{
-    -webkit-transform: translateX(-20%);
-    opacity: 0;
-  }
-}
-.paneRight-enter-active{
-  .pane-content, .pane-titles{
-    -webkit-transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-
 .pane-content {
   overflow: scroll;
   position: absolute;
@@ -154,7 +60,61 @@
   right: 0;
   bottom: 0;
   left: 0;
-
   background: $off-white;
-  // padding: 20px;
+}
+
+
+
+
+.paneLeft-enter-active,
+.paneLeft-leave-active,
+.paneRight-enter-active,
+.paneRight-leave-active,
+.customizer-editor-container{
+  &, .pane-content, .pane-titles{
+    -webkit-transition: all .3s ceaser($easeOutQuint);
+  }
+}
+
+.paneRight-enter{
+  opacity: .9;
+  .pane-content{opacity: 0;-webkit-transform: translateX(-20%); }
+  .pane-titles{opacity: 0;-webkit-transform: translateX(-80%); }
+  &.paneRight-enter-active{
+    opacity: 1;
+    .pane-content{opacity: 1; -webkit-transform: translateX(0%);}
+    .pane-titles{opacity: 1; -webkit-transform: translateX(0%);}
+  }
+}
+.paneRight-leave{
+  opacity: 1;
+  .pane-content{opacity: 1; -webkit-transform: translateX(0%);}
+  .pane-titles{opacity: 1; -webkit-transform: translateX(0%);}
+  &.paneRight-leave-active{
+    opacity: .9;
+    .pane-content{opacity: 0;-webkit-transform: translateX(20%); }
+    .pane-titles{opacity: 0;-webkit-transform: translateX(80%); }
+  }
+}
+
+
+.paneLeft-enter{
+  opacity: .9;
+  .pane-content{opacity: 0; -webkit-transform: translateX(20%); }
+  .pane-titles{opacity: 0; -webkit-transform: translateX(80%); }
+  &.paneLeft-enter-active{
+    opacity: 1;
+    .pane-content{opacity: 1; -webkit-transform: translateX(0%);}
+    .pane-titles{opacity: 1; -webkit-transform: translateX(0%);}
+  }
+}
+.paneLeft-leave{
+  opacity: 1;
+  .pane-content{opacity: 1; -webkit-transform: translateX(0%);}
+  .pane-titles{opacity: 1; -webkit-transform: translateX(0%);}
+  &.paneLeft-leave-active{
+    opacity: .9;
+    .pane-content{opacity: 0;-webkit-transform: translateX(-20%); }
+    .pane-titles{opacity: 0;-webkit-transform: translateX(-80%); }
+  }
 }
