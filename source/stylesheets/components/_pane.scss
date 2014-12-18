@@ -32,25 +32,20 @@
 
 .pane-header {
   @include background-image($primary_bg_image);
-  height: 50px;
-  margin: 0;
-  padding: 0 10px;
-  & .btn {
-    position: relative;
-    top: 10px;
-  }
+  @include rhythm(0,.5,.5,0);
+  padding-left:$grid-gutter-width/2; 
+  padding-right:$grid-gutter-width/2; 
+  position: relative;
 }
 
 
 .pane-header-title {
-  line-height: 50px;
   text-align: center;
   white-space: nowrap;
   color: #fff;
-  font-size: 16px;
   font-weight: bold;
-  margin: 0;
-  padding: 0;
+  @extend .m-0;
+  padding-top: 5px;
 }
 
 .pane-content {
