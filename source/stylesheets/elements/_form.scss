@@ -98,8 +98,8 @@ input[type='search'].form-control{
 .help-block{
   @include rhythm(0,.25,.75,1);
   .pane-content &{
-    @include adjust-font-size-to($h7_font_size,$h7_line_height);
-    @include rhythm(0,.25,.75,0, $h7_font_size)
+    @include adjust-font-size-to($h6_font_size,$h6_line_height);
+    @include rhythm(0,.25,.75,0, $h6_font_size)
   }
 }
 
