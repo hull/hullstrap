@@ -49,6 +49,7 @@
 }
 @mixin btn-white{
   @include btn-color($white, $white, $secondary);
+  @include box-shadow(inset 0 0px 0 1px $light-filet);
 }
 @mixin btn-dark{
   @include btn-color(transparentize($blue_gray_darker,.83), rgba(0,0,0,0), white);

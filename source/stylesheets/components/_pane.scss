@@ -67,7 +67,7 @@
 .paneRight-leave-active,
 .customizer-editor-container{
   &, .pane-content, .pane-titles{
-    -webkit-transition: all .3s ceaser($easeOutQuint);
+    -webkit-transition: all .2s ceaser($easeInOutSine);
   }
 }
 

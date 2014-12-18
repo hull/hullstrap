@@ -6,5 +6,6 @@
     text-transform: uppercase;
     cursor: pointer;
     text-decoration: underline;
+    @include font-weight-bold;
   }
 }

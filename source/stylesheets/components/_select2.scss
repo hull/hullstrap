@@ -59,14 +59,7 @@ Version: @@ver@@ Timestamp: @@timestamp@@
 
         .select2-container.select2-drop-above .select2-choice {
           border-bottom-color: #aaa;
-
           border-radius: 0 0 4px 4px;
-
-          background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(0.9, #fff));
-          background-image: -webkit-linear-gradient(center bottom, #eee 0%, #fff 90%);
-          background-image: -moz-linear-gradient(center bottom, #eee 0%, #fff 90%);
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
-          background-image: linear-gradient(to bottom, #eee 0%, #fff 90%);
         }
 
         .select2-container.select2-allowclear .select2-choice .select2-chosen {
@@ -158,18 +151,18 @@ Version: @@ver@@ Timestamp: @@timestamp@@
     border-bottom: 0;
 
     border-radius: 4px 4px 0 0;
-
-    -webkit-box-shadow: 0 -4px 5px rgba(0, 0, 0, .07);
-    box-shadow: 0 -4px 5px rgba(0, 0, 0, .07);
+    box-shadow: none;
+    -webkit-box-shadow: none;
   }
 
   .select2-drop-active {
-    border: 1px solid #5897fb;
+    border: 1px solid $blue_2;
     border-top: none;
   }
 
+
   .select2-drop.select2-drop-above.select2-drop-active {
-    border-top: 1px solid #5897fb;
+    border-top: 1px solid $blue_2;
   }
 
   .select2-drop-auto-width {
@@ -207,8 +200,7 @@ Version: @@ver@@ Timestamp: @@timestamp@@
     @extend .icon;
     @extend .icon-arrow_down;
     text-align: center;
-    @include padding-leader(0.5);
-    // background: url('select2.png') no-repeat 0 1px;
+    @include padding-leader(0.25);
   }
 
   html[dir="rtl"] .select2-container .select2-choice .select2-arrow b {
@@ -275,19 +267,12 @@ Version: @@ver@@ Timestamp: @@timestamp@@
 
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background-color: $off-white;
+    background-color: $white;
   }
 
   .select2-dropdown-open.select2-drop-above .select2-choice,
   .select2-dropdown-open.select2-drop-above .select2-choices {
-    border: 1px solid #5897fb;
     border-top-color: transparent;
-
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(0.5, #eee));
-    background-image: -webkit-linear-gradient(center top, #fff 0%, #eee 50%);
-    background-image: -moz-linear-gradient(center top, #fff 0%, #eee 50%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#ffffff', GradientType=0);
-    background-image: linear-gradient(to bottom, #fff 0%, #eee 50%);
   }
 
   .select2-dropdown-open .select2-choice .select2-arrow {
@@ -374,6 +359,9 @@ html[dir="rtl"] .select2-results {
 .select2-results .select2-highlighted {
   background: $blue_2;
   color: $inverted-text;
+  .text-muted{
+    color: $inverted-text;
+  }
 }
 
 .select2-results li em {
@@ -397,6 +385,7 @@ html[dir="rtl"] .select2-results {
   background: $off-white;
   display: list-item;
   padding-left: 5px;
+  @include rhythm(0,.25,.25,0);
 }
 
 /*
@@ -453,23 +442,6 @@ disabled look for disabled choices in the results dropdown
 
 /* multiselect */
 
-.select2-container-multi .select2-choices {
-  height: auto !important;
-  height: 1%;
-  margin: 0;
-  padding: 0 5px 0 0;
-  position: relative;
-
-  border: 1px solid #aaa;
-  cursor: text;
-  overflow: hidden;
-
-  background-color: #fff;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(1%, #eee), color-stop(15%, #fff));
-  background-image: -webkit-linear-gradient(top, #eee 1%, #fff 15%);
-  background-image: -moz-linear-gradient(top, #eee 1%, #fff 15%);
-  background-image: linear-gradient(to bottom, #eee 1%, #fff 15%);
-}
 
 html[dir="rtl"] .select2-container-multi .select2-choices {
   padding: 0 0 0 5px;
@@ -484,11 +456,7 @@ html[dir="rtl"] .select2-container-multi .select2-choices {
 }
 
 .select2-container-multi.select2-container-active .select2-choices {
-  border: 1px solid #5897fb;
   outline: none;
-
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, .3);
 }
 .select2-container-multi .select2-choices li {
   float: left;
@@ -505,12 +473,9 @@ html[dir="rtl"] .select2-container-multi .select2-choices li
 }
 
 .select2-container-multi .select2-choices .select2-search-field input {
-  padding: 5px;
+  // padding: 5px;
   margin: 1px 0;
 
-  font-family: sans-serif;
-  font-size: 100%;
-  color: #666;
   outline: 0;
   border: 0;
   -webkit-box-shadow: none;
@@ -523,23 +488,20 @@ html[dir="rtl"] .select2-container-multi .select2-choices li
 }
 
 .select2-default {
-  color: #999 !important;
+  color: $brand-primary !important;
+  @extend .form-control-sm;
 }
 
 .select2-container-multi .select2-choices .select2-search-choice {
   padding: 3px 5px 3px 18px;
-  margin: 3px 0 3px 5px;
+  margin: 5px 3px 3px 5px;
   position: relative;
 
-  line-height: 13px;
-  color: #333;
+  line-height: 15px;
+  color: $text-color;
   cursor: default;
-  border: 1px solid #aaaaaa;
 
-  border-radius: 3px;
-
-  -webkit-box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
 
   background-clip: padding-box;
 
@@ -549,12 +511,7 @@ html[dir="rtl"] .select2-container-multi .select2-choices li
   -ms-user-select: none;
   user-select: none;
 
-  background-color: #e4e4e4;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='$off-white', GradientType=0);
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, $off-white), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eee));
-  background-image: -webkit-linear-gradient(top, $off-white 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
-  background-image: -moz-linear-gradient(top, $off-white 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
-  background-image: linear-gradient(to bottom, $off-white 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+  background-color: $light-filet;
 }
 html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice
 {
@@ -578,7 +535,7 @@ html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice
 
   font-size: 1px;
   outline: none;
-  background: url('select2.png') right top no-repeat;
+  background: url('/images/select2.png') right top no-repeat;
 }
 html[dir="rtl"] .select2-search-choice-close {
   right: auto;
@@ -605,13 +562,11 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .select2-container-multi.select2-container-disabled .select2-choices {
   background-color: $off-white;
   background-image: none;
-  border: 1px solid #ddd;
   cursor: default;
 }
 
 .select2-container-multi.select2-container-disabled .select2-choices .select2-search-choice {
   padding: 3px 5px 3px 5px;
-  border: 1px solid #ddd;
   background-image: none;
   background-color: $off-white;
 }
@@ -703,15 +658,13 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 
 .select2-container .select2-choice,
 .select2-container-multi .select2-choices {
-  // height: $base-line-height + 8px;
-  // line-height: $base-line-height + 9px;
-  // border: 1px solid $input-border;
-  // @include border-radius($input-border-radius);
-  // background: none;
-  // background-color: $input-bg;
-  // filter: none;
-  // @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, 0.075));
   @extend %form-control;
+}
+
+.select2-container-multi .select2-choices {
+  min-height: 40px;
+  padding: 6px;
+  @extend .form-control-sm;
 }
 
 .select2-container.select2-container-disabled .select2-choice {

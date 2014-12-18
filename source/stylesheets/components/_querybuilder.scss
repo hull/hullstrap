@@ -1,0 +1,10 @@
+.predicate-name{
+  .predicate-level{
+
+  }
+  @for $i from 1 through 6 {
+    .predicate-level-#{$i} {
+      padding-left: $padding-base-horizontal*$i;
+    }
+  }
+}

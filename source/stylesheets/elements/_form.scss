@@ -88,11 +88,11 @@ select.form-control{
 }
 
 input[type='search'].form-control{
-  @include box-shadow(inset 0 0 0 2px #C5C7CE);
+  // @include box-shadow(inset 0 0 0 2px #C5C7CE);
   @include border-radius(100px);
   font-weight: normal;
-  padding-left:$padding-base-horizontal*2;
-  padding-right:$padding-base-horizontal*2;
+  padding-left:$grid-gutter-width;
+  padding-right:$grid-gutter-width;
 }
 
 .help-block{

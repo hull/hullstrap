@@ -4,17 +4,16 @@
   left: 200px;
   right: 0;
   top: 0;
-  border-bottom: 1px solid $light-filet;
+  @include box-shadow(inset 0 -1px 0 $light-filet);
   z-index: 400;
 }
 
 .topbar-breadcrumb {
-  height: $topbar-height - ($space-small * 2);
   padding: 0;
   margin: 0;
   background: none;
-  font-size: $font-size-h1;
+  @include adjust-font-size-to($h4_font_size, $h4_line_height);
+  @include rhythm(0,.25,.25,0, $h4_font_size);
   font-weight: normal;
-  line-height: $topbar-height - ($space-small * 2)
 }
 

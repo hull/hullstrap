@@ -1,33 +1,25 @@
-.p-0{
-  @include padding-leader(0);
-  @include padding-trailer(0);
-}
-.pt-0{@include padding-leader(0); }
-.pb-0{@include padding-trailer(0); }
-.pt-05{@include padding-leader(.5); }
-.pb-05{@include padding-trailer(.5); }
-.pt-1{@include padding-leader(1); }
-.pb-1{@include padding-trailer(1); }
-.pt-2{@include padding-leader(2); }
-.pb-2{@include padding-trailer(2); }
-
-
 .m-0{
   @include trailer(0);
   @include leader(0);
 }
-.mt-0{@include leader(0); }
-.mb-0{@include trailer(0); }
+.p-0{
+  @include padding-leader(0);
+  @include padding-trailer(0);
+}
+
+@for $i from 0 through 4 {
+  .pt-#{$i} {@include padding-leader($i);}
+  .pb-#{$i} {@include padding-trailer($i);}
+  .mt-#{$i} {@include leader($i);}
+  .mb-#{$i} {@include trailer($i);}
+  .pl-#{$i}{padding-left: ($grid-gutter-width*$i)/2;}
+  .pr-#{$i}{padding-left: ($grid-gutter-width*$i)/2;}
+}
+
 .mt-05{@include leader(.5); }
 .mb-05{@include trailer(.5); }
-.mt-1{@include leader(1); }
-.mb-1{@include trailer(1); }
-.mt-2{@include leader(2); }
-.mb-2{@include trailer(2); }
-.mt-3{@include leader(3); }
-.mb-3{@include trailer(3); }
-.mt-4{@include leader(4); }
-.mb-4{@include trailer(4); }
+.pt-05{@include padding-leader(.5); }
+.pb-05{@include padding-trailer(.5); }
 
 .block-center{
   margin-left:auto;
@@ -42,8 +34,11 @@
   margin-left: 0;
   margin-right:0; 
 }
-
 .ps-1{
-  padding-left: $padding-base-horizontal;
-  padding-right: $padding-base-horizontal;
+  padding-left: $grid-gutter-width/2;
+  padding-right: $grid-gutter-width/2;
+}
+
+.splitter{
+  // @include box-shadow(inset 0 -1px 0 $light-filet);
 }
