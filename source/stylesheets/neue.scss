@@ -20,6 +20,8 @@ $space-small: 10px;
 $space-medium: $space-small * 2;
 $space-large: $space-small * 3;
 
+@import "compass";
+
 @import "components/dashboard/sidebar";
 @import "components/dashboard/topbar";
 @import "components/dashboard/user_overview";
