@@ -90,6 +90,7 @@ end
     s3_sync.region                = ENV['AWS_REGION']     # The AWS region for your bucket.
     s3_sync.aws_access_key_id     = ENV['AWS_KEY']
     s3_sync.aws_secret_access_key = ENV['AWS_SECRET']
+    s3_sync.acl                   = 'public-read'
     s3_sync.delete                = false # We delete stray files by default.
     s3_sync.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
     s3_sync.prefer_gzip           = true
