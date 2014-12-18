@@ -7,20 +7,17 @@ $border-radius-base: 5px;
 $border-radius-large: 5px;
 $border-radius-small: 5px;
 
+@import "compass";
 @import "styles";
 
 $font-size-h1: 18px;
-
 $topbar-height: 50px;
-
 $sidebar-width: 200px;
 $sidebar-color: #fff;
-
 $space-small: 10px;
 $space-medium: $space-small * 2;
 $space-large: $space-small * 3;
 
-@import "compass";
 
 @import "components/dashboard/sidebar";
 @import "components/dashboard/topbar";
