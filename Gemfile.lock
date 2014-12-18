@@ -27,7 +27,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
-    colorize (0.7.5)
+    colorize (0.7.4)
     compass (1.0.1)
       chunky_png (~> 1.2)
       compass-core (~> 1.0.1)
@@ -161,7 +161,7 @@ GEM
     json (1.8.1)
     jwt (1.2.0)
     kramdown (1.5.0)
-    listen (2.8.3)
+    listen (2.8.4)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -325,6 +325,7 @@ DEPENDENCIES
   bootstrap-sass
   builder
   ceaser-easing
+  colorize (= 0.7.4)
   compass
   execjs
   fontcustom

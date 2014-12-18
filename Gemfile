@@ -50,6 +50,7 @@ source 'http://rubygems.org'
 # Middleman
 ##################
   gem 'middleman'
+  gem 'colorize', '0.7.4'
   gem 'middleman-sprockets'
   gem 'middleman-smusher'
   gem 'middleman-minify-html'
