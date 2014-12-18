@@ -78,10 +78,7 @@ $font-metrics:
       }
     }
     &.text-accented{
-      color: $accent_text_header;
-      small{
-        color: lighten($accent_text_header, 10%);
-      }
+      @extend %text-accented;
     }
   }
 }

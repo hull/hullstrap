@@ -1,0 +1,10 @@
+.date-navigation{
+  input.form-control{
+    @extend .h4;
+    @extend .text-center;
+    color: $accent_text_header;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

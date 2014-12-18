@@ -29,14 +29,13 @@ source 'http://rubygems.org'
   gem 'sanitize'
   gem 'handlebars_assets'
 
-  gem 'sass', '~> 3.2.13'
-  gem 'compass', '~> 0.12.2'
-  gem 'bootstrap-sass', '3.2.0.2'
+  gem 'sass'
+  gem 'compass'
+  gem 'bootstrap-sass'
   gem 'toolkit'
   gem 'sass-getunicode'
   gem 'animation' # css animation plugin
   gem 'ceaser-easing' #Penner Easing
-
 
 ##################
 # JS

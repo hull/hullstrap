@@ -1,205 +1,157 @@
 @import 'ckeditor/editor';
 @import 'ckeditor/dialog';
-
+.cke_button_icon{
+    @extend .icon !optional;
+}
 .cke_button__about_icon {
-    @extend .icon;
-    @extend .icon-about;
+    @extend .icon-about !optional;
 }
 .cke_button__bgcolor_icon {
-    @extend .icon;
-    @extend .icon-bgcolor;
+    @extend .icon-bgcolor !optional;
 }
 .cke_button__bidiltr_icon {
-    @extend .icon;
-    @extend .icon-bidiltr;
+    @extend .icon-bidiltr !optional;
 }
 .cke_button__bidirtl_icon {
-    @extend .icon;
-    @extend .icon-bidirtl;
+    @extend .icon-bidirtl !optional;
 }
 .cke_button__button_icon {
-    @extend .icon;
-    @extend .icon-button;
+    @extend .icon-button !optional;
 }
 .cke_button__checkbox_icon {
-    @extend .icon;
-    @extend .icon-checkbox;
+    @extend .icon-checkbox !optional;
 }
 .cke_button__creatediv_icon {
-    @extend .icon;
-    @extend .icon-creatediv;
+    @extend .icon-creatediv !optional;
 }
 .cke_button__find_icon {
-    @extend .icon;
-    @extend .icon-find;
+    @extend .icon-find !optional;
 }
 .cke_button__flash_icon {
-    @extend .icon;
-    @extend .icon-flash;
+    @extend .icon-flash !optional;
 }
 .cke_button__form_icon {
-    @extend .icon;
-    @extend .icon-form;
+    @extend .icon-form !optional;
 }
 .cke_button__horizontalrule_icon {
-    @extend .icon;
-    @extend .icon-horizontalrule;
+    @extend .icon-horizontalrule !optional;
 }
 .cke_button__iframe_icon {
-    @extend .icon;
-    @extend .icon-iframe;
+    @extend .icon-iframe !optional;
 }
 .cke_button__image_icon {
-    @extend .icon;
-    @extend .icon-image;
+    @extend .icon-image !optional;
 }
 .cke_button__imagebutton_icon {
-    @extend .icon;
-    @extend .icon-imagebutton;
+    @extend .icon-imagebutton !optional;
 }
 .cke_button__justifyblock_icon {
-    @extend .icon;
-    @extend .icon-justifyblock;
+    @extend .icon-justifyblock !optional;
 }
 .cke_button__justifycenter_icon {
-    @extend .icon;
-    @extend .icon-justifycenter;
+    @extend .icon-justifycenter !optional;
 }
 .cke_button__justifyleft_icon {
-    @extend .icon;
-    @extend .icon-justifyleft;
+    @extend .icon-justifyleft !optional;
 }
 .cke_button__justifyright_icon {
-    @extend .icon;
-    @extend .icon-justifyright;
+    @extend .icon-justifyright !optional;
 }
 .cke_button__link_icon {
-    @extend .icon;
-    @extend .icon-link;
+    @extend .icon-link !optional;
 }
 .cke_button__maximize_icon {
-    @extend .icon;
-    @extend .icon-maximize;
+    @extend .icon-maximize !optional;
 }
 .cke_button__print_icon {
-    @extend .icon;
-    @extend .icon-print;
+    @extend .icon-print !optional;
 }
 .cke_button__radio_icon {
-    @extend .icon;
-    @extend .icon-radio;
+    @extend .icon-radio !optional;
 }
 .cke_button__removeformat_icon {
-    @extend .icon;
-    @extend .icon-removeformat;
+    @extend .icon-removeformat !optional;
 }
 .cke_button__replace_icon {
-    @extend .icon;
-    @extend .icon-replace;
+    @extend .icon-replace !optional;
 }
 .cke_button__save_icon {
-    @extend .icon;
-    @extend .icon-save;
+    @extend .icon-save !optional;
 }
 .cke_button__scayt_icon {
-    @extend .icon;
-    @extend .icon-scayt;
+    @extend .icon-scayt !optional;
 }
 .cke_button__selectall_icon {
-    @extend .icon;
-    @extend .icon-selectall;
+    @extend .icon-selectall !optional;
 }
 .cke_button__smiley_icon {
-    @extend .icon;
-    @extend .icon-smiley;
+    @extend .icon-smiley !optional;
 }
 .cke_button__specialchar_icon {
-    @extend .icon;
-    @extend .icon-specialchar;
+    @extend .icon-specialchar !optional;
 }
 .cke_button__spellchecker_icon {
-    @extend .icon;
-    @extend .icon-spellchecker;
+    @extend .icon-spellchecker !optional;
 }
 .cke_button__strike_icon {
-    @extend .icon;
-    @extend .icon-strike;
+    @extend .icon-strike !optional;
 }
 .cke_button__subscript_icon {
-    @extend .icon;
-    @extend .icon-subscript;
+    @extend .icon-subscript !optional;
 }
 .cke_button__superscript_icon {
-    @extend .icon;
-    @extend .icon-superscript;
+    @extend .icon-superscript !optional;
 }
 .cke_button__table_icon {
-    @extend .icon;
-    @extend .icon-table;
+    @extend .icon-table !optional;
 }
 .cke_button__textcolor_icon {
-    @extend .icon;
-    @extend .icon-textcolor;
+    @extend .icon-textcolor !optional;
 }
 .cke_button__underline_icon {
-    @extend .icon;
-    @extend .icon-underline;
+    @extend .icon-underline !optional;
 }
 .cke_button__unlink_icon {
-    @extend .icon;
-    @extend .icon-unlink;
+    @extend .icon-unlink !optional;
 }
 .cke_button__about_icon {
-    @extend .icon;
-    @extend .icon-about;
+    @extend .icon-about !optional;
 }
 .cke_button__bold_icon {
-    @extend .icon;
-    @extend .icon-bold;
+    @extend .icon-bold !optional;
 }
 .cke_button__italic_icon {
-    @extend .icon;
-    @extend .icon-italic;
+    @extend .icon-italic !optional;
 }
 .cke_button__strike_icon {
-    @extend .icon;
-    @extend .icon-strike;
+    @extend .icon-strike !optional;
 }
 .cke_button__subscript_icon {
-    @extend .icon;
-    @extend .icon-subscript;
+    @extend .icon-subscript !optional;
 }
 .cke_button__superscript_icon {
-    @extend .icon;
-    @extend .icon-superscript;
+    @extend .icon-superscript !optional;
 }
 .cke_button__underline_icon {
-    @extend .icon;
-    @extend .icon-underline;
+    @extend .icon-underline !optional;
 }
 .cke_button__link_icon {
-    @extend .icon;
-    @extend .icon-link;
+    @extend .icon-link !optional;
 }
 .cke_button__unlink_icon {
-    @extend .icon;
-    @extend .icon-unlink;
+    @extend .icon-unlink !optional;
 }
 .cke_button__blockquote_icon {
-    @extend .icon;
-    @extend .icon-blockquote;
+    @extend .icon-blockquote !optional;
 }
 .cke_button__pbckcode_icon {
-    @extend .icon;
-    @extend .icon-pbckcode;
+    @extend .icon-pbckcode !optional;
 }
 .cke_button__autoformat_icon {
-    @extend .icon;
-    @extend .icon-javascript;
+    @extend .icon-javascript !optional;
 }
 .cke_button__searchcode_icon {
-    @extend .icon;
-    @extend .icon-searchcode;
+    @extend .icon-searchcode !optional;
 }
 
 
@@ -208,63 +160,48 @@
 
 // CodeMirror View
 .cke_button__commentselectedrange_icon {
-    @extend .icon;
-    @extend .icon-comment;
+    @extend .icon-comment !optional;
 }
 .cke_button__uncommentselectedrange_icon {
-    @extend .icon;
-    @extend .icon-uncomment;
+    @extend .icon-uncomment !optional;
 }
 .cke_button__autocomplete_icon {
-    @extend .icon;
-    @extend .icon-autocomplete;
+    @extend .icon-autocomplete !optional;
 }
 
 .cke_button__codesnippet_icon {
-    @extend .icon;
-    @extend .icon-codesnippet;
+    @extend .icon-codesnippet !optional;
 }
 .cke_button__maximize_icon {
-    @extend .icon;
-    @extend .icon-maximize;
+    @extend .icon-maximize !optional;
 }
 .cke_button__table_icon {
-    @extend .icon;
-    @extend .icon-table;
+    @extend .icon-table !optional;
 }
 .cke_button__templates_icon {
-    @extend .icon;
-    @extend .icon-templates;
+    @extend .icon-templates !optional;
 }
 .cke_button__source_icon{
-    @extend .icon;
-    @extend .icon-source;
+    @extend .icon-source !optional;
 }
 .cke_button__autoformat_icon {
-    @extend .icon;
-    @extend .icon-javascript;
+    @extend .icon-javascript !optional;
 }
 .cke_button__autocomplete_icon {
-    @extend .icon;
-    @extend .icon-wand;
+    @extend .icon-wand !optional;
 }
 .cke_button__bulletedlist_icon {
-    @extend .icon;
-    @extend .icon-ul;
+    @extend .icon-ul !optional;
 }
 .cke_button__numberedlist_icon {
-    @extend .icon;
-    @extend .icon-ol;
+    @extend .icon-ol !optional;
 }
 .cke_button__blockquote_icon {
-    @extend .icon;
-    @extend .icon-blockquote;
+    @extend .icon-blockquote !optional;
 }
 .cke_button__bold_icon {
-    @extend .icon;
-    @extend .icon-bold;
+    @extend .icon-bold !optional;
 }
 .cke_button__italic_icon {
-    @extend .icon;
-    @extend .icon-italic;
+    @extend .icon-italic !optional;
 }
