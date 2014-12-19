@@ -1,3 +1,13 @@
+.broadcast-sidebar{
+  position: relative;
+  .section-btn{
+    position: relative;
+    top: -30px;
+  }
+  .list-group-item{
+    @extend .mb-2;
+  }
+}
 .sidebar {
   display: block;
   width: $sidebar-width;
@@ -54,7 +64,9 @@
 }
 
 .sidebar-nav {
-  padding: $space-medium $space-small 0;
+  @include padding-leader(1);
+  padding-left: $space-small;
+  padding-right: $space-small;
 
   .nav-header {
     margin: 0 0 $space-small $space-small;
