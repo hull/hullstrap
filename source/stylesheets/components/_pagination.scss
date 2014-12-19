@@ -1,5 +1,5 @@
 .pager {
-  li > a{
+  li > a, li > span{
     @include rhythm(0,.5,.5,0);
     @include border-radius(100px);
   }
