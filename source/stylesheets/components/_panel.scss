@@ -16,6 +16,7 @@
   @include rhythm(0,.5,.5,0);
 }
 .panel-title{
+  @include adjust-font-size-to($h5_font_size);
   @extend .small-title;
 }
 .panel-footer{
@@ -55,4 +56,8 @@ $panels:
   >.panel-heading{
     @include box-shadow(inset 0 -1px 0px 0px transparentize($light-text,.75));
   }
+}
+
+.panel-default{
+  @include box-shadow(inset 0 0px 0 1px $light-filet);
 }

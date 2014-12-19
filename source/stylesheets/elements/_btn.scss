@@ -223,3 +223,9 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+
+.btn-inline{
+  .btn+.btn{
+    margin-left: $padding-base-horizontal;
+  }
+}

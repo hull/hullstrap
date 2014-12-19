@@ -3,6 +3,9 @@ body{
   text-rendering:optimizeLegibility;
   background: $off-white;
 }
+.white-bg{
+  background: $white;
+}
 
 a{
   user-select: none;

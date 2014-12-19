@@ -156,7 +156,7 @@ input[type=radio], input[type=checkbox]{
   .radio-inline,
   .checkbox-inline,
   .form-control-static{
-    @include rhythm(.5,0,0,0);
+    @include rhythm(.5,0,0,.5);
   }
 }
 
