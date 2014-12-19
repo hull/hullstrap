@@ -4,6 +4,7 @@
 
 input[type='search'],
 input[type='url'],
+input[type='number'],
 input[type='uri'],
 input[type='text'],
 input[type='email'],
@@ -47,6 +48,7 @@ input[type='color'].form-control{
 }
 
 .input-group-addon-invisible{
+  background-color: transparent;
   font-size: inherit;
   padding: 0 5px;
 }
@@ -185,9 +187,6 @@ input[type=radio], input[type=checkbox]{
   }
 }
 
-.input-group-addon{
-  background-color: transparent;
-}
 .input-lg,
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
@@ -266,6 +265,8 @@ input[type=radio], input[type=checkbox]{
 
 .form-fullbleed{
   input[type='email'],
+  input[type='url'],
+  input[type='text'],
   input[type='text'],
   input[type='number'],
   input[type='password']{
