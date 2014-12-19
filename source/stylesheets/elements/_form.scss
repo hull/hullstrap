@@ -46,6 +46,11 @@ input[type='color'].form-control{
   }
 }
 
+.input-group-addon-invisible{
+  font-size: inherit;
+  padding: 0 5px;
+}
+
 %form-control{
   @include transition(all .2s ease-out);
   padding-left:$padding-base-horizontal;
@@ -71,6 +76,11 @@ input[type='color'].form-control{
     @include rhythm(0,.25,.25,0);
     padding-left:$padding-base-horizontal;
     padding-right:$padding-base-horizontal;
+  }
+  &.form-control-invisible{
+    @include rhythm(0,0,0,0);
+    padding-left:0;
+    padding-right:0;
   }
 }
 
