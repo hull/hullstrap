@@ -82,18 +82,6 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
   overflow: hidden;
   max-width: none;
   @include box-sizing(content-box);
-  td, th{
-    vertical-align: middle;
-    // max-width: 200px;
-    text-overflow:ellipsis;
-    overflow: hidden;
-  }
-  td.type-string.name,
-  td.type-date,
-  td.type-number,
-  th{
-    white-space: nowrap;
-  }
   tr.datagrid-row{
     background-color: white;
   }
@@ -111,9 +99,20 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
     }
   }
   tbody{
+    td.type-string.name,
+    td.type-date,
+    td.type-number,
+    th{
+      white-space: nowrap;
+    }
     tr td{
-      background-color: white;
-      // @include transition(all .1s ceaser($easeOutQuint));
+      vertical-align: middle;
+      // text-overflow:ellipsis;
+      // overflow: hidden;
+      // background-color: white;
+    }
+    td.type-number{
+      text-align: right;
     }
     tr.selected td{
       background-color: white;

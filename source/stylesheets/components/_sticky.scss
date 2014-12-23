@@ -1,0 +1,86 @@
+
+.sticky-bar {
+  height: 50px;
+}
+.sticky-content{
+  right: 0;
+  left: 200px;
+  position: fixed;
+  z-index: 3;
+}
+.sticky-primary{
+  top: 0;
+  z-index: 1000;
+}
+.sticky-secondary{
+  top: 50px;
+  z-index: 2;
+}
+.sticky-tertiary{
+  top: 100px;
+  z-index: 1;
+}
+
+
+
+.sticky-bar{
+  .datagrid-table{
+    display: none;
+  }
+}
+.sticky-filter-bar>div{
+  background-color:$off-white;
+  @include transition(background-color .25s linear);
+};
+.sticky-filter-bar{
+  .sticky-filter-users{
+    display: none;
+  }
+}
+.sticky-filters{
+  .sticky-filter-users{
+    display: block;
+    padding-bottom: 5px;
+  }
+  @include box-shadow(inset 0 -1px 1px -1px transparentize($blue_darkest, .4));
+  .broadcast-sidebar &{left: 440px;}
+}
+
+.sticky-primary.sticky-filters{
+  background: white;
+}
+
+
+.sticky-table-header{
+  background: $off-white;
+  @include box-shadow(0 3px 6px -2px transparentize($blue_darkest, .8));
+  height: 37px;
+  overflow: hidden;
+  table.datagrid-table{
+    position: absolute;
+    display: block;
+    margin-left: $grid-gutter-width/2;
+    margin-bottom:0;
+  }
+  .broadcast-sidebar &{
+    left: 440px;
+  }
+}
+
+.sticky-ckeditor{
+  .cke_top{
+    left: 455px;
+    position: fixed;
+    top: 50px;
+    right: 15px;
+  }
+  .cke{
+    padding-top: 38px;
+  }
+  .selectors-select{
+    position: fixed;
+    right: 18px;
+    top: 54px;
+    z-index: 10;
+  }
+}

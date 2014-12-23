@@ -75,24 +75,23 @@ body, input, textarea, button {
   }
 }
 
-.sticky-bar {
-  height: 50px;
-  .sticky-content{
-    right: 0;
-    left: 200px;
-    .broadcast-sidebar &{
-      left: 440px;
+.sticky-wrap{
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  width: 100%;
+}
 
-    }
-    background: $off-white;
-    position: fixed;
-    z-index: 1;
-    box-shadow: inset 0 -1px 0 0 #EEE, 0 16px 25px -10px rgba(0, 0, 0, 0.15);
-  }
-  .sticky-secondary{
-    top: 50px;
-  }
-  .sticky-tertiary{
-    top: 100px;
-  }
+.datagrid-responsive{
+  overflow: scroll;
+  padding-right: 0;
+  width: 100%;
+}
+
+table.datagrid-table{
+  overflow: hidden;
+  max-width: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
