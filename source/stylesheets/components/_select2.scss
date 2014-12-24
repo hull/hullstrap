@@ -121,7 +121,7 @@ Version: @@ver@@ Timestamp: @@timestamp@@
           height: auto;
           width: auto;
           opacity: 0;
-          z-index: 9998;
+          z-index: 10010;
     /* styles required for IE to work */
     background-color: #fff;
     filter: alpha(opacity=0);
@@ -131,7 +131,7 @@ Version: @@ver@@ Timestamp: @@timestamp@@
     width: 100%;
     margin-top: -1px;
     position: absolute;
-    z-index: 9999;
+    z-index: 10011;
     top: 100%;
 
     background: #fff;
@@ -215,7 +215,7 @@ Version: @@ver@@ Timestamp: @@timestamp@@
     padding: 0;
 
     position: relative;
-    z-index: 10000;
+    z-index: 10013;
 
     white-space: nowrap;
     @extend .icon;

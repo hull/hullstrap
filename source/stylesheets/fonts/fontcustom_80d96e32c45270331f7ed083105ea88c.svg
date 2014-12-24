@@ -1,11 +1,11 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <!--
-2014-12-12: Created with FontForge (http://fontforge.org)
+2014-12-24: Created with FontForge (http://fontforge.org)
 -->
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20141022 at Fri Dec 12 16:06:02 2014
+Created by FontForge 20141022 at Wed Dec 24 10:18:03 2014
  By Romain Dardour
 Copyright (c) 2014, Romain Dardour
 </metadata>
@@ -22,7 +22,7 @@ Copyright (c) 2014, Romain Dardour
     bbox="-0.5 -84 574 473"
     underline-thickness="25.6"
     underline-position="-51.2"
-    unicode-range="U+F19A-F207"
+    unicode-range="U+F19A-F208"
   />
     <missing-glyph />
     <glyph glyph-name="uniF19A" unicode="&#xf19a;" horiz-adv-x="509" 
@@ -254,6 +254,8 @@ d="M512 351v0c-14 -21 -31 -40 -52 -55v-13c0 -139 -106 -299 -299 -299c-59 0 -115 
 c0 19 6 37 15 53c52 -64 129 -106 216 -110c-2 8 -3 16 -3 24c0 58 47 105 105 105c30 0 58 -13 77 -33c24 5 47 13 67 25c-8 -25 -24 -45 -46 -58c21 3 41 9 60 17z" />
     <glyph glyph-name="uniF1FF" unicode="&#xf1ff;" horiz-adv-x="520" 
 d="M80 94l-80 -157l160 78l344 336c22 22 22 57 0 79s-58 22 -80 0zM64 -0l39 77l341 333c11 11 29 11 40 0s11 -27 0 -38l-341 -333zM454 322l20 20l-60 59l-20 -21zM142 17l20 20l-60 59l-20 -21z" />
+    <glyph glyph-name="uniF208" unicode="&#xf208;" horiz-adv-x="506" 
+d="M351 175v34h-205v-34h205zM155 316l-26 23l-129 -148l129 -148l26 23l-110 125zM351 316l26 23l129 -148l-129 -148l-26 23l109 125z" />
     <glyph glyph-name="uniF1ED" unicode="&#xf1ed;" horiz-adv-x="505" 
 d="M272 49l-19 21l-88 -86c-27 -26 -70 -26 -97 0l-20 19c-27 26 -27 68 0 94l127 123c27 26 70 26 97 0l20 -19l19 20l-19 19c-38 37 -99 37 -137 0l-127 -123c-38 -37 -38 -97 0 -134l20 -19c38 -37 99 -37 137 0zM233 316l20 -20l88 85c27 26 70 26 97 0l19 -19
 c27 -26 27 -67 0 -93l-126 -124c-27 -26 -71 -26 -98 0l-19 -20c38 -37 98 -37 136 0l127 123c38 37 38 97 0 134l-19 19c-38 37 -99 37 -137 0z" />

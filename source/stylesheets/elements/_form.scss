@@ -383,3 +383,7 @@ input[type=radio], input[type=checkbox]{
     @extend .mt-1;
   }
 }
+
+.cke_dialog_contents .select2-container{
+  width: 100%;
+}

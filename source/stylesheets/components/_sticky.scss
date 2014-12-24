@@ -40,6 +40,7 @@
 .sticky-filters{
   .sticky-filter-users{
     display: block;
+    padding-top: 5px;
     padding-bottom: 5px;
   }
   @include box-shadow(inset 0 -1px 1px -1px transparentize($blue_darkest, .4));
