@@ -1,15 +1,19 @@
 {
   "checksum": {
-    "previous": "80d96e32c45270331f7ed083105ea88ce01161eeb6de38e1c008cd1319424525",
-    "current": "80d96e32c45270331f7ed083105ea88ce01161eeb6de38e1c008cd1319424525"
+    "previous": "a512ec83f4dde37e49bacf193585d5e72b4030cca61b4aff20c270b4d3cd7641",
+    "current": "a512ec83f4dde37e49bacf193585d5e72b4030cca61b4aff20c270b4d3cd7641"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_80d96e32c45270331f7ed083105ea88c.ttf",
-    "source/stylesheets/fonts/fontcustom_80d96e32c45270331f7ed083105ea88c.svg",
-    "source/stylesheets/fonts/fontcustom_80d96e32c45270331f7ed083105ea88c.woff",
-    "source/stylesheets/fonts/fontcustom_80d96e32c45270331f7ed083105ea88c.eot"
+    "source/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.ttf",
+    "source/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.svg",
+    "source/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.woff",
+    "source/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.eot"
   ],
   "glyphs": {
+    "Slice-3": {
+      "codepoint": 61961,
+      "source": "source/images/icons/Slice 3.svg"
+    },
     "achievement": {
       "codepoint": 61919,
       "source": "source/images/icons/achievement.svg"
@@ -73,6 +77,10 @@
     "checkbox": {
       "codepoint": 61850,
       "source": "source/images/icons/checkbox.svg"
+    },
+    "clear": {
+      "codepoint": 61969,
+      "source": "source/images/icons/clear.svg"
     },
     "click": {
       "codepoint": 61948,
@@ -214,6 +222,10 @@
       "codepoint": 61913,
       "source": "source/images/icons/image.svg"
     },
+    "indent": {
+      "codepoint": 61967,
+      "source": "source/images/icons/indent.svg"
+    },
     "instagram": {
       "codepoint": 61894,
       "source": "source/images/icons/instagram.svg"
@@ -225,6 +237,22 @@
     "javascript": {
       "codepoint": 61882,
       "source": "source/images/icons/javascript.svg"
+    },
+    "justifyblock": {
+      "codepoint": 61963,
+      "source": "source/images/icons/justifyblock.svg"
+    },
+    "justifycenter": {
+      "codepoint": 61964,
+      "source": "source/images/icons/justifycenter.svg"
+    },
+    "justifyleft": {
+      "codepoint": 61965,
+      "source": "source/images/icons/justifyleft.svg"
+    },
+    "justifyright": {
+      "codepoint": 61966,
+      "source": "source/images/icons/justifyright.svg"
     },
     "keen_io": {
       "codepoint": 61958,
@@ -241,6 +269,10 @@
     "libraries": {
       "codepoint": 61884,
       "source": "source/images/icons/libraries.svg"
+    },
+    "library": {
+      "codepoint": 61962,
+      "source": "source/images/icons/library.svg"
     },
     "like": {
       "codepoint": 61879,
@@ -285,6 +317,10 @@
     "ol": {
       "codepoint": 61935,
       "source": "source/images/icons/ol.svg"
+    },
+    "outdent": {
+      "codepoint": 61968,
+      "source": "source/images/icons/outdent.svg"
     },
     "pencil": {
       "codepoint": 61951,

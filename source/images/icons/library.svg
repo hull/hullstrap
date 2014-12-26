@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>library</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="libraries" sketch:type="MSLayerGroup" transform="translate(1.000000, 2.500000)" stroke="#000000">
+            <path d="M0,3.71428571 L13,3.71428571" id="Line" sketch:type="MSShapeGroup"></path>
+            <path d="M2.27724913,0.397959184 L4.17495673,3.7557398" id="Line" sketch:type="MSShapeGroup"></path>
+            <path d="M4.17495673,3.7557398 L6.32569202,0.397959184" id="Line" sketch:type="MSShapeGroup"></path>
+            <path d="M6.32569202,0.397959184 L8.47642732,3.7557398" id="Line" sketch:type="MSShapeGroup"></path>
+            <path d="M8.47642732,3.7557398 L10.6271626,0.397959184" id="Line" sketch:type="MSShapeGroup"></path>
+            <path d="M4.17495673,3.7557398 L6.45220588,11.0085459" id="Line" sketch:type="MSShapeGroup"></path>
+            <path d="M8.47642732,3.7557398 L6.45220588,11.0085459" id="Line" sketch:type="MSShapeGroup"></path>
+            <path d="M0.035565447,3.8128294 L2.15211903,0.263647959 L10.7643033,0.26364796 L12.9274428,3.8128294 L6.45220588,10.9561317 L0.035565447,3.8128294 L0.035565447,3.8128294 Z" id="Path-58" sketch:type="MSShapeGroup"></path>
+        </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-60.000000, 0.000000)"></g>
+    </g>
+</svg>

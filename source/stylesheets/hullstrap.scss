@@ -1,2 +1,17 @@
-@import "compass";
+@charset "UTF-8";
+/*------------------------------------*\
+    Default Variables
+\*------------------------------------*/
+@import "base/base";
 @import "styles";
+
+/*------------------------------------*\
+    Pages
+\*------------------------------------*/
+@import "layouts/offcanvas";
+@import "layouts/blog";
+@import "layouts/homepage";
+@import "layouts/features";
+@import "layouts/docs";
+@import "layouts/quick_start";
+

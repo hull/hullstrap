@@ -1,24 +1,20 @@
-$base-font-size: 14px !default;
-$base-line-height: 20px !default;
-$base-rhythm-unit: 20px !default;
-$typography_scale : 1.25 !default;
+@charset "UTF-8";
 
-$border-radius-base: 5px;
-$border-radius-large: 5px;
-$border-radius-small: 5px;
+/*------------------------------------*\
+    Default Variables
+\*------------------------------------*/
+@import "base/base";
+// Neue Size Overrides
+@import "base/neue";
 
-@import "compass";
+/*------------------------------------*\
+    Common styles
+\*------------------------------------*/
 @import "styles";
 
-// $font-size-h1: 18px;
-$topbar-height: 50px;
-$sidebar-width: 200px;
-$sidebar-color: #fff;
-$space-small: 10px;
-$space-medium: $space-small * 2;
-$space-large: $space-small * 3;
-
-
+/*------------------------------------*\
+    Flavor Styles
+\*------------------------------------*/
 @import "components/dashboard/sidebar";
 @import "components/dashboard/topbar";
 @import "components/dashboard/user_overview";

@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: url("/stylesheets/fonts/fontcustom_80d96e32c45270331f7ed083105ea88c.eot");
-  src: url("/stylesheets/fonts/fontcustom_80d96e32c45270331f7ed083105ea88c.eot?#iefix") format("embedded-opentype"),
-       url("/stylesheets/fonts/fontcustom_80d96e32c45270331f7ed083105ea88c.woff") format("woff"),
-       url("/stylesheets/fonts/fontcustom_80d96e32c45270331f7ed083105ea88c.ttf") format("truetype"),
-       url("/stylesheets/fonts/fontcustom_80d96e32c45270331f7ed083105ea88c.svg#fontcustom") format("svg");
+  src: url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.eot");
+  src: url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.eot?#iefix") format("embedded-opentype"),
+       url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.woff") format("woff"),
+       url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.ttf") format("truetype"),
+       url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,13 +16,14 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("/stylesheets/fonts/fontcustom_80d96e32c45270331f7ed083105ea88c.svg#fontcustom") format("svg");
+    src: url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.svg#fontcustom") format("svg");
   }
 }
 
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
+.icon-Slice-3:before,
 .icon-achievement:before,
 .icon-add_image:before,
 .icon-akismet:before,
@@ -39,6 +40,7 @@
 .icon-bubble:before,
 .icon-bubbles:before,
 .icon-checkbox:before,
+.icon-clear:before,
 .icon-click:before,
 .icon-clock:before,
 .icon-cloud:before,
@@ -74,13 +76,19 @@
 .icon-html5:before,
 .icon-hull:before,
 .icon-image:before,
+.icon-indent:before,
 .icon-instagram:before,
 .icon-italic:before,
 .icon-javascript:before,
+.icon-justifyblock:before,
+.icon-justifycenter:before,
+.icon-justifyleft:before,
+.icon-justifyright:before,
 .icon-keen_io:before,
 .icon-key:before,
 .icon-kissmetrics:before,
 .icon-libraries:before,
+.icon-library:before,
 .icon-like:before,
 .icon-liked:before,
 .icon-link:before,
@@ -92,6 +100,7 @@
 .icon-mixpanel:before,
 .icon-mobile:before,
 .icon-ol:before,
+.icon-outdent:before,
 .icon-pencil:before,
 .icon-play:before,
 .icon-plug_in:before,
@@ -145,6 +154,7 @@
   font-smoothing: antialiased;
 }
 
+.icon-Slice-3:before { content: "\f209"; }
 .icon-achievement:before { content: "\f1df"; }
 .icon-add_image:before { content: "\f1e6"; }
 .icon-akismet:before { content: "\f1be"; }
@@ -161,6 +171,7 @@
 .icon-bubble:before { content: "\f203"; }
 .icon-bubbles:before { content: "\f202"; }
 .icon-checkbox:before { content: "\f19a"; }
+.icon-clear:before { content: "\f211"; }
 .icon-click:before { content: "\f1fc"; }
 .icon-clock:before { content: "\f1dc"; }
 .icon-cloud:before { content: "\f19b"; }
@@ -196,13 +207,19 @@
 .icon-html5:before { content: "\f1b9"; }
 .icon-hull:before { content: "\f1c5"; }
 .icon-image:before { content: "\f1d9"; }
+.icon-indent:before { content: "\f20f"; }
 .icon-instagram:before { content: "\f1c6"; }
 .icon-italic:before { content: "\f1ec"; }
 .icon-javascript:before { content: "\f1ba"; }
+.icon-justifyblock:before { content: "\f20b"; }
+.icon-justifycenter:before { content: "\f20c"; }
+.icon-justifyleft:before { content: "\f20d"; }
+.icon-justifyright:before { content: "\f20e"; }
 .icon-keen_io:before { content: "\f206"; }
 .icon-key:before { content: "\f1bb"; }
 .icon-kissmetrics:before { content: "\f1c8"; }
 .icon-libraries:before { content: "\f1bc"; }
+.icon-library:before { content: "\f20a"; }
 .icon-like:before { content: "\f1b7"; }
 .icon-liked:before { content: "\f1e1"; }
 .icon-link:before { content: "\f1ed"; }
@@ -214,6 +231,7 @@
 .icon-mixpanel:before { content: "\f1cb"; }
 .icon-mobile:before { content: "\f1e3"; }
 .icon-ol:before { content: "\f1ef"; }
+.icon-outdent:before { content: "\f210"; }
 .icon-pencil:before { content: "\f1ff"; }
 .icon-play:before { content: "\f201"; }
 .icon-plug_in:before { content: "\f1d0"; }
@@ -254,6 +272,7 @@
 .icon-warning:before { content: "\f1aa"; }
 .icon-webhook:before { content: "\f1ab"; }
 
+$font-fontcustom-Slice-3: "\f209";
 $font-fontcustom-achievement: "\f1df";
 $font-fontcustom-add_image: "\f1e6";
 $font-fontcustom-akismet: "\f1be";
@@ -270,6 +289,7 @@ $font-fontcustom-bold: "\f1e8";
 $font-fontcustom-bubble: "\f203";
 $font-fontcustom-bubbles: "\f202";
 $font-fontcustom-checkbox: "\f19a";
+$font-fontcustom-clear: "\f211";
 $font-fontcustom-click: "\f1fc";
 $font-fontcustom-clock: "\f1dc";
 $font-fontcustom-cloud: "\f19b";
@@ -305,13 +325,19 @@ $font-fontcustom-hide: "\f1a5";
 $font-fontcustom-html5: "\f1b9";
 $font-fontcustom-hull: "\f1c5";
 $font-fontcustom-image: "\f1d9";
+$font-fontcustom-indent: "\f20f";
 $font-fontcustom-instagram: "\f1c6";
 $font-fontcustom-italic: "\f1ec";
 $font-fontcustom-javascript: "\f1ba";
+$font-fontcustom-justifyblock: "\f20b";
+$font-fontcustom-justifycenter: "\f20c";
+$font-fontcustom-justifyleft: "\f20d";
+$font-fontcustom-justifyright: "\f20e";
 $font-fontcustom-keen_io: "\f206";
 $font-fontcustom-key: "\f1bb";
 $font-fontcustom-kissmetrics: "\f1c8";
 $font-fontcustom-libraries: "\f1bc";
+$font-fontcustom-library: "\f20a";
 $font-fontcustom-like: "\f1b7";
 $font-fontcustom-liked: "\f1e1";
 $font-fontcustom-link: "\f1ed";
@@ -323,6 +349,7 @@ $font-fontcustom-minus: "\f1b8";
 $font-fontcustom-mixpanel: "\f1cb";
 $font-fontcustom-mobile: "\f1e3";
 $font-fontcustom-ol: "\f1ef";
+$font-fontcustom-outdent: "\f210";
 $font-fontcustom-pencil: "\f1ff";
 $font-fontcustom-play: "\f201";
 $font-fontcustom-plug_in: "\f1d0";

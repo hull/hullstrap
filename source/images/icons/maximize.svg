@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>maximize</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-400.000000, -462.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <g id="maximize" transform="translate(400.000000, 462.000000)" sketch:type="MSShapeGroup">
-                <g id="Group" transform="translate(1.000000, 1.000000)">
-                    <path d="M22.2165609,11.8687348 L34.0655609,0.0655608696" id="Stroke-3703"></path>
-                    <path d="M0,33.9999261 L11.849,22.1967522" id="Stroke-3704"></path>
-                    <path d="M7.39130435,34.0141913 L0,34.0001478 L0.0140434783,26.6088435" id="Stroke-3705"></path>
-                    <path d="M34.0511478,7.4567913 L34.0651913,0.0654869565 L26.673887,0.0514434783" id="Stroke-3706"></path>
-                    <path d="M22.1966783,22.2165609 L33.9998522,34.0655609" id="Stroke-3707"></path>
-                    <path d="M0.0654869565,0 L11.8686609,11.849" id="Stroke-3708"></path>
-                    <path d="M0.0512217391,7.39130435 L0.0652652174,0 L7.45656957,0.0140434783" id="Stroke-3709"></path>
-                    <path d="M26.6086217,34.0511478 L33.9999261,34.0651913 L34.0139696,26.673887" id="Stroke-3710"></path>
-                </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="maximize" sketch:type="MSLayerGroup" transform="translate(0.000000, -1.000000)" stroke="#000000">
+            <g id="Stroke-3706-+-Stroke-3708-4" transform="translate(10.000000, 0.000000)" sketch:type="MSShapeGroup">
+                <path d="M4.49429999,4.5 L4.5,1.50568919 L1.5,1.5" id="Stroke-3706"></path>
+                <path d="M0.0280233336,1.91296303 L4.50000009,6.32592595" id="Stroke-3708-4" transform="translate(2.528023, 3.912963) scale(1, -1) translate(-2.528023, -3.912963) "></path>
+            </g>
+            <g id="Stroke-3705-+-Stroke-3708-3" transform="translate(0.000000, 9.000000)" sketch:type="MSShapeGroup">
+                <path d="M3.6000061,6.5 L0.600006104,6.4943108 L0.605706104,3.5" id="Stroke-3705"></path>
+                <path d="M1.02802333,1.91296303 L5.50000009,6.32592595" id="Stroke-3708-3" transform="translate(3.528023, 3.912963) scale(1, -1) translate(-3.528023, -3.912963) "></path>
             </g>
         </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-160.000000, 0.000000)"></g>
     </g>
 </svg>

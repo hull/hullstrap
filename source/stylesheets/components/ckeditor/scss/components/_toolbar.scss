@@ -48,11 +48,48 @@ Special outer level classes used in this file:
     .cke_hc: Available when the editor is rendered on "High Contrast".
     .cke_rtl: Available when the editor UI is on RTL.
 */
-
+a.cke_button__source + a.cke_button_disabled,
+a.cke_button__source + a.cke_button_disabled + a.cke_button_disabled,
+a.cke_button__source + a.cke_button_disabled + a.cke_button_disabled + a.cke_button_disabled,
+a.cke_button__source + a.cke_button_disabled + a.cke_button_disabled + a.cke_button_disabled + a.cke_button_disabled {
+    display: none;
+}
 /* The box that holds each toolbar. */
 .cke_toolbar {
     float: left;
+    position: relative;
+    padding: 0 4px;
+    margin: 0 5px 0 0;
+
+    padding: 0;
+    margin: 2px 1px;
+
+    height: 29px;
+    border-radius: 3px;
+    &:hover{
+        // @include box-shadow(0px 0px 0 1px rgba(0, 0, 0, 0.1));
+        @include box-shadow(0 0 0px 2px #eaeef3);
+    }
 }
+
+// .cke_top>.cke_voice_label{
+//   display: none;
+// }
+// .cke_toolbar>.cke_voice_label {
+//   position: absolute;
+//   top: -5px;
+//   font-size: 9px;
+//   clear: both;
+//   left: 0;
+//   background: white;
+//   padding: 0 5px;
+//   display: inline-block;
+//   text-transform: uppercase;
+//   color: #ccc;
+//   font-weight: bold;
+//   margin: 0 50%;
+//   -webkit-transform: translateX(-50%);
+// }
 
 .cke_rtl .cke_toolbar {
     float: right;
@@ -61,9 +98,6 @@ Special outer level classes used in this file:
 /* The box that holds buttons. */
 .cke_toolgroup {
     float: left;
-    margin: 0px 10px 0 0;
-    padding: 0;
-    border-radius: $border-radius;
 }
 
 .cke_hc .cke_toolgroup {
@@ -89,15 +123,14 @@ Special outer level classes used in this file:
 /* A toolbar button . */
 a.cke_button {
     display: inline-block;
-    padding: 2px 6px;
+    padding: 0 3px;
     outline: none;
-
     cursor: pointer;
-    float: left;
     border: 0;
-    /* border-radius: 100px; */
-    font-size: 18px;
-    height: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 2px;
+    height: 29px;
 }
 .cke_button_icon{
     text-align: center;
@@ -110,15 +143,8 @@ a.cke_button {
     height: 34px;
     float: left;
     display: inline-block;
-
-}
-.cke_combo{
-    margin-top: 3px;
 }
 
-.cke_combo_text{
-    font-size: 16px;
-}
 
 .cke_rtl .cke_button {
     float: right;
@@ -183,18 +209,11 @@ a.cke_button_off, a.cke_button_disabled {
     }
 }
 
-/* The icon which is a visual representation of the button. */
-.cke_button_icon {
-    text-align: center;
-    position: relative;left: 2px;
-    cursor: inherit;
-    background-repeat: no-repeat;
-    margin-top: 1px;
-    width: 16px;
-    height: 16px;
-    float: left;
-    display: inline-block;
+a.cke_button_disabled{
+    display: none;
 }
+
+/* The icon which is a visual representation of the button. */
 
 .cke_rtl .cke_button_icon {
     float: right;
@@ -206,16 +225,23 @@ a.cke_button_off, a.cke_button_disabled {
 
 /* The label of the button that stores the name of the feature. By default,
    labels are invisible. They can be revealed on demand though. */
-.cke_button_label {
+.cke_button_label, .cke_combo_text {
     display: none;
-    padding-left: 3px;
-    margin-top: 1px;
-    line-height: 18px;
-    vertical-align: middle;
     float: left;
     cursor: default;
-    color: $gray-dark;
+    color: $gray-light;
+
+    line-height: 28px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 5px;
+
 }
+.cke_combo_text{
+    display: block;
+}
+
 
 .cke_rtl .cke_button_label {
     padding-right: 3px;
@@ -242,6 +268,7 @@ a.cke_button_off, a.cke_button_disabled {
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
     border-top: 3px solid #474747;
+    float: left;
 }
 
 .cke_rtl .cke_button_arrow {
@@ -259,11 +286,7 @@ a.cke_button_off, a.cke_button_disabled {
 /* The vertical separator which is used within a single toolbar to split
    buttons into sub-groups. */
 .cke_toolbar_separator {
-    float: left;
-    background-color: $gray-lighter;
-    margin: 4px 2px 0;
-    height: 16px;
-    width: 1px;
+    display: none;
 }
 
 .cke_rtl .cke_toolbar_separator {

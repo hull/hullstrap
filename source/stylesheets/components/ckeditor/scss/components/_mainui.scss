@@ -90,15 +90,17 @@ Special outer level classes used in this file:
     overflow: hidden;
 }
 
-.cke_top, .cke_bottom {
+.cke_top .cke_toolbox, .cke_bottom {
     padding: 3px;
 }
 
-.cke_top {
+.cke_top .cke_toolbox{
     /* Allow breaking toolbars when in a narrow editor. (#9947) */
     white-space: normal;
+    display: block;
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
     background: white;
+    height: 35px;
 }
 
 .cke_contents {

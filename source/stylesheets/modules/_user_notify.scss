@@ -6,7 +6,7 @@
   .titlebar-row{
     @include border-radius(5px 5px 0 0);
     background: #FAFAFA;
-    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .08);
+    @include box-shadow(inset 0 -1px 0 #EAEEF3);
     @include rhythm(0,.5,.25,0);
   }
   .traffic-light{
@@ -51,7 +51,7 @@
   }
 
 
-  .cke_top{
+  .cke_top .cke_toolbox{
     padding-right: 70px;
     @include rhythm(0,.3,.3,0);
   }
@@ -69,7 +69,7 @@
     padding-left: $padding-base-horizontal;
     padding-right: $padding-base-horizontal;
     @include rhythm(0,0,0,0);
-    @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.1));
+    @include box-shadow(inset 0 -1px 0 #EAEEF3);
     > small{display: block;}
     display: table;
     table-layout: fixed;

@@ -28,7 +28,7 @@ The visual representation of a rich combo widget looks as follows:
 .cke_combo {
     display: inline-block;
     float: left;
-    height: 25px;
+    cursor: pointer;
 }
 
 .cke_rtl .cke_combo {
@@ -57,11 +57,7 @@ The visual representation of a rich combo widget looks as follows:
 
 /* The container for combo text and arrow. */
 .cke_combo_button {
-    display: inline-block;
-    float: left;
-    margin: 0px 6px 1px 0;
-    border-radius: 100px;
-    background: #fff;
+    margin: 2px 0 0 0;
 }
 
 /* Different states of the container. */
@@ -112,9 +108,8 @@ The visual representation of a rich combo widget looks as follows:
     text-overflow: ellipsis;
     overflow: hidden;
     float: left;
-    cursor: default;
     color: #474747;
-    width: 60px;
+    max-width: 60px;
 }
 
 .cke_rtl .cke_combo_text {
@@ -168,6 +163,7 @@ The visual representation of a rich combo widget looks as follows:
 
 /* Disabled combo button styles. */
 .cke_combo_disabled {
+    display: none;
     .cke_combo_inlinelabel, .cke_combo_open {
         opacity: 0.3;
     }

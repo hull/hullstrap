@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>source</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-40.000000, -422.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <g id="source" transform="translate(40.000000, 422.000000)" sketch:type="MSShapeGroup">
-                <g id="Stroke-6883-+-Stroke-6884" transform="translate(1.000000, 6.000000)">
-                    <path d="M12.5652174,0 L0,12.5652174 L12.5652174,25.1304348" id="Stroke-6883"></path>
-                    <path d="M21.4347826,0 L34,12.5652174 L21.4347826,25.1304348" id="Stroke-6884"></path>
-                </g>
-            </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="source" sketch:type="MSLayerGroup" transform="translate(1.000000, 3.000000)" stroke="#000000">
+            <path d="M4.96177641,0.22 L0.212121212,5.14607097 L4.96177641,10.0721419" id="Stroke-6883" sketch:type="MSShapeGroup"></path>
+            <path d="M8.12821321,0.22 L12.8778684,5.14607097 L8.12821321,10.0721419" id="Stroke-6883-2" sketch:type="MSShapeGroup"></path>
         </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-240.000000, 0.000000)"></g>
     </g>
 </svg>

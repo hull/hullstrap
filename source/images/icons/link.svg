@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>link</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-280.000000, -382.000000)" stroke-linecap="round" stroke="#0093E6" stroke-width="2">
-            <g id="link" transform="translate(280.000000, 382.000000)" sketch:type="MSShapeGroup">
-                <g id="Stroke-88-+-Stroke-89" transform="translate(1.000000, 2.000000)">
-                    <path d="M17.4576421,25.3215949 L11.2923467,31.3146902 C9.02250276,33.5224248 5.34211982,33.5224248 3.07227585,31.3146902 L1.70145673,29.9838331 C-0.567418461,27.7760985 -0.567418461,24.1988903 1.70145673,21.9920976 L10.6074216,13.3335206 C12.8782343,11.1267279 16.5586172,11.1267279 18.8284612,13.3335206 L20.1973428,14.6662615" id="Stroke-88"></path>
-                    <path d="M16.0876948,8.00472367 L22.253959,2.0116284 C24.5228342,-0.196106216 28.2032171,-0.196106216 30.4740298,2.0116284 L31.8438802,3.34342735 C34.1137242,5.55022009 34.1137242,9.12837017 31.8438802,11.3351629 L22.9379154,19.992798 C20.6690402,22.2005326 16.9876885,22.2005326 14.7188133,19.992798" id="Stroke-89"></path>
-                </g>
-            </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="link" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.500000)" stroke="#000000">
+            <path d="M7.23924039,10.2666644 L4.85925503,12.5801755 C3.98302851,13.432426 2.56229245,13.432426 1.68606592,12.5801755 L1.15688942,12.0664255 C0.281036861,11.214175 0.281036861,9.83326744 1.15688942,8.98138055 L4.5948538,5.63891517 C5.47145429,4.78702828 6.89219033,4.78702828 7.76841688,5.63891517 L8.29684544,6.15339235" id="Stroke-88" sketch:type="MSShapeGroup"></path>
+            <path d="M6.08532336,3.72057348 L8.4656827,1.40706243 C9.34153526,0.554811939 10.7622713,0.554811939 11.6388718,1.40706243 L12.1676743,1.921176 C13.0439009,2.7730629 13.0439009,4.15433407 12.1676743,5.00622097 L8.72970999,8.34832276 C7.85385743,9.20057325 6.4327474,9.20057325 5.55689484,8.34832276" id="Stroke-89" sketch:type="MSShapeGroup"></path>
         </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-140.000000, 0.000000)"></g>
     </g>
 </svg>

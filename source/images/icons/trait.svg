@@ -5,11 +5,11 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-340.000000, 0.000000)"></g>
-        <g id="trait" sketch:type="MSLayerGroup" stroke="#000000">
-            <path d="M10.5,7.5 L4.5,7.5" id="Shape-3" sketch:type="MSShapeGroup"></path>
-            <path d="M4.38171518,3.52660948 L0.891876279,7.52660948 L4.38171518,11.5266095" id="Stroke-6883-4" sketch:type="MSShapeGroup"></path>
-            <path d="M14.3817152,3.52660948 L10.8918763,7.52660948 L14.3817152,11.5266095" id="Stroke-6883-5" opacity="0.9" sketch:type="MSShapeGroup" transform="translate(12.636796, 7.526609) scale(-1, 1) translate(-12.636796, -7.526609) "></path>
+        <g id="trait" sketch:type="MSLayerGroup" transform="translate(0.000000, 3.000000)" stroke="#000000">
+            <path d="M10.5,4.5 L4.5,4.5" id="Shape-3" sketch:type="MSShapeGroup"></path>
+            <path d="M4.38171518,0.526609477 L0.891876279,4.52660948 L4.38171518,8.52660948" id="Stroke-6883-4" sketch:type="MSShapeGroup"></path>
+            <path d="M14.3817152,0.526609477 L10.8918763,4.52660948 L14.3817152,8.52660948" id="Stroke-6883-5" opacity="0.9" sketch:type="MSShapeGroup" transform="translate(12.636796, 4.526609) scale(-1, 1) translate(-12.636796, -4.526609) "></path>
         </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-340.000000, 0.000000)"></g>
     </g>
 </svg>

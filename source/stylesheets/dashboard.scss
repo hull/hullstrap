@@ -1,38 +1,20 @@
-$base-font-size:        14px !default;
-$base-line-height:      18px !default;
-$base-rhythm-unit:      18px !default;
-$typography_scale :     1.125 !default;
+@charset "UTF-8";
 
-$h0_line_height: 3   !default;
-$h1_line_height: 2   !default;
-$h2_line_height: 1.5 !default;
-$h3_line_height: 1.5 !default;
-$h4_line_height: 1   !default;
-$h5_line_height: 1   !default;
-$h6_line_height: 1   !default;
-$h7_line_height: 1   !default;
+/*------------------------------------*\
+    Default Variables
+\*------------------------------------*/
+@import "base/base";
+// Dashboard Size Overrides
+@import "base/dashboard";
 
-$h0_leading: 1   !default;
-$h1_leading: 2   !default;
-$h2_leading: 2.5 !default;
-$h3_leading: 2.5 !default;
-$h4_leading: 2   !default;
-$h5_leading: 1   !default;
-$h6_leading: 1   !default;
-$h7_leading: 1   !default;
-
-$h0_trailing: 1   !default;
-$h1_trailing: 1   !default;
-$h2_trailing: 0.5 !default;
-$h3_trailing: 0.5 !default;
-$h4_trailing: 1   !default;
-$h5_trailing: 1   !default;
-$h6_trailing: 1   !default;
-$h7_trailing: 1   !default;
-
-@import "compass"; 
+/*------------------------------------*\
+    Common styles
+\*------------------------------------*/
 @import "styles";
 
+/*------------------------------------*\
+    Flavor Styles
+\*------------------------------------*/
 @import "components/ckeditor";
 @import "components/timeline";
 @import "layouts/dashboard";

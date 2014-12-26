@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>eye_open</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-360.000000, -382.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <g id="eye_open" transform="translate(360.000000, 382.000000)" sketch:type="MSShapeGroup">
-                <g id="Stroke-166-+-Stroke-167" transform="translate(1.000000, 7.000000)">
-                    <path d="M34,9.60869565 C34,9.60869565 26.3891739,19.2173913 17,19.2173913 C7.61082609,19.2173913 0,9.60869565 0,9.60869565 C0,9.60869565 7.61082609,0 17,0 C26.3891739,0 34,9.60869565 34,9.60869565 L34,9.60869565 Z" id="Stroke-166"></path>
-                    <path d="M22.9130435,9.60869565 C22.9130435,12.8741739 20.2654783,15.5217391 17,15.5217391 C13.7345217,15.5217391 11.0869565,12.8741739 11.0869565,9.60869565 C11.0869565,6.34321739 13.7345217,3.69565217 17,3.69565217 C20.2654783,3.69565217 22.9130435,6.34321739 22.9130435,9.60869565 L22.9130435,9.60869565 Z" id="Stroke-167"></path>
-                </g>
-            </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="eye" sketch:type="MSLayerGroup" transform="translate(0.500000, 4.000000)" stroke="#000000">
+            <path d="M14,4.32391307 C14,4.32391307 10.8661304,8.64782609 7,8.64782609 C3.13386957,8.64782609 0,4.32391307 0,4.32391307 C0,4.32391307 3.13386957,8.8817842e-16 7,8.8817842e-16 C10.8661304,8.8817842e-16 14,4.32391307 14,4.32391307 L14,4.32391307 L14,4.32391307 Z" id="Stroke-166" sketch:type="MSShapeGroup"></path>
+            <path d="M9.43478262,4.32391306 C9.43478262,5.79337826 8.34460871,6.9847826 7,6.9847826 C5.65539129,6.9847826 4.56521738,5.79337826 4.56521738,4.32391306 C4.56521738,2.85444783 5.65539129,1.66304349 7,1.66304349 C8.34460871,1.66304349 9.43478262,2.85444783 9.43478262,4.32391306 L9.43478262,4.32391306 L9.43478262,4.32391306 Z" id="Stroke-167" sketch:type="MSShapeGroup"></path>
         </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-280.000000, 0.000000)"></g>
     </g>
 </svg>
