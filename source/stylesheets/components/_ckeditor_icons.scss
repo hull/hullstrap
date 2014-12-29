@@ -44,6 +44,9 @@
 .cke_button__image_icon {
     @extend .icon-image !optional;
 }
+.cke_button__uploadimage_icon{
+    @extend .icon-add_image !optional;
+}
 .cke_button__imagebutton_icon {
     @extend .icon-imagebutton !optional;
 }
@@ -182,7 +185,6 @@
 .cke_button__autocomplete_icon {
     @extend .icon-autocomplete !optional;
 }
-
 .cke_button__codesnippet_icon {
     @extend .icon-codesnippet !optional;
 }
