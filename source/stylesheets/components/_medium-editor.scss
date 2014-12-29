@@ -155,7 +155,7 @@
   .cke_toolbar{
     margin: 0;
     padding: 0;
-    height: auto;
+    height: 50px;
     padding: 0;
     &:hover{
       @include box-shadow(none);

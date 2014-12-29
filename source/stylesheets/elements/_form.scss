@@ -241,6 +241,31 @@ input[type=radio], input[type=checkbox]{
   }
 }
 
+.form-customize{
+  .form-group{
+    @include leader(0);
+  }
+  input[type='search'],
+  input[type='url'],
+  input[type='uri'],
+  input[type='text'],
+  input[type='number'],
+  input[type='email'],
+  input[type='password'],
+  textarea{
+    &.form-control{
+      background-color: white;
+      @include box-shadow(none);
+      &.last{
+        @include box-shadow(none);
+      }
+      &:focus{
+        @include box-shadow(none);
+      }
+    }
+  }
+}
+
 .form-invisible{
   .form-group{
     @include trailer(0);

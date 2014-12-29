@@ -11,6 +11,10 @@ $arrow-color-left:#eaeef3;
 $arrow-color-right:#eaeef3;
 $tooltip-bg:#eaeef3;
 
+$arrow-color-left:#242424;
+$arrow-color-right:#242424;
+$tooltip-bg:#242424;
+
 .tooltip-element {
   position: absolute;
   display: none; }
@@ -31,9 +35,10 @@ $tooltip-bg:#eaeef3;
     font-family: inherit;
     // background: radial-gradient(circle at -20% 100%, #4bc2b8 0%, #0093e6 100%);
     background: white;
+    background: $tooltip-bg;
     // box-shadow: 0 4px 8px rgba(0,0,0,.2);
-    box-shadow: 0 0 0px 2px #eaeef3;
-    color: #666;
+    // box-shadow: 0 0 0px 2px #eaeef3;
+    color: #fff;
     // font-weight: 600;
     max-width: 350px;
     padding: 2em;
