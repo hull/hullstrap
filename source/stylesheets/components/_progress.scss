@@ -26,3 +26,56 @@
     );
   }
 }
+
+.add-image-container{
+  .progress{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    height: 100%;
+    z-index: 10000;
+    border-radius: 0;
+  }
+  .progress-bar{
+    background-color: rgba(0, 0, 0, 0);
+    span{
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.add-image-container-hover{
+  @include border-radius(2px);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px dashed rgba(189, 191, 192, 0.64);
+  cursor: pointer;
+  left: 5px;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+  position: absolute;
+  z-index: 9999;
+  opacity: 0;
+  @include transform(scale3d(.5,.5,.5));
+}
+
+.add-image-btn, .add-image-container-hover{
+  @include transition(all .3s ceaser($easeOutQuint));
+}
+.add-image-wrapper-hover{
+  .add-image-container-hover{
+    opacity: 1;
+    @include transform(scale3d(1,1,1));
+  }
+  .add-image-btn{
+    background-color: transparent;
+    font-size: 44px;
+    width: 90px;
+    height: 80px;
+    opacity: .1;
+  }
+}
