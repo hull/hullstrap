@@ -73,9 +73,16 @@
   height: $base-line-height*2;
   padding:11px;
   z-index: 10001;
+  &.hover{
+    background-color: transparent;
+    font-size: 44px;
+    width: 90px;
+    height: 80px;
+    opacity: .2;
+  }
 }
 
-.add-image-container-hover{
+.add-image-dropzone{
   @include border-radius(2px);
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.2);
@@ -88,24 +95,17 @@
   position: absolute;
   z-index: 9999;
   opacity: 0;
-  @include transform(scale3d(.5,.5,.5));
-}
-
-
-.add-image-btn, .add-image-container-hover{
-  @include transition(all .3s ceaser($easeOutQuint));
-}
-
-.add-image-wrapper-hover{
-  .add-image-container-hover{
+  @include transform(scale3d(.8,.8,.8));
+  display: none;
+  &.hover{
+    display: block;
     opacity: 1;
     @include transform(scale3d(1,1,1));
   }
-  .add-image-btn{
-    background-color: transparent;
-    font-size: 44px;
-    width: 90px;
-    height: 80px;
-    opacity: .2;
-  }
 }
+
+
+.add-image-btn, .add-image-dropzone{
+  @include transition(all .3s ceaser($easeOutQuint));
+}
+
