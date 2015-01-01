@@ -97,6 +97,7 @@
   opacity: 0;
   @include transform(scale3d(.8,.8,.8));
   display: none;
+  pointer-events: none; 
   &.hover{
     display: block;
     opacity: 1;
