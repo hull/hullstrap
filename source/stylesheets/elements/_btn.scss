@@ -156,6 +156,7 @@
 
 .btn-gradient{
   @include background-image(linear-gradient(to right top, $primary_alt, $tertiary));
+  color:white;
   @include box-shadow(none);
 }
 .btn-white{
