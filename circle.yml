@@ -1,0 +1,5 @@
+deployment:
+  neue:
+    branch: neue
+    commands:
+      - bundle exec middleman s3_sync
