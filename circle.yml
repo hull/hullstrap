@@ -5,7 +5,7 @@ deployment:
       - bundle exec middleman s3_sync
 dependencies:
   override:
-    - bundle install
+    - bundle install --path vendor/bundle
 test:
   override:
     - bundle exec middleman --verbose
