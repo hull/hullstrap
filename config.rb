@@ -12,8 +12,8 @@ require 'rack/cors'
 use Rack::Cors do
   allow do
     origins '*'
-    resource '*', 
-      headers: :any, 
+    resource '*',
+      headers: :any,
       methods: [:get, :options]
   end
 end
@@ -33,7 +33,7 @@ end
   set :css_dir, 'stylesheets'
   set :js_dir, 'javascripts'
   set :images_dir, 'images'
-  set :build_dir, 'tmp'
+  set :build_dir, (ENV['CIRCLE_ARTIFACTS'] || 'tmp')
   set :relative_links, true
   set :logging, true
 
@@ -50,7 +50,7 @@ end
 ##################
   Sass::Script::Number.precision = 20
   HandlebarsAssets::Config.path_prefix = 'aura_components'
-  after_configuration do  
+  after_configuration do
     # Register Handlebars Templates
     sprockets.append_path HandlebarsAssets.path
     # Register Bower Components
