@@ -9,3 +9,5 @@ dependencies:
 test:
   override:
     - bundle exec middleman --verbose
+cache:
+  bundler: true
