@@ -4,7 +4,7 @@ deployment:
     commands:
       - bundle exec middleman s3_sync
 dependencies:
-  pre:
+  override:
     - bundle install
 test:
   override:
