@@ -3,3 +3,9 @@ deployment:
     branch: neue
     commands:
       - bundle exec middleman s3_sync
+dependencies:
+  pre:
+    - bundle install
+test:
+  override:
+    - bundle exec middleman --verbose
