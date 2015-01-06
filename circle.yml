@@ -8,5 +8,5 @@ dependencies:
     - bundle install --path vendor/bundle
 test:
   override:
-    - bundle exec middleman --verbose
+    - bundle exec middleman build
 
