@@ -1,0 +1,334 @@
+$transition-duration: .5s;
+$transition-duration-short: .2s;
+$cd-spacing:60px;
+
+.page {
+  -webkit-transition: top $transition-duration;
+  -moz-transition: top $transition-duration;
+  transition: top $transition-duration;
+  /* Force Hardware Acceleration in WebKit */
+  // -webkit-transform: translateZ(0);
+  // -moz-transform: translateZ(0);
+  // -ms-transform: translateZ(0);
+  // -o-transform: translateZ(0);
+  // transform: translateZ(0);
+  // -webkit-backface-visibility: hidden;
+  // backface-visibility: hidden;
+  top:0;
+  overflow: hidden;
+  z-index: 1031;
+  background-color: $off-white;
+  &.nav-is-visible, .nav-is-visible & {
+    // -webkit-transform: translateY(70px);
+    // -moz-transform: translateY(70px);
+    // -ms-transform: translateY(70px);
+    // -o-transform: translateY(70px);
+    // transform: translateY(70px);
+    top:$cd-spacing;
+    margin-top: 0;
+    @media only screen and (min-width: 768px) {
+      top:$cd-spacing;
+      // -webkit-transform: translateY(70px);
+      // -moz-transform: translateY(70px);
+      // -ms-transform: translateY(70px);
+      // -o-transform: translateY(70px);
+      // transform: translateY(70px);
+    }
+  }
+}
+
+.cd-3d-nav-wrapper{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+}
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.cd-3d-nav-trigger {
+  $c3d-trigger-color:#555B69;
+  position: fixed;
+  left: 10px;
+  top: 5px;
+  height: 45px;
+  width: 45px;
+  /* replace text with background image */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+  z-index: 10000;
+
+  top:2px;
+  transition: all $transition-duration-short;
+  .nav-is-visible &{
+    top: 5px;
+  }
+
+  span, span::before, span::after {
+    /* hamburger icon in CSS */
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background-color: $c3d-trigger-color;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  span {
+    /* this is the central line */
+    top: 21px;
+    left: 8px;
+    -webkit-transition: background $transition-duration-short;
+    -moz-transition: background $transition-duration-short;
+    transition: background $transition-duration-short;
+    &::before, &:after {
+      /* these are the upper and lower lines */
+      content: '';
+      left: 0;
+      -webkit-transition: -webkit-transform $transition-duration-short;
+      -moz-transition: -moz-transform $transition-duration-short;
+      transition: transform $transition-duration-short;
+    }
+    &::before {
+      bottom: 8px;
+    }
+    &::after {
+      top: 8px;
+    }
+    .nav-is-visible & {
+      /* hide line in the center */
+      background-color: transparentize(#fff,1);
+    }
+    .nav-is-visible &::before, .nav-is-visible &::after {
+      /* keep visible other 2 lines */
+      background-color: #fff;
+    }
+    .nav-is-visible &::before {
+      -webkit-transform: translateY(8px) rotate(-45deg);
+      -moz-transform: translateY(8px) rotate(-45deg);
+      -ms-transform: translateY(8px) rotate(-45deg);
+      -o-transform: translateY(8px) rotate(-45deg);
+      transform: translateY(8px) rotate(-45deg);
+    }
+    .nav-is-visible &::after {
+      -webkit-transform: translateY(-8px) rotate(45deg);
+      -moz-transform: translateY(-8px) rotate(45deg);
+      -ms-transform: translateY(-8px) rotate(45deg);
+      -o-transform: translateY(-8px) rotate(45deg);
+      transform: translateY(-8px) rotate(45deg);
+    }
+  }
+}
+
+.cd-3d-nav-container {
+  background-color: #000000;
+  background-image: none;
+  // visibility: hidden;
+  /* enable a 3D-space for children elements */
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform $transition-duration 0s, visibility 0s $transition-duration;
+  -moz-transition: -moz-transform $transition-duration 0s, visibility 0s $transition-duration;
+  transition: transform $transition-duration 0s, visibility 0s $transition-duration;
+  &.nav-is-visible {
+    z-index: 1032;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform $transition-duration 0s, visibility $transition-duration 0s;
+    -moz-transition: -moz-transform $transition-duration 0s, visibility $transition-duration 0s;
+    transition: transform $transition-duration 0s, visibility $transition-duration 0s;
+  }
+  // @media only screen and (min-width: 768px) {
+  //   height: 170px;
+  // }
+}
+
+.cd-3d-nav {
+  /* this is the 3D rotating navigation */
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: rgba($sidebar-color, .8);
+  @include background-image($primary_bg_image);
+
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform $transition-duration;
+  -moz-transition: -moz-transform $transition-duration;
+  transition: transform $transition-duration;
+  &::before {
+    /* menu dark cover layer - to enhance perspective effect */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity $transition-duration 0s, visibility $transition-duration 0s;
+    -moz-transition: opacity $transition-duration 0s, visibility $transition-duration 0s;
+    transition: opacity $transition-duration 0s, visibility $transition-duration 0s;
+    z-index: 10;
+    display: block;
+  }
+  > a {
+    // position: relative;
+    // display: block;
+    // height: 100%;
+    // color: transparent;
+    // -webkit-transition: background-color $transition-duration-short;
+    // -moz-transition: background-color $transition-duration-short;
+    // transition: background-color $transition-duration-short;
+    // &::before {
+    //   /* navigation icons */
+    //   content: '';
+    //   height: 32px;
+    //   width: 32px;
+    //   position: absolute;
+    //   left: 50%;
+    //   top: 50%;
+    //   bottom: auto;
+    //   right: auto;
+    //   -webkit-transform: translateX(-50%) translateY(-50%);
+    //   -moz-transform: translateX(-50%) translateY(-50%);
+    //   -ms-transform: translateX(-50%) translateY(-50%);
+    //   -o-transform: translateX(-50%) translateY(-50%);
+    //   transform: translateX(-50%) translateY(-50%);
+    //   background-size: 32px 64px;
+    //   background-repeat: no-repeat;
+    //   background-position: 0 0;
+    // }
+    // .no-touch &:hover {
+    //   background-color: #2b3145;
+    // }
+    // @media only screen and (min-width: 768px) {
+    //   padding: 7.6em 1em 0;
+    //   color: #ffffff;
+    //   font-size: 1.3rem;
+    //   font-weight: 600;
+    //   text-align: center;
+    //   -webkit-font-smoothing: antialiased;
+    //   -moz-osx-font-smoothing: grayscale;
+    //   /* truncate text with ellipsis if too long */
+    //   white-space: nowrap;
+    //   overflow: hidden;
+    //   text-overflow: ellipsis;
+    // }
+    // &::before {
+    //   top: 4.4em;
+    //   left: 50%;
+    //   right: auto;
+    //   -webkit-transform: translateX(-50%);
+    //   -moz-transform: translateX(-50%);
+    //   -ms-transform: translateX(-50%);
+    //   -o-transform: translateX(-50%);
+    //   transform: translateX(-50%);
+    // }
+  }
+  .cd-selected a {
+    background-color: #212635;
+    .no-touch &:hover {
+      background-color: #212635;
+    }
+    &::before {
+      background-position: 0 -32px;
+    }
+  }
+  .nav-is-visible & {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    &::before {
+      /* menu cover layer - hide it when navigation is visible */
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: opacity $transition-duration 0s, visibility 0s $transition-duration;
+      -moz-transition: opacity $transition-duration 0s, visibility 0s $transition-duration;
+      transition: opacity $transition-duration 0s, visibility 0s $transition-duration;
+    }
+  }
+}
+
+.cd-marker {
+  /* line at the bottom of nav selected item */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 20%;
+  background-color: currentColor;
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-transform: translateZ(0) rotateX(90deg);
+  -moz-transform: translateZ(0) rotateX(90deg);
+  -ms-transform: translateZ(0) rotateX(90deg);
+  -o-transform: translateZ(0) rotateX(90deg);
+  transform: translateZ(0) rotateX(90deg);
+  -webkit-transition: -webkit-transform $transition-duration, left $transition-duration, color $transition-duration, background-color $transition-duration;
+  -moz-transition: -moz-transform $transition-duration, left $transition-duration, color $transition-duration, background-color $transition-duration;
+  transition: transform $transition-duration, left $transition-duration, color $transition-duration, background-color $transition-duration;
+  &::before {
+    /* triangle at the bottom of nav selected item */
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 0;
+    width: 0;
+    border: 10px solid transparent;
+    border-bottom-color: inherit;
+  }
+  .nav-is-visible &{
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+.topbar-content, .cd-3d-nav{
+  padding-left: $cd-spacing;
+}

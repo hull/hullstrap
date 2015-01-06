@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>justifycenter</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Group-3" sketch:type="MSLayerGroup" transform="translate(-20.000000, 0.000000)"></g>
-        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-20.500000, -1.500000)">
-            <g id="justifyleft">
-                <g id="Group" transform="translate(1.000000, 0.500000)">
-                    <g id="Stroke-7036-+-Stroke-7052" transform="translate(0.000000, 9.500000)"></g>
-                </g>
-            </g>
-            <g id="justifycenter" transform="translate(20.000000, 0.000000)" stroke-linecap="round" stroke="#231F1F" sketch:type="MSShapeGroup" stroke-linejoin="round">
-                <g id="Group" transform="translate(1.000000, 0.500000)">
-                    <path d="M0.4375,16.5 L13.5625,16.5" id="Stroke-7038"></path>
-                    <path d="M1.57880435,1.5 L12.4211957,1.5" id="Stroke-7039"></path>
-                    <path d="M2.14945652,4.5 L11.8505435,4.5" id="Stroke-7041"></path>
-                    <path d="M0.4375,7.5 L13.5625,7.5" id="Stroke-7042"></path>
-                    <path d="M4.43206522,10.5 L10.138587,10.5" id="Stroke-7044"></path>
-                    <path d="M2.7201087,13.5 L11.2798913,13.5" id="Stroke-7045"></path>
-                </g>
-            </g>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="justifycenter" sketch:type="MSLayerGroup" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2,31 L30,31" id="Stroke-7038" stroke="#626A85" sketch:type="MSShapeGroup"></path>
+            <path d="M6,1 L27.0000009,1" id="Stroke-7039" stroke="#505977" sketch:type="MSShapeGroup"></path>
+            <path d="M7,7 L26.0000004,7" id="Stroke-7041" stroke="#505977" sketch:type="MSShapeGroup"></path>
+            <path d="M1,13 L31,13" id="Stroke-7042" stroke="#505977" sketch:type="MSShapeGroup"></path>
+            <path d="M11,19 L22.9999996,19" id="Stroke-7044" stroke="#505977" sketch:type="MSShapeGroup"></path>
+            <path d="M8.08967391,25 L25.9999999,25" id="Stroke-7045" stroke="#505977" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>justifyblock</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-60.500000, -1.500000)" stroke-linecap="round" stroke="#231F1F" stroke-linejoin="round">
-            <g id="justifyblock" transform="translate(60.000000, 1.000000)" sketch:type="MSShapeGroup">
-                <g id="Group" transform="translate(1.000000, 1.000000)">
-                    <path d="M0,15 L10.3601449,15" id="Stroke-7054"></path>
-                    <path d="M0,0 L14.0166667,0" id="Stroke-7055"></path>
-                    <path d="M0,3 L14.0166667,3" id="Stroke-7056"></path>
-                    <path d="M0,6 L14.0166667,6" id="Stroke-7058"></path>
-                    <path d="M0,9 L14.0166667,9" id="Stroke-7059"></path>
-                    <path d="M0,12 L14.0166667,12" id="Stroke-7061"></path>
-                </g>
-            </g>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="justifyblock" sketch:type="MSLayerGroup" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1,31 L20,31" id="Stroke-7054" stroke="#626A85" sketch:type="MSShapeGroup"></path>
+            <path d="M1,1 L31,1" id="Stroke-7055" stroke="#505977" sketch:type="MSShapeGroup"></path>
+            <path d="M1,7 L31,7" id="Stroke-7056" stroke="#505977" sketch:type="MSShapeGroup"></path>
+            <path d="M1,13 L31,13" id="Stroke-7058" stroke="#505977" sketch:type="MSShapeGroup"></path>
+            <path d="M1,19 L31,19" id="Stroke-7059" stroke="#505977" sketch:type="MSShapeGroup"></path>
+            <path d="M1,25 L31,25" id="Stroke-7061" stroke="#505977" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

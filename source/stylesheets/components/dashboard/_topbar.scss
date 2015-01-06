@@ -1,11 +1,17 @@
 .topbar {
-  background: #fff;
-  position: fixed;
-  left: 200px;
+  background: white;
+  position: absolute;
+  left: 0;
   right: 0;
   top: 0;
   @include box-shadow(inset 0 -1px 0 $light-filet);
   z-index: 400;
+  &.has-sidebar{
+    left: 240px;
+    .topbar-content{
+      padding-left: $grid-gutter-width/2;
+    }
+  }
 }
 
 .topbar-breadcrumb {
@@ -16,4 +22,3 @@
   @include rhythm(0,.25,.25,0, $h4_font_size);
   font-weight: normal;
 }
-

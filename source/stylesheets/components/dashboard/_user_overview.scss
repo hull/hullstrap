@@ -1,13 +1,12 @@
 $user-overview-size: 24px;
 
-.user-overview-avatar {
+.user-overview {
+  padding-left: 17px;
   img {
     width: $user-overview-size;
     height: $user-overview-size;
+    position: absolute;
+    margin-left: -29px;
+    margin-top: -2px;
   }
 }
-
-.user-overview-username {
-  line-height: $user-overview-size;
-}
-

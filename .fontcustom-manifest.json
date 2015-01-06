@@ -1,19 +1,15 @@
 {
   "checksum": {
-    "previous": "a512ec83f4dde37e49bacf193585d5e72b4030cca61b4aff20c270b4d3cd7641",
-    "current": "a512ec83f4dde37e49bacf193585d5e72b4030cca61b4aff20c270b4d3cd7641"
+    "previous": "5ab6455a411ced20023e560634423a5c134d32e070fafdfe880c2cdb6897d0ba",
+    "current": "5ab6455a411ced20023e560634423a5c134d32e070fafdfe880c2cdb6897d0ba"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.ttf",
-    "source/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.svg",
-    "source/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.woff",
-    "source/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.eot"
+    "source/stylesheets/fonts/fontcustom_5ab6455a411ced20023e560634423a5c.ttf",
+    "source/stylesheets/fonts/fontcustom_5ab6455a411ced20023e560634423a5c.svg",
+    "source/stylesheets/fonts/fontcustom_5ab6455a411ced20023e560634423a5c.woff",
+    "source/stylesheets/fonts/fontcustom_5ab6455a411ced20023e560634423a5c.eot"
   ],
   "glyphs": {
-    "Slice-3": {
-      "codepoint": 61961,
-      "source": "source/images/icons/Slice 3.svg"
-    },
     "achievement": {
       "codepoint": 61919,
       "source": "source/images/icons/achievement.svg"
@@ -253,6 +249,10 @@
     "justifyright": {
       "codepoint": 61966,
       "source": "source/images/icons/justifyright.svg"
+    },
+    "justifyright-2": {
+      "codepoint": 61971,
+      "source": "source/images/icons/justifyright 2.svg"
     },
     "keen_io": {
       "codepoint": 61958,

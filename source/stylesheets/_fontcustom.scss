@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.eot");
-  src: url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.eot?#iefix") format("embedded-opentype"),
-       url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.woff") format("woff"),
-       url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.ttf") format("truetype"),
-       url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.svg#fontcustom") format("svg");
+  src: url("/stylesheets/fonts/fontcustom_5ab6455a411ced20023e560634423a5c.eot");
+  src: url("/stylesheets/fonts/fontcustom_5ab6455a411ced20023e560634423a5c.eot?#iefix") format("embedded-opentype"),
+       url("/stylesheets/fonts/fontcustom_5ab6455a411ced20023e560634423a5c.woff") format("woff"),
+       url("/stylesheets/fonts/fontcustom_5ab6455a411ced20023e560634423a5c.ttf") format("truetype"),
+       url("/stylesheets/fonts/fontcustom_5ab6455a411ced20023e560634423a5c.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,14 +16,13 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("/stylesheets/fonts/fontcustom_a512ec83f4dde37e49bacf193585d5e7.svg#fontcustom") format("svg");
+    src: url("/stylesheets/fonts/fontcustom_5ab6455a411ced20023e560634423a5c.svg#fontcustom") format("svg");
   }
 }
 
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
-.icon-Slice-3:before,
 .icon-achievement:before,
 .icon-add_image:before,
 .icon-akismet:before,
@@ -84,6 +83,7 @@
 .icon-justifycenter:before,
 .icon-justifyleft:before,
 .icon-justifyright:before,
+.icon-justifyright-2:before,
 .icon-keen_io:before,
 .icon-key:before,
 .icon-kissmetrics:before,
@@ -154,7 +154,6 @@
   font-smoothing: antialiased;
 }
 
-.icon-Slice-3:before { content: "\f209"; }
 .icon-achievement:before { content: "\f1df"; }
 .icon-add_image:before { content: "\f1e6"; }
 .icon-akismet:before { content: "\f1be"; }
@@ -215,6 +214,7 @@
 .icon-justifycenter:before { content: "\f20c"; }
 .icon-justifyleft:before { content: "\f20d"; }
 .icon-justifyright:before { content: "\f20e"; }
+.icon-justifyright-2:before { content: "\f213"; }
 .icon-keen_io:before { content: "\f206"; }
 .icon-key:before { content: "\f1bb"; }
 .icon-kissmetrics:before { content: "\f1c8"; }
@@ -272,7 +272,6 @@
 .icon-warning:before { content: "\f1aa"; }
 .icon-webhook:before { content: "\f1ab"; }
 
-$font-fontcustom-Slice-3: "\f209";
 $font-fontcustom-achievement: "\f1df";
 $font-fontcustom-add_image: "\f1e6";
 $font-fontcustom-akismet: "\f1be";
@@ -333,6 +332,7 @@ $font-fontcustom-justifyblock: "\f20b";
 $font-fontcustom-justifycenter: "\f20c";
 $font-fontcustom-justifyleft: "\f20d";
 $font-fontcustom-justifyright: "\f20e";
+$font-fontcustom-justifyright-2: "\f213";
 $font-fontcustom-keen_io: "\f206";
 $font-fontcustom-key: "\f1bb";
 $font-fontcustom-kissmetrics: "\f1c8";

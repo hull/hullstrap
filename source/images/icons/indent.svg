@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>indent</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-120.000000, -21.000000)"></g>
-        <g id="indent" sketch:type="MSLayerGroup" transform="translate(-0.500000, -1.000000)" stroke-linecap="round" stroke="#231F1F" stroke-linejoin="round">
-            <g id="Group" transform="translate(1.000000, 0.500000)" sketch:type="MSShapeGroup">
-                <g id="Group-4" transform="translate(7.000000, 8.500000) scale(-1, 1) translate(-7.000000, -8.500000) ">
-                    <path d="M14,12 L11,12" id="Stroke-7078"></path>
-                    <path d="M13,14 L11,12 L13,10" id="Stroke-7079"></path>
-                    <path d="M9,1 L9,16" id="Stroke-7080"></path>
-                    <path d="M0,1 L7,1" id="Stroke-7082"></path>
-                    <path d="M1.18181818,4 L7,4" id="Stroke-7083"></path>
-                    <path d="M0,7 L7,7" id="Stroke-7084"></path>
-                    <path d="M1.00000001,10 L7,10" id="Stroke-7085"></path>
-                    <path d="M0,13 L7,13" id="Stroke-7086"></path>
-                    <path d="M0.999999995,16 L7,16" id="Stroke-7087"></path>
-                </g>
-            </g>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="indent" sketch:type="MSLayerGroup" stroke="#626A85" stroke-width="2" stroke-linecap="round">
+            <path d="M9.24523208,27 L5.24523208,23 L9.24523208,19" id="Stroke-7079" sketch:type="MSShapeGroup" transform="translate(7.245232, 23.000000) scale(-1, 1) translate(-7.245232, -23.000000) "></path>
+            <path d="M6.75476792,23 L1,23" id="Stroke-7081" stroke-linejoin="round" sketch:type="MSShapeGroup" transform="translate(4.000000, 23.000000) scale(-1, 1) translate(-4.000000, -23.000000) "></path>
+            <path d="M13,0.999999989 L13,30.9999992" id="Stroke-7080" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            <path d="M18,6 L30.9999996,6" id="Stroke-7082" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            <path d="M18,10 L27.7329698,10" id="Stroke-7083" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            <path d="M18,14 L30.9999996,14" id="Stroke-7084" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            <path d="M18,18 L28.6049047,18" id="Stroke-7085" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            <path d="M18,22 L30.9999996,22" id="Stroke-7086" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            <path d="M18,26 L28.6512265,26" id="Stroke-7087" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>
