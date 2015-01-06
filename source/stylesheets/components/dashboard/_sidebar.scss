@@ -3,7 +3,7 @@
   position: fixed;
   overflow: scroll;
   left: 0;
-  width: 240px;
+  width: $sidebar_width;
   padding-top: 70px;
   top:0;  
   .nav-is-visible &{

@@ -8,7 +8,7 @@
   position: fixed;
   z-index: 3;
   .broadcast-query & {
-    left:240px;
+    left:$sidebar_width;
   }
 }
 .sticky-primary{
