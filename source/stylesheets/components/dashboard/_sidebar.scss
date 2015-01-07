@@ -1,9 +1,14 @@
 .broadcast-sidebar{
-  height: 100vh;
+  bottom: 0;
+  top: 50px;
   width: $sidebar_width;
   position: absolute;
   overflow: scroll;
   left: 0;
+  .sticky-sidebar &{
+    top: 0;
+    position: fixed;
+  }
   .section-btn{
     position: relative;
     top: -32px;
