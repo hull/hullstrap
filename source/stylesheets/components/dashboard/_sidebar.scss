@@ -1,15 +1,9 @@
-.broadcast-sidebar-content{
+.broadcast-sidebar{
   height: 100vh;
   width: $sidebar_width;
-
-  position: fixed;
+  position: absolute;
   overflow: scroll;
   left: 0;
-  padding-top: 70px;
-  top:0;  
-  .nav-is-visible &{
-    padding-top:70px;
-  }
   .section-btn{
     position: relative;
     top: -32px;

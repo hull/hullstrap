@@ -50,9 +50,9 @@ Main Components
 -------------------------------- */
 .cd-3d-nav-trigger {
   $c3d-trigger-color:#555B69;
-  position: fixed;
-  left: 10px;
-  top: 5px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
   height: 45px;
   width: 45px;
   /* replace text with background image */
@@ -62,11 +62,7 @@ Main Components
   color: transparent;
   z-index: 10000;
 
-  top:2px;
   transition: all $transition-duration-short;
-  .nav-is-visible &{
-    top: 5px;
-  }
 
   span, span::before, span::after {
     /* hamburger icon in CSS */
@@ -104,7 +100,7 @@ Main Components
     }
     .nav-is-visible &::before, .nav-is-visible &::after {
       /* keep visible other 2 lines */
-      background-color: #fff;
+      background-color: #A0A0A0;
     }
     .nav-is-visible &::before {
       -webkit-transform: translateY(8px) rotate(-45deg);
@@ -329,6 +325,6 @@ Main Components
   }
 }
 
-.topbar-content, .cd-3d-nav{
+.topbar-content{
   padding-left: $cd-spacing;
 }
