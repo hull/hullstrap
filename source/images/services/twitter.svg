@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>twitter</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="15.6387329%" y1="86.3220215%" x2="85.244751%" y2="13.6154175%" id="linearGradient-1">
+            <stop stop-color="#585858" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0508237092 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="on" sketch:type="MSLayerGroup" transform="translate(-300.000000, 0.000000)">
+            <g id="twitter" transform="translate(300.000000, 0.000000)" sketch:type="MSShapeGroup">
+                <rect id="Rectangle-1" fill="#10A2E6" x="0" y="0" width="256" height="256" rx="200"></rect>
+                <g id="Gradient-2" fill="url(#linearGradient-1)" fill-opacity="0.2">
+                    <rect id="Rectangle-7" x="0" y="0" width="256" height="256" rx="200"></rect>
+                </g>
+                <path d="M208,79.9041096 C202.2224,82.7193383 196.014171,84.4608962 189.581006,85.1643836 C196.150986,81.2387892 201.257971,74.9115791 203.614525,67.630137 C197.438386,71.0662014 190.546086,73.7550407 183.441341,75.5205479 C177.333414,68.9218802 168.960829,65 159.759777,65 C141.909729,65 127.485914,79.4679804 127.307263,97.4383562 C127.485914,99.846907 127.770757,102.310739 128.184358,104.452055 C101.549514,103.330023 77.8156,90.4640955 61.5251397,71.1369863 C59.1572714,75.6833547 57.5693286,81.2387892 57.1396648,86.9178082 C57.5693286,98.3686079 63.2549714,108.262186 72.0502793,114.09589 C66.6170143,113.887373 61.6513286,112.431575 57.1396648,109.712329 C57.3069143,110.147749 57.3069143,110.282754 57.1396648,110.589041 C57.3069143,126.078278 68.4090571,139.139962 83.452514,142.150685 C80.4419857,142.843585 77.5958,143.239598 74.6815642,143.027397 C72.5807714,143.239598 70.5644429,143.037091 68.5418994,143.027397 C72.6974,155.495755 84.5912714,164.838065 98.3631285,164.945205 C87.6639857,173.768611 73.7762143,178.932533 58.8938547,178.972603 C56.0823143,178.932533 53.5187286,178.779528 51,178.09589 C65.2533571,187.651572 82.1869286,193 100.117318,193 C159.621571,193 192.019643,143.761615 192.212291,100.945205 C192.019643,99.6579008 191.990486,98.2651045 192.212291,96.5616438 C198.2189,92.3226572 203.6825,86.6322183 208,79.9041096" id="Fill-205" fill="#FFFFFF" filter="url(#filter-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

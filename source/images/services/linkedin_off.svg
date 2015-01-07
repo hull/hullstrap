@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>linkedin_off</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0508237092 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="off" sketch:type="MSLayerGroup" transform="translate(-900.000000, 0.000000)">
+            <g id="linkedin_off" transform="translate(900.000000, 0.000000)" sketch:type="MSShapeGroup">
+                <g id="off-4" fill="#E5E5E5">
+                    <rect id="Rectangle-1" x="0" y="0" width="256" height="256" rx="200"></rect>
+                </g>
+                <path d="M60.8329143,192 L91.6962286,192 L91.6962286,98.8852278 L60.8329143,98.8852278 L60.8329143,192 Z M76.4713143,54 C65.9078857,54 59,60.9527127 59,70.0861427 C59,79.0235764 65.7104,86.1846641 76.0619429,86.1846641 L76.2676571,86.1846641 C87.0347429,86.1846641 93.7307429,79.0235764 93.7307429,70.0861427 C93.5270857,60.9527127 87.0347429,54 76.4713143,54 L76.4713143,54 Z M203,138.608531 L203,192 L172.136686,192 L172.136686,142.188043 C172.136686,129.671097 167.670629,121.131845 156.498286,121.131845 C147.971429,121.131845 142.896457,126.887949 140.6624,132.456308 C139.849829,134.447219 139.64,137.213862 139.64,140.003199 L139.64,192 L108.768457,192 C108.768457,192 109.184,107.630791 108.768457,98.8852278 L139.64,98.8852278 L139.64,112.087129 C139.578286,112.184096 139.498057,112.291378 139.436343,112.388345 L139.64,112.388345 L139.64,112.087129 C143.739886,105.751289 151.065371,96.7024473 167.458743,96.7024473 C187.773029,96.7024473 203,110.011631 203,138.608531 L203,138.608531 Z" id="Fill-213" fill="#FFFFFF" filter="url(#filter-1)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

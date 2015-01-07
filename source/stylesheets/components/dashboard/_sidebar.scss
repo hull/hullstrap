@@ -1,9 +1,10 @@
 .broadcast-sidebar-content{
   height: 100vh;
+  width: $sidebar_width;
+
   position: fixed;
   overflow: scroll;
   left: 0;
-  width: $sidebar_width;
   padding-top: 70px;
   top:0;  
   .nav-is-visible &{
@@ -18,9 +19,13 @@
   }
 }
 
+.has-sidebar{
+  margin-left: $sidebar_width;
+}
+
 .sidebar {
   display: block;
-  width: $sidebar-width;
+  width: $sidebar_width;
   margin: 0;
   padding: 0;
   border: none;
@@ -49,7 +54,7 @@
   .caret {
     position: absolute;
     top: 24px;
-    right: $space-medium;
+    right: $grid-gutter-width/2;
   }
 
   .btn {
@@ -58,8 +63,8 @@
     width: 100%;
     @include rhythm(0,.75,.75,0, $h4_font_size);
     @include adjust-font-size-to($h4_font_size, $h4_line_height);
-    padding-left: $space-medium;
-    padding-right: $space-medium;
+    padding-left: $grid-gutter-width/2;
+    padding-right: $grid-gutter-width/2;
     background: none;
     color: $sidebar-color;
     font-weight: normal;
@@ -75,11 +80,11 @@
 
 .sidebar-nav {
   @include padding-leader(1);
-  padding-left: $space-small;
-  padding-right: $space-small;
+  padding-left: $grid-gutter-width/2;
+  padding-right: $grid-gutter-width/2;
 
   .nav-header {
-    margin: 0 0 $space-small $space-small;
+    margin: 0 0 $grid-gutter-width/2 $grid-gutter-width/2;
     font-size: 10px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -89,7 +94,7 @@
 
   li a {
     margin-bottom: 1px;
-    padding: 5px ($space-small - 1) 3px;
+    padding: 5px ($grid-gutter-width/2 - 1) 3px;
     border: 1px solid transparent;
     @include border-radius($border-radius-large);
     @include transition(all .1s ease-in);
@@ -102,7 +107,7 @@
   }
 
   li + .nav-header {
-    margin-top: $space-medium;
+    margin-top: $grid-gutter-width/2;
   }
 
   li.active a {
@@ -115,6 +120,6 @@
 .sidebar-footer {
   position: absolute;
   bottom: 0;
-  padding: $space-medium;
+  padding: $grid-gutter-width/2;
 }
 
