@@ -3,24 +3,14 @@
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>tumblr_off</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0508237092 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
+    <defs></defs>
     <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="off" sketch:type="MSLayerGroup" transform="translate(-600.000000, 0.000000)">
             <g id="tumblr_off" transform="translate(600.000000, 0.000000)" sketch:type="MSShapeGroup">
-                <g id="off-3" fill="#E5E5E5">
+                <g id="off-3" fill="#FFFFFF">
                     <rect id="Rectangle-1" x="0" y="0" width="256" height="256" rx="200"></rect>
                 </g>
-                <path d="M140,173 C138.079172,171.656886 135.886724,169.244914 135,167 C134.128705,164.577171 134.240357,159.834371 134,152 L134,115 L167,115 L167,90 L134,90 L134,57 L114,57 C112.943159,64.313 111.268372,70.3561143 109,75 C106.402355,79.8396857 103.190824,83.8968286 99,87 C95.1559074,90.6682 88.6272838,93.2769429 83,95 L83,115 L102,115 L102,165 C102.468128,171.482429 103.154283,176.444314 105,180 C105.904994,183.270457 108.367438,186.504 112,190 C115.480715,192.5532 119.774259,194.898229 125,197 C129.83922,198.182486 133.710516,199 140,199 C146.026797,199 151.392205,198.4178 156,197 C161.335363,196.119429 166.881445,194.113171 173,191 L173,169 C165.821762,173.543457 158.604953,175.872257 151,176 C147.263094,175.872257 143.651644,174.933029 140,173" id="Fill-227" fill="#FFFFFF" filter="url(#filter-1)"></path>
+                <path d="M140,173 C138.079172,171.656886 135.886724,169.244914 135,167 C134.128705,164.577171 134.240357,159.834371 134,152 L134,115 L167,115 L167,90 L134,90 L134,57 L114,57 C112.943159,64.313 111.268372,70.3561143 109,75 C106.402355,79.8396857 103.190824,83.8968286 99,87 C95.1559074,90.6682 88.6272838,93.2769429 83,95 L83,115 L102,115 L102,165 C102.468128,171.482429 103.154283,176.444314 105,180 C105.904994,183.270457 108.367438,186.504 112,190 C115.480715,192.5532 119.774259,194.898229 125,197 C129.83922,198.182486 133.710516,199 140,199 C146.026797,199 151.392205,198.4178 156,197 C161.335363,196.119429 166.881445,194.113171 173,191 L173,169 C165.821762,173.543457 158.604953,175.872257 151,176 C147.263094,175.872257 143.651644,174.933029 140,173" id="Fill-227" fill="#E4E7EC"></path>
             </g>
         </g>
     </g>

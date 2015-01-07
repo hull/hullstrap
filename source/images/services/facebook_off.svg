@@ -3,24 +3,14 @@
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>facebook_off</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0508237092 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
+    <defs></defs>
     <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="off" sketch:type="MSLayerGroup">
             <g id="facebook_off" sketch:type="MSShapeGroup">
-                <g id="off" fill="#E5E5E5">
+                <g id="off" fill="#FFFFFF">
                     <rect id="Rectangle-1" x="0" y="0" width="256" height="256" rx="200"></rect>
                 </g>
-                <path d="M140.18811,205.76581 L140.18811,134.821172 L165.73529,134.821172 L169.559146,107.169872 L140.18811,107.169872 L140.18811,89.5148115 C140.18811,81.5138206 142.57441,76.0591045 154.88807,76.0591045 L170.59232,76.050217 L170.59232,51.3229112 C167.877182,50.9851854 158.554173,50.2341899 147.706953,50.2341899 C125.063771,50.2341899 109.561712,63.1188737 109.561712,86.7818988 L109.561712,107.169872 L83.95232,107.169872 L83.95232,134.821172 L109.561712,134.821172 L109.561712,205.76581 L140.18811,205.76581" id="Fill-203" fill="#FFFFFF" filter="url(#filter-1)"></path>
+                <path d="M140.18811,205.76581 L140.18811,134.821172 L165.73529,134.821172 L169.559146,107.169872 L140.18811,107.169872 L140.18811,89.5148115 C140.18811,81.5138206 142.57441,76.0591045 154.88807,76.0591045 L170.59232,76.050217 L170.59232,51.3229112 C167.877182,50.9851854 158.554173,50.2341899 147.706953,50.2341899 C125.063771,50.2341899 109.561712,63.1188737 109.561712,86.7818988 L109.561712,107.169872 L83.95232,107.169872 L83.95232,134.821172 L109.561712,134.821172 L109.561712,205.76581 L140.18811,205.76581" id="Fill-203" fill="#E4E7EC"></path>
             </g>
         </g>
     </g>
