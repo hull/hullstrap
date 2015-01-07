@@ -154,7 +154,7 @@
   @include box-shadow(inset 0 -2px 0 rgba(0, 0, 0, 0.2));
 }
 
-.btn-gradient{
+.btn-gradient, .btn-gradient:focus, .btn-gradient.active, .btn-gradient:hover{
   @include background-image(linear-gradient(to right top, $primary_alt, $tertiary));
   color:white;
   @include box-shadow(none);
