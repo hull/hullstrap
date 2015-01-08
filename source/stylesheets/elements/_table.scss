@@ -98,13 +98,18 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
       height: auto;
     }
   }
+  thead{
+    th{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      max-width: 130px;
+    }
+  }
   tbody{
     td.type-string.name,
     td.type-date,
     td.type-number,
-    th{
-      white-space: nowrap;
-    }
     tr td{
       vertical-align: middle;
       // text-overflow:ellipsis;
