@@ -98,12 +98,15 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
       height: auto;
     }
   }
+  .table-header-label{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    max-width: 130px;
+    display: inline-block;
+  }
   thead{
     th{
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow:ellipsis;
-      max-width: 130px;
     }
   }
   tbody{
