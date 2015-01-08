@@ -35,7 +35,9 @@ body, input, textarea, button {
   left: 300px;
   overflow: hidden;
   z-index: 100;
-  background: #000;
+  background: white;
+  @include box-shadow(inset 1px 0px 1px rgba(0, 0, 0, 0.1));
+
 }
 
 .customizer-preview-container iframe {
