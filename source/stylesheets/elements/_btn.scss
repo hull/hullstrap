@@ -58,12 +58,11 @@
 // Button Size
 @mixin btn-rhythm($lines:2, $margin: 0, $font-size: $base-font-size, $hpadding: $padding-base-horizontal*3){
 
-  $leading : $lines / 2;
+  @include adjust-font-size-to($font-size, 1);
+  $padding : ($lines - $margin - 1)/2;
 
-  @include adjust-font-size-to($font-size, $leading);
-  // @include adjust-leading-to($leading, $font-size);
-  @include padding-leader( $leading/2 , $font-size);
-  @include padding-trailer( $leading/2 , $font-size);
+  @include padding-leader( $padding , $font-size);
+  @include padding-trailer( $padding , $font-size);
   @include leader( $margin / 2, $font-size);
   @include trailer( $margin / 2, $font-size);
 
@@ -77,17 +76,17 @@
     border-bottom-left-radius: 0;
     padding-left: $btn-padding*1.5;
     &:before {
-      position: absolute;
-      width: $btn-padding*1.5;
-      @include transform(rotate(90deg));
+      position: relative;
+      height: 12px;
       background: transparent;
       content: "";
       z-index: 1;
-      border-top: $btn-padding solid rgba(0, 0, 0, 0.14);
-      border-right: $btn-padding*1.5 solid transparent;
-      border-left: $btn-padding*1.5 solid transparent;
-      top: $btn-padding;
-      left: - $btn-padding*2;
+      border-right: 6px solid rgba(255, 255, 255, 0.63);
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      display: inline-block;
+      top: 2px;
+      left: -7px;
     }
   }
 

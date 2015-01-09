@@ -91,27 +91,30 @@
   @include transition(all 300ms ceaser($easeOutQuint));
 }
 
-body{
-  @include background-image($primary_bg_image); 
-  -webkit-perspective: 1000px;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transform-origin: center center;
-}
+// body{
+//   @include background-image($primary_bg_image); 
+//   -webkit-perspective: 1000px;
+//   -webkit-transform-style: preserve-3d;
+//   -webkit-transform-origin: center center;
+// }
 
-body.vex-open{
-  overflow: hidden;
-  #main-root{
-    -webkit-filter: blur(7px);
-    // @include animation( hull-fadescaleout 300ms forwards cubic-bezier(.8, .02, .45, .91));
-    @include translate3d(0, 0, -100px);
-  }
-}
+// body.vex-open{
+//   overflow: hidden;
+//   #main-root{
+//     -webkit-filter: blur(7px);
+//     // @include animation( hull-fadescaleout 300ms forwards cubic-bezier(.8, .02, .45, .91));
+//     @include translate3d(0, 0, -100px);
+//   }
+// }
 
 $blue: #3288e6;
 
 .vex.vex-theme-default{
   padding-top: 160px;
   padding-bottom: 160px;
+  -webkit-perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: center center;
 
   &.vex-closing .vex-content{
     @include animation( hull-fadescaleout 300ms forwards cubic-bezier(.8, .02, .45, .91));

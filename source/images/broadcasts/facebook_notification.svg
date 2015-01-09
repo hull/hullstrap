@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook_notification</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#585858" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0508237092 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#F7384A" offset="0%"></stop>
+            <stop stop-color="#BB1619" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.479407269 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0349479093   0 0 0 0 0.0718202128   0 0 0 0 0.194727891  0 0 0 0.44770437 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Broadcasts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="facebook_notification" sketch:type="MSLayerGroup">
+            <path d="M159.830377,319.981055 C248.086978,319.981055 319.63309,248.434944 319.63309,160.178343 C319.63309,71.9217414 248.086978,0.375629931 159.830377,0.375629931 C71.5737758,0.375629931 0.0276642535,71.9217414 0.0276642535,160.178343 C0.0276642535,248.434944 71.5737758,319.981055 159.830377,319.981055 Z" id="Oval-1" fill="#2B4E98" sketch:type="MSShapeGroup"></path>
+            <path d="M159.830377,319.981055 C248.086978,319.981055 319.63309,248.434944 319.63309,160.178343 C319.63309,71.9217414 248.086978,0.375629931 159.830377,0.375629931 C71.5737758,0.375629931 0.0276642535,71.9217414 0.0276642535,160.178343 C0.0276642535,248.434944 71.5737758,319.981055 159.830377,319.981055 Z" id="Oval-2" fill-opacity="0.2" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+            <g id="Shape-+-notification" transform="translate(55.000000, 54.000000)">
+                <path d="M104.502133,1.04791045 C96.154157,1.04791045 88.0770531,2.13116625 80.2942825,3.97995124 L83.9734492,6.38742328 L98.4661667,8.43238846 L105.156918,6.94611033 L117.683147,8.47503633 L120.195645,11.8228938 L111.472287,10.6607395 L102.552708,14.3753686 L105.114261,21.0348329 L114.328174,25.220721 L115.556696,16.7913702 L124.29285,16.2326832 L136.740164,28.1186435 L140.267899,32.7672609 L141.942186,35.7376847 L132.278242,39.5482716 L117.681015,46.1629556 L116.484486,52.6390341 L106.824807,61.7443535 L107.200188,70.4786365 L104.276051,70.4509154 L103.109382,63.0451134 L97.5725024,61.2368439 L81.655041,62.0748745 L75.2394275,73.815832 L80.8168309,80.5051498 L90.0307439,75.4790988 L90.6599347,83.6632243 L94.1919348,86.4502623 L100.503039,93.6961348 L100.191643,102.846234 L111.843403,105.582095 L120.387601,99.4514643 L124.290717,100.750092 L138.621338,106.469171 L158.734116,114.007181 L162.920901,124.057151 L177.242991,131.030077 L180.51265,143.321192 L170.73993,154.249707 L159.218273,166.323318 L147.00344,172.6416 L134.434553,181.013376 L117.681015,191.903508 L108.403116,201.341481 L105.112128,197.763325 L112.555775,178.904439 L114.434816,157.043143 L98.4107125,142.485294 L98.5152222,130.236826 L102.706273,125.210775 L107.626758,110.659324 L97.6834106,105.106571 L90.9755966,94.2207035 L80.4947705,90.1926126 L64.065425,81.3431804 L57.3618767,62.912905 L54.0133018,72.1248441 L48.9861738,57.0530882 L50.6604612,34.4390572 L59.038297,26.9010469 L56.5257994,21.8749959 L62.3868719,12.6630568 L50.9654588,15.9277509 C20.4784974,34.1703757 0.00100214975,67.4143873 0.00100214975,105.522388 C0.00100214975,163.216421 46.7850723,209.996866 104.502133,209.996866 C162.208529,209.996866 208.998998,163.216421 208.998998,105.522388 C208.998998,47.8219576 162.208529,1.04791045 104.502133,1.04791045 L104.502133,1.04791045 Z" id="Shape" fill="#FFFFFF" filter="url(#filter-2)" sketch:type="MSShapeGroup"></path>
+                <g id="notification" transform="translate(130.625000, 0.000000)">
+                    <rect id="Rectangle-2" fill="url(#linearGradient-3)" filter="url(#filter-4)" sketch:type="MSShapeGroup" x="0" y="0" width="60.61" height="66.8656716" rx="5"></rect>
+                    <text id="7" fill="#FFFFFE" filter="url(#filter-5)" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="40.8695652" font-weight="bold">
+                        <tspan x="19.855" y="48.358209">7</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -30,21 +30,23 @@
   z-index: 500;
 }
 
-.pane-header {
-  @extend .topbar;
-  @include rhythm(0,.5,.5,0);
-  padding-left:$grid-gutter-width/2; 
-  padding-right:$grid-gutter-width/2; 
-  position: relative;
-}
+// .pane-header {
+//   @include background-image($primary_bg_image);
+//   @extend .topbar;
+//   @include rhythm(0,.5,.5,0);
+//   padding-left:$grid-gutter-width/2; 
+//   padding-right:$grid-gutter-width/2; 
+//   position: relative;
+// }
 
 
-.pane-header-title {
-  @extend .topbar-breadcrumb;
-  text-align: center;
-  white-space: nowrap;
-  padding-top: 5px;
-}
+// .pane-header-title {
+//   @extend .topbar-breadcrumb;
+//   @include font-weight-semibold;
+//   color:white;
+//   text-align: center;
+//   white-space: nowrap;
+// }
 
 .pane-content {
   @include transform(translateZ(0));
