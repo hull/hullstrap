@@ -1,7 +1,7 @@
 @-webkit-keyframes hull-fadescalein {
   0% {
     opacity: 0;
-    -webkit-transform: scale(.8) rotateX(-40deg)
+    -webkit-transform: scale(.8) rotateX(-90deg)
   }
 
   50% {
@@ -19,7 +19,7 @@
 @-moz-keyframes hull-fadescalein {
   0% {
     opacity: 0;
-    -moz-transform: scale(.8) rotateX(-40deg)
+    -moz-transform: scale(.8) rotateX(-90deg)
   }
 
   50% {
@@ -38,7 +38,7 @@
   0% {
     filter: alpha(opacity=0);
     opacity: 0;
-    -ms-transform: scale(.8) rotateX(-40deg)
+    -ms-transform: scale(.8) rotateX(-90deg)
   }
 
   50% {
@@ -57,7 +57,7 @@
 @-o-keyframes hull-fadescalein {
   0% {
     opacity: 0;
-    -o-transform: scale(.8) rotateX(-40deg)
+    -o-transform: scale(.8) rotateX(-90deg)
   }
 
   50% {
@@ -75,7 +75,7 @@
 @keyframes hull-fadescalein {
   0% {
     opacity: 0;
-    transform: scale(.8) rotateX(-40deg)
+    transform: scale(.8) rotateX(-90deg)
   }
 
   50% {

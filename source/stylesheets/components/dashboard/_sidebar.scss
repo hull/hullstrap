@@ -1,4 +1,4 @@
-.broadcast-sidebar{
+.sidebar{
   bottom: 0;
   top: 50px;
   width: $sidebar_width;
@@ -22,25 +22,25 @@
   margin-left: $sidebar_width;
 }
 
-.sidebar {
-  display: block;
-  width: $sidebar_width;
-  margin: 0;
-  padding: 0;
-  border: none;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 500;
-  color: rgba($sidebar-color, .8);
-  // TODO rename variable with a consistent style
-  @include background-image($primary_bg_image);
+// .sidebar {
+//   display: block;
+//   width: $sidebar_width;
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   overflow: hidden;
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   z-index: 500;
+//   color: rgba($sidebar-color, .8);
+//   // TODO rename variable with a consistent style
+//   @include background-image($primary_bg_image);
 
-  a {
-    color: rgba($sidebar-color, .8);
-  }
-}
+//   a {
+//     color: rgba($sidebar-color, .8);
+//   }
+// }
 
 .sidebar-header {
   @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.05));

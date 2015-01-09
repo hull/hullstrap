@@ -103,8 +103,10 @@
   letter-spacing: .01em;
   @include font-weight-semibold;
 }
-@mixin btn-lg(){ @include btn-rhythm(2, 1); }
-@mixin btn-xl(){ @include btn-rhythm(3, 0);  }
+@mixin btn-lg(){ @include btn-rhythm(3, 1); }
+@mixin btn-xl(){
+  @include btn-rhythm(3, 0, $h3_font_size, $grid-gutter-width*2);
+}
 
 // Button Presets
 .btn{
@@ -155,8 +157,12 @@
 
 .btn-gradient, .btn-gradient:focus, .btn-gradient.active, .btn-gradient:hover{
   @include background-image(linear-gradient(to right top, $primary_alt, $tertiary));
+  @include transition(opacity .2s ease-out);
   color:white;
   @include box-shadow(none);
+  &:hover{
+    opacity: .8;
+  }
 }
 .btn-white{
   @include btn-white;
