@@ -214,7 +214,7 @@
 }
 
 .daterangepicker td.available:hover, .daterangepicker th.available:hover {
-  background: #fff;
+  background: $off-white;
 }
 
 .daterangepicker td.in-range {
@@ -222,6 +222,9 @@
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+.daterangepicker td.in-range:hover {
+  background: $blue_gray_lighter;
 }
 
 .daterangepicker td.start-date {
