@@ -61,7 +61,7 @@ code{
 .normal{ @include font-weight-normal; }
 .thin{   @include font-weight-light; }
 .small{}
-
+.clear { display: block; clear: both; }
 .inline{
   display: inline;
 }
