@@ -100,3 +100,30 @@ table.datagrid-table{
   border:none;
   background: white;
 }
+
+
+.picker-message{
+  @include rhythm(0,1,1,.5);
+  opacity: .95;
+  @include box-shadow(0 0 15px rgba(0, 0, 0, 0.3), 0 0 0 3px $blue_2);
+  left: $grid-gutter-width/2;
+  right: $grid-gutter-width/2;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  @include border-radius(3px);
+  .picker-text{
+    @include font-weight-bold;
+    small{
+      display: block;
+      color: #666;
+      font-size: 12px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 100%;
+      display: block;
+      margin-top: 15px;
+    }
+  }
+}

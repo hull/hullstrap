@@ -1,0 +1,109 @@
+
+/*---------------*/
+/***** Zoe *****/
+/*---------------*/
+
+.zoe{
+  position: relative;
+  overflow: hidden;
+  background: $white;
+  transition: all .2s;
+  &:after{
+    content: '';
+    position: absolute;
+    @include background-image(linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)));
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .zoe-caption {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: $white;
+    // backface-visibility: hidden;
+    // transition: transform 0.35s;
+    // transform: translate3d(0,100%,0);
+    z-index: 1;
+  }
+  .zoe-title {
+    a{
+      color: $white;
+    }
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+  }
+  .zoe-description {
+    position: absolute;
+    color: $white;
+    left: 0;
+    text-transform: none;
+    // opacity: 0;
+    // transition: 0.35s;
+    // transform: translate3d(0,150px,0);
+    // -webkit-backface-visibility: hidden;
+    bottom: 5px;
+    left: 10px;
+  }
+  > a > img {
+    transition: 0.35s;
+  }
+  .zoe-icons{
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+  }
+  .zoe-icons a {
+    color: $white;
+    display: inline-block;
+  }
+  .zoe-title, .zoe-icons a {
+    // transition: transform 0.35s;
+    // transform: translate3d(0,200%,0);
+  }
+  &:hover{
+    @include box-shadow(0 0 0 3px $blue_2);
+    // background-color: $blue_gray_darker;
+    .zoe-description {
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
+    .zoe-icons {
+      a:hover, a:focus{
+        color: $white;
+      }
+    }
+    > a > img {
+      transform: scale(1.1);
+    }
+
+    .zoe-caption, .zoe-title{
+      // transform: translate3d(0,0,0);
+    }
+
+    // .zoe-title {
+    //   transition-delay: 0.05s;
+    // }
+
+    // .zoe-icons a:nth-child(3) {
+    //   transition-delay: 0.1s;
+    // }
+
+    // .zoe-icons a:nth-child(2) {
+    //   transition-delay: 0.15s;
+    // }
+
+    // .zoe-icons a:first-child {
+    //   transition-delay: 0.2s;
+    // }
+  }
+}
