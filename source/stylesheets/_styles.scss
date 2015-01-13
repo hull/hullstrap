@@ -141,3 +141,14 @@
 
 // This goes in the end for highest specificity
 @import "base/rhythm";
+
+
+.glyphicon{
+  @extend .icon;
+}
+.glyphicon-arrow-left{
+  @extend .icon-arrow_left;
+}
+.glyphicon-arrow-right{
+  @extend .icon-arrow_right;
+}
