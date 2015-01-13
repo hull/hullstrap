@@ -259,3 +259,10 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
     @include box-sizing(content-box);
   }
 }
+
+.table-formtable > thead > tr > th,
+.table-formtable > thead > tr > td,
+.table-formtable > tbody > tr > th,
+.table-formtable > tbody > tr > td{
+  padding: 0 1px 1px 0;
+}
