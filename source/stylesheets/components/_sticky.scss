@@ -67,11 +67,12 @@
 
 .sticky-ckeditor{
   .cke_top .cke_toolbox{
-    left: 255px;
+    left: 350px;
     position: fixed;
     top: 0px;
     right: 15px;
     z-index: 10;
+    height: 39px;
   }
   .cke{
     padding-top: 38px;

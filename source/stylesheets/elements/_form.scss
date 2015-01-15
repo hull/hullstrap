@@ -209,6 +209,9 @@ input[type=radio], input[type=checkbox]{
   .btn{
     height: $base-line-height*2;
   }
+  .btn-sm{
+    height: $base-line-height*1.5;
+  }
 }
 .input-block-level{
   @extend .form-control;
@@ -250,6 +253,7 @@ input[type=radio], input[type=checkbox]{
   }
   .form-group{
     @include leader(0);
+    @include trailer(1.5);
   }
   input[type='search'],
   input[type='url'],
@@ -262,12 +266,15 @@ input[type=radio], input[type=checkbox]{
     &.form-control{
       @include border-radius(0);
       background-color: white;
-      @include box-shadow(none);
+      @include box-shadow(inset 0 -1px 0px 0 rgba(0, 0, 0, 0.12));
+      padding-left: 0;
+      padding-right: 0;
       &.last{
         @include box-shadow(none);
       }
       &:focus{
-        @include box-shadow(none);
+        @include box-shadow(inset 0 -2px 0px 0 $blue_2);
+        // @include box-shadow(none);
       }
     }
   }
@@ -309,8 +316,7 @@ input[type=radio], input[type=checkbox]{
   textarea{
     & + .control-label{
       position: absolute;
-      top: 14px;
-      left: 6px;
+      left: 5px;
       font-size: 9px;
       font-weight: 600;
       text-transform: uppercase;
@@ -318,9 +324,11 @@ input[type=radio], input[type=checkbox]{
       transition: all .2s;
       opacity: 0;
       pointer-events:none;
+      top: -7px;
+      opacity: .7
     }
     &:focus + .control-label{
-      top: -11px;
+      top: -4px;
       opacity: 1
     }
   }
