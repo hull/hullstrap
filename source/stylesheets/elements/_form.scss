@@ -251,9 +251,18 @@ input[type=radio], input[type=checkbox]{
       @extend .pull-right;
     }
   }
+  .input-group-addon{
+    background: transparent;
+  }
+  .control-label{
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 0;
+    top: -4px;
+  }
   .form-group{
     @include leader(0);
-    @include trailer(1.5);
   }
   input[type='search'],
   input[type='url'],
