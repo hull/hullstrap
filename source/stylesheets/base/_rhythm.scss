@@ -13,7 +13,7 @@
   .mt-#{$i} {@include leader($i);}
   .mb-#{$i} {@include trailer($i);}
   .pl-#{$i}{padding-left: ($grid-gutter-width*$i)/2;}
-  .pr-#{$i}{padding-left: ($grid-gutter-width*$i)/2;}
+  .pr-#{$i}{padding-right: ($grid-gutter-width*$i)/2;}
 }
 
 .mt-05{@include leader(.5); }
