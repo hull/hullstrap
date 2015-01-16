@@ -110,28 +110,32 @@
 $blue: #3288e6;
 
 .vex.vex-theme-default{
-  padding-top: 160px;
-  padding-bottom: 160px;
-  -webkit-perspective: 1000px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // -webkit-perspective: 1000px;
   -webkit-transform-style: preserve-3d;
   -webkit-transform-origin: center center;
 
   &.vex-closing .vex-content{
     @include animation( hull-fadescaleout 300ms forwards cubic-bezier(.8, .02, .45, .91));
   }
+  &.vex-opening .vex-content{
+    @include animation( hull-fadescalein 300ms forwards cubic-bezier(.8, .02, .45, .91));
+  }
 
   .vex-content{
     @include border-radius(3px);
-    @include animation( hull-fadescalein 300ms forwards cubic-bezier(.8, .02, .45, .91));
+    @include transform(translate3d(-50%));
     @include rhythm(0,1,1,0);
     padding-left: $grid-gutter-width;
     padding-right: $grid-gutter-width;
     position: relative;
     margin: 0 auto;
     max-width: 100%;
-    width: 650px;
-    @include box-shadow(0 0 70px rgba(0,0,0,.04));
+    width: 730px;
+    @include box-shadow(0 0 70px rgba(0,0,0,.14));
   }
+
 
   .vex-close{
     @include border-radius(5px);
