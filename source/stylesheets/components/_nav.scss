@@ -1,4 +1,4 @@
-// .nav > li > a{
+
 //   @include rhythm(0,0,0,0);
 // }
 
@@ -84,6 +84,7 @@
   }
   li{
     margin-bottom: -2px;
+    white-space: nowrap;
   }
   li, li>a{
     @include box-shadow(inset 0 -1px 0 $light-filet);
@@ -150,4 +151,39 @@
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+
+.nav-tree-container.nav-tree-container{
+  height: 200px;
+  overflow: scroll;
+  position: relative;
+  padding: 0;
+  position: absolute;
+  bottom: -199px;
+  width: 100%;
+  z-index: 1;
+  background: white;
+  @include box-shadow(inset 0 0 0 1px $light-filet);
+}
+.nav-tree-column{
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  @include box-shadow(inset -1px 0 0 $light-filet);
+  .nav-tabs{
+    height: 200px;
+    overflow: scroll;
+  }
+  .nav-tabs.nav-tabs{
+    li, li>a{
+      background: transparent;
+    }
+    li>a{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
 }
