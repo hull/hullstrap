@@ -1,0 +1,34 @@
+.form-pane{
+  @extend %form-fullbleed;
+  @extend %form-floatinglabels;
+  .form-header{
+    .btn-group{
+      @extend .pull-right;
+    }
+  }
+  div[data-schematype='array']{
+    div[data-schematype='object']{
+      @include border-radius(3px);
+      @include box-shadow(inset 0 0px 0 1px $light-filet);
+      @include rhythm(.5,.5,.5,.5);
+      padding-left: $grid-gutter-width/2;
+      padding-right: $grid-gutter-width/2;
+      background: white;
+      input[type='search'],
+      input[type='url'],
+      input[type='uri'],
+      input[type='text'],
+      input[type='email'],
+      input[type='password'],
+      textarea{
+        @include box-shadow(inset 0 0px 0 1px $light-filet);
+      }
+
+    }
+  }
+  div[data-schemaid="root"]{
+    > .form-header{
+      display: none;
+    }
+  }
+}

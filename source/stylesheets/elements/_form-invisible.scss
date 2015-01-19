@@ -1,0 +1,21 @@
+.form-invisible{
+  .form-group{
+    @include trailer(0);
+    @include leader(0);
+  }
+  .control-label{
+    padding-top: 0;
+  }
+  input[type='search'],
+  input[type='url'],
+  input[type='text'],
+  input[type='number'],
+  input[type='email'],
+  input[type='password']{
+    &.form-control, &.form-control:focus{
+      @include border-radius(0);
+      @include box-shadow(none);
+      background-color: transparent;
+    }
+  }
+}

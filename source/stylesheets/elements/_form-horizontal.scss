@@ -1,0 +1,27 @@
+.form-horizontal {
+  .radio, .checkbox{
+    min-height: $base-line-height;
+  }
+  .field-label, .field-text{
+    @include adjust-font-size-to(11px, 2);
+  }
+  .field-label{
+    // @include adjust-leading-to(2,10px);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:$light-text;
+    // @include rhythm(0,.5,.5,0);
+  }
+  .radio,
+  .checkbox,
+  .radio-inline,
+  .checkbox-inline,
+  .form-control-static{
+    @include rhythm(.5,0,0,.5);
+  }
+  .has-feedback .form-control-feedback{
+    top:$base-line-height/4;
+  }
+}
+
+

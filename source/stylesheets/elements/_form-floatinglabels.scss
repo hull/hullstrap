@@ -1,0 +1,40 @@
+%form-floatinglabels{
+  .form-group{
+    position: relative;
+  }
+  input[type='search'],
+  input[type='url'],
+  input[type='uri'],
+  input[type='text'],
+  input[type='email'],
+  input[type='password'],
+  textarea{
+    & + .control-label{
+      display: block;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      pointer-events: none;
+      opacity: 0;
+      @include transform(translateY(0));
+      @include transform-origin(bottom left);
+      @include transition(all .4s cubic-bezier(0.23, 1, 0.32, 1));
+    }
+    &:focus {
+      + .control-label{
+        opacity: 1;
+        @include transform(scale(.75) translateY(-25px));
+        // text-transform: uppercase;
+      }
+    }
+  }
+  &.form-light {
+    .control-label{
+      left: 11px;
+    }
+  }
+}
+
+.form-floatinglabels{
+  @extend %form-floatinglabels;
+}
