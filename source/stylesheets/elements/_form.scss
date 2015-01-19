@@ -254,13 +254,6 @@ input[type=radio], input[type=checkbox]{
   .input-group-addon{
     background: transparent;
   }
-  .control-label{
-    font-size: 9px;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-left: 0;
-    top: -4px;
-  }
   .form-group{
     @include leader(0);
   }
@@ -316,6 +309,9 @@ input[type=radio], input[type=checkbox]{
 }
 
 .form-floatinglabels{
+  .form-group{
+    position: relative;
+  }
   input[type='search'],
   input[type='url'],
   input[type='uri'],
@@ -324,21 +320,22 @@ input[type=radio], input[type=checkbox]{
   input[type='password'],
   textarea{
     & + .control-label{
+      display: block;
       position: absolute;
-      left: 5px;
-      font-size: 9px;
-      font-weight: 600;
-      text-transform: uppercase;
-      margin-left: 10px;
-      transition: all .2s;
+      top: 10px;
+      left: 0;
+      pointer-events: none;
       opacity: 0;
-      pointer-events:none;
-      top: -7px;
-      opacity: .7
+      @include transform(translateY(0));
+      @include transform-origin(bottom left);
+      @include transition(all .4s cubic-bezier(0.23, 1, 0.32, 1));
     }
-    &:focus + .control-label{
-      top: -4px;
-      opacity: 1
+    &:focus {
+      + .control-label{
+        opacity: 1;
+        @include transform(scale(.75) translateY(-25px));
+        // text-transform: uppercase;
+      }
     }
   }
 }
