@@ -20,6 +20,8 @@
 .mb-05{@include trailer(.5); }
 .pt-05{@include padding-leader(.5); }
 .pb-05{@include padding-trailer(.5); }
+.pt-025{@include padding-leader(.25); }
+.pb-025{@include padding-trailer(.25); }
 
 .block-center{
   margin-left:auto;
