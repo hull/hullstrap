@@ -352,48 +352,76 @@ html[dir="rtl"] .select2-results {
   user-select: none;
 }
 
-.select2-results-dept-1 .select2-result-label { padding-left: $padding-base-horizontal*2 }
-.select2-results-dept-2 .select2-result-label { padding-left: $padding-base-horizontal*2 }
-.select2-results-dept-3 .select2-result-label { padding-left: $padding-base-horizontal*3 }
-.select2-results-dept-4 .select2-result-label { padding-left: $padding-base-horizontal*4 }
-.select2-results-dept-5 .select2-result-label { padding-left: $padding-base-horizontal*5 }
-.select2-results-dept-6 .select2-result-label { padding-left: $padding-base-horizontal*6 }
-.select2-results-dept-7 .select2-result-label { padding-left: $padding-base-horizontal*7 }
+// .select2-results-dept-1 .select2-result-label { padding-left: $padding-base-horizontal*2 }
+// .select2-results-dept-2 .select2-result-label { padding-left: $padding-base-horizontal*2 }
+// .select2-results-dept-3 .select2-result-label { padding-left: $padding-base-horizontal*3 }
+// .select2-results-dept-4 .select2-result-label { padding-left: $padding-base-horizontal*4 }
+// .select2-results-dept-5 .select2-result-label { padding-left: $padding-base-horizontal*5 }
+// .select2-results-dept-6 .select2-result-label { padding-left: $padding-base-horizontal*6 }
+// .select2-results-dept-7 .select2-result-label { padding-left: $padding-base-horizontal*7 }
 
-.select2-results .select2-highlighted {
-  background: $blue_2;
-  color: $inverted-text;
-  .select2-result-label span{
-    color: $inverted-text !important;
+li.select2-result-with-children{
+  position: relative;
+  margin-left: 10px;
+  &:after{
+    content: '';
+    width: 6px;
+    height: 22px;
+    border-left: 1px rgb(234, 238, 243);
+    position: absolute;
+    left: 13px;
+    top: 23px;
+    border-bottom: 1px rgb(234, 238, 243);
+    border-style: none none solid solid;
+    border-right: none;
+    border-top: none;
   }
-  .text-muted{
+}
+li.select2-results-dept-0{
+  margin: 0;
+}
+
+.select2-results{
+  .select2-highlighted {
+    background: $blue_2;
     color: $inverted-text;
+    .select2-result-label span{
+      color: $inverted-text !important;
+    }
+    .text-muted{
+      color: $inverted-text;
+    }
+    ul {
+      background: $off-white;
+      color: $base-text;
+    }
+  }
+  li em {
+    background: $off-white;
+    font-style: normal;
+  }
+  em {
+    background: transparent;
+  }
+  .select2-no-results, .select2-searching, .select2-ajax-error, .select2-selection-limit {
+    background: $off-white;
+    display: list-item;
+    padding-left: 5px;
+    @include rhythm(0,.25,.25,0);
   }
 }
 
-.select2-results li em {
-  background: $off-white;
-  font-style: normal;
+
+.select2-result-label{
+  .property-color-indicator{
+    width: 8px;
+    height: 8px;
+    left: 9px;
+    margin-right: 12px;
+    top:0;
+  }
 }
 
-.select2-results .select2-highlighted em {
-  background: transparent;
-}
-
-.select2-results .select2-highlighted ul {
-  background: $off-white;
-  color: $base-text;
-}
-
-.select2-results .select2-no-results,
-.select2-results .select2-searching,
-.select2-results .select2-ajax-error,
-.select2-results .select2-selection-limit {
-  background: $off-white;
-  display: list-item;
-  padding-left: 5px;
-  @include rhythm(0,.25,.25,0);
-}
 
 /*
 disabled look for disabled choices in the results dropdown
@@ -661,6 +689,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 .select2-container-multi .select2-choices {
   min-height: 40px;
   padding: 6px;
+  overflow: auto;
   @extend .form-control-sm;
 }
 
