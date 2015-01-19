@@ -4,11 +4,7 @@
     <title>foursquare</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="15.6387329%" y1="86.3220215%" x2="85.244751%" y2="13.6154175%" id="linearGradient-1">
-            <stop stop-color="#585858" offset="0%"></stop>
-            <stop stop-color="#FFFFFF" offset="100%"></stop>
-        </linearGradient>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
             <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
             <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
             <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0508237092 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
@@ -20,12 +16,10 @@
     </defs>
     <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="on" sketch:type="MSLayerGroup" transform="translate(-300.000000, -300.000000)">
-            <g id="foursquare" transform="translate(300.000000, 300.000000)" sketch:type="MSShapeGroup">
-                <rect id="Rectangle-2" fill="#0CBBDD" x="0" y="0" width="256" height="256" rx="200"></rect>
-                <g id="Gradient-9" fill="url(#linearGradient-1)" fill-opacity="0.2">
-                    <rect id="Rectangle-7" x="0" y="0" width="256" height="256" rx="200"></rect>
-                </g>
-                <path d="M210.959714,109.509608 L121.262789,180.723999 L86.9965475,150.633411 C83.7022857,151.575312 80.3877143,152.081865 76.9182412,151.636431 C58.0085714,152.081865 42.652,137.165534 42.652,118.536784 C42.652,100.364546 58.0085714,85.4379289 76.9182412,85.4371377 C95.9011429,85.4379289 111.270571,100.364546 111.184482,118.536784 C111.270571,123.691723 110.131429,128.366416 108.160991,132.579058 L122.270619,154.645489 L210.959714,63.3707068 L210.959714,109.509608 L210.959714,109.509608 Z M217,51 L149.625698,119.444444 L125.49162,96.2941176 L115.435754,106.359477 C109.905143,90.7451704 94.8802857,79.6832746 77.2234637,79.1830065 C55.0231429,79.6832746 37,97.1606585 37,118.437908 C37,140.073717 54.6734286,157.419963 76.2178771,157.69281 L125.49162,205 L180.798883,150.647059 L175.77095,145.614379 L217,113.405229 L217,51 L217,51 Z" id="Fill-235" fill="#FFFFFF" filter="url(#filter-2)"></path>
+            <g id="foursquare" transform="translate(300.000000, 300.000000)">
+                <rect id="Rectangle-2" fill="#0CBBDD" sketch:type="MSShapeGroup" x="0" y="0" width="256" height="256" rx="200"></rect>
+                <g id="Gradient-9"></g>
+                <path d="M210.959714,109.509608 L121.262789,180.723999 L86.9965475,150.633411 C83.7022857,151.575312 80.3877143,152.081865 76.9182412,151.636431 C58.0085714,152.081865 42.652,137.165534 42.652,118.536784 C42.652,100.364546 58.0085714,85.4379289 76.9182412,85.4371377 C95.9011429,85.4379289 111.270571,100.364546 111.184482,118.536784 C111.270571,123.691723 110.131429,128.366416 108.160991,132.579058 L122.270619,154.645489 L210.959714,63.3707068 L210.959714,109.509608 L210.959714,109.509608 Z M217,51 L149.625698,119.444444 L125.49162,96.2941176 L115.435754,106.359477 C109.905143,90.7451704 94.8802857,79.6832746 77.2234637,79.1830065 C55.0231429,79.6832746 37,97.1606585 37,118.437908 C37,140.073717 54.6734286,157.419963 76.2178771,157.69281 L125.49162,205 L180.798883,150.647059 L175.77095,145.614379 L217,113.405229 L217,51 L217,51 Z" id="Fill-235" fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup"></path>
             </g>
         </g>
     </g>

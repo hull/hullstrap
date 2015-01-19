@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>traditional_off</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="1" y="1" width="254" height="254" rx="200"></rect>
+    </defs>
+    <g id="Services" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="off" sketch:type="MSLayerGroup" transform="translate(-910.000000, -600.000000)">
+            <g id="traditional_off" transform="translate(910.000000, 600.000000)">
+                <g id="off-9" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                    <rect id="Rectangle-1" x="0" y="0" width="256" height="256" rx="200"></rect>
+                </g>
+                <mask id="mask-2" sketch:name="Rectangle 10" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Rectangle-10" stroke="#979797" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <path d="M105.217391,162.824271 C105.217391,162.824271 88.1304348,157.106193 88.1304348,128.515801 C78.7212174,128.515801 78.7212174,105.643488 88.1304348,105.643488 C88.1304348,101.812376 71.0434783,59.8988615 99.5217391,65.6169398 C105.217391,42.7446265 167.869565,42.7446265 173.565217,65.6169398 C177.512304,81.4846071 167.869565,102.835912 167.869565,105.643488 C177.278783,105.643488 177.278783,128.515801 167.869565,128.515801 C167.869565,157.106193 150.782609,162.824271 150.782609,162.824271 L150.782609,191.414663 C178.99887,202.033134 206.936043,210.833257 221.243522,220.862766 C244.584304,197.115587 259,164.511104 259,128.515801 C259,55.8790524 200.346174,-3 128,-3 C55.6481304,-3 -3,55.8790524 -3,128.515801 C-3,164.579721 11.4669565,197.241385 34.876087,221 C50.0265217,210.478736 79.9002174,201.026752 105.217391,191.414663 L105.217391,162.824271 L105.217391,162.824271 Z" id="Stroke-1704" stroke="#259AD1" stroke-width="6" stroke-linejoin="round" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>user</title>
-    <description>Created with Sketch.</description>
+    <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-40.000000, -40.000000)" stroke-width="2" stroke="#0093E6" stroke-linejoin="round">
-            <g id="user" transform="translate(40.000000, 40.000000)" sketch:type="MSShapeGroup">
-                <path d="M18,34.5 L35,34.5 C35,34.5 35,31.4584783 33.5217391,28.5019565 C32.4189565,26.2978696 27.6086957,24.8063043 21.6956522,22.588913 L21.6956522,18.1541304 C21.6956522,18.1541304 23.9130435,16.6758696 23.9130435,13.7193478 C24.6521739,13.7193478 25.3913043,10.7628261 23.9130435,10.0236957 C23.9130435,9.58465217 25.8931739,5.88234783 25.3913043,3.37152174 C24.6521739,-0.324130435 14.3043478,-0.324130435 13.5652174,2.6323913 C9.13043478,2.6323913 12.0869565,9.42426087 12.0869565,10.0236957 C10.6086957,10.7628261 11.3478261,13.7193478 12.0869565,13.7193478 C12.0869565,16.6758696 14.3043478,18.1541304 14.3043478,18.1541304 L14.3043478,22.588913 C8.39130435,24.8063043 3.57956522,26.2978696 2.47826087,28.5019565 C1,31.4584783 1,34.5 1,34.5 L18,34.5 L18,34.5 Z"></path>
-            </g>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="user" sketch:type="MSLayerGroup" stroke="#626A85" stroke-width="2" stroke-linejoin="round">
+            <path d="M16.5,31 L31,31 C31,31 31,28.4057856 29.7391304,25.8840705 C28.7985217,24.0041319 24.6956522,22.7319266 19.6521739,20.8406403 L19.6521739,17.0580676 C19.6521739,17.0580676 21.5434783,15.79721 21.5434783,13.2754949 C22.173913,13.2754949 22.8043478,10.7537798 21.5434783,10.123351 C21.5434783,9.74887635 23.232413,6.59105861 22.8043478,4.44949205 C22.173913,1.29734817 13.3478261,1.29734817 12.7173913,3.81906328 C8.93478261,3.81906328 11.4565217,9.61207331 11.4565217,10.123351 C10.1956522,10.7537798 10.826087,13.2754949 11.4565217,13.2754949 C11.4565217,15.79721 13.3478261,17.0580676 13.3478261,17.0580676 L13.3478261,20.8406403 C8.30434783,22.7319266 4.20021739,24.0041319 3.26086957,25.8840705 C2,28.4057856 2,31 2,31 L16.5,31 L16.5,31 Z" id="Stroke-1670" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>
