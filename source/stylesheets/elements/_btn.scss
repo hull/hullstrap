@@ -187,6 +187,7 @@
   background:transparent;
   border-color: transparent;
   color: $tertiary;
+  &.text-muted  { color:$light_blue_gray;}
   &.text-primary{ color:$brand-primary;}
   &.text-success{ color:$brand-success;}
   &.text-info{    color:$brand-info;}
