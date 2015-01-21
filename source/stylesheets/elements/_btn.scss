@@ -137,7 +137,6 @@
 .btn-off-white{
   @include btn-color($off-white, rgba(255,255,255,0), $blue_gray);
 }
-
 .btn-pill{
   @include btn-pill($blue_gray_light, $blue_gray);
   &.btn-primary{@include btn-pill($brand-primary, $brand-primary);}
@@ -154,7 +153,6 @@
 .btn-shadowed{
   @include box-shadow(inset 0 -2px 0 rgba(0, 0, 0, 0.2));
 }
-
 .btn-gradient, .btn-gradient:focus, .btn-gradient.active, .btn-gradient:hover{
   @include background-image(linear-gradient(to right top, $primary_alt, $tertiary));
   @include transition(opacity .2s ease-out);
@@ -182,11 +180,14 @@
 .btn-lg{@include btn-lg();   }
 .btn-xl{@include btn-xl(); }
 
-.btn-link, .btn-link:hover, .btn-link:active{
+%btn-link, .btn-link{
   text-decoration: none;
   background:transparent;
   border-color: transparent;
   color: $tertiary;
+  &:hover{
+    color: darken($tertiary, 10%);
+  }
   &.text-muted  { color:$light_blue_gray;}
   &.text-primary{ color:$brand-primary;}
   &.text-success{ color:$brand-success;}
@@ -195,9 +196,6 @@
   &.text-danger{  color:$brand-danger;}
 
  }
-.btn-link:hover{
-  color: darken($tertiary, 10%);
-}
 
 .btn-facebook{
   @include btn-color($facebook_color, $facebook_color, $primary_bg_text);
