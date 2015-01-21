@@ -12,7 +12,7 @@
   border:none;
 
   background-color: white;
-  @include border-radius(3px);
+  @include border-radius(5px);
   @include box-shadow(inset 0 0px 0 1px $light-filet);
 
   &:focus{
@@ -31,11 +31,19 @@
   }
 }
 
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+ line-height: inherit
+ }
+
 input[type='search'],
 input[type='url'],
 input[type='number'],
 input[type='uri'],
 input[type='text'],
+input[type='time'],
 input[type='email'],
 input[type='password'],
 textarea,
@@ -166,8 +174,10 @@ select.form-control{
 
 .control-label, .control-label > label{
   @extend .text-muted;
-  color: $light-text;
-  @include font-weight-normal();
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  @include adjust-font-size-to(10px, .5);
+  @include font-weight-semibold();
   @include rhythm(0,0,0,0);
 }
 
@@ -176,10 +186,10 @@ select.form-control{
 // Help Blocks
 .help-block{
   @include rhythm(0,.25,.75,1);
-  .pane-content &{
-    @include adjust-font-size-to($h6_font_size,$h6_line_height);
-    @include rhythm(0,.25,0,0, $h6_font_size)
-  }
+  // .pane-content &{
+  //   @include adjust-font-size-to($h6_font_size,$h6_line_height);
+  //   @include rhythm(0,.25,0,0, $h6_font_size)
+  // }
 }
 
 
@@ -358,7 +368,7 @@ input[type=radio], input[type=checkbox]{
 .pane-content{
   .control-image{
     @extend .mb-1;
-    @extend .mt-1;
+    // @extend .mt-1;
   }
 }
 

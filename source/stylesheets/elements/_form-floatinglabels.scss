@@ -23,8 +23,7 @@
     &:focus {
       + .control-label{
         opacity: 1;
-        @include transform(scale(.75) translateY(-25px));
-        // text-transform: uppercase;
+        @include transform(scale(.9) translateY(-15px));
       }
     }
   }
