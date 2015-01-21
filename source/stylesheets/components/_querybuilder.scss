@@ -1,3 +1,18 @@
+.predicate-inline{
+  float: left;
+  margin-right: 30px;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.07);
+  border-radius: 100px;
+  padding: 8px 14px;
+  background-color: $off_white;
+  margin: 5px 10px;
+  .property-color-indicator{
+    top: 2px;
+  }
+  &+h6{
+    float: left;
+  }
+}
 .predicate-name{
   .predicate-level{
     white-space: nowrap;
