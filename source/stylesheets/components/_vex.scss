@@ -235,3 +235,11 @@ $blue: #3288e6;
   top: -1.1em;
   bottom: auto;
 }
+
+
+.vex-dialog-buttons{
+  text-align: right;
+  .vex-dialog-button{@extend .btn;@extend .btn-sm;}
+  .vex-dialog-button-primary{@extend .btn-primary;}
+  .vex-dialog-button-secondary{@extend %btn-link; @extend .text-danger}
+}
