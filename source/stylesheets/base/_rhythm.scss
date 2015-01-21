@@ -14,6 +14,8 @@
   .mb-#{$i} {@include trailer($i);}
   .pl-#{$i}{padding-left: ($grid-gutter-width*$i)/2;}
   .pr-#{$i}{padding-right: ($grid-gutter-width*$i)/2;}
+  .ml-#{$i}{margin-left: ($grid-gutter-width*$i)/2;}
+  .mr-#{$i}{margin-right: ($grid-gutter-width*$i)/2;}
 }
 
 .mt-05{@include leader(.5); }
