@@ -37,7 +37,6 @@
 .vex-overlay{
   @include vex-animation(vex-fadein .5s);
   position: fixed;
-  background: rgba(234, 238, 243, 0.95);
   background: rgba(32, 49, 71, 0.3);
   top: 0;
   right: 0;
