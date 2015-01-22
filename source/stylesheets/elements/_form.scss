@@ -173,7 +173,7 @@ select.form-control{
 }
 
 .control-label, .control-label > label{
-  @extend .text-muted;
+  color: #646873;
   text-transform: uppercase;
   letter-spacing: .05em;
   @include adjust-font-size-to(10px, .5);
