@@ -200,15 +200,15 @@ $cd-spacing:60px;
     z-index: 10;
     display: block;
   }
-  .cd-selected a {
-    background-color: #212635;
-    .no-touch &:hover {
-      background-color: #212635;
-    }
-    &::before {
-      background-position: 0 -32px;
-    }
-  }
+  // .cd-selected a {
+    // background-color: #212635;
+    // .no-touch &:hover {
+    //   background-color: #212635;
+    // }
+    // &::before {
+    //   background-position: 0 -32px;
+    // }
+  // }
   .nav-is-visible & {
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
