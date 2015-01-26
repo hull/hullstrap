@@ -193,3 +193,16 @@
 .navbar.nav-main{
   z-index: 1001;
 }
+
+.overview-horizontal-tabs{
+  nav{
+    float: left;
+    width: 25%;
+    box-shadow: inset 0 0 0 1px rgba(222, 227, 234, 0.6);
+    padding: 1px;
+  }
+  .tab-content{
+    float: left;
+    width: 75%;
+  }
+}

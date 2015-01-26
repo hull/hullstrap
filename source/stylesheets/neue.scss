@@ -268,3 +268,11 @@ table.datagrid-table{
   padding: 4px 7px 2px 7px;
   font-size: inherit;
 }
+
+
+.chart-pie-wrapper{
+  canvas{
+    margin: 0 auto;
+    display: block;
+  }
+}
