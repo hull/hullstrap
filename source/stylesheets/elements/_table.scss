@@ -43,7 +43,7 @@
   > thead, > tbody{
     > tr {
       > th, > td {
-        @include box-shadow(inset -1px -1px 0 0 rgba(233, 233, 233, 1));
+        @include box-shadow(inset 0px -1px 0 0 rgba(233, 233, 233, 1));
         padding: $base-line-height/2;
       }
     }
@@ -236,8 +236,8 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
     .sorting:after, .sorting_asc:after, .sorting_desc:after, .sorting_asc_disabled:after, .sorting_desk_disabled:after{
       content: "▼";
       position: absolute;
-      top: 10px;
-      right: 5px;
+      top: 5px;
+      right: 8px;
     }
     .sorting_asc:after, .sorting_asc_disabled:after{
       content: "▲";
@@ -265,4 +265,12 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
 .table-formtable > tbody > tr > th,
 .table-formtable > tbody > tr > td{
   padding: 0 1px 1px 0;
+}
+
+.panel table.datagrid-table tr.datagrid-row{
+  background: transparent;
+}
+
+.datagrid-table > thead > tr > th{
+  padding-left: 0;
 }

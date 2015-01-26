@@ -1,7 +1,4 @@
 
-.sticky-bar {
-  height: 50px;
-}
 .sticky-content{
   right: 0;
   left: 0;
@@ -26,7 +23,12 @@
 
 
 
+.datagrid-responsive .sticky-bar{
+  position: absolute;
+}
+
 .sticky-bar{
+  height: 50px;
   .datagrid-table{
     display: none;
   }
