@@ -1,14 +1,9 @@
 .page {
-  // padding: $topbar-height 0 0 $sidebar-width;
-  // padding: $topbar-height 0 0 0;
   padding: 0;
   background-color: $off-white;
   width: 100%;
+  min-height: 800px;
   min-height: 100vh;
+  min-height: calc( 100vh - 50px );
   position: relative;
 }
-
-// .page-content {
-//   padding: $space-large;
-// }
-

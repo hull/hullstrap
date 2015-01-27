@@ -276,3 +276,10 @@ table.datagrid-table{
     display: block;
   }
 }
+
+.row-flex{
+  display: flex;
+  .col-flex{
+    flex:1;
+  }
+}

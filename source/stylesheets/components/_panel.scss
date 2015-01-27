@@ -16,8 +16,8 @@
   @include rhythm(0,.5,.5,0);
 }
 .panel-title{
-  @include adjust-font-size-to($h5_font_size);
-  @extend .small-title;
+  @extend %h6;
+  @extend .uppercase;
 }
 .panel-footer{
   border-top:0;

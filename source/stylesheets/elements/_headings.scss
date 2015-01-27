@@ -29,7 +29,7 @@ $font-metrics:
   $ld : nth(nth($font-metrics, 3), $i);
   $tr : nth(nth($font-metrics, 4), $i);
 
-  h#{$i - 1}, .h#{$i - 1}, .h#{$i - 1 }{
+  h#{$i - 1}, .h#{$i - 1}, .h#{$i - 1 }, %h#{$i - 1 }{
     @include adjust-heading($fs, $lh, $tr, $ld);
     color:$blue_darkest;
     font-family: $font-family-headline;
