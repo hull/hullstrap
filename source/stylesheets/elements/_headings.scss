@@ -32,8 +32,8 @@ $font-metrics:
   h#{$i - 1}, .h#{$i - 1}, .h#{$i - 1 }, %h#{$i - 1 }{
     @include adjust-heading($fs, $lh, $tr, $ld);
     color:$blue_darkest;
-    font-family: $font-family-headline;
-    @include font-weight-normal;
+    // font-family: $font-family-headline;
+    // @include font-weight-normal;
     &.condensed{
       @include adjust-leading-to(1)
     }
@@ -44,11 +44,16 @@ $font-metrics:
       @include adjust-leading-to(3,$fs);
       @include rhythm(1,0,1,1,$fs);
     }
-    &.uppercase, &.uppercase small {
+    &.uppercase {
+      // @include font-weight-bold;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      @include font-weight-bold;
-      letter-spacing: 0.1em;
+      small{
+        @include font-weight-semibold;
+        letter-spacing: 0em;
+      }
     }
+
     &.small-title{
       text-transform: uppercase;
       letter-spacing: 0.1em;

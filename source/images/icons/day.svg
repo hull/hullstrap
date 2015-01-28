@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>day</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="day" sketch:type="MSLayerGroup" stroke="#626A85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Stroke-3915-+-Stroke-3916" transform="translate(1.000000, 1.000000)" sketch:type="MSShapeGroup">
+                <path d="M30,14.5454545 C30,22.5789723 23.2819565,29.0909091 15,29.0909091 C6.71347826,29.0909091 0,22.5789723 0,14.5454545 C0,6.51193676 6.71347826,0 15,0 C23.2819565,0 30,6.51193676 30,14.5454545 L30,14.5454545 Z" id="Stroke-3915"></path>
+                <path d="M14.3478261,7.58893281 L14.3478261,14.5454545 L22.173913,21.5019763" id="Stroke-3916"></path>
+            </g>
+        </g>
+    </g>
+</svg>

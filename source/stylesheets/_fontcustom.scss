@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: url("./fonts/fontcustom_59aa7e5feaf78bd97c821f28771c93f6.eot");
-  src: url("./fonts/fontcustom_59aa7e5feaf78bd97c821f28771c93f6.eot?#iefix") format("embedded-opentype"),
-       url("./fonts/fontcustom_59aa7e5feaf78bd97c821f28771c93f6.woff") format("woff"),
-       url("./fonts/fontcustom_59aa7e5feaf78bd97c821f28771c93f6.ttf") format("truetype"),
-       url("./fonts/fontcustom_59aa7e5feaf78bd97c821f28771c93f6.svg#fontcustom") format("svg");
+  src: url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.eot");
+  src: url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.eot?#iefix") format("embedded-opentype"),
+       url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.woff") format("woff"),
+       url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.ttf") format("truetype"),
+       url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("./fonts/fontcustom_59aa7e5feaf78bd97c821f28771c93f6.svg#fontcustom") format("svg");
+    src: url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.svg#fontcustom") format("svg");
   }
 }
 
@@ -50,6 +50,7 @@
 .icon-component:before,
 .icon-cross:before,
 .icon-dashboard:before,
+.icon-day:before,
 .icon-delete:before,
 .icon-desktop:before,
 .icon-download:before,
@@ -98,6 +99,7 @@
 .icon-minus:before,
 .icon-mixpanel:before,
 .icon-mobile:before,
+.icon-month:before,
 .icon-ol:before,
 .icon-outdent:before,
 .icon-pencil:before,
@@ -138,7 +140,8 @@
 .icon-vkontakte:before,
 .icon-wand:before,
 .icon-warning:before,
-.icon-webhook:before {
+.icon-webhook:before,
+.icon-week:before {
   display: inline-block;
   font-family: "fontcustom";
   font-style: normal;
@@ -180,6 +183,7 @@
 .icon-component:before { content: "\f19e"; }
 .icon-cross:before { content: "\f19f"; }
 .icon-dashboard:before { content: "\f1a0"; }
+.icon-day:before { content: "\f212"; }
 .icon-delete:before { content: "\f200"; }
 .icon-desktop:before { content: "\f1e2"; }
 .icon-download:before { content: "\f1a1"; }
@@ -228,6 +232,7 @@
 .icon-minus:before { content: "\f1b8"; }
 .icon-mixpanel:before { content: "\f1cb"; }
 .icon-mobile:before { content: "\f1e3"; }
+.icon-month:before { content: "\f213"; }
 .icon-ol:before { content: "\f1ef"; }
 .icon-outdent:before { content: "\f210"; }
 .icon-pencil:before { content: "\f1ff"; }
@@ -269,6 +274,7 @@
 .icon-wand:before { content: "\f1f8"; }
 .icon-warning:before { content: "\f1aa"; }
 .icon-webhook:before { content: "\f1ab"; }
+.icon-week:before { content: "\f214"; }
 
 $font-fontcustom-achievement: "\f1df";
 $font-fontcustom-add_image: "\f1e6";
@@ -297,6 +303,7 @@ $font-fontcustom-comment_code: "\f1f6";
 $font-fontcustom-component: "\f19e";
 $font-fontcustom-cross: "\f19f";
 $font-fontcustom-dashboard: "\f1a0";
+$font-fontcustom-day: "\f212";
 $font-fontcustom-delete: "\f200";
 $font-fontcustom-desktop: "\f1e2";
 $font-fontcustom-download: "\f1a1";
@@ -345,6 +352,7 @@ $font-fontcustom-meetups: "\f1ca";
 $font-fontcustom-minus: "\f1b8";
 $font-fontcustom-mixpanel: "\f1cb";
 $font-fontcustom-mobile: "\f1e3";
+$font-fontcustom-month: "\f213";
 $font-fontcustom-ol: "\f1ef";
 $font-fontcustom-outdent: "\f210";
 $font-fontcustom-pencil: "\f1ff";
@@ -386,3 +394,4 @@ $font-fontcustom-vkontakte: "\f1cf";
 $font-fontcustom-wand: "\f1f8";
 $font-fontcustom-warning: "\f1aa";
 $font-fontcustom-webhook: "\f1ab";
+$font-fontcustom-week: "\f214";
