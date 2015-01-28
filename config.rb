@@ -96,7 +96,7 @@ end
       s3_sync.delete                = false # We delete stray files by default.
       s3_sync.after_build           = false # We chain after the build step by default. This may not be your desired behavior...
       s3_sync.prefer_gzip           = true
-      s3_sync.prefix                = ['releases', ENV['CIRCLE_BRANCH'], ENV['CIRCLE_SHA1'][0,10]].join('/')
+      s3_sync.prefix                = ['releases', ENV['CIRCLE_BRANCH'], ENV['CIRCLE_SHA1']].join('/')
     end
   else
     activate :s3_sync do |s3_sync|
