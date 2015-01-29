@@ -4,26 +4,22 @@
     <title>quiz</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <radialGradient cx="0%" cy="50%" fx="0%" fy="50%" r="100%" id="radialGradient-1">
-            <stop stop-color="#85F9B9" offset="0%"></stop>
-            <stop stop-color="#B2F74C" offset="100%"></stop>
+        <radialGradient cx="1.21119367%" cy="62.5565296%" fx="1.21119367%" fy="62.5565296%" r="133.945459%" id="radialGradient-1">
+            <stop stop-color="#292E35" offset="0%"></stop>
+            <stop stop-color="#1D1D24" offset="100%"></stop>
         </radialGradient>
-        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
-            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0508237092 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#4CC2B8" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#25A4D5" stop-opacity="0.24646173" offset="100%"></stop>
+        </linearGradient>
     </defs>
     <g id="Ships" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="quiz" sketch:type="MSLayerGroup">
             <rect id="Rectangle-105" fill="url(#radialGradient-1)" sketch:type="MSShapeGroup" x="0" y="0" width="640" height="360"></rect>
-            <text id="?" fill="#FFFFFF" filter="url(#filter-2)" sketch:type="MSTextLayer" font-family="Proxima Nova" font-size="256" font-weight="526" sketch:alignment="middle">
-                <tspan x="261.248" y="276">?</tspan>
-            </text>
+            <rect id="Rectangle-107" opacity="0.3" fill="url(#linearGradient-2)" sketch:type="MSShapeGroup" x="0" y="0" width="640" height="360"></rect>
+            <g id="?" transform="translate(288.000000, 130.000000)" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                <path d="M25.792,69.9570621 L38.669913,65.6180791 C36.6441739,64.1717514 35.4866087,61.4237288 35.4866087,59.1096045 C35.4866087,46.2372881 61.2424348,44.5016949 61.2424348,23.0960452 C61.2424348,10.079096 50.1008696,0.388700565 31.8692174,0.388700565 C18.8466087,0.388700565 7.70504348,5.59548023 0.325565217,14.7073446 L10.1648696,25.5548023 C14.9398261,19.3355932 21.3064348,15.4305085 30.2775652,15.4305085 C39.538087,15.4305085 44.0236522,20.2033898 44.0236522,25.8440678 C44.0236522,38.1378531 20.7276522,39.8734463 20.7276522,57.5186441 C20.7276522,62.2915254 22.3193043,66.6305085 25.792,69.9570621 L25.792,69.9570621 Z M31.0010435,99.8960452 C36.4994783,99.8960452 41.1297391,95.1231638 41.1297391,89.6271186 C41.1297391,84.2757062 36.4994783,79.6474576 31.0010435,79.6474576 C25.5026087,79.6474576 20.8723478,84.2757062 20.8723478,89.6271186 C20.8723478,95.1231638 25.5026087,99.8960452 31.0010435,99.8960452 L31.0010435,99.8960452 Z"></path>
+            </g>
         </g>
     </g>
 </svg>

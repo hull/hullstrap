@@ -18,8 +18,8 @@ $font-metrics:
   // }
   // @media (min-width: $screen-md-min) {
   @include adjust-font-size-to($font-size, $leading);
-  @include leader($leader, $font-size);
   @include trailer($trailer, $font-size);
+  @include leader($leader, $font-size);
   // }
 }
 
@@ -37,6 +37,14 @@ $font-metrics:
     &.condensed{
       @include adjust-leading-to(1)
     }
+
+    @for $j from 0 through 4 {
+      &.pt-#{$j} {@include padding-leader($j, $fs);}
+      &.pb-#{$j} {@include padding-trailer($j, $fs);}
+      &.mt-#{$j} {@include leader($j, $fs);}
+      &.mb-#{$j} {@include trailer($j, $fs);}
+    }
+
     &.expanded{
       letter-spacing: .3em;
     }
@@ -85,6 +93,7 @@ $font-metrics:
     &.text-accented{
       @extend %text-accented;
     }
+
   }
 }
 
