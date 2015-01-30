@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.eot");
-  src: url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.eot?#iefix") format("embedded-opentype"),
-       url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.woff") format("woff"),
-       url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.ttf") format("truetype"),
-       url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.svg#fontcustom") format("svg");
+  src: url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.eot");
+  src: url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.eot?#iefix") format("embedded-opentype"),
+       url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.woff") format("woff"),
+       url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.ttf") format("truetype"),
+       url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("./fonts/fontcustom_98054e5a97514a0722d34aa84fb26b15.svg#fontcustom") format("svg");
+    src: url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.svg#fontcustom") format("svg");
   }
 }
 
@@ -103,6 +103,7 @@
 .icon-ol:before,
 .icon-outdent:before,
 .icon-pencil:before,
+.icon-platform:before,
 .icon-play:before,
 .icon-plug_in:before,
 .icon-plus:before,
@@ -236,6 +237,7 @@
 .icon-ol:before { content: "\f1ef"; }
 .icon-outdent:before { content: "\f210"; }
 .icon-pencil:before { content: "\f1ff"; }
+.icon-platform:before { content: "\f215"; }
 .icon-play:before { content: "\f201"; }
 .icon-plug_in:before { content: "\f1d0"; }
 .icon-plus:before { content: "\f1b6"; }
@@ -356,6 +358,7 @@ $font-fontcustom-month: "\f213";
 $font-fontcustom-ol: "\f1ef";
 $font-fontcustom-outdent: "\f210";
 $font-fontcustom-pencil: "\f1ff";
+$font-fontcustom-platform: "\f215";
 $font-fontcustom-play: "\f201";
 $font-fontcustom-plug_in: "\f1d0";
 $font-fontcustom-plus: "\f1b6";
