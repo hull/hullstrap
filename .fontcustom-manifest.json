@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "ef214b99e32b6160873eea4367924044796d7f5ee7801d4c695bfde28b09ed46",
-    "current": "ef214b99e32b6160873eea4367924044796d7f5ee7801d4c695bfde28b09ed46"
+    "previous": "0556e601339478ce8e9c6a20462a4d881e34e87892d3852ef2ef184495ba9ed6",
+    "current": "0556e601339478ce8e9c6a20462a4d881e34e87892d3852ef2ef184495ba9ed6"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_ef214b99e32b6160873eea4367924044.ttf",
-    "source/stylesheets/fonts/fontcustom_ef214b99e32b6160873eea4367924044.svg",
-    "source/stylesheets/fonts/fontcustom_ef214b99e32b6160873eea4367924044.woff",
-    "source/stylesheets/fonts/fontcustom_ef214b99e32b6160873eea4367924044.eot"
+    "source/stylesheets/fonts/fontcustom_0556e601339478ce8e9c6a20462a4d88.ttf",
+    "source/stylesheets/fonts/fontcustom_0556e601339478ce8e9c6a20462a4d88.svg",
+    "source/stylesheets/fonts/fontcustom_0556e601339478ce8e9c6a20462a4d88.woff",
+    "source/stylesheets/fonts/fontcustom_0556e601339478ce8e9c6a20462a4d88.eot"
   ],
   "glyphs": {
     "achievement": {
