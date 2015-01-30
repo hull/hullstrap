@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "9a5df55505c9403286ebba95d55b1e24b4b31b2b101c840503b1414175a293b7",
-    "current": "9a5df55505c9403286ebba95d55b1e24b4b31b2b101c840503b1414175a293b7"
+    "previous": "ef214b99e32b6160873eea4367924044796d7f5ee7801d4c695bfde28b09ed46",
+    "current": "ef214b99e32b6160873eea4367924044796d7f5ee7801d4c695bfde28b09ed46"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.ttf",
-    "source/stylesheets/fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.svg",
-    "source/stylesheets/fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.woff",
-    "source/stylesheets/fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.eot"
+    "source/stylesheets/fonts/fontcustom_ef214b99e32b6160873eea4367924044.ttf",
+    "source/stylesheets/fonts/fontcustom_ef214b99e32b6160873eea4367924044.svg",
+    "source/stylesheets/fonts/fontcustom_ef214b99e32b6160873eea4367924044.woff",
+    "source/stylesheets/fonts/fontcustom_ef214b99e32b6160873eea4367924044.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -105,6 +105,10 @@
     "comment_code": {
       "codepoint": 61942,
       "source": "./source/images/icons/comment_code.svg"
+    },
+    "comments": {
+      "codepoint": 61974,
+      "source": "./source/images/icons/comments.svg"
     },
     "component": {
       "codepoint": 61854,

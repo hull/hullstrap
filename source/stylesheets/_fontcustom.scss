@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.eot");
-  src: url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.eot?#iefix") format("embedded-opentype"),
-       url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.woff") format("woff"),
-       url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.ttf") format("truetype"),
-       url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.svg#fontcustom") format("svg");
+  src: url("./fonts/fontcustom_ef214b99e32b6160873eea4367924044.eot");
+  src: url("./fonts/fontcustom_ef214b99e32b6160873eea4367924044.eot?#iefix") format("embedded-opentype"),
+       url("./fonts/fontcustom_ef214b99e32b6160873eea4367924044.woff") format("woff"),
+       url("./fonts/fontcustom_ef214b99e32b6160873eea4367924044.ttf") format("truetype"),
+       url("./fonts/fontcustom_ef214b99e32b6160873eea4367924044.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("./fonts/fontcustom_9a5df55505c9403286ebba95d55b1e24.svg#fontcustom") format("svg");
+    src: url("./fonts/fontcustom_ef214b99e32b6160873eea4367924044.svg#fontcustom") format("svg");
   }
 }
 
@@ -47,6 +47,7 @@
 .icon-cog:before,
 .icon-comment:before,
 .icon-comment_code:before,
+.icon-comments:before,
 .icon-component:before,
 .icon-cross:before,
 .icon-dashboard:before,
@@ -181,6 +182,7 @@
 .icon-cog:before { content: "\f19c"; }
 .icon-comment:before { content: "\f19d"; }
 .icon-comment_code:before { content: "\f1f6"; }
+.icon-comments:before { content: "\f216"; }
 .icon-component:before { content: "\f19e"; }
 .icon-cross:before { content: "\f19f"; }
 .icon-dashboard:before { content: "\f1a0"; }
@@ -302,6 +304,7 @@ $font-fontcustom-codesnippet: "\f1fa";
 $font-fontcustom-cog: "\f19c";
 $font-fontcustom-comment: "\f19d";
 $font-fontcustom-comment_code: "\f1f6";
+$font-fontcustom-comments: "\f216";
 $font-fontcustom-component: "\f19e";
 $font-fontcustom-cross: "\f19f";
 $font-fontcustom-dashboard: "\f1a0";
