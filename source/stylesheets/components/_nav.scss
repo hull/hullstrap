@@ -58,7 +58,7 @@
     img{
       position: relative;
       height: $base-line-height*1.2;
-      @include border-radius(100px);
+      border-radius: 100px;
       margin:  -$base-line-height/2;
       margin-right: 5px;
     }
@@ -68,16 +68,16 @@
 .nav-pills{
   @extend %nav;
   > li > a{
-    @include border-radius(100px);
+    border-radius: 100px;
   }
 }
 
 .nav-tabs.nav-tabs{
   @extend %nav;
   border: 0;
-  @include box-shadow(inset 0 -1px 0 0 #DEE3EA);
+  box-shadow: inset 0 -1px 0 0 #DEE3EA;
   li > a, li > a:hover, li > a:active, li > a:focus{
-    @include transition(none);
+    transition: none;
     @include rhythm(0,.5,.5,0);
     border: none;
     color:$light-text;
@@ -89,7 +89,7 @@
     white-space: nowrap;
   }
   li, li>a{
-    @include box-shadow(inset 0 -1px 0 $light-filet);
+    box-shadow: inset 0 -1px 0 $light-filet;
     // background-color: white;
   }
   li.active{
@@ -97,7 +97,7 @@
       color:$base-text;
     }
     > a, > a:hover, > a:focus{
-      @include box-shadow(inset 0 -2px 0 $primary);
+      box-shadow: inset 0 -2px 0 $primary;
     }
   }
   li, li.active{
@@ -133,15 +133,15 @@
     }
     &:first-child{
       > a{
-        @include border-radius(100px 0 0 100px);
+        border-radius: 100px 0 0 100px;
       }
     }
     + li > a{
-      @include border-radius(0 0 0 0);
+      border-radius: 0 0 0 0;
     }
     &:last-child{
       > a{
-        @include border-radius(0 100px 100px 0);
+        border-radius: 0 100px 100px 0;
       }
     }
   }
@@ -166,14 +166,14 @@
   width: 100%;
   z-index: 1;
   background: white;
-  @include box-shadow(inset 0 0 0 1px $light-filet);
+  box-shadow: inset 0 0 0 1px $light-filet;
 }
 .nav-tree-column{
   width: 200px;
   position: absolute;
   left: 0;
   top: 0;
-  @include box-shadow(inset -1px 0 0 $light-filet);
+  box-shadow: inset -1px 0 0 $light-filet;
   .nav-tabs{
     height: 200px;
     overflow: scroll;

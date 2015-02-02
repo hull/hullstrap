@@ -16,8 +16,6 @@
   left: 20px;
   padding: 10px;
   margin-top: 8px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
 
   &.dropdown-menu {
@@ -114,7 +112,7 @@
       // background: #08c;
       // border: 1px solid #08c;
       color: rgb(85, 91, 105);
-      @include box-shadow(inset 0 -2px 0 #0093e6);
+      box-shadow: inset 0 -2px 0 #0093e6;
     }
   }
   .calendar {
@@ -159,8 +157,8 @@
 
   .calendar-date {
     padding: 0px;
-    @include border-radius(2px);
-    @include box-shadow(0 0 0 1px rgba(0, 0, 0, 0.12));
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12);
     background: #fff;
   }
 
@@ -225,8 +223,6 @@
     text-align: center;
     width: 20px;
     height: 20px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
     border-radius: 4px;
     cursor: pointer;
     white-space: nowrap;
@@ -262,16 +258,16 @@
 
   td.start-date {
     font-weight: bold;
-    @include border-radius(100px 0 0 100px);
+    border-radius: 100px 0 0 100px;
   }
 
   td.end-date {
     font-weight: bold;
-    @include border-radius(0 100px 100px 0);
+    border-radius: 0 100px 100px 0;
   }
 
   td.start-date.end-date {
-    @include border-radius(100px);
+    border-radius: 100px;
   }
 
   td.active, td.active:hover {

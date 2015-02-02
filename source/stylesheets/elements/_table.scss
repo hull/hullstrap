@@ -20,7 +20,7 @@
   > thead, > tbody{
     > tr {
       > th, > td {
-        @include box-shadow(inset 0px -1px 0 0 $off-white);
+        box-shadow: inset 0px -1px 0 0 $off-white;
         > p{
           @include rhythm(0,0,0,0);
         }
@@ -30,12 +30,12 @@
 }
 
 .table-bordered{
-  @include box-shadow(inset 0px -1px 0 0 $off-white);
+  box-shadow: inset 0px -1px 0 0 $off-white;
   border:0; 
   > thead, > tbody{
     > tr {
       > th, > td {
-        @include box-shadow(inset 0px -1px 0 0 $off-white);
+        box-shadow: inset 0px -1px 0 0 $off-white;
         padding: $base-line-height/2;
       }
     }
@@ -115,10 +115,10 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
       background-color: white;
     }
     tr.datagrid-row{
-      @include transition(all .3s ceaser($easeOutQuint));
+      transition: all .3s ceaser($easeOutQuint);
       .datagrid-options-toggle{
-        @include transition(all .2s ease-out);
-        @include box-shadow(inset -1px 1px 0px 0 rgba(0, 0, 0, 0.1));
+        transition: all .2s ease-out;
+        box-shadow: inset -1px 1px 0px 0 rgba(0, 0, 0, 0.1);
         display: block;
         position: absolute;
         height: 100%;
@@ -159,7 +159,7 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
       }
       &.options{
         .datagrid-options-toggle{
-          @include box-shadow(inset -1px 1px 0px 0 rgba(0, 0, 0, 0.1));
+          box-shadow: inset -1px 1px 0px 0 rgba(0, 0, 0, 0.1);
           // background-color: darken($off-white, 10%);
           background-color: white;
         }
@@ -206,9 +206,9 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
 
   thead {
     th td {
-      @include box-shadow(inset -1px 0 0 0 #e9e9e9);
+      box-shadow: inset -1px 0 0 0 #e9e9e9;
       &:active { outline: none; }
-      &:first-child{ @include box-shadow(inset 1px 0 0 0 #e9e9e9); }
+      &:first-child{ box-shadow: inset 1px 0 0 0 #e9e9e9; }
     }
     // Sorting
     .sorting_asc,

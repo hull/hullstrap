@@ -35,7 +35,7 @@
 }
 .sticky-filter-bar>div{
   background-color:$off-white;
-  @include transition(background-color .25s linear);
+  transition: background-color .25s linear;
 };
 .sticky-filter-bar{
   .sticky-filter-users{

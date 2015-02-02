@@ -1,8 +1,8 @@
 .modal-content{
-  @include border-radius(5px);
+  border-radius: 5px;
   border:0;
   overflow: hidden; 
-  @include box-shadow(0 10px 40px rgba(0, 0, 0, 0.3));
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 .modal-body{
@@ -25,19 +25,19 @@
 }
 
 .modal-header{
-  @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.1));
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.1);
 }
 
 .modal{
   &.full-modal, &.side-modal{
-    @include transition(all .3s ceaser($easeOutQuint));
+    transition: all .3s ceaser($easeOutQuint);
     top:0;
     bottom: 0;
     height: 100%;
     right: 0;
     // overflow-x:visible;
     // overflow-y: scroll;
-    // -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
     .modal-body{
       padding: 0;
     }
@@ -49,10 +49,10 @@
     &.fade.in{
       top:0;
       opacity: 1;
-      @include transform(none);
+      transform: none;
     }
     .modal-content{
-      @include border-radius(0);
+      border-radius: 0;
       min-height: 100%;
     }
   }
@@ -61,7 +61,7 @@
     margin:0 auto;
     &.fade{
       opacity: 1;
-      @include transform(translate3d(100%,0,0));
+      transform: translate3d(100%,0,0);
     }
   }
 
@@ -71,7 +71,7 @@
       width: 100%;
     }
     &.fade{
-      @include transform(translate3d(100%,0,0));
+      transform: translate3d(100%,0,0);
     }
   }
 }

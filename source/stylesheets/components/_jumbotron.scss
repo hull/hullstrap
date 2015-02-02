@@ -25,21 +25,7 @@
     padding: 0; 
   }
 
-  // h2{
-  //   @include adjust-font-size-to(34px);
-  //   @include rhythm(1,0,0,1,34px);
-  // }
-  // h3{
-  //   @include adjust-font-size-to(30px);
-  //   @include rhythm(0,0,0,1, 30px);
-  // }
-
-  // h4{
-  //   @include adjust-font-size-to(24px, 1);
-  //   @include rhythm(0,0,1,1,24px);
-  // }
   .subtitle{
-    // @include adjust-font-size-to(15px);
     @include font-weight-light;
     color: $light-text;
   }
@@ -47,8 +33,6 @@
   blockquote{
     border:none;
     @include font-weight-light;
-    // @include adjust-font-size-to(26px,1);
-    // @include rhythm(1,0,0,1, 26px);
     font-style: italic;
   }
 

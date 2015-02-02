@@ -23,9 +23,9 @@
 @import "components/pane";
 @import "layouts/c3d";
 
-body, input, textarea, button {
-  -webkit-font-smoothing: antialiased;
-}
+// body, input, textarea, button {
+//   -webkit-font-smoothing: antialiased;
+// }
 
 .customizer-preview-container {
   position: absolute;
@@ -36,7 +36,7 @@ body, input, textarea, button {
   overflow: hidden;
   z-index: 100;
   // background: white;
-  @include box-shadow(inset 1px 0px 1px rgba(0, 0, 0, 0.1));
+  box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.1);
 
 }
 
@@ -70,7 +70,7 @@ body, input, textarea, button {
 
 .nav-customizer {
   li {
-    @include box-shadow(0 -1px $light-filet);
+    box-shadow: 0 -1px $light-filet;
   }
 }
 
@@ -90,8 +90,6 @@ body, input, textarea, button {
 table.datagrid-table{
   overflow: hidden;
   max-width: none;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -103,18 +101,18 @@ table.datagrid-table{
 
 
 .picker-navbar{
-  @include box-shadow(0 0 15px rgba(0, 0, 0, 0.3));
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 .picker-message{
   @include rhythm(0,1,1,0);
   opacity: .95;
-  @include box-shadow(0 0 15px rgba(0, 0, 0, 0.3));
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   left: 0;
   right: 0;
   bottom: 0;
   position: absolute;
   z-index: 1;
-  @include border-radius(0);
+  border-radius: 0;
   .picker-text{
     // @include font-weight-bold;
     small{

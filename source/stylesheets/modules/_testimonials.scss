@@ -6,8 +6,8 @@
 }
 .testimonials{
   @include rhythm(1,0,0,1);
-  @include transform-style(preserve-3d);
-  @include perspective(100px);
+  transform-style: preserve-3d;
+  perspective: 100px;
   .testimonial-author, .testimonial-website{
     @extend %animate;
     @include trailer(0);
@@ -30,23 +30,23 @@
 }
 
 .testimonial-avatar{
-  @include border-radius(100px);
+  border-radius: 100px;
   // width: $base-line-height * 4;
   @extend .img-responsive;
   @extend %animate;
-  @include box-shadow(0 10px 30px transparentize(black, .9));
+  box-shadow: 0 10px 30px transparentize(black, .9);
   // margin: 0 $padding-base-horizontal;
   padding: 0;
   background: white;
   display: inline-block;
   img{
-    @include border-radius(100px);
+    border-radius: 100px;
     @extend %animate;
     opacity: .3;
   }
   li:hover &{
-    @include box-shadow(0 30px 40px transparentize(black, .95));
-    @include translate3d(0, -10px, 0px);
+    box-shadow: 0 30px 40px transparentize(black, .95);
+    transform: translate3d(0, -10px, 0px);
     img{
       opacity: 1;
     }

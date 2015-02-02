@@ -13,8 +13,8 @@
   input[type='email'],
   input[type='password']{
     &.form-control, &.form-control:focus{
-      @include border-radius(0);
-      @include box-shadow(none);
+      border-radius: 0;
+      box-shadow: none;
       background-color: transparent;
     }
   }

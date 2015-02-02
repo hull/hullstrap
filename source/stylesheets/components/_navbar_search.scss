@@ -1,8 +1,8 @@
 .navbar-search{
   .form-control, .btn{
     @extend %animate;
-    @include border-radius(100px);
-    @include transition(all .2s ease-out);
+    border-radius: 100px;
+    transition: all .2s ease-out;
     @include adjust-font-size-to(16px, 1);
     @include adjust-leading-to(1,16px);
     @include rhythm(.5,.25,.25,.5,16px);
@@ -13,7 +13,7 @@
     // width: 100%;
     // left: -100%;
     // margin: 0;
-    // @include box-shadow(none);
+    // box-shadow: none;
     .btn{
       display: none;
     } 
@@ -34,7 +34,7 @@
         opacity: 1;
         width: 200px;
         left: 16px;
-        @include border-radius(100px 0 0 100px);
+        border-radius: 100px 0 0 100px;
         padding-left: $padding-base-horizontal;
         padding-right: $padding-base-horizontal;
         &+.btn{

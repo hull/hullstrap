@@ -7,11 +7,11 @@
   }
   @include rhythm(1,0,0,1);
   // @include trailing-border(1px, .5);
-  @include box-shadow(inset 0 -1px 0 $page-header-border-color);
+  box-shadow: inset 0 -1px 0 $page-header-border-color;
   border:0; 
   
   &.no-border{
-    @include box-shadow(none);
+    box-shadow: none;
   }
   .title{
     @extend .m-0;

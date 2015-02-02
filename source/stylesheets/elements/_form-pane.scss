@@ -8,8 +8,8 @@
   }
   div[data-schematype='array']{
     div[data-schematype='object']{
-      @include border-radius(3px);
-      @include box-shadow(inset 0 0px 0 1px $light-filet);
+      border-radius: 3px;
+      box-shadow: inset 0 0px 0 1px $light-filet;
       @include rhythm(.5,.5,.5,.5);
       padding-left: $grid-gutter-width/2;
       padding-right: $grid-gutter-width/2;
@@ -21,7 +21,7 @@
       input[type='email'],
       input[type='password'],
       textarea{
-        @include box-shadow(inset 0 0px 0 1px $light-filet);
+        box-shadow: inset 0 0px 0 1px $light-filet;
       }
 
     }

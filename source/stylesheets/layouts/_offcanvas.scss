@@ -8,14 +8,12 @@
 
 // Defaults
 .offcanvas-container{
-  @include transition(all .3s ceaser($easeOutQuint));
+  transition: all .3s ceaser($easeOutQuint);
 }
 
 .offcanvas-content{
   z-index: 99;
-  -webkit-transform-style: preserve-3d;
-  // @include transform(translate3d(0,0,0));
-  // min-height: 100vh;
+  transform-style: preserve-3d;
   min-height: 100vh;
   background:white;
   background-color: #eaeef3;  
@@ -37,15 +35,15 @@
     margin-right: -10px;
   }
   .icon-bar{
-    @include transform(0);
-    @include transition(all .5s ceaser($easeOutQuint) .30s);
+    transform: 0;
+    transition: all .5s ceaser($easeOutQuint) .30s;
     position: relative;
     top: 0;
   }
 }
 
 .offcanvas-sidebar, .offcanvas-content, .offcanvas-navbar{
-  @include transition(all .45s ceaser($easeOutQuint));
+  transition: all .45s ceaser($easeOutQuint);
 }
 
 // Active State
@@ -53,8 +51,8 @@
 .offcanvas-active-left{
   .offcanvas-toggle[data-side='left'] .icon-bar{
     background-color: white;
-    &:nth-child(2){ top: 4px;  @include transform(rotate(45deg)); }
-    &:nth-child(4){ top: -8px; @include transform(rotate(-45deg)); }
+    &:nth-child(2){ top: 4px;  transform: rotate(45deg); }
+    &:nth-child(4){ top: -8px; transform: rotate(-45deg); }
     &:nth-child(3){ opacity: 0; }
   }
 }
@@ -63,14 +61,14 @@
     background-color: white;
     &:nth-child(2){
       top: 8px;
-      @include transform(rotate(45deg)); 
+      transform: rotate(45deg); 
     }
     &:nth-child(3){
       opacity: 0;
     }
     &:nth-child(4){
       top: -4px;
-      @include transform(rotate(-45deg)); 
+      transform: rotate(-45deg); 
     }
   }
 }
@@ -96,7 +94,7 @@
 
   // Default States
   .offcanvas-container{
-    @include background-image($primary_bg_image);
+    background-image: $primary_bg_image;
     -webkit-perspective: 1500px;
   }
   .offcanvas-wrapper{
@@ -104,7 +102,7 @@
     overflow-x:hidden;
   }
   .overflow-content{
-    @include transform-origin(0 50%);
+    transform-origin: 0 50%;
   }
   // .offcanvas-navbar{
   //   position: absolute;
@@ -119,17 +117,17 @@
     z-index: 1000;
     width: $sidebar_width;
     background-color: $secondary_bg_color;
-    @include background-image($secondary_bg_gradient);
+    background-image: $secondary_bg_gradient;
     @include blue-background-colors;
-    @include transform(translate3d(- $sidebar_width,0,0));
-    @include transition(all .45s ceaser($easeOutQuint));
+    transform: translate3d(- $sidebar_width,0,0);
+    transition: all .45s ceaser($easeOutQuint);
   }
 
   .offcanvas-sidebar-right{
     @include blue-background-colors;
     @include make-sm-column(6);
-    @include transition(all .45s ceaser($easeOutQuint));
-    @include transform(translate3d(100%,0,0));
+    transition: all .45s ceaser($easeOutQuint);
+    transform: translate3d(100%,0,0);
     position: fixed;
     height: 100vh;
     width: $sidebar_width;
@@ -155,26 +153,26 @@
   // Active Left State
   .offcanvas-active-left{
     .offcanvas-navbar{
-      @include transform(translate3d($sidebar_width, 0, 0));
+      transform: translate3d($sidebar_width, 0, 0);
     }
     .offcanvas-sidebar-left{
-      @include transform(translate3d(0,0,0));
+      transform: translate3d(0,0,0);
     }
     .offcanvas-content{
       overflow: hidden;
       // opacity: .5;
       height: 100vh;
-      @include transform(translate3d($sidebar_width, 0, 0));
+      transform: translate3d($sidebar_width, 0, 0);
     }
   }
 
   // Active Right State
   .offcanvas-active-right{
     .offcanvas-navbar{
-      @include transform(translate3d(- $sidebar_width, 0, 0));
+      transform: translate3d(- $sidebar_width, 0, 0);
     }
     .offcanvas-content{
-      @include transform(perspective(600px) translate3d(-260px, 0, 0));
+      transform: perspective(600px) translate3d(-260px, 0, 0);
       overflow: hidden;
       height: 100vh;
       // opacity: .5;
@@ -192,7 +190,7 @@
   }
 
   .offcanvas-content{
-    @include transform(none);
+    transform: none;
   }
   .offcanvas-container{
     background-color: white;
@@ -240,6 +238,6 @@
 .offcanvas-sidebar {
   .navbar-form{
     margin:0; 
-    @include box-shadow(none);
+    box-shadow: none;
   }
 }

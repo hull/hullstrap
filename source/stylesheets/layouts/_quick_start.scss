@@ -8,7 +8,7 @@
     // text-align: center;
     display: block;
     border-color: transparentize($primary,1);
-    @include border-radius(300px);
+    border-radius: 300px;
     margin: 0 auto;
     float: none;
     img{
@@ -20,7 +20,7 @@
     text-decoration: none;
     background:transparent;
     border: 2px solid transparentize($primary,0.5);
-    @include border-radius(300px);
+    border-radius: 300px;
   }
 }
 
@@ -57,10 +57,10 @@
       width: 100%;
       list-style: none;
       background-color: $white;
-      @include box-shadow(0 0px 12px rgba(0, 0, 0, 0.1));
+      box-shadow: 0 0px 12px rgba(0, 0, 0, 0.1);
       background-clip: padding-box;
       @include rhythm(0,0,0,0);
-      @include border-radius(0 !important);
+      border-radius: 0 !important;
       max-height:$base-line-height*10;
       overflow: scroll;
       text-align: left;
@@ -89,7 +89,7 @@
       height: 15px;
       border-right: 2px solid white;
       border-bottom: 2px solid white;
-      @include transform(rotate(45deg));
+      transform: rotate(45deg);
       display: block;
       position: absolute;
       @include leader(.5);
@@ -140,7 +140,7 @@
     border:none;
     color: $tertiary;
     background:transparent;
-    @include border-radius(300px);
+    border-radius: 300px;
     span{
       @include font-weight-bold;
     }

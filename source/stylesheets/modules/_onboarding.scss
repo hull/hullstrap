@@ -34,7 +34,7 @@
   input.form-control{
     background-color: $blue_gray_lightest;
     border:none;
-    @include box-shadow(0);
+    box-shadow: 0;
   }
   .input-group-btn .btn{
     color: $tertiary;

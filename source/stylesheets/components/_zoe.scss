@@ -50,7 +50,7 @@
     display: inline-block;
   }
   &:hover{
-    @include box-shadow(0 0 0 3px $blue_2);
+    box-shadow: 0 0 0 3px $blue_2;
     // background-color: $blue_gray_darker;
     .zoe-description {
       opacity: 1;

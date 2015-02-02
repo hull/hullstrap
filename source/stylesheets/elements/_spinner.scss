@@ -50,8 +50,8 @@ $spinner-speed: 0.8s;
 
 
 @include keyframes(rotation) {
-   from {-webkit-transform: rotate(0deg);}
-   to {-webkit-transform: rotate(359deg);}
+   from {transform: rotate(0deg);}
+   to {  transform: rotate(359deg);}
 }
 
 .spinner {
@@ -62,5 +62,5 @@ $spinner-speed: 0.8s;
   border: $spinner-border-width solid $spinner-track-color;
   border-top: $spinner-border-width solid $spinner-track-piece-color;
   border-radius: 100%;
-  @include animation(rotation $spinner-speed infinite linear);
+  animation: rotation $spinner-speed infinite linear;
 }

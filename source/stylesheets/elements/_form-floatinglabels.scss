@@ -16,14 +16,14 @@
       left: 0;
       pointer-events: none;
       opacity: 0;
-      @include transform(translateY(0));
-      @include transform-origin(bottom left);
-      @include transition(all .4s cubic-bezier(0.23, 1, 0.32, 1));
+      transform: translateY(0);
+      transform-origin: bottom left;
+      transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
     }
     &:focus {
       + .control-label{
         opacity: 1;
-        @include transform(scale(.9) translateY(-15px));
+        transform: scale(.9) translateY(-15px);
       }
     }
   }

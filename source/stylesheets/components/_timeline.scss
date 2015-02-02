@@ -24,17 +24,17 @@ div.timeline, ul.timeline{
   .media-object{
     height: $base-line-height*3;
     width: $base-line-height*3;
-    @include box-shadow(0 0 0 5px $white);
+    box-shadow: 0 0 0 5px $white;
     &.icon{
       text-align: center;
       display: block;
       @include adjust-font-size-to(24px, 3);
       // color: #fff;
       // @include background-image($primary_bg_image); 
-      @include border-radius(100px);
+      border-radius: 100px;
       color: $red;
       background-color: white;
-      @include box-shadow(inset 0 0 1px $red);
+      box-shadow: inset 0 0 1px $red;
     }
   }
   .media-heading{
@@ -60,11 +60,11 @@ div.timeline, ul.timeline{
     }
   }
   > li.story-date{
-    @include border-radius(100px);
+    border-radius: 100px;
     padding-left: $padding-base-horizontal * 2;
     padding-right: $padding-base-horizontal * 2;
     background-color: $white;
-    @include box-shadow(inset 0 0 0 1px $filet-color);
+    box-shadow: inset 0 0 0 1px $filet-color;
     color: $blue_gray_light;
   }
 }
@@ -88,7 +88,7 @@ div.timeline, ul.timeline{
 //     padding-right: 0;
 //     margin: 0 2px;
 //     @include rhythm(.5,.5,.5,.5);
-//     @include border-radius(100px);
+//     border-radius: 100px;
 //     img{
 //       margin-right: 10px;
 //     }
@@ -209,8 +209,8 @@ div.timeline, ul.timeline{
 //   height: $base-line-height * 2;
 //   line-height: $base-line-height * 2;
 //   @include background-image($primary_bg_image); 
-//   @include border-radius(100px);
-//   @include box-shadow(inset 0 0 0 $base-line-height/4 rgba(255,255,255,.1));
+//   border-radius: 100px;
+//   box-shadow: inset 0 0 0 $base-line-height/4 rgba(255,255,255,.1);
 //   > a {
 //     color: $white;
 //     &:hover {
@@ -407,8 +407,8 @@ div.timeline, ul.timeline{
 // //   line-height: $base-line-height * 3;
 // //   right: - $base-line-height * 1.5;
 // //   @include background-image($primary_bg_image); 
-// //   @include border-radius(100px);
-// //   @include box-shadow(inset 0 0 0 $base-line-height/3 rgba(255,255,255,.1));
+// //   border-radius: 100px;
+// //   box-shadow: inset 0 0 0 $base-line-height/3 rgba(255,255,255,.1);
 // //   > a {
 // //     color: $white;
 // //     &:hover {

@@ -1,20 +1,20 @@
 // Button Shape
 @mixin btn(){
   border: 0px;
-  @include border-radius(3px);
+  border-radius: 3px;
 }
 @mixin btn-rounded(){
-  @include border-radius(100px);
+  border-radius: 100px;
 }
 
 // Button Colors
 @mixin btn-color($bg-color:$primary_bg_color, $border-color: $primary_bg_color, $text-color:$primary_bg_text){
   color: $text-color;
   background-color: $bg-color;
-  @include box-shadow(inset 0 0 0 1px $border-color);
+  box-shadow: inset 0 0 0 1px $border-color;
   &:hover, &:active, &:focus, &.active{
     color: darken($text-color, 5%);
-    @include box-shadow(inset 0 0 0 2px darken($border-color, 5%));
+    box-shadow: inset 0 0 0 2px darken($border-color, 5%);
     background-color: darken($bg-color,5%);
   }
   &.btn-back:before{
@@ -23,10 +23,10 @@
 }
 @mixin btn-transparent{
   color: transparentize($white,.3);
-  @include box-shadow(inset 0 0 0 2px transparentize($white, .9));
+  box-shadow: inset 0 0 0 2px transparentize($white, .9);
   background-color: transparentize($white, .9);
   &:hover, &:focus{
-    @include box-shadow(inset 0 0 0 2px transparentize($white, .5));
+    box-shadow: inset 0 0 0 2px transparentize($white, .5);
     background-color: transparentize($white, .7);
     color: $white;
   }
@@ -34,13 +34,13 @@
 
 @mixin btn-invisible(){
   color: transparentize($white,.3);
-  @include box-shadow(inset 0 0 0 2px transparentize($white, 1));
+  box-shadow: inset 0 0 0 2px transparentize($white, 1);
   background-color: transparent;
   // opacity: .7;
   &:hover, &:focus{
     // opacity: 1;
     color: $white;
-    @include box-shadow(inset 0 0 0 2px transparentize($white, .9));
+    box-shadow: inset 0 0 0 2px transparentize($white, .9);
     background-color: transparentize($white, .95);;
   }
 }
@@ -49,7 +49,7 @@
 }
 @mixin btn-white{
   @include btn-color($white, $white, $secondary);
-  @include box-shadow(inset 0 0px 0 1px $light-filet);
+  box-shadow: inset 0 0px 0 1px $light-filet;
 }
 @mixin btn-dark{
   @include btn-color(transparentize($blue_gray_darker,.83), rgba(0,0,0,0), white);
@@ -119,7 +119,7 @@
   }
 }
 .btn-primary, .btn-default, .btn-secondary, .btn-darken{
-  @include box-shadow(none);
+  box-shadow: none;
 }
 .btn-dark{
   @include btn-dark();
@@ -147,17 +147,17 @@
   &.btn-success{@include btn-pill($brand-success, $brand-success);}
   &.btn-warning{@include btn-pill($brand-warning, $brand-warning);}
   &.active{
-    @include box-shadow(inset 0 0px 0px 2px rgba(0, 147, 230, 1));
+    box-shadow: inset 0 0px 0px 2px rgba(0, 147, 230, 1);
   }
 }
 .btn-shadowed{
-  @include box-shadow(inset 0 -2px 0 rgba(0, 0, 0, 0.2));
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.2);
 }
 .btn-gradient, .btn-gradient:focus, .btn-gradient.active, .btn-gradient:hover{
   @include background-image(linear-gradient(to right top, $primary_alt, $tertiary));
-  @include transition(opacity .2s ease-out);
+  transition: opacity .2s ease-out;
   color:white;
-  @include box-shadow(none);
+  box-shadow: none;
   &:hover{
     opacity: .8;
   }

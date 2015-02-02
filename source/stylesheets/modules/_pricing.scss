@@ -3,7 +3,7 @@
 
   .headline{
     @extend .text-center;
-    @include box-shadow(0 0 0px 1px transparentize($light-text,.75));
+    box-shadow: 0 0 0px 1px transparentize($light-text,.75);
     @include rhythm(0,1,1,0);
     .price{
       @include rhythm(0,0,0,0);
@@ -14,17 +14,17 @@
     }
   }
   .tier{
-    @include box-shadow(inset 0 0 0px 1px transparentize($light-text,.75));
+    box-shadow: inset 0 0 0px 1px transparentize($light-text,.75);
     overflow: hidden;
     @include trailer(2);
     @media screen and (min-width: $screen-sm-min){
-      @include border-radius(0);
+      border-radius: 0;
     }
   }
   .value{
-    @include box-shadow(inset 0 0 0px 1px transparentize($primary_bg_color,.75));
+    box-shadow: inset 0 0 0px 1px transparentize($primary_bg_color,.75);
     .headline{
-      @include box-shadow(none);
+      box-shadow: none;
       // @extend %inverted-background;
       @extend %blue-background;
       small{

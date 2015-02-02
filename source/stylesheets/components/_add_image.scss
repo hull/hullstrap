@@ -20,7 +20,7 @@
   &.add-image-circle{
     .add-image-wrapper{
       padding-bottom: 100%;
-      @include border-radius(1000px);
+      border-radius: 1000px;
     }
     .add-image-clear-btn {
       position: static;
@@ -43,7 +43,7 @@
   background-color: $gray-darker;
   clear:both;
   padding-bottom: 56.25%;
-  @include border-radius(5px);
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -67,7 +67,7 @@
   position: absolute;
   top:50%;
   left:50%;
-  @include transform(translate(-50%, -50%)); 
+  transform: translate(-50%, -50%); 
   background-color: $primary;
   width: $base-line-height*2;
   height: $base-line-height*2;
@@ -83,7 +83,7 @@
 }
 
 .add-image-dropzone{
-  @include border-radius(2px);
+  border-radius: 2px;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px dashed rgba(189, 191, 192, 0.64);
@@ -95,18 +95,18 @@
   position: absolute;
   z-index: 9999;
   opacity: 0;
-  @include transform(scale3d(.8,.8,.8));
+  transform: scale3d(.8,.8,.8);
   display: none;
   pointer-events: none; 
   &.hover{
     display: block;
     opacity: 1;
-    @include transform(scale3d(1,1,1));
+    transform: scale3d(1,1,1);
   }
 }
 
 
 .add-image-btn, .add-image-dropzone{
-  @include transition(all .3s ceaser($easeOutQuint));
+  transition: all .3s ceaser($easeOutQuint);
 }
 

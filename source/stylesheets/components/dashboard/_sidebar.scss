@@ -43,7 +43,7 @@
 // }
 
 .sidebar-header {
-  @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.05));
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.05);
 }
 
 .sidebar-dropdown {
@@ -72,8 +72,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 190px;
-    -webkit-font-smoothing: antialiased;
-    @include box-shadow(none);
+    // -webkit-font-smoothing: antialiased;
+    box-shadow: none;
   }
 }
 
@@ -95,8 +95,8 @@
     margin-bottom: 1px;
     padding: 5px ($grid-gutter-width/2 - 1) 3px;
     border: 1px solid transparent;
-    @include border-radius($border-radius-large);
-    @include transition(all .1s ease-in);
+    border-radius: $border-radius-large;
+    transition: all .1s ease-in;
 
     &:hover,
     &:focus {

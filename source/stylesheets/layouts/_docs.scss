@@ -1,9 +1,6 @@
 $docs-font-size: 15px;
 .docs-page{
   @include padding-leader(1);
-  p, li{
-    // -webkit-font-smoothing:subpixel-antialiased;
-  }
 }
 .docs-header{
   border-color: $light-filet;

@@ -29,7 +29,7 @@
   height: 100%;
   background: $off-white;
   z-index: 500;
-  @include box-shadow(1px 0 0 rgba(0, 0, 0, 0.07), 1px 0 10px rgba(0, 0, 0, 0.02));
+  box-shadow: 1px 0 0 rgba(0, 0, 0, 0.07), 1px 0 10px rgba(0, 0, 0, 0.02);
 }
 
 // .pane-header {
@@ -51,7 +51,7 @@
 // }
 
 .pane-content {
-  @include transform(translateZ(0));
+  transform: translateZ(0);
   overflow: scroll;
   position: absolute;
   top: 50px;
@@ -63,7 +63,7 @@
 }
 
 .pane-titles{
-  @include transform(translateZ(0));
+  transform: translateZ(0);
 }
 
 
@@ -74,49 +74,49 @@
 .paneRight-leave-active,
 .customizer-editor-container {
   &, .pane-content, .pane-titles{
-    @include transition(all .2s ceaser($easeInOutSine));
+    transition: all .2s ceaser($easeInOutSine);
   }
 }
 
 .paneRight-enter{
   opacity: .9;
-  .pane-content{opacity: 0;    @include transform(translateX(-20%)); }
-  .pane-titles{opacity: 0;     @include transform(translateX(-80%)); }
+  .pane-content{opacity: 0;    transform: translateX(-20%); }
+  .pane-titles{opacity: 0;     transform: translateX(-80%); }
   &.paneRight-enter-active{
     opacity: 1;
-    .pane-content{opacity: 1;  @include transform(translateX(0%));}
-    .pane-titles{opacity: 1;   @include transform(translateX(0%));}
+    .pane-content{opacity: 1;  transform: translateX(0%);}
+    .pane-titles{opacity: 1;   transform: translateX(0%);}
   }
 }
 .paneRight-leave{
   opacity: 1;
-  .pane-content{opacity: 1;    @include transform(translateX(0%));}
-  .pane-titles{opacity: 1;     @include transform(translateX(0%));}
+  .pane-content{opacity: 1;    transform: translateX(0%);}
+  .pane-titles{opacity: 1;     transform: translateX(0%);}
   &.paneRight-leave-active{
     opacity: .9;
-    .pane-content{opacity: 0;  @include transform(translateX(20%)); }
-    .pane-titles{opacity: 0;   @include transform(translateX(80%)); }
+    .pane-content{opacity: 0;  transform: translateX(20%); }
+    .pane-titles{opacity: 0;   transform: translateX(80%); }
   }
 }
 
 
 .paneLeft-enter{
   opacity: .9;
-  .pane-content{opacity: 0;    @include transform(translateX(20%)); }
-  .pane-titles{opacity: 0;     @include transform(translateX(80%)); }
+  .pane-content{opacity: 0;    transform: translateX(20%); }
+  .pane-titles{opacity: 0;     transform: translateX(80%); }
   &.paneLeft-enter-active{
     opacity: 1;
-    .pane-content{opacity: 1;  @include transform(translateX(0%));}
-    .pane-titles{opacity: 1;   @include transform(translateX(0%));}
+    .pane-content{opacity: 1;  transform: translateX(0%);}
+    .pane-titles{opacity: 1;   transform: translateX(0%);}
   }
 }
 .paneLeft-leave{
   opacity: 1;
-  .pane-content{opacity: 1;    @include transform(translateX(0%));}
-  .pane-titles{opacity: 1;     @include transform(translateX(0%));}
+  .pane-content{opacity: 1;    transform: translateX(0%);}
+  .pane-titles{opacity: 1;     transform: translateX(0%);}
   &.paneLeft-leave-active{
     opacity: .9;
-    .pane-content{opacity: 0;  @include transform(translateX(-20%)); }
-    .pane-titles{opacity: 0;   @include transform(translateX(-80%)); }
+    .pane-content{opacity: 0;  transform: translateX(-20%); }
+    .pane-titles{opacity: 0;   transform: translateX(-80%); }
   }
 }

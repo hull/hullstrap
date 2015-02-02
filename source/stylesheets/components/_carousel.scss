@@ -16,14 +16,14 @@
     margin-right: auto;
 
     background-color: transparentize(black,.5);
-    @include box-shadow(inset 0px 1px 1px 0px transparentize(black,0.85));
+    box-shadow: inset 0px 1px 1px 0px transparentize(black,0.85);
     border:none;
     @include btn-rounded();
   }
   .progress-bar{
     @include btn-rounded();
     background: $white;
-    @include box-shadow(0px 0px 4px 0px transparentize(black,0.75));
+    box-shadow: 0px 0px 4px 0px transparentize(black,0.75);
   }
   i.icon{
     @include adjust-font-size-to(80px);

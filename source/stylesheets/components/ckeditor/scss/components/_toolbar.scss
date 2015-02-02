@@ -64,8 +64,8 @@ a.cke_button__source + a.cke_button_disabled + a.cke_button_disabled + a.cke_but
     height: 25px;
     border-radius: 3px;
     &:hover{
-        // @include box-shadow(0px 0px 0 1px rgba(0, 0, 0, 0.1));
-        @include box-shadow(0 0 0px 2px #eaeef3);
+        // box-shadow: 0px 0px 0 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0px 2px #eaeef3;
     }
 }
 
@@ -85,7 +85,7 @@ a.cke_button__source + a.cke_button_disabled + a.cke_button_disabled + a.cke_but
 //   color: #ccc;
 //   font-weight: bold;
 //   margin: 0 50%;
-//   -webkit-transform: translateX(-50%);
+//   transform: translateX(-50%);
 // }
 
 .cke_rtl .cke_toolbar {

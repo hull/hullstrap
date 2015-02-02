@@ -1,10 +1,6 @@
 @mixin popin{
   animation: hull-fadescalein 150ms forwards cubic-bezier(.8, .02, .45, .71);
-  -webkit-animation: hull-fadescalein 150ms forwards cubic-bezier(.8, .02, .45, .71);
-  -moz-animation: hull-fadescalein 150ms forwards cubic-bezier(.8, .02, .45, .71);
-  -ms-animation: hull-fadescalein 150ms forwards cubic-bezier(.8, .02, .45, .71);
-  -o-animation: hull-fadescalein 150ms forwards cubic-bezier(.8, .02, .45, .71);
-  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 $dropdown-border-color: #d9dfe7;
@@ -61,9 +57,9 @@ $dropdown-border-color: #d9dfe7;
   background-color: $white;
   @extend %white-background-colors;
   border: 0;
-  @include border-radius(3px !important); 
-  @include box-shadow(0 0px 0px 2px $dropdown-border-color);
-  // @include box-shadow(0 0px 1px rgba(7, 20, 34, 0.09), 0 0px 7px rgba(10, 35, 59, 0.25));
+  border-radius: 3px !important; 
+  box-shadow: 0 0px 0px 2px $dropdown-border-color;
+  // box-shadow: 0 0px 1px rgba(7, 20, 34, 0.09), 0 0px 7px rgba(10, 35, 59, 0.25);
   background-clip: padding-box;
 
   > li a.btn-link{
@@ -119,7 +115,7 @@ $dropdown-border-color: #d9dfe7;
 
 
 .btn-group.open .dropdown-toggle{
-  @include box-shadow(none);
+  box-shadow: none;
 }
 
 .user-login-dropdown{
@@ -130,7 +126,7 @@ $dropdown-border-color: #d9dfe7;
     float: left;
     position: relative;
     display: inline-block;
-    @include border-radius(100px);
+    border-radius: 100px;
     left: 1 - $padding-base-horizontal;
   }
 }
