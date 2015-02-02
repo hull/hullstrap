@@ -38,7 +38,33 @@ end
   set :logging, true
 
   activate :gzip
+  activate :autoprefixer
   activate :directory_indexes
+
+  activate :autoprefixer do |config|
+    config.browsers = ['last 2 versions', 'Explorer >= 9']
+    config.cascade  = true
+    # config.inline   = true
+    # config.ignore   = ['hacks.css']
+  end
+
+  # activate :fontcustom do |fc|
+  #   fc.source_dir = 'source/images/icons'
+  #   fc.fonts_dir = 'source/stylesheets/fonts'
+  #   fc.css_dir = 'source/stylesheets'
+
+  #   fc.templates = 'scss'
+  #   fc.no_hash = false
+  #   fc.css_prefix = 'icon-{{glyph}}'
+  #   fc.autowidth = true
+  #   fc.font_name = 'fontcustom'
+
+  #   fc.preprocessor_path = './fonts'
+  #   fc.font_design_size = 48
+  #   fc.font_em = 4800
+  #   fc.font_ascent = 200
+  #   fc.font_descent = 200
+  # end
 
 ##################
 # Ignores

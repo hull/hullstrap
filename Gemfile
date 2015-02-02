@@ -53,9 +53,12 @@ source 'http://rubygems.org'
   gem 'colorize', '0.7.4'
   gem 'middleman-sprockets'
   gem 'middleman-smusher'
+  gem 'middleman-autoprefixer'
   gem 'middleman-minify-html'
   gem "middleman-s3_sync"
   gem 'middleman-livereload'
+  gem 'middleman-fontcustom', :git => 'https://github.com/hull/middleman-fontcustom.git'
+  gem 'fontcustom'
 
 ##################
 # Fixtures
@@ -68,6 +71,5 @@ source 'http://rubygems.org'
 ##################
 group :development do
   gem 'foreman'
-  gem 'fontcustom'
   gem 'middleman-gh-pages'
 end
