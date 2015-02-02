@@ -5,7 +5,11 @@
     .col-xs-12
       ul.row.list-unstyled
         - icon_list.each do |icon|
-          li.col-xs-6.col-md-3 style='font-size:25px;'
-            i class="icon icon-#{icon} icon-lg"
+          li.col-xs-6.col-md-2
+            span style='font-size:24px;'
+              i class="icon icon-#{icon} icon-lg"
             ' 
-            small icon-#{icon}
+            span style='font-size:12px;'
+              i class="icon icon-#{icon}"
+            ' 
+            p=icon

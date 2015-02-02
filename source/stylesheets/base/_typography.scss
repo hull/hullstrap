@@ -1,6 +1,6 @@
 body{
   -webkit-font-smoothing:antialiased;
-  // text-rendering:optimizeLegibility;
+  text-rendering:optimizeLegibility;
   background: $off-white;
 }
 .white-bg{
@@ -23,7 +23,7 @@ p{
   @include adjust-font-size-to($base-font-size,1);
   @include rhythm(.5,0,0,.5);
   small{
-    @include adjust-font-size-to($h7_font_size, 1);
+    @include adjust-font-size-to($h6_font_size, 1, $base-font-size);
   }
   .blog .posts-wrapper &{
     @include adjust-leading-to(1.125);

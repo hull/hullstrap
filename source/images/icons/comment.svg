@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>comment</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-200.000000, -422.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <g id="comment" transform="translate(200.000000, 422.000000)" sketch:type="MSShapeGroup">
-                <g id="Stroke-7197-+-Stroke-7198-+-Stroke-7199" transform="translate(3.700000, 6.000000)">
-                    <path d="M0,12 L27.6,12" id="Stroke-7197"></path>
-                    <path d="M7.2,23.9016 L21,0" id="Stroke-7198"></path>
-                    <path d="M21,23.9016 L7.2,0" id="Stroke-7199"></path>
-                </g>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="comment" sketch:type="MSLayerGroup" fill="#000000">
+            <g id="Fill-188" transform="translate(0.000000, 2.000000)" sketch:type="MSShapeGroup">
+                <path d="M0.0753150673,19.8728003 C0.0753150673,25.0792135 2.45178241,29.9577671 6.77224616,33.6736677 L6.54059787,32.5195723 L1.9288756,41.727705 C1.56360927,42.4544107 1.69927195,43.3342958 2.26732227,43.9176988 C2.62906298,44.290688 3.124787,44.498 3.64009312,44.498 C3.91959142,44.498 4.19527775,44.4374954 4.4514242,44.3169559 L16.7679599,38.5853852 L16.0977328,38.636886 C18.6322894,39.3716694 21.2887366,39.7436866 24,39.7436866 C37.1560123,39.7436866 47.9246849,30.8758781 47.9246849,19.8728003 C47.9246849,8.8687579 37.1559878,0 24,0 C10.8440122,0 0.0753150673,8.8687579 0.0753150673,19.8728003 L0.0753150673,19.8728003 L0.0753150673,19.8728003 Z M15.4827056,34.961612 L7.76562317,38.6211165 L10.3037406,33.5527112 C10.7091983,32.7456228 10.4942362,31.7650347 9.78695996,31.2015138 C5.98156058,28.155925 3.90326466,24.1365857 3.90326466,19.8728003 C3.90326466,11.0770151 12.8798138,3.82794959 24,3.82794959 C35.1201862,3.82794959 44.0967353,11.0770151 44.0967353,19.8728003 C44.0967353,28.6681817 35.1206611,35.915737 24,35.915737 C21.5350157,35.915737 19.1284516,35.5623693 16.8472912,34.866422 C16.3989036,34.7284538 15.9110839,34.7627221 15.4827056,34.961612 Z"></path>
             </g>
         </g>
     </g>

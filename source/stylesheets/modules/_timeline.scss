@@ -1,3 +1,39 @@
+.activity-timeline{
+  padding-left:0; 
+  position: relative;
+  &:before{
+    content: "";
+    height: 100%;
+    display: block;
+    width: 1px;
+    background-color: #DEE3EA;
+    position: absolute;
+    left: 21px;
+    top: -21px;
+  }
+  blockquote{
+    @include rhythm(0,.25,.25,0);
+    padding-left: $grid-gutter-width;
+  }
+  .activity-icon{
+    background:white;
+    position: relative; 
+    i.icon{
+      @include adjust-font-size-to(24px,1);
+      box-shadow: inset 0 0 0 1px $blue_gray;
+      border-radius: 100px;
+      display: block;
+      opacity: .2;
+      padding:8px;
+      width: 44px;
+      height: 44px;
+      text-align: center;
+    }
+  }
+}
+
+
+
 div.timeline, ul.timeline{
   @include rhythm(0,1,1,0);
   position: relative;

@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>month</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="month" sketch:type="MSLayerGroup" stroke="#626A85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <g id="Group" transform="translate(1.000000, 1.000000)" sketch:type="MSShapeGroup">
-                <path d="M5.10638298,2.60869565 L8.8817842e-15,2.60869565 L8.8817842e-15,30 L29.3617021,30 L29.3617021,2.60869565 L24.2553191,2.60869565" id="Stroke-3935"></path>
-                <path d="M8.93617021,5.2173913 L5.10638298,5.2173913 L5.10638298,0 L8.93617021,0 L8.93617021,5.2173913 Z" id="Stroke-3936"></path>
-                <path d="M24.2553191,5.2173913 L20.4255319,5.2173913 L20.4255319,0 L24.2553191,0 L24.2553191,5.2173913 Z" id="Stroke-3937"></path>
-                <path d="M8.93617021,2.60869565 L20.4255319,2.60869565" id="Stroke-3938"></path>
-                <path d="M8.8817842e-15,9.13043478 L29.3617021,9.13043478" id="Stroke-3939"></path>
-                <path d="M7.65957447,11.7391304 L7.65957447,27.3913043" id="Stroke-3940"></path>
-                <path d="M14.6808511,11.7391304 L14.6808511,27.3913043" id="Stroke-3941"></path>
-                <path d="M21.7021277,11.7391304 L21.7021277,27.3913043" id="Stroke-3942"></path>
-                <path d="M2.55319149,14.3478261 L26.8085106,14.3478261" id="Stroke-3943"></path>
-                <path d="M2.55319149,19.5652174 L26.8085106,19.5652174" id="Stroke-3944"></path>
-                <path d="M2.55319149,24.7826087 L26.8085106,24.7826087" id="Stroke-3945"></path>
+        <g id="month" sketch:type="MSLayerGroup" fill="#231F1F">
+            <g id="Fill-2448-+-Fill-2449" sketch:type="MSShapeGroup">
+                <path d="M47,4 L40,4 L40,1 C40,0.447 39.552,0 39,0 L33,0 C32.448,0 32,0.447 32,1 L32,4 L16,4 L16,1 C16,0.447 15.552,0 15,0 L9,0 C8.448,0 8,0.447 8,1 L8,4 L1,4 C0.448,4 0,4.447 0,5 L0,47 C0,47.553 0.448,48 1,48 L47,48 C47.552,48 48,47.553 48,47 L48,5 C48,4.447 47.552,4 47,4 L47,4 Z M34,2 L38,2 L38,8 L34,8 L34,2 Z M10,2 L14,2 L14,8 L10,8 L10,2 Z M8,6 L8,9 C8,9.553 8.448,10 9,10 L15,10 C15.552,10 16,9.553 16,9 L16,6 L32,6 L32,9 C32,9.553 32.448,10 33,10 L39,10 C39.552,10 40,9.553 40,9 L40,6 L46,6 L46,14 L2,14 L2,6 L8,6 L8,6 Z M2,16 L46,16 L46,46 L2,46 L2,16 Z" id="Fill-2448"></path>
+                <path d="M43,24 C43.552,24 44,23.553 44,23 C44,22.447 43.552,22 43,22 L36,22 L36,19 C36,18.447 35.552,18 35,18 C34.448,18 34,18.447 34,19 L34,22 L25,22 L25,19 C25,18.447 24.552,18 24,18 C23.448,18 23,18.447 23,19 L23,22 L14,22 L14,19 C14,18.447 13.552,18 13,18 C12.448,18 12,18.447 12,19 L12,22 L5,22 C4.448,22 4,22.447 4,23 C4,23.553 4.448,24 5,24 L12,24 L12,30 L5,30 C4.448,30 4,30.447 4,31 C4,31.553 4.448,32 5,32 L12,32 L12,38 L5,38 C4.448,38 4,38.447 4,39 C4,39.553 4.448,40 5,40 L12,40 L12,43 C12,43.553 12.448,44 13,44 C13.552,44 14,43.553 14,43 L14,40 L23,40 L23,43 C23,43.553 23.448,44 24,44 C24.552,44 25,43.553 25,43 L25,40 L34,40 L34,43 C34,43.553 34.448,44 35,44 C35.552,44 36,43.553 36,43 L36,40 L43,40 C43.552,40 44,39.553 44,39 C44,38.447 43.552,38 43,38 L36,38 L36,32 L43,32 C43.552,32 44,31.553 44,31 C44,30.447 43.552,30 43,30 L36,30 L36,24 L43,24 L43,24 Z M14,24 L23,24 L23,30 L14,30 L14,24 Z M14,32 L23,32 L23,38 L14,38 L14,32 Z M25,32 L34,32 L34,38 L25,38 L25,32 Z M25,24 L34,24 L34,30 L25,30 L25,24 Z" id="Fill-2449"></path>
             </g>
         </g>
     </g>

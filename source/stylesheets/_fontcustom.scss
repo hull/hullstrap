@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: url("./fonts/fontcustom_6f9c3dcd2a9543c6131ed4771bd153b1.eot");
-  src: url("./fonts/fontcustom_6f9c3dcd2a9543c6131ed4771bd153b1.eot?#iefix") format("embedded-opentype"),
-       url("./fonts/fontcustom_6f9c3dcd2a9543c6131ed4771bd153b1.woff") format("woff"),
-       url("./fonts/fontcustom_6f9c3dcd2a9543c6131ed4771bd153b1.ttf") format("truetype"),
-       url("./fonts/fontcustom_6f9c3dcd2a9543c6131ed4771bd153b1.svg#fontcustom") format("svg");
+  src: url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.eot");
+  src: url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.eot?#iefix") format("embedded-opentype"),
+       url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.woff") format("woff"),
+       url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.ttf") format("truetype"),
+       url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("./fonts/fontcustom_6f9c3dcd2a9543c6131ed4771bd153b1.svg#fontcustom") format("svg");
+    src: url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.svg#fontcustom") format("svg");
   }
 }
 
@@ -34,11 +34,12 @@
 .icon-arrow_left:before,
 .icon-arrow_right:before,
 .icon-arrow_up:before,
+.icon-badge:before,
 .icon-blockquote:before,
 .icon-bold:before,
-.icon-bubble:before,
-.icon-bubbles:before,
 .icon-checkbox:before,
+.icon-checkin:before,
+.icon-city:before,
 .icon-clear:before,
 .icon-click:before,
 .icon-clock:before,
@@ -49,6 +50,7 @@
 .icon-comment_code:before,
 .icon-comments:before,
 .icon-component:before,
+.icon-country:before,
 .icon-cross:before,
 .icon-dashboard:before,
 .icon-day:before,
@@ -79,6 +81,7 @@
 .icon-image:before,
 .icon-indent:before,
 .icon-instagram:before,
+.icon-instant_win:before,
 .icon-italic:before,
 .icon-javascript:before,
 .icon-justifyblock:before,
@@ -104,12 +107,14 @@
 .icon-ol:before,
 .icon-outdent:before,
 .icon-pencil:before,
+.icon-phone:before,
 .icon-platform:before,
 .icon-play:before,
 .icon-plug_in:before,
 .icon-plus:before,
 .icon-question:before,
 .icon-question_bubble:before,
+.icon-quiz:before,
 .icon-redo:before,
 .icon-reply:before,
 .icon-reset:before,
@@ -151,8 +156,8 @@
   font-variant: normal;
   line-height: 1;
   text-decoration: inherit;
-  text-transform: none;
   text-rendering: optimizeLegibility;
+  text-transform: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -169,11 +174,12 @@
 .icon-arrow_left:before { content: "\f1e3"; }
 .icon-arrow_right:before { content: "\f1e4"; }
 .icon-arrow_up:before { content: "\f1e5"; }
+.icon-badge:before { content: "\f256"; }
 .icon-blockquote:before { content: "\f1e6"; }
 .icon-bold:before { content: "\f1e7"; }
-.icon-bubble:before { content: "\f1e8"; }
-.icon-bubbles:before { content: "\f1e9"; }
 .icon-checkbox:before { content: "\f1ea"; }
+.icon-checkin:before { content: "\f252"; }
+.icon-city:before { content: "\f253"; }
 .icon-clear:before { content: "\f1eb"; }
 .icon-click:before { content: "\f1ec"; }
 .icon-clock:before { content: "\f1ed"; }
@@ -184,6 +190,7 @@
 .icon-comment_code:before { content: "\f1f2"; }
 .icon-comments:before { content: "\f1f3"; }
 .icon-component:before { content: "\f1f4"; }
+.icon-country:before { content: "\f254"; }
 .icon-cross:before { content: "\f1f5"; }
 .icon-dashboard:before { content: "\f1f6"; }
 .icon-day:before { content: "\f1f7"; }
@@ -214,6 +221,7 @@
 .icon-image:before { content: "\f1d9"; }
 .icon-indent:before { content: "\f210"; }
 .icon-instagram:before { content: "\f211"; }
+.icon-instant_win:before { content: "\f258"; }
 .icon-italic:before { content: "\f212"; }
 .icon-javascript:before { content: "\f213"; }
 .icon-justifyblock:before { content: "\f214"; }
@@ -239,12 +247,14 @@
 .icon-ol:before { content: "\f228"; }
 .icon-outdent:before { content: "\f229"; }
 .icon-pencil:before { content: "\f22a"; }
+.icon-phone:before { content: "\f255"; }
 .icon-platform:before { content: "\f22b"; }
 .icon-play:before { content: "\f22c"; }
 .icon-plug_in:before { content: "\f22d"; }
 .icon-plus:before { content: "\f22e"; }
 .icon-question:before { content: "\f22f"; }
 .icon-question_bubble:before { content: "\f230"; }
+.icon-quiz:before { content: "\f257"; }
 .icon-redo:before { content: "\f231"; }
 .icon-reply:before { content: "\f232"; }
 .icon-reset:before { content: "\f233"; }
@@ -291,11 +301,12 @@ $font-fontcustom-arrow_down: "\f1e2";
 $font-fontcustom-arrow_left: "\f1e3";
 $font-fontcustom-arrow_right: "\f1e4";
 $font-fontcustom-arrow_up: "\f1e5";
+$font-fontcustom-badge: "\f256";
 $font-fontcustom-blockquote: "\f1e6";
 $font-fontcustom-bold: "\f1e7";
-$font-fontcustom-bubble: "\f1e8";
-$font-fontcustom-bubbles: "\f1e9";
 $font-fontcustom-checkbox: "\f1ea";
+$font-fontcustom-checkin: "\f252";
+$font-fontcustom-city: "\f253";
 $font-fontcustom-clear: "\f1eb";
 $font-fontcustom-click: "\f1ec";
 $font-fontcustom-clock: "\f1ed";
@@ -306,6 +317,7 @@ $font-fontcustom-comment: "\f1f1";
 $font-fontcustom-comment_code: "\f1f2";
 $font-fontcustom-comments: "\f1f3";
 $font-fontcustom-component: "\f1f4";
+$font-fontcustom-country: "\f254";
 $font-fontcustom-cross: "\f1f5";
 $font-fontcustom-dashboard: "\f1f6";
 $font-fontcustom-day: "\f1f7";
@@ -336,6 +348,7 @@ $font-fontcustom-hull: "\f20f";
 $font-fontcustom-image: "\f1d9";
 $font-fontcustom-indent: "\f210";
 $font-fontcustom-instagram: "\f211";
+$font-fontcustom-instant_win: "\f258";
 $font-fontcustom-italic: "\f212";
 $font-fontcustom-javascript: "\f213";
 $font-fontcustom-justifyblock: "\f214";
@@ -361,12 +374,14 @@ $font-fontcustom-month: "\f227";
 $font-fontcustom-ol: "\f228";
 $font-fontcustom-outdent: "\f229";
 $font-fontcustom-pencil: "\f22a";
+$font-fontcustom-phone: "\f255";
 $font-fontcustom-platform: "\f22b";
 $font-fontcustom-play: "\f22c";
 $font-fontcustom-plug_in: "\f22d";
 $font-fontcustom-plus: "\f22e";
 $font-fontcustom-question: "\f22f";
 $font-fontcustom-question_bubble: "\f230";
+$font-fontcustom-quiz: "\f257";
 $font-fontcustom-redo: "\f231";
 $font-fontcustom-reply: "\f232";
 $font-fontcustom-reset: "\f233";

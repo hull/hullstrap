@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "6f9c3dcd2a9543c6131ed4771bd153b1db6d2ed8b8d9d857bc330e166dd5c9bb",
-    "current": "6f9c3dcd2a9543c6131ed4771bd153b1db6d2ed8b8d9d857bc330e166dd5c9bb"
+    "previous": "ddefbeb2ddd14498d676d9f20eab842ecc3d0aaa8834e2eda3629fe9934f5334",
+    "current": "ddefbeb2ddd14498d676d9f20eab842ecc3d0aaa8834e2eda3629fe9934f5334"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_6f9c3dcd2a9543c6131ed4771bd153b1.ttf",
-    "source/stylesheets/fonts/fontcustom_6f9c3dcd2a9543c6131ed4771bd153b1.svg",
-    "source/stylesheets/fonts/fontcustom_6f9c3dcd2a9543c6131ed4771bd153b1.woff",
-    "source/stylesheets/fonts/fontcustom_6f9c3dcd2a9543c6131ed4771bd153b1.eot"
+    "source/stylesheets/fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.ttf",
+    "source/stylesheets/fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.svg",
+    "source/stylesheets/fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.woff",
+    "source/stylesheets/fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -54,6 +54,10 @@
       "codepoint": 61925,
       "source": "./source/images/icons/arrow_up.svg"
     },
+    "badge": {
+      "codepoint": 62038,
+      "source": "./source/images/icons/badge.svg"
+    },
     "blockquote": {
       "codepoint": 61926,
       "source": "./source/images/icons/blockquote.svg"
@@ -62,17 +66,17 @@
       "codepoint": 61927,
       "source": "./source/images/icons/bold.svg"
     },
-    "bubble": {
-      "codepoint": 61928,
-      "source": "./source/images/icons/bubble.svg"
-    },
-    "bubbles": {
-      "codepoint": 61929,
-      "source": "./source/images/icons/bubbles.svg"
-    },
     "checkbox": {
       "codepoint": 61930,
       "source": "./source/images/icons/checkbox.svg"
+    },
+    "checkin": {
+      "codepoint": 62034,
+      "source": "./source/images/icons/checkin.svg"
+    },
+    "city": {
+      "codepoint": 62035,
+      "source": "./source/images/icons/city.svg"
     },
     "clear": {
       "codepoint": 61931,
@@ -113,6 +117,10 @@
     "component": {
       "codepoint": 61940,
       "source": "./source/images/icons/component.svg"
+    },
+    "country": {
+      "codepoint": 62036,
+      "source": "./source/images/icons/country.svg"
     },
     "cross": {
       "codepoint": 61941,
@@ -234,6 +242,10 @@
       "codepoint": 61969,
       "source": "./source/images/icons/instagram.svg"
     },
+    "instant_win": {
+      "codepoint": 62040,
+      "source": "./source/images/icons/instant_win.svg"
+    },
     "italic": {
       "codepoint": 61970,
       "source": "./source/images/icons/italic.svg"
@@ -334,6 +346,10 @@
       "codepoint": 61994,
       "source": "./source/images/icons/pencil.svg"
     },
+    "phone": {
+      "codepoint": 62037,
+      "source": "./source/images/icons/phone.svg"
+    },
     "platform": {
       "codepoint": 61995,
       "source": "./source/images/icons/platform.svg"
@@ -357,6 +373,10 @@
     "question_bubble": {
       "codepoint": 62000,
       "source": "./source/images/icons/question_bubble.svg"
+    },
+    "quiz": {
+      "codepoint": 62039,
+      "source": "./source/images/icons/quiz.svg"
     },
     "redo": {
       "codepoint": 62001,
