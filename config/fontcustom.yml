@@ -12,6 +12,6 @@ font_name: fontcustom
 # verbose: true
 preprocessor_path: "./fonts"
 font_design_size: 32
-font_em: 1800
-font_ascent: 1600          # Set the ascent 200 from the top (2px)
+font_em: 3200
+font_ascent: 200          # Set the ascent 200 from the top (2px)
 font_descent: 200          # Set the descent 200 from the bottom (2px)
