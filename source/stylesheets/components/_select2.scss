@@ -201,7 +201,7 @@ Version: @@ver@@ Timestamp: @@timestamp@@
     width: 100%;
     height: 100%;
     @extend .icon;
-    @extend .icon-arrow_down;
+    @extend .icon-arrow_down !optional;
     text-align: center;
     @include padding-leader(0.5);
   }
@@ -222,7 +222,7 @@ Version: @@ver@@ Timestamp: @@timestamp@@
 
     white-space: nowrap;
     @extend .icon;
-    @extend .icon-search;
+    @extend .icon-search !optional;
     &:before{
       position: absolute;
       right: 9px;
