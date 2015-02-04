@@ -119,7 +119,7 @@ $navbar-font-size:12px;
   }
 
   // Navbar Buttons
-  >li>,  .nav {
+  >li>,  .nav, .navbar-nav {
     .navbar-item{
       @extend %navbar-item;
       @include btn;
