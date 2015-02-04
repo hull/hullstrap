@@ -7,6 +7,9 @@
   .broadcast-query & {
     left:$sidebar_width;
   }
+  .has-sidebar &{
+    left: 240px;
+  }
 }
 .sticky-primary{
   top: 0;
@@ -85,6 +88,13 @@
     top: 54px;
     z-index: 10;
   }
+}
+
+.sticky-wrap{
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  width: 100%;
 }
 
 // .sticky-sidebar{

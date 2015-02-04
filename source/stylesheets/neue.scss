@@ -74,13 +74,6 @@
   }
 }
 
-.sticky-wrap{
-  overflow-x: auto;
-  overflow-y: hidden;
-  position: relative;
-  width: 100%;
-}
-
 .datagrid-responsive{
   overflow: scroll;
   padding-right: 0;
@@ -283,21 +276,23 @@ table.datagrid-table{
 }
 
 
-.user-jumbotron{
+.sidebar-branded{
   background-size: cover;
+  background-color: transparent;
   min-height: 100vh;
+  .sidebar-content{
+    @extend .blue-section;
+    background-image: linear-gradient(top, $blue_2 0%,$turquoise 100%);
+    min-height: 100vh;
+    // background-image: radial-gradient(circle at -20% 100px, rgba(75, 194, 184, 0.7) 0%, rgba(0, 147, 230, 0.7) 100%);
+    // background-color: transparent;
+  }
+}
+.user-jumbotron{
   .user-jumbotron-avatar{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
     width:  100px;
     height: 100px;
     border: 5px solid white;
   }
-  .user-jumbotron-cover{
-    @extend .blue-section;
-    min-height: 100vh;
-    background-image: linear-gradient(top, $blue_2 0%,$turquoise 100%);
-    // background-image: radial-gradient(circle at -20% 100px, rgba(75, 194, 184, 0.7) 0%, rgba(0, 147, 230, 0.7) 100%);
-    // background-color: transparent;
-  }
-  background-color: transparent;
 }

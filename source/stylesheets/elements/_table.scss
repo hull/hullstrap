@@ -224,8 +224,8 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
     .sorting:after, .sorting_asc:after, .sorting_desc:after, .sorting_asc_disabled:after, .sorting_desk_disabled:after{
       content: "▼";
       position: absolute;
-      top: 5px;
-      right: 8px;
+      top: 12px;
+      right: 3px;
     }
     .sorting_asc:after, .sorting_asc_disabled:after{
       content: "▲";

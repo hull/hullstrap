@@ -194,6 +194,33 @@
   z-index: 1001;
 }
 
+
+.nav-tabs.nav-branded, .sidebar-branded .nav-tabs.nav-tabs{
+  box-shadow: none;
+  li{
+    box-shadow: none;
+    a {
+      color: transparentize($white, .5);
+      @include adjust-font-size-to(12px, 1.25);
+      box-shadow: none;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+    }
+    &.active a {
+      color: white;
+      text-transform: uppercase;
+      @include font-weight-semibold;
+      box-shadow: 0 0 0 1px transparentize($white, .7);
+      background-color: transparentize($white, .9);
+      border-radius: 3px;
+      &:hover{
+        box-shadow: 0 0 0 1px transparentize($white, .6);
+        background-color: transparentize($white, .8);
+      }
+    }
+  }
+}
+
 // .overview-horizontal-tabs{
 //   nav{
 //     float: left;
