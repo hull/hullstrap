@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>stats</title>
-    <description>Created with Sketch.</description>
+    <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-360.000000, 0.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <g id="stats" transform="translate(360.000000, 0.000000)" sketch:type="MSShapeGroup">
-                <g transform="translate(1.000000, 1.000000)">
-                    <path d="M0,34 L34,34" id="Stroke-4415"></path>
-                    <path d="M5.91304348,26.6086957 L1.47826087,26.6086957 L1.47826087,34 L5.91304348,34 L5.91304348,26.6086957 Z" id="Stroke-4416"></path>
-                    <path d="M14.7826087,19.2173913 L10.3478261,19.2173913 L10.3478261,34 L14.7826087,34 L14.7826087,19.2173913 Z" id="Stroke-4417"></path>
-                    <path d="M23.6521739,22.173913 L19.2173913,22.173913 L19.2173913,34 L23.6521739,34 L23.6521739,22.173913 Z" id="Stroke-4418"></path>
-                    <path d="M32.5217391,11.826087 L28.0869565,11.826087 L28.0869565,34 L32.5217391,34 L32.5217391,11.826087 Z" id="Stroke-4419"></path>
-                    <path d="M5.17391304,16.2608696 C5.17391304,17.0768696 4.5123913,17.7391304 3.69565217,17.7391304 C2.87965217,17.7391304 2.2173913,17.0768696 2.2173913,16.2608696 C2.2173913,15.4448696 2.87965217,14.7826087 3.69565217,14.7826087 C4.5123913,14.7826087 5.17391304,15.4448696 5.17391304,16.2608696 L5.17391304,16.2608696 Z" id="Stroke-4420"></path>
-                    <path d="M14.0434783,8.86956522 C14.0434783,9.68556522 13.3819565,10.3478261 12.5652174,10.3478261 C11.7492174,10.3478261 11.0869565,9.68556522 11.0869565,8.86956522 C11.0869565,8.05356522 11.7492174,7.39130435 12.5652174,7.39130435 C13.3819565,7.39130435 14.0434783,8.05356522 14.0434783,8.86956522 L14.0434783,8.86956522 Z" id="Stroke-4421"></path>
-                    <path d="M22.9130435,11.826087 C22.9130435,12.642087 22.2515217,13.3043478 21.4347826,13.3043478 C20.6187826,13.3043478 19.9565217,12.642087 19.9565217,11.826087 C19.9565217,11.010087 20.6187826,10.3478261 21.4347826,10.3478261 C22.2515217,10.3478261 22.9130435,11.010087 22.9130435,11.826087 L22.9130435,11.826087 Z" id="Stroke-4422"></path>
-                    <path d="M31.7826087,1.47826087 C31.7826087,2.29426087 31.121087,2.95652174 30.3043478,2.95652174 C29.4883478,2.95652174 28.826087,2.29426087 28.826087,1.47826087 C28.826087,0.66226087 29.4883478,0 30.3043478,0 C31.121087,0 31.7826087,0.66226087 31.7826087,1.47826087 L31.7826087,1.47826087 Z" id="Stroke-4423"></path>
-                    <path d="M4.83176957,15.3145609 L11.4307261,9.81543043" id="Stroke-4424"></path>
-                    <path d="M13.9618783,9.33588261 L20.0752261,11.372187" id="Stroke-4425"></path>
-                    <path d="M29.342887,2.59996522 L22.3965391,10.7037913" id="Stroke-4426"></path>
-                </g>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="stats" sketch:type="MSLayerGroup" stroke="#231F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Group" transform="translate(1.000000, 1.000000)" sketch:type="MSShapeGroup">
+                <path d="M0,46 L46,46" id="Stroke-4415"></path>
+                <path d="M8,36 L2,36 L2,46 L8,46 L8,36 Z" id="Stroke-4416"></path>
+                <path d="M20,26 L14,26 L14,46 L20,46 L20,26 Z" id="Stroke-4417"></path>
+                <path d="M32,30 L26,30 L26,46 L32,46 L32,30 Z" id="Stroke-4418"></path>
+                <path d="M44,16 L38,16 L38,46 L44,46 L44,16 Z" id="Stroke-4419"></path>
+                <path d="M7,22 C7,23.104 6.105,24 5,24 C3.896,24 3,23.104 3,22 C3,20.896 3.896,20 5,20 C6.105,20 7,20.896 7,22 L7,22 Z" id="Stroke-4420"></path>
+                <path d="M19,12 C19,13.104 18.105,14 17,14 C15.896,14 15,13.104 15,12 C15,10.896 15.896,10 17,10 C18.105,10 19,10.896 19,12 L19,12 Z" id="Stroke-4421"></path>
+                <path d="M31,16 C31,17.104 30.105,18 29,18 C27.896,18 27,17.104 27,16 C27,14.896 27.896,14 29,14 C30.105,14 31,14.896 31,16 L31,16 Z" id="Stroke-4422"></path>
+                <path d="M43,2 C43,3.104 42.105,4 41,4 C39.896,4 39,3.104 39,2 C39,0.896 39.896,0 41,0 C42.105,0 43,0.896 43,2 L43,2 Z" id="Stroke-4423"></path>
+                <path d="M6.5371,20.7197 L15.4651,13.2797" id="Stroke-4424"></path>
+                <path d="M18.8896,12.6309 L27.1606,15.3859" id="Stroke-4425"></path>
+                <path d="M39.6992,3.5176 L30.3012,14.4816" id="Stroke-4426"></path>
             </g>
         </g>
     </g>

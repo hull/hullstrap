@@ -296,3 +296,46 @@ table.datagrid-table{
     border: 5px solid white;
   }
 }
+
+.navbar-stacked{
+  width: 60px;
+  position: fixed;
+  top:0;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-image: linear-gradient(to bottom, #0093e6 0%, #4bc2b8 100%);
+  >.container-fluid{
+    padding: 0;
+  }
+  .navbar-nav > li{
+    float: none;
+  }
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    display: block;
+    @include adjust-font-size-to(8px);
+    padding: 0;
+    margin-bottom: 15px;
+  }
+}
+
+
+.navbar-iconbar{
+  .navbar-collapse>.navbar-nav{
+    width: 100%;
+  }
+  .icon, .navbar-icon {
+    font-size: 32px;
+    display: block;
+    margin: 0 auto;
+  }
+  .navbar-item {
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    @include adjust-font-size-to(8px);
+  }
+}

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>clear</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="clear" sketch:type="MSLayerGroup" stroke="#626A85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9.25155531,27 C7.60193549,27 5.29771654,26.1034744 4.13173526,25.0076425 L0.874485958,21.9497366 C-0.291495319,20.8539047 -0.291495319,19.0608535 0.874485958,17.9650216 L19.128279,0.821873859 C20.2942603,-0.273957953 22.2033203,-0.273957953 23.3693016,0.821873859 L31.125514,8.10535239 C32.2914953,9.2011842 32.2914953,10.9942355 31.125514,12.0900673 L17.3706841,25.0076425 C16.2047028,26.1034744 13.9004839,27 12.2508641,27 L9.25155531,27 L9.25155531,27 Z" id="Stroke-6880" sketch:type="MSShapeGroup"></path>
-            <path d="M13.5,8.99999998 L22.5000001,17.9999996" id="Stroke-6881" sketch:type="MSShapeGroup"></path>
-            <path d="M1,31 L31,31" id="Stroke-6882" sketch:type="MSShapeGroup"></path>
+            <path d="M13.877333,40.5 C11.4029032,40.5 7.94657481,39.1552115 6.1976029,37.5114638 L1.31172894,32.9246048 C-0.437242979,31.2808571 -0.437242979,28.5912802 1.31172894,26.9475325 L28.6924185,1.23281079 C30.4413905,-0.410936929 33.3049805,-0.410936929 35.0539524,1.23281079 L46.6882711,12.1580286 C48.437243,13.8017763 48.437243,16.4913532 46.6882711,18.1351009 L26.0560262,37.5114638 C24.3070542,39.1552115 20.8507258,40.5 18.3762961,40.5 L13.877333,40.5 L13.877333,40.5 Z" id="Stroke-6880" sketch:type="MSShapeGroup"></path>
+            <path d="M20.25,13.5 L33.7500002,26.9999993" id="Stroke-6881" sketch:type="MSShapeGroup"></path>
+            <path d="M1.5,46.5 L46.5,46.5" id="Stroke-6882" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

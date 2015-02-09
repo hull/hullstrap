@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.eot");
-  src: url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.eot?#iefix") format("embedded-opentype"),
-       url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.woff") format("woff"),
-       url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.ttf") format("truetype"),
-       url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.svg#fontcustom") format("svg");
+  src: url("./fonts/fontcustom_6abc5ebe305c213e8841d00e24ec23b4.eot");
+  src: url("./fonts/fontcustom_6abc5ebe305c213e8841d00e24ec23b4.eot?#iefix") format("embedded-opentype"),
+       url("./fonts/fontcustom_6abc5ebe305c213e8841d00e24ec23b4.woff") format("woff"),
+       url("./fonts/fontcustom_6abc5ebe305c213e8841d00e24ec23b4.ttf") format("truetype"),
+       url("./fonts/fontcustom_6abc5ebe305c213e8841d00e24ec23b4.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("./fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.svg#fontcustom") format("svg");
+    src: url("./fonts/fontcustom_6abc5ebe305c213e8841d00e24ec23b4.svg#fontcustom") format("svg");
   }
 }
 
@@ -58,6 +58,7 @@
 .icon-desktop:before,
 .icon-download:before,
 .icon-draft:before,
+.icon-earth:before,
 .icon-email:before,
 .icon-email_message:before,
 .icon-emit:before,
@@ -92,9 +93,7 @@
 .icon-key:before,
 .icon-kissmetrics:before,
 .icon-libraries:before,
-.icon-library:before,
 .icon-like:before,
-.icon-liked:before,
 .icon-link:before,
 .icon-linkedin:before,
 .icon-lock:before,
@@ -104,6 +103,7 @@
 .icon-mixpanel:before,
 .icon-mobile:before,
 .icon-month:before,
+.icon-numbers:before,
 .icon-ol:before,
 .icon-outdent:before,
 .icon-pencil:before,
@@ -130,13 +130,13 @@
 .icon-stop:before,
 .icon-table:before,
 .icon-tag:before,
+.icon-tags:before,
 .icon-templates:before,
 .icon-trait:before,
 .icon-trash:before,
 .icon-tumblr:before,
 .icon-twitter:before,
 .icon-ul:before,
-.icon-uncomment:before,
 .icon-uncomment_code:before,
 .icon-undo:before,
 .icon-unlink:before,
@@ -198,6 +198,7 @@
 .icon-desktop:before { content: "\f1f9"; }
 .icon-download:before { content: "\f1fa"; }
 .icon-draft:before { content: "\f1fb"; }
+.icon-earth:before { content: "\f25a"; }
 .icon-email:before { content: "\f1fc"; }
 .icon-email_message:before { content: "\f1fd"; }
 .icon-emit:before { content: "\f1fe"; }
@@ -232,9 +233,7 @@
 .icon-key:before { content: "\f219"; }
 .icon-kissmetrics:before { content: "\f21a"; }
 .icon-libraries:before { content: "\f21b"; }
-.icon-library:before { content: "\f21c"; }
 .icon-like:before { content: "\f21d"; }
-.icon-liked:before { content: "\f21e"; }
 .icon-link:before { content: "\f21f"; }
 .icon-linkedin:before { content: "\f220"; }
 .icon-lock:before { content: "\f221"; }
@@ -244,6 +243,7 @@
 .icon-mixpanel:before { content: "\f225"; }
 .icon-mobile:before { content: "\f226"; }
 .icon-month:before { content: "\f227"; }
+.icon-numbers:before { content: "\f25b"; }
 .icon-ol:before { content: "\f228"; }
 .icon-outdent:before { content: "\f229"; }
 .icon-pencil:before { content: "\f22a"; }
@@ -270,13 +270,13 @@
 .icon-stop:before { content: "\f23c"; }
 .icon-table:before { content: "\f23d"; }
 .icon-tag:before { content: "\f23e"; }
+.icon-tags:before { content: "\f259"; }
 .icon-templates:before { content: "\f23f"; }
 .icon-trait:before { content: "\f240"; }
 .icon-trash:before { content: "\f241"; }
 .icon-tumblr:before { content: "\f242"; }
 .icon-twitter:before { content: "\f243"; }
 .icon-ul:before { content: "\f244"; }
-.icon-uncomment:before { content: "\f245"; }
 .icon-uncomment_code:before { content: "\f246"; }
 .icon-undo:before { content: "\f247"; }
 .icon-unlink:before { content: "\f248"; }
@@ -325,6 +325,7 @@ $font-fontcustom-delete: "\f1f8";
 $font-fontcustom-desktop: "\f1f9";
 $font-fontcustom-download: "\f1fa";
 $font-fontcustom-draft: "\f1fb";
+$font-fontcustom-earth: "\f25a";
 $font-fontcustom-email: "\f1fc";
 $font-fontcustom-email_message: "\f1fd";
 $font-fontcustom-emit: "\f1fe";
@@ -359,9 +360,7 @@ $font-fontcustom-keen_io: "\f218";
 $font-fontcustom-key: "\f219";
 $font-fontcustom-kissmetrics: "\f21a";
 $font-fontcustom-libraries: "\f21b";
-$font-fontcustom-library: "\f21c";
 $font-fontcustom-like: "\f21d";
-$font-fontcustom-liked: "\f21e";
 $font-fontcustom-link: "\f21f";
 $font-fontcustom-linkedin: "\f220";
 $font-fontcustom-lock: "\f221";
@@ -371,6 +370,7 @@ $font-fontcustom-minus: "\f224";
 $font-fontcustom-mixpanel: "\f225";
 $font-fontcustom-mobile: "\f226";
 $font-fontcustom-month: "\f227";
+$font-fontcustom-numbers: "\f25b";
 $font-fontcustom-ol: "\f228";
 $font-fontcustom-outdent: "\f229";
 $font-fontcustom-pencil: "\f22a";
@@ -397,13 +397,13 @@ $font-fontcustom-stats: "\f23b";
 $font-fontcustom-stop: "\f23c";
 $font-fontcustom-table: "\f23d";
 $font-fontcustom-tag: "\f23e";
+$font-fontcustom-tags: "\f259";
 $font-fontcustom-templates: "\f23f";
 $font-fontcustom-trait: "\f240";
 $font-fontcustom-trash: "\f241";
 $font-fontcustom-tumblr: "\f242";
 $font-fontcustom-twitter: "\f243";
 $font-fontcustom-ul: "\f244";
-$font-fontcustom-uncomment: "\f245";
 $font-fontcustom-uncomment_code: "\f246";
 $font-fontcustom-undo: "\f247";
 $font-fontcustom-unlink: "\f248";

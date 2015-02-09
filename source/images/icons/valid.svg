@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.2 (7799) - http://www.bohemiancoding.com/sketch -->
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>valid</title>
-    <description>Created with Sketch.</description>
+    <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-240.000000, -40.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <g id="valid" transform="translate(240.000000, 40.000000)" sketch:type="MSShapeGroup">
-                <g transform="translate(1.000000, 1.000000)">
-                    <path d="M34.0017739,0 L12.5669913,26.6086957 L5.17568696,19.2173913" id="Stroke-3523"></path>
-                    <path d="M26.2752,17.7304826 C26.4932435,18.6832217 26.6107652,19.676613 26.6107652,20.6958739 C26.6107652,28.0435696 20.6518957,34.0002217 13.3064174,34.0002217 C5.95576522,34.0002217 0.00206956522,28.0435696 0.00206956522,20.6958739 C0.00206956522,13.3474391 5.95576522,7.39152609 13.3064174,7.39152609 C15.4277217,7.39152609 17.4359391,7.8897 19.2194609,8.77591739" id="Stroke-3524"></path>
-                </g>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="valid" sketch:type="MSLayerGroup" stroke="#231F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Stroke-3520" transform="translate(1.000000, 1.000000)" sketch:type="MSShapeGroup">
+                <path d="M46,0 L13,46 L0,33"></path>
             </g>
         </g>
     </g>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>numbers</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="numbers" sketch:type="MSLayerGroup" stroke="#231F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14,37 L14,29.146 L11,32.073" id="Stroke-6918" sketch:type="MSShapeGroup"></path>
+            <path d="M25,19 L20.861,19 C23.821,15 24.861,15.327 24.861,13.073 C24.861,11.969 23.963,11.109 22.861,11.109 C21.755,11.109 20.931,11.951 20.931,13.055" id="Stroke-6919" sketch:type="MSShapeGroup"></path>
+            <path d="M32,30 L35.861,30 L33.861,33.073 C35.514,33.073 35.861,34.036 35.861,35.036 C35.861,36.036 35.514,37 33.861,37 L32,37" id="Stroke-6920" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>maximize</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="maximize" sketch:type="MSLayerGroup" stroke="#505977" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M30.981,11 L31,1.01896397 L21,1" id="Stroke-3706" sketch:type="MSShapeGroup"></path>
-            <path d="M11,31.0259488 L1,31.0069848 L1.019,21.0259488" id="Stroke-3705" sketch:type="MSShapeGroup"></path>
-            <path d="M1.5,30.5 L12.5453606,19.454639" id="Line" sketch:type="MSShapeGroup"></path>
-            <path d="M19.5,12.5 L30.5453606,1.45463899" id="Line-2" sketch:type="MSShapeGroup"></path>
+        <g id="maximize" sketch:type="MSLayerGroup" stroke="#231F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Group" transform="translate(1.000000, 1.000000)" sketch:type="MSShapeGroup">
+                <path d="M15.9865,29.9865 L0.0005,46.0005" id="Stroke-3768"></path>
+                <path d="M10,46 L0,46 L0,36" id="Stroke-3769"></path>
+                <path d="M30.0135,16.0135 L46.0005,-0.0005" id="Stroke-3770"></path>
+                <path d="M36.0443,0.0251 L46.0003,9.99999993e-05 L46.0253,10.0441" id="Stroke-3771"></path>
+            </g>
         </g>
     </g>
 </svg>

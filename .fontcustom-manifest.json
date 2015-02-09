@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "ddefbeb2ddd14498d676d9f20eab842ecc3d0aaa8834e2eda3629fe9934f5334",
-    "current": "ddefbeb2ddd14498d676d9f20eab842ecc3d0aaa8834e2eda3629fe9934f5334"
+    "previous": "6abc5ebe305c213e8841d00e24ec23b478fe72e9c44a6b3e4a184ffa43c5817c",
+    "current": "6abc5ebe305c213e8841d00e24ec23b478fe72e9c44a6b3e4a184ffa43c5817c"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.ttf",
-    "source/stylesheets/fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.svg",
-    "source/stylesheets/fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.woff",
-    "source/stylesheets/fonts/fontcustom_ddefbeb2ddd14498d676d9f20eab842e.eot"
+    "source/stylesheets/fonts/fontcustom_6abc5ebe305c213e8841d00e24ec23b4.ttf",
+    "source/stylesheets/fonts/fontcustom_6abc5ebe305c213e8841d00e24ec23b4.svg",
+    "source/stylesheets/fonts/fontcustom_6abc5ebe305c213e8841d00e24ec23b4.woff",
+    "source/stylesheets/fonts/fontcustom_6abc5ebe305c213e8841d00e24ec23b4.eot"
   ],
   "glyphs": {
     "achievement": {
@@ -150,6 +150,10 @@
       "codepoint": 61947,
       "source": "./source/images/icons/draft.svg"
     },
+    "earth": {
+      "codepoint": 62042,
+      "source": "./source/images/icons/earth.svg"
+    },
     "email": {
       "codepoint": 61948,
       "source": "./source/images/icons/email.svg"
@@ -286,17 +290,9 @@
       "codepoint": 61979,
       "source": "./source/images/icons/libraries.svg"
     },
-    "library": {
-      "codepoint": 61980,
-      "source": "./source/images/icons/library.svg"
-    },
     "like": {
       "codepoint": 61981,
       "source": "./source/images/icons/like.svg"
-    },
-    "liked": {
-      "codepoint": 61982,
-      "source": "./source/images/icons/liked.svg"
     },
     "link": {
       "codepoint": 61983,
@@ -333,6 +329,10 @@
     "month": {
       "codepoint": 61991,
       "source": "./source/images/icons/month.svg"
+    },
+    "numbers": {
+      "codepoint": 62043,
+      "source": "./source/images/icons/numbers.svg"
     },
     "ol": {
       "codepoint": 61992,
@@ -438,6 +438,10 @@
       "codepoint": 62014,
       "source": "./source/images/icons/tag.svg"
     },
+    "tags": {
+      "codepoint": 62041,
+      "source": "./source/images/icons/tags.svg"
+    },
     "templates": {
       "codepoint": 62015,
       "source": "./source/images/icons/templates.svg"
@@ -461,10 +465,6 @@
     "ul": {
       "codepoint": 62020,
       "source": "./source/images/icons/ul.svg"
-    },
-    "uncomment": {
-      "codepoint": 62021,
-      "source": "./source/images/icons/uncomment.svg"
     },
     "uncomment_code": {
       "codepoint": 62022,

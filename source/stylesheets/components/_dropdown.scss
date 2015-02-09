@@ -3,6 +3,8 @@
   backface-visibility: hidden;
 }
 
+$dropdown-bg-color: rgba(255, 255, 255, 0.95);
+
 $dropdown-border-color: #d9dfe7;
 
 %dropdown-caret{
@@ -23,7 +25,7 @@ $dropdown-border-color: #d9dfe7;
     margin-top: 8px;
     &::before{
       @extend %dropdown-caret;
-      border-bottom-color:$dropdown-border-color;
+      border-bottom-color:$dropdown-bg-color;
       bottom: 100%;
     }
   }
@@ -34,7 +36,7 @@ $dropdown-border-color: #d9dfe7;
     margin-bottom: 10px;
     &::before{
       @extend %dropdown-caret;
-      border-top-color:$dropdown-border-color;
+      border-top-color:$dropdown-bg-color;
       top: 100%;
     }
   }
@@ -56,10 +58,11 @@ $dropdown-border-color: #d9dfe7;
   }
   background-color: $white;
   @extend %white-background-colors;
+  background-color: $dropdown-bg-color;
   border: 0;
-  border-radius: 3px !important; 
-  box-shadow: 0 0px 0px 2px $dropdown-border-color;
-  // box-shadow: 0 0px 1px rgba(7, 20, 34, 0.09), 0 0px 7px rgba(10, 35, 59, 0.25);
+  border-radius: 0px !important; 
+  // box-shadow: 0 0px 0px 2px $dropdown-border-color;
+  box-shadow: 0 0px 30px rgba(10, 35, 59, 0.25);
   background-clip: padding-box;
 
   > li a.btn-link{

@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
     <title>eye_closed</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSLayerGroup" transform="translate(-400.000000, -382.000000)" stroke="#0093E6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <g id="eye_closed" transform="translate(400.000000, 382.000000)" sketch:type="MSShapeGroup">
-                <g id="Group" transform="translate(1.000000, 3.000000)">
-                    <path d="M27.7785,9 C31.437,11.6445 33.75225,14.568 33.75225,14.568 C33.75225,14.568 26.0295,24.318 16.50225,24.318 C14.9445,24.318 13.43475,24.057 12,23.62125" id="Stroke-236"></path>
-                    <path d="M5.95125,19.8015 C2.30475,17.16075 0,14.25 0,14.25 C0,14.25 7.72275,4.5 17.25,4.5 C18.54,4.5 19.797,4.6785 21.00675,4.9875" id="Stroke-237"></path>
-                    <path d="M12,15 C12,11.6865 14.6865,9 18,9" id="Stroke-238"></path>
-                    <path d="M24,15 C24,18.3135 21.3135,21 18,21" id="Stroke-239"></path>
-                    <path d="M32.25,0 L3,29.25" id="Stroke-240"></path>
-                </g>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="eye_closed" sketch:type="MSLayerGroup" stroke="#231F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Group" transform="translate(1.000000, 5.000000)" sketch:type="MSShapeGroup">
+                <path d="M38.0347,12.0762 C42.9127,15.6022 45.9997,19.5002 45.9997,19.5002 C45.9997,19.5002 35.7027,32.5002 22.9997,32.5002 C20.9227,32.5002 18.9097,32.1522 16.9967,31.5712" id="Stroke-236"></path>
+                <path d="M7.9351,26.9023 C3.0731,23.3813 0.0001,19.5003 0.0001,19.5003 C0.0001,19.5003 10.2971,6.5003 23.0001,6.5003 C24.7201,6.5003 26.3961,6.7383 28.0091,7.1503" id="Stroke-237"></path>
+                <path d="M15,19.5 C15,15.082 18.582,11.5 23,11.5" id="Stroke-238"></path>
+                <path d="M31,19.5 C31,23.918 27.418,27.5 23,27.5" id="Stroke-239"></path>
+                <path d="M42.5,0 L3.5,39" id="Stroke-240"></path>
             </g>
         </g>
     </g>

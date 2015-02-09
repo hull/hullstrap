@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>eye</title>
+    <title>eye_open</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="eye" sketch:type="MSLayerGroup" stroke="#626A85" stroke-width="2">
-            <path d="M32,17.0000001 C32,17.0000001 24.8368696,27 16,27 C7.16313044,27 0,17.0000001 0,17.0000001 C0,17.0000001 7.16313044,7 16,7 C24.8368696,7 32,17.0000001 32,17.0000001 L32,17.0000001 L32,17.0000001 Z" id="Stroke-166" sketch:type="MSShapeGroup"></path>
-            <path d="M21,17 C21,19.76125 18.76125,22 16,22 C13.23875,22 11,19.76125 11,17 C11,14.23875 13.23875,12 16,12 C18.76125,12 21,14.23875 21,17 L21,17 L21,17 Z" id="Stroke-167" sketch:type="MSShapeGroup"></path>
+        <g id="eye_open" sketch:type="MSLayerGroup" stroke="#231F1F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <g id="Stroke-166-+-Stroke-167" transform="translate(1.000000, 11.000000)" sketch:type="MSShapeGroup">
+                <path d="M46,13 C46,13 35.703,26 23,26 C10.297,26 0,13 0,13 C0,13 10.297,0 23,0 C35.703,0 46,13 46,13 L46,13 Z" id="Stroke-166"></path>
+                <path d="M31,13 C31,17.418 27.418,21 23,21 C18.582,21 15,17.418 15,13 C15,8.582 18.582,5 23,5 C27.418,5 31,8.582 31,13 L31,13 Z" id="Stroke-167"></path>
+            </g>
         </g>
     </g>
 </svg>
