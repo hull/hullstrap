@@ -58,6 +58,9 @@ l.toggle();
 
 // Check the current state
 l.isLoading();
+
+// Delete the button's ladda instance
+l.remove();
 ```
 
 All loading animations on the page can be stopped by using:
@@ -66,9 +69,49 @@ All loading animations on the page can be stopped by using:
 Ladda.stopAll();
 ```
 
+#### With jQuery
+
+If you will be using the loading animation for a form that is submitted to the server (always resulting in a page reload) you can use the ```ladda('bind')``` method:
+
+```javascript
+// Automatically trigger the loading animation on click
+$( 'input[type=submit]' ).ladda( 'bind' );
+
+// Same as the above but automatically stops after two seconds
+$( 'input[type=submit]' ).ladda( 'bind', { timeout: 2000 } );
+```
+
+If you want JavaScript control over your buttons you can use the following approach:
+
+```javascript
+// Create a new instance of ladda for the specified button
+var l = $( '.my-button' ).ladda();
+
+// Start loading
+l.ladda( 'start' );
+
+// Will display a progress bar for 50% of the button width
+l.ladda( 'setProgress', 0.5 );
+
+// Stop loading
+l.ladda( 'stop' );
+
+// Toggle between loading/not loading states
+l.ladda( 'toggle' );
+
+// Check the current state
+l.ladda( 'isLoading' );
+```
+
+All loading animations on the page can be stopped by using:
+
+```javascript
+$.ladda( 'stopAll' );
+```
+
 ## Module
 
-The spinner and Ladda can be loaded as a module using either Common.js or AMD.
+You can `bower install ladda` or `npm install ladda`. The spinner and Ladda can be loaded as a module using AMD.
 
 ```javascript
 // Using Require.js
@@ -76,6 +119,13 @@ define(['ladda'], function(Ladda) {
 	// Make Buttons Here
 });
 ```
+
+Or in Common.js, you will:
+
+```javascript
+var ladda = require('Ladda/dist/ladda.min');
+```
+
 ## Browser support
 
 The project is tested in Chrome and Firefox. It Should Work™ in the current stable releases of Chrome, Firefox, Safari as well as IE9 and up.
@@ -88,4 +138,4 @@ The project is tested in Chrome and Firefox. It Should Work™ in the current st
 
 MIT licensed
 
-Copyright (C) 2013 Hakim El Hattab, http://hakim.se
+Copyright (C) 2015 Hakim El Hattab, http://hakim.se

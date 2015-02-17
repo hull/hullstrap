@@ -27,7 +27,7 @@ Thank you for considering Drop, we believe it's the best way of creating dropdow
 
 ### Features
 
-Because Drop is built on [Tether](http://github.hubspot.com/tether), you get all of the benefits of its effecient and powerful positioning.
+Because Drop is built on [Tether](http://github.hubspot.com/tether), you get all of the benefits of its efficient and powerful positioning.
 
 - Drops automatically reposition on page resizes and scrolls, reorienting to stay in view.
 - Drop uses GPU accelerated positioning to maintain 60fps scrolling, even with dozens or hundreds of drops on screen and complex animation
@@ -99,7 +99,8 @@ a click or hover can be set to open the drop.
 
 #### `content`
 
-The content which should be rendered into the Drop.  Can be a DOM element or an HTML string.
+The content which should be rendered into the Drop.  Can be a DOM element, an HTML string, or a function that returns html.
+In this case, the function is called on each open, with drop instance passed as the first argument.
 
 #### `position`
 

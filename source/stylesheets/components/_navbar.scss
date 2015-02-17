@@ -19,9 +19,6 @@ $navbar-font-size:12px;
   display: inline-block;
   text-decoration: none;
   opacity:1;
-  .icon{
-    line-height: $h6_font_size;
-  }
 }
 
 
@@ -199,8 +196,14 @@ $navbar-font-size:12px;
   .container{
     position: relative;
   }
-  .navbar-item{
-    @include btn-invisible;
+  .nav > li > a:hover, .nav > li > a:focus{
+    color: transparentize($white,.3);
+    box-shadow: none;
+    background-color: transparent;
+  }
+  
+  .navbar-item,.navbar-item:hover{
+    // @include btn-invisible;
     color:white;
   }
 }
@@ -228,7 +231,7 @@ $navbar-font-size:12px;
 
   @media screen and (min-width: $screen-sm-min) {
     .open {
-      > .navbar-item, > .navbar-item:hover, .navbar-item:focus{
+      > .navbar-item, > .navbar-item-default:hover, .navbar-item-default:focus{
         border-color: transparentize($primary_bg_text, .5);
         background-color: transparentize($primary_bg_text, .88);
         color: transparentize($primary_bg_text,.1);

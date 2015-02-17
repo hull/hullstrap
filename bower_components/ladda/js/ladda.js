@@ -3,13 +3,14 @@
  * http://lab.hakim.se/ladda
  * MIT licensed
  *
- * Copyright (C) 2013 Hakim El Hattab, http://hakim.se
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
  */
+/* jshint node:true, browser:true */
 (function( root, factory ) {
 
 	// CommonJS
 	if( typeof exports === 'object' )  {
-		module.exports = factory();
+		module.exports = factory(require('spin.js'));
 	}
 	// AMD module
 	else if( typeof define === 'function' && define.amd ) {
@@ -48,11 +49,15 @@
 		}
 
 		// The spinner component
-		var spinner;
+		var spinner,
+			spinnerWrapper = button.querySelector( '.ladda-spinner' );
 
 		// Wrapper element for the spinner
-		var spinnerWrapper = document.createElement( 'span' );
-		spinnerWrapper.className = 'ladda-spinner';
+		if( !spinnerWrapper ) {
+			spinnerWrapper = document.createElement( 'span' );
+			spinnerWrapper.className = 'ladda-spinner';
+		}
+
 		button.appendChild( spinnerWrapper );
 
 		// Timer used to delay starting/stopping
@@ -178,6 +183,27 @@
 
 				return button.hasAttribute( 'data-loading' );
 
+			},
+
+			remove: function() {
+
+				clearTimeout( timer );
+
+				button.removeAttribute( 'disabled', '' );
+				button.removeAttribute( 'data-loading', '' );
+
+				if( spinner ) {
+					spinner.stop();
+					spinner = null;
+				}
+
+				for( var i = 0, len = ALL_INSTANCES.length; i < len; i++ ) {
+					if( instance === ALL_INSTANCES[i] ) {
+						ALL_INSTANCES.splice( i, 1 );
+						break;
+					}
+				}
+
 			}
 
 		};
@@ -217,7 +243,7 @@
 	 */
 	function getRequiredFields( form ) {
 
-		var requirables = [ 'input', 'textarea' ];
+		var requirables = [ 'input', 'textarea', 'select' ];
 		var inputs = [];
 
 		for( var i = 0; i < requirables.length; i++ ) {
@@ -276,11 +302,18 @@
 						if( typeof form !== 'undefined' ) {
 							var requireds = getRequiredFields( form );
 							for( var i = 0; i < requireds.length; i++ ) {
+
 								// Alternatively to this trim() check,
 								// we could have use .checkValidity() or .validity.valid
 								if( requireds[i].value.replace( /^\s+|\s+$/g, '' ) === '' ) {
 									valid = false;
 								}
+
+								// Radiobuttons and Checkboxes need to be checked for the "checked" attribute
+								if( (requireds[i].type === 'checkbox' || requireds[i].type === 'radio' ) && !requireds[i].checked ) {
+									valid = false;
+								}
+
 							}
 						}
 

@@ -71,6 +71,7 @@
   padding-right: $btn-padding;
 
   &.btn-back{
+    @extend .btn-invisible;
     position: relative;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -114,6 +115,7 @@
   @include btn-rhythm();
   letter-spacing: .01em;
   @include font-weight-semibold;
+  outline: none;
   &:focus, &:active:focus, &.active:focus{
     outline: none;
   }

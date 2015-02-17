@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 				' * http://lab.hakim.se/ladda\n' +
 				' * MIT licensed\n' +
 				' *\n' +
-				' * Copyright (C) 2013 Hakim El Hattab, http://hakim.se\n' +
+				' * Copyright (C) 2015 Hakim El Hattab, http://hakim.se\n' +
 				' */'
 		},
 
@@ -29,7 +29,8 @@ module.exports = function(grunt) {
 					preserveComments: 'some'
 				},
 				files: {
-					'dist/spin.min.js': 'js/spin.js'
+					'dist/spin.min.js': 'js/spin.js',
+					'dist/ladda.jquery.min.js': 'js/ladda.jquery.js'
 				}
 			}
 		},
@@ -37,10 +38,11 @@ module.exports = function(grunt) {
 		sass: {
 			main: {
 				options: {
-					style: 'compressed'
+					style: 'compressed',
+					sourcemap: 'none'
 				},
 				files: {
-					'dist/ladda.min.css': [ 'css/ladda.scss', 'css/ladda-theme.scss' ],
+					'dist/ladda.min.css': [ 'css/ladda-themed.scss' ],
 					'dist/ladda-themeless.min.css': [ 'css/ladda.scss' ]
 				}
 			}
@@ -67,7 +69,7 @@ module.exports = function(grunt) {
 					define: false
 				}
 			},
-			files: [ 'Gruntfile.js', 'js/ladda.js' ]
+			files: [ 'Gruntfile.js', 'js/ladda.js', 'js/ladda.jquery.js' ]
 		},
 
 		connect: {

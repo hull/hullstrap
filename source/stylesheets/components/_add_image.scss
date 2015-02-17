@@ -40,15 +40,15 @@
 
 .add-image-wrapper{
   @extend .embed-responsive;
-  background-color: $gray-darker;
+  overflow: visible;
+  background-color: transparentize($gray-darker,.9);
   clear:both;
   padding-bottom: 56.25%;
-  border-radius: 5px;
-  overflow: hidden;
 }
 
 .add-image-content{
   opacity: .8;
+  border-radius: 2px;
   background-position: center center;
   background-size: cover;
   position: absolute;
@@ -63,12 +63,21 @@
   }
 }
 
-.add-image-btn{
+.add-image-btn-wrapper{
   position: absolute;
   top:50%;
   left:50%;
-  transform: translate(-50%, -50%); 
-  background-color: $primary;
+  transform: translate(-50%); 
+  height: 1px;
+  margin-top: -15px;
+  z-index: 10;
+  .dropdown-menu{
+    max-width: none;
+    width: 300px;
+  }
+}
+.add-image-btn{
+  background-color: rgba(62, 108, 134, 0.5);
   width: $base-line-height*2;
   height: $base-line-height*2;
   padding:11px;
