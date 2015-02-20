@@ -236,3 +236,9 @@
     margin-left: $padding-base-horizontal;
   }
 }
+
+.btn-radio-group{
+  .btn+.btn{
+    margin-left: 15px;
+  }
+}

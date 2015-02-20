@@ -29,6 +29,7 @@ p{
     @include adjust-leading-to(1.125);
   }
 }
+
 ul{
   @include rhythm(0,0,0,1);
 }
@@ -61,13 +62,11 @@ code{
 }
 
 .bold{   @include font-weight-bold; }
+.semibold{   @include font-weight-semibold; }
 .normal{ @include font-weight-normal; }
 .thin{   @include font-weight-light; }
-.small{}
 .clear { display: block; clear: both; }
-.inline{
-  display: inline;
-}
+.inline{display: inline; }
 
 [data-icon]:before, .icon:before {
   line-height: initial !important;
@@ -82,6 +81,19 @@ code{
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.text-default.text-default{
+  color:$text-color;
+}
+
+.ellipsis-left{
+  white-space: nowrap;                   
+  overflow: hidden;
+  text-overflow:    ellipsis;  
+  direction:rtl;
+  text-align:left;
+
 }
 
 %text-accented{

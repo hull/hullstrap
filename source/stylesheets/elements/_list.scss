@@ -1,6 +1,10 @@
 .list-group-item{
-  padding-left: $padding-base-horizontal;
-  padding-right: $padding-base-horizontal;
+  // padding-left: $padding-base-horizontal;
+  // padding-right: $padding-base-horizontal;
+
+  padding-left: $grid-gutter-width/2;
+  padding-right: $grid-gutter-width/2;
+
   @include rhythm(0,.5,.5,0);
   box-shadow: inset 0 -1px 0 0 $off_white;  
   background: transparent;
