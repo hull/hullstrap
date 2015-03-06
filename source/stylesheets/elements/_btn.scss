@@ -97,10 +97,14 @@
     padding-right: $hpadding;
   }
 }
-@mixin btn-xs(){ @include btn-rhythm(1, 0, 11px, $padding-base-horizontal/2); }
+@mixin btn-xs(){
+  @include btn-rhythm(1, 0, 10px, $padding-base-horizontal/2);
+  font-weight: normal;
+}
+
 @mixin btn-sm(){
   @include btn-rhythm(1.5, 0, $h6_font_size, $padding-base-horizontal*2);
-  text-transform: uppercase; 
+  // text-transform: uppercase; 
   letter-spacing: .01em;
   @include font-weight-semibold;
 }

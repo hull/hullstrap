@@ -1,7 +1,7 @@
 @keyframes hull-fadescalein {
   0% {
     opacity: 0;
-    transform: scale(.8) rotateX(-90deg)
+    transform: translateY(-50%) rotateZ(4deg);
   }
 
   50% {
@@ -9,23 +9,59 @@
   }
 
   70% {
-    transform: scale(1.05) rotateX(0)
+    transform: translateY(2%) rotateZ(1deg)
   }
 
   100% {
-    transform: scale(1) rotateX(0)
+    transform: translateY(0) rotateX(0)
   }
 }
 
 
 @keyframes hull-fadescaleout {
   0% {
-    transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1) rotateZ(0);
     opacity: 1
   }
 
   100% {
-    transform: translateY(-10%) scale(.8);
+    transform: translateY(20%) scale(1) rotateZ(-4deg);
     opacity: 0
   }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(200%);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@mixin modal-overlay-entrance-animation{
+  animation: fadeIn .5s ease-out;
+}
+@mixin modal-overlay-exit-animation{
+  animation: fadeOut .5s ease-out;
+}
+@mixin modal-entrance-animation{
+  animation: slideInUp .2s forwards ease-out;
+//     @include animation( hull-fadescalein .3s forwards cubic-bezier(.8, .02, .45, .91));
+
+}
+@mixin modal-exit-animation{
+  animation: hull-fadescaleout .2s forwards ease-in;
+//     @include animation( hull-fadescaleout .3s forwards cubic-bezier(.8, .02, .45, .91));
 }

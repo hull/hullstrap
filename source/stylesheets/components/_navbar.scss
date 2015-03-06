@@ -8,7 +8,6 @@ $navbar-font-size:12px;
 
 
 %navbar-item{
-
   transition: box-shadow 0.2s ceaser($easeOutQuint);
   @include btn-rhythm(2.5, 1, $h6_font_size, $grid-gutter-width/2);
   @include font-weight-bold;

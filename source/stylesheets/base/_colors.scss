@@ -8,12 +8,16 @@ $orange:                        #E7A645;
 $orange:                        #FFC11F;
 
 $blue_darkest:                  #262C36;
+$blue_darkest:                  #344259;
 $blue:                          #2CAAD0;
 $blue_2:                        #0093e6; //rgba(37,164,213,0.98)
 
 $blue_gray_darker:              #222B3F;
-$blue_gray_dark:                #383E4B;
-$blue_gray:                     #555B69;
+// $blue_gray_dark:                #383E4B;
+// $blue_gray_dark:                #4D586E;
+$blue_gray_dark:                #4F5E7B;
+//$blue_gray:                     #555B69;
+$blue_gray:                     #7B8BAE;
 $blue_gray_alt:                 #606776;
 $blue_gray_light:               #9AA1B1;
 $blue_gray_lighter:             #E0E2E7;
@@ -23,6 +27,7 @@ $light_gray:                    #7B7B7B;
 $light_blue_gray:               #798291;
 $light-filet:                   #DEE3EA;
 $off-white:                     #EAEEF3;
+$off-white:                     #F1F4F7;
 
 $facebook_color: #3C5A98;
 $google_color:   #EB2F12;
@@ -60,6 +65,8 @@ $primary_bg_text:      $white;
 
 // Inverted Gradient
 $secondary_bg_gradient:radial-gradient(1500px 500px at top, $secondary-alt 0, transparentize($secondary-alt,1) 100%);
+// $overlay_bg_gradient: radial-gradient(circle at 50% 0, rgba(137, 175, 210, 0.02) 0%, rgba(5, 30, 53, 0.56) 100%);
+$overlay_bg_gradient: radial-gradient(circle at 50% 0, transparentize($off-white,.8) 0%, rgba(19, 34, 58, 0.61) 100%);
 $secondary_bg_color:   $secondary;
 $secondary_bg_text:    $white;
 

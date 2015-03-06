@@ -16,6 +16,14 @@
   .pr-#{$i}{padding-right: ($grid-gutter-width*$i)/2;}
   .ml-#{$i}{margin-left: ($grid-gutter-width*$i)/2;}
   .mr-#{$i}{margin-right: ($grid-gutter-width*$i)/2;}
+  .ps-#{$i}{
+    padding-left: ($grid-gutter-width*$i)/2;
+    padding-right: ($grid-gutter-width*$i)/2;
+  }
+  .ms-#{$i}{
+    margin-left: ($grid-gutter-width*$i)/2;
+    margin-right: ($grid-gutter-width*$i)/2;
+  }
 }
 
 .mt-05{@include leader(.5); }
@@ -30,19 +38,6 @@
 .block-center{
   margin-left:auto;
   margin-right:auto;
-}
-
-.ps-0{
-  padding-left: 0;
-  padding-right:0; 
-}
-.ms-0{
-  margin-left: 0;
-  margin-right:0; 
-}
-.ps-1{
-  padding-left: $grid-gutter-width/2;
-  padding-right: $grid-gutter-width/2;
 }
 
 .splitter{

@@ -35,25 +35,25 @@
 }
 
 .vex-overlay{
-  @include vex-animation(vex-fadein .5s);
   position: fixed;
-  background: rgba(32, 49, 71, 0.3);
+  background: $overlay_bg_gradient;
+  @include modal-overlay-entrance-animation;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   .vex.vex-closing &{
-    @include vex-animation(vex-fadeout .5s);
+    @include modal-overlay-exit-animation;
   }
 }
 
 
 .vex-content{
-  @include vex-animation(vex-fadein .5s);
+  @include modal-entrance-animation;
   background: #fff;
 
   .vex.vex-closing &{
-    @include vex-animation(vex-fadeout .5s);
+    @include modal-exit-animation;
   }
 }
 
@@ -116,10 +116,10 @@ $blue: #3288e6;
   transform-origin: center center;
 
   &.vex-closing .vex-content{
-    @include animation( hull-fadescaleout 300ms forwards cubic-bezier(.8, .02, .45, .91));
+    @include modal-exit-animation;
   }
   &.vex-opening .vex-content{
-    @include animation( hull-fadescalein 300ms forwards cubic-bezier(.8, .02, .45, .91));
+    @include modal-entrance-animation;
   }
 
   .vex-content{

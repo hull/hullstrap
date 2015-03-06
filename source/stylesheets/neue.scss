@@ -396,13 +396,6 @@ table.datagrid-table{
   }
 }
 
-.fullpage-select{
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  background: #fff;
-  -webkit-user-select: none;
-}
 
 %fullpageSelectOut{
   opacity: 0;
@@ -415,31 +408,80 @@ table.datagrid-table{
   transform: perspective(1000px) translate3d(0, 0%, 0);
 }
 
-.fullpage-select-options{
-  top:0;
+.fullpage-select{
+  display: none;
+  &.active{
+    transition : display .3s;
+    display: block;
+  }
+}
+
+.fullpage-select-background{
+  position: absolute;
+  overflow: hidden;
+  -webkit-user-select: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.65);
+  background: $overlay_bg_gradient;
+  position: fixed;
+  z-index: 1001;
+  .active &{
+    @include modal-overlay-entrance-animation;
+  }
+}
+
+.fullpage-select-container{
+  transition: transform 0.3s, opacity 0.3s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transform: translate3d(-50%,0,0); 
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.39);
+  position: fixed;
+  height: 100vh;
   left: 50%;
   margin-left: -200px;
-  position: fixed;
   width: 400px;
-  height: 100%;
-  overflow: hidden;
-  overflow-y: auto;
-  background: rgba(255, 255, 255, 0.96);
-  z-index: 10000;
-  transition: transform 0.3s, opacity 0.3s;
-  // transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-  transition-timing-function: ease-out;
-  box-shadow: 0 0 70px rgba(0, 0, 0, 0.39);
-  &.selection-enter{
-    @extend %fullpageSelectOut;
+  top: 0;
+  z-index: 1001;
+  @include modal-entrance-animation;
+  background: rgba(255, 255, 255, 0.9);
+  .fullpage-select-options, .fullpage-select-filter{
+    top:0;
+    left: 0;
+    transform:translate3d(0, 0,0); 
+  }
+  .fullpage-select-options{
+    height: 100vh;
+    overflow-y: scroll;
+    position: absolute;
+  }
+  .fullpage-select-filter{
+    z-index: 2001;
+    position: relative;
+    background: white;
+  }
+
+  .selection-enter{
+    .fullpage-select-options, .fullpage-select-filter{
+      @extend %fullpageSelectOut;
+    }
+
     &.selection-enter-active{
-      @extend %fullpageSelectIn;
+      .fullpage-select-options, .fullpage-select-filter{
+        @extend %fullpageSelectIn;
+      }
     }
   }
-  &.selection-leave{
-    @extend %fullpageSelectIn;
+  .selection-leave{
+    .fullpage-select-options, .fullpage-select-filter{
+      @extend %fullpageSelectIn;
+    }
     &.selection-leave-active{
-      @extend %fullpageSelectOut;
+      .fullpage-select-options, .fullpage-select-filter{
+        @extend %fullpageSelectOut;
+      }
     }
   }
 }

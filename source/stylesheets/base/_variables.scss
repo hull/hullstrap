@@ -34,7 +34,7 @@ $brand-danger:          $red;
 //** Background color for `<body>`.
 $body-bg:               $white;
 //** Global text color on `<body>`.
-$text-color:            $gray;
+$text-color:            $gray-dark;
  
 //** Global textual link color.
 $link-color:            $brand-primary;
@@ -815,17 +815,17 @@ $pre-scrollable-max-height:   340px !default;
 //##
  
 //** Text muted color
-$text-muted:                  $gray-light !default;
+$text-muted:                  $light-text !default;
 //** Abbreviations and acronyms border color
-$abbr-border-color:           $gray-light !default;
+$abbr-border-color:           $gray !default;
 //** Headings small color
-$headings-small-color:        $gray-light !default;
+$headings-small-color:        $light-text !default;
 //** Blockquote small color
-$blockquote-small-color:      $gray-light !default;
+$blockquote-small-color:      $light-text !default;
 //** Blockquote font size
 $blockquote-font-size:        ($font-size-base * 1.25) !default;
 //** Blockquote border color
-$blockquote-border-color:     $gray-lighter !default;
+$blockquote-border-color:     $gray-lightest !default;
 //** Page header border color
 $page-header-border-color:    $gray-lightest !default;
  

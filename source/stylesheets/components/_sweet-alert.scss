@@ -19,11 +19,11 @@
   100% {transform: scale(0.5); }
 }
 .showSweetAlert {
-  @include vex-animation(vex-fadein .5s);
+  @include modal-entrance-animation;
 }
 
 .hideSweetAlert {
-  @include vex-animation(vex-fadeout .5s);
+  @include modal-exit-animation;
 }
 
 @keyframes animateSuccessTip {
@@ -98,9 +98,9 @@
 // github.com/t4t5/sweetalert
 
 .sweet-overlay {
-  @include vex-animation(vex-fadein .5s);
   position: fixed;
-  background: rgba(32, 49, 71, 0.3);
+  @include modal-overlay-entrance-animation;
+  background: $overlay_bg_gradient;
   top: 0;
   right: 0;
   bottom: 0;
@@ -112,7 +112,6 @@
 .sweet-alert {
   $width: 478px;
   $padding: 17px;
-
   background-color: $body-bg;
   width: $width;
   padding: $padding;
