@@ -18,6 +18,7 @@ $navbar-font-size:12px;
   display: inline-block;
   text-decoration: none;
   opacity:1;
+  border-radius: 100px;
 }
 
 
@@ -172,6 +173,8 @@ $navbar-font-size:12px;
   background: white;
   // box-shadow: inset 0 -1px 0 $light-filet;
   box-shadow: 0 1px 0 $light-filet;
+  position: relative;
+  z-index: 1;
 }
 .navbar-lightwhite{
   background-color: rgba(255,255,255,0.9);
