@@ -16,8 +16,6 @@
     transform: translateY(0) rotateX(0)
   }
 }
-
-
 @keyframes hull-fadescaleout {
   0% {
     transform: translateY(0) scale(1) rotateZ(0);
@@ -29,7 +27,6 @@
     opacity: 0
   }
 }
-
 @keyframes slideInUp {
   0% {
     transform: translateY(200%);
@@ -40,7 +37,6 @@
     transform: translateY(0);
   }
 }
-
 @keyframes fadeIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -57,11 +53,11 @@
   animation: fadeOut .5s ease-out;
 }
 @mixin modal-entrance-animation{
+  animation: hull-fadescalein .2s forwards ease-out;
+}
+@mixin modal-slideup-animation{
   animation: slideInUp .2s forwards ease-out;
-//     @include animation( hull-fadescalein .3s forwards cubic-bezier(.8, .02, .45, .91));
-
 }
 @mixin modal-exit-animation{
   animation: hull-fadescaleout .2s forwards ease-in;
-//     @include animation( hull-fadescaleout .3s forwards cubic-bezier(.8, .02, .45, .91));
 }
