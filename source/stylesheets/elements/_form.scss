@@ -17,6 +17,7 @@
 
   &:focus{
     box-shadow: inset 0 0 0 2px #0093e6, 0 0 2px rgba(0, 147, 230, 0.2);
+    outline: 0;
   }
 
   &.form-control-lg{
@@ -173,7 +174,7 @@ select.form-control{
 }
 
 .control-label, .control-label > label{
-  color: #646873;
+  color: $blue_gray_light;
   text-transform: uppercase;
   letter-spacing: .05em;
   @include adjust-font-size-to(10px, .5);

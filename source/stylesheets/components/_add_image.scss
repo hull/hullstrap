@@ -64,6 +64,17 @@
 }
 
 .add-image-btn-wrapper{
+  .add-image-help-text{
+    position: absolute;
+    top: -30px;
+    width: 200px;
+    text-align: center;
+    left: 50%;
+    margin-left: -100px;
+    font-size: 12px;
+    opacity: 0.5;
+    font-weight: 600;
+  }
   position: absolute;
   top:50%;
   left:50%;

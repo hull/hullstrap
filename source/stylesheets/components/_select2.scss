@@ -3,6 +3,10 @@ Version: @@ver@@ Timestamp: @@timestamp@@
 */
 .select2-container {
   margin: 0;
+  .control-label + &{
+    margin-left: 10px;
+    min-width:100px;
+  }
   position: relative;
   display: inline-block;
   vertical-align: middle;

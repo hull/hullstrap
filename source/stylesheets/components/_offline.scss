@@ -1,0 +1,52 @@
+.offline-ui{
+  & *,
+  &:before,
+  &:after,
+  & *:before,
+  & *:after {
+    box-sizing: border-box;
+  }
+  display: none;
+  position: fixed;
+  background: white;
+  z-index: 2000;
+  display: inline-block;
+  border-radius: 4px 4px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 1em;
+  background: rgba(4, 25, 52, 0.76);
+  color: white;
+  bottom: 0;
+  left: 20px;
+  .offline-ui-retry {
+    display: none;
+  }
+  &.offline-ui-up , &.offline-ui-down {
+    display: block;
+  }
+  &.offline-ui-up{
+    animation: fadeOutAndHide forwards 0.5s 2s;
+  }
+  & .offline-ui-content {
+    padding-left: 1.5em;
+    &:after {
+      border-radius: 50%;
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 1em;
+      margin: auto;
+      height: 0.8em;
+      width: 0.8em;
+    }
+  }
+  &.offline-ui-up .offline-ui-content:after {
+    background: #80d580;
+  }
+  &.offline-ui-down .offline-ui-content:after {
+    background: #e24949;
+  }
+}

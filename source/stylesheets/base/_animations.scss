@@ -45,19 +45,57 @@
   0% {opacity: 1;}
   100% {opacity: 0;}
 }
+@keyframes fadeOutAndHide {
+  0% {opacity: 1; display: none;}
+  99% {opacity: 0;}
+  100% {opacity: 0; display: none;}
+}
+
+@keyframes dropdownfadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, -10%, 0) scale(.1);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0) scale(1);
+    opacity:1;
+    display: block;
+  }
+}
+@keyframes dropdownfadeOutAndHide {
+  0% {
+    opacity: 1; display: block;
+    transform: translate3d(-50%, 0, 0) scale(1);
+  }
+  99% {
+    opacity: 0;
+    transform: translate3d(-50%, -10%, 0) scale(.1);
+  }
+  100% {
+    opacity: 0; display: none;
+  }
+}
 
 @mixin modal-overlay-entrance-animation{
-  animation: fadeIn .5s ease-out;
+  animation: fadeIn .5s ceaser($easeOutQuint);
 }
 @mixin modal-overlay-exit-animation{
-  animation: fadeOut .5s ease-out;
+  animation: fadeOut .5s ceaser($easeOutQuint);
 }
 @mixin modal-entrance-animation{
-  animation: hull-fadescalein .2s forwards ease-out;
+  animation: hull-fadescalein .2s forwards ceaser($easeOutQuint);
 }
 @mixin modal-slideup-animation{
-  animation: slideInUp .2s forwards ease-out;
+  animation: slideInUp .2s forwards ceaser($easeOutQuint);
 }
 @mixin modal-exit-animation{
   animation: hull-fadescaleout .2s forwards ease-in;
+}
+
+
+@mixin modal-dropdown-entrance-animation{
+  animation: dropdownfadeIn .1s ceaser($easeOutQuint);
+}
+@mixin modal-dropdown-exit-animation{
+  animation: dropdownfadeOutAndHide .1s ceaser($easeOutQuint);
 }
