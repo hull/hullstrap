@@ -135,7 +135,7 @@
   padding-right:12px;
 }
 .btn-secondary{
-  @include btn-color($blue_gray_lightest, rgba(255,255,255,0), $blue_gray);
+  @include btn-color($off-white, $light-filet, $blue_gray);
 }
 .btn-tertiary{
   @include btn-color($blue_gray_light, rgba(255,255,255,0), $inverted_text);

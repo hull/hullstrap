@@ -27,6 +27,11 @@ $dropdown-border-color: #d9dfe7;
     }
   }
 }
+.dropdown.dropdown-white, .dropup.dropup-white{
+  .dropdown-menu::before{
+    background-color:white;
+  }  
+}
 
 .dropup{
   .dropdown-menu{
@@ -66,6 +71,9 @@ $dropdown-border-color: #d9dfe7;
 .dropdown-menu{
   backface-visibility: hidden;
   background-color: $dropdown-bg-color;
+  .dropdown-white &,  .dropup-white &{
+    background-color: white;
+  }
   padding: 0;
   border: 0;
   border-radius: 3px !important; 

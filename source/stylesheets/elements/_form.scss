@@ -175,9 +175,9 @@ select.form-control{
 
 .control-label, .control-label > label{
   color: $blue_gray_light;
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  @include adjust-font-size-to(10px, .5);
+  // text-transform: uppercase;
+  // letter-spacing: .05em;
+  @include adjust-font-size-to(12px, .5);
   @include font-weight-semibold();
   @include rhythm(0,0,0,0);
 }
