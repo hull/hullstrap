@@ -1,7 +1,7 @@
 @keyframes hull-fadescalein {
   0% {
     opacity: 0;
-    transform: translateY(-50%) rotateZ(4deg);
+    transform: translateY(-50%) rotateZ(-4deg);
   }
 
   50% {
@@ -9,11 +9,11 @@
   }
 
   70% {
-    transform: translateY(2%) rotateZ(1deg)
+    transform: translateY(2%) rotateZ(0deg)
   }
 
   100% {
-    transform: translateY(0) rotateX(0)
+    transform: translateY(0) rotateZ(0)
   }
 }
 @keyframes hull-fadescaleout {
@@ -27,14 +27,22 @@
     opacity: 0
   }
 }
-@keyframes slideInUp {
+@keyframes hull-slideInUp {
   0% {
-    transform: translateY(200%);
-    visibility: visible;
+    transform: translate3d(-50%,100%,0);
+  }
+  100% {
+    transform: translate3d(-50%,0,0);
+  }
+}
+@keyframes hull-slideOutDown {
+  0% {
+    transform: translate3d(-50%,0,0);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate3d(-50%,100%,0);
+    visibility: hidden;
   }
 }
 @keyframes fadeIn {
@@ -51,7 +59,7 @@
   100% {opacity: 0; display: none;}
 }
 
-@keyframes dropdownfadeIn {
+@keyframes hull-dropdownfadeIn {
   0% {
     opacity: 0;
     transform: translate3d(-50%, -10%, 0) scale(.1);
@@ -62,7 +70,7 @@
     display: block;
   }
 }
-@keyframes dropdownfadeOutAndHide {
+@keyframes hull-dropdownfadeOutAndHide {
   0% {
     opacity: 1; display: block;
     transform: translate3d(-50%, 0, 0) scale(1);
@@ -77,25 +85,33 @@
 }
 
 @mixin modal-overlay-entrance-animation{
-  animation: fadeIn .5s ceaser($easeOutQuint);
+  animation: fadeIn .4s ease-out;
 }
 @mixin modal-overlay-exit-animation{
-  animation: fadeOut .5s ceaser($easeOutQuint);
+  animation: fadeOut .4s ease-out;
 }
 @mixin modal-entrance-animation{
-  animation: hull-fadescalein .2s forwards ceaser($easeOutQuint);
-}
-@mixin modal-slideup-animation{
-  animation: slideInUp .2s forwards ceaser($easeOutQuint);
+  animation: hull-fadescalein .4s forwards ceaser($easeOutQuint);
 }
 @mixin modal-exit-animation{
   animation: hull-fadescaleout .2s forwards ease-in;
 }
 
-
-@mixin modal-dropdown-entrance-animation{
-  animation: dropdownfadeIn .1s ceaser($easeOutQuint);
+@mixin modal-slideup-animation{
+  animation: hull-slideInUp .5s ceaser($easeOutQuint);
+  transform: translate3d(-50%,0,0);
 }
-@mixin modal-dropdown-exit-animation{
-  animation: dropdownfadeOutAndHide .1s ceaser($easeOutQuint);
+@mixin modal-slidedown-animation{
+  transform: translate3d(-50%,0,0);
+  animation: hull-slideOutDown .5s ceaser($easeOutQuint);
+}
+
+
+
+
+@mixin dropdown-entrance-animation{
+  animation: hull-dropdownfadeIn .1s ceaser($easeOutQuint);
+}
+@mixin dropdown-exit-animation{
+  animation: hull-dropdownfadeOutAndHide .1s ceaser($easeOutQuint);
 }

@@ -4,12 +4,7 @@
 @import "vex/sass/mixins";
 @import "vex/sass/keyframes";
 
-@include keyframes-vex-fadein;
-@include keyframes-vex-fadeout;
 @include keyframes-vex-rotation;
-@include keyframes-vex-flyin;
-@include keyframes-vex-flyout;
-@include keyframes-vex-pulse;
 
 
 .vex, .vex *, .vex *:before, .vex *:after{
@@ -27,6 +22,7 @@
   left: 0;
 }
 
+
 // IE
 .vex-overlay{
   background: #000;
@@ -35,6 +31,7 @@
 }
 
 .vex-overlay{
+  transform: translate3d(0,0,0);
   position: fixed;
   background: $overlay_bg_gradient;
   @include modal-overlay-entrance-animation;
@@ -47,20 +44,41 @@
   }
 }
 
-
-.vex-content{
-  @include modal-entrance-animation;
-  background: #fff;
-
-  .vex.vex-closing &{
-    @include modal-exit-animation;
+%vex-content{
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  box-shadow: 0 0 70px rgba(0,0,0,.14);
+  background: white;
+}
+%vex-close{
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  &:before{
+    font-family: Arial, sans-serif;
+    content: "\00D7";
+    border-radius: 3px;
+    position: absolute;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 31px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    top: 3px;
+    right: 3px;
+    color: #bbb;
+    background: transparent;
+  }
+  &:hover:before, &:active:before{
+    color: #777;
+    background: #e0e0e0;
   }
 }
 
-.vex-close:before{
-  font-family: Arial, sans-serif;
-  content: "\00D7";
-}
 
 .vex-dialog-form{
   margin: 0 // Browser reset
@@ -86,84 +104,58 @@
   background: #fff;
 }
 
-#main-root{
-  transition: all 300ms ceaser($easeOutQuint);
-}
-
-// body{
-//   @include background-image($primary_bg_image); 
+body.vex-open{
+  overflow: hidden;
 //   perspective: 1000px;
+//   @include background-image($primary_bg_image); 
 //   transform-style: preserve-3d;
 //   transform-origin: center center;
-// }
-
-// body.vex-open{
-//   overflow: hidden;
-//   #main-root{
-//     filter: blur(7px);
-//     // @include animation( hull-fadescaleout 300ms forwards cubic-bezier(.8, .02, .45, .91));
-//     @include translate3d(0, 0, -100px);
-//   }
-// }
-
-$blue: #3288e6;
+  #main-root{
+    // transition: all 300ms ceaser($easeOutQuint);
+    // filter: blur(5px);
+    // @include animation( hull-fadescaleout 300ms forwards cubic-bezier(.8, .02, .45, .91));
+    // @include translate3d(0, 0, -100px);
+  }
+}
 
 .vex.vex-theme-default{
   padding-top: 60px;
   padding-bottom: 60px;
-  // perspective: 1000px;
-  transform-style: preserve-3d;
-  transform-origin: center center;
 
-  &.vex-closing .vex-content{
-    @include modal-exit-animation;
+  // transform-style: preserve-3d;
+  // transform-origin: center center;
+
+  &.vex-loading-spinner{
+    box-shadow: 0 0 0 .5em #f0f0f0, 0 0 1px .5em rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    background: #f0f0f0;
+    border: .2em solid transparent;
+    border-top-color: #bbb;
+    top: -1.1em;
+    bottom: auto;
   }
-  &.vex-opening .vex-content{
-    @include modal-entrance-animation;
-  }
+
+  .vex-close{ @extend %vex-close; }
 
   .vex-content{
-    border-radius: 3px;
-    transform: translate3d(-50%);
+    @extend %vex-content;
     @include rhythm(0,1,1,0);
     padding-left: $grid-gutter-width;
     padding-right: $grid-gutter-width;
-    position: relative;
-    margin: 0 auto;
-    max-width: 100%;
     width: 730px;
-    box-shadow: 0 0 70px rgba(0,0,0,.14);
+    border-radius: 3px;
+    @include modal-entrance-animation;
   }
+  &.vex-closing .vex-content{ @include modal-exit-animation;     }
 
 
-  .vex-close{
-    border-radius: 5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    &:before{
-      border-radius: 3px;
-      position: absolute;
-      content: "\00D7";
-      font-size: 26px;
-      font-weight: normal;
-      line-height: 31px;
-      height: 30px;
-      width: 30px;
-      text-align: center;
-      top: 3px;
-      right: 3px;
-      color: #bbb;
-      background: transparent;
-    }
 
-    &:hover:before, &:active:before{
-      color: #777;
-      background: #e0e0e0;
-    }
+  .vex-dialog-buttons{
+    text-align: right;
+    .vex-dialog-button{@extend .btn;@extend .btn-sm;}
+    .vex-dialog-button-primary{@extend .btn-primary;}
+    .vex-dialog-button-secondary{@extend %btn-link; @extend .text-danger}
   }
-
 
   .vex-dialog-form{
     .vex-dialog-prompt-input{
@@ -178,20 +170,36 @@ $blue: #3288e6;
   }
 }
 
-.vex-loading-spinner.vex-theme-default{
-  box-shadow: 0 0 0 .5em #f0f0f0, 0 0 1px .5em rgba(0, 0, 0, 0.3);
-  border-radius: 100%;
-  background: #f0f0f0;
-  border: .2em solid transparent;
-  border-top-color: #bbb;
-  top: -1.1em;
-  bottom: auto;
+.vex.vex-theme-fullheight{
+  .vex-close{ @extend %vex-close; }
+
+  .vex-content-wrapper, .vex-dialog {
+    height: 100%;
+  }
+  .vex-content{
+    @extend %vex-content;
+    top: 0;
+    position: fixed;
+    left: 50%;
+    margin: 0; 
+    height: 100%;
+    width: 500px;
+    overflow: scroll;
+    @include modal-slideup-animation;
+  }
+  &.vex-closing .vex-content{ @include modal-slidedown-animation; }
+  .vex-close:before{
+    z-index: 1;
+    top:26px;
+    right:31px;
+  }
+
 }
 
-
-.vex-dialog-buttons{
-  text-align: right;
-  .vex-dialog-button{@extend .btn;@extend .btn-sm;}
-  .vex-dialog-button-primary{@extend .btn-primary;}
-  .vex-dialog-button-secondary{@extend %btn-link; @extend .text-danger}
+.vex-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
 }

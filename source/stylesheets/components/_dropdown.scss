@@ -50,11 +50,11 @@ $dropdown-border-color: #d9dfe7;
     right: 24px;
   }
 }
-.dropdown{
-  transform-style:preserve-3d;
-  perspective: 1000px;
-  transform-origin: 0 50%;
-}
+// .dropdown{
+  // transform-style:preserve-3d;
+  // perspective: 1000px;
+  // transform-origin: 0 50%;
+// }
 
 %dropdown-menu-link{
   background-color: transparent;
@@ -79,7 +79,7 @@ $dropdown-border-color: #d9dfe7;
   border-radius: 3px !important; 
   box-shadow: 0 0px 30px rgba(10, 35, 59, 0.25);
   background-clip: padding-box;
-  @include modal-dropdown-exit-animation;
+  @include dropdown-exit-animation;
   left: 50%;
 
   > li a.btn-link{
@@ -123,7 +123,7 @@ $dropdown-border-color: #d9dfe7;
   transform-origin:top center;
   transform:translate3d(-50%,0,0);
   .open &, .active &{
-    @include modal-dropdown-entrance-animation;
+    @include dropdown-entrance-animation;
     .offcanvas-sidebar & > li > a{
       padding-left: $padding-base-horizontal;
     }
