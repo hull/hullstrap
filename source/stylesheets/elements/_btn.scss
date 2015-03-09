@@ -73,9 +73,6 @@
   &.btn-back{
     @extend .btn-invisible;
     position: relative;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding-left: $btn-padding*1.5;
     &:before {
       position: relative;
       height: 12px;
