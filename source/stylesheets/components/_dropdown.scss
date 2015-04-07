@@ -68,7 +68,15 @@ $dropdown-border-color: #d9dfe7;
     color: rgba(255, 255, 255, 0.9);
   }
 }
+@media screen and (max-width:$screen-xs-max){
+  .nav-main.navbar-nav .open .dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+}
 .dropdown-menu{
+  @media screen and (min-width:$screen-md-min){
+    @include dropdown-exit-animation;
+  }
   backface-visibility: hidden;
   background-color: $dropdown-bg-color;
   .dropdown-white &,  .dropup-white &{
@@ -79,7 +87,6 @@ $dropdown-border-color: #d9dfe7;
   border-radius: 3px !important; 
   box-shadow: 0 0px 30px rgba(10, 35, 59, 0.25);
   background-clip: padding-box;
-  @include dropdown-exit-animation;
   left: 50%;
 
   > li a.btn-link{
@@ -120,10 +127,15 @@ $dropdown-border-color: #d9dfe7;
       color: #9AA1B1;
     }
   }
-  transform-origin:top center;
-  transform:translate3d(-50%,0,0);
+  @media screen and (min-width:$screen-md-min){
+    transform-origin:top center;
+    transform:translate3d(-50%,0,0);
+    max-width: 160px;
+  }
   .open &, .active &{
-    @include dropdown-entrance-animation;
+    @media screen and (min-width:$screen-md-min){
+      @include dropdown-entrance-animation;
+    }
     .offcanvas-sidebar & > li > a{
       padding-left: $padding-base-horizontal;
     }
