@@ -74,7 +74,7 @@ $dropdown-border-color: #d9dfe7;
   }
 }
 .dropdown-menu{
-  @media screen and (min-width:$screen-md-min){
+  @media screen and (min-width:$screen-sm-min){
     @include dropdown-exit-animation;
   }
   backface-visibility: hidden;
@@ -127,13 +127,13 @@ $dropdown-border-color: #d9dfe7;
       color: #9AA1B1;
     }
   }
-  @media screen and (min-width:$screen-md-min){
+  @media screen and (min-width:$screen-sm-min){
     transform-origin:top center;
     transform:translate3d(-50%,0,0);
     max-width: 160px;
   }
   .open &, .active &{
-    @media screen and (min-width:$screen-md-min){
+    @media screen and (min-width:$screen-sm-min){
       @include dropdown-entrance-animation;
     }
     .offcanvas-sidebar & > li > a{
