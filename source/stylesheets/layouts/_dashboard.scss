@@ -1,10 +1,5 @@
 body.dashboard{
   // Desktop Styles
-  @media screen and (min-width: $screen-md-min) {
-    // .offcanvas-content{
-    //   padding-top: $base-line-height;
-    // }
-  }
   @media screen and (max-width: $screen-sm-max) {
     .navbar-header{
       margin-left: auto;

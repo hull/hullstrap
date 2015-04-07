@@ -3,10 +3,20 @@
 ** Homepage Specific
 ******************
 */
-
+.homepage-header{
+  @include transition(all .3s ease-out);
+  @include transform-style(preserve-3d);
+  @include perspective(100px);
+  min-height: 25vh;
+}
+.homepage-navbar{
+  background:transparent;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
 .homepage-header-content{
-  @include padding-leader(3);
-  @include padding-trailer(3);
+  @include transition(all .3s ease-out);
   display: table-cell;
   vertical-align: middle;
 }
@@ -124,5 +134,20 @@
     .icon-play{
       @include scale(1.1);
     }
+  }
+}
+
+
+.video_playing {
+  .homepage-header{
+    min-height: 100vh;
+  }
+  .homepage-header-content,  .homepage-navbar{
+    opacity: 0;
+    @include transform(translate3d(0,0,-40px));
+  }
+  #bg_video{
+    opacity: 1;
+    min-height: 100%;
   }
 }

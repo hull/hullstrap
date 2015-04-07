@@ -75,8 +75,9 @@ $navbar-font-size:12px;
 
 
 .navbar{
-  // Reset
-  // height:$base-line-height*3;
+  @media screen and (max-width: $screen-xs-max) {
+    min-height: 0;
+  }
   border:none;
   @include rhythm(0,0,0,0);
 
@@ -90,27 +91,30 @@ $navbar-font-size:12px;
   // Override because we use Sprites for the Navbar Brand
   > .container .navbar-brand,
   > .container-fluid .navbar-brand {
-    opacity: 1;
 
     @include leader(.5);
     @include trailer(.5);
-    @include adjust-leading-to(1.5);
+    opacity: 1;
+    left: 0;
 
-    margin-left: 0;
-    margin-right: $padding-base-horizontal;
-    @media screen and (max-width: $screen-xs-max) {
-      left: 0;
-      margin-left: auto;
-      margin-right: auto;
-      float: none; 
+    @media screen and (min-width: $screen-sm-min) {
+      @include leader(0);
+      @include trailer(0);
+      margin-right: $padding-base-horizontal*2;
+      float: left;
     }
+
   }
   .navbar-brand.navbar-brand{
     @include inline-retina-sprite('logo/transparent-dark-61.png');
     background-position: center center;
-    height: $base-line-height*1.5;
+    @media screen and (min-width: $screen-sm-min) {
+      height: $base-line-height*2;
+    }
     @media screen and (max-width: $screen-xs-max) {
-      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
     }
   }
 
@@ -194,7 +198,6 @@ $navbar-font-size:12px;
 
   // Ensure dropdowns are visible;
   position: relative;
-  z-index: 1001;
 
   .container{
     position: relative;
@@ -216,9 +219,8 @@ $navbar-font-size:12px;
   .navbar-brand.navbar-brand{
     @include inline-retina-sprite('logo/icon/Light@0.5x.png');
     background-position: center center;
-    height: $base-line-height*1.5;
-    @media screen and (max-width: $screen-xs-max) {
-      height: auto;
+    @media screen and (min-width: $screen-sm-min) {
+      height: $base-line-height*2;
     }
   }
   .navbar-text{
@@ -284,9 +286,6 @@ $navbar-font-size:12px;
 */
 
 .header-bar{
-  // position: absolute;
-  // left: 0;
-  // right: 0;
   @include background-image($primary_bg_image);
   @include blue-background-colors;
   height: 6px;

@@ -201,3 +201,9 @@ $docs-font-size: 15px;
     }
   }
 }
+
+body.docs{
+  .offcanvas-content{
+    background: none;
+  }
+}
