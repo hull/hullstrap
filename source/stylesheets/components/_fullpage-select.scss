@@ -24,3 +24,12 @@
     box-shadow: none;
   }
 }
+
+.fullpage-select-options h5, .predicate small, .predicate strong {
+  > i {
+    margin: 0 5px; 
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}

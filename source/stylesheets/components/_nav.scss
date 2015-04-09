@@ -123,10 +123,6 @@
   }
 }
 
-.nav-justified > .dropdown .dropdown-menu{
-  left: 50%;
-}
-
 .nav-rounded{
   @extend %nav;
   > li {
