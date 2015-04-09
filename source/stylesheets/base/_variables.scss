@@ -128,9 +128,9 @@ $table-condensed-cell-padding:  $base-line-height/4 !default;
 //** Default background color used for all tables.
 $table-bg:                      transparent !default;
 //** Background color used for `.table-striped`.
-$table-bg-accent:               lighten($tertiary, 70%) !default;
+$table-bg-accent:               lighten($tertiary-color, 70%) !default;
 //** Background color used for `.table-hover`.
-$table-bg-hover:                lighten($secondary, 70%) !default;
+$table-bg-hover:                lighten($secondary-color, 70%) !default;
 $table-bg-active:               $table-bg-hover !default;
  
 //** Border color for table and cell borders.default;
@@ -142,8 +142,8 @@ $table-bg-active:               $table-bg-hover !default;
 $btn-font-weight:                normal;
  
 $btn-default-color:              $inverted-text;
-$btn-default-bg:                 $secondary;
-$btn-default-border:             $secondary;
+$btn-default-bg:                 $secondary-color;
+$btn-default-border:             $secondary-color;
  
 $btn-primary-color:              $inverted-text;
 $btn-primary-bg:                 $brand-primary;
@@ -184,7 +184,7 @@ $input-border:                   $gray-lighter;
 //** `<input>` border radius
 $input-border-radius:            $border-radius-base;
 //** Border color for inputs on focus
-$input-border-focus:             $tertiary;
+$input-border-focus:             $tertiary-color;
  
 //** Placeholder text color
 $input-color-placeholder:        $gray-light;

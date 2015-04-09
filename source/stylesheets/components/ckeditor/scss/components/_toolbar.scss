@@ -157,9 +157,9 @@ a.cke_button {
    This style indicates that the feature associated with the button is active
    i.e. currently writing in bold or when spell checking is enabled. */
 .cke_button_on {
-    color: $tertiary;
+    color: $tertiary-color;
     .cke_button_icon{
-        color: $tertiary;
+        color: $tertiary-color;
     }
 }
 

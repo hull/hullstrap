@@ -60,7 +60,7 @@ $navbar-font-size:12px;
   @include rhythm(1,0,0,1);
   cursor: pointer;
   .icon-bar{
-    background: transparentize($primary_bg_text,.5);
+    background: transparentize($inverted-text,.5);
     height: 2px;
     border-radius: 3px;
   }
@@ -192,7 +192,7 @@ $navbar-font-size:12px;
 ******************
 */
 .navbar-branded{
-  background-image: $primary_bg_image;
+  background-image: $primary-gradient;
   @include blue-background-colors;
   border:none;
 
@@ -237,9 +237,9 @@ $navbar-font-size:12px;
   @media screen and (min-width: $screen-sm-min) {
     .open {
       > .navbar-item, > .navbar-item-default:hover, .navbar-item-default:focus{
-        border-color: transparentize($primary_bg_text, .5);
-        background-color: transparentize($primary_bg_text, .88);
-        color: transparentize($primary_bg_text,.1);
+        border-color: transparentize($inverted-text, .5);
+        background-color: transparentize($inverted-text, .88);
+        color: transparentize($inverted-text,.1);
       }
     }
   }
@@ -286,14 +286,14 @@ $navbar-font-size:12px;
 */
 
 .header-bar{
-  @include background-image($primary_bg_image);
+  @include background-image($primary-gradient);
   @include blue-background-colors;
   height: 6px;
 }
 
 .navbar-fixed-bottom{
   position: fixed;
-  box-shadow: inset 0 1px 0 $light_filet;
+  box-shadow: inset 0 1px 0 $gray-lightest;
 }
 
 .container-fluid > .navbar-collapse{

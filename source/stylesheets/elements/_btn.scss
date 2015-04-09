@@ -8,7 +8,7 @@
 }
 
 // Button Colors
-@mixin btn-color($bg-color:$primary_bg_color, $border-color: $primary_bg_color, $text-color:$primary_bg_text){
+@mixin btn-color($bg-color:$primary-color, $border-color: $primary-color, $text-color:$inverted-text){
   color: $text-color;
   background-color: $bg-color;
   box-shadow: inset 0 0 0 1px $border-color;
@@ -48,7 +48,7 @@
   @include btn-color(rgba(255,255,255,0),$main, $text);
 }
 @mixin btn-white{
-  @include btn-color($white, $white, $secondary);
+  @include btn-color($white, $white, $secondary-color);
   box-shadow: inset 0 0px 0 1px $gray-lightest;
 }
 @mixin btn-dark{
@@ -157,7 +157,7 @@
   box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.2);
 }
 .btn-gradient, .btn-gradient:focus, .btn-gradient.active, .btn-gradient:hover{
-  @include background-image(linear-gradient(to right top, $primary_alt, $tertiary));
+  @include background-image(linear-gradient(to right top, $primary-alt, $tertiary-color));
   transition: opacity .2s ease-out;
   color:white;
   box-shadow: none;
@@ -187,9 +187,9 @@
   text-decoration: none;
   background:transparent;
   border-color: transparent;
-  color: $tertiary;
+  color: $tertiary-color;
   &:hover{
-    color: darken($tertiary, 10%);
+    color: darken($tertiary-color, 10%);
   }
   &.text-muted  { color:$light-text;}
   &.text-primary{ color:$brand-primary;}
@@ -201,16 +201,16 @@
  }
 
 .btn-facebook{
-  @include btn-color($facebook_color, $facebook_color, $primary_bg_text);
+  @include btn-color($facebook_color, $facebook_color, $inverted-text);
 }
 .btn-twitter{
-  @include btn-color($twitter_color, $twitter_color, $primary_bg_text);
+  @include btn-color($twitter_color, $twitter_color, $inverted-text);
 }
 .btn-google{
-  @include btn-color($google_color, $google_color, $primary_bg_text);
+  @include btn-color($google_color, $google_color, $inverted-text);
 }
 .btn-github{
-  @include btn-color($github_color, $github_color, $primary_bg_text);
+  @include btn-color($github_color, $github_color, $inverted-text);
 }
 
 %btn-disabled{

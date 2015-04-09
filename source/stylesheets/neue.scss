@@ -139,7 +139,7 @@ table.datagrid-table{
     text-align: center;
     background: transparent;
     line-height: 24px;
-    border: 1px solid $blue_2;
+    border: 1px solid $primary-color;
     color:inherit;
     &+span{
       padding-left: 30px;
@@ -316,9 +316,7 @@ table.datagrid-table{
 
   .sidebar-content{
     @extend .blue-section;
-    background-image: linear-gradient(top, $blue_2 0%,$turquoise 100%);
-    // background-image: radial-gradient(circle at -20% 100px, rgba(75, 194, 184, 0.7) 0%, rgba(0, 147, 230, 0.7) 100%);
-    // background-color: transparent;
+    background-image: linear-gradient(top, $primary-color 0%,$turquoise 100%);
   }
 }
 

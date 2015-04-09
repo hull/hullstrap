@@ -97,8 +97,8 @@ code{
 }
 
 %text-accented{
-  color: $accent_text_header;
+  color: $accent-text-header;
   small{
-    color: lighten($accent_text_header, 10%);
+    color: lighten($accent-text-header, 10%);
   }
 }

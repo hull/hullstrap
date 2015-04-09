@@ -100,7 +100,7 @@
 .sweet-overlay {
   position: fixed;
   @include modal-overlay-entrance-animation;
-  background: $overlay_bg_gradient;
+  background: $overlay-gradient;
   top: 0;
   right: 0;
   bottom: 0;

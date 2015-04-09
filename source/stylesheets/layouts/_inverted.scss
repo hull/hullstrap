@@ -1,7 +1,7 @@
 @mixin blue-background-colors{
-  color: $primary_bg_text;
+  color: $inverted-text;
   h1, h2, h3, h4, h5, h6, a{
-    color: $primary_bg_text;
+    color: $inverted-text;
   }
   .btn-pill{
     @include btn-transparent();
@@ -10,7 +10,7 @@
 
 @mixin inverted-background-colors{
   -webkit-font-smoothing:antialiased;
-  color: $secondary_bg_text;   
+  color: $inverted-text;   
   h1, h2, h3, h4, h5, h6{
     color: $white;
   }
@@ -36,11 +36,11 @@
 @mixin inverted-background{
   background-position:  top center;
   background-repeat:    no-repeat;
-  background-color:     $secondary_bg_color;
+  background-color:     $secondary-color;
   @include background-image(
     radial-gradient(1500px 500px at top,
-      transparentize(lighten($secondary_bg_color, 50%), .7) 0%,
-      transparentize($secondary_bg_color, .3) 100%
+      transparentize(lighten($secondary-color, 50%), .7) 0%,
+      transparentize($secondary-color, .3) 100%
     )
   );
   @include inverted-background-colors;
@@ -50,8 +50,8 @@
 }
 
 %blue-background{
-  background-color:$primary_bg_color;
-  @include background-image($primary_bg_image);
+  background-color:$primary-color;
+  @include background-image($primary-gradient);
   @include blue-background-colors;
   .input-group-addon, .btn-link{color:white;}
 }

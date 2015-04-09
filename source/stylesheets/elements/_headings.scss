@@ -31,7 +31,7 @@ $font-metrics:
 
   h#{$i - 1}, .h#{$i - 1}, .h#{$i - 1 }, %h#{$i - 1 }{
     @include adjust-heading($fs, $lh, $tr, $ld);
-    color:$blue_darkest;
+    color:$gray-darker;
     // font-family: $font-family-headline;
     // @include font-weight-normal;
     &.condensed{

@@ -44,7 +44,7 @@
     }
     .dropdown-toggle{
       cursor: pointer;
-      @include background-image($primary_bg_image);
+      @include background-image($primary-gradient);
       @include trailer(1);
     }
     .dropdown-menu{
@@ -138,7 +138,7 @@
   > li.active > a, > li.active > a:hover, > li:hover > a{
     text-decoration: none;
     border:none;
-    color: $tertiary;
+    color: $tertiary-color;
     background:transparent;
     border-radius: 300px;
     span{

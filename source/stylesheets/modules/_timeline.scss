@@ -20,7 +20,7 @@
     position: relative; 
     i.icon{
       @include adjust-font-size-to(24px,1);
-      box-shadow: inset 0 0 0 1px $blue_gray;
+      box-shadow: inset 0 0 0 1px $gray;
       border-radius: 100px;
       display: block;
       opacity: .2;
@@ -66,7 +66,7 @@ div.timeline, ul.timeline{
       display: block;
       @include adjust-font-size-to(24px, 3);
       // color: #fff;
-      // @include background-image($primary_bg_image); 
+      // @include background-image($primary-gradient); 
       border-radius: 100px;
       color: $red;
       background-color: white;
@@ -244,13 +244,13 @@ div.timeline, ul.timeline{
 //   width: $base-line-height * 2;
 //   height: $base-line-height * 2;
 //   line-height: $base-line-height * 2;
-//   @include background-image($primary_bg_image); 
+//   @include background-image($primary-gradient); 
 //   border-radius: 100px;
 //   box-shadow: inset 0 0 0 $base-line-height/4 rgba(255,255,255,.1);
 //   > a {
 //     color: $white;
 //     &:hover {
-//       color: $blue_gray !important;
+//       color: $gray !important;
 //     }
 //   }
 // }
@@ -272,7 +272,7 @@ div.timeline, ul.timeline{
 //     @include rhythm(0,1,1,0);
 //   }
 //   blockquote{
-//     border-left-color: $blue_gray;
+//     border-left-color: $gray;
 //   }
 // }
 // .timeline-footer{
@@ -319,7 +319,7 @@ div.timeline, ul.timeline{
 // //     min-width: 220px;
 // //     @include rhythm(1,1,1,1);
 // //     &.date{
-// //       background-color: $blue_gray;
+// //       background-color: $gray;
 // //       color: $inverted-text;
 // //     }
 // //   }
@@ -442,13 +442,13 @@ div.timeline, ul.timeline{
 // //   height: $base-line-height * 3;
 // //   line-height: $base-line-height * 3;
 // //   right: - $base-line-height * 1.5;
-// //   @include background-image($primary_bg_image); 
+// //   @include background-image($primary-gradient); 
 // //   border-radius: 100px;
 // //   box-shadow: inset 0 0 0 $base-line-height/3 rgba(255,255,255,.1);
 // //   > a {
 // //     color: $white;
 // //     &:hover {
-// //       color: $blue_gray !important;
+// //       color: $gray !important;
 // //     }
 // //   }
 // // }
@@ -470,7 +470,7 @@ div.timeline, ul.timeline{
 // //     @include rhythm(0,1,1,0);
 // //   }
 // //   blockquote{
-// //     border-left-color: $blue_gray;
+// //     border-left-color: $gray;
 // //   }
 // // }
 // // .timeline-footer{

@@ -93,10 +93,10 @@ $docs-font-size: 15px;
     @include rhythm(0,0,0,1, $docs-font-size);
   }
   a:not(.btn){
-    border-bottom: 1px solid transparentize($tertiary,.8);
+    border-bottom: 1px solid transparentize($tertiary-color,.8);
     padding-bottom: 2px;
     &:hover{
-      border-bottom-color: transparentize($tertiary,.5);
+      border-bottom-color: transparentize($tertiary-color,.5);
       text-decoration:none;
     }
   }

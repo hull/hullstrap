@@ -33,7 +33,7 @@
 .vex-overlay{
   transform: translate3d(0,0,0);
   position: fixed;
-  background: $overlay_bg_gradient;
+  background: $overlay-gradient;
   @include modal-overlay-entrance-animation;
   top: 0;
   right: 0;
@@ -107,7 +107,7 @@
 body.vex-open{
   overflow: hidden;
 //   perspective: 1000px;
-//   @include background-image($primary_bg_image); 
+//   @include background-image($primary-gradient); 
 //   transform-style: preserve-3d;
 //   transform-origin: center center;
   #main-root{

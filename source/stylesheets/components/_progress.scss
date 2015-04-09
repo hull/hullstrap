@@ -11,7 +11,7 @@
 
 .progress-striped .progress-bar-info{
   background-color: transparent;
-  background-image: radial-gradient(5px 9px,circle contain, $tertiary 0%, $tertiary 85%, transparentize($tertiary, 1) 100%);
+  background-image: radial-gradient(5px 9px,circle contain, $tertiary-color 0%, $tertiary-color 85%, transparentize($tertiary-color, 1) 100%);
   &:after{
     position: absolute;
     content: '';

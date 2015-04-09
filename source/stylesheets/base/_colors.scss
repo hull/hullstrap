@@ -1,70 +1,69 @@
 // Colors
-$white                : #FFFFFF;
-$black                : #222222;
-$black_2              : #373f4a;
-$turquoise            : #4BC2B8;
-$red                  : #E75F45;
-// $orange            : #E7A645;
-$orange               : #FFC11F;
+$white                 : #FFFFFF;
+$black                 : #222222;
+$black_2               : #373f4a;
+$turquoise             : #4BC2B8;
+$red                   : #E75F45;
+// $orange             : #E7A645;
+$orange                : #FFC11F;
 
-// $blue_darkest      : #262C36;
-$blue_darkest         : #344259;
-$blue                 : #2CAAD0;
-$blue_2               : #0093E6;
+// $blue_darkest       : #262C36;
+$blue_darkest          : #344259;
+$blue                  : #2CAAD0;
+$blue_2                : #0093E6;
 
-// $gray-dark         : #383E4B;
-// $gray-dark         : #4D586E;
-// $gray-dark         : #4F5E7B;
-// $blue_gray         : #555B69;
-// $blue_gray         : #7B8BAE;
-// $blue_gray         : #505661;
-// $blue_gray_light   : #9AA1B1;
+// $gray-dark          : #383E4B;
+// $gray-dark          : #4D586E;
+// $gray-dark          : #4F5E7B;
+// $blue_gray          : #555B69;
+// $blue_gray          : #7B8BAE;
+// $blue_gray          : #505661;
+// $blue_gray_light    : #9AA1B1;
 
-$blue_gray_lightest   : #D7DEE7;
-$light_gray           : #7B7B7B;
-$light_blue_gray      : #798291;
+$blue_gray_lightest    : #D7DEE7;
+$light_gray            : #7B7B7B;
+$light_blue_gray       : #798291;
 
-$facebook_color       : #3C5A98;
-$google_color         : #EB2F12;
-$twitter_color        : #00ABF5;
-$github_color         : #999999;
+$facebook_color        : #3C5A98;
+$google_color          : #EB2F12;
+$twitter_color         : #00ABF5;
+$github_color          : #999999;
 
-$secondary_bg_color   : $secondary;
-$primary_bg_color     : $primary;
-$secondary_bg_text    : $white;
-$primary_bg_text      : $white;
+$gray-darker           : #222B3F; // #222
+$gray-dark             : #3F4654; // #333
+$gray                  : #677DAD; // #555
+$gray-light            : #697589; // #999
+$gray-lighter          : #E0E2E7; // #eee
+$gray-lightest         : #DEE3EA;
+$off-white             : #F1F4F7;
 
-$gray-darker          : #222B3F; // #222
-$gray-dark            : #3F4654; // #333
-$gray                 : #677DAD; // #555
-$gray-light           : #697589; // #999
-$gray-lighter         : #E0E2E7; // #eee
-$gray-lightest        : #DEE3EA;
-$off-white            : #F1F4F7;
+$primary               : $blue_2;
+$primary-color         : $blue_2;
+$primary-alt           : $turquoise;
 
-$primary              : $blue_2;
-$primary_alt          : $turquoise;
-$secondary            : $gray-dark;
-$secondary-alt        : $blue_gray;
-$tertiary             : $blue_2;
-$quaternary           : $red;
+$secondary-color       : $gray-dark;
+$secondary-alt         : $gray;
 
-$base-text            : $gray;
-$light-text           : lighten($light_blue_gray, 10%);
-$inverted-text        : $white;
-$btn_text_color       : $blue_darkest;
-$accent_text_header   : $quaternary;
+$tertiary-color        : $blue_2;
+$quaternary-color      : $red;
+
+$primary-color         : $primary;
+
+$base-text             : $gray;
+$light-text            : $gray-light;
+$inverted-text         : $white;
+$accent_text_header    : $quaternary-color;
 
 // Brand Gradient
-// $primary_bg_image  : linear-gradient( to right top, $primary_alt, $tertiary);
-// $primary_bg_image  : radial-gradient(circle at -20% 100px, $primary_alt 0%, $tertiary 100%);
-// $primary_bg_image  : radial-gradient(circle at -20% 100px,  $tertiary 0%, $primary_alt 100%);
-$primary_bg_image     : linear-gradient(to right,  $tertiary 0%, $primary_alt 100%);
-// $primary_bg_image  : radial-gradient(circle at -100px 100px, $primary_alt 0px, $tertiary 1000px);
+// $primary-gradient   : linear-gradient( to right top, $primary-alt, $tertiary-color);
+// $primary-gradient   : radial-gradient(circle at -20% 100px, $primary-alt 0%, $tertiary-color 100%);
+// $primary-gradient   : radial-gradient(circle at -20% 100px,  $tertiary-color 0%, $primary-alt 100%);
+$primary-gradient      : linear-gradient(to right,  $tertiary-color 0%, $primary-alt 100%);
+// $primary-gradient   : radial-gradient(circle at -100px 100px, $primary-alt 0px, $tertiary-color 1000px);
 
 // Inverted Gradient
-$secondary_bg_gradient: radial-gradient(1500px 500px at top, $secondary-alt 0, transparentize($secondary-alt,1) 100%);
-$overlay_bg_gradient  : radial-gradient(circle at 50% 0, transparentize($off-white,.8) 0%, rgba(19, 34, 58, 0.61) 100%);
+$secondary-gradient    : radial-gradient(1500px 500px at top, $secondary-alt 0, transparentize($secondary-alt,1) 100%);
+$overlay-gradient      : radial-gradient(circle at 50% 0, transparentize($off-white,.8) 0%, rgba(19, 34, 58, 0.61) 100%);
 
-$standard_box_shadow  : 0px 2px 2px 0px rgba(0,0,0,0.14);
+$standard-box-shadow   : 0px 2px 2px 0px rgba(0,0,0,0.14);
 

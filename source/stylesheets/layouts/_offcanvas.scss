@@ -94,7 +94,7 @@
 
   // Default States
   .offcanvas-container{
-    background-image: $primary_bg_image;
+    background-image: $primary-gradient;
     -webkit-perspective: 1500px;
   }
   .offcanvas-wrapper{
@@ -116,8 +116,8 @@
   .offcanvas-sidebar-left{
     z-index: 1000;
     width: $sidebar_width;
-    background-color: $secondary_bg_color;
-    background-image: $secondary_bg_gradient;
+    background-color: $secondary-color;
+    background-image: $secondary-gradient;
     @include blue-background-colors;
     transform: translate3d(- $sidebar_width,0,0);
     transition: all .45s ceaser($easeOutQuint);
@@ -134,7 +134,7 @@
     right: 0;
     top: 0;
     .header, .text-accented{
-      color: $secondary;
+      color: $secondary-color;
     }
     .nav > li{
       width: 100%;
