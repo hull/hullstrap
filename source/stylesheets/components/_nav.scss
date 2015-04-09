@@ -89,7 +89,7 @@
     white-space: nowrap;
   }
   > li, > li > a{
-    box-shadow: inset 0 -1px 0 $light-filet;
+    box-shadow: inset 0 -1px 0 $gray-lightest;
     // background-color: white;
   }
   > li.active, >li.active.open{
@@ -171,14 +171,14 @@
   width: 100%;
   z-index: 1;
   background: white;
-  box-shadow: inset 0 0 0 1px $light-filet;
+  box-shadow: inset 0 0 0 1px $gray-lightest;
 }
 .nav-tree-column{
   width: 200px;
   position: absolute;
   left: 0;
   top: 0;
-  box-shadow: inset -1px 0 0 $light-filet;
+  box-shadow: inset -1px 0 0 $gray-lightest;
   .nav-tabs{
     height: 200px;
     overflow: scroll;

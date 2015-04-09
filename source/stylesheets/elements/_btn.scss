@@ -49,10 +49,10 @@
 }
 @mixin btn-white{
   @include btn-color($white, $white, $secondary);
-  box-shadow: inset 0 0px 0 1px $light-filet;
+  box-shadow: inset 0 0px 0 1px $gray-lightest;
 }
 @mixin btn-dark{
-  @include btn-color(transparentize($blue_gray_darker,.83), rgba(0,0,0,0), white);
+  @include btn-color(transparentize($gray-darker,.83), rgba(0,0,0,0), white);
 }
 
 // Button Size
@@ -132,19 +132,19 @@
   padding-right:12px;
 }
 .btn-secondary{
-  @include btn-color($off-white, $light-filet, $blue_gray);
+  @include btn-color($off-white, $gray-lightest, $gray);
 }
 .btn-tertiary{
-  @include btn-color($blue_gray_light, rgba(255,255,255,0), $inverted_text);
+  @include btn-color($gray-light, rgba(255,255,255,0), $inverted_text);
 }
 .btn-off-white{
-  @include btn-color($off-white, rgba(255,255,255,0), $blue_gray);
+  @include btn-color($off-white, rgba(255,255,255,0), $gray);
 }
 .btn-pill{
-  @include btn-pill($blue_gray_light, $blue_gray);
+  @include btn-pill($gray-light, $gray);
   &.btn-primary{@include btn-pill($brand-primary, $brand-primary);}
-  &.btn-secondary{@include btn-pill($blue_gray_lightest, $blue_gray);}
-  &.btn-tertiary{@include btn-pill($blue_gray_light, $inverted_text);}
+  &.btn-secondary{@include btn-pill($gray-lightest, $gray);}
+  &.btn-tertiary{@include btn-pill($gray-light, $inverted_text);}
   &.btn-danger{@include btn-pill($brand-danger, $brand-danger);}
   &.btn-info{@include btn-pill($brand-info, $brand-info);}
   &.btn-success{@include btn-pill($brand-success, $brand-success);}
@@ -191,7 +191,7 @@
   &:hover{
     color: darken($tertiary, 10%);
   }
-  &.text-muted  { color:$light_blue_gray;}
+  &.text-muted  { color:$light-text;}
   &.text-primary{ color:$brand-primary;}
   &.text-success{ color:$brand-success;}
   &.text-info{    color:$brand-info;}

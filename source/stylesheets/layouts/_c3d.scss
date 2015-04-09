@@ -48,7 +48,7 @@ $cd-spacing:60px;
 // -------------------------------- */
 .cd-3d-nav-trigger {
 
-  $c3d-trigger-color:$blue_gray;
+  $c3d-trigger-color:$gray;
   position: absolute;
   margin-left: 0;
   top: 2px;
@@ -90,11 +90,11 @@ $cd-spacing:60px;
     }
     .nav-is-visible & {
       /* hide line in the center */
-      background-color: transparentize($blue_gray,1);
+      background-color: transparentize($gray,1);
     }
     .nav-is-visible &::before, .nav-is-visible &::after {
       /* keep visible other 2 lines */
-      background-color: $blue_gray;
+      background-color: $gray;
     }
     .nav-is-visible &::before {
       transform: translateY(8px) rotate(-45deg);

@@ -99,7 +99,7 @@
       padding-bottom: 0.7142857142857143em;
       margin-bottom: 0em;
       border: none;
-      color: #959ca8;
+      color: $gray-light;
       margin-left: 0;
       margin-right: 0;
       box-shadow: inset 0 -1px 0 #DEE3EA;
@@ -230,7 +230,7 @@
     border-radius: 0;
     color: rgba(255, 255, 255, 0.53);
     &:hover{
-      background: $blue_gray_lighter;
+      background: $gray-lighter;
       border-radius: 100px;
     }
     &.available:hover{

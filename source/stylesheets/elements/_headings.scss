@@ -67,7 +67,7 @@ $font-metrics:
       letter-spacing: 0.1em;
     }
     &.light{
-      color:$blue_gray_light;    
+      color:$gray-light;    
     }
     &.serif{
       @include font-weight-light;

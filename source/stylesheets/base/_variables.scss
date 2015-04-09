@@ -13,13 +13,6 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 //
 //## Gray and brand colors for use across Bootstrap.
  
-$gray-darker:            $blue_gray_darker; // #222
-$gray-dark:              $blue_gray_dark;   // #333
-$gray:                   $blue_gray; // #555
-$gray-light:             $blue_gray_light;   // #999
-$gray-lighter:           $blue_gray_lighter; // #eee
-$gray-lightest:          $light-filet;
- 
 $brand-primary:         $primary;
 $brand-success:         $turquoise;
 $brand-info:            $blue;
@@ -140,8 +133,7 @@ $table-bg-accent:               lighten($tertiary, 70%) !default;
 $table-bg-hover:                lighten($secondary, 70%) !default;
 $table-bg-active:               $table-bg-hover !default;
  
-//** Border color for table and cell borders.
-$table-border-color:            $light-filet !default;
+//** Border color for table and cell borders.default;
  
 //== Buttons
 //
@@ -183,7 +175,7 @@ $btn-link-disabled-color:        $gray-lighter;
 //** `<input>` background color
 $input-bg:                       $white;
 //** `<input disabled>` background color
-$input-bg-disabled:              $blue_gray_lightest;
+$input-bg-disabled:              $gray-lightest;
  
 //** Text color for `<input>`s
 $input-color:                    $gray;
@@ -409,8 +401,7 @@ $nav-disabled-link-hover-color:             $gray-light !default;
  
 $nav-open-link-hover-color:                 $inverted-text !default;
  
-//== Tabs
-$nav-tabs-border-color:                     $light-filet !default;
+//== Tabsdefault;
  
 $nav-tabs-link-hover-border-color:          $gray-lighter !default;
  
@@ -680,7 +671,7 @@ $panel-border-radius:         $border-radius-base !default;
  
 //** Border color for elements within panels
 $panel-inner-border:          $white !default;
-$panel-footer-bg:             $blue_gray_lightest !default;
+$panel-footer-bg:             $gray-lightest !default;
  
 $panel-default-text:          $gray-dark !default;
 $panel-default-border:        $gray-lightest !default;
@@ -760,7 +751,7 @@ $badge-border-radius:         10px !default;
 $breadcrumb-padding-vertical:   $base-line-height/4 !default;
 $breadcrumb-padding-horizontal: $base-line-height/2 !default;
 //** Breadcrumb background color
-$breadcrumb-bg:                 $blue_gray_lightest !default;
+$breadcrumb-bg:                 $gray-lightest !default;
 //** Breadcrumb text color
 $breadcrumb-color:              #ccc !default;
 //** Text color of current page in the breadcrumb

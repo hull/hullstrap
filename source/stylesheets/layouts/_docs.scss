@@ -3,7 +3,7 @@ $docs-font-size: 15px;
   @include padding-leader(1);
 }
 .docs-header{
-  border-color: $light-filet;
+  border-color: $gray-lightest;
   @include trailer(1);
   @include trailing-border(1px, 2);
   h3{
@@ -20,7 +20,7 @@ $docs-font-size: 15px;
   hr{
     margin:0;
     padding:0;
-    border-color: $light-filet;
+    border-color: $gray-lightest;
     height:auto;
     color: transparent;
     @include leading-border(1px, 1);
@@ -162,7 +162,7 @@ $docs-font-size: 15px;
       &.PUT {color: #F38630; background-color: #f6dac5 }
     }
     .method-container{
-      background-color: $blue_gray_lightest;
+      background-color: $gray-lightest;
     }
     code{
       color: $black_2;

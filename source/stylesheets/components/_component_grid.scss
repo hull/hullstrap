@@ -17,7 +17,7 @@
   .component-details{
     @include rhythm(0,.5,0,0);
     @include trailing-border(1px, .5);
-    border-color: $light-filet;
+    border-color: $gray-lightest;
     h4 {
       @include rhythm(0,0,0,0);
       i{
