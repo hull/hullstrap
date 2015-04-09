@@ -68,11 +68,18 @@ $dropdown-border-color: #d9dfe7;
     color: rgba(255, 255, 255, 0.9);
   }
 }
+
 @media screen and (max-width:$screen-xs-max){
   .nav-main.navbar-nav .open .dropdown-menu{
     background-color: rgba(0, 0, 0, 0.15);
   }
 }
+@media screen and (min-width:$screen-sm-min){
+  .nav-main .dropdown-menu{
+    max-width: 160px;
+  }
+}
+
 .dropdown-menu{
   @media screen and (min-width:$screen-sm-min){
     @include dropdown-exit-animation;
@@ -130,7 +137,6 @@ $dropdown-border-color: #d9dfe7;
   @media screen and (min-width:$screen-sm-min){
     transform-origin:top center;
     transform:translate3d(-50%,0,0);
-    max-width: 160px;
   }
   .open &, .active &{
     @media screen and (min-width:$screen-sm-min){
