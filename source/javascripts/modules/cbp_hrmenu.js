@@ -2,7 +2,6 @@ var cbpHorizontalMenu = (function() {
   var b,g,c,d,self = this;
   function f(el) {
     self.$el = $(el);
-    console.log(self.$el);
     self.b = self.$el.find("> ul > li"),
     self.g = self.b.children("a"),
     self.c = $("body"),
