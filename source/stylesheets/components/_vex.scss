@@ -203,3 +203,45 @@ body.vex-open{
   height: 50px;
   overflow: scroll;
 }
+
+.cke_dialog .cke_dialog_body{
+  padding-top: 1.4285714285714286em;
+  padding-bottom: 1.4285714285714286em;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 0 70px rgba(0,0,0,0.14);
+  background: white;
+}
+
+.cke_dialog_background_cover{
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+  background: -webkit-radial-gradient(50% 0, circle, rgba(241,244,247,0.19999999999999996) 0%, rgba(19,34,58,0.61) 100%);
+  background: radial-gradient(circle at 50% 0, rgba(241,244,247,0.19999999999999996) 0%,rgba(19,34,58,0.61) 100%);
+  -webkit-animation: fadeIn .4s ease-out;
+  animation: fadeIn .4s ease-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1 !important;
+  background-color: transparent !important;
+}
+
+.cke_dialog_body .cke_dialog_title {
+  font-weight: normal;
+  font-size: inherit;
+  cursor: move;
+  font-size: inherit;
+  padding: 10px 0;
+}
+.cke_single_page .cke_dialog_contents{
+  padding:0; 
+}
+.cke_dialog_contents_body{
+  padding-left: 0;
+  padding-right: 0;
+}

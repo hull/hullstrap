@@ -482,7 +482,7 @@ a.cke_dialog_ui_button {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
-    border-radius: 100px;
+    border-radius: 3px;
 
     &:hover, &:focus, &:active {
         border-color: $gray;
