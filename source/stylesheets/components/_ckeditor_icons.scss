@@ -14,6 +14,9 @@
 .cke_button__traits_icon {
     @extend .icon-trait !optional;
 }
+.cke_button__unsubscribe_icon {
+    @extend .icon-delete !optional;
+}
 .cke_button__bidirtl_icon {
     @extend .icon-bidirtl !optional;
 }
