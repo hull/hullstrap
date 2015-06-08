@@ -1,6 +1,6 @@
 deployment:
-  neue:
-    branch: neue
+  master:
+    branch: master
     commands:
       - bundle exec middleman s3_sync
 dependencies:
