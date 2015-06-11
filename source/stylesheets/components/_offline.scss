@@ -26,6 +26,7 @@
     display: block;
   }
   &.offline-ui-up{
+    pointer-events:none;
     animation: fadeOutAndHide forwards 0.5s 2s;
   }
   & .offline-ui-content {
