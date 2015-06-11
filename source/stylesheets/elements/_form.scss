@@ -366,13 +366,6 @@ input[type=radio], input[type=checkbox]{
 //   padding: 10px;
 // }
 
-.pane-content{
-  .control-image{
-    @extend .mb-1;
-    // @extend .mt-1;
-  }
-}
-
 .cke_dialog_contents .select2-container{
   position:  relative;
   width: 100%;

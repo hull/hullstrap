@@ -16,14 +16,17 @@
       left: 0;
       pointer-events: none;
       opacity: 0;
-      transform: translateY(0);
+      transform: translateY(0) scale(1.1);
       transform-origin: bottom left;
       transition: all .4s cubic-bezier(0.23, 1, 0.32, 1);
+      background: white;
+      padding:0 5px;
+      will-change:opacity, transform;
     }
     &:focus {
       + .control-label{
         opacity: 1;
-        transform: scale(.9) translateY(-15px);
+        transform: scale(1) translateY(-15px) translateX(5px);
       }
     }
   }

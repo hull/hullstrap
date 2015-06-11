@@ -1,6 +1,6 @@
 .form-pane{
-  @extend %form-fullbleed;
-  @extend %form-floatinglabels;
+  // @extend %form-fullbleed;
+  // @extend %form-floatinglabels;
   .form-header{
     .btn-group{
       @extend .pull-right;

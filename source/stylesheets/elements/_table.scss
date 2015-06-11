@@ -259,8 +259,6 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
   background: transparent;
 }
 
-
-
 .table-properties{
   >tbody>tr>td{
     vertical-align: middle;
@@ -271,6 +269,10 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
   }
   .table-property-value{
     max-width: 170px;
-    @extend %ellipsis
+    @extend %ellipsis;
+    .event-table & {
+      max-width: 100%;
+      white-space: initial;
+    }
   }
 }
