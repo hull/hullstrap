@@ -1,7 +1,14 @@
 .list-group-item{
+  // padding-left: $padding-base-horizontal;
+  // padding-right: $padding-base-horizontal;
+
   padding-left: $grid-gutter-width/2;
   padding-right: $grid-gutter-width/2;
+
   @include rhythm(0,.5,.5,0);
+  box-shadow: 0 0px 0 1px  $gray-lightest ;  
+  background: transparent;
+  border:0; 
 }
 h1.list-group-item{
   @include  padding-leader(1,$h1_font_size);
@@ -29,6 +36,14 @@ h6.list-group-item{
 }
 
 .list-group-item-heading{
+  // margin: 0;
+  // box-shadow: none;  
+  // padding:0  $padding-base-horizontal;
+  // @include rhythm(0,.5,.5,0);
+  // @include font-weight-bold;
+  // h4{
+  //   display: inline-block;
+  // }
   @media screen and (max-width: $screen-xs-max) {
     .offcanvas-sidebar  &{
       background-color: transparent;
