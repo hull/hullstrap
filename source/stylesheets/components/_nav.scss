@@ -83,6 +83,8 @@
     color:$text-color;
     margin-left:0;
     margin-right:0;
+    text-overflow:ellipsis;
+    overflow: hidden;
   }
   > li{
     margin-bottom: -1px;
