@@ -1,4 +1,4 @@
-.form-invisible{
+%form-invisible{
   .form-group{
     @include trailer(0);
     @include leader(0);
@@ -18,4 +18,8 @@
       background-color: transparent;
     }
   }
+}
+
+.form-invisible{
+  @extend %form-invisible;
 }

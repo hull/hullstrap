@@ -9,6 +9,9 @@
   box-shadow: 0 0px 0 1px  $gray-lightest ;  
   background: transparent;
   border:0; 
+  &.off-white-bg{
+    background: $off_white;
+  }
 }
 h1.list-group-item{
   @include  padding-leader(1,$h1_font_size);

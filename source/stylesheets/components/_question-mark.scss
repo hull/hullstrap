@@ -1,0 +1,17 @@
+.question-mark{
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 100px;
+  width: 17px;
+  height: 17px;
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 4px;
+  opacity: .5;
+  margin-top: -5px;
+  cursor: pointer;
+  &:hover{
+    opacity: 1;
+    transform:scale(1.05);
+  }
+}

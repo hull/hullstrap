@@ -36,6 +36,16 @@ $panels:
   }
 }
 
+.panel-blue{
+  @extend %blue-background;
+  color:white;
+  @for $i from 1 through 7 {
+    h#{$i}{
+    color: $white;
+    }
+  }
+}
+
 .panel-primary, .panel-success, .panel-info, .panel-warning, .panel-danger{
   label{
     color:inherit;

@@ -1,0 +1,27 @@
+.form-blue{
+  @extend %form-fullbleed;
+  @extend %form-floatinglabels;
+  @extend %form-invisible;
+  .input-group-addon{
+    padding-left: 0;
+  }
+  input[type='text']{
+    color: white;
+    padding-right: 7px;
+  }
+  input[type='text']::-moz-placeholder{
+    color: white;
+    opacity: .5;
+  }
+  input[type='text']::-webkit-input-placeholder{
+    color: white;
+    opacity: .5;
+  }
+  input[type='text']:-ms-input-placeholder{
+    color: white;
+    opacity: .5;
+  }
+  .input-group-bordered{
+    box-shadow: inset 0 -1px 0px 0 rgba(255, 255, 255, 0.52);
+  }
+}
