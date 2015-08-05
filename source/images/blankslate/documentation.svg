@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
-    <title>comments</title>
+    <title>documentation</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <radialGradient cx="83.5892974%" cy="13.7337785%" fx="83.5892974%" fy="13.7337785%" r="148.018384%" id="radialGradient-1">
@@ -11,16 +11,17 @@
         <path id="path-2" d="M159.830377,319.981055 C248.086978,319.981055 319.63309,248.434944 319.63309,160.178343 C319.63309,71.9217414 248.086978,0.375629931 159.830377,0.375629931 C71.5737758,0.375629931 0.0276642535,71.9217414 0.0276642535,160.178343 C0.0276642535,248.434944 71.5737758,319.981055 159.830377,319.981055 Z"></path>
     </defs>
     <g id="BlankSlate" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="comments" sketch:type="MSArtboardGroup">
+        <g id="documentation" sketch:type="MSArtboardGroup">
             <path d="M159.830377,319.981055 C248.086978,319.981055 319.63309,248.434944 319.63309,160.178343 C319.63309,71.9217414 248.086978,0.375629931 159.830377,0.375629931 C71.5737758,0.375629931 0.0276642535,71.9217414 0.0276642535,160.178343 C0.0276642535,248.434944 71.5737758,319.981055 159.830377,319.981055 Z" id="Oval-1" opacity="0.959999979" fill="url(#radialGradient-1)" sketch:type="MSShapeGroup"></path>
             <mask id="mask-3" sketch:name="Oval 4" fill="white">
                 <use xlink:href="#path-2"></use>
             </mask>
             <use id="Oval-4" opacity="0.959999979" fill="url(#radialGradient-1)" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
-            <g id="Stroke-1123-+-Stroke-1124" sketch:type="MSLayerGroup" mask="url(#mask-3)" stroke-linecap="round" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round">
-                <g transform="translate(64.000000, 66.000000)" sketch:type="MSShapeGroup">
-                    <path d="M56.4268435,116.423227 C52.4510609,115.863404 48.5281261,114.994427 44.7190174,113.799582 L4.06684348,130.510693 L20.327713,101.266249 C7.53447391,90.7466044 0.00162608696,75.1551378 0.00162608696,58.9411822 C0.00162608696,26.9394044 30.9419957,0.999582222 69.1103217,0.999582222 C107.278648,0.999582222 138.219017,26.9394044 138.219017,58.9411822" id="Stroke-1123"></path>
-                    <path d="M73.173913,130.511111 C73.173913,166.339733 113.826087,193.177778 150.413043,176.466667 L182.934783,189 L170.73913,163.933333 C181.276174,155.268622 187,143.854933 187,130.511111 C187,104.153511 161.523283,80.3777778 130.086957,80.3777778 C98.6546957,80.3777778 73.173913,104.153511 73.173913,130.511111 L73.173913,130.511111 Z" id="Stroke-1124"></path>
+            <g id="Stroke-2549-+-Stroke-2550-+-Stroke-2551" sketch:type="MSLayerGroup" mask="url(#mask-3)" stroke-linecap="round" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round">
+                <g transform="translate(69.000000, 77.000000)" sketch:type="MSShapeGroup">
+                    <path d="M133.447717,9.01574902 L116.86863,9.01574902 C100.289543,9.01574902 92,21.4297908 92,37.9818466 C92,21.4297908 83.7104566,9.01574902 67.1313697,9.01574902 L0.815022082,9.01574902 L0.815022082,141.432195 L67.1313697,141.432195 C83.7104566,141.432195 92,149.708223 92,166.260279 C92,149.708223 100.289543,141.432195 116.86863,141.432195 L183.184978,141.432195 L183.184978,9.01574902 L166.605891,9.01574902" id="Stroke-2549"></path>
+                    <path d="M92,33.8438327 L92,157.984251" id="Stroke-2550"></path>
+                    <path d="M166.605891,71.0859582 L150.026804,54.5339024 L133.447717,71.0859582 L133.447717,0.739721129 L166.605891,0.739721129 L166.605891,71.0859582 L166.605891,71.0859582 Z" id="Stroke-2551"></path>
                 </g>
             </g>
         </g>
