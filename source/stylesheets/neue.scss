@@ -126,6 +126,21 @@ table.datagrid-table{
   position: relative;
 }
 
+.btn-sm {
+  .badge{
+    top: 0px;
+    margin-right: -12px;
+    padding: 4px 7px 3px 7px;
+    min-width: 19px;
+    min-height: 19px;
+    margin-left: 4px;
+  }
+}
+.btn-link {
+  .badge{
+    margin-right: 0;
+  }
+}
 .btn-breadcrumbs{
   display: inline-block;
   vertical-align: middle;
