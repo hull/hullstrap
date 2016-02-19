@@ -1,518 +1,526 @@
 {
   "checksum": {
-    "previous": "15912522e483dddcefb9905c9797eaa111d9c96d639e5badddb1213f94df4b91",
-    "current": "15912522e483dddcefb9905c9797eaa111d9c96d639e5badddb1213f94df4b91"
+    "previous": "fb709c1ab56a755a3fb9981446a095c34a1da4c6edce7eaea9b4b75bcfdb1d39",
+    "current": "fb709c1ab56a755a3fb9981446a095c34a1da4c6edce7eaea9b4b75bcfdb1d39"
   },
   "fonts": [
-    "source/stylesheets/fonts/fontcustom_15912522e483dddcefb9905c9797eaa1.ttf",
-    "source/stylesheets/fonts/fontcustom_15912522e483dddcefb9905c9797eaa1.svg",
-    "source/stylesheets/fonts/fontcustom_15912522e483dddcefb9905c9797eaa1.woff",
-    "source/stylesheets/fonts/fontcustom_15912522e483dddcefb9905c9797eaa1.eot"
+    "source/stylesheets/fonts/fontcustom_fb709c1ab56a755a3fb9981446a095c3.ttf",
+    "source/stylesheets/fonts/fontcustom_fb709c1ab56a755a3fb9981446a095c3.svg",
+    "source/stylesheets/fonts/fontcustom_fb709c1ab56a755a3fb9981446a095c3.woff",
+    "source/stylesheets/fonts/fontcustom_fb709c1ab56a755a3fb9981446a095c3.eot"
   ],
   "glyphs": {
     "achievement": {
       "codepoint": 61915,
-      "source": "./source/images/icons/achievement.svg"
+      "source": "source/images/icons/achievement.svg"
     },
     "add_image": {
       "codepoint": 61916,
-      "source": "./source/images/icons/add_image.svg"
+      "source": "source/images/icons/add_image.svg"
     },
     "akismet": {
       "codepoint": 61917,
-      "source": "./source/images/icons/akismet.svg"
+      "source": "source/images/icons/akismet.svg"
+    },
+    "amazon": {
+      "codepoint": 62044,
+      "source": "source/images/icons/amazon.svg"
     },
     "angellist": {
       "codepoint": 61918,
-      "source": "./source/images/icons/angellist.svg"
+      "source": "source/images/icons/angellist.svg"
     },
     "app": {
       "codepoint": 61919,
-      "source": "./source/images/icons/app.svg"
+      "source": "source/images/icons/app.svg"
     },
     "arrow_double_left": {
       "codepoint": 61920,
-      "source": "./source/images/icons/arrow_double_left.svg"
+      "source": "source/images/icons/arrow_double_left.svg"
     },
     "arrow_double_right": {
       "codepoint": 61921,
-      "source": "./source/images/icons/arrow_double_right.svg"
+      "source": "source/images/icons/arrow_double_right.svg"
     },
     "arrow_down": {
       "codepoint": 61922,
-      "source": "./source/images/icons/arrow_down.svg"
+      "source": "source/images/icons/arrow_down.svg"
     },
     "arrow_left": {
       "codepoint": 61923,
-      "source": "./source/images/icons/arrow_left.svg"
+      "source": "source/images/icons/arrow_left.svg"
     },
     "arrow_right": {
       "codepoint": 61924,
-      "source": "./source/images/icons/arrow_right.svg"
+      "source": "source/images/icons/arrow_right.svg"
     },
     "arrow_up": {
       "codepoint": 61925,
-      "source": "./source/images/icons/arrow_up.svg"
+      "source": "source/images/icons/arrow_up.svg"
     },
     "badge": {
       "codepoint": 62038,
-      "source": "./source/images/icons/badge.svg"
+      "source": "source/images/icons/badge.svg"
     },
     "blockquote": {
       "codepoint": 61926,
-      "source": "./source/images/icons/blockquote.svg"
+      "source": "source/images/icons/blockquote.svg"
     },
     "bold": {
       "codepoint": 61927,
-      "source": "./source/images/icons/bold.svg"
+      "source": "source/images/icons/bold.svg"
     },
     "checkbox": {
       "codepoint": 61930,
-      "source": "./source/images/icons/checkbox.svg"
+      "source": "source/images/icons/checkbox.svg"
     },
     "checkin": {
       "codepoint": 62034,
-      "source": "./source/images/icons/checkin.svg"
+      "source": "source/images/icons/checkin.svg"
     },
     "city": {
       "codepoint": 62035,
-      "source": "./source/images/icons/city.svg"
+      "source": "source/images/icons/city.svg"
     },
     "clear": {
       "codepoint": 61931,
-      "source": "./source/images/icons/clear.svg"
+      "source": "source/images/icons/clear.svg"
     },
     "click": {
       "codepoint": 61932,
-      "source": "./source/images/icons/click.svg"
+      "source": "source/images/icons/click.svg"
     },
     "clock": {
       "codepoint": 61933,
-      "source": "./source/images/icons/clock.svg"
+      "source": "source/images/icons/clock.svg"
     },
     "cloud": {
       "codepoint": 61934,
-      "source": "./source/images/icons/cloud.svg"
+      "source": "source/images/icons/cloud.svg"
     },
     "codesnippet": {
       "codepoint": 61935,
-      "source": "./source/images/icons/codesnippet.svg"
+      "source": "source/images/icons/codesnippet.svg"
     },
     "cog": {
       "codepoint": 61936,
-      "source": "./source/images/icons/cog.svg"
+      "source": "source/images/icons/cog.svg"
     },
     "comment": {
       "codepoint": 61937,
-      "source": "./source/images/icons/comment.svg"
+      "source": "source/images/icons/comment.svg"
     },
     "comment_code": {
       "codepoint": 61938,
-      "source": "./source/images/icons/comment_code.svg"
+      "source": "source/images/icons/comment_code.svg"
     },
     "comments": {
       "codepoint": 61939,
-      "source": "./source/images/icons/comments.svg"
+      "source": "source/images/icons/comments.svg"
     },
     "component": {
       "codepoint": 61940,
-      "source": "./source/images/icons/component.svg"
+      "source": "source/images/icons/component.svg"
     },
     "country": {
       "codepoint": 62036,
-      "source": "./source/images/icons/country.svg"
+      "source": "source/images/icons/country.svg"
     },
     "cross": {
       "codepoint": 61941,
-      "source": "./source/images/icons/cross.svg"
+      "source": "source/images/icons/cross.svg"
     },
     "dashboard": {
       "codepoint": 61942,
-      "source": "./source/images/icons/dashboard.svg"
+      "source": "source/images/icons/dashboard.svg"
     },
     "day": {
       "codepoint": 61943,
-      "source": "./source/images/icons/day.svg"
+      "source": "source/images/icons/day.svg"
     },
     "delete": {
       "codepoint": 61944,
-      "source": "./source/images/icons/delete.svg"
+      "source": "source/images/icons/delete.svg"
     },
     "desktop": {
       "codepoint": 61945,
-      "source": "./source/images/icons/desktop.svg"
+      "source": "source/images/icons/desktop.svg"
     },
     "download": {
       "codepoint": 61946,
-      "source": "./source/images/icons/download.svg"
+      "source": "source/images/icons/download.svg"
     },
     "draft": {
       "codepoint": 61947,
-      "source": "./source/images/icons/draft.svg"
+      "source": "source/images/icons/draft.svg"
     },
     "earth": {
       "codepoint": 62042,
-      "source": "./source/images/icons/earth.svg"
+      "source": "source/images/icons/earth.svg"
     },
     "email": {
       "codepoint": 61948,
-      "source": "./source/images/icons/email.svg"
+      "source": "source/images/icons/email.svg"
     },
     "email_message": {
       "codepoint": 61949,
-      "source": "./source/images/icons/email_message.svg"
+      "source": "source/images/icons/email_message.svg"
     },
     "emit": {
       "codepoint": 61950,
-      "source": "./source/images/icons/emit.svg"
+      "source": "source/images/icons/emit.svg"
     },
     "exit": {
       "codepoint": 61951,
-      "source": "./source/images/icons/exit.svg"
+      "source": "source/images/icons/exit.svg"
     },
     "eye_closed": {
       "codepoint": 61952,
-      "source": "./source/images/icons/eye_closed.svg"
+      "source": "source/images/icons/eye_closed.svg"
     },
     "eye_open": {
       "codepoint": 61953,
-      "source": "./source/images/icons/eye_open.svg"
+      "source": "source/images/icons/eye_open.svg"
     },
     "facebook": {
       "codepoint": 61954,
-      "source": "./source/images/icons/facebook.svg"
+      "source": "source/images/icons/facebook.svg"
     },
     "filter": {
       "codepoint": 61955,
-      "source": "./source/images/icons/filter.svg"
+      "source": "source/images/icons/filter.svg"
     },
     "foursquare": {
       "codepoint": 61956,
-      "source": "./source/images/icons/foursquare.svg"
+      "source": "source/images/icons/foursquare.svg"
     },
     "ghost": {
       "codepoint": 61957,
-      "source": "./source/images/icons/ghost.svg"
+      "source": "source/images/icons/ghost.svg"
     },
     "github": {
       "codepoint": 61958,
-      "source": "./source/images/icons/github.svg"
+      "source": "source/images/icons/github.svg"
     },
     "google": {
       "codepoint": 61959,
-      "source": "./source/images/icons/google.svg"
+      "source": "source/images/icons/google.svg"
     },
     "google_analytics": {
       "codepoint": 61960,
-      "source": "./source/images/icons/google_analytics.svg"
+      "source": "source/images/icons/google_analytics.svg"
     },
     "google_plus": {
       "codepoint": 61961,
-      "source": "./source/images/icons/google_plus.svg"
+      "source": "source/images/icons/google_plus.svg"
     },
     "h1": {
       "codepoint": 61962,
-      "source": "./source/images/icons/h1.svg"
+      "source": "source/images/icons/h1.svg"
     },
     "h2": {
       "codepoint": 61963,
-      "source": "./source/images/icons/h2.svg"
+      "source": "source/images/icons/h2.svg"
     },
     "h3": {
       "codepoint": 61964,
-      "source": "./source/images/icons/h3.svg"
+      "source": "source/images/icons/h3.svg"
     },
     "hide": {
       "codepoint": 61965,
-      "source": "./source/images/icons/hide.svg"
+      "source": "source/images/icons/hide.svg"
     },
     "html5": {
       "codepoint": 61966,
-      "source": "./source/images/icons/html5.svg"
+      "source": "source/images/icons/html5.svg"
     },
     "hull": {
       "codepoint": 61967,
-      "source": "./source/images/icons/hull.svg"
+      "source": "source/images/icons/hull.svg"
     },
     "image": {
       "codepoint": 61913,
-      "source": "./source/images/icons/image.svg"
+      "source": "source/images/icons/image.svg"
     },
     "indent": {
       "codepoint": 61968,
-      "source": "./source/images/icons/indent.svg"
+      "source": "source/images/icons/indent.svg"
     },
     "instagram": {
       "codepoint": 61969,
-      "source": "./source/images/icons/instagram.svg"
+      "source": "source/images/icons/instagram.svg"
     },
     "instant_win": {
       "codepoint": 62040,
-      "source": "./source/images/icons/instant_win.svg"
+      "source": "source/images/icons/instant_win.svg"
+    },
+    "intercom": {
+      "codepoint": 62045,
+      "source": "source/images/icons/intercom.svg"
     },
     "italic": {
       "codepoint": 61970,
-      "source": "./source/images/icons/italic.svg"
+      "source": "source/images/icons/italic.svg"
     },
     "javascript": {
       "codepoint": 61971,
-      "source": "./source/images/icons/javascript.svg"
+      "source": "source/images/icons/javascript.svg"
     },
     "justifyblock": {
       "codepoint": 61972,
-      "source": "./source/images/icons/justifyblock.svg"
+      "source": "source/images/icons/justifyblock.svg"
     },
     "justifycenter": {
       "codepoint": 61973,
-      "source": "./source/images/icons/justifycenter.svg"
+      "source": "source/images/icons/justifycenter.svg"
     },
     "justifyleft": {
       "codepoint": 61974,
-      "source": "./source/images/icons/justifyleft.svg"
+      "source": "source/images/icons/justifyleft.svg"
     },
     "justifyright": {
       "codepoint": 61975,
-      "source": "./source/images/icons/justifyright.svg"
+      "source": "source/images/icons/justifyright.svg"
     },
     "keen_io": {
       "codepoint": 61976,
-      "source": "./source/images/icons/keen_io.svg"
+      "source": "source/images/icons/keen_io.svg"
     },
     "key": {
       "codepoint": 61977,
-      "source": "./source/images/icons/key.svg"
+      "source": "source/images/icons/key.svg"
     },
     "kissmetrics": {
       "codepoint": 61978,
-      "source": "./source/images/icons/kissmetrics.svg"
+      "source": "source/images/icons/kissmetrics.svg"
     },
     "libraries": {
       "codepoint": 61979,
-      "source": "./source/images/icons/libraries.svg"
+      "source": "source/images/icons/libraries.svg"
     },
     "like": {
       "codepoint": 61981,
-      "source": "./source/images/icons/like.svg"
+      "source": "source/images/icons/like.svg"
     },
     "link": {
       "codepoint": 61983,
-      "source": "./source/images/icons/link.svg"
+      "source": "source/images/icons/link.svg"
     },
     "linkedin": {
       "codepoint": 61984,
-      "source": "./source/images/icons/linkedin.svg"
+      "source": "source/images/icons/linkedin.svg"
     },
     "lock": {
       "codepoint": 61985,
-      "source": "./source/images/icons/lock.svg"
+      "source": "source/images/icons/lock.svg"
     },
     "maximize": {
       "codepoint": 61986,
-      "source": "./source/images/icons/maximize.svg"
+      "source": "source/images/icons/maximize.svg"
     },
     "meetups": {
       "codepoint": 61987,
-      "source": "./source/images/icons/meetups.svg"
+      "source": "source/images/icons/meetups.svg"
     },
     "minus": {
       "codepoint": 61988,
-      "source": "./source/images/icons/minus.svg"
+      "source": "source/images/icons/minus.svg"
     },
     "mixpanel": {
       "codepoint": 61989,
-      "source": "./source/images/icons/mixpanel.svg"
+      "source": "source/images/icons/mixpanel.svg"
     },
     "mobile": {
       "codepoint": 61990,
-      "source": "./source/images/icons/mobile.svg"
+      "source": "source/images/icons/mobile.svg"
     },
     "month": {
       "codepoint": 61991,
-      "source": "./source/images/icons/month.svg"
+      "source": "source/images/icons/month.svg"
     },
     "numbers": {
       "codepoint": 62043,
-      "source": "./source/images/icons/numbers.svg"
+      "source": "source/images/icons/numbers.svg"
     },
     "ol": {
       "codepoint": 61992,
-      "source": "./source/images/icons/ol.svg"
+      "source": "source/images/icons/ol.svg"
     },
     "outdent": {
       "codepoint": 61993,
-      "source": "./source/images/icons/outdent.svg"
+      "source": "source/images/icons/outdent.svg"
     },
     "pencil": {
       "codepoint": 61994,
-      "source": "./source/images/icons/pencil.svg"
+      "source": "source/images/icons/pencil.svg"
     },
     "phone": {
       "codepoint": 62037,
-      "source": "./source/images/icons/phone.svg"
+      "source": "source/images/icons/phone.svg"
     },
     "platform": {
       "codepoint": 61995,
-      "source": "./source/images/icons/platform.svg"
+      "source": "source/images/icons/platform.svg"
     },
     "play": {
       "codepoint": 61996,
-      "source": "./source/images/icons/play.svg"
+      "source": "source/images/icons/play.svg"
     },
     "plug_in": {
       "codepoint": 61997,
-      "source": "./source/images/icons/plug_in.svg"
+      "source": "source/images/icons/plug_in.svg"
     },
     "plus": {
       "codepoint": 61998,
-      "source": "./source/images/icons/plus.svg"
+      "source": "source/images/icons/plus.svg"
     },
     "question": {
       "codepoint": 61999,
-      "source": "./source/images/icons/question.svg"
+      "source": "source/images/icons/question.svg"
     },
     "question_bubble": {
       "codepoint": 62000,
-      "source": "./source/images/icons/question_bubble.svg"
+      "source": "source/images/icons/question_bubble.svg"
     },
     "quiz": {
       "codepoint": 62039,
-      "source": "./source/images/icons/quiz.svg"
+      "source": "source/images/icons/quiz.svg"
     },
     "redo": {
       "codepoint": 62001,
-      "source": "./source/images/icons/redo.svg"
+      "source": "source/images/icons/redo.svg"
     },
     "reply": {
       "codepoint": 62002,
-      "source": "./source/images/icons/reply.svg"
+      "source": "source/images/icons/reply.svg"
     },
     "reset": {
       "codepoint": 62003,
-      "source": "./source/images/icons/reset.svg"
+      "source": "source/images/icons/reset.svg"
     },
     "review": {
       "codepoint": 62004,
-      "source": "./source/images/icons/review.svg"
+      "source": "source/images/icons/review.svg"
     },
     "search": {
       "codepoint": 62005,
-      "source": "./source/images/icons/search.svg"
+      "source": "source/images/icons/search.svg"
     },
     "send": {
       "codepoint": 61914,
-      "source": "./source/images/icons/send.svg"
+      "source": "source/images/icons/send.svg"
     },
     "share": {
       "codepoint": 62006,
-      "source": "./source/images/icons/share.svg"
+      "source": "source/images/icons/share.svg"
     },
     "show": {
       "codepoint": 62007,
-      "source": "./source/images/icons/show.svg"
+      "source": "source/images/icons/show.svg"
     },
     "soundcloud": {
       "codepoint": 62008,
-      "source": "./source/images/icons/soundcloud.svg"
+      "source": "source/images/icons/soundcloud.svg"
     },
     "source": {
       "codepoint": 62009,
-      "source": "./source/images/icons/source.svg"
+      "source": "source/images/icons/source.svg"
     },
     "star": {
       "codepoint": 62010,
-      "source": "./source/images/icons/star.svg"
+      "source": "source/images/icons/star.svg"
     },
     "stats": {
       "codepoint": 62011,
-      "source": "./source/images/icons/stats.svg"
+      "source": "source/images/icons/stats.svg"
     },
     "stop": {
       "codepoint": 62012,
-      "source": "./source/images/icons/stop.svg"
+      "source": "source/images/icons/stop.svg"
     },
     "table": {
       "codepoint": 62013,
-      "source": "./source/images/icons/table.svg"
+      "source": "source/images/icons/table.svg"
     },
     "tag": {
       "codepoint": 62014,
-      "source": "./source/images/icons/tag.svg"
+      "source": "source/images/icons/tag.svg"
     },
     "tags": {
       "codepoint": 62041,
-      "source": "./source/images/icons/tags.svg"
+      "source": "source/images/icons/tags.svg"
     },
     "templates": {
       "codepoint": 62015,
-      "source": "./source/images/icons/templates.svg"
+      "source": "source/images/icons/templates.svg"
     },
     "trait": {
       "codepoint": 62016,
-      "source": "./source/images/icons/trait.svg"
+      "source": "source/images/icons/trait.svg"
     },
     "trash": {
       "codepoint": 62017,
-      "source": "./source/images/icons/trash.svg"
+      "source": "source/images/icons/trash.svg"
     },
     "tumblr": {
       "codepoint": 62018,
-      "source": "./source/images/icons/tumblr.svg"
+      "source": "source/images/icons/tumblr.svg"
     },
     "twitter": {
       "codepoint": 62019,
-      "source": "./source/images/icons/twitter.svg"
+      "source": "source/images/icons/twitter.svg"
     },
     "ul": {
       "codepoint": 62020,
-      "source": "./source/images/icons/ul.svg"
+      "source": "source/images/icons/ul.svg"
     },
     "uncomment_code": {
       "codepoint": 62022,
-      "source": "./source/images/icons/uncomment_code.svg"
+      "source": "source/images/icons/uncomment_code.svg"
     },
     "undo": {
       "codepoint": 62023,
-      "source": "./source/images/icons/undo.svg"
+      "source": "source/images/icons/undo.svg"
     },
     "unlink": {
       "codepoint": 62024,
-      "source": "./source/images/icons/unlink.svg"
+      "source": "source/images/icons/unlink.svg"
     },
     "user": {
       "codepoint": 62025,
-      "source": "./source/images/icons/user.svg"
+      "source": "source/images/icons/user.svg"
     },
     "user_circle": {
       "codepoint": 62026,
-      "source": "./source/images/icons/user_circle.svg"
+      "source": "source/images/icons/user_circle.svg"
     },
     "user_group": {
       "codepoint": 62027,
-      "source": "./source/images/icons/user_group.svg"
+      "source": "source/images/icons/user_group.svg"
     },
     "valid": {
       "codepoint": 62028,
-      "source": "./source/images/icons/valid.svg"
+      "source": "source/images/icons/valid.svg"
     },
     "vkontakte": {
       "codepoint": 62029,
-      "source": "./source/images/icons/vkontakte.svg"
+      "source": "source/images/icons/vkontakte.svg"
     },
     "wand": {
       "codepoint": 62030,
-      "source": "./source/images/icons/wand.svg"
+      "source": "source/images/icons/wand.svg"
     },
     "warning": {
       "codepoint": 62031,
-      "source": "./source/images/icons/warning.svg"
+      "source": "source/images/icons/warning.svg"
     },
     "webhook": {
       "codepoint": 62032,
-      "source": "./source/images/icons/webhook.svg"
+      "source": "source/images/icons/webhook.svg"
     },
     "week": {
       "codepoint": 62033,
-      "source": "./source/images/icons/week.svg"
+      "source": "source/images/icons/week.svg"
     }
   },
   "options": {
@@ -528,8 +536,8 @@
     "font_name": "fontcustom",
     "force": false,
     "input": {
-      "templates": "./source/images/icons",
-      "vectors": "./source/images/icons"
+      "templates": "source/images/icons",
+      "vectors": "source/images/icons"
     },
     "no_hash": false,
     "output": {
@@ -539,7 +547,6 @@
     },
     "preprocessor_path": "./fonts",
     "quiet": false,
-    "skip_first": false,
     "templates": [
       "scss"
     ]

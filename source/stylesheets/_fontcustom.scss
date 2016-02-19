@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "fontcustom";
-  src: url("./fonts/fontcustom_15912522e483dddcefb9905c9797eaa1.eot");
-  src: url("./fonts/fontcustom_15912522e483dddcefb9905c9797eaa1.eot?#iefix") format("embedded-opentype"),
-       url("./fonts/fontcustom_15912522e483dddcefb9905c9797eaa1.woff") format("woff"),
-       url("./fonts/fontcustom_15912522e483dddcefb9905c9797eaa1.ttf") format("truetype"),
-       url("./fonts/fontcustom_15912522e483dddcefb9905c9797eaa1.svg#fontcustom") format("svg");
+  src: url("./fonts/fontcustom_fb709c1ab56a755a3fb9981446a095c3.eot");
+  src: url("./fonts/fontcustom_fb709c1ab56a755a3fb9981446a095c3.eot?#iefix") format("embedded-opentype"),
+       url("./fonts/fontcustom_fb709c1ab56a755a3fb9981446a095c3.woff") format("woff"),
+       url("./fonts/fontcustom_fb709c1ab56a755a3fb9981446a095c3.ttf") format("truetype"),
+       url("./fonts/fontcustom_fb709c1ab56a755a3fb9981446a095c3.svg#fontcustom") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("./fonts/fontcustom_15912522e483dddcefb9905c9797eaa1.svg#fontcustom") format("svg");
+    src: url("./fonts/fontcustom_fb709c1ab56a755a3fb9981446a095c3.svg#fontcustom") format("svg");
   }
 }
 
@@ -26,6 +26,7 @@
 .icon-achievement:before,
 .icon-add_image:before,
 .icon-akismet:before,
+.icon-amazon:before,
 .icon-angellist:before,
 .icon-app:before,
 .icon-arrow_double_left:before,
@@ -83,6 +84,7 @@
 .icon-indent:before,
 .icon-instagram:before,
 .icon-instant_win:before,
+.icon-intercom:before,
 .icon-italic:before,
 .icon-javascript:before,
 .icon-justifyblock:before,
@@ -166,6 +168,7 @@
 .icon-achievement:before { content: "\f1db"; }
 .icon-add_image:before { content: "\f1dc"; }
 .icon-akismet:before { content: "\f1dd"; }
+.icon-amazon:before { content: "\f25c"; }
 .icon-angellist:before { content: "\f1de"; }
 .icon-app:before { content: "\f1df"; }
 .icon-arrow_double_left:before { content: "\f1e0"; }
@@ -223,6 +226,7 @@
 .icon-indent:before { content: "\f210"; }
 .icon-instagram:before { content: "\f211"; }
 .icon-instant_win:before { content: "\f258"; }
+.icon-intercom:before { content: "\f25d"; }
 .icon-italic:before { content: "\f212"; }
 .icon-javascript:before { content: "\f213"; }
 .icon-justifyblock:before { content: "\f214"; }
@@ -293,6 +297,7 @@
 $font-fontcustom-achievement: "\f1db";
 $font-fontcustom-add_image: "\f1dc";
 $font-fontcustom-akismet: "\f1dd";
+$font-fontcustom-amazon: "\f25c";
 $font-fontcustom-angellist: "\f1de";
 $font-fontcustom-app: "\f1df";
 $font-fontcustom-arrow_double_left: "\f1e0";
@@ -350,6 +355,7 @@ $font-fontcustom-image: "\f1d9";
 $font-fontcustom-indent: "\f210";
 $font-fontcustom-instagram: "\f211";
 $font-fontcustom-instant_win: "\f258";
+$font-fontcustom-intercom: "\f25d";
 $font-fontcustom-italic: "\f212";
 $font-fontcustom-javascript: "\f213";
 $font-fontcustom-justifyblock: "\f214";
