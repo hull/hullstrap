@@ -96,6 +96,7 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
     text-overflow:ellipsis;
     max-width: 130px;
     display: block;
+    font-size: 10px
   }
   thead{
     th{
@@ -248,12 +249,40 @@ table.datagrid-table, table.sticky-thead, table.sticky-col, table.sticky-interse
   }
 }
 
-.table-formtable > thead > tr > th,
-.table-formtable > thead > tr > td,
-.table-formtable > tbody > tr > th,
-.table-formtable > tbody > tr > td{
-  padding: 0 1px 1px 0;
+
+.pane-content--settings .form-group {
+  margin-bottom: 20px;
+  [data-schematype="array"] label.control-label {
+    margin-top: 40px;
+  }
 }
+
+.table-formtable {
+  th { 
+    font-size: 10px;
+  }
+  > thead > tr > th,
+  > thead > tr > td,
+  > tbody > tr > th,
+  > tbody > tr > td {
+    min-width: 80px;
+    padding: 5px 5px 5px 0;
+  }
+  .control-label{
+    display: none;
+  }
+  .Select{
+    min-width: 200px;
+  }
+  td[data-schemapath] > .form-group {
+    margin-bottom: 0;
+    > input.form-control{
+      padding: 9px 52px 9px 10px;
+      height: auto;
+    }
+  }
+}
+
 
 .panel table.datagrid-table tr.datagrid-row{
   background: transparent;

@@ -27,8 +27,15 @@
     }
   }
   div[data-schemaid="root"]{
-    > .form-header{
+    > label.control-label{
       display: none;
     }
   }
+  div[data-schemapath="root.private_settings"],
+  div[data-schemapath="root.settings"] {
+    > label.control-label {
+      display: none;
+    }
+  }
+
 }
