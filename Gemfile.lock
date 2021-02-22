@@ -216,7 +216,7 @@ GEM
     rack-rewrite (1.5.1)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rake (10.4.2)
+    rake (12.3.3)
     random_data (1.6.0)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
