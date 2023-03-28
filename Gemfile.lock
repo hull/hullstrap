@@ -269,7 +269,7 @@ GEM
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uber (0.0.13)
-    uglifier (2.7.1)
+    uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     uifaces (0.0.2)
